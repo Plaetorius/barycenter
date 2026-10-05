@@ -14,7 +14,7 @@
 
 ## How trustworthy is it
 Every ledger was written by one agent (Sonnet) and independently re-checked by a second (Opus) reading each claim next
-to its source text. The verifiers made roughly 200 corrections, which is why the pass exists. Typical catches: at-the-market programme
+to its source text. The verifiers made more than 200 corrections, which is why the pass exists. Typical catches: at-the-market programme
 ceilings counted as money raised (NuScale $3.35B), the same award counted three times (Kairos), SPAC trust money counted twice
 (Oklo), joint-venture money attributed to the wrong company (Kyoto Fusioneering), investors taken from "thanks to our investors"
 lists (Aalo, Radiant). Reports: `docs/survey/verification/`. Residual doubts are in each ledger's `notes` and
@@ -22,8 +22,8 @@ lists (Aalo, Radiant). Reports: `docs/survey/verification/`. Residual doubts are
 
 ## Known gaps (published as limitations on the methodology page)
 - Early rounds are missing for many companies: every agent hit its 200-search limit. The ledgers are a first pass, not the end state.
-- Profile fields (HQ, founding year, approach, logo) are census-derived and not individually evidenced; 15 companies have no logo.
-- 6 companies in the `profiles` files could not be sourced (no website found).
+- Profile fields (HQ, founding year, approach, logo) are census-derived and not individually evidenced; 31 of 91 companies have no logo (monogram shown).
+- 7 published companies have no website and 1 has no HQ country (nothing sourceable was found).
 - CFS and TAE logos, and several others, fall back to monograms (terms of service forbid fetching from their sites).
 - Asia is thin. Companies House (UK share issues) is not used: needs a free API key.
 - Investor roll-up (fund vehicle to firm) is recorded in `seeds/aliases.yaml` but not yet shown on the site.
@@ -41,7 +41,7 @@ lists (Aalo, Radiant). Reports: `docs/survey/verification/`. Residual doubts are
 3. Decide whether to get a free Companies House API key for UK share-issue evidence.
 
 ## Next
-1. Second research pass with fresh search budget: early rounds, missing investors, the 6 unsourced profiles, 168 census candidates without a ledger.
+1. Second research pass with fresh search budget: early rounds, missing investors, the unsourced profiles, 168 census candidates without a ledger.
 2. Postgres + daily fetch + admin review page (decided: no daily fetch before the database).
 3. RSS feed of approved new events, then a weekly digest.
 4. Investor firm-level roll-up and a "who can help me" view (shared investors, warm-intro paths).
