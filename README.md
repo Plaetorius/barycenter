@@ -6,7 +6,8 @@ Disclosed amounts only, a citation on every figure, **not exhaustive** (see the 
 
 ```
 pipeline/   Python (uv). ledger/ (evidenced facts, YAML) -> verified release JSON/CSV in site/public/data
-site/       Next.js 16, Tailwind 4, shadcn. Static: reads the release JSON, no runtime data server
+site/       FROZEN COPY of the web app. The live app is ~/mertia/labs/apps/barycenter (labs monorepo). Delete this folder
+            once the Vercel project is connected to the labs repo (docs/DEPLOYMENT.md)
 docs/       PLAN.md (product), BUILD-PLAN.md (pipeline), LEDGER.md + VERIFY.md (how facts are added and checked),
             survey/ (reconnaissance: sources, census, verification reports)
 ```
@@ -25,10 +26,10 @@ docs/       PLAN.md (product), BUILD-PLAN.md (pipeline), LEDGER.md + VERIFY.md (
 cd pipeline && uv venv && uv pip install -e . pytest      # first time
 .venv/bin/python -m pytest                                 # tests
 .venv/bin/python -m barycenter.ledger check ledger/*.yaml
-.venv/bin/python -m barycenter.publish                     # verified release -> ../site/public/data
+.venv/bin/python -m barycenter.publish                     # verified release -> ~/mertia/labs/apps/barycenter/public/data (BARYCENTER_APP_DIR)
 .venv/bin/python -m barycenter.resolve report              # candidate duplicate investors
-cd ../site && pnpm install && pnpm dev                     # http://localhost:3000/barycenter
-pnpm test && pnpm build
+cd ~/mertia/labs && pnpm install && pnpm dev:barycenter     # http://localhost:3000/barycenter
+pnpm --filter @mertia/barycenter test && pnpm build
 ```
 
 ## Conduct
