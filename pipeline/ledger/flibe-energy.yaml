@@ -22,7 +22,9 @@ verification:
     awards: one row per award, modifications already netted, so one event per award and no per-modification duplicates). Award
     Amount = obligated to date (not a ceiling); disbursed_usd = Total Outlays, now evidenced by its own quote (1 added). announced_on
     is the first-obligation date, not a press date. Recipient FLIBE ENERGY INC (UEI JK5RDF9E2EK7), the company. Scope: MSR
-    developer, keep. Gaps: private funding (undisclosed) and other DOE awards (e.g. GAIN vouchers, lab money) not recorded.'
+    developer, keep. Gaps: private funding (undisclosed) and other DOE awards (e.g. GAIN vouchers, lab money) not recorded.
+    Pass2 verification (2026-10-05): 1 pending event verified, 0 fixes. Form D field order checked (5,000,000 - 2,128,028
+    = 2,871,972; Rule 06b; 16 investors; Huntsville issuer).'
 events:
 - id: flibe-energy-dene0008845
   instrument: grant
@@ -92,6 +94,6 @@ events:
     snapshot: 65908a4fcf0133d8696d8baaba9b620908b863e6fe52abfa29efc3423d1cf914
     quote: 06b false 2018-11-26 false true false
     basis: disclosed
-  review: pending
+  review: verified
   source_pass: pass2
 agreements: []

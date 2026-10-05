@@ -46,7 +46,9 @@ verification:
     Checked: administration of Moltex Energy Limited confirmed by the 2026-08-13 release (''currently in administration'');
     ACOA REGI CAD3.0M and CAD2.67M are conditionally repayable, kept as grants; C$96M is cumulative. Gaps: administration
     start date, CBC CAD11.5M price, private rounds and New Brunswick money not evidenced; disbursements unknown; SIF announced_on
-    is the agreement start date.'
+    is the agreement start date. Pass2 verification (2026-10-05): 2 pending events verified, 0 fixes. IDOM investment has
+    no amount (company release). Canada C$50.5M announcement is duplicate with supersedes moltex-2020-canada-sif (also covers
+    moltex-2021-acoa-regi-1), not counted.'
 events:
 - id: moltex-2020-canada-sif
   instrument: debt
@@ -267,8 +269,8 @@ events:
       snapshot: f3fc589c174c282947ef7f303a9f30d638154b0c3b3b8a1714e2e5e03c39ad2d
       quote: Moltex Energy has secured a substantial investment from IDOM Consulting, Engineering, Architecture SAU
       basis: disclosed
-    review: pending
-  review: pending
+    review: verified
+  review: verified
   source_pass: pass2
 - id: moltex-2021-canada-announcement-50m
   instrument: debt
@@ -290,6 +292,6 @@ events:
     snapshot: d0833d33005f9866fd5b5f2d973c5df01bc216f643fd709308c8f05d39162c9a
     quote: today announced an investment of $50.5 million in Moltex Energy Canada Inc.
     basis: disclosed
-  review: pending
+  review: verified
   source_pass: pass2
 agreements: []

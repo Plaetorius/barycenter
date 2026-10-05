@@ -91,10 +91,11 @@ events:
       snapshot: 9f2a8b8c9b73d6259a31d42ea3504ac75ca2550652032bf95b46e8f0065cf529
       quote: avec la participation notamment d'ADEME Investissement et des actionnaires historiques
       basis: disclosed
-    review: pending
+    review: verified
 - id: jimmy-seed-2022
   instrument: equity
-  round_label: First fundraising (seed), EUR 2.2M
+  round_label: First fundraising, EUR 2.2M (date conflict, see notes; source page dated 2023-06-28 says it was early that
+    year, Wikipedia gives Feb 2022)
   announced_on: '2023-06-28'
   amount:
     amount: 2200000
@@ -109,7 +110,7 @@ events:
     snapshot: c87f909cacb421a7b00aaeaabf0af3deac1b7cab04560a1b61e4b638446b964e
     quote: Après une première levée de fonds de 2,2 millions d’euros en début d’année
     basis: disclosed
-  review: pending
+  review: verified
   source_pass: pass2
 - id: jimmy-round-15m-2023
   instrument: equity
@@ -137,7 +138,7 @@ events:
       snapshot: c87f909cacb421a7b00aaeaabf0af3deac1b7cab04560a1b61e4b638446b964e
       quote: 'auprès de ses partenaires : EREN Industries, Noria, Otium Capital, Polytechnique Ventures et de nouveaux entrants'
       basis: disclosed
-    review: pending
+    review: verified
   - investor: Noria
     investor_slug: noria
     role: participant
@@ -146,7 +147,7 @@ events:
       snapshot: c87f909cacb421a7b00aaeaabf0af3deac1b7cab04560a1b61e4b638446b964e
       quote: 'auprès de ses partenaires : EREN Industries, Noria, Otium Capital, Polytechnique Ventures et de nouveaux entrants'
       basis: disclosed
-    review: pending
+    review: verified
   - investor: Otium Capital
     investor_slug: otium-capital
     role: participant
@@ -155,7 +156,7 @@ events:
       snapshot: c87f909cacb421a7b00aaeaabf0af3deac1b7cab04560a1b61e4b638446b964e
       quote: 'auprès de ses partenaires : EREN Industries, Noria, Otium Capital, Polytechnique Ventures et de nouveaux entrants'
       basis: disclosed
-    review: pending
+    review: verified
   - investor: Polytechnique Ventures
     investor_slug: polytechnique-ventures
     role: participant
@@ -164,8 +165,8 @@ events:
       snapshot: c87f909cacb421a7b00aaeaabf0af3deac1b7cab04560a1b61e4b638446b964e
       quote: 'auprès de ses partenaires : EREN Industries, Noria, Otium Capital, Polytechnique Ventures et de nouveaux entrants'
       basis: disclosed
-    review: pending
-  review: pending
+    review: verified
+  review: verified
   source_pass: pass2
 - id: jimmy-france-2030-phase-1-2023
   instrument: grant
@@ -199,8 +200,8 @@ events:
       snapshot: edd9b6e9af77b9eb5be37f3e74bc7cb10a8b818684df606ea4094527a74217d6
       quote: 'Nucléaire : l’Etat injecte 32 millions d''euros dans Jimmy dans le cadre du programme « France 2030 »'
       basis: disclosed
-    review: pending
-  review: pending
+    review: verified
+  review: verified
   source_pass: pass2
 agreements:
 - id: jimmy-photonis-arcys-cooperation-2023
@@ -216,12 +217,12 @@ agreements:
     snapshot: cea957dbbc846381afef53520b85d507b80cedc8e41d68f361ec54d571846e87
     quote: Jimmy est très heureux d’acter une coopération avec Photonis et ARCYS
     basis: disclosed
-  review: pending
+  review: verified
   source_pass: pass2
 - id: jimmy-toyo-tanso-graphite-2024
   counterparty: Toyo Tanso
   counterparty_slug: toyo-tanso
-  type: fuel_supply
+  type: partnership
   binding: definitive
   announced_on: '2024-04-15'
   summary: Supply contract for isotropic technical graphite for Jimmy's generators (dated 15 April 2024 in the release; listed
@@ -232,7 +233,7 @@ agreements:
     quote: Jimmy a signé un contrat avec le leader mondial de la production de graphites techniques isotropes. Toyo Tanso
       fournira à Jimmy le graphite nécessaire au fonctionnement de ses générateurs.
     basis: disclosed
-  review: pending
+  review: verified
   source_pass: pass2
 - id: jimmy-urenco-leu-plus-2024
   counterparty: Urenco
@@ -248,7 +249,7 @@ agreements:
     quote: We have signed a contract with Jimmy to supply low-enriched uranium plus (LEU+, enriched up to 10%) for its first
       high-temperature gas cooled (HTGR) micro reactor.
     basis: disclosed
-  review: pending
+  review: verified
   source_pass: pass2
 - id: jimmy-cristal-union-bazancourt-2026
   counterparty: Cristal Union (Cristanol, Bazancourt)
@@ -263,11 +264,16 @@ agreements:
     snapshot: e2ccb9c803fa5b79c637268f0f89dcf0d3b32b9fbea7e24bde3acf5d8129c290
     quote: Il sera en fonction dans une usine sucrière, dans la Région de Reims, sur Cristanol à Bazancourt
     basis: reported
-  review: pending
+  review: verified
   source_pass: pass2
 verification:
   status: verified
   by: verifier-agent (Claude Opus 5.5), 2026-10-05
   'on': '2026-10-05'
-  note: 0 corrections. EUR40M France 2030 and EUR40M equity round (Credit Mutuel Alliance Federale lead) confirmed against
-    NucNet/Bloomberg quotes (reported). Instrument of the France 2030 money (grant vs advance) not confirmed.
+  note: '0 corrections. EUR40M France 2030 and EUR40M equity round (Credit Mutuel Alliance Federale lead) confirmed against
+    NucNet/Bloomberg quotes (reported). Instrument of the France 2030 money (grant vs advance) not confirmed. Pass2 verification
+    (2026-10-05): 9 pending items verified, 2 fixes. EUR 15M kept (company round release); company Nov 2023 release says 17M,
+    conflict noted, not added. EUR 2.2M date conflict (page 2023-06-28 vs Wikipedia Feb 2022) noted in label. France 2030
+    phase 1 EUR 32M is stated as awarded to Jimmy (''l''Etat injecte 32 millions d''euros dans Jimmy''; creusot-infos ''obtenu
+    en phase 1 en 2023''), kept new_money; instrument (grant vs advance) unstated. Toyo Tanso graphite type fuel_supply ->
+    partnership (graphite is not fuel).'

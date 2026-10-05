@@ -214,7 +214,7 @@ events:
       basis: disclosed
 - id: last-energy-seed-2020
   instrument: equity
-  round_label: Seed
+  round_label: First disclosed funding, $3M led by First Round Capital (round name not stated in source)
   announced_on: '2020-02-25'
   amount:
     amount: 3000000
@@ -246,8 +246,8 @@ events:
       quote: First Round Capital led the funding for Last Energy
       basis: reported
       original_url: https://venturebeat.com/business/last-energy-raises-3-million-to-fight-climate-change-with-nuclear-energy/
-    review: pending
-  review: pending
+    review: verified
+  review: verified
   source_pass: pass2
 agreements:
 - id: last-energy-doe-reactor-pilot-otg-2025
@@ -349,7 +349,7 @@ agreements:
   counterparty: RATEN (Autonomous Directorate of Nuclear Energy Technologies, Romania)
   counterparty_slug: raten
   type: partnership
-  binding: mou
+  binding: loi
   announced_on: '2022-03-10'
   summary: Pilot project of a 20 MW small modular reactor on the Mioveni nuclear platform, announced by the Romanian prime
     minister. Agreement terms and value not stated.
@@ -360,7 +360,7 @@ agreements:
       Nuclear Energy Technologies (RATEN), will carry out on the nuclear platform in Mioveni a pilot project
     basis: reported
     original_url: https://www.romania-insider.com/last-energy-reactor-pitesti-mar-2022
-  review: pending
+  review: verified
   source_pass: pass2
 - id: last-energy-enea-loi-2022
   counterparty: Enea Group (Poland)
@@ -375,7 +375,7 @@ agreements:
     snapshot: 66e8ad838bf95bf88294a9694bc145b75191caca8fb0868fddeef5a277f89dbb
     quote: letter of intent for the joint development and potential deployment of 20-MW nuclear plants in Poland
     basis: reported
-  review: pending
+  review: verified
   source_pass: pass2
 - id: last-energy-lsez-loi-2022
   counterparty: Legnica Special Economic Zone (LSEZ) and DB Energy
@@ -397,7 +397,7 @@ agreements:
     snapshot: 36074dc102cc8769c910bd8c2e26ae8dc63af7bf8e2a6e02732f8c487082b920
     quote: The agreement also includes a power purchase agreement with a minimum length of 24 years
     basis: reported
-  review: pending
+  review: verified
   source_pass: pass2
 - id: last-energy-ksse-ppa-2023
   counterparty: Katowice Special Economic Zone (KSSE, Poland)
@@ -421,7 +421,7 @@ agreements:
     snapshot: 509a1b5e97953a7d1056e788bf5a33321d6fb5f6e3f965f8b7bf06e12aefea4a
     quote: The agreement represents over USD $4.3 billion in electricity sales over the lifetime of the contract
     basis: reported
-  review: pending
+  review: verified
   source_pass: pass2
 - id: last-energy-uk-ppas-2023
   counterparty: Undisclosed UK industrial partners (life sciences campus, sustainable fuels manufacturer, hyperscale data
@@ -436,7 +436,7 @@ agreements:
     snapshot: 509a1b5e97953a7d1056e788bf5a33321d6fb5f6e3f965f8b7bf06e12aefea4a
     quote: Last Energy on Wednesday also unveiled PPAs for 24 SMRs in the UK as part of three industrial partnerships
     basis: reported
-  review: pending
+  review: verified
   source_pass: pass2
 verification:
   status: verified
@@ -446,4 +446,7 @@ verification:
     Astera lead) and $64M cumulative (not counted) all match company releases; DOE voucher has no amount; EXIM $103.7M is
     a non-binding LOI recorded as agreement, not funding. Residual: the Haskell County ''agreement'' has no counterparty and
     its ''loi'' binding level is not stated in the source (a site-control plan). Gap: about $24M of pre-Series B money (seed/Series
-    A) not evidenced.'
+    A) not evidenced. Pass2 verification (2026-10-05): 6 pending items verified, 2 fixes. $3M 2020 round rests on VentureBeat
+    (reputable press, basis reported); label ''Seed'' removed because the source does not name the round. Wikipedia/PitchBook
+    $20M Series A is not recorded (correct). Romania/RATEN binding mou -> loi (no signed instrument in the quote, PM announcement
+    relayed by press).'

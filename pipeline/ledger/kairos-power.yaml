@@ -238,8 +238,8 @@ events:
       quote: The New Mexico Economic Development Department has committed $3 million in Local Economic Development Act (LEDA)
         funding for the project.
       basis: disclosed
-    review: pending
-  review: pending
+    review: verified
+  review: verified
   source_pass: pass2
 - id: kairos-nm-jtip-2024
   instrument: grant
@@ -261,16 +261,16 @@ events:
     quote: the project will receive $1.8 million in Job Training Incentive Program (JTIP) funding to train 100 new employees
     basis: disclosed
   participants:
-  - investor: New Mexico Economic Development Department
-    investor_slug: new-mexico-edd
+  - investor: New Mexico Job Training Incentive Program (JTIP)
+    investor_slug: nm-jtip
     role: grantor
     evidence:
     - field: participant
       snapshot: e6dbef008c536eb55583829a3ef95290c35debc53a0c88dd367734406f134f73
       quote: the project will receive $1.8 million in Job Training Incentive Program (JTIP) funding to train 100 new employees
       basis: disclosed
-    review: pending
-  review: pending
+    review: verified
+  review: verified
   source_pass: pass2
 - id: kairos-albuquerque-leda-2024
   instrument: grant
@@ -301,8 +301,8 @@ events:
       snapshot: e6dbef008c536eb55583829a3ef95290c35debc53a0c88dd367734406f134f73
       quote: The City of Albuquerque Economic Development Department has committed $500,000 through its LEDA fund
       basis: disclosed
-    review: pending
-  review: pending
+    review: verified
+  review: verified
   source_pass: pass2
 agreements:
 - id: google-master-plant-development-2024
@@ -362,7 +362,7 @@ agreements:
     quote: TVA will provide engineering, operations, and licensing support to help Kairos Power deploy its low-power demonstration
       reactor, named Hermes.
     basis: disclosed
-  review: pending
+  review: verified
   source_pass: pass2
 - id: kairos-materion-cda-2022
   counterparty: Materion Corporation
@@ -378,7 +378,7 @@ agreements:
     quote: As part of a Cooperative Development Agreement with Materion Corporation, Kairos Power has commissioned a Molten
       Salt Purification Plant (MSPP) at the Materion campus in Elmore, Ohio.
     basis: disclosed
-  review: pending
+  review: verified
   source_pass: pass2
 - id: kairos-lanl-fuel-agreement-2022
   counterparty: Los Alamos National Laboratory
@@ -392,7 +392,7 @@ agreements:
     snapshot: bb3f615d7d7a79de6900f7a708f3e07b4ec4cf4867fde285349f3bcc30a8564f
     quote: the company has signed an agreement to produce TRISO fuel pebbles for the Hermes demonstration reactor at Los Alamos
     basis: disclosed
-  review: pending
+  review: verified
   source_pass: pass2
 - id: kairos-texas-am-rellis-site-2025
   counterparty: Texas A&M University System
@@ -413,7 +413,7 @@ agreements:
     snapshot: 33491e952ba1d54f55419d94cd0b6f18716a832bb950c00102da37c34e67da1e
     quote: could potentially host one or more plants totaling 450+ MW in Kairos Power's commercial fleet
     basis: disclosed
-  review: pending
+  review: verified
   source_pass: pass2
 - id: kairos-bwxt-triso-collaboration-2025
   counterparty: BWX Technologies
@@ -429,7 +429,7 @@ agreements:
     quote: today announced an agreement to collaboratively explore technical and process opportunities for the optimization
       of commercial production of TRISO nuclear fuel
     basis: disclosed
-  review: pending
+  review: verified
   source_pass: pass2
 verification:
   status: verified
@@ -439,4 +439,7 @@ verification:
     ceiling; 2020 DOE selection announcement set to duplicate (supersedes ardp-doe-tia-2024); only the USAspending obligation
     ($135M, $126.858M outlaid) counts as new_money. Samsung C&T ''up to $100M'' binding term sheet (cash plus in-kind, subject
     to approvals) set to ceiling. Not confirmed: why USAspending obligation ($135M) is below the $303M ceiling; no equity
-    rounds evidenced (private, no Form D); the $3.3M SBA loan and UW pass-through left out.'
+    rounds evidenced (private, no Form D); the $3.3M SBA loan and UW pass-through left out. Pass2 verification (2026-10-05):
+    8 pending items verified, 1 fix. NM LEDA $3M, JTIP $1.8M, Albuquerque LEDA $0.5M are state incentives ''pending approval''
+    and stay ceilings (receipt not stated; city $0.5M may overlap state LEDA). JTIP grantor renamed to the programme named
+    in the quote (department not named).'

@@ -176,8 +176,8 @@ events:
       snapshot: 9a75de806fe49013e67169668ade5b2b155ebc845be7f6f9c59c622b40885a68
       quote: to General International Holdings, Inc. for $ 2.8 million or approximately $ 2.75 per share
       basis: disclosed
-    review: pending
-  review: pending
+    review: verified
+  review: verified
   source_pass: pass2
 - id: lightbridge-atm-sales-2018
   instrument: follow_on
@@ -207,8 +207,8 @@ events:
       quote: pursuant to which the Company could issue and sell shares of its common stock from time to time through B. Riley
         FBR, Inc. as the Company’s sales agent
       basis: disclosed
-    review: pending
-  review: pending
+    review: verified
+  review: verified
   source_pass: pass2
 - id: lightbridge-atm-sales-2019
   instrument: follow_on
@@ -227,7 +227,7 @@ events:
     snapshot: afce056d7fe4db448642e0655cbc3833ef4dcc4e94d036c7825480b142051d87
     quote: Net proceeds received from the ATM sales during the year ended December 31, 2019 were $3.8 million.
     basis: disclosed
-  review: pending
+  review: verified
   source_pass: pass2
 - id: lightbridge-atm-sales-2020
   instrument: follow_on
@@ -247,7 +247,7 @@ events:
     quote: For the year ended December 31, 2020, the Company sold approximately 3.3 million shares under the ATM, respectively,
       resulting in net proceeds of approximately $ 12.3 million.
     basis: disclosed
-  review: pending
+  review: verified
   source_pass: pass2
 - id: lightbridge-atm-sales-2021
   instrument: follow_on
@@ -267,7 +267,7 @@ events:
     quote: The Company sold approximately 2.0 million shares under the ATM for the year ended December 31, 2021 resulting
       in net proceeds of approximately $ 14.8 million
     basis: disclosed
-  review: pending
+  review: verified
   source_pass: pass2
 - id: lightbridge-atm-sales-2022
   instrument: follow_on
@@ -287,7 +287,7 @@ events:
     quote: The Company sold approximately 1.9 million shares, under the ATM for the year ended December 31, 2022 resulting
       in net proceeds of approximately $ 11.0 million.
     basis: disclosed
-  review: pending
+  review: verified
   source_pass: pass2
 - id: lightbridge-atm-sales-2023
   instrument: follow_on
@@ -307,7 +307,7 @@ events:
     quote: The Company sold 1,492,148 shares under the ATM for the year ended December 31, 2023 resulting in net proceeds
       of $ 6.4 million
     basis: disclosed
-  review: pending
+  review: verified
   source_pass: pass2
 agreements:
 - id: lightbridge-battelle-sppa
@@ -330,4 +330,6 @@ verification:
   'on': '2026-10-05'
   note: '6 corrections: Stifel and Jefferies ATM programmes set to ceiling; added four new_money events for net ATM proceeds
     actually received per the FY2025 10-K ($21.4M FY2024 Stifel, $36.4M 2025 Stifel, $139.6M 2025 Jefferies, $10.9M Jan-Feb
-    2026 Jefferies). Pre-2024 Stifel sales not recorded.'
+    2026 Jefferies). Pre-2024 Stifel sales not recorded. Pass2 verification (2026-10-05): 7 pending events verified, 0 fixes.
+    ATM net proceeds per year 2018-2023 are new_money from 10-Ks; no year overlaps existing 2024/2025/2026 events; programmes
+    remain ceilings. announced_on is the 10-K signature date, not the sale date.'

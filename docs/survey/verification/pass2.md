@@ -58,3 +58,42 @@ None were deleted. `ledger check` prints OK for all 18 files. Each ledger's `ver
 - **shine:** the $70M round rests on trade press only (WisBusiness). The company release was not retrieved.
 - **xcimer:** the Form D amounts are sold-to-date figures from tag-stripped XML. Field order was checked by arithmetic.
 - **Counterparty slugs:** Centrus appears as `centrus-energy` in antares-nuclear and as `centrus` in oklo. This needs resolving at the entity-resolution step.
+
+## Batch: kairos-power, last-energy, holtec-international, lightbridge, jimmy-energy, flibe-energy, moltex-energy (2026-10-05)
+Verifier: verifier-agent (Claude Opus 5.5). Every `review: pending` item (events, participants, agreements) is now `verified`, with `source_pass` kept. Nothing was deleted. `ledger check` prints OK for all seven ledgers.
+
+| ledger | items verified (incl. participants) | fixes |
+|---|---|---|
+| holtec-international | 15 | 5 |
+| kairos-power | 11 | 1 |
+| lightbridge | 9 | 0 |
+| last-energy | 7 | 2 |
+| jimmy-energy | 13 | 2 |
+| flibe-energy | 1 | 0 |
+| moltex-energy | 3 | 0 |
+
+### Targeted checks
+1. **Holtec related-party loans.** Harbor (founder-controlled) and Mariner (common ownership) are related-party lenders, and the instrument is debt.
+   - Facility limits are `ceiling`: Harbor $250M, later cut to $175M availability; Mariner $150M.
+   - Drawn amounts are `new_money`: Harbor $175M and Mariner $60M.
+   - The Harbor $175M is the balance outstanding as of July 2026, not the sum of all draws. The draws were $100M (2025), $125M (Jan 2026) and $50M (Jul 2026), with $125M outstanding at 2026-06-30, so repayments occurred. The label now says this.
+   - DOE Tier 1 $400M stays a `ceiling` ("expected", subject to a funding agreement). I added a quote for the conditions.
+   - Michigan $300M: the S-1/A states "cash received in 2024". The recipient is the subsidiary Holtec Palisades, treated as group funding, the same as the DOE loan. No other Michigan event exists, so nothing is counted twice. Receipt and recipient quotes were added.
+   - For the Harbor drawn, Mariner, Michigan and Tier 1 events and the three agreements, the only date available is the S-1/A filing date (2026-09-08). This is noted in the labels.
+2. **Lightbridge.** ATM net proceeds for 2018-2023 are `new_money` from the 10-Ks. No year overlaps the existing 2024, 2025 or 2026 events. The programmes remain ceilings.
+3. **Kairos.** The NM LEDA, JTIP and Albuquerque LEDA incentives are "pending approval", so they stay ceilings. The JTIP grantor is renamed to the programme the quote names.
+4. **Last Energy.**
+   - The $3M 2020 round rests on VentureBeat (basis `reported`). The "Seed" label was dropped because the source does not name the round.
+   - The Wikipedia/PitchBook $20M Series A is not recorded.
+   - The RATEN pilot's binding level changes from mou to loi.
+5. **Jimmy.**
+   - EUR 15M is kept, from the company's round release. The company's Nov 2023 release says EUR 17M; that conflict is noted.
+   - The EUR 2.2M date conflict is noted in its label.
+   - France 2030 phase 1 EUR 32M is stated as awarded to Jimmy ("l'Etat injecte 32 millions d'euros dans Jimmy"; creusot-infos says "obtenu en phase 1"), so it stays `new_money`. The instrument (grant or advance) is still unstated.
+   - Toyo Tanso graphite changes from fuel_supply to partnership.
+6. **Moltex.** The C$50.5M announcement is a `duplicate` with `supersedes: moltex-2020-canada-sif` (it also covers moltex-2021-acoa-regi-1).
+
+### Residual doubts
+- **Holtec:** the true dates of the Mariner loan and the Michigan grant are not stated.
+- **Jimmy:** the instrument behind the France 2030 funding is not stated.
+- **Last Energy:** the $3M round is evidenced by press only.

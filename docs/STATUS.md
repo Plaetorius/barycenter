@@ -5,9 +5,9 @@
 | | |
 |---|---|
 | Companies published | 91 (of 259 census candidates; rule D1: only companies with at least one evidenced funding event) |
-| Investors / public funders | 364 / 51 |
-| Funding events / agreements | 499 / 177 |
-| Evidence claims / archived source documents | 2,714 / 598 |
+| Investors / public funders | 387 / 55 |
+| Funding events / agreements | 522 / 194 |
+| Evidence claims / archived source documents | 2,812 / 624 |
 | Events with undisclosed amount | 70. Investor participations that state their own amount: 27 of 795 |
 | Fusion equity vs references | $9.4B vs The Fusion Report $11.5B (81%) and FIA $14.2B (66%) |
 | Tests | pipeline 29, site 4; axe WCAG 2 AA clean in light and dark; mobile checked at 320 px |

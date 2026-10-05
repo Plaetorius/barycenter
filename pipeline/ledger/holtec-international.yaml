@@ -55,7 +55,14 @@ verification:
     (Claude Opus 5.5), 2026-10-05: 3 corrections: DOE Palisades loan restated as a $1.52B up_to ceiling (S-1/A and DOE project
     page; USAspending $1,450,241,177 kept as evidence only); added the drawn amount as its own event (about $1.0B of FFB advances
     by 2026-06-30, S-1/A); added Federal Financing Bank as lender. Borrower is subsidiary Holtec Palisades LLC (noted). Withdrawn
-    IPO carries no amount. Not recorded: $300M Michigan grant.'
+    IPO carries no amount. Not recorded: $300M Michigan grant. Pass2 verification (verifier-agent Claude Opus 5.5, 2026-10-05):
+    9 pending items verified, 5 fixes. Harbor drawn $175M relabelled as outstanding balance net of repayments (draws $100M
+    2025, $125M Jan 2026, $50M Jul 2026; $125M at 2026-06-30), evidence added; Mariner ceiling/drawn announced_on evidence
+    switched to the S-1/A date line (July 2026 day not stated); Michigan $300M grant confirmed received in 2024 (recipient
+    subsidiary Holtec Palisades, consolidated) with evidence added, no other Michigan event so no double count; DOE Tier 1
+    $400M kept as ceiling with conditions quote. Facility limits are ceilings, drawn amounts new_money. Dates of Harbor drawn,
+    Mariner, Michigan, Tier 1 and the 3 agreements are only the S-1/A filing date (2026-09-08). Founder entity Harbor also
+    received $179M distributions from Holtec (not netted).'
 events:
 - id: holtec-2024-doe-palisades-loan
   instrument: debt
@@ -381,18 +388,28 @@ events:
       quote: Harbor Associates Limited Partnership (“Harbor”), an entity owned and controlled by our founder, Dr. Krishna
         P. Singh
       basis: disclosed
-    review: pending
-  review: pending
+    review: verified
+  review: verified
   source_pass: pass2
 - id: holtec-harbor-revolver-drawn-2026
   instrument: debt
-  round_label: Borrowed under the Harbor revolving loan, as of July 2026
+  round_label: Outstanding borrowings under the Harbor related-party revolver as of July 2026 (balance net of repayments;
+    draws stated were $100.0M by 2025-12-31, $125.0M Jan 2026, $50.0M Jul 2026; $125.0M outstanding at 2026-06-30)
   announced_on: '2026-09-08'
   amount:
     amount: 175000000
     currency: USD
     qualifier: exact
+  amount_kind: new_money
   evidence:
+  - field: drawn_2025
+    snapshot: 0a61f38e3067913034a407b93493f8ac035124cf8d019dea950f624905b80269
+    quote: As of December 31, 2025, the revolving loan was fully drawn.
+    basis: disclosed
+  - field: balance_2026h1
+    snapshot: 0a61f38e3067913034a407b93493f8ac035124cf8d019dea950f624905b80269
+    quote: As of June 30, 2026, the Company has borrowed $125.0 million under the 2025 RP Agreement.
+    basis: disclosed
   - field: announced_on
     snapshot: 0a61f38e3067913034a407b93493f8ac035124cf8d019dea950f624905b80269
     quote: PRELIMINARY PROSPECTUS (Subject to Completion, Dated September 8, 2026)
@@ -410,12 +427,13 @@ events:
       snapshot: 0a61f38e3067913034a407b93493f8ac035124cf8d019dea950f624905b80269
       quote: Revolving loan agreement with Harbor
       basis: disclosed
-    review: pending
-  review: pending
+    review: verified
+  review: verified
   source_pass: pass2
 - id: holtec-mariner-rp-loan-2026
   instrument: debt
-  round_label: Related-party loan agreement with Mariner Strategic Investments, LLC, up to $150.0M (entered July 2026)
+  round_label: Related-party loan agreement with Mariner Strategic Investments, LLC, up to $150.0M (entered July 2026; day
+    not stated, announced_on is the S-1/A date)
   announced_on: '2026-09-08'
   amount:
     amount: 150000000
@@ -424,6 +442,10 @@ events:
   amount_kind: ceiling
   evidence:
   - field: announced_on
+    snapshot: 0a61f38e3067913034a407b93493f8ac035124cf8d019dea950f624905b80269
+    quote: PRELIMINARY PROSPECTUS (Subject to Completion, Dated September 8, 2026)
+    basis: disclosed
+  - field: round_label
     snapshot: 0a61f38e3067913034a407b93493f8ac035124cf8d019dea950f624905b80269
     quote: In July 2026, the Company entered into a Related Party Loan Agreement
     basis: disclosed
@@ -440,19 +462,24 @@ events:
       snapshot: 0a61f38e3067913034a407b93493f8ac035124cf8d019dea950f624905b80269
       quote: with Mariner Strategic Investments, LLC, a related party under common ownership
       basis: disclosed
-    review: pending
-  review: pending
+    review: verified
+  review: verified
   source_pass: pass2
 - id: holtec-mariner-rp-loan-drawn-2026
   instrument: debt
-  round_label: Borrowed under the Mariner related-party loan, July 2026
+  round_label: Borrowed under the Mariner related-party loan, July 2026 (drawn part of the $150.0M ceiling holtec-mariner-rp-loan-2026)
   announced_on: '2026-09-08'
   amount:
     amount: 60000000
     currency: USD
     qualifier: exact
+  amount_kind: new_money
   evidence:
   - field: announced_on
+    snapshot: 0a61f38e3067913034a407b93493f8ac035124cf8d019dea950f624905b80269
+    quote: PRELIMINARY PROSPECTUS (Subject to Completion, Dated September 8, 2026)
+    basis: disclosed
+  - field: round_label
     snapshot: 0a61f38e3067913034a407b93493f8ac035124cf8d019dea950f624905b80269
     quote: In July 2026, the Company entered into a Related Party Loan Agreement
     basis: disclosed
@@ -469,19 +496,29 @@ events:
       snapshot: 0a61f38e3067913034a407b93493f8ac035124cf8d019dea950f624905b80269
       quote: with Mariner Strategic Investments, LLC, a related party under common ownership
       basis: disclosed
-    review: pending
-  review: pending
+    review: verified
+  review: verified
   source_pass: pass2
 - id: holtec-michigan-grant-palisades
   instrument: grant
-  round_label: State of Michigan grant for the Palisades restart (deposited to the project Restart Account)
+  round_label: State of Michigan grant for the Palisades restart (recipient subsidiary Holtec Palisades, deposited to the
+    project Restart Account; cash received in 2024; announced_on is the S-1/A date)
   announced_on: '2026-09-08'
   amount:
     amount: 300000000
     currency: USD
     qualifier: exact
+  amount_kind: new_money
   program: State of Michigan Palisades restart grant
   evidence:
+  - field: received
+    snapshot: 0a61f38e3067913034a407b93493f8ac035124cf8d019dea950f624905b80269
+    quote: cash received in 2024 of $300 million from the State of Michigan grant
+    basis: disclosed
+  - field: recipient
+    snapshot: 0a61f38e3067913034a407b93493f8ac035124cf8d019dea950f624905b80269
+    quote: Holtec Palisades was required to secure a grant of $300.0 million from the State of Michigan
+    basis: disclosed
   - field: announced_on
     snapshot: 0a61f38e3067913034a407b93493f8ac035124cf8d019dea950f624905b80269
     quote: PRELIMINARY PROSPECTUS (Subject to Completion, Dated September 8, 2026)
@@ -504,12 +541,13 @@ events:
       snapshot: 0a61f38e3067913034a407b93493f8ac035124cf8d019dea950f624905b80269
       quote: a $300 million grant from the State of Michigan, as well as our own capital investment
       basis: disclosed
-    review: pending
-  review: pending
+    review: verified
+  review: verified
   source_pass: pass2
 - id: holtec-doe-tier1-first-mover-2025
   instrument: grant
-  round_label: DOE Tier 1 First Mover Award (SMR-300 Pioneer One and Two at Palisades), expected, conditional
+  round_label: DOE Tier 1 First Mover Award (SMR-300 Pioneer One and Two at Palisades), selected Dec 2025, expected, conditional
+    on a funding agreement; announced_on is the S-1/A date
   announced_on: '2026-09-08'
   amount:
     amount: 400000000
@@ -526,6 +564,10 @@ events:
     snapshot: 0a61f38e3067913034a407b93493f8ac035124cf8d019dea950f624905b80269
     quote: which we expect will provide us a $400 million grant to accelerate deployment of our first dual-unit SMR-300 plant
     basis: disclosed
+  - field: conditions
+    snapshot: 0a61f38e3067913034a407b93493f8ac035124cf8d019dea950f624905b80269
+    quote: subject to certain conditions, including the negotiation and execution of a funding agreement
+    basis: disclosed
   participants:
   - investor: U.S. Department of Energy
     investor_slug: doe
@@ -535,8 +577,8 @@ events:
       snapshot: 0a61f38e3067913034a407b93493f8ac035124cf8d019dea950f624905b80269
       quote: selected by the DOE in December 2025 for its coveted Tier 1 First Mover Award
       basis: disclosed
-    review: pending
-  review: pending
+    review: verified
+  review: verified
   source_pass: pass2
 agreements:
 - id: holtec-wolverine-ppa-palisades
@@ -558,7 +600,7 @@ agreements:
     snapshot: 0a61f38e3067913034a407b93493f8ac035124cf8d019dea950f624905b80269
     quote: We have entered into PPAs with regional electric cooperatives with an initial term of 28 years
     basis: disclosed
-  review: pending
+  review: verified
   source_pass: pass2
 - id: holtec-hoosier-ppa-palisades
   counterparty: Hoosier Energy
@@ -579,7 +621,7 @@ agreements:
     snapshot: 0a61f38e3067913034a407b93493f8ac035124cf8d019dea950f624905b80269
     quote: We have entered into PPAs with regional electric cooperatives with an initial term of 28 years
     basis: disclosed
-  review: pending
+  review: verified
   source_pass: pass2
 - id: holtec-hyundai-ec-teaming-smr300
   counterparty: Hyundai Engineering and Construction Co., Ltd.
@@ -595,5 +637,5 @@ agreements:
     quote: We have collaborated with Hyundai E&C under a teaming agreement to serve as our exclusive EPC delivery partner
       for our SMR-300s.
     basis: disclosed
-  review: pending
+  review: verified
   source_pass: pass2

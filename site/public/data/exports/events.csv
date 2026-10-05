@@ -121,6 +121,7 @@ first-light-fusion-ukaea-fip-lithium-2026,first-light-fusion,grant,"UKAEA Fusion
 first-light-fusion-ukaea-simulation-2025,first-light-fusion,grant,UKAEA Industry Simulation Software for Fusion contract (amount not stated),2025-12-09,,,,,new_money,,
 first-light-fusion-first-close-2026,first-light-fusion,equity,First close of new funding round,2026-04-21,25000000.0,GBP,33800000.0,exact,new_money,,
 flibe-energy-dene0008845,flibe-energy,grant,DENE0008845,2019-03-29,852481.36,USD,852481.36,exact,new_money,852481.36,540234.79
+flibe-energy-form-d-2018,flibe-energy,equity,"Form D offering (Rule 506(b)); first sale 2018-11-26, 16 investors, offering size $5,000,000",2018-12-10,2128028.0,USD,2128028.0,exact,new_money,,
 focused-energy-series-a-2026,focused-energy,equity,Series A,2026-05-27,240000000.0,USD,240000000.0,exact,new_money,,
 focused-energy-cumulative-private-2026,focused-energy,equity,Cumulative private capital (statement),2026-06-02,300000000.0,USD,300000000.0,exact,cumulative,,
 focused-energy-doe-milestone-desc0024883,focused-energy,grant,DOE Milestone-Based Fusion Development Program,2024-06-03,7500000.0,USD,7500000.0,exact,new_money,7500000.0,2150000.0
@@ -188,18 +189,30 @@ holtec-international-dene0008833,holtec-international,grant,DOE-NE U.S. Industry
 holtec-international-dene0008843,holtec-international,grant,"DOE-NE U.S. Industry Opportunities cooperative agreement DE-NE0008843, SMR-160 passive safety test programme (recipient Holtec Government Services LLC)",2020-09-08,182211.2,USD,182211.2,exact,new_money,182211.2,94102.55
 holtec-international-dene0009055,holtec-international,grant,"DOE ARDP risk-reduction cooperative agreement DE-NE0009055, SMR-160 (recipient Holtec Government Services LLC)",2021-11-01,104148813.0,USD,104148813.0,exact,new_money,104148813.0,104140465.13
 holtec-international-dene0009336,holtec-international,grant,DOE consent-based siting grant DE-NE0009336 (recipient Holtec Government Services LLC),2023-09-25,1986226.0,USD,1986226.0,exact,new_money,1986226.0,1142699.34
+holtec-harbor-revolver-2025,holtec-international,debt,"Related-party revolving loan facility from Harbor Associates LP (founder-controlled), limit raised to $250.0M",2025-10-24,250000000.0,USD,250000000.0,up_to,ceiling,,
+holtec-harbor-revolver-drawn-2026,holtec-international,debt,"Outstanding borrowings under the Harbor related-party revolver as of July 2026 (balance net of repayments; draws stated were $100.0M by 2025-12-31, $125.0M Jan 2026, $50.0M Jul 2026; $125.0M outstanding at 2026-06-30)",2026-09-08,175000000.0,USD,175000000.0,exact,new_money,,
+holtec-mariner-rp-loan-2026,holtec-international,debt,"Related-party loan agreement with Mariner Strategic Investments, LLC, up to $150.0M (entered July 2026; day not stated, announced_on is the S-1/A date)",2026-09-08,150000000.0,USD,150000000.0,up_to,ceiling,,
+holtec-mariner-rp-loan-drawn-2026,holtec-international,debt,"Borrowed under the Mariner related-party loan, July 2026 (drawn part of the $150.0M ceiling holtec-mariner-rp-loan-2026)",2026-09-08,60000000.0,USD,60000000.0,exact,new_money,,
+holtec-michigan-grant-palisades,holtec-international,grant,"State of Michigan grant for the Palisades restart (recipient subsidiary Holtec Palisades, deposited to the project Restart Account; cash received in 2024; announced_on is the S-1/A date)",2026-09-08,300000000.0,USD,300000000.0,exact,new_money,,
+holtec-doe-tier1-first-mover-2025,holtec-international,grant,"DOE Tier 1 First Mover Award (SMR-300 Pioneer One and Two at Palisades), selected Dec 2025, expected, conditional on a funding agreement; announced_on is the S-1/A date",2026-09-08,400000000.0,USD,400000000.0,up_to,ceiling,,
 hyperjet-fusion-desc0018765,hyperjet-fusion,grant,DESC0018765,2018-07-06,150000.0,USD,150000.0,exact,new_money,150000.0,
 hyperjet-fusion-dear0001236,hyperjet-fusion,grant,DEAR0001236,2020-03-27,500000.0,USD,500000.0,exact,new_money,500000.0,150000.0
 hyperjet-fusion-dear0001268,hyperjet-fusion,grant,DEAR0001268,2020-06-29,2838034.0,USD,2838034.0,exact,new_money,2838034.0,2066080.46
 inertia-series-a-2026,inertia-enterprises,equity,Series A,2026-02-11,450000000.0,USD,450000000.0,up_to,new_money,,
 jimmy-2026-france-2030-phase-two,jimmy-energy,grant,"France 2030 innovative nuclear reactors, Phase Two",2026-03-10,40000000.0,EUR,46564000.0,exact,new_money,,
 jimmy-2026-equity-round,jimmy-energy,equity,2026 fundraising round (private half of EUR80M),2026-03-10,40000000.0,EUR,46564000.0,exact,new_money,,
+jimmy-seed-2022,jimmy-energy,equity,"First fundraising, EUR 2.2M (date conflict, see notes; source page dated 2023-06-28 says it was early that year, Wikipedia gives Feb 2022)",2023-06-28,2200000.0,EUR,2406360.0,exact,new_money,,
+jimmy-round-15m-2023,jimmy-energy,equity,Fundraising of EUR 15M with existing partners and new entrants,2023-06-28,15000000.0,EUR,16407000.0,exact,new_money,,
+jimmy-france-2030-phase-1-2023,jimmy-energy,grant,"France 2030 'Réacteurs nucléaires innovants' call, phase 1",2023-11-27,32000000.0,EUR,35043200.0,exact,new_money,,
 jupiter-volta-dear0002055,jupiter-volta,grant,DEAR0002055,2026-03-26,3650757.0,USD,3650757.0,exact,new_money,3650757.0,38465.24
 ardp-doe-announced-2020,kairos-power,cost_share,ARDP Risk Reduction for Future Demonstration (Hermes),2020-12-16,303000000.0,USD,303000000.0,exact,duplicate,,
 ardp-doe-tia-2024,kairos-power,cost_share,ARDP risk reduction Technology Investment Agreement (fixed-price milestones),2024-02-21,303000000.0,USD,303000000.0,up_to,ceiling,,
 ardp-usaspending-obligated,kairos-power,cost_share,ARDP risk reduction award DENE0009325 as recorded in USAspending,2024-02-12,135000000.0,USD,135000000.0,exact,new_money,135000000.0,126858000.0
 doe-industry-opportunities-2020,kairos-power,grant,U.S. Industry Opportunities for Advanced Nuclear Technology Development (DE-FOA-0001817),2020-03-26,500000.0,USD,500000.0,exact,new_money,500000.0,
 samsung-ct-strategic-investment-2026,kairos-power,equity,Strategic investment (binding term sheet),2026-09-21,100000000.0,USD,100000000.0,up_to,ceiling,,
+kairos-nm-leda-2024,kairos-power,grant,"New Mexico Local Economic Development Act (LEDA) funding, committed (pending approval)",2024-09-16,3000000.0,USD,3000000.0,exact,ceiling,,
+kairos-nm-jtip-2024,kairos-power,grant,New Mexico Job Training Incentive Program (JTIP) funding (pending approval),2024-09-16,1800000.0,USD,1800000.0,exact,ceiling,,
+kairos-albuquerque-leda-2024,kairos-power,grant,City of Albuquerque LEDA commitment (fiscal agent for state funding; pending approval),2024-09-16,500000.0,USD,500000.0,exact,ceiling,,
 kf-series-d-first-close-equity-2026-08,kyoto-fusioneering,equity,Series D (first close),2026-08-24,16720000000.0,JPY,105001600.0,exact,new_money,,
 kf-series-d-credit-facilities-2026-08,kyoto-fusioneering,debt,Series D package: credit and loan facilities,2026-08-24,9000000000.0,JPY,56520000.0,up_to,ceiling,,
 kf-series-c-ext-final-close-equity-2025-09,kyoto-fusioneering,equity,"Series C Extension (final close, new equity)",2025-09-09,1450000000.0,JPY,9874500.0,exact,new_money,,
@@ -212,12 +225,20 @@ last-energy-series-b-2024,last-energy,equity,Series B,2024-08-29,40000000.0,USD,
 last-energy-cumulative-64m-2024,last-energy,equity,cumulative capital raised to Aug 2024,2024-08-29,64000000.0,USD,64000000.0,exact,cumulative,,
 last-energy-series-c-2025,last-energy,equity,Series C,2025-12-16,100000000.0,USD,100000000.0,over,new_money,,
 last-energy-doe-ott-voucher-2024,last-energy,voucher,DOE Clean Technology Accelerator (in-kind voucher),2024-10-29,,,,,new_money,,
+last-energy-seed-2020,last-energy,equity,"First disclosed funding, $3M led by First Round Capital (round name not stated in source)",2020-02-25,3000000.0,USD,3000000.0,exact,new_money,,
 lightbridge-stifel-atm-2019,lightbridge,follow_on,ATM programme (Stifel),2019-05-28,,,,,ceiling,,
 lightbridge-jefferies-atm-2025,lightbridge,follow_on,ATM programme (Jefferies),2025-06-05,75000000.0,USD,75000000.0,up_to,ceiling,,
 lightbridge-stifel-atm-sales-2024,lightbridge,follow_on,"ATM sales under Stifel agreement, FY2024 (net proceeds)",2026-02-26,21400000.0,USD,21400000.0,exact,new_money,,
 lightbridge-stifel-atm-sales-2025,lightbridge,follow_on,"ATM sales under Stifel agreement, 2025 (net proceeds)",2026-02-26,36400000.0,USD,36400000.0,exact,new_money,,
 lightbridge-jefferies-atm-sales-2025,lightbridge,follow_on,"ATM sales under Jefferies agreement, 2025 (net proceeds)",2026-02-26,139600000.0,USD,139600000.0,exact,new_money,,
 lightbridge-jefferies-atm-sales-2026q1,lightbridge,follow_on,"ATM sales under Jefferies agreement, Jan 1 to Feb 26 2026 (net proceeds)",2026-02-26,10900000.0,USD,10900000.0,approx,new_money,,
+lightbridge-series-a-preferred-2016,lightbridge,equity,Series A Non-Voting Convertible Preferred Stock (private placement),2016-08-02,2800000.0,USD,2800000.0,exact,new_money,,
+lightbridge-atm-sales-2018,lightbridge,follow_on,"ATM sales under the B. Riley FBR agreement, 2018 (net proceeds)",2019-03-29,28800000.0,USD,28800000.0,approx,new_money,,
+lightbridge-atm-sales-2019,lightbridge,follow_on,"ATM sales, 2019 (net proceeds; B. Riley 2018 ATM to 2019-03-29, then Stifel 2019 ATM)",2020-03-18,3800000.0,USD,3800000.0,exact,new_money,,
+lightbridge-atm-sales-2020,lightbridge,follow_on,"ATM sales under Stifel agreement, 2020 (net proceeds)",2022-03-31,12300000.0,USD,12300000.0,approx,new_money,,
+lightbridge-atm-sales-2021,lightbridge,follow_on,"ATM sales under Stifel agreement, 2021 (net proceeds)",2022-03-31,14800000.0,USD,14800000.0,approx,new_money,,
+lightbridge-atm-sales-2022,lightbridge,follow_on,"ATM sales under Stifel agreement, 2022 (net proceeds)",2023-03-30,11000000.0,USD,11000000.0,approx,new_money,,
+lightbridge-atm-sales-2023,lightbridge,follow_on,"ATM sales under Stifel agreement, 2023 (net proceeds)",2024-03-04,6400000.0,USD,6400000.0,exact,new_money,,
 lis-technologies-round-2026-01,lis-technologies,equity,Fourth oversubscribed funding round,2026-01-13,17000000.0,USD,17000000.0,exact,new_money,,
 lis-technologies-cumulative-2026-01,lis-technologies,equity,Cumulative funding to date,2026-01-13,64000000.0,USD,64000000.0,exact,cumulative,,
 lis-form-d-2023-03-15,lis-technologies,equity,Form D offering (unlabelled; first sale 2023-03-15),2023-08-22,107406.0,USD,107406.0,exact,new_money,,
@@ -256,6 +277,8 @@ moltex-2024-acoa-regi-2,moltex-energy,grant,ACOA REGI Business Scale-up and Prod
 moltex-cumulative-funding,moltex-energy,other,"Cumulative private and public funding (company statement, not a round)",2026-08-13,96000000.0,CAD,68821440.0,over,cumulative,,
 moltex-energy-dear0000989,moltex-energy,grant,ARPA-E MEITNER cooperative agreement DE-AR0000989 (recipient Moltex Energy USA LLC),2019-04-09,239160.55,USD,239160.55,exact,new_money,239160.55,239160.55
 moltex-energy-dear0001296,moltex-energy,grant,ARPA-E GEMINA cooperative agreement DE-AR0001296 (recipient Moltex Energy USA LLC),2020-09-23,19702.02,USD,19702.02,exact,new_money,19702.02,7513.7
+moltex-2019-idom-investment,moltex-energy,equity,"Strategic investment by IDOM (multi-million USD, amount undisclosed)",2019-04-03,,,,,new_money,,
+moltex-2021-canada-announcement-50m,moltex-energy,debt,Government of Canada announcement: SIF C$47.5M plus REGI C$3M (same money as moltex-2020-canada-sif and moltex-2021-acoa-regi-1),2021-03-18,50500000.0,CAD,40579780.0,exact,duplicate,,
 naarea-cumulative-raised,naarea,other,"Cumulative successive fundraisings (press statement, not a round)",2026-01-15,90000000.0,EUR,104616000.0,approx,cumulative,,
 naarea-france-2030-grant,naarea,grant,France 2030 public money (award date not stated; announced_on = article date),2026-01-15,10000000.0,EUR,11624000.0,approx,new_money,,
 nano-seed-2022,nano-nuclear-energy,equity,Seed,2022-03-01,375000.0,USD,375000.0,exact,new_money,,
