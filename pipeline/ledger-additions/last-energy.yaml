@@ -1,0 +1,116 @@
+company: last-energy
+name: Last Energy Inc.
+sector: fission
+notes: 'Pass 2 gap-fill. Searched: EDGAR Form D full-text for ''Last Energy'' finds only two issuer entities ''VI Last Energy SPV I'' (CIK 2062660, Form D 2025-08-07, $1,010,000 sold, 1 investor) and ''VI Last Energy SPV II'' (CIK 2091008, Form D 2025-10-14, $1,155,400 sold, 3 investors), both series of Vineyard Master LLC (a pooled investment fund, Rule 506(b)); the name implies they are investor vehicles holding Last Energy stock, but no filing states the amount invested in Last Energy, so they are NOT recorded as events (possible overlap with the Series C). No Form D by Last Energy Inc. itself was found, so the Series A and the rest of the pre-Series B money ($64M cumulative minus $40M) cannot be sized from filings. Seed: VentureBeat 2020-02-25 (Wayback copy; direct fetch hit HTTP 429) says Last Energy raised $3 million led by First Round Capital (reported). Wikipedia states a ''$20 million Series A led by Gigafund in 2020'' citing PitchBook only; NOT recorded (no primary or press source reached; WebSearch budget exhausted). Note $3M + $20M + $40M = $63M, near the company''s $64M cumulative, consistent but unproven. Series B/C already recorded; lastenergy.com press listing (June 2024 onward) read in full for grants: none beyond the in-kind DOE voucher; South Wales project says ''No Public Funding Required'' (2024-10-15). Agreements added: Romania/RATEN pilot (2022-03, Romania Insider via Wayback; terms unclear, recorded mou), Poland Enea LOI (NucNet 2022-06-28), LSEZ LOI (WNN 2022-07-29), KSSE PPA and 24 UK PPAs (POWER 2023-03-23). Romanian CNCAN pre-authorization completion (2024-10-07) is a regulatory step, not an agreement, and is not recorded. Texas/Haskell: existing agreement kept; no counterparty beyond the site plan found. All PPAs/LOIs are non-funding agreements; capacity for KSSE derived from ''10 20-MWe plants''.'
+events:
+- id: last-energy-seed-2020
+  instrument: equity
+  round_label: Seed
+  announced_on: '2020-02-25'
+  amount:
+    amount: 3000000
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: 4b43bcb4db1f8eb4752cbb6a3e3cde82796b58ef1fc3601a4f725dafd7dd7b90
+    quote: Dean Takahashi @deantak February 25, 2020
+    basis: reported
+    original_url: https://venturebeat.com/business/last-energy-raises-3-million-to-fight-climate-change-with-nuclear-energy/
+  - field: amount
+    snapshot: 4b43bcb4db1f8eb4752cbb6a3e3cde82796b58ef1fc3601a4f725dafd7dd7b90
+    quote: Last Energy has raised $3 million to fight climate change
+    basis: reported
+    original_url: https://venturebeat.com/business/last-energy-raises-3-million-to-fight-climate-change-with-nuclear-energy/
+  - field: round_label
+    snapshot: 4b43bcb4db1f8eb4752cbb6a3e3cde82796b58ef1fc3601a4f725dafd7dd7b90
+    quote: First Round Capital led the funding for Last Energy
+    basis: reported
+    original_url: https://venturebeat.com/business/last-energy-raises-3-million-to-fight-climate-change-with-nuclear-energy/
+  participants:
+  - investor: First Round Capital
+    investor_slug: first-round-capital
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 4b43bcb4db1f8eb4752cbb6a3e3cde82796b58ef1fc3601a4f725dafd7dd7b90
+      quote: First Round Capital led the funding for Last Energy
+      basis: reported
+      original_url: https://venturebeat.com/business/last-energy-raises-3-million-to-fight-climate-change-with-nuclear-energy/
+agreements:
+- id: last-energy-romania-raten-pilot-2022
+  counterparty: RATEN (Autonomous Directorate of Nuclear Energy Technologies, Romania)
+  counterparty_slug: raten
+  type: partnership
+  binding: mou
+  announced_on: '2022-03-10'
+  summary: Pilot project of a 20 MW small modular reactor on the Mioveni nuclear platform, announced by the Romanian prime minister. Agreement terms and value not stated.
+  evidence:
+  - field: agreement
+    snapshot: c057f36ec87f6bb88293f1251987c1e910dd381f256d5c49325e22fc9f3d63f8
+    quote: Last Energy, specialising in small modular nuclear reactors, together with Romania's Autonomous Directorate of Nuclear Energy Technologies (RATEN), will carry out on the nuclear platform in Mioveni a pilot project
+    basis: reported
+    original_url: https://www.romania-insider.com/last-energy-reactor-pitesti-mar-2022
+- id: last-energy-enea-loi-2022
+  counterparty: Enea Group (Poland)
+  counterparty_slug: enea
+  type: partnership
+  binding: loi
+  announced_on: '2022-06-28'
+  summary: Letter of intent for joint development and potential deployment of 20 MW plants in Poland, possibly via a jointly owned company. No value stated.
+  evidence:
+  - field: agreement
+    snapshot: 66e8ad838bf95bf88294a9694bc145b75191caca8fb0868fddeef5a277f89dbb
+    quote: letter of intent for the joint development and potential deployment of 20-MW nuclear plants in Poland
+    basis: reported
+- id: last-energy-lsez-loi-2022
+  counterparty: Legnica Special Economic Zone (LSEZ) and DB Energy
+  counterparty_slug: legnica-special-economic-zone
+  type: ppa
+  binding: loi
+  announced_on: '2022-07-29'
+  capacity_mw: 200
+  term_years: 24
+  summary: Letter of intent for a ten-SMR, 200 MWe plant with a power purchase agreement of at least 24 years by LSEZ and its tenants; company cites over USD 1 billion of investment (its own figure).
+  evidence:
+  - field: agreement
+    snapshot: 36074dc102cc8769c910bd8c2e26ae8dc63af7bf8e2a6e02732f8c487082b920
+    quote: signed a Letter of Intent with Poland's Legnica Special Economic Zone and DB Energy on the construction of a power plant consisting of ten SMRs with a combined capacity of 200 MWe
+    basis: reported
+  - field: term_years
+    snapshot: 36074dc102cc8769c910bd8c2e26ae8dc63af7bf8e2a6e02732f8c487082b920
+    quote: The agreement also includes a power purchase agreement with a minimum length of 24 years
+    basis: reported
+- id: last-energy-ksse-ppa-2023
+  counterparty: Katowice Special Economic Zone (KSSE, Poland)
+  counterparty_slug: katowice-special-economic-zone
+  type: ppa
+  binding: definitive
+  announced_on: '2023-03-22'
+  capacity_mw: 200
+  value:
+    amount: 4300000000
+    currency: USD
+    qualifier: over
+  summary: PPAs for 10 PWR-20 plants (20 MWe each) with KSSE; company states over USD 4.3 billion of electricity sales over the contract lifetime. First plant could be commissioned in 2026 (company claim).
+  evidence:
+  - field: agreement
+    snapshot: 509a1b5e97953a7d1056e788bf5a33321d6fb5f6e3f965f8b7bf06e12aefea4a
+    quote: it signed PPAs for 10 20-MWe plants with Katowice Special Economic Zone (KSSE)
+    basis: reported
+  - field: value
+    snapshot: 509a1b5e97953a7d1056e788bf5a33321d6fb5f6e3f965f8b7bf06e12aefea4a
+    quote: The agreement represents over USD $4.3 billion in electricity sales over the lifetime of the contract
+    basis: reported
+- id: last-energy-uk-ppas-2023
+  counterparty: Undisclosed UK industrial partners (life sciences campus, sustainable fuels manufacturer, hyperscale data centre developer)
+  counterparty_slug: undisclosed-uk-industrial-partners
+  type: ppa
+  binding: definitive
+  announced_on: '2023-03-22'
+  summary: PPAs for 24 PWR-20 SMR units with three UK industrial partnerships; counterparties not named.
+  evidence:
+  - field: agreement
+    snapshot: 509a1b5e97953a7d1056e788bf5a33321d6fb5f6e3f965f8b7bf06e12aefea4a
+    quote: Last Energy on Wednesday also unveiled PPAs for 24 SMRs in the UK as part of three industrial partnerships
+    basis: reported

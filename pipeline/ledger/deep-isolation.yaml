@@ -1,25 +1,43 @@
 company: deep-isolation
 name: Deep Isolation
 sector: fission
-notes: 'Built from USAspending spending_by_award search responses (POST, archived with request body in raw/manifest.jsonl, source_id
-  usaspending-post). Amount = USAspending ''Award Amount'' (cumulative federal obligation, not a ceiling and not an announced figure);
-  disbursed_usd = ''Total Outlays'' when present. Dates = ''Base Obligation Date'' (first obligation), else ''Start Date''. Search
-  was recipient-name text on awarding agency = Department of Energy over 2007-10-01..2026-09-30 and one page of up to 50 rows per
-  award-type group; awards with zero or negative net obligation are omitted. Recipient name variants not matched by the name search
-  may be missing. Government record, basis=disclosed. VERIFIER: Scope: recipient on all three awards is DEEP ISOLATION US, LLC (UEI
-  KFTAMCDMMCF1), the US operating entity of Deep Isolation Nuclear, Inc.; treated as the company. Deep Isolation is a back-end (deep-borehole
-  waste disposal) company, not a reactor or fuel developer.'
+notes: 'Built from USAspending spending_by_award search responses (POST, archived with request body in raw/manifest.jsonl,
+  source_id usaspending-post). Amount = USAspending ''Award Amount'' (cumulative federal obligation, not a ceiling and not
+  an announced figure); disbursed_usd = ''Total Outlays'' when present. Dates = ''Base Obligation Date'' (first obligation),
+  else ''Start Date''. Search was recipient-name text on awarding agency = Department of Energy over 2007-10-01..2026-09-30
+  and one page of up to 50 rows per award-type group; awards with zero or negative net obligation are omitted. Recipient name
+  variants not matched by the name search may be missing. Government record, basis=disclosed. VERIFIER: Scope: recipient on
+  all three awards is DEEP ISOLATION US, LLC (UEI KFTAMCDMMCF1), the US operating entity of Deep Isolation Nuclear, Inc.;
+  treated as the company. Deep Isolation is a back-end (deep-borehole waste disposal) company, not a reactor or fuel developer.
+
+  [pass2] Pass 2. Added the $33M private placement that closed with the reverse merger into Deep Isolation Nuclear, Inc. (formerly
+  Aspen-1 Acquisition Inc., CIK 1918080; OTCQB DBHL). Company release 2025-07-24 says $33 million; the Form D (filed 2025-08-08,
+  accession 0001213900-25-073238) states $33,037,348 sold to 241 investors (same money, not a second event; its XML tags are
+  not quotable so it is not attached as evidence). Investors are not named in any source read; placement agents (Seaport Global,
+  Benchmark, Dinosaur Financial, Network 1, Phoenix; cash fees of $3,143,387 per the FY2025 10-K) are not investors and are
+  not recorded as participants. The two DOE announcements of 2026 (ARPA-E SCALEUP Ready 2026-04-07: ARPA-E ''committed up
+  to $40 million to support two projects'' with no split; Project GENESIS three grants 2026-07-23) state no amount for Deep
+  Isolation, so they are recorded without amount (SCALEUP kept as ceiling kind: a selection, not an obligation). No debt,
+  ATM or later equity found in EDGAR full-text hits (8-Ks to 2026-10-02 checked: permit, Genesis, annual meeting, compensation).
+  Pre-merger private rounds of Deep Isolation, Inc. (2016-2024) not found in sources read (10-K not mined for historical preferred
+  rounds). WebSearch not used (budget spent).'
 verification:
   status: verified
   by: verifier-agent (claude-opus-5-5), 2026-10-05
   'on': '2026-10-05'
-  note: 'Verified 3 events (DEAR0001621 $3.59M ARPA-E ONWARDS STTR; DEAR0001797 $0.44M ARPA-E CREATE; DESC0025094 $0.20M SBIR), 0
-    amount/date errors. Checked against the archived USAspending award-level search (spending_level awards: one row per award, modifications
-    already netted, so one event per award and no per-modification duplicates). Award Amount = obligated to date (not a ceiling);
-    disbursed_usd = Total Outlays, now evidenced by its own quote (3 added). announced_on is the first-obligation date, not a press
-    date. Identity: recipient is the US LLC subsidiary, noted. SCOPE: evidence verified; entity is nuclear back-end (waste disposal).
-    It is in the fission census as back_end, so it fits a nuclear-funding map if the map covers the fuel cycle; tag it as non-generation.
-    Gaps: equity rounds and the ~$33M private placement in the census are not in this ledger.'
+  note: 'Verified 3 events (DEAR0001621 $3.59M ARPA-E ONWARDS STTR; DEAR0001797 $0.44M ARPA-E CREATE; DESC0025094 $0.20M SBIR),
+    0 amount/date errors. Checked against the archived USAspending award-level search (spending_level awards: one row per
+    award, modifications already netted, so one event per award and no per-modification duplicates). Award Amount = obligated
+    to date (not a ceiling); disbursed_usd = Total Outlays, now evidenced by its own quote (3 added). announced_on is the
+    first-obligation date, not a press date. Identity: recipient is the US LLC subsidiary, noted. SCOPE: evidence verified;
+    entity is nuclear back-end (waste disposal). It is in the fission census as back_end, so it fits a nuclear-funding map
+    if the map covers the fuel cycle; tag it as non-generation. Gaps: equity rounds and the ~$33M private placement in the
+    census are not in this ledger.
+
+    [pass2 verify 2026-10-05, claude-opus-5-5] 3 pending items verified. 1 correction: Project GENESIS event program text
+    now states that LBNL and USC are the recipients and Deep Isolation is only the industrial partner (not company funding;
+    no amount). $33M private placement verified against the company release (Form D $33,037,348 is the same money, not added).
+    SCALEUP Ready kept as ceiling without amount.'
 events:
 - id: deep-isolation-dear0001621
   instrument: grant
@@ -34,12 +52,13 @@ events:
   program: ARPA-E
   obligated_usd: 3590410.0
   disbursed_usd: 3492213.17
-  use_of_proceeds: 'DEEP ISOLATION US LLC: NEW ONWARDS STTR AWARD. CONTROL NUMBER: 2531-1505 PROJECT TITLE: UPWARDS: UNIVERSAL PER'
+  use_of_proceeds: 'DEEP ISOLATION US LLC: NEW ONWARDS STTR AWARD. CONTROL NUMBER: 2531-1505 PROJECT TITLE: UPWARDS: UNIVERSAL
+    PER'
   evidence:
   - field: amount
     snapshot: 2448222fe79f319caac6485b64353f1e28790ad32053311d9a2784fb510d7555
-    quote: '"Award ID": "DEAR0001621", "Recipient Name": "DEEP ISOLATION US, LLC", "Recipient UEI": "KFTAMCDMMCF1", "Award Amount":
-      3590410.0'
+    quote: '"Award ID": "DEAR0001621", "Recipient Name": "DEEP ISOLATION US, LLC", "Recipient UEI": "KFTAMCDMMCF1", "Award
+      Amount": 3590410.0'
     basis: disclosed
   - field: disbursed_usd
     snapshot: 2448222fe79f319caac6485b64353f1e28790ad32053311d9a2784fb510d7555
@@ -79,12 +98,13 @@ events:
   program: ARPA-E
   obligated_usd: 441674.0
   disbursed_usd: 441674.0
-  use_of_proceeds: 'DEEP ISOLATION, NEW CREATE TOPIC C AWARD (SBIR/STTR) CONTROL NUMBER: 2785-1553 PROJECT TITLE: SEQUENTIAL ADVAN'
+  use_of_proceeds: 'DEEP ISOLATION, NEW CREATE TOPIC C AWARD (SBIR/STTR) CONTROL NUMBER: 2785-1553 PROJECT TITLE: SEQUENTIAL
+    ADVAN'
   evidence:
   - field: amount
     snapshot: 2448222fe79f319caac6485b64353f1e28790ad32053311d9a2784fb510d7555
-    quote: '"Award ID": "DEAR0001797", "Recipient Name": "DEEP ISOLATION US, LLC", "Recipient UEI": "KFTAMCDMMCF1", "Award Amount":
-      441674.0'
+    quote: '"Award ID": "DEAR0001797", "Recipient Name": "DEEP ISOLATION US, LLC", "Recipient UEI": "KFTAMCDMMCF1", "Award
+      Amount": 441674.0'
     basis: disclosed
   - field: disbursed_usd
     snapshot: 2448222fe79f319caac6485b64353f1e28790ad32053311d9a2784fb510d7555
@@ -100,7 +120,8 @@ events:
     basis: disclosed
   - field: use_of_proceeds
     snapshot: 2448222fe79f319caac6485b64353f1e28790ad32053311d9a2784fb510d7555
-    quote: '"Description": "DEEP ISOLATION, NEW CREATE TOPIC C AWARD (SBIR/STTR)\nCONTROL NUMBER: 2785-1553\nPROJECT TITLE: SEQ'
+    quote: '"Description": "DEEP ISOLATION, NEW CREATE TOPIC C AWARD (SBIR/STTR)\nCONTROL NUMBER: 2785-1553\nPROJECT TITLE:
+      SEQ'
     basis: disclosed
   participants:
   - investor: ARPA-E
@@ -128,8 +149,8 @@ events:
   evidence:
   - field: amount
     snapshot: 2448222fe79f319caac6485b64353f1e28790ad32053311d9a2784fb510d7555
-    quote: '"Award ID": "DESC0025094", "Recipient Name": "DEEP ISOLATION US, LLC", "Recipient UEI": "KFTAMCDMMCF1", "Award Amount":
-      199892.0'
+    quote: '"Award ID": "DESC0025094", "Recipient Name": "DEEP ISOLATION US, LLC", "Recipient UEI": "KFTAMCDMMCF1", "Award
+      Amount": 199892.0'
     basis: disclosed
   - field: disbursed_usd
     snapshot: 2448222fe79f319caac6485b64353f1e28790ad32053311d9a2784fb510d7555
@@ -156,4 +177,71 @@ events:
       snapshot: 2448222fe79f319caac6485b64353f1e28790ad32053311d9a2784fb510d7555
       quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
       basis: disclosed
+- id: deep-isolation-private-placement-2025
+  instrument: equity
+  round_label: Private placement (concurrent with reverse merger)
+  announced_on: 2025-07-24
+  closed_on: 2025-07-23
+  amount:
+    amount: 33000000
+    currency: USD
+    qualifier: exact
+  use_of_proceeds: fund the development of a full-scale demonstration project
+  evidence:
+  - field: amount
+    snapshot: 92f59982b4d4c5364616564395cf46b9268ee216948b62436bb537aa35afed8c
+    quote: closed an oversubscribed financing through a private placement of its common stock (raising $33 million)
+    basis: disclosed
+  - field: announced_on
+    snapshot: 92f59982b4d4c5364616564395cf46b9268ee216948b62436bb537aa35afed8c
+    quote: Press Release, July 24, 2025
+    basis: disclosed
+  - field: closed_on
+    snapshot: 92f59982b4d4c5364616564395cf46b9268ee216948b62436bb537aa35afed8c
+    quote: on July 23, 2025, it closed a reverse merger transaction
+    basis: disclosed
+  - field: round_label
+    snapshot: 92f59982b4d4c5364616564395cf46b9268ee216948b62436bb537aa35afed8c
+    quote: Oversubscribed $33 Million Financing
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 92f59982b4d4c5364616564395cf46b9268ee216948b62436bb537aa35afed8c
+    quote: Most recent financing will fund the development of a full-scale demonstration project
+    basis: disclosed
+  review: verified
+  source_pass: pass2
+- id: deep-isolation-arpae-scaleup-ready-2026
+  instrument: grant
+  round_label: ARPA-E SCALEUP Ready (selection)
+  announced_on: 2026-04-07
+  amount_kind: ceiling
+  program: ARPA-E SCALEUP Ready
+  evidence:
+  - field: announced_on
+    snapshot: 507783ee044123e5ac2134b39862a1287df4f1576d41b04d74da411e8be82b98
+    quote: BERKELEY, CA, April 7, 2026
+    basis: disclosed
+  - field: round_label
+    snapshot: 507783ee044123e5ac2134b39862a1287df4f1576d41b04d74da411e8be82b98
+    quote: committed up to $40 million to support two projects, including the Deep Isolation project
+    basis: disclosed
+  review: verified
+  source_pass: pass2
+- id: deep-isolation-doe-genesis-2026
+  instrument: grant
+  round_label: DOE Project GENESIS (three awards, partner on LBNL- and USC-led projects)
+  announced_on: 2026-07-23
+  program: DOE Genesis Mission. Recipients are LBNL (two projects) and the University of South Carolina (one); Deep Isolation
+    is the industrial partner, not the award recipient, so this is not company funding (no amount in any case).
+  evidence:
+  - field: announced_on
+    snapshot: 1a93d1038b414e6cdf1dfe67dea8555365671bcecf6aa9a06ccb5ac3b323065f
+    quote: Press Release, July 23, 2026
+    basis: disclosed
+  - field: round_label
+    snapshot: 1a93d1038b414e6cdf1dfe67dea8555365671bcecf6aa9a06ccb5ac3b323065f
+    quote: selected as the sole industrial partner on three competitive federal grants
+    basis: disclosed
+  review: verified
+  source_pass: pass2
 agreements: []

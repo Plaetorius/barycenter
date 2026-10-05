@@ -1,9 +1,39 @@
 company: terrestrial-energy
 name: Terrestrial Energy
 sector: fission
-notes: |-
-  Terrestrial Energy Inc. (Delaware; Canadian origin, Oakville ON; HQ Charlotte NC; CIK 2019804) listed on Nasdaq as IMSR on 2025-10-29 after the business combination with HCM II Acquisition Corp closed on 2025-10-28. SPAC event is one programme (PIPE of USD50M plus about USD242M of trust cash after under 1% redemptions = "in excess of USD292M"), do not add the PIPE separately. PIPE investors are not named in the filings reached. Canada: ISED Strategic Innovation Fund, ref 033-2020-2021-Q2-811861 (Canada G&C datastore probe): amendment 0 agreement_value CAD20,000,000 (start 2019-04-01), amendment 1 on 2022-11-01 reduced it to CAD18,923,000, amendment 2 on 2026-03-31 kept CAD18,923,000 with start 2020-09-02; SIF values are authorised maxima, generally conditionally repayable, disbursements not given; recorded once at the latest value. Series A-1 preferred: the 10-K says "a USD25.8 million preferred stock private placement on July 1, 2025" (rounded); investors not named. Not recorded: USAspending shows USD795,059.10 of DOE transactions to Terrestrial Energy USA, Inc. since FY2020 (award type and dates not captured); convertible notes (about USD9.3M plus USD1.65M related parties) appear in the 10-Q cash-flow comparatives without dates; earlier private placements since 2013 are described only generically ("a series of private placements"). CORDIS, TED and BODACC probes have no Terrestrial records. Verifier: the SIF record states "this is a repayable contribution", so the event is now instrument=debt with ISED as lender (same treatment as Moltex); value is the authorised maximum after amendment 1 (CAD18.923M), disbursement unknown. Its announced_on (2019-04-01) is the agreement start date in the G&C record, not a public announcement date. Added round_label evidence for "Series A-1" (10-K equity statement); the 10-K cash-flow statement gives exact proceeds of USD25,797,201, consistent with the approx USD25.8M recorded; the date is the placement date stated in the 10-K. SPAC amount is stated in thousands in the filing ("in excess of $292,000"), i.e. USD292M, and already includes the USD50M PIPE.
-  MERGE 2026-10-05 (USAspending supplement): the 'USD 795,059.10 of DOE transactions since FY2020' gap is now covered award by award (three awards, USD 1,294,292.10 obligated in total, including the 2019 award). Recipient is the US subsidiary Terrestrial Energy USA, Inc. (UEI GJKZMH1MMWT7), part of the group. USAspending 'Total Outlays' is account-level outlay data reported from FY2017/FY2020 onward, so disbursed_usd can understate payments on older awards.
+notes: 'Terrestrial Energy Inc. (Delaware; Canadian origin, Oakville ON; HQ Charlotte NC; CIK 2019804) listed on Nasdaq as
+  IMSR on 2025-10-29 after the business combination with HCM II Acquisition Corp closed on 2025-10-28. SPAC event is one programme
+  (PIPE of USD50M plus about USD242M of trust cash after under 1% redemptions = "in excess of USD292M"), do not add the PIPE
+  separately. PIPE investors are not named in the filings reached. Canada: ISED Strategic Innovation Fund, ref 033-2020-2021-Q2-811861
+  (Canada G&C datastore probe): amendment 0 agreement_value CAD20,000,000 (start 2019-04-01), amendment 1 on 2022-11-01 reduced
+  it to CAD18,923,000, amendment 2 on 2026-03-31 kept CAD18,923,000 with start 2020-09-02; SIF values are authorised maxima,
+  generally conditionally repayable, disbursements not given; recorded once at the latest value. Series A-1 preferred: the
+  10-K says "a USD25.8 million preferred stock private placement on July 1, 2025" (rounded); investors not named. Not recorded:
+  USAspending shows USD795,059.10 of DOE transactions to Terrestrial Energy USA, Inc. since FY2020 (award type and dates not
+  captured); convertible notes (about USD9.3M plus USD1.65M related parties) appear in the 10-Q cash-flow comparatives without
+  dates; earlier private placements since 2013 are described only generically ("a series of private placements"). CORDIS,
+  TED and BODACC probes have no Terrestrial records. Verifier: the SIF record states "this is a repayable contribution", so
+  the event is now instrument=debt with ISED as lender (same treatment as Moltex); value is the authorised maximum after amendment
+  1 (CAD18.923M), disbursement unknown. Its announced_on (2019-04-01) is the agreement start date in the G&C record, not a
+  public announcement date. Added round_label evidence for "Series A-1" (10-K equity statement); the 10-K cash-flow statement
+  gives exact proceeds of USD25,797,201, consistent with the approx USD25.8M recorded; the date is the placement date stated
+  in the 10-K. SPAC amount is stated in thousands in the filing ("in excess of $292,000"), i.e. USD292M, and already includes
+  the USD50M PIPE.
+
+  MERGE 2026-10-05 (USAspending supplement): the ''USD 795,059.10 of DOE transactions since FY2020'' gap is now covered award
+  by award (three awards, USD 1,294,292.10 obligated in total, including the 2019 award). Recipient is the US subsidiary Terrestrial
+  Energy USA, Inc. (UEI GJKZMH1MMWT7), part of the group. USAspending ''Total Outlays'' is account-level outlay data reported
+  from FY2017/FY2020 onward, so disbursed_usd can understate payments on older awards.
+
+  [pass2] PASS2 gap-fill. Fetched EDGAR submissions for CIK 2019804 (HCM II Acquisition Corp. / Terrestrial Energy Inc.),
+  the 2025-03-26 8-K (business combination, PIPE subscription agreements), the 2025-11-03 closing 8-K and the 2026-03-31 Form
+  D. The PIPE is $50,000,000 (5,000,000 shares at $10.00), already inside the recorded SPAC total, so it is added only as
+  an amount_kind duplicate of the SPAC event (closing-amount evidence); the PIPE investors are NOT named in either 8-K ("certain
+  investors"). Redemptions at the October 2025 meeting were only 7,390 shares for about $77,890, consistent with the existing
+  notes. NOT ADDED: Form D filed 2026-03-31 (offering of $85,320 sold of $85,320, Rule 506(b), business-combination-related,
+  executive officers and directors listed) - too small and its purpose is not stated; convertible notes converted at closing
+  (amount not located in the 8-K); HCM II''s own $230M SPAC IPO (424B4 2024-08-16) is the vehicle''s raise, not Terrestrial''s.
+  WebSearch budget exhausted; no S-4 PIPE investor list reached (S-4 ea0243629-02.htm not read in full).'
 verification:
   status: verified
   by: merge-verifier-agent (opus), 2026-10-05
@@ -15,7 +45,10 @@ verification:
     grantor to lender (''this is a repayable contribution''); added round_label evidence for Series A-1 from the 10-K equity
     statement. Checked: Series A-1 USD25.8M (10-K proceeds USD25,797,201, 2025-07-01); SPAC ''in excess of $292,000'' (thousands),
     which includes the USD50M PIPE, BCA announced 2025-03-26, closed 2025-10-28. Gaps: PIPE investors unnamed; SIF announced_on
-    is the agreement start date; convertible notes and DOE USD795K not recorded.'
+    is the agreement start date; convertible notes and DOE USD795K not recorded.
+
+    [pass2 verify 2026-10-05, claude-opus-5-5] 1 pending items verified. PIPE $50M verified as amount_kind duplicate superseding
+    terrestrial-2025-spac-hcm-ii (the SPAC total ''in excess of $292M'' already includes it). No changes.'
 events:
 - id: terrestrial-2019-canada-sif
   instrument: debt
@@ -233,6 +266,28 @@ events:
       snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
       quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
       basis: disclosed
+- id: terrestrial-2025-pipe-closing
+  instrument: spac
+  round_label: PIPE financing (closing amount, part of the HCM II business combination)
+  announced_on: 2025-03-26
+  closed_on: 2025-10-28
+  amount:
+    amount: 50000000
+    currency: USD
+    qualifier: exact
+  amount_kind: duplicate
+  supersedes: terrestrial-2025-spac-hcm-ii
+  evidence:
+  - field: amount
+    snapshot: 7876e1a4cfd4b77ed42eec77d7f31763407fc99d258ca665cb791c76d57b1f96
+    quote: New Terrestrial Energy received an aggregate amount of $50,000,000 from the PIPE Investors.
+    basis: disclosed
+  - field: announced_on
+    snapshot: d8314e32fa4559deed0ee642a394ff06991deb6cee4007fc76b451d4a7af2a06
+    quote: each dated as of March 26, 2025, with certain investors
+    basis: disclosed
+  review: verified
+  source_pass: pass2
 agreements:
 - id: terrestrial-energy-reactor-pilot-ota
   counterparty: U.S. Department of Energy

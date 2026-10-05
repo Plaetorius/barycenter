@@ -1,0 +1,22 @@
+company: thorizon
+name: Thorizon B.V.
+sector: fission
+notes: >
+  PASS2 gap-fill from the company newsroom (thorizon.com/news listing pages archived in pass 1). The funding items on the news list
+  (EUR20M Series A tranche + Noord-Brabant, JTF ZILT, MOOI, MIMOSA, MOU) were already recorded; no other funding release exists in the
+  list (news ids 94, 101, 104-120). ADDED one agreement: Strategic MOU with Hyundai Engineering & Construction (2026-03-09). NOT ADDED:
+  Boccard MoU (release carries no year), Curium/INSA Lyon research collaboration (technical, undated year), Storabelle partnership. The
+  Invest-NL 2022 first equity round amount and date remain NOT FOUND in any primary source (WebSearch budget exhausted); the EUR42.5M
+  cumulative stays a statement, not an event.
+events: []
+agreements:
+- id: thorizon-hyundai-enc-2026-mou
+  counterparty: Hyundai Engineering & Construction
+  counterparty_slug: hyundai-engineering-construction
+  type: partnership
+  binding: mou
+  announced_on: 2026-03-09
+  summary: Strategic MOU to jointly advance development and future deployment of Thorizon molten salt reactors (engineering and design, preparation for reactor projects, joint engagement with industrial users); no value stated.
+  evidence:
+  - {field: agreement, snapshot: a7781c25fcd86079359bebbfd5ce14c8380ca83203f49255761ebf90e57f6935, quote: "have signed a Strategic Memorandum of Understanding (MOU). The agreement marks the start of a strategic collaboration", basis: disclosed}
+  - {field: announced_on, snapshot: a7781c25fcd86079359bebbfd5ce14c8380ca83203f49255761ebf90e57f6935, quote: "Amsterdam, March 9th 2026", basis: disclosed}

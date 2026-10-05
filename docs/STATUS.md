@@ -1,13 +1,13 @@
 # Barycenter status (2026-10-05)
 
-**Built and working, not deployed.** Release v2026.10.05, built from verified ledgers only.
+**Live at https://labs.mertia.xyz/barycenter** (Vercel project `barycenter-labs`; see `docs/DEPLOYMENT.md`). Release v2026.10.05, built from verified ledgers only.
 
 | | |
 |---|---|
 | Companies published | 91 (of 259 census candidates; rule D1: only companies with at least one evidenced funding event) |
 | Investors / public funders | 364 / 51 |
-| Funding events / agreements | 484 / 151 |
-| Evidence claims / archived source documents | 2,608 / 561 |
+| Funding events / agreements | 499 / 177 |
+| Evidence claims / archived source documents | 2,714 / 598 |
 | Events with undisclosed amount | 70. Investor participations that state their own amount: 27 of 795 |
 | Fusion equity vs references | $9.4B vs The Fusion Report $11.5B (81%) and FIA $14.2B (66%) |
 | Tests | pipeline 29, site 4; axe WCAG 2 AA clean in light and dark; mobile checked at 320 px |
@@ -36,8 +36,8 @@ lists (Aalo, Radiant). Reports: `docs/survey/verification/`. Residual doubts are
 - Several probe fetches of ToS-forbidden origins (CFS, X-energy, Radiant) exist in the local raw store from reconnaissance. None is cited, none is published.
 
 ## Needs you
-1. **Deploy** the site (`site/`) as its own Vercel project, then set its URL in the Mertia Labs entry (`docs/mertia-labs/registration.patch`, a card image is included). I did not push anything to `Plaetorius/mertia-labs`.
-2. Review the scope exclusions and the Pacific Fusion decision above.
+1. Back up the repo (no GitHub remote yet) and `pipeline/raw/` (see `docs/DEPLOYMENT.md`).
+2. Raise the web-search cap and run the second pass to completion: `docs/WHEN-SEARCH-QUOTA-RETURNS.md`.
 3. Decide whether to get a free Companies House API key for UK share-issue evidence.
 
 ## Next

@@ -18,7 +18,14 @@ notes: 'Built from USAspending spending_by_award search responses (POST, archive
   ''nothing paid''. DELP0000207: award detail shows total_obligation 0.0, total_loan_value 262,881,867.11 and subsidy cost
   1,359,099.25, consistent with a conditional commitment that has not been disbursed. It is therefore a ceiling. SHINE appears
   in both census files: fission (isotopes/back_end) and fusion (accelerator-driven D-T neutron source). The NNSA DENA awards
-  are Mo-99 medical-isotope cooperative agreements with large non-federal cost share.'
+  are Mo-99 medical-isotope cooperative agreements with large non-federal cost share.
+
+  [pass2] PASS2. Existing ledger held only DOE/NNSA/ARPA-E awards and the LPO conditional commitment; no private equity. Found
+  one private round via Wikipedia reference list -> WisBusiness (trade press, reported, 2023-10-12, citing the company release
+  of 2023-10-11). Not found (WebSearch budget exhausted; shinefusion.com news URLs guessed returned 404): the company release
+  itself, earlier rounds (2015-2022, incl. 2022 Series C-type rounds), and 2024-2026 rounds. SEC EDGAR: Form D filings for
+  ''AVSF - SHINE Technologies 2022, LLC'' (CIK 1952732, NH) are an investor SPV, not a SHINE round, not recorded. Investor
+  amounts not stated.'
 verification:
   status: verified
   by: verifier-agent (claude-opus-5-5), 2026-10-05
@@ -28,7 +35,11 @@ verification:
     evidence items re-sourced; obligated evidence added. Recipient is SHINE Technologies, LLC. SCOPE: SHINE is a fusion-neutron
     isotope producer; ~$117M of NNSA money is Mo-99 isotope work, not energy. Keep it only as adjacent (fusion-enabled isotopes,
     recycling ambitions), flagged, outside nuclear-energy-developer totals. Private rounds (>$1B reported) are not in the
-    ledger. Purpose of the LPO loan not confirmed.'
+    ledger. Purpose of the LPO loan not confirmed.
+
+    [pass2 verify 2026-10-05, claude-opus-5-5] 3 pending items verified. $70M round verified against WisBusiness (trade press,
+    basis reported, citing the 2023-10-11 company release); Baillie Gifford and Fidelity are named as leading existing investors.
+    announced_on is the article date (release was the day before). No changes.'
 events:
 - id: shine-technologies-dena0002598
   instrument: grant
@@ -300,4 +311,42 @@ events:
       quote: '"office_agency_name":"LOAN PROGRAMS OFFICE"'
       basis: disclosed
   obligated_usd: 0.0
+- id: shine-technologies-70m-2023
+  instrument: equity
+  round_label: null
+  announced_on: 2023-10-12
+  amount:
+    amount: 70000000
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: faf98f4795ba09ab69b307c3bbcd1368407a5b19899dd8cdd412cb5732d7feb2
+    quote: SHINE Technologies has completed a $70 million funding round
+    basis: reported
+  - field: announced_on
+    snapshot: faf98f4795ba09ab69b307c3bbcd1368407a5b19899dd8cdd412cb5732d7feb2
+    quote: October 12, 2023
+    basis: reported
+  participants:
+  - investor: Baillie Gifford
+    investor_slug: baillie-gifford
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: faf98f4795ba09ab69b307c3bbcd1368407a5b19899dd8cdd412cb5732d7feb2
+      quote: led by existing investors, including UK-based Baillie Gifford and Boston’s Fidelity Management & Research Company
+      basis: reported
+    review: verified
+  - investor: Fidelity Management & Research Company
+    investor_slug: fidelity
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: faf98f4795ba09ab69b307c3bbcd1368407a5b19899dd8cdd412cb5732d7feb2
+      quote: led by existing investors, including UK-based Baillie Gifford and Boston’s Fidelity Management & Research Company
+      basis: reported
+    review: verified
+  review: verified
+  source_pass: pass2
 agreements: []

@@ -1,0 +1,143 @@
+company: lightbridge
+name: Lightbridge Corporation
+sector: fission
+notes: 'Pass 2 gap-fill: pre-2024 history from the FY2018, FY2019, FY2021, FY2022 and FY2023 10-Ks (all archived from sec.gov/Archives/edgar/data/1084554; filing list from data.sec.gov submissions snapshot 77eb5204). EDGAR Form D full-text for ''Lightbridge'' returns only unrelated issuers (Lightbridge Communications Corp, Lightbridge Holdings LLC), so Lightbridge Corp filed no Form D in the period; its capital raising is S-3/424B5 registered offerings and ATM programmes, sold amounts being those in the 10-Ks. Added the amounts actually sold (net proceeds) per year: 2018 $28.8M (B. Riley FBR), 2019 $3.8M, 2020 $12.3M, 2021 $14.8M, 2022 $11.0M, 2023 $6.4M, plus the Aug 2016 Series A preferred $2.8M to General International Holdings (exchanged for common in Oct 2021 without cash). 2024 onward was already in the ledger. announced_on is the 10-K signature date (the first public statement of the figure), not the sale date; the sales period is the calendar year in the label. The FY2020 and FY2021 amounts both come from the FY2021 10-K (the FY2020 10-K filed 2021-03-25 was not mined). Not recorded: 2010-2017 registered offerings (424B5 listed in EDGAR submissions 2010, 2013, 2014, 2015, 2016, 2017, 2018) - amounts not read; the 2018 424B5s relate to the same B. Riley ATM so would duplicate the $28.8M; Jan 2018 Series A preferred additions; 2017 ATM/equity purchase agreement proceeds ($6.0M in 2017 per FY2018 10-K MD&A, not itemised). Possible overlap: the 2018 $28.8M net proceeds is ''ATM'' only; the FY2018 10-K MD&A says $29.4M including equity purchase agreements.'
+events:
+- id: lightbridge-series-a-preferred-2016
+  instrument: equity
+  round_label: Series A Non-Voting Convertible Preferred Stock (private placement)
+  announced_on: '2016-08-02'
+  amount:
+    amount: 2800000
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: 9a75de806fe49013e67169668ade5b2b155ebc845be7f6f9c59c622b40885a68
+    quote: On August 2, 2016, the Company issued 1,020,000 shares of newly created Non-Voting Series A Convertible Preferred Stock
+    basis: disclosed
+  - field: amount
+    snapshot: 9a75de806fe49013e67169668ade5b2b155ebc845be7f6f9c59c622b40885a68
+    quote: to General International Holdings, Inc. for $ 2.8 million or approximately $ 2.75 per share
+    basis: disclosed
+  participants:
+  - investor: General International Holdings, Inc.
+    investor_slug: general-international-holdings
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 9a75de806fe49013e67169668ade5b2b155ebc845be7f6f9c59c622b40885a68
+      quote: to General International Holdings, Inc. for $ 2.8 million or approximately $ 2.75 per share
+      basis: disclosed
+- id: lightbridge-atm-sales-2018
+  instrument: follow_on
+  round_label: ATM sales under the B. Riley FBR agreement, 2018 (net proceeds)
+  announced_on: '2019-03-29'
+  amount:
+    amount: 28800000
+    currency: USD
+    qualifier: approx
+  evidence:
+  - field: announced_on
+    snapshot: f07f4817325ae1483eaeffb5f2b4ae5432fa965e7389fbf1afb18f97cf8e5ebf
+    quote: 'LIGHTBRIDGE CORPORATION   Date: March 29, 2019'
+    basis: disclosed
+  - field: amount
+    snapshot: f07f4817325ae1483eaeffb5f2b4ae5432fa965e7389fbf1afb18f97cf8e5ebf
+    quote: The Company received approximately $28.8 million of net proceeds from its ATM during the year ended December 31, 2018
+    basis: disclosed
+  participants:
+  - investor: B. Riley FBR, Inc. (sales agent)
+    investor_slug: b-riley-fbr
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f07f4817325ae1483eaeffb5f2b4ae5432fa965e7389fbf1afb18f97cf8e5ebf
+      quote: pursuant to which the Company could issue and sell shares of its common stock from time to time through B. Riley FBR, Inc. as the Company’s sales agent
+      basis: disclosed
+- id: lightbridge-atm-sales-2019
+  instrument: follow_on
+  round_label: ATM sales, 2019 (net proceeds; B. Riley 2018 ATM to 2019-03-29, then Stifel 2019 ATM)
+  announced_on: '2020-03-18'
+  amount:
+    amount: 3800000
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: afce056d7fe4db448642e0655cbc3833ef4dcc4e94d036c7825480b142051d87
+    quote: 'LIGHTBRIDGE CORPORATION   Date: March 18, 2020'
+    basis: disclosed
+  - field: amount
+    snapshot: afce056d7fe4db448642e0655cbc3833ef4dcc4e94d036c7825480b142051d87
+    quote: Net proceeds received from the ATM sales during the year ended December 31, 2019 were $3.8 million.
+    basis: disclosed
+- id: lightbridge-atm-sales-2020
+  instrument: follow_on
+  round_label: ATM sales under Stifel agreement, 2020 (net proceeds)
+  announced_on: '2022-03-31'
+  amount:
+    amount: 12300000
+    currency: USD
+    qualifier: approx
+  evidence:
+  - field: announced_on
+    snapshot: 9a75de806fe49013e67169668ade5b2b155ebc845be7f6f9c59c622b40885a68
+    quote: 'LIGHTBRIDGE CORPORATION           Date: March 31, 2022'
+    basis: disclosed
+  - field: amount
+    snapshot: 9a75de806fe49013e67169668ade5b2b155ebc845be7f6f9c59c622b40885a68
+    quote: For the year ended December 31, 2020, the Company sold approximately 3.3 million shares under the ATM, respectively, resulting in net proceeds of approximately $ 12.3 million.
+    basis: disclosed
+- id: lightbridge-atm-sales-2021
+  instrument: follow_on
+  round_label: ATM sales under Stifel agreement, 2021 (net proceeds)
+  announced_on: '2022-03-31'
+  amount:
+    amount: 14800000
+    currency: USD
+    qualifier: approx
+  evidence:
+  - field: announced_on
+    snapshot: 9a75de806fe49013e67169668ade5b2b155ebc845be7f6f9c59c622b40885a68
+    quote: 'LIGHTBRIDGE CORPORATION           Date: March 31, 2022'
+    basis: disclosed
+  - field: amount
+    snapshot: 9a75de806fe49013e67169668ade5b2b155ebc845be7f6f9c59c622b40885a68
+    quote: The Company sold approximately 2.0 million shares under the ATM for the year ended December 31, 2021 resulting in net proceeds of approximately $ 14.8 million
+    basis: disclosed
+- id: lightbridge-atm-sales-2022
+  instrument: follow_on
+  round_label: ATM sales under Stifel agreement, 2022 (net proceeds)
+  announced_on: '2023-03-30'
+  amount:
+    amount: 11000000
+    currency: USD
+    qualifier: approx
+  evidence:
+  - field: announced_on
+    snapshot: bcc8856729868c8eda8744e628f6e062e22083a992ed823b1966a6620c8cb7a3
+    quote: 'LIGHTBRIDGE CORPORATION           Date: March 30, 2023'
+    basis: disclosed
+  - field: amount
+    snapshot: bcc8856729868c8eda8744e628f6e062e22083a992ed823b1966a6620c8cb7a3
+    quote: The Company sold approximately 1.9 million shares, under the ATM for the year ended December 31, 2022 resulting in net proceeds of approximately $ 11.0 million.
+    basis: disclosed
+- id: lightbridge-atm-sales-2023
+  instrument: follow_on
+  round_label: ATM sales under Stifel agreement, 2023 (net proceeds)
+  announced_on: '2024-03-04'
+  amount:
+    amount: 6400000
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: 948c03fc34e655f696cff9603286de919ab812b923763a4a424c4cf46b0d1c4f
+    quote: 'LIGHTBRIDGE CORPORATION           Date: March 4, 2024'
+    basis: disclosed
+  - field: amount
+    snapshot: 948c03fc34e655f696cff9603286de919ab812b923763a4a424c4cf46b0d1c4f
+    quote: The Company sold 1,492,148 shares under the ATM for the year ended December 31, 2023 resulting in net proceeds of $ 6.4 million
+    basis: disclosed
+agreements: []

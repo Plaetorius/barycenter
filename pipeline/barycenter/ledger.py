@@ -2,6 +2,7 @@
 
     .venv/bin/python -m barycenter.ledger check ledger/<company>.yaml [...]
     .venv/bin/python -m barycenter.ledger context ledger/<company>.yaml     # facts next to their source text
+    .venv/bin/python -m barycenter.ledger context-pending ledger/<company>.yaml   # only items awaiting verification
 """
 from __future__ import annotations
 
@@ -34,6 +35,7 @@ class Evidence(LStrict):
 
 
 class Participant(LStrict):
+    review: Literal["verified", "pending"] = "verified"
     investor: str  # name as written in the source
     investor_slug: str = Field(pattern=SLUG)
     role: ParticipationRole = "participant"
@@ -41,8 +43,13 @@ class Participant(LStrict):
     evidence: list[Evidence] = Field(min_length=1)
 
 
+Review = Literal["verified", "pending"]
+
+
 class LEvent(LStrict):
     id: str = Field(pattern=SLUG)
+    review: Review = "verified"  # additions from a later pass start "pending" until an independent verifier signs them
+    source_pass: str | None = None
     instrument: Instrument
     round_label: str | None = None
     round_group: str | None = None
@@ -73,6 +80,8 @@ class LEvent(LStrict):
 
 class LAgreement(LStrict):
     id: str = Field(pattern=SLUG)
+    review: Review = "verified"
+    source_pass: str | None = None
     counterparty: str
     counterparty_slug: str = Field(pattern=SLUG)
     type: AgreementType
@@ -139,11 +148,13 @@ def check_file(path: Path) -> list[str]:
     return errors
 
 
-def context(path: Path, width: int = 220) -> str:
+def context(path: Path, width: int = 220, pending_only: bool = False) -> str:
     """Print every claimed fact next to the surrounding source text, for the independent verification pass."""
     led = Ledger.model_validate(yaml.safe_load(path.read_text()))
     lines = [f"# {led.name} ({led.company}, {led.sector})", f"notes: {led.notes}", ""]
     for e in led.events:
+        if pending_only and e.review != "pending" and not any(p.review == "pending" for p in e.participants):
+            continue
         amt = f"{e.amount.amount:,.0f} {e.amount.currency} [{e.amount.qualifier}]" if e.amount else "undisclosed"
         lines.append(f"## EVENT {e.id}: {e.instrument} {e.round_label or ''} announced {e.announced_on} amount {amt} kind={e.amount_kind} group={e.round_group}")
         blocks = [("event", ev) for ev in e.evidence] + [(f"participant {p.investor} [{p.role}]" + (f" amount={p.amount.amount:,.0f} {p.amount.currency}" if p.amount else ""), ev) for p in e.participants for ev in p.evidence]
@@ -156,6 +167,8 @@ def context(path: Path, width: int = 220) -> str:
                 lines.append(f"  context: ...{nt[max(0, i - width): i + len(norm(ev.quote)) + width]}...")
         lines.append("")
     for a in led.agreements:
+        if pending_only and a.review != "pending":
+            continue
         lines.append(f"## AGREEMENT {a.id}: {a.type} {a.binding} with {a.counterparty} on {a.announced_on}: {a.summary}")
         for ev in a.evidence:
             nt = norm(snapshot_text(ev.snapshot) or "")
@@ -166,9 +179,9 @@ def context(path: Path, width: int = 220) -> str:
 
 
 def main(argv: list[str]) -> int:
-    if len(argv) >= 2 and argv[0] == "context":
+    if len(argv) >= 2 and argv[0] in {"context", "context-pending"}:
         for f in argv[1:]:
-            print(context(Path(f)))
+            print(context(Path(f), pending_only=argv[0] == "context-pending"))
         return 0
     if len(argv) < 2 or argv[0] != "check":
         print(__doc__)

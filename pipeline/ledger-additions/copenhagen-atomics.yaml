@@ -1,0 +1,31 @@
+company: copenhagen-atomics
+name: Copenhagen Atomics A/S
+sector: fission
+notes: >
+  Gap-fill pass 2. Added two partnership/supply agreements from the company newsroom (no money). Earlier priced rounds,
+  named investors and Danish grants (Innovation Fund Denmark, EUDP) could not be sourced: web search budget exhausted, the
+  newsroom lists no round announcements, the invest page only gives cumulative statements (200+ investors). The newsroom
+  item of 2025-07-05 ("Danish firm gains funding boost") has no extractable text (it is the EIC grant already recorded).
+  No valuation (the 2026-04-28 valuation article has no extractable text).
+events: []
+agreements:
+  - id: copenhagen-atomics-ocean-power-mou-2025
+    counterparty: Ocean-Power AS
+    counterparty_slug: ocean-power
+    type: partnership
+    binding: mou
+    announced_on: 2025-07-23
+    summary: MoU to jointly study thorium molten salt reactors for green electricity and heat in Norway; no capacity or value stated.
+    evidence:
+      - {field: agreement, snapshot: "1133100717f0a4554013ed2783d54e38b3e06fce9a62c3f1b7e8686acf264264", quote: "have signed a Memorandum of Understanding (MoU) to jointly study the potential for producing green electricity and heat in Norway", basis: disclosed}
+      - {field: announced_on, snapshot: "1133100717f0a4554013ed2783d54e38b3e06fce9a62c3f1b7e8686acf264264", quote: "ARTICLE July 23, 2025", basis: disclosed}
+  - id: copenhagen-atomics-rare-earths-norway-loi-2026
+    counterparty: Rare Earths Norway
+    counterparty_slug: rare-earths-norway
+    type: fuel_supply
+    binding: loi
+    announced_on: 2026-02-19
+    summary: Letter of Intent to secure future access to thorium extracted from the Fensfeltet deposit in Norway; no quantity or value stated.
+    evidence:
+      - {field: agreement, snapshot: "c5b4bc5fd6a86f8ee33681a44d21146a8d7f3af4ddaa158a239fd1dae3aabce2", quote: "has signed a Letter of Intent (LoI) with Rare Earths Norway to secure future access to thorium extracted from the Fensfeltet deposit in Norway", basis: disclosed}
+      - {field: announced_on, snapshot: "c5b4bc5fd6a86f8ee33681a44d21146a8d7f3af4ddaa158a239fd1dae3aabce2", quote: "ARTICLE February 19, 2026", basis: disclosed}

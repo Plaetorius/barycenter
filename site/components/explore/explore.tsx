@@ -55,7 +55,7 @@ export function Explore({ companies, investors, funders, edges }: Props) {
     <div className="mx-auto w-full max-w-6xl px-4 pb-16 pt-8">
       <section className="paper-grain -mx-4 mb-6 border-b px-4 pb-6">
         <p className="eyebrow">Who funds nuclear energy</p>
-        <h1 className="mt-1 max-w-3xl font-serif text-4xl leading-[1.05] tracking-tight sm:text-6xl">
+        <h1 className="mt-1 max-w-3xl font-semibold text-4xl leading-[1.05] tracking-tight sm:text-6xl">
           <span className="numeral">{usd(sum)}</span> disclosed across {cRows.length} companies
         </h1>
         <p className="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-sm tabular text-ink-2">

@@ -131,7 +131,7 @@
 }
 /* ------------------------------------------------------------------ barycenter
    Editorial data-journal: warm paper, ink, two sector hues (fusion amber, fission teal), instruments on a sequential
-   ink ramp. Numerals are set in a serif for scale contrast; labels and tables in Geist and Geist Mono. */
+   ink ramp. Sans-serif only (Geist): scale and weight contrast carry the hierarchy. */
 :root {
   --fusion: oklch(0.66 0.17 55);
   --fission: oklch(0.52 0.1 205);
@@ -170,14 +170,12 @@
   --color-fission: var(--fission);
   --color-ink-2: var(--ink-2);
   --color-ink-3: var(--ink-3);
-  --font-serif: var(--font-serif-face), ui-serif, Georgia, serif;
-  --font-mono: var(--font-mono-face), ui-monospace, SFMono-Regular, monospace;
 }
 
 @layer components {
-  .numeral { font-family: var(--font-serif); font-variant-numeric: lining-nums tabular-nums; letter-spacing: -0.02em; }
+  .numeral { font-weight: 500; font-variant-numeric: lining-nums tabular-nums; letter-spacing: -0.035em; }
   .tabular { font-variant-numeric: tabular-nums; }
-  .eyebrow { font-family: var(--font-mono); font-size: 0.6875rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); }
+  .eyebrow { font-size: 0.6875rem; font-weight: 500; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-3); }
   .sector-dot { display: inline-block; width: 0.5rem; height: 0.5rem; border-radius: 999px; flex: none; }
   .sector-dot[data-sector="fusion"] { background: var(--fusion); }
   .sector-dot[data-sector="fission"] { background: var(--fission); }

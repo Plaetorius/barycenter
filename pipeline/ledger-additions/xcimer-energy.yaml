@@ -1,0 +1,52 @@
+company: xcimer-energy
+name: Xcimer Energy
+sector: fusion
+notes: 'Gap-fill pass 2. Added the 2022 seed and SAFE financings from the SEC Form D XML (primary_doc.xml, CIK 1916136; EDGAR submissions list shows exactly three Forms D: -22-000001 (D, signed 2022-03-30), -22-000004 (D/A, filed 2022-04-01), -22-000006 (D, filed 2022-11-01)). Archived text drops the XML tags, so the three numbers "2500058 875000 1625058" are the schema-ordered fields totalOfferingAmount, totalAmountSold, totalRemaining (checked against the raw XML ordering). Series Seed: offering $2,500,058 (up to 1,320,755 Series Seed Preferred shares), $875,000 sold at filing, 6 investors, first sale 2022-03-28; the D/A repeats the original figures (no change in sold amount), so only one event is recorded. Amount is a "sold so far" figure (qualifier over), investors are not named in Form D (only 6 counted), no participants recorded. Nov 2022 D: up to $10,000,000 in SAFEs, $365,000 sold, 1 investor, first sale 2022-10-21. Both are Form D tranche figures and may be partly the same money later converted into Series A; do not read them as the full seed. Not found: a press release for the seed (investors reported elsewhere, e.g. at Series A launch, but no archivable primary source); WebSearch budget exhausted. No other gaps found.'
+events:
+- id: xcimer-seed-2022-form-d
+  instrument: equity
+  round_label: Series Seed Preferred
+  round_group: seed
+  announced_on: '2022-03-30'
+  amount:
+    amount: 875000
+    currency: USD
+    qualifier: over
+  amount_kind: new_money
+  evidence:
+  - field: amount
+    snapshot: 9e61bbd2590b25aeb96016d10fbdfb2161a5775f4d0db2c627ef0e2bb4def2c2
+    quote: 2500058 875000 1625058 Up to 1,320,755 shares of Series Seed Preferred Stock and underlying Common Stock upon conversion.
+    basis: disclosed
+  - field: announced_on
+    snapshot: 9e61bbd2590b25aeb96016d10fbdfb2161a5775f4d0db2c627ef0e2bb4def2c2
+    quote: Conner Galloway CEO 2022-03-30
+    basis: disclosed
+  - field: round_label
+    snapshot: 9e61bbd2590b25aeb96016d10fbdfb2161a5775f4d0db2c627ef0e2bb4def2c2
+    quote: Series Seed Preferred Stock
+    basis: disclosed
+- id: xcimer-safe-2022-form-d
+  instrument: equity
+  round_label: SAFEs
+  round_group: seed
+  announced_on: '2022-11-01'
+  amount:
+    amount: 365000
+    currency: USD
+    qualifier: over
+  amount_kind: new_money
+  use_of_proceeds: All proceeds shall be used as working capital.
+  evidence:
+  - field: amount
+    snapshot: 83765b0e79ba282c195ba4594fa655be42cb248e06a57800efb65c9403409374
+    quote: 10000000 365000 9635000 Up to $10,000,000 in SAFEs and underlying shares of preferred stock upon conversion
+    basis: disclosed
+  - field: announced_on
+    snapshot: 83765b0e79ba282c195ba4594fa655be42cb248e06a57800efb65c9403409374
+    quote: Conner Galloway CEO 2022-11-01
+    basis: disclosed
+  - field: round_label
+    snapshot: 83765b0e79ba282c195ba4594fa655be42cb248e06a57800efb65c9403409374
+    quote: Up to $10,000,000 in SAFEs and underlying shares of preferred stock upon conversion
+    basis: disclosed

@@ -1,0 +1,27 @@
+company: flibe-energy
+name: Flibe Energy, Inc.
+sector: fission
+notes: 'Pass 2 gap-fill. EDGAR full-text search for Form D ''Flibe Energy'' finds one filing: Flibe Energy, Inc. (CIK 1684211), Form D signed 2018-12-10, exemption Rule 506(b), first sale 2018-11-26, total offering amount $5,000,000, amount sold $2,128,028, remaining $2,871,972, 16 investors, no sales commissions, no investors named; recorded as an equity event with the amount sold (announced_on = signature date). No amendment or later Form D found in that search, so later private funding stays unevidenced (the existing ledger already lists DOE-NE DENE0008845). Wikipedia has no page. No agreements added.'
+events:
+- id: flibe-energy-form-d-2018
+  instrument: equity
+  round_label: Form D offering (Rule 506(b)); first sale 2018-11-26, 16 investors, offering size $5,000,000
+  announced_on: '2018-12-10'
+  amount:
+    amount: 2128028
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: 65908a4fcf0133d8696d8baaba9b620908b863e6fe52abfa29efc3423d1cf914
+    quote: Trevor Giles Chief Financial Officer 2018-12-10
+    basis: disclosed
+  - field: amount
+    snapshot: 65908a4fcf0133d8696d8baaba9b620908b863e6fe52abfa29efc3423d1cf914
+    quote: 0 5000000 2128028 2871972 false 16
+    basis: disclosed
+  - field: round_label
+    snapshot: 65908a4fcf0133d8696d8baaba9b620908b863e6fe52abfa29efc3423d1cf914
+    quote: 06b false 2018-11-26 false true false
+    basis: disclosed
+agreements: []

@@ -1,0 +1,67 @@
+company: steady-energy
+name: Steady Energy Oy
+sector: fission
+notes: >
+  PASS2 gap-fill from the company newsroom (steadyenergy.com/news-article/...). ADDED: the EUR2M seed (company news item dated
+  2024-08-22; the page is a stub with headline and teaser and a link to the full release, so investors and the original release date are
+  not evidenced; the news-item date may be the repost date) and six agreements (Helen LOI, Kuopion Energia pre-planning agreement,
+  Kärnfull Next partnership of 2024-06-18, Fortum Apros simulation cooperation, Korea District Heating Corp cooperation). Dates for
+  the Helen and Kuopio items are the newsroom posting dates (Helen LOI: Kuopio/Helen LOIs for up to 15 reactors are also described in
+  the Kärnfull release). No capacity or value stated. NOT FOUND: seed investors, earlier Business Finland / Tesi tranches, final
+  3North IPO proceeds. WebSearch budget exhausted; other newsroom items (Tractebel, TVO Nuclear Services, Baltic alliance, Kuopio fifth
+  reactor) are technical/cooperation items not archived or recorded.
+events:
+- id: steady-2024-seed
+  instrument: equity
+  round_label: Seed
+  announced_on: 2024-08-22
+  amount: {amount: 2000000, currency: EUR, qualifier: exact}
+  evidence:
+  - {field: amount, snapshot: 09812e7d80a7970cdeba164bf6a2c323b26be34d67c539276f93aa4685702e71, quote: "Steady Energy raises 2 million euros to decarbonise residential heating with small modular nuclear reactors", basis: disclosed}
+  - {field: announced_on, snapshot: 09812e7d80a7970cdeba164bf6a2c323b26be34d67c539276f93aa4685702e71, quote: "August 22, 2024 Steady Energy raises 2 million euros", basis: disclosed}
+agreements:
+- id: steady-helen-2024-loi
+  counterparty: Helen Oy
+  counterparty_slug: helen
+  type: offtake
+  binding: loi
+  announced_on: 2024-08-22
+  summary: Letter of intent to enable an investment in a small-scale nuclear plant for heat production (LDR-50) in Helsinki. Posting date of the newsroom item.
+  evidence:
+  - {field: agreement, snapshot: ff486c0e48826ab28748a49bbb37c9d892f8f0260acf1f4b1d2f0ff17451410d, quote: "Helen and Steady Energy have signed a letter of intent with the aim of enabling an investment in a small-scale nuclear power plant for heat production.", basis: disclosed}
+- id: steady-kuopion-energia-2024-preplanning
+  counterparty: Kuopion Energia
+  counterparty_slug: kuopion-energia
+  type: offtake
+  binding: mou
+  announced_on: 2024-08-28
+  summary: One-year pre-planning agreement towards a final investment decision on an LDR-50 district heating plant in Kuopio (construction early 2030s); environmental impact assessment to start. Binding level approximated.
+  evidence:
+  - {field: agreement, snapshot: c0c9bae2151dd413d801d9d9aa2fa0c01d0bab48dfb0f49a822db07799b06f9b, quote: "Kuopion Energia and Steady Energy have signed a one-year pre-planning agreement.", basis: disclosed}
+- id: steady-karnfull-2024-partnership
+  counterparty: Kärnfull Next AB
+  counterparty_slug: karnfull-next
+  type: partnership
+  binding: mou
+  announced_on: 2024-06-18
+  summary: Strategic partnership to introduce Steady's SMRs for district heating in Sweden; Kärnfull to provide financing structures and delivery models. Binding level approximated.
+  evidence:
+  - {field: agreement, snapshot: d2be07a6fc4304f70b312eb1d9586a3e4e5ac1a1e78ee2e5a248957942e447df, quote: "announced a strategic partnership to introduce small modular reactors (SMRs) for district heating in Sweden", basis: disclosed}
+- id: steady-fortum-2025-apros
+  counterparty: Fortum
+  counterparty_slug: fortum
+  type: partnership
+  binding: definitive
+  announced_on: 2025-03-10
+  summary: Fortum supports LDR-50 development with Apros simulation modelling (digital twin); no value stated.
+  evidence:
+  - {field: agreement, snapshot: b8f656b87cd07a98aff1c870c811a7d84e015d4dc77c38ff4707bdc09a548241, quote: "Fortum and the Finnish technology company Steady Energy have agreed on cooperation in which Fortum will support the development", basis: disclosed}
+- id: steady-kdhc-2025-cooperation
+  counterparty: Korea District Heating Corp.
+  counterparty_slug: korea-district-heating
+  type: partnership
+  binding: mou
+  announced_on: 2025-12-05
+  summary: Agreement on cooperation in heat-only SMRs; Steady's first international deal. Binding level approximated.
+  evidence:
+  - {field: agreement, snapshot: a09ce96c54f188b8a996f8d5546188f2286bc4dcb4989e23d99674c39a531f14, quote: "announce an agreement on cooperation in the field of heat-only small modular reactors (SMR) today", basis: disclosed}

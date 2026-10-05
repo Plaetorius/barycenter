@@ -1,0 +1,52 @@
+company: valar-atomics
+name: Valar Atomics
+sector: fission
+notes: >
+  PASS2 gap-fill. WebSearch budget exhausted; followed links from the archived Valar library page. The company's own Series A release
+  URL (valaratomics.com/docs/Valar-Atomics-Announces-130M-Series-A) is a 404; the LA Times Studios piece (2025-12-17, "developed from
+  press releases", "Information for this article was sourced from Valar Atomics", basis reported) restates the release and names six
+  more Series A participants (no amounts, no per-investor amounts stated). Seed investors: the 5 already recorded; the same article
+  lists Riot Ventures, Initialized Capital and AlleyCorp as previous investors (consistent, nothing new). Business Insider/TechCrunch
+  seed pieces name no further investors. Series B and credit-facility participants are fully listed already in the company post (no
+  additions). DOE Reactor Pilot Program: selection has no dollar amount (existing agreement). NOT FOUND: any DOE/DoD funding amounts, SBIR/ARPA-E
+  awards, USAspending records, Form D (EDGAR full text search probe found none), details of the Mar 2026 $450M beyond Bloomberg
+  headline, Philippines PNRI contract value. Project NOVA with Los Alamos NCERC (2025-11-17 criticality) is a technical collaboration,
+  not recorded as funding or agreement.
+events:
+- id: valar-series-a-2025
+  instrument: equity
+  announced_on: 2025-11-10
+  evidence:
+  - {field: announced_on, snapshot: f88b2f2cea8f2ea2fdfc1ea83387b72d447705393717800973c394a06ce763b3, quote: "has closed a $130 million Series A funding round", basis: reported}
+  participants:
+  - investor: Balerion
+    investor_slug: balerion
+    role: participant
+    evidence:
+    - {field: participant, snapshot: f88b2f2cea8f2ea2fdfc1ea83387b72d447705393717800973c394a06ce763b3, quote: "Balerion, Contrary, DTX, Alumni, Crosscut, Triplepoint, Palmer Luckey and Shyam Sankar participated along with other notable funds and angels.", basis: reported}
+  - investor: Contrary
+    investor_slug: contrary
+    role: participant
+    evidence:
+    - {field: participant, snapshot: f88b2f2cea8f2ea2fdfc1ea83387b72d447705393717800973c394a06ce763b3, quote: "Balerion, Contrary, DTX, Alumni, Crosscut, Triplepoint, Palmer Luckey and Shyam Sankar participated along with other notable funds and angels.", basis: reported}
+  - investor: DTX
+    investor_slug: dtx
+    role: participant
+    evidence:
+    - {field: participant, snapshot: f88b2f2cea8f2ea2fdfc1ea83387b72d447705393717800973c394a06ce763b3, quote: "Balerion, Contrary, DTX, Alumni, Crosscut, Triplepoint, Palmer Luckey and Shyam Sankar participated along with other notable funds and angels.", basis: reported}
+  - investor: Alumni Ventures
+    investor_slug: alumni-ventures
+    role: participant
+    evidence:
+    - {field: participant, snapshot: f88b2f2cea8f2ea2fdfc1ea83387b72d447705393717800973c394a06ce763b3, quote: "Balerion, Contrary, DTX, Alumni, Crosscut, Triplepoint, Palmer Luckey and Shyam Sankar participated along with other notable funds and angels.", basis: reported}
+  - investor: Crosscut Ventures
+    investor_slug: crosscut-ventures
+    role: participant
+    evidence:
+    - {field: participant, snapshot: f88b2f2cea8f2ea2fdfc1ea83387b72d447705393717800973c394a06ce763b3, quote: "Balerion, Contrary, DTX, Alumni, Crosscut, Triplepoint, Palmer Luckey and Shyam Sankar participated along with other notable funds and angels.", basis: reported}
+  - investor: Triplepoint
+    investor_slug: triplepoint
+    role: participant
+    evidence:
+    - {field: participant, snapshot: f88b2f2cea8f2ea2fdfc1ea83387b72d447705393717800973c394a06ce763b3, quote: "Balerion, Contrary, DTX, Alumni, Crosscut, Triplepoint, Palmer Luckey and Shyam Sankar participated along with other notable funds and angels.", basis: reported}
+agreements: []

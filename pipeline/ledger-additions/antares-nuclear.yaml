@@ -1,0 +1,62 @@
+company: antares-nuclear
+name: Antares Nuclear
+sector: fission
+notes: >-
+  Pass 2. Searched for lender names and drawn amounts for the Series B ($25M) and Series C ($100M) debt parts: the company
+  Series C post, TechCrunch (2026-07-27) and ANS (2025-12-04) name no lender and no drawn amount; not found. Web search budget
+  was exhausted, so no other source was reached. SEC Form D search (efts, 122 hits for 'Antares') returns namesakes only (e.g.
+  Antares Unitholder Investment LLC); no Antares Nuclear Form D found. No USAspending/SBIR record matched earlier. TechCrunch
+  states 'Altogether, Antares has raised $604 million' (PitchBook-based, cumulative, not recorded). Added: five agreements from
+  the company updates page (fuel supply and programme selections), none with money stated.
+events: []
+agreements:
+- id: antares-centrus-haleu-contract-2026
+  counterparty: Centrus Energy
+  counterparty_slug: centrus-energy
+  type: fuel_supply
+  binding: definitive
+  announced_on: 2026-09-17
+  summary: Definitive multi-year HALEU supply contract, deliveries before end of decade, with prepayments from Antares; value not stated.
+  evidence:
+  - {field: agreement, snapshot: "7e0ad073da272909bc4a9169969eac3fed03c7b7e87ecda03b35bbf140d4b721", quote: "signing of a definitive multi-year contract for Centrus to supply Antares with High-Assay Low-Enriched Uranium (HALEU)", basis: disclosed}
+  - {field: announced_on, snapshot: "7e0ad073da272909bc4a9169969eac3fed03c7b7e87ecda03b35bbf140d4b721", quote: "Sep 17, 2026", basis: disclosed}
+- id: antares-general-matter-haleu-2026
+  counterparty: General Matter
+  counterparty_slug: general-matter
+  type: fuel_supply
+  binding: definitive
+  announced_on: 2026-07-02
+  summary: Multi-year enrichment services agreement for several metric tons of HALEU from the planned Paducah, Kentucky facility; value not stated.
+  evidence:
+  - {field: agreement, snapshot: "73516811a5d405191550dba4e6fa5bc301094c4ddda8e985b5fb59e65b80e486", quote: "has signed a multi-year enrichment services agreement with General Matter to supply High-Assay Low-Enriched Uranium (HALEU)", basis: disclosed}
+  - {field: announced_on, snapshot: "73516811a5d405191550dba4e6fa5bc301094c4ddda8e985b5fb59e65b80e486", quote: "Jul 2, 2026", basis: disclosed}
+- id: antares-urenco-haleu-2026
+  counterparty: Urenco
+  counterparty_slug: urenco
+  type: fuel_supply
+  binding: definitive
+  announced_on: 2026-05-21
+  summary: Long-term enrichment services agreement for HALEU produced at Urenco's UK facility; value not stated.
+  evidence:
+  - {field: agreement, snapshot: "98be2fb3a82daed408e2396713b25b09d5dddda61159cd961119d59e9de5ff28", quote: "has signed a long-term enrichment services agreement with Urenco to supply High-Assay Low-Enriched Uranium (HALEU)", basis: disclosed}
+  - {field: announced_on, snapshot: "98be2fb3a82daed408e2396713b25b09d5dddda61159cd961119d59e9de5ff28", quote: "May 21, 2026", basis: disclosed}
+- id: antares-anpi-jbsa-2026
+  counterparty: US Department of the Air Force
+  counterparty_slug: us-air-force
+  type: gov_contract
+  binding: loi
+  announced_on: 2026-04-22
+  summary: Selected under ANPI (with Defense Innovation Unit) for proposed deployment of a prototype microreactor at Joint Base San Antonio; selection, no value stated.
+  evidence:
+  - {field: agreement, snapshot: "e693aa2ce5bf5121778dc8f1b9aa0e18f48cb906ed5f21c88796b857aec169d5", quote: "has selected Antares for the proposed deployment of a prototype nuclear microreactor at Joint Base San Antonio", basis: disclosed}
+  - {field: announced_on, snapshot: "e693aa2ce5bf5121778dc8f1b9aa0e18f48cb906ed5f21c88796b857aec169d5", quote: "Apr 22, 2026", basis: disclosed}
+- id: antares-doe-launch-pad-2026
+  counterparty: US Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: loi
+  announced_on: 2026-08-28
+  summary: Selected for DOE Nuclear Energy Launch Pad Program (authorization pathway); no funding amount stated.
+  evidence:
+  - {field: agreement, snapshot: "31deab127b8e104e514cd1bc8b0f82a276bb7146e346567c0d4158f6a7c030a8", quote: "Antares has been selected for the Nuclear Energy Launch Pad Program", basis: disclosed}
+  - {field: announced_on, snapshot: "31deab127b8e104e514cd1bc8b0f82a276bb7146e346567c0d4158f6a7c030a8", quote: "Aug 28, 2026", basis: disclosed}

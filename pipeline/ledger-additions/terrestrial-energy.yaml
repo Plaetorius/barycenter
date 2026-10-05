@@ -1,0 +1,26 @@
+company: terrestrial-energy
+name: Terrestrial Energy Inc.
+sector: fission
+notes: >
+  PASS2 gap-fill. Fetched EDGAR submissions for CIK 2019804 (HCM II Acquisition Corp. / Terrestrial Energy Inc.), the 2025-03-26 8-K
+  (business combination, PIPE subscription agreements), the 2025-11-03 closing 8-K and the 2026-03-31 Form D. The PIPE is $50,000,000
+  (5,000,000 shares at $10.00), already inside the recorded SPAC total, so it is added only as an amount_kind duplicate of the SPAC event
+  (closing-amount evidence); the PIPE investors are NOT named in either 8-K ("certain investors"). Redemptions at the October 2025 meeting
+  were only 7,390 shares for about $77,890, consistent with the existing notes. NOT ADDED: Form D filed 2026-03-31 (offering of
+  $85,320 sold of $85,320, Rule 506(b), business-combination-related, executive officers and directors listed) - too small and its
+  purpose is not stated; convertible notes converted at closing (amount not located in the 8-K); HCM II's own $230M SPAC IPO (424B4
+  2024-08-16) is the vehicle's raise, not Terrestrial's. WebSearch budget exhausted; no S-4 PIPE investor list reached
+  (S-4 ea0243629-02.htm not read in full).
+events:
+- id: terrestrial-2025-pipe-closing
+  instrument: spac
+  round_label: PIPE financing (closing amount, part of the HCM II business combination)
+  announced_on: 2025-03-26
+  closed_on: 2025-10-28
+  amount: {amount: 50000000, currency: USD, qualifier: exact}
+  amount_kind: duplicate
+  supersedes: terrestrial-2025-spac-hcm-ii
+  evidence:
+  - {field: amount, snapshot: 7876e1a4cfd4b77ed42eec77d7f31763407fc99d258ca665cb791c76d57b1f96, quote: "New Terrestrial Energy received an aggregate amount of $50,000,000 from the PIPE Investors.", basis: disclosed}
+  - {field: announced_on, snapshot: d8314e32fa4559deed0ee642a394ff06991deb6cee4007fc76b451d4a7af2a06, quote: "each dated as of March 26, 2025, with certain investors", basis: disclosed}
+agreements: []

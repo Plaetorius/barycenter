@@ -1,12 +1,53 @@
 company: radiant-nuclear
 name: Radiant Industries (Radiant Nuclear)
 sector: fission
-notes: "Radiant Industries, Inc. (SEC CIK 1914078), Kaleidos 1 MWe microreactor, El Segundo CA. Census slug radiant-nuclear. POLICY P2: radiantnuclear.com is ToS-forbidden. Wayback copies were tried (web.archive.org/web/2/ for series-d-announcement and series-b returned 404; series-c-close, /news and the availability API refused connections or returned 429), so NO radiantnuclear.com evidence is cited. Pre-policy probe snapshots of radiantnuclear.com (072c5b0f991a, 5d85cdd2e8a9, 62dbbd3d7344) are deliberately not used. Every amount rests on independent sources (SEC Form D, Orrick, SiliconANGLE, DCVC, USV, USAspending). WebSearch budget was exhausted and Exa was rate limited, so discovery was limited to URLs already known. GAPS: seed rounds (2020-2021, aggregator-only figures of $1.2M and $6M, not recorded); Series B and the Series C extension have no company/investor release in evidence (company page forbidden); Series D participants beyond the two leads are unnamed (\"current investors\"); DOE HALEU allocation and NRIC DOME support are not evidenced here (no fetched primary page) and carry no amounts; the DOE Reactor Pilot Program states no federal money. CONFLICTS: (1) Series A: USV says USV Climate Fund led a \"$10mm round\"; Form D total sold is $12.62M (aggregator says $13M); ledger uses the Form D figure. (2) Series C: DCVC says $100M; Form D (2024-11-15) $100.0M; the aggregator startupintros shows $170M, which appears to combine the Nov 2024 round with the 2025 Form D tranche ($66.0M, signed 2025-06-10). (3) Series D: Orrick/SiliconANGLE say \"more than $300 million\"; the Form D filed 2025-12-29 shows $268.8M sold of $350.0M offered (first sale 2025-12-15), probably a partial-close snapshot. Ledger records \">$300M\" and does not add the Form D total. The 2025-06-10 event (radiant-series-c-extension-2025) is an SEC Form D (first sale 2025-02-13) with no round label in the filing and no investor names; it is likely the Series C close/extension but that is unverified (company page forbidden). Participant lists for Series B and Series C come from startupintros.com (aggregator, basis reported, single source, may be incomplete or imperfect); review before publishing. Decisive Point-Radiant Industries I/II SPVs (CIK 2030456, 2126203; II sold $7.85M, filed 2026-06-24) are investor vehicles, not Radiant rounds, and are not recorded as events. Form D amounts are totals sold, not necessarily new in a single announced round. Form D signature date is used as announced_on where no release was fetched.\n VERIFIER (2026-10-05): removed 12 participants that rested only on the startupintros.com aggregator (Series B: Andreessen Horowitz, Founders Fund, Alumni Ventures, Lux Capital, Initialized Capital; Series C: Chevron Technology Ventures, Andreessen Horowitz, Founders Fund, Union Square Ventures, Draper Associates, Boost VC, Decisive Point). The aggregator Series C page merges the Nov 2024 round with the 2025 tranche ($170M) and appears to mix in later (Series D era) investors, so it cannot place an investor in a round; these names are leads for a future pass with a primary or investor source. Series C amount now also carries the Form D (signed 2024-11-15, $99,999,999 sold, first sale 2024-10-23). The $66.0M 2025 Form D (first sale 2025-02-13) is consistent with a Series C second close (SiliconANGLE: Series D came \"six months after its Series C\") and is a separate offering, not a duplicate of the $100M."
+notes: "Radiant Industries, Inc. (SEC CIK 1914078), Kaleidos 1 MWe microreactor, El Segundo CA. Census slug radiant-nuclear.\
+  \ POLICY P2: radiantnuclear.com is ToS-forbidden. Wayback copies were tried (web.archive.org/web/2/ for series-d-announcement\
+  \ and series-b returned 404; series-c-close, /news and the availability API refused connections or returned 429), so NO\
+  \ radiantnuclear.com evidence is cited. Pre-policy probe snapshots of radiantnuclear.com (072c5b0f991a, 5d85cdd2e8a9, 62dbbd3d7344)\
+  \ are deliberately not used. Every amount rests on independent sources (SEC Form D, Orrick, SiliconANGLE, DCVC, USV, USAspending).\
+  \ WebSearch budget was exhausted and Exa was rate limited, so discovery was limited to URLs already known. GAPS: seed rounds\
+  \ (2020-2021, aggregator-only figures of $1.2M and $6M, not recorded); Series B and the Series C extension have no company/investor\
+  \ release in evidence (company page forbidden); Series D participants beyond the two leads are unnamed (\"current investors\"\
+  ); DOE HALEU allocation and NRIC DOME support are not evidenced here (no fetched primary page) and carry no amounts; the\
+  \ DOE Reactor Pilot Program states no federal money. CONFLICTS: (1) Series A: USV says USV Climate Fund led a \"$10mm round\"\
+  ; Form D total sold is $12.62M (aggregator says $13M); ledger uses the Form D figure. (2) Series C: DCVC says $100M; Form\
+  \ D (2024-11-15) $100.0M; the aggregator startupintros shows $170M, which appears to combine the Nov 2024 round with the\
+  \ 2025 Form D tranche ($66.0M, signed 2025-06-10). (3) Series D: Orrick/SiliconANGLE say \"more than $300 million\"; the\
+  \ Form D filed 2025-12-29 shows $268.8M sold of $350.0M offered (first sale 2025-12-15), probably a partial-close snapshot.\
+  \ Ledger records \">$300M\" and does not add the Form D total. The 2025-06-10 event (radiant-series-c-extension-2025) is\
+  \ an SEC Form D (first sale 2025-02-13) with no round label in the filing and no investor names; it is likely the Series\
+  \ C close/extension but that is unverified (company page forbidden). Participant lists for Series B and Series C come from\
+  \ startupintros.com (aggregator, basis reported, single source, may be incomplete or imperfect); review before publishing.\
+  \ Decisive Point-Radiant Industries I/II SPVs (CIK 2030456, 2126203; II sold $7.85M, filed 2026-06-24) are investor vehicles,\
+  \ not Radiant rounds, and are not recorded as events. Form D amounts are totals sold, not necessarily new in a single announced\
+  \ round. Form D signature date is used as announced_on where no release was fetched.\n VERIFIER (2026-10-05): removed 12\
+  \ participants that rested only on the startupintros.com aggregator (Series B: Andreessen Horowitz, Founders Fund, Alumni\
+  \ Ventures, Lux Capital, Initialized Capital; Series C: Chevron Technology Ventures, Andreessen Horowitz, Founders Fund,\
+  \ Union Square Ventures, Draper Associates, Boost VC, Decisive Point). The aggregator Series C page merges the Nov 2024\
+  \ round with the 2025 tranche ($170M) and appears to mix in later (Series D era) investors, so it cannot place an investor\
+  \ in a round; these names are leads for a future pass with a primary or investor source. Series C amount now also carries\
+  \ the Form D (signed 2024-11-15, $99,999,999 sold, first sale 2024-10-23). The $66.0M 2025 Form D (first sale 2025-02-13)\
+  \ is consistent with a Series C second close (SiliconANGLE: Series D came \"six months after its Series C\") and is a separate\
+  \ offering, not a duplicate of the $100M.\n[pass2] PASS2. Searched: existing evidence re-read; WebSearch budget was exhausted\
+  \ so discovery was limited to links on archived pages. Added the Jan 2026 Series D upsizing (Axios Pro preview, $300M to\
+  \ $350M; duplicate of radiant-series-d-2025, kept visible only) and the $2.2B Army award headline (NYT page is JS-blocked;\
+  \ evidence is the headline as listed on the DCVC company page; likely the same programme as the $750M Radiant share already\
+  \ recorded, so not additive). NOT FOUND: primary evidence naming Series B/C/D investors (company pages forbidden by P2;\
+  \ Series C-close and Series B blog pages not obtainable), Radiant seed rounds, DOE HALEU/NRIC amounts. Form D Series D total\
+  \ ($268.8M sold of $350M) is consistent with the $350M headline."
 verification:
   status: verified
   by: verifier-agent (claude-opus-5-5), 2026-10-05
   'on': '2026-10-05'
-  note: '13 corrections: 12 aggregator-only participants removed (5 Series B, 7 Series C); Series C amount gained primary Form D evidence. Amounts checked against Form D: A $12.62M, B $40.71M, C $100M, 2025 tranche $66.05M; Series D kept at >$300M (press) with the Form D $268.8M partial sale noted. Not confirmed: Series A/B round labels rest on the aggregator; the 2025 $66M tranche label; Series D participants beyond Draper and Boost; Army $750M (single investor-blog source, agreement only).'
+  note: '13 corrections: 12 aggregator-only participants removed (5 Series B, 7 Series C); Series C amount gained primary
+    Form D evidence. Amounts checked against Form D: A $12.62M, B $40.71M, C $100M, 2025 tranche $66.05M; Series D kept at
+    >$300M (press) with the Form D $268.8M partial sale noted. Not confirmed: Series A/B round labels rest on the aggregator;
+    the 2025 $66M tranche label; Series D participants beyond Draper and Boost; Army $750M (single investor-blog source, agreement
+    only).
+
+    [pass2 verify 2026-10-05, claude-opus-5-5] 1 pending items verified. Series D upsize ($350M, Axios, reported) verified
+    as amount_kind duplicate superseding radiant-series-d-2025; not counted. No changes.'
 events:
 - id: radiant-series-a-2022
   instrument: equity
@@ -198,7 +239,8 @@ events:
     currency: USD
     qualifier: exact
   obligated_usd: 1249967
-  program: US Air Force contract FA864923P0464 (SBIR Phase II per docs/survey/probes/sbir.md), microreactor installation energy resilience
+  program: US Air Force contract FA864923P0464 (SBIR Phase II per docs/survey/probes/sbir.md), microreactor installation energy
+    resilience
   evidence:
   - field: amount
     snapshot: fdde8207282a509ddee633feea023b9375c3136ed9696dc73e71eb3ec079a1e1
@@ -225,7 +267,8 @@ events:
     currency: USD
     qualifier: exact
   obligated_usd: 45299
-  program: US Air Force contract FA864921P1143 (SBIR Phase I per docs/survey/probes/sbir.md), portable microreactor fleet simulation
+  program: US Air Force contract FA864921P1143 (SBIR Phase I per docs/survey/probes/sbir.md), portable microreactor fleet
+    simulation
   evidence:
   - field: amount
     snapshot: fdde8207282a509ddee633feea023b9375c3136ed9696dc73e71eb3ec079a1e1
@@ -244,6 +287,32 @@ events:
       snapshot: fdde8207282a509ddee633feea023b9375c3136ed9696dc73e71eb3ec079a1e1
       quote: '"Awarding Sub Agency":"Department of the Air Force"'
       basis: disclosed
+- id: radiant-series-d-upsize-2026
+  instrument: equity
+  round_label: Series D (upsized)
+  announced_on: 2026-01-07
+  amount:
+    amount: 350000000
+    currency: USD
+    qualifier: exact
+  amount_kind: duplicate
+  supersedes: radiant-series-d-2025
+  evidence:
+  - field: amount
+    snapshot: 236446086830fe8dd2e3517eb12d3945722b7cd09a2167692734d907b6b86afd
+    quote: Microreactor maker Radiant increased its latest Series D round to $350 million, up from $300 million a few weeks
+      ago.
+    basis: reported
+  - field: announced_on
+    snapshot: 236446086830fe8dd2e3517eb12d3945722b7cd09a2167692734d907b6b86afd
+    quote: Katie Fehrenbacher Jan 7, 2026
+    basis: reported
+  - field: round_label
+    snapshot: 236446086830fe8dd2e3517eb12d3945722b7cd09a2167692734d907b6b86afd
+    quote: Radiant boosts Series D to $350M, up from $300M just weeks ago
+    basis: reported
+  review: verified
+  source_pass: pass2
 agreements:
 - id: radiant-army-750m-2026
   counterparty: U.S. Army
@@ -255,7 +324,8 @@ agreements:
     amount: 750000000
     currency: USD
     qualifier: exact
-  summary: Award to provide 15 microreactors to the U.S. Army, first delivery 2028. Single source (DCVC investor post); not corroborated by an Army or trade-press page, treat as reported.
+  summary: Award to provide 15 microreactors to the U.S. Army, first delivery 2028. Single source (DCVC investor post); not
+    corroborated by an Army or trade-press page, treat as reported.
   evidence:
   - field: agreement
     snapshot: 6818c19405cceb10a16d26fcdc02168cdc55dba82800b4758a2de4ff04cd4bd3
@@ -267,11 +337,13 @@ agreements:
   type: offtake
   binding: loi
   announced_on: 2025-12-18
-  summary: Deal with Equinix to purchase 20 reactors as reported by SiliconANGLE; binding level and original announcement date not verified (set conservatively to loi; date is the article date).
+  summary: Deal with Equinix to purchase 20 reactors as reported by SiliconANGLE; binding level and original announcement
+    date not verified (set conservatively to loi; date is the article date).
   evidence:
   - field: agreement
     snapshot: f8b9b3565d9e4521d26ffd3a31ce9405d1c2bf7c80c66e9f864f088e422df3ce
-    quote: The company has already secured a deal with Equinix Inc., a global data center and interconnection provider, to purchase 20 reactors.
+    quote: The company has already secured a deal with Equinix Inc., a global data center and interconnection provider, to
+      purchase 20 reactors.
     basis: reported
 - id: radiant-doe-reactor-pilot
   counterparty: DOE Office of Nuclear Energy
@@ -283,5 +355,6 @@ agreements:
   evidence:
   - field: agreement
     snapshot: d92aed237e3d72eebae1422dcd91a89156bb7ec851d5eb319adbd1bf1c0d3730
-    quote: Each company will be responsible for all costs associated with designing, manufacturing, constructing, operating, and decommissioning their test reactors.
+    quote: Each company will be responsible for all costs associated with designing, manufacturing, constructing, operating,
+      and decommissioning their test reactors.
     basis: disclosed

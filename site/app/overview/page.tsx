@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { Link } from "@/components/link";
 
 import { getCompanies, getOverview } from "@/lib/data";
 import { approachLabel } from "@/lib/labels";
@@ -26,7 +26,7 @@ export default function Page() {
   return (
     <div className="mx-auto w-full max-w-5xl px-4 py-10">
       <p className="eyebrow">Overview</p>
-      <h1 className="font-serif text-4xl tracking-tight sm:text-5xl">Where the capital went</h1>
+      <h1 className="font-semibold text-4xl tracking-tight sm:text-5xl">Where the capital went</h1>
       <p className="mt-2 max-w-2xl text-sm text-ink-2">Disclosed amounts only, by announcement year, converted to USD at the announcement-date rate. Agreements are never counted. See the methodology for what is missing.</p>
 
       <dl className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3">
@@ -36,7 +36,7 @@ export default function Page() {
       </dl>
 
       <section aria-labelledby="by-year" className="mt-12">
-        <h2 id="by-year" className="font-serif text-2xl">By year</h2>
+        <h2 id="by-year" className="font-semibold text-2xl">By year</h2>
         <figure className="mt-4">
           <svg viewBox={`0 0 ${Math.max(o.by_year.length, 1) * 64 + 40} 260`} className="h-auto w-full" role="img" aria-label="Stacked bars of disclosed capital by year">
             {o.by_year.map((y, i) => {
@@ -49,8 +49,8 @@ export default function Page() {
                     acc += h;
                     return v > 0 ? <rect key={k.key} x={0} y={220 - acc} width={44} height={h} fill={k.color} fillOpacity={k.opacity}><title>{`${y.year} ${k.label}: ${usd(v)}`}</title></rect> : null;
                   })}
-                  <text x={22} y={238} textAnchor="middle" className="fill-[var(--ink-2)] font-mono text-[10px]">{y.year}</text>
-                  <text x={22} y={214 - acc} textAnchor="middle" className="fill-[var(--foreground)] font-mono text-[10px]">{usd(totals[i])}</text>
+                  <text x={22} y={238} textAnchor="middle" className="fill-[var(--ink-2)] font-medium text-[10px]">{y.year}</text>
+                  <text x={22} y={214 - acc} textAnchor="middle" className="fill-[var(--foreground)] font-medium text-[10px]">{usd(totals[i])}</text>
                 </g>
               );
             })}
@@ -62,7 +62,7 @@ export default function Page() {
       </section>
 
       <section aria-labelledby="approach" className="mt-12">
-        <h2 id="approach" className="font-serif text-2xl">By approach</h2>
+        <h2 id="approach" className="font-semibold text-2xl">By approach</h2>
         <ul className="mt-3 divide-y border-y">
           {o.by_approach.map((r) => (
             <li key={`${r.sector}-${r.approach}`} className="grid grid-cols-[1fr_auto] items-center gap-x-4 py-2 text-sm">
@@ -78,7 +78,7 @@ export default function Page() {
       </section>
 
       <section aria-labelledby="top" className="mt-12">
-        <h2 id="top" className="font-serif text-2xl">Largest rounds</h2>
+        <h2 id="top" className="font-semibold text-2xl">Largest rounds</h2>
         <ol className="mt-3 divide-y border-y">
           {o.top_rounds.map((r, i) => (
             <li key={r.id} className="grid grid-cols-[2rem_1fr_auto] items-baseline gap-x-3 py-2.5 text-sm">

@@ -1,0 +1,29 @@
+company: oklo
+name: Oklo Inc.
+sector: fission
+notes: >-
+  Second-pass gap-fill. oklo.com is ToS-forbidden (P2) and Wayback was not tried again; the WebSearch budget (200/200) was already exhausted
+  at the start of this pass, so no press, Meta/Switch/Equinix release or pre-2023 round source could be searched for. Worked only from
+  already-archived SEC filings and EDGAR submissions JSON (data.sec.gov CIK0001849056). Checked and found NO new funding events:
+  8-Ks of 2024-05-09/13 and 2024-11-06/13 (merger closing, earn-out and lock-up triggers; share issuances, not financing); the 2026 Q2 10-Q
+  ATM table (2026 ATM programme gross $680.4M at 30 Jun 2026 is consistent with the ledger's later realised figure, nothing new).
+  Added one agreement: Centrus HALEU supply LOI (June 2026), from the Q2 2026 10-Q, no amounts stated.
+  STILL MISSING (needs primary sources unreachable this pass): pre-2023 priced rounds (YC 2015 seed, Series A/B and investors: S-4 gives
+  only share counts), Meta prepayment amount (not stated in 10-K or 10-Q), Equinix/Switch binding terms, Liberty/Vertiv/newcleo/Blykalla
+  agreements (not in archived SEC filings).
+events: []
+agreements:
+- id: oklo-centrus-haleu-loi-2026
+  counterparty: Centrus Energy Corp.
+  counterparty_slug: centrus
+  type: fuel_supply
+  binding: loi
+  announced_on: 2026-08-07
+  summary: >-
+    June 2026 letter of intent (day not stated; announced_on is the 10-Q filing date) for Centrus to supply domestically produced HALEU for up to
+    five Aurora powerhouses, deliveries from 2029; may include Oklo prepayments to Centrus. Definitive agreement not yet signed; no value stated.
+  evidence:
+  - field: agreement
+    snapshot: f52b67a6e20fb14cd52eb0f7c2626a629fd246f65449c7e0d89b4f0e5c7f5aec
+    quote: we entered into a letter of intent with Centrus Energy Corp. ("Centrus") under which Centrus would supply sufficient domestically produced HALEU to support multiple years of fuel requirements for up to five Aurora powerhouses
+    basis: disclosed

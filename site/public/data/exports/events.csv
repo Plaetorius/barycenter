@@ -105,6 +105,9 @@ deep-fission-gain-voucher-inl,deep-fission,voucher,DOE GAIN voucher (INL thermal
 deep-isolation-dear0001621,deep-isolation,grant,DEAR0001621,2022-07-14,3590410.0,USD,3590410.0,exact,new_money,3590410.0,3492213.17
 deep-isolation-dear0001797,deep-isolation,grant,DEAR0001797,2023-09-22,441674.0,USD,441674.0,exact,new_money,441674.0,441674.0
 deep-isolation-desc0025094,deep-isolation,grant,DESC0025094,2024-08-23,199892.0,USD,199892.0,exact,new_money,199892.0,199892.0
+deep-isolation-private-placement-2025,deep-isolation,equity,Private placement (concurrent with reverse merger),2025-07-24,33000000.0,USD,33000000.0,exact,new_money,,
+deep-isolation-arpae-scaleup-ready-2026,deep-isolation,grant,ARPA-E SCALEUP Ready (selection),2026-04-07,,,,,ceiling,,
+deep-isolation-doe-genesis-2026,deep-isolation,grant,"DOE Project GENESIS (three awards, partner on LBNL- and USC-led projects)",2026-07-23,,,,,new_money,,
 elementl-form-d-2023,elementl-power,equity,Form D offering (unlabelled),2023-12-13,5000015.0,USD,5000015.0,exact,new_money,,
 elementl-google-development-capital-2025,elementl-power,other,Google early-stage development capital for three nuclear sites,2025-05-07,,,,,new_money,,
 ex-fusion-infuse-2025-1,ex-fusion,voucher,INFUSE 2025,2025-09-10,,,,,new_money,,
@@ -302,6 +305,9 @@ nuscale-doe-de-ne0008369-usaspending,nuscale-power,cost_share,"DOE-NE cooperativ
 nuscale-doe-de-ne0000633-usaspending,nuscale-power,cost_share,"DOE-NE cooperative agreement DE-NE0000633 (USAspending, recipient NUSCALE POWER LLC)",2014-05-27,224479988.42,USD,224479988.42,exact,new_money,224479988.42,
 nuscale-doe-cumulative-10k-2026,nuscale-power,cost_share,"DOE cost-share programmes, cumulative since 2007 (company statement in FY2025 10-K)",2026-02-26,578300000.0,USD,578300000.0,over,cumulative,,
 nuscale-total-invested-10k-2026,nuscale-power,other,"Total investment in NuScale technology since 2007 (company statement in FY2025 10-K, all sources)",2026-02-26,1800000000.0,USD,1800000000.0,over,cumulative,,
+nuscale-atm-sales-fy2023,nuscale-power,follow_on,ATM sales in calendar 2023 (Aug 2023 programme; gross proceeds),2024-03-15,10400000.0,USD,10400000.0,approx,new_money,,
+nuscale-atm-sales-fy2024-prior-programme,nuscale-power,follow_on,ATM sales in calendar 2024 completing the Aug 2023 $150M programme (gross proceeds),2025-03-03,139000000.0,USD,139000000.0,approx,new_money,,
+nuscale-atm-sales-fy2024-nov2024-programme,nuscale-power,follow_on,ATM sales in calendar 2024 under the Nov 2024 $200M programme (gross proceeds),2025-03-03,71200000.0,USD,71200000.0,approx,new_money,,
 altc-ipo-2021,oklo,spac,AltC Acquisition Corp IPO (SPAC),2021-07-07,500000000.0,USD,500000000.0,exact,duplicate,,
 oklo-spac-merger-2024,oklo,spac,Business combination with AltC Acquisition Corp.,2023-07-11,305100000.0,USD,305100000.0,approx,new_money,,
 safe-dcvc-2022-07,oklo,equity,SAFE (private financing round),2022-07-01,2000000.0,USD,2000000.0,exact,new_money,,
@@ -342,6 +348,7 @@ radiant-series-d-2025,radiant-nuclear,equity,Series D,2025-12-17,300000000.0,USD
 radiant-doe-sttr-trisofuel,radiant-nuclear,grant,,2022-07-18,1348048.0,USD,1348048.0,exact,new_money,1348048.0,1348048.0
 radiant-usaf-fa864923p0464,radiant-nuclear,grant,,2023-02-08,1249967.0,USD,1249967.0,exact,new_money,1249967.0,
 radiant-usaf-fa864921p1143,radiant-nuclear,grant,,2021-04-16,45299.0,USD,45299.0,exact,new_money,45299.0,
+radiant-series-d-upsize-2026,radiant-nuclear,equity,Series D (upsized),2026-01-07,350000000.0,USD,350000000.0,exact,duplicate,,
 realta-seed-2023,realta-fusion,equity,Seed,2023-05-31,9000000.0,USD,9000000.0,exact,new_money,,
 realta-doe-fusion-award-2023,realta-fusion,grant,,2023-05-31,3000000.0,USD,3000000.0,exact,duplicate,,
 realta-series-a-2025,realta-fusion,equity,Series A,2025-05-13,36000000.0,USD,36000000.0,exact,new_money,,
@@ -361,6 +368,7 @@ shine-technologies-dena0004010,shine-technologies,grant,DENA0004010,2021-10-18,8
 shine-technologies-desc0024023,shine-technologies,grant,DESC0024023,2023-09-15,1129412.0,USD,1129412.0,exact,new_money,1129412.0,866484.94
 shine-technologies-dear0002077,shine-technologies,grant,DEAR0002077,2025-09-15,3780306.0,USD,3780306.0,exact,new_money,3780306.0,
 shine-technologies-delp0000207,shine-technologies,debt,"DELP0000207 (conditional commitment, not a closed loan)",2026-04-03,262881867.11,USD,262881867.11,exact,ceiling,,
+shine-technologies-70m-2023,shine-technologies,equity,,2023-10-12,70000000.0,USD,70000000.0,exact,new_money,,
 standard-nuclear-safe-2024,standard-nuclear,other,SAFE notes (2024),2024-12-31,33500000.0,USD,33500000.0,exact,new_money,,
 standard-nuclear-seed-2025,standard-nuclear,equity,Series Seed,2025-02-13,10000000.0,USD,10000000.0,approx,new_money,,
 standard-nuclear-series-a-2025,standard-nuclear,equity,"Series A (first closing, per S-1)",2025-08-14,70000000.0,USD,70000000.0,approx,new_money,,
@@ -375,6 +383,7 @@ steady-2026-business-finland-loan,steady-energy,debt,Business Finland R&D loan f
 steady-2026-eib-convertible,steady-energy,debt,EIB senior unsecured convertible loan,2026-09-15,40000000.0,EUR,46156000.0,up_to,ceiling,,
 steady-2026-private-placement,steady-energy,equity,3North Partners private placement (series A shares) in connection with the combination,2026-09-15,69800000.0,EUR,80542220.0,approx,new_money,,
 steady-2026-first-north-ipo,steady-energy,ipo,3North Partners IPO on Nasdaq First North Growth Market Finland,2026-09-15,5000000.0,EUR,5769500.0,up_to,ceiling,,
+steady-2024-seed,steady-energy,equity,Seed,2024-08-22,2000000.0,EUR,2227000.0,exact,new_money,,
 stellarex-infuse-2023-1,stellarex,voucher,INFUSE 2023,2023-07-25,,,,,new_money,,
 stellaria-2025-round,stellaria,equity,2025 round (second round),2025-07-17,23000000.0,EUR,26631700.0,exact,new_money,,
 stellaria-france-2030-grant,stellaria,grant,"France 2030 ""Reacteurs innovants"" laureate (award date not stated; announced_on = date of release mentioning it)",2025-07-17,10000000.0,EUR,11579000.0,exact,new_money,,
@@ -409,12 +418,14 @@ terrapower-2022-08-equity,terrapower,equity,2022 equity raise (first phase),2022
 terrapower-2022-11-equity-extension,terrapower,equity,"2022 equity raise (extension, $830M total)",2022-11-03,80000000.0,USD,80000000.0,exact,new_money,,
 terrapower-2025-06-equity,terrapower,equity,2025 fundraise,2025-06-18,650000000.0,USD,650000000.0,exact,new_money,,
 terrapower-2026-01-khnp-stake,terrapower,equity,KHNP joins investor base (through SK's $250M stake); amount undisclosed,2026-01-20,,,,,duplicate,,
+terrapower-ardp-2b-authorization-ceiling,terrapower,cost_share,"ARDP Natrium authorisation ceiling (up to $2 billion, 50/50 cost share), per TerraPower",2020-10-13,2000000000.0,USD,2000000000.0,up_to,ceiling,,
 terrestrial-2019-canada-sif,terrestrial-energy,debt,"ISED Strategic Innovation Fund, Stream 1 R&D, repayable contribution (latest amendment value)",2019-04-01,18923000.0,CAD,14168974.71,up_to,new_money,,
 terrestrial-2025-series-a1-preferred,terrestrial-energy,equity,Series A-1 preferred private placement (pre-business combination),2025-07-01,25800000.0,USD,25800000.0,approx,new_money,,
 terrestrial-2025-spac-hcm-ii,terrestrial-energy,spac,HCM II Acquisition Corp business combination (trust cash plus USD50M PIPE),2025-03-26,292000000.0,USD,292000000.0,over,new_money,,
 terrestrial-energy-dene0008842,terrestrial-energy,grant,"DOE-NE cooperative agreement DE-NE0008842, IMSR pre-licensing (recipient Terrestrial Energy USA, Inc.)",2019-01-29,495108.28,USD,495108.28,exact,new_money,495108.28,227904.35
 terrestrial-energy-dene0009228,terrestrial-energy,grant,"DOE-NE U.S. Industry Opportunities cooperative agreement DE-NE0009228 (recipient Terrestrial Energy USA, Inc.)",2022-06-29,299183.82,USD,299183.82,exact,new_money,299183.82,299183.82
 terrestrial-energy-dene0009445,terrestrial-energy,grant,"DOE-NE grant DE-NE0009445, IMSR standard design approval pre-licensing (recipient Terrestrial Energy USA, Inc.)",2024-02-28,500000.0,USD,500000.0,exact,new_money,500000.0,361258.26
+terrestrial-2025-pipe-closing,terrestrial-energy,spac,"PIPE financing (closing amount, part of the HCM II business combination)",2025-03-26,50000000.0,USD,50000000.0,exact,duplicate,,
 thea-infuse-2023-02,thea-energy,voucher,"DOE INFUSE (Feb 2023 round, two PPPL collaborations)",2023-02-01,,,,,new_money,,
 thea-milestone-2023-06,thea-energy,cost_share,DOE Milestone-Based Fusion Development Program (initial award),2023-06-01,13700000.0,USD,13700000.0,up_to,new_money,13700000.0,3000000.0
 thea-infuse-2023-07,thea-energy,voucher,"DOE INFUSE (July 2023, UC San Diego collaboration)",2023-07-27,,,,,new_money,,
@@ -469,12 +480,16 @@ ardp-xe100-doe-commitment-2021,x-energy,cost_share,"ARDP Advanced Reactor Demons
 ardp-xe100-usaspending-obligated,x-energy,cost_share,ARDP Xe-100 award DENE0009040 as recorded in USAspending (cumulative obligation),2021-02-02,921717024.0,USD,921717024.0,exact,new_money,921717024.0,581350171.29
 doe-xe100-2016-cooperative-agreement,x-energy,grant,XE-100 Pebble Bed SMR cooperative agreement DENE0008472,2016-07-01,25499999.98,USD,25499999.98,exact,new_money,25499999.98,
 doe-first-of-a-kind-2018,x-energy,cost_share,"First of a Kind US Industry FOA, X-energy LLC (DENE0008745)",2018-05-21,18617645.0,USD,18617645.0,exact,new_money,18617645.0,
+x-energy-series-c-2023-12-completion,x-energy,equity,Series C completion (additional $80M; $235M total incl. note conversions),2023-12-05,80000000.0,USD,80000000.0,exact,new_money,,
+x-energy-c2-convertible-notes-2022-23,x-energy,debt,"C-2 convertible notes (PIK 10%, issued 2022-2023; announced_on is a placeholder; converted into Series C Preferred Units 2024-10-11 and 2025-09-30)",2022-12-01,113000000.0,USD,113000000.0,exact,new_money,,
 xcimer-series-a-2024,xcimer-energy,equity,Series A,2024-06-04,100000000.0,USD,100000000.0,exact,new_money,,
 xcimer-rtx-2026,xcimer-energy,equity,Strategic minority investment,2026-09-10,,,,,new_money,,
 xcimer-cumulative-2026-09,xcimer-energy,equity,,2026-09-10,200000000.0,USD,200000000.0,approx,cumulative,,
 xcimer-doe-milestone-desc0024890,xcimer-energy,grant,,2024-06-04,39500000.0,USD,39500000.0,up_to,ceiling,13500000.0,8500000.0
 xcimer-doe-milestone-desc0024890-obligated,xcimer-energy,grant,,2024-06-04,13500000.0,USD,13500000.0,exact,new_money,13500000.0,8500000.0
 xcimer-arpae-dear0002030,xcimer-energy,cost_share,,2025-11-18,3571249.0,USD,3571249.0,exact,new_money,3571249.0,107261.14
+xcimer-seed-2022-form-d,xcimer-energy,equity,Series Seed Preferred,2022-03-30,875000.0,USD,875000.0,over,new_money,,
+xcimer-safe-2022-form-d,xcimer-energy,equity,SAFEs,2022-11-01,365000.0,USD,365000.0,over,new_money,,
 zap-series-a-2020,zap-energy,equity,Series A,2020-08-12,6500000.0,USD,6500000.0,exact,new_money,,
 zap-series-b-2021,zap-energy,equity,Series B,2021-05-18,27500000.0,USD,27500000.0,exact,new_money,,
 zap-series-c-2022,zap-energy,equity,Series C,2022-06-22,160000000.0,USD,160000000.0,exact,new_money,,

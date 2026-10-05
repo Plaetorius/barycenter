@@ -41,6 +41,8 @@ profiles:
     founded: 2018
     sources:
     - https://cfs.energy
+    logo: logos/commonwealth-fusion-systems.webp
+    logo_source: provided by the project owner (company brand asset)
   energy-singularity:
     country: CN
     hq_city: Shanghai

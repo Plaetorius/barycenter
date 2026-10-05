@@ -1,30 +1,44 @@
 company: oklo
 name: Oklo Inc.
 sector: fission
-notes: >-
-  Public (NYSE:OKLO, CIK 1849056, ex AltC Acquisition Corp.). Primary evidence is SEC filings (EDGAR). oklo.com is ToS-forbidden (P2);
-  the Wayback fallback (web.archive.org) was unreachable from this environment (connection refused) and WebSearch budget was exhausted,
-  so no oklo.com or Wayback snapshot is used. Every fact is from a SEC filing, SEC JSON or a DOE/USAspending record.
-  GAPS / NOT EVIDENCED: (1) pre-2023 priced equity (YC 2015 seed, Series A-1/A-2/A-3 incl. Hydrazine Capital II, DCVC, Accel, Draper, Moskovitz,
-  SV Angel etc.): the S-4 gives only share counts and holders, no round amounts, so no events were created; (2) Vertiv agreement, Liberty Energy
-  commercial agreement (only the SAFE is evidenced) and other newsroom items (newcleo, Blykalla, Siemens, KHNP, Lightbridge, TVA): not found in the
-  archived SEC filings; (3) DOE HALEU fuel award (5 MT, from EBR-II recovered uranium) is stated in the FY2025 10-K without a date, so its
-  announced_on uses the 10-K filing date; (4) ARPA-E ONWARDS selection amount $3,999,836 (probe) differs from the USAspending obligation of $660,000
-  (DEAR0001619); only the obligation is recorded; USAspending lists the awarding agency as Department of Energy (DEAR = ARPA-E award prefix).
-  The two S-3 shelves (up to $1.0B effective 2025-06-12, up to $3.5B filed 2025-10-30) are capacity, not events; ATM programmes drawn on them are events.
-  The Equinix $25.0M prepayment (Mar 2024) is recorded as an agreement value, not as an event; the S-4 says it is treated as a Permitted Equity Financing.
-  ATM convention: realised gross sales where a later 8-K states them (amount qualifier approx, ceiling in committed_usd); otherwise the ceiling (up_to).
-  No PIPE exists in the Oklo business combination: the Sponsor Commitment (up to $50M) was not funded because Available Closing SPAC Cash exceeded $250M.
+notes: 'Public (NYSE:OKLO, CIK 1849056, ex AltC Acquisition Corp.). Primary evidence is SEC filings (EDGAR). oklo.com is ToS-forbidden
+  (P2); the Wayback fallback (web.archive.org) was unreachable from this environment (connection refused) and WebSearch budget
+  was exhausted, so no oklo.com or Wayback snapshot is used. Every fact is from a SEC filing, SEC JSON or a DOE/USAspending
+  record. GAPS / NOT EVIDENCED: (1) pre-2023 priced equity (YC 2015 seed, Series A-1/A-2/A-3 incl. Hydrazine Capital II, DCVC,
+  Accel, Draper, Moskovitz, SV Angel etc.): the S-4 gives only share counts and holders, no round amounts, so no events were
+  created; (2) Vertiv agreement, Liberty Energy commercial agreement (only the SAFE is evidenced) and other newsroom items
+  (newcleo, Blykalla, Siemens, KHNP, Lightbridge, TVA): not found in the archived SEC filings; (3) DOE HALEU fuel award (5
+  MT, from EBR-II recovered uranium) is stated in the FY2025 10-K without a date, so its announced_on uses the 10-K filing
+  date; (4) ARPA-E ONWARDS selection amount $3,999,836 (probe) differs from the USAspending obligation of $660,000 (DEAR0001619);
+  only the obligation is recorded; USAspending lists the awarding agency as Department of Energy (DEAR = ARPA-E award prefix).
+  The two S-3 shelves (up to $1.0B effective 2025-06-12, up to $3.5B filed 2025-10-30) are capacity, not events; ATM programmes
+  drawn on them are events. The Equinix $25.0M prepayment (Mar 2024) is recorded as an agreement value, not as an event; the
+  S-4 says it is treated as a Permitted Equity Financing. ATM convention: realised gross sales where a later 8-K states them
+  (amount qualifier approx, ceiling in committed_usd); otherwise the ceiling (up_to). No PIPE exists in the Oklo business
+  combination: the Sponsor Commitment (up to $50M) was not funded because Available Closing SPAC Cash exceeded $250M.
+
+  [pass2] Second-pass gap-fill. oklo.com is ToS-forbidden (P2) and Wayback was not tried again; the WebSearch budget (200/200)
+  was already exhausted at the start of this pass, so no press, Meta/Switch/Equinix release or pre-2023 round source could
+  be searched for. Worked only from already-archived SEC filings and EDGAR submissions JSON (data.sec.gov CIK0001849056).
+  Checked and found NO new funding events: 8-Ks of 2024-05-09/13 and 2024-11-06/13 (merger closing, earn-out and lock-up triggers;
+  share issuances, not financing); the 2026 Q2 10-Q ATM table (2026 ATM programme gross $680.4M at 30 Jun 2026 is consistent
+  with the ledger''s later realised figure, nothing new). Added one agreement: Centrus HALEU supply LOI (June 2026), from
+  the Q2 2026 10-Q, no amounts stated. STILL MISSING (needs primary sources unreachable this pass): pre-2023 priced rounds
+  (YC 2015 seed, Series A/B and investors: S-4 gives only share counts), Meta prepayment amount (not stated in 10-K or 10-Q),
+  Equinix/Switch binding terms, Liberty/Vertiv/newcleo/Blykalla agreements (not in archived SEC filings).'
 events:
 - id: altc-ipo-2021
   instrument: spac
   round_label: AltC Acquisition Corp IPO (SPAC)
   announced_on: 2021-07-07
   closed_on: 2021-07-12
-  amount: {amount: 500000000, currency: USD}
+  amount:
+    amount: 500000000
+    currency: USD
   amount_kind: duplicate
   supersedes: oklo-spac-merger-2024
-  use_of_proceeds: Blank-check vehicle (AltC, sponsor AltC Sponsor LLC) funds held in trust to complete a business combination; became Oklo in 2024
+  use_of_proceeds: Blank-check vehicle (AltC, sponsor AltC Sponsor LLC) funds held in trust to complete a business combination;
+    became Oklo in 2024
   evidence:
   - field: amount
     snapshot: 3905cee51414b6f9337d9dda25601762f8d8fa9b64a6805d5c332b43610e9eb2
@@ -43,8 +57,12 @@ events:
   round_label: Business combination with AltC Acquisition Corp.
   announced_on: 2023-07-11
   closed_on: 2024-05-09
-  amount: {amount: 305100000, currency: USD, qualifier: approx}
-  use_of_proceeds: Trust cash available to the post-closing company; as of the April 5, 2024 record date, before redemptions (only 710 shares redeemed at closing)
+  amount:
+    amount: 305100000
+    currency: USD
+    qualifier: approx
+  use_of_proceeds: Trust cash available to the post-closing company; as of the April 5, 2024 record date, before redemptions
+    (only 710 shares redeemed at closing)
   evidence:
   - field: amount
     snapshot: b102927bb4983e092b60728911bf3d111aaa04782aff97cd2e504e29e08db2c5
@@ -66,11 +84,14 @@ events:
   instrument: equity
   round_label: SAFE (private financing round)
   announced_on: 2022-07-01
-  amount: {amount: 2000000, currency: USD}
+  amount:
+    amount: 2000000
+    currency: USD
   evidence:
   - field: amount
     snapshot: b102927bb4983e092b60728911bf3d111aaa04782aff97cd2e504e29e08db2c5
-    quote: In July 2022, Oklo issued and sold $2,000,000 of Oklo SAFEs in a private financing round to Data Collective IV, L.P.
+    quote: In July 2022, Oklo issued and sold $2,000,000 of Oklo SAFEs in a private financing round to Data Collective IV,
+      L.P.
     basis: disclosed
   - field: announced_on
     snapshot: b102927bb4983e092b60728911bf3d111aaa04782aff97cd2e504e29e08db2c5
@@ -80,21 +101,27 @@ events:
   - investor: Data Collective IV, L.P. (DCVC IV)
     investor_slug: dcvc
     role: participant
-    amount: {amount: 2000000, currency: USD}
+    amount:
+      amount: 2000000
+      currency: USD
     evidence:
     - field: participant
       snapshot: b102927bb4983e092b60728911bf3d111aaa04782aff97cd2e504e29e08db2c5
-      quote: In July 2022, Oklo issued and sold $2,000,000 of Oklo SAFEs in a private financing round to Data Collective IV, L.P.
+      quote: In July 2022, Oklo issued and sold $2,000,000 of Oklo SAFEs in a private financing round to Data Collective IV,
+        L.P.
       basis: disclosed
 - id: safe-liberty-2023-07
   instrument: equity
   round_label: SAFE (private financing round)
   announced_on: 2023-07-01
-  amount: {amount: 10000000, currency: USD}
+  amount:
+    amount: 10000000
+    currency: USD
   evidence:
   - field: amount
     snapshot: b102927bb4983e092b60728911bf3d111aaa04782aff97cd2e504e29e08db2c5
-    quote: In July 2023, Oklo issued and sold $10,000,000 of Oklo SAFEs in a private financing round to Liberty Oilfield Services LLC
+    quote: In July 2023, Oklo issued and sold $10,000,000 of Oklo SAFEs in a private financing round to Liberty Oilfield Services
+      LLC
     basis: disclosed
   - field: announced_on
     snapshot: b102927bb4983e092b60728911bf3d111aaa04782aff97cd2e504e29e08db2c5
@@ -104,22 +131,28 @@ events:
   - investor: Liberty Oilfield Services LLC (subsidiary of Liberty Energy Inc.)
     investor_slug: liberty-energy
     role: participant
-    amount: {amount: 10000000, currency: USD}
+    amount:
+      amount: 10000000
+      currency: USD
     evidence:
     - field: participant
       snapshot: b102927bb4983e092b60728911bf3d111aaa04782aff97cd2e504e29e08db2c5
-      quote: In July 2023, Oklo issued and sold $10,000,000 of Oklo SAFEs in a private financing round to Liberty Oilfield Services LLC
+      quote: In July 2023, Oklo issued and sold $10,000,000 of Oklo SAFEs in a private financing round to Liberty Oilfield
+        Services LLC
       basis: disclosed
 - id: safe-2024-q1
   instrument: equity
   round_label: SAFE Notes (Jan-Mar 2024, pre-closing)
   announced_on: 2024-01-01
   closed_on: 2024-03-14
-  amount: {amount: 10232000, currency: USD}
+  amount:
+    amount: 10232000
+    currency: USD
   evidence:
   - field: amount
     snapshot: b102927bb4983e092b60728911bf3d111aaa04782aff97cd2e504e29e08db2c5
-    quote: the issuance of $10,232,000 ($1,864,800 at $300 million valuation cap and $8,367,200 at $500 million valuation cap) SAFE Notes between January 2024 through March 14, 2024
+    quote: the issuance of $10,232,000 ($1,864,800 at $300 million valuation cap and $8,367,200 at $500 million valuation
+      cap) SAFE Notes between January 2024 through March 14, 2024
     basis: disclosed
   - field: announced_on
     snapshot: b102927bb4983e092b60728911bf3d111aaa04782aff97cd2e504e29e08db2c5
@@ -129,16 +162,19 @@ events:
   instrument: follow_on
   round_label: Underwritten public offering (7,666,667 shares at $60.00 incl. 1,000,000 over-allotment shares)
   announced_on: 2025-06-12
-  amount: {amount: 460000000, currency: USD}
+  amount:
+    amount: 460000000
+    currency: USD
   use_of_proceeds: General corporate purposes, working capital and capital expenditures, and potential future investments
   evidence:
   - field: amount
     snapshot: 7ca433c6ed60b6539c7fb7739c8847a88cbf977cf40d3835059a3d4a0aadc8bf
-    quote: the Company raised gross proceeds of $ 460,000 pursuant to a firm commitment underwritten public offering of 7,666,667 shares
+    quote: the Company raised gross proceeds of $ 460,000 pursuant to a firm commitment underwritten public offering of 7,666,667
+      shares
     basis: disclosed
   - field: round_label
     snapshot: ca6ff28b0405414bc45211f851ff3e0e01f71450d350937eca0be5aaa4fb0d20
-    quote: "400,000,020.00"
+    quote: 400,000,020.00
     basis: disclosed
   - field: announced_on
     snapshot: 7c97ffc7decc46903d6ff12095d871f84ce97c7ad715907b379adf7c7baab072
@@ -152,7 +188,10 @@ events:
   instrument: follow_on
   round_label: ATM programme (Equity Distribution Agreement dated 2025-06-02; $400M, upsized to $539.999M on 2025-09-03)
   announced_on: 2025-06-02
-  amount: {amount: 540000000, currency: USD, qualifier: approx}
+  amount:
+    amount: 540000000
+    currency: USD
+    qualifier: approx
   committed_usd: 539999000
   evidence:
   - field: amount
@@ -161,7 +200,8 @@ events:
     basis: disclosed
   - field: round_label
     snapshot: 07e1d30fc76d6025a170957d3abb58daf41db595a4eaa0fce2d07bcce79db462
-    quote: having an aggregate offering price of up to $539,999,000 (the “Shares”), pursuant to an Equity Distribution Agreement , dated June 2, 2025
+    quote: having an aggregate offering price of up to $539,999,000 (the “Shares”), pursuant to an Equity Distribution Agreement
+      , dated June 2, 2025
     basis: disclosed
   - field: announced_on
     snapshot: 07e1d30fc76d6025a170957d3abb58daf41db595a4eaa0fce2d07bcce79db462
@@ -169,13 +209,17 @@ events:
     basis: disclosed
   - field: round_label
     snapshot: 07e1d30fc76d6025a170957d3abb58daf41db595a4eaa0fce2d07bcce79db462
-    quote: the Company had issued and sold 5,458,953 shares of its Common Stock pursuant to the Sales Agreement and the Prior Prospectus Supplement and accompanying base prospectus for aggregate gross sale proceeds of approximately $400,000,000
+    quote: the Company had issued and sold 5,458,953 shares of its Common Stock pursuant to the Sales Agreement and the Prior
+      Prospectus Supplement and accompanying base prospectus for aggregate gross sale proceeds of approximately $400,000,000
     basis: disclosed
 - id: atm-2025-12
   instrument: follow_on
   round_label: ATM programme (Equity Distribution Agreement dated 2025-12-04, $1.5B ceiling)
   announced_on: 2025-12-04
-  amount: {amount: 1499867429, currency: USD, qualifier: approx}
+  amount:
+    amount: 1499867429
+    currency: USD
+    qualifier: approx
   committed_usd: 1500000000
   evidence:
   - field: amount
@@ -194,12 +238,16 @@ events:
   instrument: follow_on
   round_label: ATM programme (Equity Distribution Agreement dated 2026-05-13, $1.0B ceiling)
   announced_on: 2026-05-13
-  amount: {amount: 1000000000, currency: USD, qualifier: approx}
+  amount:
+    amount: 1000000000
+    currency: USD
+    qualifier: approx
   committed_usd: 1000000000
   evidence:
   - field: amount
     snapshot: 2912ab807611d6fc3ff7c545a34949febc2bd03d9a1b945e1afe0741e7035d96
-    quote: The Company sold 17,971,448 shares of its Common Stock for gross proceeds of approximately $1,000,000,000 pursuant to the Prior Sales Agreement
+    quote: The Company sold 17,971,448 shares of its Common Stock for gross proceeds of approximately $1,000,000,000 pursuant
+      to the Prior Sales Agreement
     basis: disclosed
   - field: announced_on
     snapshot: d98994b286e1a00eaf714c0c3afeb67db58e02865843a2efd7cbdee836342a3c
@@ -213,7 +261,10 @@ events:
   instrument: follow_on
   round_label: ATM programme (prospectus supplement 2026-09-11, $1.0B ceiling)
   announced_on: 2026-09-11
-  amount: {amount: 1000000000, currency: USD, qualifier: up_to}
+  amount:
+    amount: 1000000000
+    currency: USD
+    qualifier: up_to
   amount_kind: ceiling
   committed_usd: 1000000000
   evidence:
@@ -227,13 +278,16 @@ events:
     basis: disclosed
   - field: round_label
     snapshot: 2aea3b0438167f7fc0e3ca2334e2d946ffe387c6b26bc76355a6f02bfcbbb7ed
-    quote: we may offer shares of our Common Stock and certain other of our securities having an aggregate offering price of up to $3,500,000,000
+    quote: we may offer shares of our Common Stock and certain other of our securities having an aggregate offering price
+      of up to $3,500,000,000
     basis: disclosed
 - id: doe-dear0001696-curie
   instrument: grant
   round_label: ARPA-E CURIE (with Argonne National Laboratory)
   announced_on: 2023-02-16
-  amount: {amount: 1900000, currency: USD}
+  amount:
+    amount: 1900000
+    currency: USD
   obligated_usd: 1900000
   program: DE-FOA-0002691 (CURIE)
   evidence:
@@ -258,7 +312,9 @@ events:
   instrument: grant
   round_label: ARPA-E ONWARDS 2021 cooperative agreement
   announced_on: 2022-07-15
-  amount: {amount: 660000, currency: USD}
+  amount:
+    amount: 660000
+    currency: USD
   obligated_usd: 660000
   program: DE-FOA-0002530 (ONWARDS 2021)
   evidence:
@@ -283,7 +339,9 @@ events:
   instrument: grant
   round_label: ARPA-E OPEN 2021 fully funded cooperative agreement
   announced_on: 2022-06-22
-  amount: {amount: 140000, currency: USD}
+  amount:
+    amount: 140000
+    currency: USD
   obligated_usd: 140000
   program: ARPA-E OPEN 2021
   evidence:
@@ -312,7 +370,8 @@ agreements:
   binding: mou
   announced_on: 2024-12-01
   capacity_mw: 12000
-  summary: 12 GW Master Power Agreement signed December 2024 (day not stated). 10-K calls it a PPA but also says master power agreements are often non-binding, so binding level is recorded as mou; confirm.
+  summary: 12 GW Master Power Agreement signed December 2024 (day not stated). 10-K calls it a PPA but also says master power
+    agreements are often non-binding, so binding level is recorded as mou; confirm.
   evidence:
   - field: agreement
     snapshot: 7ca433c6ed60b6539c7fb7739c8847a88cbf977cf40d3835059a3d4a0aadc8bf
@@ -326,7 +385,8 @@ agreements:
   announced_on: 2024-02-16
   capacity_mw: 500
   term_years: 20
-  summary: LOI for power for US data centers, 20-year timeline, ROFR 36 months for 100 MWe up to 500 MWe cumulative; Equinix paid Oklo $25,000,000 in March 2024 for the ROFR (prepayment, not counted as a funding event).
+  summary: LOI for power for US data centers, 20-year timeline, ROFR 36 months for 100 MWe up to 500 MWe cumulative; Equinix
+    paid Oklo $25,000,000 in March 2024 for the ROFR (prepayment, not counted as a funding event).
   evidence:
   - field: agreement
     snapshot: b102927bb4983e092b60728911bf3d111aaa04782aff97cd2e504e29e08db2c5
@@ -347,7 +407,8 @@ agreements:
   binding: definitive
   announced_on: 2026-01-05
   capacity_mw: 1200
-  summary: Prepayment agreement for a 1.2 GW power campus in Pike County, Ohio; Meta prepays for power and funds nuclear fuel procurement. Prepayment amount not disclosed in the filings read.
+  summary: Prepayment agreement for a 1.2 GW power campus in Pike County, Ohio; Meta prepays for power and funds nuclear fuel
+    procurement. Prepayment amount not disclosed in the filings read.
   evidence:
   - field: agreement
     snapshot: 7ca433c6ed60b6539c7fb7739c8847a88cbf977cf40d3835059a3d4a0aadc8bf
@@ -363,11 +424,14 @@ agreements:
   type: fuel_supply
   binding: mou
   announced_on: 2026-03-17
-  summary: Fuel award of five metric tons of HALEU from recovered EBR-II uranium for a commercial Aurora powerhouse in Idaho, plus an INL site use permit. Award date not stated in the 10-K; announced_on is the 10-K filing date. Binding level uncertain (award, no contract described).
+  summary: Fuel award of five metric tons of HALEU from recovered EBR-II uranium for a commercial Aurora powerhouse in Idaho,
+    plus an INL site use permit. Award date not stated in the 10-K; announced_on is the 10-K filing date. Binding level uncertain
+    (award, no contract described).
   evidence:
   - field: agreement
     snapshot: 7ca433c6ed60b6539c7fb7739c8847a88cbf977cf40d3835059a3d4a0aadc8bf
-    quote: received a fuel award of five metric tons of HALEU produced from recovered uranium from previously irradiated EBR-II fuel from INL
+    quote: received a fuel award of five metric tons of HALEU produced from recovered uranium from previously irradiated EBR-II
+      fuel from INL
     basis: disclosed
 - id: doe-reactor-pilot-program
   counterparty: US Department of Energy
@@ -375,11 +439,13 @@ agreements:
   type: gov_contract
   binding: mou
   announced_on: 2025-08-12
-  summary: Selected for DOE Reactor Pilot Program (authorization pathway, goal of criticality by 2026-07-04). No federal money; each company bears all costs.
+  summary: Selected for DOE Reactor Pilot Program (authorization pathway, goal of criticality by 2026-07-04). No federal money;
+    each company bears all costs.
   evidence:
   - field: agreement
     snapshot: d92aed237e3d72eebae1422dcd91a89156bb7ec851d5eb319adbd1bf1c0d3730
-    quote: Each company will be responsible for all costs associated with designing, manufacturing, constructing, operating, and decommissioning their test reactors.
+    quote: Each company will be responsible for all costs associated with designing, manufacturing, constructing, operating,
+      and decommissioning their test reactors.
     basis: disclosed
   - field: announced_on
     snapshot: d92aed237e3d72eebae1422dcd91a89156bb7ec851d5eb319adbd1bf1c0d3730
@@ -395,7 +461,8 @@ agreements:
   type: gov_contract
   binding: definitive
   announced_on: 2026-01-07
-  summary: DOE Other Transaction Agreement for a radioisotope pilot plant (Atomic Alchemy, Groves Isotope Test Reactor, Lockhart TX) under the Reactor Pilot Program. Value not disclosed.
+  summary: DOE Other Transaction Agreement for a radioisotope pilot plant (Atomic Alchemy, Groves Isotope Test Reactor, Lockhart
+    TX) under the Reactor Pilot Program. Value not disclosed.
   evidence:
   - field: agreement
     snapshot: 7ca433c6ed60b6539c7fb7739c8847a88cbf977cf40d3835059a3d4a0aadc8bf
@@ -407,11 +474,13 @@ agreements:
   type: gov_contract
   binding: loi
   announced_on: 2026-03-17
-  summary: Notice of Intent to Award tentatively selecting Oklo for electricity and heat at Eielson AFB, Alaska; not finalized. Date is the 10-K filing date (selection date not read).
+  summary: Notice of Intent to Award tentatively selecting Oklo for electricity and heat at Eielson AFB, Alaska; not finalized.
+    Date is the 10-K filing date (selection date not read).
   evidence:
   - field: agreement
     snapshot: f52b67a6e20fb14cd52eb0f7c2626a629fd246f65449c7e0d89b4f0e5c7f5aec
-    quote: a Notice of Intent to Award has been issued by the Defense Logistics Agency-Energy on behalf of the Department of the Air Force
+    quote: a Notice of Intent to Award has been issued by the Defense Logistics Agency-Energy on behalf of the Department
+      of the Air Force
     basis: disclosed
 - id: diamondback-loi
   counterparty: Diamondback E&P LLC
@@ -423,7 +492,8 @@ agreements:
   evidence:
   - field: agreement
     snapshot: 7ca433c6ed60b6539c7fb7739c8847a88cbf977cf40d3835059a3d4a0aadc8bf
-    quote: we have signed non-binding letters of intent with Equinix, Inc. ("Equinix"), Diamondback E&P LLC ("Diamondback Energy")
+    quote: we have signed non-binding letters of intent with Equinix, Inc. ("Equinix"), Diamondback E&P LLC ("Diamondback
+      Energy")
     basis: disclosed
 - id: prometheus-hyperscale-loi
   counterparty: Prometheus Hyperscale (formerly Wyoming Hyperscale White Box LLC)
@@ -437,8 +507,42 @@ agreements:
     snapshot: 7ca433c6ed60b6539c7fb7739c8847a88cbf977cf40d3835059a3d4a0aadc8bf
     quote: and Prometheus Hyperscale (formerly Wyoming Hyperscale White Box LLC) ("Prometheus Hyperscale")
     basis: disclosed
+- id: oklo-centrus-haleu-loi-2026
+  counterparty: Centrus Energy Corp.
+  counterparty_slug: centrus
+  type: fuel_supply
+  binding: loi
+  announced_on: 2026-08-07
+  summary: June 2026 letter of intent (day not stated; announced_on is the 10-Q filing date) for Centrus to supply domestically
+    produced HALEU for up to five Aurora powerhouses, deliveries from 2029; may include Oklo prepayments to Centrus. Definitive
+    agreement not yet signed; no value stated.
+  evidence:
+  - field: agreement
+    snapshot: f52b67a6e20fb14cd52eb0f7c2626a629fd246f65449c7e0d89b4f0e5c7f5aec
+    quote: we entered into a letter of intent with Centrus Energy Corp. ("Centrus") under which Centrus would supply sufficient
+      domestically produced HALEU to support multiple years of fuel requirements for up to five Aurora powerhouses
+    basis: disclosed
+  - field: announced_on
+    snapshot: f52b67a6e20fb14cd52eb0f7c2626a629fd246f65449c7e0d89b4f0e5c7f5aec
+    quote: 'Oklo Inc. (Registrant) Date: August 7, 2026'
+    basis: disclosed
+  review: verified
+  source_pass: pass2
 verification:
   status: verified
-  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
-  "on": 2026-10-05
-  note: "6 corrections. (1) altc-ipo-2021 marked duplicate of oklo-spac-merger-2024: the $500M went into the AltC SPAC trust in 2021; only the ~$305.1M trust left at the 2024 record date reached Oklo, and the rest was redeemed by SPAC holders before the deal. (2) follow-on-2025-06 amount raised from $400,000,020 (base deal) to $460.0M gross including the 1,000,000 over-allotment shares (FY2025 10-K). (3) atm-2025-06 changed from an up_to $539.999M ceiling to $540.0M realised (10-K: 'aggregate gross proceeds from the ATM program were $540.0 million'). (4) atm-2026-09 set to amount_kind ceiling: nothing sold is evidenced. Its announced_on quote was replaced with the 2026-09-11 agreement entry, because the old quote described the termination of the May agreement. (5) DCVC IV and Liberty SAFE roles changed from lead to participant, since the source does not say lead. (6) Added a quote naming Oklo to the Reactor Pilot Program agreement. Not confirmed: the SAFE announced_on days (2022-07-01, 2023-07-01, 2024-01-01) stand in for month-only dates. The merger amount is the trust balance at the record date, not net cash at closing. The Switch binding level is unverified. Gaps: pre-2022 priced rounds and the Meta prepayment amount."
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': 2026-10-05
+  note: '6 corrections. (1) altc-ipo-2021 marked duplicate of oklo-spac-merger-2024: the $500M went into the AltC SPAC trust
+    in 2021; only the ~$305.1M trust left at the 2024 record date reached Oklo, and the rest was redeemed by SPAC holders
+    before the deal. (2) follow-on-2025-06 amount raised from $400,000,020 (base deal) to $460.0M gross including the 1,000,000
+    over-allotment shares (FY2025 10-K). (3) atm-2025-06 changed from an up_to $539.999M ceiling to $540.0M realised (10-K:
+    ''aggregate gross proceeds from the ATM program were $540.0 million''). (4) atm-2026-09 set to amount_kind ceiling: nothing
+    sold is evidenced. Its announced_on quote was replaced with the 2026-09-11 agreement entry, because the old quote described
+    the termination of the May agreement. (5) DCVC IV and Liberty SAFE roles changed from lead to participant, since the source
+    does not say lead. (6) Added a quote naming Oklo to the Reactor Pilot Program agreement. Not confirmed: the SAFE announced_on
+    days (2022-07-01, 2023-07-01, 2024-01-01) stand in for month-only dates. The merger amount is the trust balance at the
+    record date, not net cash at closing. The Switch binding level is unverified. Gaps: pre-2022 priced rounds and the Meta
+    prepayment amount.
+
+    [pass2 verify 2026-10-05, claude-opus-5-5] 1 pending items verified. Centrus HALEU LOI verified (10-Q says ''letter of
+    intent''); added announced_on evidence (10-Q signature date 2026-08-07). LOI itself dated only ''June 2026''.'

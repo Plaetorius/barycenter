@@ -1,7 +1,31 @@
 company: last-energy
 name: Last Energy
 sector: fission
-notes: 'Primary sources: lastenergy.com press releases (all fetched directly). Search quota exhausted, so earlier rounds were NOT found: $64M cumulative at Aug 2024 minus the $40M Series B implies about $24M before it (seed/Series A; an aggregator mentions a $3M seed and a Feb 2021 Series A, not used because aggregator/no primary). Series C is ''more than $100 million'' (qualifier over); entrepreneurloop and Built In mirror the release. Haskell County capacity_mw 600 = 30 x 20 MWe (derived from the release''s plan of 30 microreactors and 20 MWe unit size); plan only, no counterparty. Census cumulative 314M for Last Energy not verified. No public cash grant found: DOE Clean Technology Accelerator is an in-kind voucher (no amount), Reactor Pilot Program is authorization plus an OTA with no stated dollar value, EXIM is a non-binding LOI for debt. Last Energy''s Wales project states ''No Public Funding Required''. Slugs doe-ott, exim, dp-world, texas-a-m-university-system, haskell-county-site are proposed (not in public-funders.csv).'
+notes: 'Primary sources: lastenergy.com press releases (all fetched directly). Search quota exhausted, so earlier rounds were
+  NOT found: $64M cumulative at Aug 2024 minus the $40M Series B implies about $24M before it (seed/Series A; an aggregator
+  mentions a $3M seed and a Feb 2021 Series A, not used because aggregator/no primary). Series C is ''more than $100 million''
+  (qualifier over); entrepreneurloop and Built In mirror the release. Haskell County capacity_mw 600 = 30 x 20 MWe (derived
+  from the release''s plan of 30 microreactors and 20 MWe unit size); plan only, no counterparty. Census cumulative 314M for
+  Last Energy not verified. No public cash grant found: DOE Clean Technology Accelerator is an in-kind voucher (no amount),
+  Reactor Pilot Program is authorization plus an OTA with no stated dollar value, EXIM is a non-binding LOI for debt. Last
+  Energy''s Wales project states ''No Public Funding Required''. Slugs doe-ott, exim, dp-world, texas-a-m-university-system,
+  haskell-county-site are proposed (not in public-funders.csv).
+
+  [pass2] Pass 2 gap-fill. Searched: EDGAR Form D full-text for ''Last Energy'' finds only two issuer entities ''VI Last Energy
+  SPV I'' (CIK 2062660, Form D 2025-08-07, $1,010,000 sold, 1 investor) and ''VI Last Energy SPV II'' (CIK 2091008, Form D
+  2025-10-14, $1,155,400 sold, 3 investors), both series of Vineyard Master LLC (a pooled investment fund, Rule 506(b)); the
+  name implies they are investor vehicles holding Last Energy stock, but no filing states the amount invested in Last Energy,
+  so they are NOT recorded as events (possible overlap with the Series C). No Form D by Last Energy Inc. itself was found,
+  so the Series A and the rest of the pre-Series B money ($64M cumulative minus $40M) cannot be sized from filings. Seed:
+  VentureBeat 2020-02-25 (Wayback copy; direct fetch hit HTTP 429) says Last Energy raised $3 million led by First Round Capital
+  (reported). Wikipedia states a ''$20 million Series A led by Gigafund in 2020'' citing PitchBook only; NOT recorded (no
+  primary or press source reached; WebSearch budget exhausted). Note $3M + $20M + $40M = $63M, near the company''s $64M cumulative,
+  consistent but unproven. Series B/C already recorded; lastenergy.com press listing (June 2024 onward) read in full for grants:
+  none beyond the in-kind DOE voucher; South Wales project says ''No Public Funding Required'' (2024-10-15). Agreements added:
+  Romania/RATEN pilot (2022-03, Romania Insider via Wayback; terms unclear, recorded mou), Poland Enea LOI (NucNet 2022-06-28),
+  LSEZ LOI (WNN 2022-07-29), KSSE PPA and 24 UK PPAs (POWER 2023-03-23). Romanian CNCAN pre-authorization completion (2024-10-07)
+  is a regulatory step, not an agreement, and is not recorded. Texas/Haskell: existing agreement kept; no counterparty beyond
+  the site plan found. All PPAs/LOIs are non-funding agreements; capacity for KSSE derived from ''10 20-MWe plants''.'
 events:
 - id: last-energy-series-b-2024
   instrument: equity
@@ -68,7 +92,8 @@ events:
     amount: 100000000.0
     currency: USD
     qualifier: over
-  use_of_proceeds: Fully capitalize the DOE pilot project (PWR-5) and transition to commercialization of PWR-20 production plants
+  use_of_proceeds: Fully capitalize the DOE pilot project (PWR-5) and transition to commercialization of PWR-20 production
+    plants
   evidence:
   - field: amount
     snapshot: 434649906bc5ba7efc8a5d88bd2826785981195b1f3a7168027690634d387a99
@@ -89,7 +114,9 @@ events:
     evidence:
     - field: participant
       snapshot: 434649906bc5ba7efc8a5d88bd2826785981195b1f3a7168027690634d387a99
-      quote: closed an oversubscribed Series C of more than $100 million led by the Astera Institute, with participation from JAM Fund, Gigafund, The Haskell Company, AE Ventures, Ultranative, Galaxy Interactive, and Woori Technology Co., Ltd., among others.
+      quote: closed an oversubscribed Series C of more than $100 million led by the Astera Institute, with participation from
+        JAM Fund, Gigafund, The Haskell Company, AE Ventures, Ultranative, Galaxy Interactive, and Woori Technology Co., Ltd.,
+        among others.
       basis: disclosed
   - investor: JAM Fund
     investor_slug: jam-fund
@@ -97,7 +124,9 @@ events:
     evidence:
     - field: participant
       snapshot: 434649906bc5ba7efc8a5d88bd2826785981195b1f3a7168027690634d387a99
-      quote: closed an oversubscribed Series C of more than $100 million led by the Astera Institute, with participation from JAM Fund, Gigafund, The Haskell Company, AE Ventures, Ultranative, Galaxy Interactive, and Woori Technology Co., Ltd., among others.
+      quote: closed an oversubscribed Series C of more than $100 million led by the Astera Institute, with participation from
+        JAM Fund, Gigafund, The Haskell Company, AE Ventures, Ultranative, Galaxy Interactive, and Woori Technology Co., Ltd.,
+        among others.
       basis: disclosed
   - investor: Gigafund
     investor_slug: gigascale-capital
@@ -105,7 +134,9 @@ events:
     evidence:
     - field: participant
       snapshot: 434649906bc5ba7efc8a5d88bd2826785981195b1f3a7168027690634d387a99
-      quote: closed an oversubscribed Series C of more than $100 million led by the Astera Institute, with participation from JAM Fund, Gigafund, The Haskell Company, AE Ventures, Ultranative, Galaxy Interactive, and Woori Technology Co., Ltd., among others.
+      quote: closed an oversubscribed Series C of more than $100 million led by the Astera Institute, with participation from
+        JAM Fund, Gigafund, The Haskell Company, AE Ventures, Ultranative, Galaxy Interactive, and Woori Technology Co., Ltd.,
+        among others.
       basis: disclosed
   - investor: The Haskell Company
     investor_slug: the-haskell-company
@@ -113,7 +144,9 @@ events:
     evidence:
     - field: participant
       snapshot: 434649906bc5ba7efc8a5d88bd2826785981195b1f3a7168027690634d387a99
-      quote: closed an oversubscribed Series C of more than $100 million led by the Astera Institute, with participation from JAM Fund, Gigafund, The Haskell Company, AE Ventures, Ultranative, Galaxy Interactive, and Woori Technology Co., Ltd., among others.
+      quote: closed an oversubscribed Series C of more than $100 million led by the Astera Institute, with participation from
+        JAM Fund, Gigafund, The Haskell Company, AE Ventures, Ultranative, Galaxy Interactive, and Woori Technology Co., Ltd.,
+        among others.
       basis: disclosed
   - investor: AE Ventures
     investor_slug: ae-ventures
@@ -121,7 +154,9 @@ events:
     evidence:
     - field: participant
       snapshot: 434649906bc5ba7efc8a5d88bd2826785981195b1f3a7168027690634d387a99
-      quote: closed an oversubscribed Series C of more than $100 million led by the Astera Institute, with participation from JAM Fund, Gigafund, The Haskell Company, AE Ventures, Ultranative, Galaxy Interactive, and Woori Technology Co., Ltd., among others.
+      quote: closed an oversubscribed Series C of more than $100 million led by the Astera Institute, with participation from
+        JAM Fund, Gigafund, The Haskell Company, AE Ventures, Ultranative, Galaxy Interactive, and Woori Technology Co., Ltd.,
+        among others.
       basis: disclosed
   - investor: Ultranative
     investor_slug: ultranative
@@ -129,7 +164,9 @@ events:
     evidence:
     - field: participant
       snapshot: 434649906bc5ba7efc8a5d88bd2826785981195b1f3a7168027690634d387a99
-      quote: closed an oversubscribed Series C of more than $100 million led by the Astera Institute, with participation from JAM Fund, Gigafund, The Haskell Company, AE Ventures, Ultranative, Galaxy Interactive, and Woori Technology Co., Ltd., among others.
+      quote: closed an oversubscribed Series C of more than $100 million led by the Astera Institute, with participation from
+        JAM Fund, Gigafund, The Haskell Company, AE Ventures, Ultranative, Galaxy Interactive, and Woori Technology Co., Ltd.,
+        among others.
       basis: disclosed
   - investor: Galaxy Interactive
     investor_slug: galaxy-interactive
@@ -137,7 +174,9 @@ events:
     evidence:
     - field: participant
       snapshot: 434649906bc5ba7efc8a5d88bd2826785981195b1f3a7168027690634d387a99
-      quote: closed an oversubscribed Series C of more than $100 million led by the Astera Institute, with participation from JAM Fund, Gigafund, The Haskell Company, AE Ventures, Ultranative, Galaxy Interactive, and Woori Technology Co., Ltd., among others.
+      quote: closed an oversubscribed Series C of more than $100 million led by the Astera Institute, with participation from
+        JAM Fund, Gigafund, The Haskell Company, AE Ventures, Ultranative, Galaxy Interactive, and Woori Technology Co., Ltd.,
+        among others.
       basis: disclosed
   - investor: Woori Technology Co., Ltd.
     investor_slug: woori-technology
@@ -145,7 +184,9 @@ events:
     evidence:
     - field: participant
       snapshot: 434649906bc5ba7efc8a5d88bd2826785981195b1f3a7168027690634d387a99
-      quote: closed an oversubscribed Series C of more than $100 million led by the Astera Institute, with participation from JAM Fund, Gigafund, The Haskell Company, AE Ventures, Ultranative, Galaxy Interactive, and Woori Technology Co., Ltd., among others.
+      quote: closed an oversubscribed Series C of more than $100 million led by the Astera Institute, with participation from
+        JAM Fund, Gigafund, The Haskell Company, AE Ventures, Ultranative, Galaxy Interactive, and Woori Technology Co., Ltd.,
+        among others.
       basis: disclosed
 - id: last-energy-doe-ott-voucher-2024
   instrument: voucher
@@ -171,6 +212,43 @@ events:
       snapshot: 7921f5ba1c4fa35cf7c24e590f9b9cf620f28b641e560979c67d5351addbd039
       quote: selected by the US Department of Energy (DOE) Office of Technology Transitions to receive in-kind support
       basis: disclosed
+- id: last-energy-seed-2020
+  instrument: equity
+  round_label: Seed
+  announced_on: '2020-02-25'
+  amount:
+    amount: 3000000
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: 4b43bcb4db1f8eb4752cbb6a3e3cde82796b58ef1fc3601a4f725dafd7dd7b90
+    quote: Dean Takahashi @deantak February 25, 2020
+    basis: reported
+    original_url: https://venturebeat.com/business/last-energy-raises-3-million-to-fight-climate-change-with-nuclear-energy/
+  - field: amount
+    snapshot: 4b43bcb4db1f8eb4752cbb6a3e3cde82796b58ef1fc3601a4f725dafd7dd7b90
+    quote: Last Energy has raised $3 million to fight climate change
+    basis: reported
+    original_url: https://venturebeat.com/business/last-energy-raises-3-million-to-fight-climate-change-with-nuclear-energy/
+  - field: round_label
+    snapshot: 4b43bcb4db1f8eb4752cbb6a3e3cde82796b58ef1fc3601a4f725dafd7dd7b90
+    quote: First Round Capital led the funding for Last Energy
+    basis: reported
+    original_url: https://venturebeat.com/business/last-energy-raises-3-million-to-fight-climate-change-with-nuclear-energy/
+  participants:
+  - investor: First Round Capital
+    investor_slug: first-round-capital
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 4b43bcb4db1f8eb4752cbb6a3e3cde82796b58ef1fc3601a4f725dafd7dd7b90
+      quote: First Round Capital led the funding for Last Energy
+      basis: reported
+      original_url: https://venturebeat.com/business/last-energy-raises-3-million-to-fight-climate-change-with-nuclear-energy/
+    review: pending
+  review: pending
+  source_pass: pass2
 agreements:
 - id: last-energy-doe-reactor-pilot-otg-2025
   counterparty: US Department of Energy
@@ -178,7 +256,8 @@ agreements:
   type: gov_contract
   binding: definitive
   announced_on: 2025-12-16
-  summary: Selected Aug 2025 for the DOE Reactor Pilot Program and signed the first known Other Transaction Agreement between DOE and a reactor developer (PWR-5 pilot at Texas A&M RELLIS); no DOE dollar amount stated.
+  summary: Selected Aug 2025 for the DOE Reactor Pilot Program and signed the first known Other Transaction Agreement between
+    DOE and a reactor developer (PWR-5 pilot at Texas A&M RELLIS); no DOE dollar amount stated.
   evidence:
   - field: agreement
     snapshot: 434649906bc5ba7efc8a5d88bd2826785981195b1f3a7168027690634d387a99
@@ -195,11 +274,13 @@ agreements:
   type: site
   binding: definitive
   announced_on: 2025-10-15
-  summary: Pilot microreactor (PWR-5, 5 MWe) at Texas A&M-RELLIS; Series C release says Last Energy secured a lease at the campus.
+  summary: Pilot microreactor (PWR-5, 5 MWe) at Texas A&M-RELLIS; Series C release says Last Energy secured a lease at the
+    campus.
   evidence:
   - field: agreement
     snapshot: 8989ad5e9ef3a7b02a30d80e3dcbbedf357759af01fb75c602acfb5331754882
-    quote: Last Energy and the Texas A&M University System today announced plans for a microreactor pilot project at Texas A&M-RELLIS
+    quote: Last Energy and the Texas A&M University System today announced plans for a microreactor pilot project at Texas
+      A&M-RELLIS
     basis: disclosed
   - field: announced_on
     snapshot: 8989ad5e9ef3a7b02a30d80e3dcbbedf357759af01fb75c602acfb5331754882
@@ -212,7 +293,8 @@ agreements:
   type: site
   binding: loi
   announced_on: 2025-02-28
-  summary: Plan to build 30 microreactors on a 200+ acre site in Haskell County for Texas data center customers; ERCOT grid connection filed; no counterparty contract stated.
+  summary: Plan to build 30 microreactors on a 200+ acre site in Haskell County for Texas data center customers; ERCOT grid
+    connection filed; no counterparty contract stated.
   evidence:
   - field: agreement
     snapshot: 379939f216e5104eee07694096369270aed40c9072f89dda392b3fb06e925ba6
@@ -229,11 +311,13 @@ agreements:
   type: partnership
   binding: loi
   announced_on: 2024-12-13
-  summary: EXIM letter of interest confirming willingness to diligence a $103.7M debt financing for a South Wales microreactor; non-binding, not funding.
+  summary: EXIM letter of interest confirming willingness to diligence a $103.7M debt financing for a South Wales microreactor;
+    non-binding, not funding.
   evidence:
   - field: agreement
     snapshot: 6f5dbf042312f9ac632c3e01048c643a8bc2e97bc0c8cd883ab84dd2d589cecf
-    quote: confirms the Bank’s willingness to diligence a $103.7 million financing toward a Last Energy microreactor planned in South Wales
+    quote: confirms the Bank’s willingness to diligence a $103.7 million financing toward a Last Energy microreactor planned
+      in South Wales
     basis: disclosed
   - field: announced_on
     snapshot: 6f5dbf042312f9ac632c3e01048c643a8bc2e97bc0c8cd883ab84dd2d589cecf
@@ -249,7 +333,8 @@ agreements:
   type: partnership
   binding: mou
   announced_on: 2025-09-15
-  summary: Partnership to supply 20 MWe PWR-20 microreactor to London Gateway, aiming for operations in 2030; binding level not stated.
+  summary: Partnership to supply 20 MWe PWR-20 microreactor to London Gateway, aiming for operations in 2030; binding level
+    not stated.
   evidence:
   - field: agreement
     snapshot: 566a39269fd43c7d6f9b6223ef378b430899929b80fb30e7be1e9a37db5af1c4
@@ -260,8 +345,105 @@ agreements:
     quote: September 15, 2025
     basis: disclosed
   capacity_mw: 20
+- id: last-energy-romania-raten-pilot-2022
+  counterparty: RATEN (Autonomous Directorate of Nuclear Energy Technologies, Romania)
+  counterparty_slug: raten
+  type: partnership
+  binding: mou
+  announced_on: '2022-03-10'
+  summary: Pilot project of a 20 MW small modular reactor on the Mioveni nuclear platform, announced by the Romanian prime
+    minister. Agreement terms and value not stated.
+  evidence:
+  - field: agreement
+    snapshot: c057f36ec87f6bb88293f1251987c1e910dd381f256d5c49325e22fc9f3d63f8
+    quote: Last Energy, specialising in small modular nuclear reactors, together with Romania's Autonomous Directorate of
+      Nuclear Energy Technologies (RATEN), will carry out on the nuclear platform in Mioveni a pilot project
+    basis: reported
+    original_url: https://www.romania-insider.com/last-energy-reactor-pitesti-mar-2022
+  review: pending
+  source_pass: pass2
+- id: last-energy-enea-loi-2022
+  counterparty: Enea Group (Poland)
+  counterparty_slug: enea
+  type: partnership
+  binding: loi
+  announced_on: '2022-06-28'
+  summary: Letter of intent for joint development and potential deployment of 20 MW plants in Poland, possibly via a jointly
+    owned company. No value stated.
+  evidence:
+  - field: agreement
+    snapshot: 66e8ad838bf95bf88294a9694bc145b75191caca8fb0868fddeef5a277f89dbb
+    quote: letter of intent for the joint development and potential deployment of 20-MW nuclear plants in Poland
+    basis: reported
+  review: pending
+  source_pass: pass2
+- id: last-energy-lsez-loi-2022
+  counterparty: Legnica Special Economic Zone (LSEZ) and DB Energy
+  counterparty_slug: legnica-special-economic-zone
+  type: ppa
+  binding: loi
+  announced_on: '2022-07-29'
+  capacity_mw: 200
+  term_years: 24
+  summary: Letter of intent for a ten-SMR, 200 MWe plant with a power purchase agreement of at least 24 years by LSEZ and
+    its tenants; company cites over USD 1 billion of investment (its own figure).
+  evidence:
+  - field: agreement
+    snapshot: 36074dc102cc8769c910bd8c2e26ae8dc63af7bf8e2a6e02732f8c487082b920
+    quote: signed a Letter of Intent with Poland's Legnica Special Economic Zone and DB Energy on the construction of a power
+      plant consisting of ten SMRs with a combined capacity of 200 MWe
+    basis: reported
+  - field: term_years
+    snapshot: 36074dc102cc8769c910bd8c2e26ae8dc63af7bf8e2a6e02732f8c487082b920
+    quote: The agreement also includes a power purchase agreement with a minimum length of 24 years
+    basis: reported
+  review: pending
+  source_pass: pass2
+- id: last-energy-ksse-ppa-2023
+  counterparty: Katowice Special Economic Zone (KSSE, Poland)
+  counterparty_slug: katowice-special-economic-zone
+  type: ppa
+  binding: definitive
+  announced_on: '2023-03-22'
+  capacity_mw: 200
+  value:
+    amount: 4300000000
+    currency: USD
+    qualifier: over
+  summary: PPAs for 10 PWR-20 plants (20 MWe each) with KSSE; company states over USD 4.3 billion of electricity sales over
+    the contract lifetime. First plant could be commissioned in 2026 (company claim).
+  evidence:
+  - field: agreement
+    snapshot: 509a1b5e97953a7d1056e788bf5a33321d6fb5f6e3f965f8b7bf06e12aefea4a
+    quote: it signed PPAs for 10 20-MWe plants with Katowice Special Economic Zone (KSSE)
+    basis: reported
+  - field: value
+    snapshot: 509a1b5e97953a7d1056e788bf5a33321d6fb5f6e3f965f8b7bf06e12aefea4a
+    quote: The agreement represents over USD $4.3 billion in electricity sales over the lifetime of the contract
+    basis: reported
+  review: pending
+  source_pass: pass2
+- id: last-energy-uk-ppas-2023
+  counterparty: Undisclosed UK industrial partners (life sciences campus, sustainable fuels manufacturer, hyperscale data
+    centre developer)
+  counterparty_slug: undisclosed-uk-industrial-partners
+  type: ppa
+  binding: definitive
+  announced_on: '2023-03-22'
+  summary: PPAs for 24 PWR-20 SMR units with three UK industrial partnerships; counterparties not named.
+  evidence:
+  - field: agreement
+    snapshot: 509a1b5e97953a7d1056e788bf5a33321d6fb5f6e3f965f8b7bf06e12aefea4a
+    quote: Last Energy on Wednesday also unveiled PPAs for 24 SMRs in the UK as part of three industrial partnerships
+    basis: reported
+  review: pending
+  source_pass: pass2
 verification:
   status: verified
-  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
-  "on": 2026-10-05
-  note: "0 corrections. Series B $40M (Gigafund lead, Autodesk Foundation), Series C 'more than $100M' (qualifier over, Astera lead) and $64M cumulative (not counted) all match company releases; DOE voucher has no amount; EXIM $103.7M is a non-binding LOI recorded as agreement, not funding. Residual: the Haskell County 'agreement' has no counterparty and its 'loi' binding level is not stated in the source (a site-control plan). Gap: about $24M of pre-Series B money (seed/Series A) not evidenced."
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': 2026-10-05
+  note: '0 corrections. Series B $40M (Gigafund lead, Autodesk Foundation), Series C ''more than $100M'' (qualifier over,
+    Astera lead) and $64M cumulative (not counted) all match company releases; DOE voucher has no amount; EXIM $103.7M is
+    a non-binding LOI recorded as agreement, not funding. Residual: the Haskell County ''agreement'' has no counterparty and
+    its ''loi'' binding level is not stated in the source (a site-control plan). Gap: about $24M of pre-Series B money (seed/Series
+    A) not evidenced.'

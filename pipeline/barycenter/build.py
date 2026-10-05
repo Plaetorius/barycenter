@@ -67,7 +67,7 @@ def load_ledgers(include_unverified: bool) -> tuple[list[Ledger], list[str]]:
             skipped.append(f"{path.name}: {len(errors)} evidence errors (first: {errors[0][:120]})")
             continue
         led = Ledger.model_validate(yaml.safe_load(path.read_text()))
-        if not led.events:
+        if not any(e.review == "verified" or include_unverified for e in led.events):
             skipped.append(f"{path.name}: no evidenced funding event (decision D1: not published)")
             continue
         if led.verification.status != "verified" and not include_unverified:
@@ -161,6 +161,8 @@ def build(include_unverified: bool = False) -> Built:
             status=(entry.extra.get("status") if entry and entry.extra.get("status") in {"active", "acquired", "public", "defunct"} else "active"),  # type: ignore[arg-type]
         )
         for e in led.events:
+            if e.review == "pending" and not include_unverified:
+                continue  # added in a later pass, not yet independently verified
             amount = _usd(e.amount, e.announced_on)
             events.append(FundingEvent(
                 id=e.id, company_id=led.company, instrument=e.instrument, round_label=e.round_label,
@@ -172,11 +174,15 @@ def build(include_unverified: bool = False) -> Built:
             add_evidence(e.id, e.evidence, {"amount": e.amount.amount if e.amount else "", "announced_on": e.announced_on.isoformat(),
                                             "round_label": e.round_label or ""}, status, review)
             for p in e.participants:
+                if p.review == "pending" and not include_unverified:
+                    continue
                 slug = resolve.resolve_slug(p.investor_slug)
                 party(slug, p.investor, p.role)
                 parts.append(Participation(event_id=e.id, org_id=slug, role=p.role, amount=_usd(p.amount, e.announced_on)))
                 add_evidence(f"{e.id}:{slug}", p.evidence, {"participant": p.investor}, status, review)
         for a in led.agreements:
+            if a.review == "pending" and not include_unverified:
+                continue
             cslug = resolve.resolve_slug(a.counterparty_slug)
             if cslug not in orgs:
                 orgs[cslug] = _org(cslug, a.counterparty, "counterparty", comp_reg.get(cslug))

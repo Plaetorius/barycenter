@@ -4,6 +4,8 @@ import Graph from "graphology";
 import forceAtlas2 from "graphology-layout-forceatlas2";
 import { useEffect, useRef } from "react";
 
+import { ZoomControls } from "./zoom-controls";
+
 import type { CompanyRow, Edge, InvestorRow } from "@/lib/types";
 
 interface Props {
@@ -28,6 +30,7 @@ function css(name: string): string {
 /** Bipartite investor-company graph. Sigma is loaded only when this view opens (bundle budget). */
 export function Network({ companies, investors, edges, onOpen }: Props) {
   const ref = useRef<HTMLDivElement>(null);
+  const sigmaRef = useRef<import("sigma").default | null>(null);
 
   useEffect(() => {
     let sigma: import("sigma").default | null = null;
@@ -43,16 +46,17 @@ export function Network({ companies, investors, edges, onOpen }: Props) {
       for (const i of investors) if (linked.has(i.id)) g.addNode(i.id, { label: i.name, size: 2.5 + i.companies * 1.2, color: ink, kind: "investor", x: Math.random(), y: Math.random() });
       for (const e of edges) if (g.hasNode(e.investor) && g.hasNode(e.company) && cIds.has(e.company) && !g.hasEdge(e.investor, e.company)) g.addEdge(e.investor, e.company, { size: 0.6 + Math.min(e.events, 4) * 0.4, color: line });
       if (g.order > 1) forceAtlas2.assign(g, { iterations: 220, settings: { ...forceAtlas2.inferSettings(g), gravity: 1.2, scalingRatio: 6, barnesHutOptimize: g.order > 400 } });
-      sigma = new Sigma(g, ref.current, { renderEdgeLabels: false, labelDensity: 0.35, labelRenderedSizeThreshold: 11, labelFont: "Geist, system-ui, sans-serif", labelColor: { color: css("--foreground") } });
+      sigma = sigmaRef.current = new Sigma(g, ref.current, { renderEdgeLabels: false, labelDensity: 0.35, labelRenderedSizeThreshold: 11, labelFont: "Geist, system-ui, sans-serif", labelColor: { color: css("--foreground") } });
       sigma.on("clickNode", ({ node }) => onOpen(node, g.getNodeAttribute(node, "kind")));
     })();
-    return () => { cancelled = true; sigma?.kill(); };
+    return () => { cancelled = true; sigma?.kill(); sigmaRef.current = null; };
   }, [companies, investors, edges, onOpen]);
 
   return (
-    <div>
+    <div className="relative">
+      <ZoomControls onIn={() => sigmaRef.current?.getCamera().animatedZoom({ duration: 220 })} onOut={() => sigmaRef.current?.getCamera().animatedUnzoom({ duration: 220 })} onReset={() => sigmaRef.current?.getCamera().animatedReset({ duration: 260 })} />
       <div ref={ref} className="h-[62vh] min-h-[22rem] w-full" role="img" aria-label="Network of investors and the companies they funded. The table view lists the same relationships." />
-      <p className="px-3 pb-3 text-xs text-muted-foreground">Coloured nodes are companies (amber fusion, teal fission), grey nodes are investors and public funders. Lines are publicly announced participations. Click a node to open it.</p>
+      <p className="px-3 pb-3 text-xs text-muted-foreground">Coloured nodes are companies (amber fusion, teal fission), grey nodes are investors and public funders. Lines are publicly announced participations. Scroll or pinch to zoom, drag to move, click a node to open it.</p>
     </div>
   );
 }

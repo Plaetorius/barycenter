@@ -1,0 +1,156 @@
+company: kairos-power
+name: Kairos Power LLC
+sector: fission
+notes: 'Pass 2 gap-fill. Searched: EDGAR full-text Form D probes for ''Kairos Power'' (0 hits, snapshot ab25f416 / cfa047b2) so private equity rounds and investors remain NOT evidenced; kairospower.com updates (sitemap listed ~95 items; read the state/utility/partner releases) found no funding-round announcement; the 2026-09-02 CFO appointment release says the first CFO will oversee ''corporate fundraising, investor relations'' (no amounts). State support: New Mexico release of 2024-09-16 gives LEDA $3M (NMEDD), JTIP $1.8M and a City of Albuquerque LEDA $500,000 (the city is ''fiscal agent for the state''s funding'', so the city $0.5M may overlap the state LEDA $3M); the release states ''All incentives are pending approval by the Albuquerque City Council'', so all three are recorded as ceiling, not money received. The same release mentions an Industrial Revenue Bond application tied to a ''company investment of more than $269 million'' (company capex, not a financing event). Tennessee release (2021-07-16) names TNECD, Oak Ridge IDB and others as supporters but states no incentive amount. Estimated ''economic impact up to $478 million'' is not funding. Kairos 2021 statement that it would invest $100M is already in the original notes. Agreements added (no values stated): TVA Hermes collaboration 2021, Materion CDA 2022, Los Alamos fuel 2022, Texas A&M-RELLIS siting 2025 (exploratory, 450+ MW), BWXT 2025. Google MPDA and TVA/Google PPA were already recorded. Wikipedia mentions a Feb 2026 $27M ORNL strategic partnership; no primary source was reached, so not recorded. Pages 2019 (GAIN voucher, TCF/NSUF) are bodiless or stated no amount.'
+events:
+- id: kairos-nm-leda-2024
+  instrument: grant
+  round_label: New Mexico Local Economic Development Act (LEDA) funding, committed (pending approval)
+  announced_on: '2024-09-16'
+  amount:
+    amount: 3000000
+    currency: USD
+    qualifier: exact
+  amount_kind: ceiling
+  program: New Mexico LEDA
+  use_of_proceeds: Salt production facility and two fuel development lab facilities in Albuquerque, 100 jobs
+  evidence:
+  - field: announced_on
+    snapshot: e6dbef008c536eb55583829a3ef95290c35debc53a0c88dd367734406f134f73
+    quote: September 16, 2024 FOR IMMEDIATE RELEASE
+    basis: disclosed
+  - field: amount
+    snapshot: e6dbef008c536eb55583829a3ef95290c35debc53a0c88dd367734406f134f73
+    quote: The New Mexico Economic Development Department has committed $3 million in Local Economic Development Act (LEDA) funding for the project.
+    basis: disclosed
+  participants:
+  - investor: New Mexico Economic Development Department
+    investor_slug: new-mexico-edd
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: e6dbef008c536eb55583829a3ef95290c35debc53a0c88dd367734406f134f73
+      quote: The New Mexico Economic Development Department has committed $3 million in Local Economic Development Act (LEDA) funding for the project.
+      basis: disclosed
+- id: kairos-nm-jtip-2024
+  instrument: grant
+  round_label: New Mexico Job Training Incentive Program (JTIP) funding (pending approval)
+  announced_on: '2024-09-16'
+  amount:
+    amount: 1800000
+    currency: USD
+    qualifier: exact
+  amount_kind: ceiling
+  program: New Mexico JTIP
+  evidence:
+  - field: announced_on
+    snapshot: e6dbef008c536eb55583829a3ef95290c35debc53a0c88dd367734406f134f73
+    quote: September 16, 2024 FOR IMMEDIATE RELEASE
+    basis: disclosed
+  - field: amount
+    snapshot: e6dbef008c536eb55583829a3ef95290c35debc53a0c88dd367734406f134f73
+    quote: the project will receive $1.8 million in Job Training Incentive Program (JTIP) funding to train 100 new employees
+    basis: disclosed
+  participants:
+  - investor: New Mexico Economic Development Department
+    investor_slug: new-mexico-edd
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: e6dbef008c536eb55583829a3ef95290c35debc53a0c88dd367734406f134f73
+      quote: the project will receive $1.8 million in Job Training Incentive Program (JTIP) funding to train 100 new employees
+      basis: disclosed
+- id: kairos-albuquerque-leda-2024
+  instrument: grant
+  round_label: City of Albuquerque LEDA commitment (fiscal agent for state funding; pending approval)
+  announced_on: '2024-09-16'
+  amount:
+    amount: 500000
+    currency: USD
+    qualifier: exact
+  amount_kind: ceiling
+  program: City of Albuquerque LEDA
+  evidence:
+  - field: announced_on
+    snapshot: e6dbef008c536eb55583829a3ef95290c35debc53a0c88dd367734406f134f73
+    quote: September 16, 2024 FOR IMMEDIATE RELEASE
+    basis: disclosed
+  - field: amount
+    snapshot: e6dbef008c536eb55583829a3ef95290c35debc53a0c88dd367734406f134f73
+    quote: The City of Albuquerque Economic Development Department has committed $500,000 through its LEDA fund and will serve as the fiscal agent for the state's funding.
+    basis: disclosed
+  participants:
+  - investor: City of Albuquerque Economic Development Department
+    investor_slug: city-of-albuquerque
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: e6dbef008c536eb55583829a3ef95290c35debc53a0c88dd367734406f134f73
+      quote: The City of Albuquerque Economic Development Department has committed $500,000 through its LEDA fund
+      basis: disclosed
+agreements:
+- id: kairos-tva-hermes-collaboration-2021
+  counterparty: Tennessee Valley Authority
+  counterparty_slug: tva
+  type: partnership
+  binding: definitive
+  announced_on: '2021-05-06'
+  summary: TVA to provide engineering, operations and licensing support for the Hermes low-power demonstration reactor at ETTP, Oak Ridge. No value stated.
+  evidence:
+  - field: agreement
+    snapshot: 738cc2c5c8999bac89135cd129e8c48d0bfb77737e113ba434d4febd06b3ef95
+    quote: TVA will provide engineering, operations, and licensing support to help Kairos Power deploy its low-power demonstration reactor, named Hermes.
+    basis: disclosed
+- id: kairos-materion-cda-2022
+  counterparty: Materion Corporation
+  counterparty_slug: materion
+  type: partnership
+  binding: definitive
+  announced_on: '2022-07-19'
+  summary: 'Cooperative Development Agreement: Kairos Power commissioned a Molten Salt Purification Plant at Materion''s Elmore, Ohio campus to produce Flibe coolant. No value stated.'
+  evidence:
+  - field: agreement
+    snapshot: f87b9becf9d916cd9abd40f42da7458dd4a90ca5575bde816e961b9852273458
+    quote: As part of a Cooperative Development Agreement with Materion Corporation, Kairos Power has commissioned a Molten Salt Purification Plant (MSPP) at the Materion campus in Elmore, Ohio.
+    basis: disclosed
+- id: kairos-lanl-fuel-agreement-2022
+  counterparty: Los Alamos National Laboratory
+  counterparty_slug: los-alamos-national-laboratory
+  type: fuel_supply
+  binding: definitive
+  announced_on: '2022-12-08'
+  summary: Agreement to produce TRISO fuel pebbles for Hermes at LANL's Low Enriched Fuel Fabrication Facility. No value stated.
+  evidence:
+  - field: agreement
+    snapshot: bb3f615d7d7a79de6900f7a708f3e07b4ec4cf4867fde285349f3bcc30a8564f
+    quote: the company has signed an agreement to produce TRISO fuel pebbles for the Hermes demonstration reactor at Los Alamos
+    basis: disclosed
+- id: kairos-texas-am-rellis-site-2025
+  counterparty: Texas A&M University System
+  counterparty_slug: texas-a-m-university-system
+  type: site
+  binding: mou
+  announced_on: '2025-02-04'
+  capacity_mw: 450
+  summary: Kairos Power, Texas A&M and prospective customers agreed to explore siting one or more commercial plants totalling 450+ MW at the RELLIS campus. Exploratory, no value stated.
+  evidence:
+  - field: agreement
+    snapshot: 33491e952ba1d54f55419d94cd0b6f18716a832bb950c00102da37c34e67da1e
+    quote: Kairos Power, the Texas A&M University System, and prospective customers have agreed to explore the potential to site one or more commercial nuclear power plants
+    basis: disclosed
+  - field: capacity_mw
+    snapshot: 33491e952ba1d54f55419d94cd0b6f18716a832bb950c00102da37c34e67da1e
+    quote: could potentially host one or more plants totaling 450+ MW in Kairos Power's commercial fleet
+    basis: disclosed
+- id: kairos-bwxt-triso-collaboration-2025
+  counterparty: BWX Technologies
+  counterparty_slug: bwx-technologies
+  type: partnership
+  binding: mou
+  announced_on: '2025-09-03'
+  summary: Agreement to explore optimisation of commercial TRISO fuel production and a jointly developed TRISO fabrication facility. No value stated.
+  evidence:
+  - field: agreement
+    snapshot: 05464667f2368217f8ada07dcc61caf8180f1039226084e7ce7cdcd104e963fe
+    quote: today announced an agreement to collaboratively explore technical and process opportunities for the optimization of commercial production of TRISO nuclear fuel
+    basis: disclosed

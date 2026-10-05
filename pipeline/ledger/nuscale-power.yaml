@@ -1,9 +1,64 @@
 company: nuscale-power
 name: NuScale Power Corporation
 sector: fission
-notes: |-
-  Public (NYSE: SMR; EDGAR CIK 1822966, ex Spring Valley Acquisition Corp.). Primary evidence: EDGAR 8-K/424B5/10-K documents (snapshots archived under source ledger-nuscale-power; submissions index 377c05a5fc1e) and USAspending award detail JSON. SPAC: Spring Valley IPO (2020-11-27, $230M gross) and the PIPE ($235M, 23,700,002 shares, 8-K 2022-05-05; an earlier 8-K of 2021-12-14 stated $211M for 21,300,002 shares, later upsized) are recorded with amount_kind duplicate because the only figure the closing 8-K gives for cash that reached NuScale LLC is the $145,497,965 gross proceeds contribution (event nuscale-spac-closing-2022-05), and the filings do not say how trust cash, redemptions, PIPE and fees reconcile. Reviewer: do not sum IPO + PIPE + closing. ATM programmes: one event per programme, amount is the ceiling (qualifier up_to), not proceeds. Each later programme terminated or replaced the earlier one (Nov 2025 and Feb 2026 424B5 say the prior ATM was terminated; Aug 2026 424B5 says all shares under the Feb 2026 programme were sold, snapshot c769111f729c). VERIFIER: ATM programme events are amount_kind ceiling (never counted); realised proceeds are separate new_money events: FY2025 gross $1,327.6M across the 2024, Q3 2025 and Q4 2025 programmes (10-K) and about $1B for the fully sold Feb 2026 programme (Aug 2026 424B5). Sales under the Aug 2023 programme and 2024-calendar sales under the Nov 2024 programme are not evidenced (FY2023/FY2024 10-Ks not archived). S-3 shelf of $500M (File 333-272342, 2023-06) is a shelf, not a programme, and is not recorded as an event; S-1/S-3 resale registrations (2022-2023) raise no company money. 2025-07-31 Exchange and Lock-Up Agreement with Fluor (8-K 0001104659-25-072905) limits Fluor sell-down; not funding. Fluor Enterprises is the largest stockholder (about 70.9% of Class B economic interest at closing per 8-K); Fluor sells down. Pre-SPAC private rounds (Fluor, JGC/IHI via Japan NuScale Innovation, Doosan, JBIC, Samsung C&T) are not evidenced beyond the 2011 Fluor convertible notes; not found in the sources archived. Japan NuScale Innovation LLC and JBIC letter agreement (2022-04-04) exists as an exhibit but has no stated amount. DOE: USAspending lists five DOE-NE cooperative agreements to NUSCALE POWER LLC (UEI PNKLRKV4CNX3) obligating $585.9M in total (224.48M + 7.52M + 48.0M + 43.2M + 262.66M). The 10-K (filed 2026-02-26) says "more than $578.3 million from DOE under a series of cost-share programs" (cumulative event, not new money). The two figures differ by about $7.6M and are kept as separate evidenced facts: USAspending obligations (per award) vs the company statement; do not sum them. DE-NE0000633 shows total_funding 278,454,086.42 against total_obligation 224,479,988.42 and non_federal_funding 0; USAspending outlays for DE-NE0000633 and DE-NE0008742 are 0, so disbursed_usd omitted for those. USAspending recipient total for DOE FY2020-26 is $263,815,721.69 under NUSCALE POWER LLC (probe snapshot de63a59b9509), which matches DE-NE0008928 plus nothing older (older awards pre-date the FY2020 window). CFPP: DE-NE0008935 (recipient CFPP LLC, UEI J2Z4L77MTJN7, a UAMPS entity, NOT NuScale) obligated $164,741,352, outlays $145,479,549.39, non_federal_funding $6,674,014,797 (a project-cost figure, not DOE money) per USAspending detail. It funds the NuScale-based Carbon Free Power Project. VERIFIER: the event for this award was REMOVED because the recipient is CFPP LLC (UAMPS), a different legal entity, and the USAspending record does not name NuScale as recipient or beneficiary; evidence stays at snapshot c860ee0c4152 (total_obligation 164741352.0, total_account_outlay 145479549.39, recipient_name CFPP LLC) for attribution to CFPP LLC. The Carbon Free Power Project was wound down (Release Agreement 2023-11-07). NOT FOUND / BLOCKED: DOE press announcements (e.g. the DOE-announced CFPP cost-share ceiling, NuScale FOA awards) could not be fetched: WebSearch budget exhausted and guessed energy.gov URLs returned 404 (snapshots d7fd7867ac54, b6d1a22c28be, b464f04405631, 09e2c3455480, 765164edda0d, d3446b783462 are 404 pages and unused). So the USAspending-vs-DOE-announcement comparison is only USAspending vs the company 10-K. TVA newsroom returned 403 (da4d1f729171); the TVA/ENTRA1 agreement is evidenced through NuScale's 10-K only, and NuScale is not a party to it. ENTRA1 Energy is NuScale's exclusive global strategic partner; the PMA contribution ($35M-$55M) is paid BY NuScale to ENTRA1 energy projects in milestone tranches, so it is an agreement value, not funding received. Dates for the 10-K cumulative events use the auditor-report date (2026-02-26), which equals the filing date.
-  MERGE 2026-10-05 (USAspending supplement): no new awards. USAspending 'Total Outlays' is account-level outlay data reported from FY2017/FY2020 onward, so disbursed_usd can understate payments on older awards.
+notes: 'Public (NYSE: SMR; EDGAR CIK 1822966, ex Spring Valley Acquisition Corp.). Primary evidence: EDGAR 8-K/424B5/10-K
+  documents (snapshots archived under source ledger-nuscale-power; submissions index 377c05a5fc1e) and USAspending award detail
+  JSON. SPAC: Spring Valley IPO (2020-11-27, $230M gross) and the PIPE ($235M, 23,700,002 shares, 8-K 2022-05-05; an earlier
+  8-K of 2021-12-14 stated $211M for 21,300,002 shares, later upsized) are recorded with amount_kind duplicate because the
+  only figure the closing 8-K gives for cash that reached NuScale LLC is the $145,497,965 gross proceeds contribution (event
+  nuscale-spac-closing-2022-05), and the filings do not say how trust cash, redemptions, PIPE and fees reconcile. Reviewer:
+  do not sum IPO + PIPE + closing. ATM programmes: one event per programme, amount is the ceiling (qualifier up_to), not proceeds.
+  Each later programme terminated or replaced the earlier one (Nov 2025 and Feb 2026 424B5 say the prior ATM was terminated;
+  Aug 2026 424B5 says all shares under the Feb 2026 programme were sold, snapshot c769111f729c). VERIFIER: ATM programme events
+  are amount_kind ceiling (never counted); realised proceeds are separate new_money events: FY2025 gross $1,327.6M across
+  the 2024, Q3 2025 and Q4 2025 programmes (10-K) and about $1B for the fully sold Feb 2026 programme (Aug 2026 424B5). Sales
+  under the Aug 2023 programme and 2024-calendar sales under the Nov 2024 programme are not evidenced (FY2023/FY2024 10-Ks
+  not archived). S-3 shelf of $500M (File 333-272342, 2023-06) is a shelf, not a programme, and is not recorded as an event;
+  S-1/S-3 resale registrations (2022-2023) raise no company money. 2025-07-31 Exchange and Lock-Up Agreement with Fluor (8-K
+  0001104659-25-072905) limits Fluor sell-down; not funding. Fluor Enterprises is the largest stockholder (about 70.9% of
+  Class B economic interest at closing per 8-K); Fluor sells down. Pre-SPAC private rounds (Fluor, JGC/IHI via Japan NuScale
+  Innovation, Doosan, JBIC, Samsung C&T) are not evidenced beyond the 2011 Fluor convertible notes; not found in the sources
+  archived. Japan NuScale Innovation LLC and JBIC letter agreement (2022-04-04) exists as an exhibit but has no stated amount.
+  DOE: USAspending lists five DOE-NE cooperative agreements to NUSCALE POWER LLC (UEI PNKLRKV4CNX3) obligating $585.9M in
+  total (224.48M + 7.52M + 48.0M + 43.2M + 262.66M). The 10-K (filed 2026-02-26) says "more than $578.3 million from DOE under
+  a series of cost-share programs" (cumulative event, not new money). The two figures differ by about $7.6M and are kept as
+  separate evidenced facts: USAspending obligations (per award) vs the company statement; do not sum them. DE-NE0000633 shows
+  total_funding 278,454,086.42 against total_obligation 224,479,988.42 and non_federal_funding 0; USAspending outlays for
+  DE-NE0000633 and DE-NE0008742 are 0, so disbursed_usd omitted for those. USAspending recipient total for DOE FY2020-26 is
+  $263,815,721.69 under NUSCALE POWER LLC (probe snapshot de63a59b9509), which matches DE-NE0008928 plus nothing older (older
+  awards pre-date the FY2020 window). CFPP: DE-NE0008935 (recipient CFPP LLC, UEI J2Z4L77MTJN7, a UAMPS entity, NOT NuScale)
+  obligated $164,741,352, outlays $145,479,549.39, non_federal_funding $6,674,014,797 (a project-cost figure, not DOE money)
+  per USAspending detail. It funds the NuScale-based Carbon Free Power Project. VERIFIER: the event for this award was REMOVED
+  because the recipient is CFPP LLC (UAMPS), a different legal entity, and the USAspending record does not name NuScale as
+  recipient or beneficiary; evidence stays at snapshot c860ee0c4152 (total_obligation 164741352.0, total_account_outlay 145479549.39,
+  recipient_name CFPP LLC) for attribution to CFPP LLC. The Carbon Free Power Project was wound down (Release Agreement 2023-11-07).
+  NOT FOUND / BLOCKED: DOE press announcements (e.g. the DOE-announced CFPP cost-share ceiling, NuScale FOA awards) could
+  not be fetched: WebSearch budget exhausted and guessed energy.gov URLs returned 404 (snapshots d7fd7867ac54, b6d1a22c28be,
+  b464f04405631, 09e2c3455480, 765164edda0d, d3446b783462 are 404 pages and unused). So the USAspending-vs-DOE-announcement
+  comparison is only USAspending vs the company 10-K. TVA newsroom returned 403 (da4d1f729171); the TVA/ENTRA1 agreement is
+  evidenced through NuScale''s 10-K only, and NuScale is not a party to it. ENTRA1 Energy is NuScale''s exclusive global strategic
+  partner; the PMA contribution ($35M-$55M) is paid BY NuScale to ENTRA1 energy projects in milestone tranches, so it is an
+  agreement value, not funding received. Dates for the 10-K cumulative events use the auditor-report date (2026-02-26), which
+  equals the filing date.
+
+  MERGE 2026-10-05 (USAspending supplement): no new awards. USAspending ''Total Outlays'' is account-level outlay data reported
+  from FY2017/FY2020 onward, so disbursed_usd can understate payments on older awards.
+
+  [pass2] PASS2 gap-fill. Searched: EDGAR submissions index (377c05a5fc1e), FY2023 10-K, FY2024 10-K, Q1 and Q2 2026 10-Qs
+  (all archived under source ledger-nuscale-power). Added realised ATM gross proceeds the first pass could not evidence: calendar
+  2023 ($10.4M, Aug 2023 programme), calendar 2024 ($139.0M completing the Aug 2023 $150M programme and $71.2M under the Nov
+  2024 $200M programme). These are all 2023-2024; the existing FY2025 event ($1,327.6M) covers year ended Dec 2025 so no overlap.
+  Note: the 2023 sales ($10.4M) plus 2024 prior-programme sales ($139.0M) sum to the $150M programme, so the 2023 and 2024
+  prior-programme events are separate years of one programme, not duplicates.
+
+  Confirmation, not added as an event (would duplicate nuscale-atm-sales-2026-02-programme, approx $1B): Q2 2026 10-Q (snapshot
+  e390e7156758) states that in the six months ended June 30, 2026 the Company sold 89,727,165 shares for gross proceeds of
+  $1.0 billion and net $984.5 million (weighted average $11.14) before completing the 2026 ATM Program in June 2026; Q1 2026
+  10-Q (14a2e739faf0) states $37.9M gross in Q1. Net $984.5M. The Aug 2026 $750M programme has no sales evidenced yet in filings
+  held (Q2 10-Q predates it).
+
+  Not found: pre-SPAC private rounds (NuScale Power LLC was funded by Fluor via contributions; no separate round evidenced);
+  Fluor sell-down proceeds go to Fluor, not the company. No DOE press pages retrievable.'
 verification:
   status: verified
   by: merge-verifier-agent (opus), 2026-10-05
@@ -17,7 +72,11 @@ verification:
     2 realised-proceeds events added per VERIFY rule 6 (FY2025 ATM gross $1,327.6M from 10-K; Feb 2026 $1B programme fully
     sold per Aug 2026 424B5, approx). SPAC IPO/PIPE duplicates and the DOE cumulative 10-K statement are correctly uncounted;
     USAspending DOE awards to NUSCALE POWER LLC match their JSON. Not confirmed: realised ATM proceeds for 2023-2024 and for
-    the Aug 2026 programme; pre-SPAC private rounds; DOE press announcements (404).'
+    the Aug 2026 programme; pre-SPAC private rounds; DOE press announcements (404).
+
+    [pass2 verify 2026-10-05, claude-opus-5-5] 3 pending items verified. 3 ATM realised-sales events (FY2023 $10.4M, FY2024
+    $139.0M prior programme, FY2024 $71.2M Nov 2024 programme) verified against the FY2023/FY2024 10-K text; 10.4 + 139.0
+    = 149.4 fits the $150M programme; no overlap with the FY2025 sales event or with the ceiling programme events. No changes.'
 events:
 - id: nuscale-fluor-convertible-notes-2011
   instrument: debt
@@ -579,6 +638,80 @@ events:
     snapshot: 6440cbfa2ad1b016ab8193caea509efe1105b39216e3596a3e2f837c27d4c303
     quote: our report dated February 26, 2026 expressed an unqualified opinion thereon
     basis: disclosed
+- id: nuscale-atm-sales-fy2023
+  instrument: follow_on
+  round_label: ATM sales in calendar 2023 (Aug 2023 programme; gross proceeds)
+  announced_on: 2024-03-15
+  amount:
+    amount: 10400000
+    currency: USD
+    qualifier: approx
+  program: At-the-market offering programme (realised gross proceeds; net $9.8M)
+  evidence:
+  - field: amount
+    snapshot: 7ba03297d6fada5caff9ffcdfb1e26749c2e70ae035fd7c955a6e7c3596552ba
+    quote: generating gross and net proceeds of $10.4 million and $9.8 million, respectively
+    basis: disclosed
+  - field: announced_on
+    snapshot: 7ba03297d6fada5caff9ffcdfb1e26749c2e70ae035fd7c955a6e7c3596552ba
+    quote: 'By: /s/ John Hopkins March 15, 2024'
+    basis: disclosed
+  - field: round_label
+    snapshot: 7ba03297d6fada5caff9ffcdfb1e26749c2e70ae035fd7c955a6e7c3596552ba
+    quote: During the year ended December 31, 2023 , the Company issued and sold 1,737,378 shares of Class A common stock
+    basis: disclosed
+  review: verified
+  source_pass: pass2
+- id: nuscale-atm-sales-fy2024-prior-programme
+  instrument: follow_on
+  round_label: ATM sales in calendar 2024 completing the Aug 2023 $150M programme (gross proceeds)
+  announced_on: 2025-03-03
+  amount:
+    amount: 139000000
+    currency: USD
+    qualifier: approx
+  program: At-the-market offering programme (realised gross proceeds; net $135.5M; fully utilised)
+  evidence:
+  - field: amount
+    snapshot: 927f7c3aab02f3a281d4f5c4989c3605698e691fb888f6487cd196c180257f44
+    quote: for the gross and net proceeds of $139.0 million and $135.5 million, respectively, fully utilizing the Prior ATM
+      Program
+    basis: disclosed
+  - field: announced_on
+    snapshot: 927f7c3aab02f3a281d4f5c4989c3605698e691fb888f6487cd196c180257f44
+    quote: 'By: /s/ John Hopkins March 3, 2025'
+    basis: disclosed
+  - field: round_label
+    snapshot: 927f7c3aab02f3a281d4f5c4989c3605698e691fb888f6487cd196c180257f44
+    quote: the Company issued and sold 18,262,622 shares of Class A common stock
+    basis: disclosed
+  review: verified
+  source_pass: pass2
+- id: nuscale-atm-sales-fy2024-nov2024-programme
+  instrument: follow_on
+  round_label: ATM sales in calendar 2024 under the Nov 2024 $200M programme (gross proceeds)
+  announced_on: 2025-03-03
+  amount:
+    amount: 71200000
+    currency: USD
+    qualifier: approx
+  program: At-the-market offering programme (realised gross proceeds; net $69.2M)
+  evidence:
+  - field: amount
+    snapshot: 927f7c3aab02f3a281d4f5c4989c3605698e691fb888f6487cd196c180257f44
+    quote: the Company issued and sold 3,264,524 shares of Class A common stock for the gross and net proceeds of $71.2 million
+      and $69.2 million, respectively
+    basis: disclosed
+  - field: announced_on
+    snapshot: 927f7c3aab02f3a281d4f5c4989c3605698e691fb888f6487cd196c180257f44
+    quote: 'By: /s/ John Hopkins March 3, 2025'
+    basis: disclosed
+  - field: round_label
+    snapshot: 927f7c3aab02f3a281d4f5c4989c3605698e691fb888f6487cd196c180257f44
+    quote: having an aggregate sales price of up to $200,000,000 (“Current ATM Program”)
+    basis: disclosed
+  review: verified
+  source_pass: pass2
 agreements:
 - id: nuscale-entra1-pma-2025
   counterparty: ENTRA1 Energy LLC

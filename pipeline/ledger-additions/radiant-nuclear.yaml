@@ -1,0 +1,41 @@
+company: radiant-nuclear
+name: Radiant Industries (Radiant Nuclear)
+sector: fission
+notes: "PASS2. Searched: existing evidence re-read; WebSearch budget was exhausted so discovery was limited to links on archived pages. Added the Jan 2026 Series D upsizing (Axios Pro preview, $300M to $350M; duplicate of radiant-series-d-2025, kept visible only) and the $2.2B Army award headline (NYT page is JS-blocked; evidence is the headline as listed on the DCVC company page; likely the same programme as the $750M Radiant share already recorded, so not additive). NOT FOUND: primary evidence naming Series B/C/D investors (company pages forbidden by P2; Series C-close and Series B blog pages not obtainable), Radiant seed rounds, DOE HALEU/NRIC amounts. Form D Series D total ($268.8M sold of $350M) is consistent with the $350M headline."
+events:
+- id: radiant-series-d-upsize-2026
+  instrument: equity
+  round_label: Series D (upsized)
+  announced_on: 2026-01-07
+  amount:
+    amount: 350000000
+    currency: USD
+    qualifier: exact
+  amount_kind: duplicate
+  supersedes: radiant-series-d-2025
+  evidence:
+  - field: amount
+    snapshot: 236446086830fe8dd2e3517eb12d3945722b7cd09a2167692734d907b6b86afd
+    quote: Microreactor maker Radiant increased its latest Series D round to $350 million, up from $300 million a few weeks ago.
+    basis: reported
+  - field: announced_on
+    snapshot: 236446086830fe8dd2e3517eb12d3945722b7cd09a2167692734d907b6b86afd
+    quote: Katie Fehrenbacher Jan 7, 2026
+    basis: reported
+  - field: round_label
+    snapshot: 236446086830fe8dd2e3517eb12d3945722b7cd09a2167692734d907b6b86afd
+    quote: Radiant boosts Series D to $350M, up from $300M just weeks ago
+    basis: reported
+agreements:
+- id: radiant-army-2-2b-headline-2026
+  counterparty: U.S. Army
+  counterparty_slug: dod-army
+  type: gov_contract
+  binding: definitive
+  announced_on: 2026-08-26
+  summary: NYT headline (listed on DCVC company page) says the Army awards $2.2 billion to build microreactors at 5 bases; value is the total programme across awardees, not Radiant alone, so no value recorded.
+  evidence:
+  - field: agreement
+    snapshot: 1e6d47cd37e68efd9cef0faeddd0a94a731b6b275d8625e545d8bf0459f6dd7e
+    quote: Army Awards $2.2 Billion to Build Nuclear ‘Microreactors’ at 5 U.S. Bases
+    basis: reported

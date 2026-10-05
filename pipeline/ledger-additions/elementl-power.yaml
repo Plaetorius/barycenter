@@ -1,0 +1,35 @@
+company: elementl-power
+name: Elementl Power Inc.
+sector: fission
+notes: >-
+  Pass 2. Re-checked EDGAR full-text: only two Form D hits (the operating issuer's, already in the ledger as elementl-form-d-2023
+  -- the efts index lists it with file date 2024-05-02 but the snapshot is the same filing signed 2024-02-20 -- and the Alumni
+  Ventures AVSF vehicle, still not recorded). No new round, lender or grant found; the homepage backer list (EIP, T. Rowe Price,
+  Prelude, Breakwater North, Alumni Ventures) has no round or date so it is still not attached. Added two agreements from the
+  company release of 2026-06-18 (Meigs County, Ohio): Early Works Agreement with GE Vernova Hitachi Nuclear Energy (BWRX-300) and
+  the agreed site purchase from American Municipal Power. The release says Elementl plans to finance the plant itself and gives no
+  amounts. WebSearch budget spent; the ORNL siting item (2025-05-22) was not found on the newsroom page and is not recorded.
+events: []
+agreements:
+  - id: elementl-gevernova-hitachi-early-works-2026
+    counterparty: GE Vernova Hitachi Nuclear Energy
+    counterparty_slug: ge-vernova-hitachi
+    type: partnership
+    binding: definitive
+    announced_on: 2026-06-18
+    capacity_mw: 1500
+    summary: Early Works Agreement to use BWRX-300 SMRs for a planned up to 1.5 GW plant in Meigs County, Ohio; no value stated; construction subject to FID and approvals.
+    evidence:
+      - {field: agreement, snapshot: "39b58f032313ce0ac7826c254b646666bd19877767b1e03535b4d0442de253c3", quote: "Elementl has signed an Early Works Agreement with GE Vernova Hitachi Nuclear Energy", basis: disclosed}
+      - {field: announced_on, snapshot: "39b58f032313ce0ac7826c254b646666bd19877767b1e03535b4d0442de253c3", quote: "News release · June 18, 2026", basis: disclosed}
+      - {field: capacity_mw, snapshot: "39b58f032313ce0ac7826c254b646666bd19877767b1e03535b4d0442de253c3", quote: "a planned capacity of up to 1.5 gigawatts (GW) in Southeast Ohio", basis: disclosed}
+  - id: elementl-amp-meigs-site-2026
+    counterparty: American Municipal Power
+    counterparty_slug: american-municipal-power
+    type: site
+    binding: mou
+    announced_on: 2026-06-18
+    summary: Agreed to purchase the nearly 700-acre Meigs County (Letart Township, Ohio) site from AMP; binding level and price not stated (recorded as mou).
+    evidence:
+      - {field: agreement, snapshot: "39b58f032313ce0ac7826c254b646666bd19877767b1e03535b4d0442de253c3", quote: "Elementl has agreed to purchase the site from American Municipal Power (AMP)", basis: disclosed}
+      - {field: announced_on, snapshot: "39b58f032313ce0ac7826c254b646666bd19877767b1e03535b4d0442de253c3", quote: "News release · June 18, 2026", basis: disclosed}

@@ -1,14 +1,30 @@
 company: xcimer-energy
 name: Xcimer Energy
 sector: fusion
-notes: 'WebSearch budget was exhausted; the 2022 seed round has no archivable release. SEC Forms D by Xcimer Energy, Inc. (CIK 1916136) exist: D/A filed 2022-04-01 (Series Seed Preferred, 6 investors) and
-  D filed 2022-11-01 (SAFEs, up to $10,000,000 offering), but the structured amount fields are ambiguous in the text-stripped snapshots so no seed event or amount is recorded; reviewer may add from the
-  XML. The RTX Ventures amount is undisclosed (company release and FinSMEs agree). The release says ''raised nearly $200M'' in total, recorded as a cumulative statement, not a round. RTX also signed a teaming
-  agreement (recorded as an agreement, not funding). Milestone award DESC0024890: USAspending total_obligation $39.5M but account obligations only $13.5M and outlays $8.5M; DOE states $46M was initially
-  committed across 8 awardees and awardees pay >50% of milestone cost, so the $39.5M is treated as an upper bound (qualifier up_to). Earlier probe notes claiming no Milestone rows in USAspending were wrong:
-  they appear as type-11 awards. ARPA-E award DEAR0002030 ($3,571,249 obligated, recipient cost share $1,258,217, 2025-11-18 to 2028-11-17, ''Vision Open 2024'', HYPER-LASER). OC Xcimer Partners LLC Forms
-  D (2025-11-10, 2026-09-25) are investor SPVs of an Alpharetta GA manager, not company rounds; not recorded. No EU/UK/German public money applies. Date of the RTX event: release dated 2026-09-10 (page
-  header says Sept 9).'
+notes: 'WebSearch budget was exhausted; the 2022 seed round has no archivable release. SEC Forms D by Xcimer Energy, Inc.
+  (CIK 1916136) exist: D/A filed 2022-04-01 (Series Seed Preferred, 6 investors) and D filed 2022-11-01 (SAFEs, up to $10,000,000
+  offering), but the structured amount fields are ambiguous in the text-stripped snapshots so no seed event or amount is recorded;
+  reviewer may add from the XML. The RTX Ventures amount is undisclosed (company release and FinSMEs agree). The release says
+  ''raised nearly $200M'' in total, recorded as a cumulative statement, not a round. RTX also signed a teaming agreement (recorded
+  as an agreement, not funding). Milestone award DESC0024890: USAspending total_obligation $39.5M but account obligations
+  only $13.5M and outlays $8.5M; DOE states $46M was initially committed across 8 awardees and awardees pay >50% of milestone
+  cost, so the $39.5M is treated as an upper bound (qualifier up_to). Earlier probe notes claiming no Milestone rows in USAspending
+  were wrong: they appear as type-11 awards. ARPA-E award DEAR0002030 ($3,571,249 obligated, recipient cost share $1,258,217,
+  2025-11-18 to 2028-11-17, ''Vision Open 2024'', HYPER-LASER). OC Xcimer Partners LLC Forms D (2025-11-10, 2026-09-25) are
+  investor SPVs of an Alpharetta GA manager, not company rounds; not recorded. No EU/UK/German public money applies. Date
+  of the RTX event: release dated 2026-09-10 (page header says Sept 9).
+
+  [pass2] Gap-fill pass 2. Added the 2022 seed and SAFE financings from the SEC Form D XML (primary_doc.xml, CIK 1916136;
+  EDGAR submissions list shows exactly three Forms D: -22-000001 (D, signed 2022-03-30), -22-000004 (D/A, filed 2022-04-01),
+  -22-000006 (D, filed 2022-11-01)). Archived text drops the XML tags, so the three numbers "2500058 875000 1625058" are the
+  schema-ordered fields totalOfferingAmount, totalAmountSold, totalRemaining (checked against the raw XML ordering). Series
+  Seed: offering $2,500,058 (up to 1,320,755 Series Seed Preferred shares), $875,000 sold at filing, 6 investors, first sale
+  2022-03-28; the D/A repeats the original figures (no change in sold amount), so only one event is recorded. Amount is a
+  "sold so far" figure (qualifier over), investors are not named in Form D (only 6 counted), no participants recorded. Nov
+  2022 D: up to $10,000,000 in SAFEs, $365,000 sold, 1 investor, first sale 2022-10-21. Both are Form D tranche figures and
+  may be partly the same money later converted into Series A; do not read them as the full seed. Not found: a press release
+  for the seed (investors reported elsewhere, e.g. at Series A launch, but no archivable primary source); WebSearch budget
+  exhausted. No other gaps found.'
 events:
 - id: xcimer-series-a-2024
   instrument: equity
@@ -19,7 +35,8 @@ events:
     amount: 100000000
     currency: USD
     qualifier: exact
-  use_of_proceeds: Establish a new facility in Denver and build a prototype laser system including a nonlinear optical pulse compression system
+  use_of_proceeds: Establish a new facility in Denver and build a prototype laser system including a nonlinear optical pulse
+    compression system
   evidence:
   - field: amount
     snapshot: 2e030dbe404e95ce54b640734c1e9a18a86ce40f19dc3bc6e1928aba21abfb96
@@ -48,7 +65,8 @@ events:
     evidence:
     - field: participant
       snapshot: 2e030dbe404e95ce54b640734c1e9a18a86ce40f19dc3bc6e1928aba21abfb96
-      quote: with participation from investors including Breakthrough Energy Ventures, Lowercarbon Capital, Prelude Ventures, Emerson Collective, Gigascale Capital and Starlight Ventures
+      quote: with participation from investors including Breakthrough Energy Ventures, Lowercarbon Capital, Prelude Ventures,
+        Emerson Collective, Gigascale Capital and Starlight Ventures
       basis: disclosed
   - investor: Lowercarbon Capital
     investor_slug: lowercarbon-capital
@@ -56,7 +74,8 @@ events:
     evidence:
     - field: participant
       snapshot: 2e030dbe404e95ce54b640734c1e9a18a86ce40f19dc3bc6e1928aba21abfb96
-      quote: with participation from investors including Breakthrough Energy Ventures, Lowercarbon Capital, Prelude Ventures, Emerson Collective, Gigascale Capital and Starlight Ventures
+      quote: with participation from investors including Breakthrough Energy Ventures, Lowercarbon Capital, Prelude Ventures,
+        Emerson Collective, Gigascale Capital and Starlight Ventures
       basis: disclosed
   - investor: Prelude Ventures
     investor_slug: prelude-ventures
@@ -64,7 +83,8 @@ events:
     evidence:
     - field: participant
       snapshot: 2e030dbe404e95ce54b640734c1e9a18a86ce40f19dc3bc6e1928aba21abfb96
-      quote: with participation from investors including Breakthrough Energy Ventures, Lowercarbon Capital, Prelude Ventures, Emerson Collective, Gigascale Capital and Starlight Ventures
+      quote: with participation from investors including Breakthrough Energy Ventures, Lowercarbon Capital, Prelude Ventures,
+        Emerson Collective, Gigascale Capital and Starlight Ventures
       basis: disclosed
   - investor: Emerson Collective
     investor_slug: emerson-collective
@@ -72,7 +92,8 @@ events:
     evidence:
     - field: participant
       snapshot: 2e030dbe404e95ce54b640734c1e9a18a86ce40f19dc3bc6e1928aba21abfb96
-      quote: with participation from investors including Breakthrough Energy Ventures, Lowercarbon Capital, Prelude Ventures, Emerson Collective, Gigascale Capital and Starlight Ventures
+      quote: with participation from investors including Breakthrough Energy Ventures, Lowercarbon Capital, Prelude Ventures,
+        Emerson Collective, Gigascale Capital and Starlight Ventures
       basis: disclosed
   - investor: Gigascale Capital
     investor_slug: gigascale-capital
@@ -80,7 +101,8 @@ events:
     evidence:
     - field: participant
       snapshot: 2e030dbe404e95ce54b640734c1e9a18a86ce40f19dc3bc6e1928aba21abfb96
-      quote: with participation from investors including Breakthrough Energy Ventures, Lowercarbon Capital, Prelude Ventures, Emerson Collective, Gigascale Capital and Starlight Ventures
+      quote: with participation from investors including Breakthrough Energy Ventures, Lowercarbon Capital, Prelude Ventures,
+        Emerson Collective, Gigascale Capital and Starlight Ventures
       basis: disclosed
   - investor: Starlight Ventures
     investor_slug: starlight-ventures
@@ -88,7 +110,8 @@ events:
     evidence:
     - field: participant
       snapshot: 2e030dbe404e95ce54b640734c1e9a18a86ce40f19dc3bc6e1928aba21abfb96
-      quote: with participation from investors including Breakthrough Energy Ventures, Lowercarbon Capital, Prelude Ventures, Emerson Collective, Gigascale Capital and Starlight Ventures
+      quote: with participation from investors including Breakthrough Energy Ventures, Lowercarbon Capital, Prelude Ventures,
+        Emerson Collective, Gigascale Capital and Starlight Ventures
       basis: disclosed
 - id: xcimer-rtx-2026
   instrument: equity
@@ -222,6 +245,57 @@ events:
       snapshot: 375f44637445b4dfb8c7bb53fac5e91f985003b580d66eb45b2627afc5781470
       quote: '"total_obligation": 3571249.0'
       basis: disclosed
+- id: xcimer-seed-2022-form-d
+  instrument: equity
+  round_label: Series Seed Preferred
+  round_group: seed
+  announced_on: '2022-03-30'
+  amount:
+    amount: 875000
+    currency: USD
+    qualifier: over
+  amount_kind: new_money
+  evidence:
+  - field: amount
+    snapshot: 9e61bbd2590b25aeb96016d10fbdfb2161a5775f4d0db2c627ef0e2bb4def2c2
+    quote: 2500058 875000 1625058 Up to 1,320,755 shares of Series Seed Preferred Stock and underlying Common Stock upon conversion.
+    basis: disclosed
+  - field: announced_on
+    snapshot: 9e61bbd2590b25aeb96016d10fbdfb2161a5775f4d0db2c627ef0e2bb4def2c2
+    quote: Conner Galloway CEO 2022-03-30
+    basis: disclosed
+  - field: round_label
+    snapshot: 9e61bbd2590b25aeb96016d10fbdfb2161a5775f4d0db2c627ef0e2bb4def2c2
+    quote: Series Seed Preferred Stock
+    basis: disclosed
+  review: verified
+  source_pass: pass2
+- id: xcimer-safe-2022-form-d
+  instrument: equity
+  round_label: SAFEs
+  round_group: seed
+  announced_on: '2022-11-01'
+  amount:
+    amount: 365000
+    currency: USD
+    qualifier: over
+  amount_kind: new_money
+  use_of_proceeds: All proceeds shall be used as working capital.
+  evidence:
+  - field: amount
+    snapshot: 83765b0e79ba282c195ba4594fa655be42cb248e06a57800efb65c9403409374
+    quote: 10000000 365000 9635000 Up to $10,000,000 in SAFEs and underlying shares of preferred stock upon conversion
+    basis: disclosed
+  - field: announced_on
+    snapshot: 83765b0e79ba282c195ba4594fa655be42cb248e06a57800efb65c9403409374
+    quote: Conner Galloway CEO 2022-11-01
+    basis: disclosed
+  - field: round_label
+    snapshot: 83765b0e79ba282c195ba4594fa655be42cb248e06a57800efb65c9403409374
+    quote: Up to $10,000,000 in SAFEs and underlying shares of preferred stock upon conversion
+    basis: disclosed
+  review: verified
+  source_pass: pass2
 agreements:
 - id: xcimer-rtx-teaming-2026
   counterparty: RTX
@@ -229,7 +303,8 @@ agreements:
   type: partnership
   binding: definitive
   announced_on: '2026-09-10'
-  summary: Teaming agreement to explore integration and containerization of Xcimer pulsed-laser technologies into RTX defense systems; no value stated.
+  summary: Teaming agreement to explore integration and containerization of Xcimer pulsed-laser technologies into RTX defense
+    systems; no value stated.
   evidence:
   - field: agreement
     snapshot: fa33bf4f0e7271a0fdd682a527e102a9e8f7a87771d0c7f88ea7629e22cd2fc9
@@ -237,13 +312,16 @@ agreements:
     basis: disclosed
 verification:
   status: verified
-  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
   'on': 2026-10-05
-  note: >-
-    2 corrections. Milestone award DESC0024890: the $39.5M award total (up_to, milestone-tranched, only $13.5M obligated
+  note: '2 corrections. Milestone award DESC0024890: the $39.5M award total (up_to, milestone-tranched, only $13.5M obligated
     to accounts and $8.5M outlaid) is now amount_kind ceiling; per VERIFY rule 6 the money actually committed is recorded
-    as its own new_money event (xcimer-doe-milestone-desc0024890-obligated, $13.5M account obligation, $8.5M disbursed,
-    USAspending JSON). Everything else checked against quotes: Series A $100M led by Hedosophia (2024-06-04 release);
-    RTX amount undisclosed; 'nearly $200M' is cumulative only; RTX release dateline Sept. 10, 2026 (page header Sept 9,
-    dateline kept); ARPA-E $3,571,249 federal share with $1,258,217 recipient cost share. Gaps: 2022 seed (Form D/A
-    2022-04-01 and SAFE Form D 2022-11-01 not parsed), so the ~$200M cumulative is not reconciled with recorded rounds.
+    as its own new_money event (xcimer-doe-milestone-desc0024890-obligated, $13.5M account obligation, $8.5M disbursed, USAspending
+    JSON). Everything else checked against quotes: Series A $100M led by Hedosophia (2024-06-04 release); RTX amount undisclosed;
+    ''nearly $200M'' is cumulative only; RTX release dateline Sept. 10, 2026 (page header Sept 9, dateline kept); ARPA-E $3,571,249
+    federal share with $1,258,217 recipient cost share. Gaps: 2022 seed (Form D/A 2022-04-01 and SAFE Form D 2022-11-01 not
+    parsed), so the ~$200M cumulative is not reconciled with recorded rounds.
+
+    [pass2 verify 2026-10-05, claude-opus-5-5] 2 pending items verified. Form D seed ($875,000 sold of $2,500,058) and SAFE
+    ($365,000 sold of $10,000,000) verified: the three numbers are offering/sold/remaining (2500058 - 875000 = 1625058; 10000000
+    - 365000 = 9635000). Qualifier over (sold to date at filing). No changes.'

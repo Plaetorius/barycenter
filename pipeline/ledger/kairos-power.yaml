@@ -1,217 +1,442 @@
 company: kairos-power
 name: Kairos Power LLC
 sector: fission
-notes: >
-  Private; no equity round, Form D or financing release found (EDGAR full-text probes for "Kairos Power" return no Form D;
-  kairospower.com newsroom has no round announcements; see docs/survey/probes/newsrooms.md). Lifetime equity raised is
-  therefore NOT evidenced and left out. The only investor-side event is the Samsung C&T binding term sheet (2026-09-21, up to $100M,
-  part in-kind engineering services). DISCREPANCY KEPT OPEN (do not merge): DOE announcements state a DOE share of up to
-  $303M (total award value $629M over seven years) for the ARDP Risk Reduction / Hermes award, while USAspending award
-  DENE0009325 (recipient KAIROS POWER LLC, type 11 technology investment agreement, signed 2024-02-12) shows a total
-  obligation of $135.0M, $126.858M account outlays and $0 non-federal funding. The two are recorded as separate events
-  (ardp-doe-announced-2020, ardp-doe-tia-2024, ardp-usaspending-obligated) sharing round_group ardp-risk-reduction-hermes so a
-  reconciler can see they concern the same programme; they must not be summed. VERIFIER (2026-10-05): only the USAspending
-  obligation ($135M, of which $126.858M outlaid) counts as new_money; the 2024 TIA "up to $303M" is the milestone ceiling
-  (amount_kind ceiling) and the 2020 selection announcement of the same $303M DOE share is a duplicate of the TIA. Plausible explanation (NOT evidenced):
-  USAspending obligates milestone tranches incrementally, so obligated < ceiling. USAspending recipient total for DOE
-  FY20-26 is $135.5M (snapshot 243d1e1f). Small items not made into events: GAIN voucher (2019, no amount), NSUF/TCF awards
-  2019 (project value ~$50M is a facility project, not Kairos money), SBA loan 4181827109 $3.3M 2020 (apparently pandemic
-  loan, not evidenced here), University of Wisconsin pass-through DEAR0001293 $0.8M. Hermes 1 HALEU supply contract with DOE
-  (2026-01-20) has no stated value. Kairos stated in 2021 it would itself invest $100M in the Oak Ridge demonstration
-  (state release) - not a funding event. Westinghouse+Kairos "$18mn of SMR funding" (2019-04-03) page has no body text in the snapshot, so not used.
-  NOTE doe-industry-opportunities-2020: announced_on is the USAspending award start date, not a press date. NOTE samsung-ct-strategic-investment-2026: up to $100M is 'a combination of direct investment and in-kind engineering services, subject to regulatory approvals'; cash/in-kind split undisclosed so amount may overstate new cash; term sheet, not a closed round.
+notes: 'Private; no equity round, Form D or financing release found (EDGAR full-text probes for "Kairos Power" return no Form
+  D; kairospower.com newsroom has no round announcements; see docs/survey/probes/newsrooms.md). Lifetime equity raised is
+  therefore NOT evidenced and left out. The only investor-side event is the Samsung C&T binding term sheet (2026-09-21, up
+  to $100M, part in-kind engineering services). DISCREPANCY KEPT OPEN (do not merge): DOE announcements state a DOE share
+  of up to $303M (total award value $629M over seven years) for the ARDP Risk Reduction / Hermes award, while USAspending
+  award DENE0009325 (recipient KAIROS POWER LLC, type 11 technology investment agreement, signed 2024-02-12) shows a total
+  obligation of $135.0M, $126.858M account outlays and $0 non-federal funding. The two are recorded as separate events (ardp-doe-announced-2020,
+  ardp-doe-tia-2024, ardp-usaspending-obligated) sharing round_group ardp-risk-reduction-hermes so a reconciler can see they
+  concern the same programme; they must not be summed. VERIFIER (2026-10-05): only the USAspending obligation ($135M, of which
+  $126.858M outlaid) counts as new_money; the 2024 TIA "up to $303M" is the milestone ceiling (amount_kind ceiling) and the
+  2020 selection announcement of the same $303M DOE share is a duplicate of the TIA. Plausible explanation (NOT evidenced):
+  USAspending obligates milestone tranches incrementally, so obligated < ceiling. USAspending recipient total for DOE FY20-26
+  is $135.5M (snapshot 243d1e1f). Small items not made into events: GAIN voucher (2019, no amount), NSUF/TCF awards 2019 (project
+  value ~$50M is a facility project, not Kairos money), SBA loan 4181827109 $3.3M 2020 (apparently pandemic loan, not evidenced
+  here), University of Wisconsin pass-through DEAR0001293 $0.8M. Hermes 1 HALEU supply contract with DOE (2026-01-20) has
+  no stated value. Kairos stated in 2021 it would itself invest $100M in the Oak Ridge demonstration (state release) - not
+  a funding event. Westinghouse+Kairos "$18mn of SMR funding" (2019-04-03) page has no body text in the snapshot, so not used.
+  NOTE doe-industry-opportunities-2020: announced_on is the USAspending award start date, not a press date. NOTE samsung-ct-strategic-investment-2026:
+  up to $100M is ''a combination of direct investment and in-kind engineering services, subject to regulatory approvals'';
+  cash/in-kind split undisclosed so amount may overstate new cash; term sheet, not a closed round.
+
+
+  [pass2] Pass 2 gap-fill. Searched: EDGAR full-text Form D probes for ''Kairos Power'' (0 hits, snapshot ab25f416 / cfa047b2)
+  so private equity rounds and investors remain NOT evidenced; kairospower.com updates (sitemap listed ~95 items; read the
+  state/utility/partner releases) found no funding-round announcement; the 2026-09-02 CFO appointment release says the first
+  CFO will oversee ''corporate fundraising, investor relations'' (no amounts). State support: New Mexico release of 2024-09-16
+  gives LEDA $3M (NMEDD), JTIP $1.8M and a City of Albuquerque LEDA $500,000 (the city is ''fiscal agent for the state''s
+  funding'', so the city $0.5M may overlap the state LEDA $3M); the release states ''All incentives are pending approval by
+  the Albuquerque City Council'', so all three are recorded as ceiling, not money received. The same release mentions an Industrial
+  Revenue Bond application tied to a ''company investment of more than $269 million'' (company capex, not a financing event).
+  Tennessee release (2021-07-16) names TNECD, Oak Ridge IDB and others as supporters but states no incentive amount. Estimated
+  ''economic impact up to $478 million'' is not funding. Kairos 2021 statement that it would invest $100M is already in the
+  original notes. Agreements added (no values stated): TVA Hermes collaboration 2021, Materion CDA 2022, Los Alamos fuel 2022,
+  Texas A&M-RELLIS siting 2025 (exploratory, 450+ MW), BWXT 2025. Google MPDA and TVA/Google PPA were already recorded. Wikipedia
+  mentions a Feb 2026 $27M ORNL strategic partnership; no primary source was reached, so not recorded. Pages 2019 (GAIN voucher,
+  TCF/NSUF) are bodiless or stated no amount.'
 events:
-  - id: ardp-doe-announced-2020
-    instrument: cost_share
-    round_label: ARDP Risk Reduction for Future Demonstration (Hermes)
-    round_group: ardp-risk-reduction-hermes
-    announced_on: 2020-12-16
-    amount: {amount: 303000000, currency: USD, qualifier: exact}
-    amount_kind: duplicate
-    supersedes: ardp-doe-tia-2024
-    committed_usd: 303000000
-    program: DOE Advanced Reactor Demonstration Program (ARDP), Risk Reduction
-    use_of_proceeds: Design, construction and operation of the Hermes reduced-scale test reactor
+- id: ardp-doe-announced-2020
+  instrument: cost_share
+  round_label: ARDP Risk Reduction for Future Demonstration (Hermes)
+  round_group: ardp-risk-reduction-hermes
+  announced_on: 2020-12-16
+  amount:
+    amount: 303000000
+    currency: USD
+    qualifier: exact
+  amount_kind: duplicate
+  supersedes: ardp-doe-tia-2024
+  committed_usd: 303000000
+  program: DOE Advanced Reactor Demonstration Program (ARDP), Risk Reduction
+  use_of_proceeds: Design, construction and operation of the Hermes reduced-scale test reactor
+  evidence:
+  - field: announced_on
+    snapshot: 2c7fc612a074b80327d973be1fb4edc9bfc6309d971bfc695f0ead43dea4b279
+    quote: Office of Nuclear Energy December 16, 2020
+    basis: disclosed
+  - field: amount
+    snapshot: 2c7fc612a074b80327d973be1fb4edc9bfc6309d971bfc695f0ead43dea4b279
+    quote: 'Total award value over seven years: $629 million (DOE share is $303 million)'
+    basis: disclosed
+  - field: round_label
+    snapshot: 2c7fc612a074b80327d973be1fb4edc9bfc6309d971bfc695f0ead43dea4b279
+    quote: Hermes Reduced-Scale Test Reactor - Kairos Power, LLC (Alameda, CA) will design, construct, and operate its Hermes
+      reduced-scale test reactor
+    basis: disclosed
+  participants:
+  - investor: U.S. Department of Energy, Office of Nuclear Energy
+    investor_slug: doe-ne
+    role: grantor
     evidence:
-      - field: announced_on
-        snapshot: 2c7fc612a074b80327d973be1fb4edc9bfc6309d971bfc695f0ead43dea4b279
-        quote: "Office of Nuclear Energy December 16, 2020"
-        basis: disclosed
-      - field: amount
-        snapshot: 2c7fc612a074b80327d973be1fb4edc9bfc6309d971bfc695f0ead43dea4b279
-        quote: "Total award value over seven years: $629 million (DOE share is $303 million)"
-        basis: disclosed
-      - field: round_label
-        snapshot: 2c7fc612a074b80327d973be1fb4edc9bfc6309d971bfc695f0ead43dea4b279
-        quote: "Hermes Reduced-Scale Test Reactor - Kairos Power, LLC (Alameda, CA) will design, construct, and operate its Hermes reduced-scale test reactor"
-        basis: disclosed
-    participants:
-      - investor: U.S. Department of Energy, Office of Nuclear Energy
-        investor_slug: doe-ne
-        role: grantor
-        evidence:
-          - field: participant
-            snapshot: 2c7fc612a074b80327d973be1fb4edc9bfc6309d971bfc695f0ead43dea4b279
-            quote: "DOE has selected these five U.S.-based teams to receive Risk Reduction funding"
-            basis: disclosed
-  - id: ardp-doe-tia-2024
-    instrument: cost_share
-    round_label: ARDP risk reduction Technology Investment Agreement (fixed-price milestones)
-    round_group: ardp-risk-reduction-hermes
-    announced_on: 2024-02-21
-    amount: {amount: 303000000, currency: USD, qualifier: up_to}
-    amount_kind: ceiling
-    committed_usd: 303000000
-    program: DOE Advanced Reactor Demonstration Program (ARDP), Risk Reduction
-    use_of_proceeds: Design, construction and commissioning of the Hermes demonstration reactor in Oak Ridge
+    - field: participant
+      snapshot: 2c7fc612a074b80327d973be1fb4edc9bfc6309d971bfc695f0ead43dea4b279
+      quote: DOE has selected these five U.S.-based teams to receive Risk Reduction funding
+      basis: disclosed
+- id: ardp-doe-tia-2024
+  instrument: cost_share
+  round_label: ARDP risk reduction Technology Investment Agreement (fixed-price milestones)
+  round_group: ardp-risk-reduction-hermes
+  announced_on: 2024-02-21
+  amount:
+    amount: 303000000
+    currency: USD
+    qualifier: up_to
+  amount_kind: ceiling
+  committed_usd: 303000000
+  program: DOE Advanced Reactor Demonstration Program (ARDP), Risk Reduction
+  use_of_proceeds: Design, construction and commissioning of the Hermes demonstration reactor in Oak Ridge
+  evidence:
+  - field: announced_on
+    snapshot: 5795e4f1a8212fbcf99d3eaec7be5187b5867515ac2e304a3d49c89a92e2fb87
+    quote: Execute Novel Performance-Based, Fixed-Price Milestone Contract February 21, 2024 FOR IMMEDIATE RELEASE
+    basis: disclosed
+  - field: amount
+    snapshot: 5795e4f1a8212fbcf99d3eaec7be5187b5867515ac2e304a3d49c89a92e2fb87
+    quote: DOE will provide up to $303 million to Kairos Power using a performance-based, fixed-price milestone approach
+    basis: disclosed
+  participants:
+  - investor: U.S. Department of Energy
+    investor_slug: doe-ne
+    role: grantor
     evidence:
-      - field: announced_on
-        snapshot: 5795e4f1a8212fbcf99d3eaec7be5187b5867515ac2e304a3d49c89a92e2fb87
-        quote: "Execute Novel Performance-Based, Fixed-Price Milestone Contract February 21, 2024 FOR IMMEDIATE RELEASE"
-        basis: disclosed
-      - field: amount
-        snapshot: 5795e4f1a8212fbcf99d3eaec7be5187b5867515ac2e304a3d49c89a92e2fb87
-        quote: "DOE will provide up to $303 million to Kairos Power using a performance-based, fixed-price milestone approach"
-        basis: disclosed
-    participants:
-      - investor: U.S. Department of Energy
-        investor_slug: doe-ne
-        role: grantor
-        evidence:
-          - field: participant
-            snapshot: 5795e4f1a8212fbcf99d3eaec7be5187b5867515ac2e304a3d49c89a92e2fb87
-            quote: "The U.S. Department of Energy (DOE) and Kairos Power have signed a Technology Investment Agreement"
-            basis: disclosed
-  - id: ardp-usaspending-obligated
-    instrument: cost_share
-    round_label: ARDP risk reduction award DENE0009325 as recorded in USAspending
-    round_group: ardp-risk-reduction-hermes
-    announced_on: 2024-02-12
-    amount: {amount: 135000000, currency: USD, qualifier: exact}
-    obligated_usd: 135000000
-    disbursed_usd: 126858000
-    program: DOE ARDP Risk Reduction (USAspending award type 11)
+    - field: participant
+      snapshot: 5795e4f1a8212fbcf99d3eaec7be5187b5867515ac2e304a3d49c89a92e2fb87
+      quote: The U.S. Department of Energy (DOE) and Kairos Power have signed a Technology Investment Agreement
+      basis: disclosed
+- id: ardp-usaspending-obligated
+  instrument: cost_share
+  round_label: ARDP risk reduction award DENE0009325 as recorded in USAspending
+  round_group: ardp-risk-reduction-hermes
+  announced_on: 2024-02-12
+  amount:
+    amount: 135000000
+    currency: USD
+    qualifier: exact
+  obligated_usd: 135000000
+  disbursed_usd: 126858000
+  program: DOE ARDP Risk Reduction (USAspending award type 11)
+  evidence:
+  - field: announced_on
+    snapshot: fb21264a09bce64a66fb2943b17436f40e40db52e42fae0d810fc21fdea212e4
+    quote: '"date_signed": "2024-02-12"'
+    basis: disclosed
+  - field: amount
+    snapshot: fb21264a09bce64a66fb2943b17436f40e40db52e42fae0d810fc21fdea212e4
+    quote: '"total_obligation": 135000000.0'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: fb21264a09bce64a66fb2943b17436f40e40db52e42fae0d810fc21fdea212e4
+    quote: '"total_account_outlay": 126858000.0'
+    basis: disclosed
+  - field: round_label
+    snapshot: fb21264a09bce64a66fb2943b17436f40e40db52e42fae0d810fc21fdea212e4
+    quote: '"description": "RISK REDUCTION AWARD UNDER DE-FOA-0002271 - TECHNOLOGY INVESTMENT AGREEMENT"'
+    basis: disclosed
+  participants:
+  - investor: Department of Energy (awarding agency, Idaho Operations Office)
+    investor_slug: doe-ne
+    role: grantor
     evidence:
-      - field: announced_on
-        snapshot: fb21264a09bce64a66fb2943b17436f40e40db52e42fae0d810fc21fdea212e4
-        quote: '"date_signed": "2024-02-12"'
-        basis: disclosed
-      - field: amount
-        snapshot: fb21264a09bce64a66fb2943b17436f40e40db52e42fae0d810fc21fdea212e4
-        quote: '"total_obligation": 135000000.0'
-        basis: disclosed
-      - field: disbursed_usd
-        snapshot: fb21264a09bce64a66fb2943b17436f40e40db52e42fae0d810fc21fdea212e4
-        quote: '"total_account_outlay": 126858000.0'
-        basis: disclosed
-      - field: round_label
-        snapshot: fb21264a09bce64a66fb2943b17436f40e40db52e42fae0d810fc21fdea212e4
-        quote: '"description": "RISK REDUCTION AWARD UNDER DE-FOA-0002271 - TECHNOLOGY INVESTMENT AGREEMENT"'
-        basis: disclosed
-    participants:
-      - investor: Department of Energy (awarding agency, Idaho Operations Office)
-        investor_slug: doe-ne
-        role: grantor
-        evidence:
-          - field: participant
-            snapshot: fb21264a09bce64a66fb2943b17436f40e40db52e42fae0d810fc21fdea212e4
-            quote: '"office_agency_name": "IDAHO OPERATIONS OFFICE"'
-            basis: disclosed
-  - id: doe-industry-opportunities-2020
-    instrument: grant
-    round_label: U.S. Industry Opportunities for Advanced Nuclear Technology Development (DE-FOA-0001817)
-    announced_on: 2020-03-26
-    amount: {amount: 500000, currency: USD, qualifier: exact}
-    obligated_usd: 500000
-    program: DOE NE U.S. Industry Opportunities FOA
+    - field: participant
+      snapshot: fb21264a09bce64a66fb2943b17436f40e40db52e42fae0d810fc21fdea212e4
+      quote: '"office_agency_name": "IDAHO OPERATIONS OFFICE"'
+      basis: disclosed
+- id: doe-industry-opportunities-2020
+  instrument: grant
+  round_label: U.S. Industry Opportunities for Advanced Nuclear Technology Development (DE-FOA-0001817)
+  announced_on: 2020-03-26
+  amount:
+    amount: 500000
+    currency: USD
+    qualifier: exact
+  obligated_usd: 500000
+  program: DOE NE U.S. Industry Opportunities FOA
+  evidence:
+  - field: announced_on
+    snapshot: f033ca72663eec5960257684aadadee9e04be67dc1b3ba20ef7c80da4195c7e2
+    quote: '"Start Date": "2020-03-26", "End Date": "2020-12-31"'
+    basis: disclosed
+  - field: amount
+    snapshot: f033ca72663eec5960257684aadadee9e04be67dc1b3ba20ef7c80da4195c7e2
+    quote: '"Award Amount": 500000.0, "Total Outlays": 0.0, "Description": "AWARD UNDER THE: U.S. INDUSTRY OPPORTUNITIES FOR
+      ADVANCED NUCLEAR TECHNOLOGY DEVELOPMENT FOA #DE-FOA-0001817.'
+    basis: disclosed
+  participants:
+  - investor: Department of Energy
+    investor_slug: doe-ne
+    role: grantor
     evidence:
-      - field: announced_on
-        snapshot: f033ca72663eec5960257684aadadee9e04be67dc1b3ba20ef7c80da4195c7e2
-        quote: '"Start Date": "2020-03-26", "End Date": "2020-12-31"'
-        basis: disclosed
-      - field: amount
-        snapshot: f033ca72663eec5960257684aadadee9e04be67dc1b3ba20ef7c80da4195c7e2
-        quote: '"Award Amount": 500000.0, "Total Outlays": 0.0, "Description": "AWARD UNDER THE: U.S. INDUSTRY OPPORTUNITIES FOR ADVANCED NUCLEAR TECHNOLOGY DEVELOPMENT FOA #DE-FOA-0001817.'
-        basis: disclosed
-    participants:
-      - investor: Department of Energy
-        investor_slug: doe-ne
-        role: grantor
-        evidence:
-          - field: participant
-            snapshot: f033ca72663eec5960257684aadadee9e04be67dc1b3ba20ef7c80da4195c7e2
-            quote: '"Award ID": "DENE0008862", "Recipient Name": "KAIROS POWER LLC"'
-            basis: disclosed
-  - id: samsung-ct-strategic-investment-2026
-    instrument: equity
-    round_label: Strategic investment (binding term sheet)
-    announced_on: 2026-09-21
-    amount: {amount: 100000000, currency: USD, qualifier: up_to}
-    amount_kind: ceiling
-    use_of_proceeds: Delivery of the Hermes 2 Demonstration Plant in Oak Ridge, Tennessee
+    - field: participant
+      snapshot: f033ca72663eec5960257684aadadee9e04be67dc1b3ba20ef7c80da4195c7e2
+      quote: '"Award ID": "DENE0008862", "Recipient Name": "KAIROS POWER LLC"'
+      basis: disclosed
+- id: samsung-ct-strategic-investment-2026
+  instrument: equity
+  round_label: Strategic investment (binding term sheet)
+  announced_on: 2026-09-21
+  amount:
+    amount: 100000000
+    currency: USD
+    qualifier: up_to
+  amount_kind: ceiling
+  use_of_proceeds: Delivery of the Hermes 2 Demonstration Plant in Oak Ridge, Tennessee
+  evidence:
+  - field: announced_on
+    snapshot: 2c8f52b501c32a52d90900ce956e434f4c213f73607e2ea3c1f0a8c51d264662
+    quote: Strategic Investment and Collaboration for KP-FHR Deployment September 21, 2026
+    basis: disclosed
+  - field: amount
+    snapshot: 2c8f52b501c32a52d90900ce956e434f4c213f73607e2ea3c1f0a8c51d264662
+    quote: Samsung C&T has agreed to provide up to $100 million through a combination of direct investment and in-kind engineering
+      services, subject to regulatory approvals
+    basis: disclosed
+  - field: round_label
+    snapshot: 2c8f52b501c32a52d90900ce956e434f4c213f73607e2ea3c1f0a8c51d264662
+    quote: the signing of a binding term sheet for Samsung C&T to make a strategic investment in Kairos Power
+    basis: disclosed
+  participants:
+  - investor: Samsung C&T Engineering & Construction Group
+    investor_slug: samsung-ct
+    role: participant
     evidence:
-      - field: announced_on
-        snapshot: 2c8f52b501c32a52d90900ce956e434f4c213f73607e2ea3c1f0a8c51d264662
-        quote: "Strategic Investment and Collaboration for KP-FHR Deployment September 21, 2026"
-        basis: disclosed
-      - field: amount
-        snapshot: 2c8f52b501c32a52d90900ce956e434f4c213f73607e2ea3c1f0a8c51d264662
-        quote: "Samsung C&T has agreed to provide up to $100 million through a combination of direct investment and in-kind engineering services, subject to regulatory approvals"
-        basis: disclosed
-      - field: round_label
-        snapshot: 2c8f52b501c32a52d90900ce956e434f4c213f73607e2ea3c1f0a8c51d264662
-        quote: "the signing of a binding term sheet for Samsung C&T to make a strategic investment in Kairos Power"
-        basis: disclosed
-    participants:
-      - investor: Samsung C&T Engineering & Construction Group
-        investor_slug: samsung-ct
-        role: participant
-        evidence:
-          - field: participant
-            snapshot: 2c8f52b501c32a52d90900ce956e434f4c213f73607e2ea3c1f0a8c51d264662
-            quote: "Kairos Power and Samsung C&T Engineering & Construction Group (“Samsung C&T”) today announced the signing of a binding term sheet"
-            basis: disclosed
+    - field: participant
+      snapshot: 2c8f52b501c32a52d90900ce956e434f4c213f73607e2ea3c1f0a8c51d264662
+      quote: Kairos Power and Samsung C&T Engineering & Construction Group (“Samsung C&T”) today announced the signing of
+        a binding term sheet
+      basis: disclosed
+- id: kairos-nm-leda-2024
+  instrument: grant
+  round_label: New Mexico Local Economic Development Act (LEDA) funding, committed (pending approval)
+  announced_on: '2024-09-16'
+  amount:
+    amount: 3000000
+    currency: USD
+    qualifier: exact
+  amount_kind: ceiling
+  program: New Mexico LEDA
+  use_of_proceeds: Salt production facility and two fuel development lab facilities in Albuquerque, 100 jobs
+  evidence:
+  - field: announced_on
+    snapshot: e6dbef008c536eb55583829a3ef95290c35debc53a0c88dd367734406f134f73
+    quote: September 16, 2024 FOR IMMEDIATE RELEASE
+    basis: disclosed
+  - field: amount
+    snapshot: e6dbef008c536eb55583829a3ef95290c35debc53a0c88dd367734406f134f73
+    quote: The New Mexico Economic Development Department has committed $3 million in Local Economic Development Act (LEDA)
+      funding for the project.
+    basis: disclosed
+  participants:
+  - investor: New Mexico Economic Development Department
+    investor_slug: new-mexico-edd
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: e6dbef008c536eb55583829a3ef95290c35debc53a0c88dd367734406f134f73
+      quote: The New Mexico Economic Development Department has committed $3 million in Local Economic Development Act (LEDA)
+        funding for the project.
+      basis: disclosed
+    review: pending
+  review: pending
+  source_pass: pass2
+- id: kairos-nm-jtip-2024
+  instrument: grant
+  round_label: New Mexico Job Training Incentive Program (JTIP) funding (pending approval)
+  announced_on: '2024-09-16'
+  amount:
+    amount: 1800000
+    currency: USD
+    qualifier: exact
+  amount_kind: ceiling
+  program: New Mexico JTIP
+  evidence:
+  - field: announced_on
+    snapshot: e6dbef008c536eb55583829a3ef95290c35debc53a0c88dd367734406f134f73
+    quote: September 16, 2024 FOR IMMEDIATE RELEASE
+    basis: disclosed
+  - field: amount
+    snapshot: e6dbef008c536eb55583829a3ef95290c35debc53a0c88dd367734406f134f73
+    quote: the project will receive $1.8 million in Job Training Incentive Program (JTIP) funding to train 100 new employees
+    basis: disclosed
+  participants:
+  - investor: New Mexico Economic Development Department
+    investor_slug: new-mexico-edd
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: e6dbef008c536eb55583829a3ef95290c35debc53a0c88dd367734406f134f73
+      quote: the project will receive $1.8 million in Job Training Incentive Program (JTIP) funding to train 100 new employees
+      basis: disclosed
+    review: pending
+  review: pending
+  source_pass: pass2
+- id: kairos-albuquerque-leda-2024
+  instrument: grant
+  round_label: City of Albuquerque LEDA commitment (fiscal agent for state funding; pending approval)
+  announced_on: '2024-09-16'
+  amount:
+    amount: 500000
+    currency: USD
+    qualifier: exact
+  amount_kind: ceiling
+  program: City of Albuquerque LEDA
+  evidence:
+  - field: announced_on
+    snapshot: e6dbef008c536eb55583829a3ef95290c35debc53a0c88dd367734406f134f73
+    quote: September 16, 2024 FOR IMMEDIATE RELEASE
+    basis: disclosed
+  - field: amount
+    snapshot: e6dbef008c536eb55583829a3ef95290c35debc53a0c88dd367734406f134f73
+    quote: The City of Albuquerque Economic Development Department has committed $500,000 through its LEDA fund and will serve
+      as the fiscal agent for the state's funding.
+    basis: disclosed
+  participants:
+  - investor: City of Albuquerque Economic Development Department
+    investor_slug: city-of-albuquerque
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: e6dbef008c536eb55583829a3ef95290c35debc53a0c88dd367734406f134f73
+      quote: The City of Albuquerque Economic Development Department has committed $500,000 through its LEDA fund
+      basis: disclosed
+    review: pending
+  review: pending
+  source_pass: pass2
 agreements:
-  - id: google-master-plant-development-2024
-    counterparty: Google
-    counterparty_slug: google
-    type: ppa
-    binding: definitive
-    announced_on: 2024-10-14
-    capacity_mw: 500
-    summary: Master Plant Development Agreement for a fleet of advanced reactor plants totalling 500 MW by 2035, with energy sold to Google under PPAs. Value undisclosed.
-    evidence:
-      - field: agreement
-        snapshot: e81f126e23c4a14eed2960f512063233486c86999aa9c8bdbbe5ad6022e82c1e
-        quote: "Kairos Power and Google have signed a Master Plant Development Agreement, creating a path to deploy a U.S. fleet of advanced nuclear power projects totaling 500 MW by 2035"
-        basis: disclosed
-  - id: tva-hermes-2-ppa-2025
-    counterparty: Tennessee Valley Authority (with Google)
-    counterparty_slug: tva
-    type: ppa
-    binding: definitive
-    announced_on: 2025-08-18
-    capacity_mw: 50
-    summary: PPA between Kairos Power and TVA for Hermes 2 output, supplying the TVA grid that powers Google data centers in Tennessee and Alabama. Value undisclosed.
-    evidence:
-      - field: agreement
-        snapshot: 98257e62308b2ae4e469a925710a1681c2e76807b11b41cb1e4a955b2b780027
-        quote: "Hermes 2 Plant in Oak Ridge, Tenn., will deliver up to 50 megawatts (MW) of reliable, 24/7 energy to the TVA grid"
-        basis: disclosed
-  - id: doe-haleu-hermes-contract-2026
-    counterparty: U.S. Department of Energy (HALEU Availability Program)
-    counterparty_slug: doe-ne
-    type: fuel_supply
-    binding: definitive
-    announced_on: 2026-01-20
-    summary: Finalized contract to receive DOE-sourced HALEU for startup and operation of Hermes 1; conditionally selected April 2025. Quantity and value not stated in the quoted text.
-    evidence:
-      - field: agreement
-        snapshot: 6d7821a7f70a9727092daca53294a79fd47de1662485acc0fab6f54e8d726054
-        quote: "Kairos Power has finalized a contract with the U.S. Department of Energy (DOE) to receive High-Assay Low-Enriched Uranium (HALEU)"
-        basis: disclosed
+- id: google-master-plant-development-2024
+  counterparty: Google
+  counterparty_slug: google
+  type: ppa
+  binding: definitive
+  announced_on: 2024-10-14
+  capacity_mw: 500
+  summary: Master Plant Development Agreement for a fleet of advanced reactor plants totalling 500 MW by 2035, with energy
+    sold to Google under PPAs. Value undisclosed.
+  evidence:
+  - field: agreement
+    snapshot: e81f126e23c4a14eed2960f512063233486c86999aa9c8bdbbe5ad6022e82c1e
+    quote: Kairos Power and Google have signed a Master Plant Development Agreement, creating a path to deploy a U.S. fleet
+      of advanced nuclear power projects totaling 500 MW by 2035
+    basis: disclosed
+- id: tva-hermes-2-ppa-2025
+  counterparty: Tennessee Valley Authority (with Google)
+  counterparty_slug: tva
+  type: ppa
+  binding: definitive
+  announced_on: 2025-08-18
+  capacity_mw: 50
+  summary: PPA between Kairos Power and TVA for Hermes 2 output, supplying the TVA grid that powers Google data centers in
+    Tennessee and Alabama. Value undisclosed.
+  evidence:
+  - field: agreement
+    snapshot: 98257e62308b2ae4e469a925710a1681c2e76807b11b41cb1e4a955b2b780027
+    quote: Hermes 2 Plant in Oak Ridge, Tenn., will deliver up to 50 megawatts (MW) of reliable, 24/7 energy to the TVA grid
+    basis: disclosed
+- id: doe-haleu-hermes-contract-2026
+  counterparty: U.S. Department of Energy (HALEU Availability Program)
+  counterparty_slug: doe-ne
+  type: fuel_supply
+  binding: definitive
+  announced_on: 2026-01-20
+  summary: Finalized contract to receive DOE-sourced HALEU for startup and operation of Hermes 1; conditionally selected April
+    2025. Quantity and value not stated in the quoted text.
+  evidence:
+  - field: agreement
+    snapshot: 6d7821a7f70a9727092daca53294a79fd47de1662485acc0fab6f54e8d726054
+    quote: Kairos Power has finalized a contract with the U.S. Department of Energy (DOE) to receive High-Assay Low-Enriched
+      Uranium (HALEU)
+    basis: disclosed
+- id: kairos-tva-hermes-collaboration-2021
+  counterparty: Tennessee Valley Authority
+  counterparty_slug: tva
+  type: partnership
+  binding: definitive
+  announced_on: '2021-05-06'
+  summary: TVA to provide engineering, operations and licensing support for the Hermes low-power demonstration reactor at
+    ETTP, Oak Ridge. No value stated.
+  evidence:
+  - field: agreement
+    snapshot: 738cc2c5c8999bac89135cd129e8c48d0bfb77737e113ba434d4febd06b3ef95
+    quote: TVA will provide engineering, operations, and licensing support to help Kairos Power deploy its low-power demonstration
+      reactor, named Hermes.
+    basis: disclosed
+  review: pending
+  source_pass: pass2
+- id: kairos-materion-cda-2022
+  counterparty: Materion Corporation
+  counterparty_slug: materion
+  type: partnership
+  binding: definitive
+  announced_on: '2022-07-19'
+  summary: 'Cooperative Development Agreement: Kairos Power commissioned a Molten Salt Purification Plant at Materion''s Elmore,
+    Ohio campus to produce Flibe coolant. No value stated.'
+  evidence:
+  - field: agreement
+    snapshot: f87b9becf9d916cd9abd40f42da7458dd4a90ca5575bde816e961b9852273458
+    quote: As part of a Cooperative Development Agreement with Materion Corporation, Kairos Power has commissioned a Molten
+      Salt Purification Plant (MSPP) at the Materion campus in Elmore, Ohio.
+    basis: disclosed
+  review: pending
+  source_pass: pass2
+- id: kairos-lanl-fuel-agreement-2022
+  counterparty: Los Alamos National Laboratory
+  counterparty_slug: los-alamos-national-laboratory
+  type: fuel_supply
+  binding: definitive
+  announced_on: '2022-12-08'
+  summary: Agreement to produce TRISO fuel pebbles for Hermes at LANL's Low Enriched Fuel Fabrication Facility. No value stated.
+  evidence:
+  - field: agreement
+    snapshot: bb3f615d7d7a79de6900f7a708f3e07b4ec4cf4867fde285349f3bcc30a8564f
+    quote: the company has signed an agreement to produce TRISO fuel pebbles for the Hermes demonstration reactor at Los Alamos
+    basis: disclosed
+  review: pending
+  source_pass: pass2
+- id: kairos-texas-am-rellis-site-2025
+  counterparty: Texas A&M University System
+  counterparty_slug: texas-a-m-university-system
+  type: site
+  binding: mou
+  announced_on: '2025-02-04'
+  capacity_mw: 450
+  summary: Kairos Power, Texas A&M and prospective customers agreed to explore siting one or more commercial plants totalling
+    450+ MW at the RELLIS campus. Exploratory, no value stated.
+  evidence:
+  - field: agreement
+    snapshot: 33491e952ba1d54f55419d94cd0b6f18716a832bb950c00102da37c34e67da1e
+    quote: Kairos Power, the Texas A&M University System, and prospective customers have agreed to explore the potential to
+      site one or more commercial nuclear power plants
+    basis: disclosed
+  - field: capacity_mw
+    snapshot: 33491e952ba1d54f55419d94cd0b6f18716a832bb950c00102da37c34e67da1e
+    quote: could potentially host one or more plants totaling 450+ MW in Kairos Power's commercial fleet
+    basis: disclosed
+  review: pending
+  source_pass: pass2
+- id: kairos-bwxt-triso-collaboration-2025
+  counterparty: BWX Technologies
+  counterparty_slug: bwx-technologies
+  type: partnership
+  binding: mou
+  announced_on: '2025-09-03'
+  summary: Agreement to explore optimisation of commercial TRISO fuel production and a jointly developed TRISO fabrication
+    facility. No value stated.
+  evidence:
+  - field: agreement
+    snapshot: 05464667f2368217f8ada07dcc61caf8180f1039226084e7ce7cdcd104e963fe
+    quote: today announced an agreement to collaboratively explore technical and process opportunities for the optimization
+      of commercial production of TRISO nuclear fuel
+    basis: disclosed
+  review: pending
+  source_pass: pass2
 verification:
   status: verified
-  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
-  "on": 2026-10-05
-  note: "3 corrections. ARDP Risk Reduction (same $303M DOE share in three events): 2024 TIA 'up to $303M' set to amount_kind ceiling; 2020 DOE selection announcement set to duplicate (supersedes ardp-doe-tia-2024); only the USAspending obligation ($135M, $126.858M outlaid) counts as new_money. Samsung C&T 'up to $100M' binding term sheet (cash plus in-kind, subject to approvals) set to ceiling. Not confirmed: why USAspending obligation ($135M) is below the $303M ceiling; no equity rounds evidenced (private, no Form D); the $3.3M SBA loan and UW pass-through left out."
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': 2026-10-05
+  note: '3 corrections. ARDP Risk Reduction (same $303M DOE share in three events): 2024 TIA ''up to $303M'' set to amount_kind
+    ceiling; 2020 DOE selection announcement set to duplicate (supersedes ardp-doe-tia-2024); only the USAspending obligation
+    ($135M, $126.858M outlaid) counts as new_money. Samsung C&T ''up to $100M'' binding term sheet (cash plus in-kind, subject
+    to approvals) set to ceiling. Not confirmed: why USAspending obligation ($135M) is below the $303M ceiling; no equity
+    rounds evidenced (private, no Form D); the $3.3M SBA loan and UW pass-through left out.'

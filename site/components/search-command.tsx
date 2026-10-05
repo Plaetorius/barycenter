@@ -62,7 +62,7 @@ export function SearchButton() {
       >
         <Search className="size-3.5" aria-hidden="true" />
         <span className="hidden sm:inline">Search</span>
-        <kbd className="hidden rounded border px-1 font-mono text-[10px] sm:inline">⌘K</kbd>
+        <kbd className="hidden rounded border px-1 font-medium text-[10px] sm:inline">⌘K</kbd>
       </button>
       <CommandDialog open={open} onOpenChange={setOpen} title="Search" description="Find a company, investor or public funder">
         <CommandInput value={query} onValueChange={setQuery} placeholder="Company, investor or funder…" />

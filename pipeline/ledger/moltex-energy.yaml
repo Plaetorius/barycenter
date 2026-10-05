@@ -1,9 +1,40 @@
 company: moltex-energy
 name: Moltex Energy
 sector: fission
-notes: |-
-  STATUS: Moltex Energy Limited (UK parent) is in administration; on 2026-08-13 Moltex announced that Nuclea Energy Inc. signed a definitive agreement to acquire the technology portfolio and subsidiaries (completion subject to UK NSI Act approval). The census cites CBC (insolvency 2025-03; assets offered to Nuclea for CAD11.5M) but the CBC page timed out repeatedly in the archive tool and is NOT evidence here; the CAD11.5M price and the March 2025 insolvency date are unverified. Funding: Moltex states "more than C$96 million in private, Canadian and U.S. public-sector funding" (cumulative, not a round, not to be summed with events). Evidenced public events: ISED Strategic Innovation Fund CAD47.5M (ref 033-2020-2021-Q4-814523: amendment 0 start 2020-09-30, amendment 1 on 2026-03-31 restated start 2021-03-16, value unchanged; SIF values are authorised maxima, usually conditionally repayable, disbursements unknown) and two ACOA REGI contributions (CAD3.0M start 2021-02-12; CAD2,666,667 start 2024-01-30) found under the pipe-duplicated legal name "Moltex Energy Canada Inc.|Moltex Energy Canada Inc.". The census figure CAD5M from New Brunswick and further private rounds could not be sourced (CBC unreachable, WebSearch budget exhausted). USAspending: Moltex Energy USA LLC shows only a net negative DOE transaction (-USD9,384.43), no event. CORDIS, TED, BODACC probes: no records (UK affiliate not EU-funded). Verifier: administration confirmed by the 2026-08-13 company release (snapshot 498d7712: assets bought "from Moltex Energy Limited, which is currently in administration"); the administration start date is not in any evidenced source. The SIF record says "this is a repayable contribution" and amendment 1 (2026-03-31) extends the end date to 2054-07-31, i.e. a repayment schedule, so the event is now instrument=debt with ISED as lender (not a grant). ACOA REGI items are "conditionally repayable contribution" and stay as grant (government contribution, conditional repayment). All three are agreement maxima with no disbursement data; with the parent in administration, repayment/forgiveness status is unknown. The SIF announced_on (2020-09-30) is the original agreement start date, not a public announcement date; amendment 1 restates start 2021-03-16, which is closer to the public announcement of the federal support (not archived).
-  MERGE 2026-10-05 (USAspending supplement): the earlier statement that USAspending shows only a net negative DOE transaction for Moltex Energy USA LLC is superseded; award-level search finds the two ARPA-E awards above. Recipient is the US subsidiary of the group (same treatment as Moltex Energy Canada Inc.).
+notes: 'STATUS: Moltex Energy Limited (UK parent) is in administration; on 2026-08-13 Moltex announced that Nuclea Energy
+  Inc. signed a definitive agreement to acquire the technology portfolio and subsidiaries (completion subject to UK NSI Act
+  approval). The census cites CBC (insolvency 2025-03; assets offered to Nuclea for CAD11.5M) but the CBC page timed out repeatedly
+  in the archive tool and is NOT evidence here; the CAD11.5M price and the March 2025 insolvency date are unverified. Funding:
+  Moltex states "more than C$96 million in private, Canadian and U.S. public-sector funding" (cumulative, not a round, not
+  to be summed with events). Evidenced public events: ISED Strategic Innovation Fund CAD47.5M (ref 033-2020-2021-Q4-814523:
+  amendment 0 start 2020-09-30, amendment 1 on 2026-03-31 restated start 2021-03-16, value unchanged; SIF values are authorised
+  maxima, usually conditionally repayable, disbursements unknown) and two ACOA REGI contributions (CAD3.0M start 2021-02-12;
+  CAD2,666,667 start 2024-01-30) found under the pipe-duplicated legal name "Moltex Energy Canada Inc.|Moltex Energy Canada
+  Inc.". The census figure CAD5M from New Brunswick and further private rounds could not be sourced (CBC unreachable, WebSearch
+  budget exhausted). USAspending: Moltex Energy USA LLC shows only a net negative DOE transaction (-USD9,384.43), no event.
+  CORDIS, TED, BODACC probes: no records (UK affiliate not EU-funded). Verifier: administration confirmed by the 2026-08-13
+  company release (snapshot 498d7712: assets bought "from Moltex Energy Limited, which is currently in administration"); the
+  administration start date is not in any evidenced source. The SIF record says "this is a repayable contribution" and amendment
+  1 (2026-03-31) extends the end date to 2054-07-31, i.e. a repayment schedule, so the event is now instrument=debt with ISED
+  as lender (not a grant). ACOA REGI items are "conditionally repayable contribution" and stay as grant (government contribution,
+  conditional repayment). All three are agreement maxima with no disbursement data; with the parent in administration, repayment/forgiveness
+  status is unknown. The SIF announced_on (2020-09-30) is the original agreement start date, not a public announcement date;
+  amendment 1 restates start 2021-03-16, which is closer to the public announcement of the federal support (not archived).
+
+  MERGE 2026-10-05 (USAspending supplement): the earlier statement that USAspending shows only a net negative DOE transaction
+  for Moltex Energy USA LLC is superseded; award-level search finds the two ARPA-E awards above. Recipient is the US subsidiary
+  of the group (same treatment as Moltex Energy Canada Inc.).
+
+  [pass2] Pass 2 gap-fill. Added: (1) IDOM equity investment (Moltex release 2019-04-03 on moltexenergy.com, corroborated
+  by NEI Magazine 2019-04-03): ''multi-million dollar (USD)'', no amount stated, so recorded without amount; the investing
+  entity is Spain-based IDOM. (2) The public announcement of the Canadian federal funding, ISED release 2021-03-18 (''$50.5
+  million in Moltex Energy Canada Inc.'', quick facts ''$47.5 million through SIF and $3 million through REGI''), recorded
+  as a duplicate of the existing SIF/ACOA events to supply their true announcement date (the ledger''s SIF announced_on 2020-09-30
+  is the agreement start date). Not additive. Not obtained: New Brunswick government release (gnb.ca, HTTP 403), OPG release
+  (403), CNL release (403), SNC-Lavalin 2022 release, UK AMR Phase 1 page (UK BEIS funding; recipient and amount for Moltex
+  not read). The CAD11.5M insolvency price and administration date remain unevidenced. Wikipedia lists IDOM, NB Power, OPG,
+  ARPA-E and SNC-Lavalin as backers; only IDOM and ARPA-E (already recorded) are evidenced with an event here. EDGAR Form
+  D probe for ''Moltex'': 0 hits.'
 verification:
   status: verified
   by: merge-verifier-agent (opus), 2026-10-05
@@ -213,4 +244,52 @@ events:
       snapshot: 923dd4faacfb8ca2e7b3e40a21b800936682071eb56c90a1d72f2cd0dab4b0ce
       quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
       basis: disclosed
+- id: moltex-2019-idom-investment
+  instrument: equity
+  round_label: Strategic investment by IDOM (multi-million USD, amount undisclosed)
+  announced_on: '2019-04-03'
+  use_of_proceeds: Expand the New Brunswick office and accelerate pre-licensing (Vendor Design Review)
+  evidence:
+  - field: announced_on
+    snapshot: f3fc589c174c282947ef7f303a9f30d638154b0c3b3b8a1714e2e5e03c39ad2d
+    quote: Saint John, 3 April 2019
+    basis: disclosed
+  - field: round_label
+    snapshot: f3fc589c174c282947ef7f303a9f30d638154b0c3b3b8a1714e2e5e03c39ad2d
+    quote: Moltex Energy has secured a substantial investment from IDOM Consulting, Engineering, Architecture SAU
+    basis: disclosed
+  participants:
+  - investor: IDOM Consulting, Engineering, Architecture SAU
+    investor_slug: idom
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f3fc589c174c282947ef7f303a9f30d638154b0c3b3b8a1714e2e5e03c39ad2d
+      quote: Moltex Energy has secured a substantial investment from IDOM Consulting, Engineering, Architecture SAU
+      basis: disclosed
+    review: pending
+  review: pending
+  source_pass: pass2
+- id: moltex-2021-canada-announcement-50m
+  instrument: debt
+  round_label: 'Government of Canada announcement: SIF C$47.5M plus REGI C$3M (same money as moltex-2020-canada-sif and moltex-2021-acoa-regi-1)'
+  announced_on: '2021-03-18'
+  amount:
+    amount: 50500000
+    currency: CAD
+    qualifier: exact
+  amount_kind: duplicate
+  supersedes: moltex-2020-canada-sif
+  program: Strategic Innovation Fund and REGI
+  evidence:
+  - field: announced_on
+    snapshot: d0833d33005f9866fd5b5f2d973c5df01bc216f643fd709308c8f05d39162c9a
+    quote: March 18, 2021 – Saint John, New Brunswick
+    basis: disclosed
+  - field: amount
+    snapshot: d0833d33005f9866fd5b5f2d973c5df01bc216f643fd709308c8f05d39162c9a
+    quote: today announced an investment of $50.5 million in Moltex Energy Canada Inc.
+    basis: disclosed
+  review: pending
+  source_pass: pass2
 agreements: []

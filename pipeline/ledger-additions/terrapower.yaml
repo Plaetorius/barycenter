@@ -1,0 +1,32 @@
+company: terrapower
+name: TerraPower LLC
+sector: fission
+notes: >
+  PASS2 gap-fill. Searched: archived manifest (all terrapower.com newsroom pages, DOE ARDP / HALEU / GAIN pages), terrapower.com
+  /natrium/, /wyoming/, Kemmerer training-center, site-visit and support-services releases, Kemmerer land and state-permit
+  releases. Only one addition: TerraPower's own Natrium page states the ARDP authorisation ceiling (up to $2 billion, 50/50 cost
+  share), recorded as a ceiling (not funding, not summed; the counted DOE money stays the USAspending obligation). Guessed
+  URLs for a DOE HALEU allocation page (energy.gov first-round / first-recipients / second-round) and for 2021 site-selection
+  releases returned 404. WebSearch budget (200/200) is exhausted for the session, so these remain NOT FOUND from primary sources:
+  2018-2021 private rounds and investors by round (no Form D, no TerraPower release), Wyoming state appropriations, DOE HALEU
+  allocation to TerraPower, DOE LPO support, UK awards, PacifiCorp definitive agreements beyond the 2023 IRP and land purchase,
+  and the full investor list of the 2025 $650M round (release says "including"). The Wyoming/Kemmerer pages and the 2025 UK GDA
+  releases contain no dollar figures.
+events:
+- id: terrapower-ardp-2b-authorization-ceiling
+  instrument: cost_share
+  round_label: ARDP Natrium authorisation ceiling (up to $2 billion, 50/50 cost share), per TerraPower
+  amount: {amount: 2000000000, currency: USD, qualifier: up_to}
+  announced_on: 2020-10-13
+  amount_kind: ceiling
+  program: DOE Advanced Reactor Demonstration Program
+  evidence:
+  - {field: amount, snapshot: b9cca7be3a1ae7d2c0ecda8da7b496c7b85e58eec5ddf5a16591a05163c82c56, quote: "This program authorizes a 50/50 cost share and authorizes up to $2 billion for the Natrium project.", basis: reported}
+  - {field: announced_on, snapshot: 51c14e4204af7fb3c1efef2330cdba2b77e9015dfd10d5a90be6d95bb780209e, quote: "Office of Nuclear Energy October 13, 2020", basis: disclosed}
+  participants:
+  - investor: U.S. Department of Energy (ARDP)
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - {field: participant, snapshot: b9cca7be3a1ae7d2c0ecda8da7b496c7b85e58eec5ddf5a16591a05163c82c56, quote: "TerraPower is building its first plant through a public-private partnership with the U.S. Department of Energy's (DOE) Advanced Reactor Demonstration Program (ARDP).", basis: reported}
+agreements: []

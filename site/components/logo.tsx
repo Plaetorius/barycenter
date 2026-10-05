@@ -11,7 +11,7 @@ export function Logo({ name, logo, sector, size = 28, className }: { name: strin
     );
   }
   return (
-    <span aria-hidden="true" className={cn("inline-flex shrink-0 items-center justify-center rounded-md font-mono text-[10px] font-semibold text-foreground", className)}
+    <span aria-hidden="true" className={cn("inline-flex shrink-0 items-center justify-center rounded-md font-medium text-[10px] font-semibold text-foreground", className)}
       style={{ width: size, height: size, background: `color-mix(in oklab, ${sector === "fusion" ? "var(--fusion)" : sector === "fission" ? "var(--fission)" : "var(--ink-3)"} 28%, var(--background))`, boxShadow: `inset 0 0 0 1px color-mix(in oklab, ${sector === "fusion" ? "var(--fusion)" : "var(--fission)"} 55%, transparent)` }}>
       {initials}
     </span>

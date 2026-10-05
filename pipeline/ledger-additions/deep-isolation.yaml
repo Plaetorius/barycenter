@@ -1,0 +1,47 @@
+company: deep-isolation
+name: Deep Isolation
+sector: fission
+notes: >-
+  Pass 2. Added the $33M private placement that closed with the reverse merger into Deep Isolation Nuclear, Inc. (formerly
+  Aspen-1 Acquisition Inc., CIK 1918080; OTCQB DBHL). Company release 2025-07-24 says $33 million; the Form D (filed 2025-08-08,
+  accession 0001213900-25-073238) states $33,037,348 sold to 241 investors (same money, not a second event; its XML tags are not
+  quotable so it is not attached as evidence). Investors are not named in any source read; placement agents (Seaport Global,
+  Benchmark, Dinosaur Financial, Network 1, Phoenix; cash fees of $3,143,387 per the FY2025 10-K) are not investors and are not
+  recorded as participants. The two DOE announcements of 2026 (ARPA-E SCALEUP Ready 2026-04-07: ARPA-E 'committed up to $40
+  million to support two projects' with no split; Project GENESIS three grants 2026-07-23) state no amount for Deep Isolation,
+  so they are recorded without amount (SCALEUP kept as ceiling kind: a selection, not an obligation). No debt, ATM or later
+  equity found in EDGAR full-text hits (8-Ks to 2026-10-02 checked: permit, Genesis, annual meeting, compensation).
+  Pre-merger private rounds of Deep Isolation, Inc. (2016-2024) not found in sources read (10-K not mined for historical
+  preferred rounds). WebSearch not used (budget spent).
+events:
+  - id: deep-isolation-private-placement-2025
+    instrument: equity
+    round_label: Private placement (concurrent with reverse merger)
+    announced_on: 2025-07-24
+    closed_on: 2025-07-23
+    amount: {amount: 33000000, currency: USD, qualifier: exact}
+    use_of_proceeds: "fund the development of a full-scale demonstration project"
+    evidence:
+      - {field: amount, snapshot: "92f59982b4d4c5364616564395cf46b9268ee216948b62436bb537aa35afed8c", quote: "closed an oversubscribed financing through a private placement of its common stock (raising $33 million)", basis: disclosed}
+      - {field: announced_on, snapshot: "92f59982b4d4c5364616564395cf46b9268ee216948b62436bb537aa35afed8c", quote: "Press Release, July 24, 2025", basis: disclosed}
+      - {field: closed_on, snapshot: "92f59982b4d4c5364616564395cf46b9268ee216948b62436bb537aa35afed8c", quote: "on July 23, 2025, it closed a reverse merger transaction", basis: disclosed}
+      - {field: round_label, snapshot: "92f59982b4d4c5364616564395cf46b9268ee216948b62436bb537aa35afed8c", quote: "Oversubscribed $33 Million Financing", basis: disclosed}
+      - {field: use_of_proceeds, snapshot: "92f59982b4d4c5364616564395cf46b9268ee216948b62436bb537aa35afed8c", quote: "Most recent financing will fund the development of a full-scale demonstration project", basis: disclosed}
+  - id: deep-isolation-arpae-scaleup-ready-2026
+    instrument: grant
+    round_label: ARPA-E SCALEUP Ready (selection)
+    announced_on: 2026-04-07
+    amount_kind: ceiling
+    program: ARPA-E SCALEUP Ready
+    evidence:
+      - {field: announced_on, snapshot: "507783ee044123e5ac2134b39862a1287df4f1576d41b04d74da411e8be82b98", quote: "BERKELEY, CA, April 7, 2026", basis: disclosed}
+      - {field: round_label, snapshot: "507783ee044123e5ac2134b39862a1287df4f1576d41b04d74da411e8be82b98", quote: "committed up to $40 million to support two projects, including the Deep Isolation project", basis: disclosed}
+  - id: deep-isolation-doe-genesis-2026
+    instrument: grant
+    round_label: DOE Project GENESIS (three awards, partner on LBNL- and USC-led projects)
+    announced_on: 2026-07-23
+    program: DOE Genesis Mission
+    evidence:
+      - {field: announced_on, snapshot: "1a93d1038b414e6cdf1dfe67dea8555365671bcecf6aa9a06ccb5ac3b323065f", quote: "Press Release, July 23, 2026", basis: disclosed}
+      - {field: round_label, snapshot: "1a93d1038b414e6cdf1dfe67dea8555365671bcecf6aa9a06ccb5ac3b323065f", quote: "selected as the sole industrial partner on three competitive federal grants", basis: disclosed}
+agreements: []

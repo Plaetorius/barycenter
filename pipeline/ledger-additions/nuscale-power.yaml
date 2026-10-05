@@ -1,0 +1,75 @@
+company: nuscale-power
+name: NuScale Power Corporation
+sector: fission
+notes: |-
+  PASS2 gap-fill. Searched: EDGAR submissions index (377c05a5fc1e), FY2023 10-K, FY2024 10-K, Q1 and Q2 2026 10-Qs (all archived under source ledger-nuscale-power). Added realised ATM gross proceeds the first pass could not evidence: calendar 2023 ($10.4M, Aug 2023 programme), calendar 2024 ($139.0M completing the Aug 2023 $150M programme and $71.2M under the Nov 2024 $200M programme). These are all 2023-2024; the existing FY2025 event ($1,327.6M) covers year ended Dec 2025 so no overlap. Note: the 2023 sales ($10.4M) plus 2024 prior-programme sales ($139.0M) sum to the $150M programme, so the 2023 and 2024 prior-programme events are separate years of one programme, not duplicates.
+  Confirmation, not added as an event (would duplicate nuscale-atm-sales-2026-02-programme, approx $1B): Q2 2026 10-Q (snapshot e390e7156758) states that in the six months ended June 30, 2026 the Company sold 89,727,165 shares for gross proceeds of $1.0 billion and net $984.5 million (weighted average $11.14) before completing the 2026 ATM Program in June 2026; Q1 2026 10-Q (14a2e739faf0) states $37.9M gross in Q1. Net $984.5M. The Aug 2026 $750M programme has no sales evidenced yet in filings held (Q2 10-Q predates it).
+  Not found: pre-SPAC private rounds (NuScale Power LLC was funded by Fluor via contributions; no separate round evidenced); Fluor sell-down proceeds go to Fluor, not the company. No DOE press pages retrievable.
+events:
+- id: nuscale-atm-sales-fy2023
+  instrument: follow_on
+  round_label: ATM sales in calendar 2023 (Aug 2023 programme; gross proceeds)
+  announced_on: 2024-03-15
+  amount:
+    amount: 10400000
+    currency: USD
+    qualifier: approx
+  program: At-the-market offering programme (realised gross proceeds; net $9.8M)
+  evidence:
+  - field: amount
+    snapshot: 7ba03297d6fada5caff9ffcdfb1e26749c2e70ae035fd7c955a6e7c3596552ba
+    quote: generating gross and net proceeds of $10.4 million and $9.8 million, respectively
+    basis: disclosed
+  - field: announced_on
+    snapshot: 7ba03297d6fada5caff9ffcdfb1e26749c2e70ae035fd7c955a6e7c3596552ba
+    quote: "By: /s/ John Hopkins March 15, 2024"
+    basis: disclosed
+  - field: round_label
+    snapshot: 7ba03297d6fada5caff9ffcdfb1e26749c2e70ae035fd7c955a6e7c3596552ba
+    quote: During the year ended December 31, 2023 , the Company issued and sold 1,737,378 shares of Class A common stock
+    basis: disclosed
+- id: nuscale-atm-sales-fy2024-prior-programme
+  instrument: follow_on
+  round_label: ATM sales in calendar 2024 completing the Aug 2023 $150M programme (gross proceeds)
+  announced_on: 2025-03-03
+  amount:
+    amount: 139000000
+    currency: USD
+    qualifier: approx
+  program: At-the-market offering programme (realised gross proceeds; net $135.5M; fully utilised)
+  evidence:
+  - field: amount
+    snapshot: 927f7c3aab02f3a281d4f5c4989c3605698e691fb888f6487cd196c180257f44
+    quote: for the gross and net proceeds of $139.0 million and $135.5 million, respectively, fully utilizing the Prior ATM Program
+    basis: disclosed
+  - field: announced_on
+    snapshot: 927f7c3aab02f3a281d4f5c4989c3605698e691fb888f6487cd196c180257f44
+    quote: "By: /s/ John Hopkins March 3, 2025"
+    basis: disclosed
+  - field: round_label
+    snapshot: 927f7c3aab02f3a281d4f5c4989c3605698e691fb888f6487cd196c180257f44
+    quote: the Company issued and sold 18,262,622 shares of Class A common stock
+    basis: disclosed
+- id: nuscale-atm-sales-fy2024-nov2024-programme
+  instrument: follow_on
+  round_label: ATM sales in calendar 2024 under the Nov 2024 $200M programme (gross proceeds)
+  announced_on: 2025-03-03
+  amount:
+    amount: 71200000
+    currency: USD
+    qualifier: approx
+  program: At-the-market offering programme (realised gross proceeds; net $69.2M)
+  evidence:
+  - field: amount
+    snapshot: 927f7c3aab02f3a281d4f5c4989c3605698e691fb888f6487cd196c180257f44
+    quote: the Company issued and sold 3,264,524 shares of Class A common stock for the gross and net proceeds of $71.2 million and $69.2 million, respectively
+    basis: disclosed
+  - field: announced_on
+    snapshot: 927f7c3aab02f3a281d4f5c4989c3605698e691fb888f6487cd196c180257f44
+    quote: "By: /s/ John Hopkins March 3, 2025"
+    basis: disclosed
+  - field: round_label
+    snapshot: 927f7c3aab02f3a281d4f5c4989c3605698e691fb888f6487cd196c180257f44
+    quote: having an aggregate sales price of up to $200,000,000 (“Current ATM Program”)
+    basis: disclosed
+agreements: []

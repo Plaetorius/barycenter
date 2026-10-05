@@ -1,0 +1,30 @@
+company: deep-fission
+name: Deep Fission, Inc.
+sector: fission
+notes: >
+  Gap-fill pass 2. Existing ledger already covers SAFEs, the 2025 PIPE, the 2026 $80M placement, the IPO, GAIN voucher and
+  agreements. Added from the 424B4 (2026-06-18): the Parsons, Kansas site lease and the Urenco USA enriched-uranium
+  procurement. The press-release list on deepfission.com shows an Aug 2024 item (Business Wire "Emerges from Stealth with
+  $4M in Backing") but the Business Wire page returns 403 (archived as a 557-byte block page) and web search budget was
+  exhausted, so that $4M round and its investors are NOT recorded; likely a duplicate of part of the 2024 SAFE aggregate in
+  any case. No ATM, debt or public grant found in filings reachable. Placement agent warrants not valued.
+events: []
+agreements:
+  - id: deep-fission-kansas-lease-2026
+    counterparty: Great Plains Industrial Park (Parsons, Kansas)
+    counterparty_slug: great-plains-industrial-park
+    type: site
+    binding: definitive
+    announced_on: 2026-06-18
+    summary: Long-term lease of about 100 acres at the Great Plains Industrial Park, Parsons, Kansas (entered February 2026) for the pilot reactor site; lease includes provisions requiring purchase of the property on conditions. No value stated.
+    evidence:
+      - {field: agreement, snapshot: "bccabc0423d78d665d84b6e75dcf23571795d7232ceefb594d392ab4eba52139", quote: "we entered into a long-term lease for approximately 100 acres located within the Great Plains Industrial Park in Parsons, Kansas", basis: disclosed}
+  - id: deep-fission-urenco-fuel-2026
+    counterparty: Urenco USA Inc.
+    counterparty_slug: urenco
+    type: fuel_supply
+    binding: definitive
+    announced_on: 2026-06-18
+    summary: Enriched uranium product procured from Urenco USA for anticipated delivery for the planned demonstration reactor; quantity and value not stated.
+    evidence:
+      - {field: agreement, snapshot: "bccabc0423d78d665d84b6e75dcf23571795d7232ceefb594d392ab4eba52139", quote: "Urenco USA Inc., from which enriched uranium product has been procured for anticipated delivery for our planned demonstration reactor activities", basis: disclosed}

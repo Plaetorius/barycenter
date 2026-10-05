@@ -1,77 +1,194 @@
 company: stellaria
 name: Stellaria
 sector: fission
-notes: >-
-  Stellaria SAS (Paris; Grenoble lab; BODACC/CORDIS name Stellaria Design, SIREN 952843282; not the UAE geospatial company).
+notes: 'Stellaria SAS (Paris; Grenoble lab; BODACC/CORDIS name Stellaria Design, SIREN 952843282; not the UAE geospatial company).
   Primary source: company release of 2025-07-17 (stellaria.fr); oilprice.com (2025-07-24) is a derivative that converts to
   USD24.8M and is not used for amounts. The 2023 first round is mentioned ("deux ans apres une premiere levee de fonds reussie
   en 2023"; Isospin Exergon invested "depuis le premier tour") but amount, date and investors are not in any source reached,
   so no 2023 event is recorded. The France 2030 EUR10M non-dilutive award ("Reacteurs innovants" call) has no award date in
   the sources; announced_on of that event is the 2025-07-17 release date that mentions it (not the award date). CORDIS: Stellaria
-  is ENDURANCE associated partner with no EC contribution (no event). BODACC probe: capital changes dated 2023-12-17 and
-  2025-09-02 (flags only, no amounts; OpenDataSoft mirror robots-disallowed, not re-archived). Canada G&C and TED probes have no
-  records. A pre-order agreement with Equinix (2025-11-26) is listed on the company resources page but its page was not
-  archived, so no agreement recorded.
+  is ENDURANCE associated partner with no EC contribution (no event). BODACC probe: capital changes dated 2023-12-17 and 2025-09-02
+  (flags only, no amounts; OpenDataSoft mirror robots-disallowed, not re-archived). Canada G&C and TED probes have no records.
+  A pre-order agreement with Equinix (2025-11-26) is listed on the company resources page but its page was not archived, so
+  no agreement recorded.
+
+  [pass2] PASS2 gap-fill from stellaria.fr newsroom pages linked from the archived resources page. ADDED three agreements:
+  Equinix pre-order (500 MWe, 2025-11-26), CEA letter of intent for INB ALPHA at Cadarache (2026-04-23) and a Fos-sur-Mer
+  integrated energy hub MoU with Groupe Unitel / Énergie Hub (2026-07-16). No value stated for any. NOT FOUND (WebSearch budget
+  exhausted): the 2023 first round (amount, date, investors) and the France 2030 award date remain unsourced. The DAC filing
+  for INB Alpha is a regulatory step, not funding. The pre-order is not a funding event and carries no payment amount.'
 verification:
   status: verified
-  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
-  "on": 2026-10-05
-  note: "0 corrections. Checked: EUR 23M round (company release 2025-07-17), leads At One Ventures and Supernova Invest, historical investors CEA Investissement, Schneider Electric, Exergon, Technip Energies; the EUR 10M France 2030 award is 'en complément', i.e. not inside the 23M. Gaps: 2023 first round amount/date unknown; France 2030 award date unknown (announced_on is the release date)."
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': 2026-10-05
+  note: '0 corrections. Checked: EUR 23M round (company release 2025-07-17), leads At One Ventures and Supernova Invest, historical
+    investors CEA Investissement, Schneider Electric, Exergon, Technip Energies; the EUR 10M France 2030 award is ''en complément'',
+    i.e. not inside the 23M. Gaps: 2023 first round amount/date unknown; France 2030 award date unknown (announced_on is the
+    release date).
+
+    [pass2 verify 2026-10-05, claude-opus-5-5] 3 pending items verified. 1 correction: Unitel/Energie Hub MoU announced_on
+    2026-07-16 (signing date) -> 2026-07-20 (release date), evidence added. Equinix ''accord de precommande'' (definitive,
+    500 MWe) and CEA LOI verified.'
 events:
-  - id: stellaria-2025-round
-    instrument: equity
-    round_label: 2025 round (second round)
-    announced_on: 2025-07-17
-    amount: {amount: 23000000, currency: EUR, qualifier: exact}
-    use_of_proceeds: technical and regulatory studies, molten-salt facility for fission reaction planned 2029, doubling workforce, Grenoble lab, DAC filing
+- id: stellaria-2025-round
+  instrument: equity
+  round_label: 2025 round (second round)
+  announced_on: 2025-07-17
+  amount:
+    amount: 23000000
+    currency: EUR
+    qualifier: exact
+  use_of_proceeds: technical and regulatory studies, molten-salt facility for fission reaction planned 2029, doubling workforce,
+    Grenoble lab, DAC filing
+  evidence:
+  - field: amount
+    snapshot: b4557b7bef203d1607f64b178dce505241c11c959875709897e87d4b7efb4484
+    quote: annonce une levée de fonds d’un montant total de 23 millions d’euros
+    basis: disclosed
+  - field: announced_on
+    snapshot: b4557b7bef203d1607f64b178dce505241c11c959875709897e87d4b7efb4484
+    quote: juillet 17, 2025
+    basis: disclosed
+  - field: round_label
+    snapshot: b4557b7bef203d1607f64b178dce505241c11c959875709897e87d4b7efb4484
+    quote: Cette levée de fonds intervient deux ans après une première levée de fonds réussie en 2023
+    basis: disclosed
+  participants:
+  - investor: At One Ventures
+    investor_slug: at-one-ventures
+    role: lead
     evidence:
-      - {field: amount, snapshot: b4557b7bef203d1607f64b178dce505241c11c959875709897e87d4b7efb4484, quote: "annonce une levée de fonds d’un montant total de 23 millions d’euros", basis: disclosed}
-      - {field: announced_on, snapshot: b4557b7bef203d1607f64b178dce505241c11c959875709897e87d4b7efb4484, quote: "juillet 17, 2025", basis: disclosed}
-      - {field: round_label, snapshot: b4557b7bef203d1607f64b178dce505241c11c959875709897e87d4b7efb4484, quote: "Cette levée de fonds intervient deux ans après une première levée de fonds réussie en 2023", basis: disclosed}
-    participants:
-      - investor: At One Ventures
-        investor_slug: at-one-ventures
-        role: lead
-        evidence:
-          - {field: participant, snapshot: b4557b7bef203d1607f64b178dce505241c11c959875709897e87d4b7efb4484, quote: "mené par le fonds américain à impact At One Ventures et Supernova Invest en tant qu’investisseurs principaux", basis: disclosed}
-      - investor: Supernova Invest
-        investor_slug: supernova-invest
-        role: lead
-        evidence:
-          - {field: participant, snapshot: b4557b7bef203d1607f64b178dce505241c11c959875709897e87d4b7efb4484, quote: "mené par le fonds américain à impact At One Ventures et Supernova Invest en tant qu’investisseurs principaux", basis: disclosed}
-      - investor: CEA Investissement
-        investor_slug: cea-investissement
-        role: participant
-        evidence:
-          - {field: participant, snapshot: b4557b7bef203d1607f64b178dce505241c11c959875709897e87d4b7efb4484, quote: "les investisseurs historiques de Stellaria : CEA Investissement, Schneider-Electric, Exergon et Technip Energies", basis: disclosed}
-      - investor: Schneider Electric
-        investor_slug: schneider-electric
-        role: participant
-        evidence:
-          - {field: participant, snapshot: b4557b7bef203d1607f64b178dce505241c11c959875709897e87d4b7efb4484, quote: "les investisseurs historiques de Stellaria : CEA Investissement, Schneider-Electric, Exergon et Technip Energies", basis: disclosed}
-      - investor: Exergon (Isospin Exergon)
-        investor_slug: exergon
-        role: participant
-        evidence:
-          - {field: participant, snapshot: b4557b7bef203d1607f64b178dce505241c11c959875709897e87d4b7efb4484, quote: "les investisseurs historiques de Stellaria : CEA Investissement, Schneider-Electric, Exergon et Technip Energies", basis: disclosed}
-      - investor: Technip Energies
-        investor_slug: technip-energies
-        role: participant
-        evidence:
-          - {field: participant, snapshot: b4557b7bef203d1607f64b178dce505241c11c959875709897e87d4b7efb4484, quote: "les investisseurs historiques de Stellaria : CEA Investissement, Schneider-Electric, Exergon et Technip Energies", basis: disclosed}
-  - id: stellaria-france-2030-grant
-    instrument: grant
-    round_label: France 2030 "Reacteurs innovants" laureate (award date not stated; announced_on = date of release mentioning it)
-    announced_on: 2025-07-17
-    amount: {amount: 10000000, currency: EUR, qualifier: exact}
-    program: France 2030 Innovative Reactors call
+    - field: participant
+      snapshot: b4557b7bef203d1607f64b178dce505241c11c959875709897e87d4b7efb4484
+      quote: mené par le fonds américain à impact At One Ventures et Supernova Invest en tant qu’investisseurs principaux
+      basis: disclosed
+  - investor: Supernova Invest
+    investor_slug: supernova-invest
+    role: lead
     evidence:
-      - {field: amount, snapshot: b4557b7bef203d1607f64b178dce505241c11c959875709897e87d4b7efb4484, quote: "financement non dilutif de 10 millions d’euros obtenu par Stellaria en étant lauréat de l’appel à projets « Réacteurs innovants » du plan France 2030", basis: disclosed}
-      - {field: announced_on, snapshot: b4557b7bef203d1607f64b178dce505241c11c959875709897e87d4b7efb4484, quote: "juillet 17, 2025", basis: disclosed}
-    participants:
-      - investor: France 2030
-        investor_slug: france-2030
-        role: grantor
-        evidence:
-          - {field: participant, snapshot: b4557b7bef203d1607f64b178dce505241c11c959875709897e87d4b7efb4484, quote: "lauréat de l’appel à projets « Réacteurs innovants » du plan France 2030", basis: disclosed}
-agreements: []
+    - field: participant
+      snapshot: b4557b7bef203d1607f64b178dce505241c11c959875709897e87d4b7efb4484
+      quote: mené par le fonds américain à impact At One Ventures et Supernova Invest en tant qu’investisseurs principaux
+      basis: disclosed
+  - investor: CEA Investissement
+    investor_slug: cea-investissement
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: b4557b7bef203d1607f64b178dce505241c11c959875709897e87d4b7efb4484
+      quote: 'les investisseurs historiques de Stellaria : CEA Investissement, Schneider-Electric, Exergon et Technip Energies'
+      basis: disclosed
+  - investor: Schneider Electric
+    investor_slug: schneider-electric
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: b4557b7bef203d1607f64b178dce505241c11c959875709897e87d4b7efb4484
+      quote: 'les investisseurs historiques de Stellaria : CEA Investissement, Schneider-Electric, Exergon et Technip Energies'
+      basis: disclosed
+  - investor: Exergon (Isospin Exergon)
+    investor_slug: exergon
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: b4557b7bef203d1607f64b178dce505241c11c959875709897e87d4b7efb4484
+      quote: 'les investisseurs historiques de Stellaria : CEA Investissement, Schneider-Electric, Exergon et Technip Energies'
+      basis: disclosed
+  - investor: Technip Energies
+    investor_slug: technip-energies
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: b4557b7bef203d1607f64b178dce505241c11c959875709897e87d4b7efb4484
+      quote: 'les investisseurs historiques de Stellaria : CEA Investissement, Schneider-Electric, Exergon et Technip Energies'
+      basis: disclosed
+- id: stellaria-france-2030-grant
+  instrument: grant
+  round_label: France 2030 "Reacteurs innovants" laureate (award date not stated; announced_on = date of release mentioning
+    it)
+  announced_on: 2025-07-17
+  amount:
+    amount: 10000000
+    currency: EUR
+    qualifier: exact
+  program: France 2030 Innovative Reactors call
+  evidence:
+  - field: amount
+    snapshot: b4557b7bef203d1607f64b178dce505241c11c959875709897e87d4b7efb4484
+    quote: financement non dilutif de 10 millions d’euros obtenu par Stellaria en étant lauréat de l’appel à projets « Réacteurs
+      innovants » du plan France 2030
+    basis: disclosed
+  - field: announced_on
+    snapshot: b4557b7bef203d1607f64b178dce505241c11c959875709897e87d4b7efb4484
+    quote: juillet 17, 2025
+    basis: disclosed
+  participants:
+  - investor: France 2030
+    investor_slug: france-2030
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: b4557b7bef203d1607f64b178dce505241c11c959875709897e87d4b7efb4484
+      quote: lauréat de l’appel à projets « Réacteurs innovants » du plan France 2030
+      basis: disclosed
+agreements:
+- id: stellaria-equinix-2025-preorder
+  counterparty: Equinix, Inc.
+  counterparty_slug: equinix
+  type: offtake
+  binding: definitive
+  announced_on: 2025-11-26
+  capacity_mw: 500
+  summary: Pre-order agreement for 500 MWe of power from the first Stellarium reactor (deployment planned from 2035) for Equinix
+    AI-ready data centres; first capacity reservation on the Stellarium. Pre-order, no payment or value stated; binding level
+    taken from "accord de précommande".
+  evidence:
+  - field: agreement
+    snapshot: b46c3d646496628615eae3cbb78993fabc39507185f88b4d895de60ddbe995ed
+    quote: Un accord de précommande à hauteur de 500 Mwe de puissance
+    basis: disclosed
+  - field: announced_on
+    snapshot: b46c3d646496628615eae3cbb78993fabc39507185f88b4d895de60ddbe995ed
+    quote: novembre 26, 2025
+    basis: disclosed
+  review: verified
+  source_pass: pass2
+- id: stellaria-cea-2026-inb-alpha-loi
+  counterparty: CEA (Commissariat à l'énergie atomique et aux énergies alternatives)
+  counterparty_slug: cea
+  type: site
+  binding: loi
+  announced_on: 2026-04-23
+  summary: Letter of intent on studying the siting of the INB ALPHA (critical experiment Alvin, demonstrator MegAlvin, salt
+    fabrication facility) at CEA Cadarache.
+  evidence:
+  - field: agreement
+    snapshot: cccf9919fc8174e946845204b48dea4e3d33e6efd0ee92105292886dbf9046b5
+    quote: Stellaria et le CEA annoncent la signature d’une Lettre d’Intention (LOI) relative à l’étude de l’implantation
+      d’une INB
+    basis: disclosed
+  - field: announced_on
+    snapshot: cccf9919fc8174e946845204b48dea4e3d33e6efd0ee92105292886dbf9046b5
+    quote: avril 23, 2026
+    basis: disclosed
+  review: verified
+  source_pass: pass2
+- id: stellaria-unitel-2026-fos-hub-mou
+  counterparty: Groupe Unitel and Énergie Hub
+  counterparty_slug: groupe-unitel
+  type: partnership
+  binding: mou
+  announced_on: 2026-07-20
+  summary: Memorandum of understanding to develop an integrated multi-energy hub in Fos-sur-Mer including phased deployment
+    of several Stellarium reactors; no value stated. Signed 2026-07-16; announced 2026-07-20 (release date).
+  evidence:
+  - field: agreement
+    snapshot: e502eab1cfc64ed0db7d912f18f60bdbd5a2c8b28bd6d3cf6ed5ae0140990f62
+    quote: annoncent la signature, le 16 juillet 2026, d’un mémorandum d’entente visant à développer un projet de hub énergétique
+    basis: disclosed
+  - field: announced_on
+    snapshot: e502eab1cfc64ed0db7d912f18f60bdbd5a2c8b28bd6d3cf6ed5ae0140990f62
+    quote: juillet 20, 2026
+    basis: disclosed
+  review: verified
+  source_pass: pass2

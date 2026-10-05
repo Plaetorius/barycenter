@@ -5,14 +5,14 @@ import { usd } from "@/lib/format";
 
 export const metadata: Metadata = { title: "Methodology", description: "How Barycenter's data is collected, verified and what it does not cover." };
 
-const H2 = "mt-10 font-serif text-2xl";
+const H2 = "mt-10 font-semibold text-2xl";
 
 export default function Page() {
   const cov = getCoverage();
   return (
     <div className="prose-barycenter mx-auto w-full max-w-3xl px-4 py-10 text-[0.95rem] leading-relaxed [&_p]:mt-3 [&_ul]:mt-3 [&_ul]:list-disc [&_ul]:pl-5 [&_li]:mt-1.5">
       <p className="eyebrow">Methodology</p>
-      <h1 className="font-serif text-4xl tracking-tight sm:text-5xl">How the data is built, and what it is not</h1>
+      <h1 className="font-semibold text-4xl tracking-tight sm:text-5xl">How the data is built, and what it is not</h1>
 
       <h2 className={H2}>Coverage and limitations</h2>
       <p><strong>Barycenter is a best-effort compilation of public information, not an exhaustive record.</strong> Private rounds that were never announced or filed are missing. Many announced rounds do not state each investor&apos;s share, so most investor amounts read “undisclosed”. Totals count disclosed amounts only and are therefore lower bounds. Asia, and small seed rounds outside the US, are thinner than the US and Europe.</p>

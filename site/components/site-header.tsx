@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/components/link";
 
 import { LABS_URL, SITE_NAME, SITE_TAGLINE } from "@/lib/site";
 
@@ -21,7 +21,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-30 flex h-14 shrink-0 items-center justify-between gap-4 border-b bg-background/90 px-4 backdrop-blur">
       <Link href="/" className="flex min-w-0 items-center gap-2.5">
         <Mark />
-        <span className="font-serif text-xl leading-none tracking-tight">{SITE_NAME}</span>
+        <span className="font-semibold text-xl leading-none tracking-tight">{SITE_NAME}</span>
         <span className="hidden truncate text-sm text-muted-foreground md:inline">{SITE_TAGLINE}</span>
       </Link>
       <nav aria-label="Main" className="flex shrink-0 items-center gap-1 text-sm">

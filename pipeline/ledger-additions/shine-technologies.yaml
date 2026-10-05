@@ -1,0 +1,39 @@
+company: shine-technologies
+name: SHINE Technologies
+sector: fusion
+notes: "PASS2. Existing ledger held only DOE/NNSA/ARPA-E awards and the LPO conditional commitment; no private equity. Found one private round via Wikipedia reference list -> WisBusiness (trade press, reported, 2023-10-12, citing the company release of 2023-10-11). Not found (WebSearch budget exhausted; shinefusion.com news URLs guessed returned 404): the company release itself, earlier rounds (2015-2022, incl. 2022 Series C-type rounds), and 2024-2026 rounds. SEC EDGAR: Form D filings for 'AVSF - SHINE Technologies 2022, LLC' (CIK 1952732, NH) are an investor SPV, not a SHINE round, not recorded. Investor amounts not stated."
+events:
+- id: shine-technologies-70m-2023
+  instrument: equity
+  round_label: null
+  announced_on: 2023-10-12
+  amount:
+    amount: 70000000
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: faf98f4795ba09ab69b307c3bbcd1368407a5b19899dd8cdd412cb5732d7feb2
+    quote: SHINE Technologies has completed a $70 million funding round
+    basis: reported
+  - field: announced_on
+    snapshot: faf98f4795ba09ab69b307c3bbcd1368407a5b19899dd8cdd412cb5732d7feb2
+    quote: October 12, 2023
+    basis: reported
+  participants:
+  - investor: Baillie Gifford
+    investor_slug: baillie-gifford
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: faf98f4795ba09ab69b307c3bbcd1368407a5b19899dd8cdd412cb5732d7feb2
+      quote: led by existing investors, including UK-based Baillie Gifford and Boston’s Fidelity Management & Research Company
+      basis: reported
+  - investor: Fidelity Management & Research Company
+    investor_slug: fidelity
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: faf98f4795ba09ab69b307c3bbcd1368407a5b19899dd8cdd412cb5732d7feb2
+      quote: led by existing investors, including UK-based Baillie Gifford and Boston’s Fidelity Management & Research Company
+      basis: reported

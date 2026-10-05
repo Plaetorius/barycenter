@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Newsreader } from "next/font/google";
+import { Geist } from "next/font/google";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
 
 import { SiteFooter } from "@/components/site-footer";
@@ -11,8 +11,6 @@ import { SITE_NAME, SITE_TAGLINE } from "@/lib/site";
 import "./globals.css";
 
 const sans = Geist({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
-const mono = Geist_Mono({ subsets: ["latin"], variable: "--font-mono-face", display: "swap" });
-const serif = Newsreader({ subsets: ["latin"], variable: "--font-serif-face", display: "swap", style: ["normal", "italic"] });
 
 export const metadata: Metadata = {
   title: { default: `${SITE_NAME} · ${SITE_TAGLINE}`, template: `%s · ${SITE_NAME}` },
@@ -24,7 +22,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   const cov = getCoverage();
   return (
-    <html lang="en" className={`${sans.variable} ${mono.variable} ${serif.variable} font-sans antialiased`}>
+    <html lang="en" className={`${sans.variable} font-sans antialiased`}>
       <body className="flex min-h-dvh flex-col bg-background text-foreground">
         <NuqsAdapter>
           <TooltipProvider delayDuration={300}>

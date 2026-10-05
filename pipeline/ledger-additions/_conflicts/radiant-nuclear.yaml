@@ -1,0 +1,18 @@
+company: radiant-nuclear
+name: Radiant Industries (Radiant Nuclear)
+sector: fission
+events: []
+agreements:
+- id: radiant-army-2-2b-headline-2026
+  counterparty: U.S. Army
+  counterparty_slug: dod-army
+  type: gov_contract
+  binding: definitive
+  announced_on: 2026-08-26
+  summary: NYT headline (listed on DCVC company page) says the Army awards $2.2 billion to build microreactors at 5 bases;
+    value is the total programme across awardees, not Radiant alone, so no value recorded.
+  evidence:
+  - field: agreement
+    snapshot: 1e6d47cd37e68efd9cef0faeddd0a94a731b6b275d8625e545d8bf0459f6dd7e
+    quote: Army Awards $2.2 Billion to Build Nuclear ‘Microreactors’ at 5 U.S. Bases
+    basis: reported

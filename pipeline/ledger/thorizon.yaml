@@ -1,147 +1,268 @@
 company: thorizon
 name: Thorizon
 sector: fission
-notes: >-
-  Thorizon B.V. / Thorizon Holding BV (Amsterdam; French subsidiary in Lyon). Company states EUR42.5M raised to date
-  including its first equity round (cumulative, not a round; ledger events below are NOT meant to sum to it). The first
-  equity round (Invest-NL "initial investment in 2022") has no amount or date in any source reached and is not recorded as
-  an event; the 2025 release implies roughly EUR12.5M by subtraction but that is not stated, so it was not entered.
-  announced_on of the France 2030 EUR10M grant and the Noord-Brabant EUR4M grant is the date of the 2025-03-12 release
-  that mentions them (France 2030 award is described as "in 2024"); the true award dates were not found. The Series A is
-  described as only halfway done at the first tranche (EUR16M); no later tranche found. Grants JTF EUR10M (ZILT) and MOOI
-  EUR4M are to consortia led by or including Thorizon; the Thorizon share of each is not stated. CORDIS: MIMOSA (101061142)
-  EUR113,653.75 to Thorizon Holding BV; ENDURANCE (101165896) lists Thorizon as associated partner without an EC
-  contribution. Canada G&C, TED and BODACC probes have no Thorizon records. Reuters/Sifted pieces not used.
+notes: 'Thorizon B.V. / Thorizon Holding BV (Amsterdam; French subsidiary in Lyon). Company states EUR42.5M raised to date
+  including its first equity round (cumulative, not a round; ledger events below are NOT meant to sum to it). The first equity
+  round (Invest-NL "initial investment in 2022") has no amount or date in any source reached and is not recorded as an event;
+  the 2025 release implies roughly EUR12.5M by subtraction but that is not stated, so it was not entered. announced_on of
+  the France 2030 EUR10M grant and the Noord-Brabant EUR4M grant is the date of the 2025-03-12 release that mentions them
+  (France 2030 award is described as "in 2024"); the true award dates were not found. The Series A is described as only halfway
+  done at the first tranche (EUR16M); no later tranche found. Grants JTF EUR10M (ZILT) and MOOI EUR4M are to consortia led
+  by or including Thorizon; the Thorizon share of each is not stated. CORDIS: MIMOSA (101061142) EUR113,653.75 to Thorizon
+  Holding BV; ENDURANCE (101165896) lists Thorizon as associated partner without an EC contribution. Canada G&C, TED and BODACC
+  probes have no Thorizon records. Reuters/Sifted pieces not used.
+
+  [pass2] PASS2 gap-fill from the company newsroom (thorizon.com/news listing pages archived in pass 1). The funding items
+  on the news list (EUR20M Series A tranche + Noord-Brabant, JTF ZILT, MOOI, MIMOSA, MOU) were already recorded; no other
+  funding release exists in the list (news ids 94, 101, 104-120). ADDED one agreement: Strategic MOU with Hyundai Engineering
+  & Construction (2026-03-09). NOT ADDED: Boccard MoU (release carries no year), Curium/INSA Lyon research collaboration (technical,
+  undated year), Storabelle partnership. The Invest-NL 2022 first equity round amount and date remain NOT FOUND in any primary
+  source (WebSearch budget exhausted); the EUR42.5M cumulative stays a statement, not an event.'
 events:
-  - id: thorizon-2025-series-a-tranche1
-    instrument: equity
-    round_label: Series A, first tranche
-    announced_on: 2025-03-12
-    amount: {amount: 16000000, currency: EUR, qualifier: exact}
-    use_of_proceeds: prototyping, licensing and demonstration of the Thorizon One cartridge fuel system
+- id: thorizon-2025-series-a-tranche1
+  instrument: equity
+  round_label: Series A, first tranche
+  announced_on: 2025-03-12
+  amount:
+    amount: 16000000
+    currency: EUR
+    qualifier: exact
+  use_of_proceeds: prototyping, licensing and demonstration of the Thorizon One cartridge fuel system
+  evidence:
+  - field: amount
+    snapshot: 3a18d2628393d3ffe093d4982ed7903055f0535c8deab9b6c136531f97dbdc55
+    quote: This includes €16 million as the first tranche of its Series A round, led by the Dutch National Promotional Institution,
+      Invest-NL
+    basis: disclosed
+  - field: announced_on
+    snapshot: 3a18d2628393d3ffe093d4982ed7903055f0535c8deab9b6c136531f97dbdc55
+    quote: Amsterdam 12 March 2025 – Deep-tech startup Thorizon
+    basis: disclosed
+  - field: round_label
+    snapshot: 3a18d2628393d3ffe093d4982ed7903055f0535c8deab9b6c136531f97dbdc55
+    quote: This funding milestone brings Thorizon halfway to its Series A target
+    basis: disclosed
+  participants:
+  - investor: Invest-NL
+    investor_slug: invest-nl
+    role: lead
     evidence:
-      - {field: amount, snapshot: 3a18d2628393d3ffe093d4982ed7903055f0535c8deab9b6c136531f97dbdc55, quote: "This includes €16 million as the first tranche of its Series A round, led by the Dutch National Promotional Institution, Invest-NL", basis: disclosed}
-      - {field: announced_on, snapshot: 3a18d2628393d3ffe093d4982ed7903055f0535c8deab9b6c136531f97dbdc55, quote: "Amsterdam 12 March 2025 – Deep-tech startup Thorizon", basis: disclosed}
-      - {field: round_label, snapshot: 3a18d2628393d3ffe093d4982ed7903055f0535c8deab9b6c136531f97dbdc55, quote: "This funding milestone brings Thorizon halfway to its Series A target", basis: disclosed}
-    participants:
-      - investor: Invest-NL
-        investor_slug: invest-nl
-        role: lead
-        evidence:
-          - {field: participant, snapshot: 3a18d2628393d3ffe093d4982ed7903055f0535c8deab9b6c136531f97dbdc55, quote: "first tranche of its Series A round, led by the Dutch National Promotional Institution, Invest-NL", basis: disclosed}
-      - investor: Positron Ventures
-        investor_slug: positron-ventures
-        role: participant
-        evidence:
-          - {field: participant, snapshot: 3a18d2628393d3ffe093d4982ed7903055f0535c8deab9b6c136531f97dbdc55, quote: "with strong backing from Positron Ventures, PDENH, and Impuls Zeeland", basis: disclosed}
-      - investor: PDENH
-        investor_slug: pdenh
-        role: participant
-        evidence:
-          - {field: participant, snapshot: 3a18d2628393d3ffe093d4982ed7903055f0535c8deab9b6c136531f97dbdc55, quote: "with strong backing from Positron Ventures, PDENH, and Impuls Zeeland", basis: disclosed}
-      - investor: Impuls Zeeland
-        investor_slug: impuls-zeeland
-        role: participant
-        evidence:
-          - {field: participant, snapshot: 3a18d2628393d3ffe093d4982ed7903055f0535c8deab9b6c136531f97dbdc55, quote: "with strong backing from Positron Ventures, PDENH, and Impuls Zeeland", basis: disclosed}
-  - id: thorizon-2025-noord-brabant-grant
-    instrument: grant
-    round_label: Province of Noord-Brabant grant (consortium with VDL Groep and Demcon)
-    announced_on: 2025-03-12
-    amount: {amount: 4000000, currency: EUR, qualifier: exact}
-    program: Province of Noord-Brabant
+    - field: participant
+      snapshot: 3a18d2628393d3ffe093d4982ed7903055f0535c8deab9b6c136531f97dbdc55
+      quote: first tranche of its Series A round, led by the Dutch National Promotional Institution, Invest-NL
+      basis: disclosed
+  - investor: Positron Ventures
+    investor_slug: positron-ventures
+    role: participant
     evidence:
-      - {field: amount, snapshot: 3a18d2628393d3ffe093d4982ed7903055f0535c8deab9b6c136531f97dbdc55, quote: "Thorizon recently secured an additional €4 million grant from the Dutch Province of Noord-Brabant in consortium with VDL Groep and Demcon", basis: disclosed}
-      - {field: announced_on, snapshot: 3a18d2628393d3ffe093d4982ed7903055f0535c8deab9b6c136531f97dbdc55, quote: "Amsterdam 12 March 2025 – Deep-tech startup Thorizon", basis: disclosed}
-    participants:
-      - investor: Province of Noord-Brabant
-        investor_slug: province-noord-brabant
-        role: grantor
-        evidence:
-          - {field: participant, snapshot: 3a18d2628393d3ffe093d4982ed7903055f0535c8deab9b6c136531f97dbdc55, quote: "grant from the Dutch Province of Noord-Brabant", basis: disclosed}
-  - id: thorizon-2024-france-2030-grant
-    instrument: grant
-    round_label: France 2030 Innovative Reactor Programme grant
-    announced_on: 2025-03-12
-    amount: {amount: 10000000, currency: EUR, qualifier: exact}
-    program: France 2030 Innovative Reactor Programme
+    - field: participant
+      snapshot: 3a18d2628393d3ffe093d4982ed7903055f0535c8deab9b6c136531f97dbdc55
+      quote: with strong backing from Positron Ventures, PDENH, and Impuls Zeeland
+      basis: disclosed
+  - investor: PDENH
+    investor_slug: pdenh
+    role: participant
     evidence:
-      - {field: amount, snapshot: 3a18d2628393d3ffe093d4982ed7903055f0535c8deab9b6c136531f97dbdc55, quote: "an earlier €10 million grant from the France 2030 Innovative Reactor Program of the French government in 2024", basis: disclosed}
-      - {field: announced_on, snapshot: 3a18d2628393d3ffe093d4982ed7903055f0535c8deab9b6c136531f97dbdc55, quote: "an earlier €10 million grant from the France 2030 Innovative Reactor Program of the French government in 2024", basis: disclosed}
-    participants:
-      - investor: France 2030 (French government)
-        investor_slug: france-2030
-        role: grantor
-        evidence:
-          - {field: participant, snapshot: 3a18d2628393d3ffe093d4982ed7903055f0535c8deab9b6c136531f97dbdc55, quote: "France 2030 Innovative Reactor Program of the French government", basis: disclosed}
-  - id: thorizon-2025-jtf-zilt-grant
-    instrument: grant
-    round_label: EU Just Transition Fund, Project ZILT (consortium led by Thorizon)
-    announced_on: 2025-08-28
-    amount: {amount: 10000000, currency: EUR, qualifier: up_to}
-    amount_kind: ceiling
-    program: Just Transition Fund
+    - field: participant
+      snapshot: 3a18d2628393d3ffe093d4982ed7903055f0535c8deab9b6c136531f97dbdc55
+      quote: with strong backing from Positron Ventures, PDENH, and Impuls Zeeland
+      basis: disclosed
+  - investor: Impuls Zeeland
+    investor_slug: impuls-zeeland
+    role: participant
     evidence:
-      - {field: amount, snapshot: 87616a3a49e1b49d325c034fe7c348c3f7554286abe3f2557d2b50e4a44fb4f4, quote: "The European Union has awarded €10 million from the Just Transition Fund (JTF) to Project ZILT, a consortium led by Thorizon", basis: disclosed}
-      - {field: announced_on, snapshot: 87616a3a49e1b49d325c034fe7c348c3f7554286abe3f2557d2b50e4a44fb4f4, quote: "Zeeland, 28 August 2025", basis: disclosed}
-    participants:
-      - investor: European Union (Just Transition Fund)
-        investor_slug: ec-just-transition-fund
-        role: grantor
-        evidence:
-          - {field: participant, snapshot: 87616a3a49e1b49d325c034fe7c348c3f7554286abe3f2557d2b50e4a44fb4f4, quote: "The European Union has awarded €10 million from the Just Transition Fund (JTF)", basis: disclosed}
-  - id: thorizon-2026-mooi-grant
-    instrument: grant
-    round_label: MOOI Kernenergie (consortium with VDL Groep, NRG PALLAS, TU Delft, TNO)
-    announced_on: 2026-07-16
-    amount: {amount: 4000000, currency: EUR, qualifier: up_to}
-    amount_kind: ceiling
-    program: MOOI Kernenergie
+    - field: participant
+      snapshot: 3a18d2628393d3ffe093d4982ed7903055f0535c8deab9b6c136531f97dbdc55
+      quote: with strong backing from Positron Ventures, PDENH, and Impuls Zeeland
+      basis: disclosed
+- id: thorizon-2025-noord-brabant-grant
+  instrument: grant
+  round_label: Province of Noord-Brabant grant (consortium with VDL Groep and Demcon)
+  announced_on: 2025-03-12
+  amount:
+    amount: 4000000
+    currency: EUR
+    qualifier: exact
+  program: Province of Noord-Brabant
+  evidence:
+  - field: amount
+    snapshot: 3a18d2628393d3ffe093d4982ed7903055f0535c8deab9b6c136531f97dbdc55
+    quote: Thorizon recently secured an additional €4 million grant from the Dutch Province of Noord-Brabant in consortium
+      with VDL Groep and Demcon
+    basis: disclosed
+  - field: announced_on
+    snapshot: 3a18d2628393d3ffe093d4982ed7903055f0535c8deab9b6c136531f97dbdc55
+    quote: Amsterdam 12 March 2025 – Deep-tech startup Thorizon
+    basis: disclosed
+  participants:
+  - investor: Province of Noord-Brabant
+    investor_slug: province-noord-brabant
+    role: grantor
     evidence:
-      - {field: amount, snapshot: b087a3741cc10948c3633b7ec393e7a9e799e9aa669e688553116c365a4f2439, quote: "has been awarded a EUR 4 million grant under MOOI Kernenergie", basis: disclosed}
-      - {field: announced_on, snapshot: b087a3741cc10948c3633b7ec393e7a9e799e9aa669e688553116c365a4f2439, quote: "Amsterdam, July 16th 2026", basis: disclosed}
-    participants:
-      - investor: Dutch government (MOOI Kernenergie)
-        investor_slug: nl-mooi-kernenergie
-        role: grantor
-        evidence:
-          - {field: participant, snapshot: b087a3741cc10948c3633b7ec393e7a9e799e9aa669e688553116c365a4f2439, quote: "MOOI Kernenergie, the Dutch government’s first national subsidy scheme dedicated specifically to nuclear research", basis: disclosed}
-  - id: thorizon-2022-mimosa-grant
-    instrument: grant
-    round_label: Horizon Europe / Euratom MIMOSA (101061142)
-    announced_on: 2022-05-20
-    amount: {amount: 113653.75, currency: EUR, qualifier: exact}
-    program: Horizon Europe Euratom
+    - field: participant
+      snapshot: 3a18d2628393d3ffe093d4982ed7903055f0535c8deab9b6c136531f97dbdc55
+      quote: grant from the Dutch Province of Noord-Brabant
+      basis: disclosed
+- id: thorizon-2024-france-2030-grant
+  instrument: grant
+  round_label: France 2030 Innovative Reactor Programme grant
+  announced_on: 2025-03-12
+  amount:
+    amount: 10000000
+    currency: EUR
+    qualifier: exact
+  program: France 2030 Innovative Reactor Programme
+  evidence:
+  - field: amount
+    snapshot: 3a18d2628393d3ffe093d4982ed7903055f0535c8deab9b6c136531f97dbdc55
+    quote: an earlier €10 million grant from the France 2030 Innovative Reactor Program of the French government in 2024
+    basis: disclosed
+  - field: announced_on
+    snapshot: 3a18d2628393d3ffe093d4982ed7903055f0535c8deab9b6c136531f97dbdc55
+    quote: an earlier €10 million grant from the France 2030 Innovative Reactor Program of the French government in 2024
+    basis: disclosed
+  participants:
+  - investor: France 2030 (French government)
+    investor_slug: france-2030
+    role: grantor
     evidence:
-      - {field: amount, snapshot: 48b16e3c727300107788c4c47cc1283d1481a0f4ffcf0884c5c35a1700b143b4, quote: "€ 113 653,75 Address HEKELVELD 8 1012 SN AMSTERDAM", basis: disclosed}
-      - {field: announced_on, snapshot: 48b16e3c727300107788c4c47cc1283d1481a0f4ffcf0884c5c35a1700b143b4, quote: "EC signature date 20 May 2022", basis: disclosed}
-    participants:
-      - investor: European Commission (Horizon Europe)
-        investor_slug: ec-horizon
-        role: grantor
-        evidence:
-          - {field: participant, snapshot: 48b16e3c727300107788c4c47cc1283d1481a0f4ffcf0884c5c35a1700b143b4, quote: "Grant agreement ID: 101061142", basis: disclosed}
+    - field: participant
+      snapshot: 3a18d2628393d3ffe093d4982ed7903055f0535c8deab9b6c136531f97dbdc55
+      quote: France 2030 Innovative Reactor Program of the French government
+      basis: disclosed
+- id: thorizon-2025-jtf-zilt-grant
+  instrument: grant
+  round_label: EU Just Transition Fund, Project ZILT (consortium led by Thorizon)
+  announced_on: 2025-08-28
+  amount:
+    amount: 10000000
+    currency: EUR
+    qualifier: up_to
+  amount_kind: ceiling
+  program: Just Transition Fund
+  evidence:
+  - field: amount
+    snapshot: 87616a3a49e1b49d325c034fe7c348c3f7554286abe3f2557d2b50e4a44fb4f4
+    quote: The European Union has awarded €10 million from the Just Transition Fund (JTF) to Project ZILT, a consortium led
+      by Thorizon
+    basis: disclosed
+  - field: announced_on
+    snapshot: 87616a3a49e1b49d325c034fe7c348c3f7554286abe3f2557d2b50e4a44fb4f4
+    quote: Zeeland, 28 August 2025
+    basis: disclosed
+  participants:
+  - investor: European Union (Just Transition Fund)
+    investor_slug: ec-just-transition-fund
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 87616a3a49e1b49d325c034fe7c348c3f7554286abe3f2557d2b50e4a44fb4f4
+      quote: The European Union has awarded €10 million from the Just Transition Fund (JTF)
+      basis: disclosed
+- id: thorizon-2026-mooi-grant
+  instrument: grant
+  round_label: MOOI Kernenergie (consortium with VDL Groep, NRG PALLAS, TU Delft, TNO)
+  announced_on: 2026-07-16
+  amount:
+    amount: 4000000
+    currency: EUR
+    qualifier: up_to
+  amount_kind: ceiling
+  program: MOOI Kernenergie
+  evidence:
+  - field: amount
+    snapshot: b087a3741cc10948c3633b7ec393e7a9e799e9aa669e688553116c365a4f2439
+    quote: has been awarded a EUR 4 million grant under MOOI Kernenergie
+    basis: disclosed
+  - field: announced_on
+    snapshot: b087a3741cc10948c3633b7ec393e7a9e799e9aa669e688553116c365a4f2439
+    quote: Amsterdam, July 16th 2026
+    basis: disclosed
+  participants:
+  - investor: Dutch government (MOOI Kernenergie)
+    investor_slug: nl-mooi-kernenergie
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: b087a3741cc10948c3633b7ec393e7a9e799e9aa669e688553116c365a4f2439
+      quote: MOOI Kernenergie, the Dutch government’s first national subsidy scheme dedicated specifically to nuclear research
+      basis: disclosed
+- id: thorizon-2022-mimosa-grant
+  instrument: grant
+  round_label: Horizon Europe / Euratom MIMOSA (101061142)
+  announced_on: 2022-05-20
+  amount:
+    amount: 113653.75
+    currency: EUR
+    qualifier: exact
+  program: Horizon Europe Euratom
+  evidence:
+  - field: amount
+    snapshot: 48b16e3c727300107788c4c47cc1283d1481a0f4ffcf0884c5c35a1700b143b4
+    quote: € 113 653,75 Address HEKELVELD 8 1012 SN AMSTERDAM
+    basis: disclosed
+  - field: announced_on
+    snapshot: 48b16e3c727300107788c4c47cc1283d1481a0f4ffcf0884c5c35a1700b143b4
+    quote: EC signature date 20 May 2022
+    basis: disclosed
+  participants:
+  - investor: European Commission (Horizon Europe)
+    investor_slug: ec-horizon
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 48b16e3c727300107788c4c47cc1283d1481a0f4ffcf0884c5c35a1700b143b4
+      quote: 'Grant agreement ID: 101061142'
+      basis: disclosed
 agreements:
-  - id: thorizon-2026-netherlands-mou
-    counterparty: EPZ, NRG PALLAS, Provinces of Zeeland and Noord-Holland, Impuls Zeeland, ROM InWest, Invest-NL
-    counterparty_slug: epz-nrg-pallas-provinces-consortium
-    type: site
-    binding: mou
-    announced_on: 2026-04-16
-    summary: MoU to build the PIONEER demonstrator (NRG PALLAS, Petten) and the Thorizon One commercial reactor (Zeeland); co-investment intentions, no amounts.
-    evidence:
-      - {field: agreement, snapshot: 9a0dd86b630301f1d7ecd93bce7bac1ffe0319b37e3e35906d26c51d243e48cf, quote: "have today signed a Memorandum of Understanding to build Europe's first commercial molten salt reactor in the Netherlands", basis: disclosed}
-      - {field: announced_on, snapshot: 9a0dd86b630301f1d7ecd93bce7bac1ffe0319b37e3e35906d26c51d243e48cf, quote: "Amsterdam, 16 April 2026", basis: disclosed}
+- id: thorizon-2026-netherlands-mou
+  counterparty: EPZ, NRG PALLAS, Provinces of Zeeland and Noord-Holland, Impuls Zeeland, ROM InWest, Invest-NL
+  counterparty_slug: epz-nrg-pallas-provinces-consortium
+  type: site
+  binding: mou
+  announced_on: 2026-04-16
+  summary: MoU to build the PIONEER demonstrator (NRG PALLAS, Petten) and the Thorizon One commercial reactor (Zeeland); co-investment
+    intentions, no amounts.
+  evidence:
+  - field: agreement
+    snapshot: 9a0dd86b630301f1d7ecd93bce7bac1ffe0319b37e3e35906d26c51d243e48cf
+    quote: have today signed a Memorandum of Understanding to build Europe's first commercial molten salt reactor in the Netherlands
+    basis: disclosed
+  - field: announced_on
+    snapshot: 9a0dd86b630301f1d7ecd93bce7bac1ffe0319b37e3e35906d26c51d243e48cf
+    quote: Amsterdam, 16 April 2026
+    basis: disclosed
+- id: thorizon-hyundai-enc-2026-mou
+  counterparty: Hyundai Engineering & Construction
+  counterparty_slug: hyundai-engineering-construction
+  type: partnership
+  binding: mou
+  announced_on: 2026-03-09
+  summary: Strategic MOU to jointly advance development and future deployment of Thorizon molten salt reactors (engineering
+    and design, preparation for reactor projects, joint engagement with industrial users); no value stated.
+  evidence:
+  - field: agreement
+    snapshot: a7781c25fcd86079359bebbfd5ce14c8380ca83203f49255761ebf90e57f6935
+    quote: have signed a Strategic Memorandum of Understanding (MOU). The agreement marks the start of a strategic collaboration
+    basis: disclosed
+  - field: announced_on
+    snapshot: a7781c25fcd86079359bebbfd5ce14c8380ca83203f49255761ebf90e57f6935
+    quote: Amsterdam, March 9th 2026
+    basis: disclosed
+  review: verified
+  source_pass: pass2
 verification:
   status: verified
-  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
   'on': 2026-10-05
-  note: >-
-    2 corrections. JTF Project ZILT EUR10M (six-partner consortium incl. EPZ, Schelde Exotech, Delmeco, HZ, Scalda) and
-    MOOI Kernenergie EUR4M (five partners incl. TU Delft, TNO, NRG PALLAS, VDL) are consortium totals with Thorizon's share
+  note: '2 corrections. JTF Project ZILT EUR10M (six-partner consortium incl. EPZ, Schelde Exotech, Delmeco, HZ, Scalda) and
+    MOOI Kernenergie EUR4M (five partners incl. TU Delft, TNO, NRG PALLAS, VDL) are consortium totals with Thorizon''s share
     unstated: qualifier exact -> up_to and amount_kind new_money -> ceiling (visible, not counted as Thorizon money). The
-    Noord-Brabant EUR4M (consortium with VDL, Demcon) is kept as new_money because the company counts it in its 'Secures
-    EUR20M' headline (EUR16M Series A tranche + EUR4M grant); its Thorizon share is likewise not stated. The France 2030
-    EUR10M is dated by the 2025-03-12 release that mentions it (award was 'in 2024'; date is a placeholder, not the award
-    date). EUR42.5M cumulative is not an event (author's choice; consistent with EUR20M + EUR10M + unstated first equity
+    Noord-Brabant EUR4M (consortium with VDL, Demcon) is kept as new_money because the company counts it in its ''Secures
+    EUR20M'' headline (EUR16M Series A tranche + EUR4M grant); its Thorizon share is likewise not stated. The France 2030
+    EUR10M is dated by the 2025-03-12 release that mentions it (award was ''in 2024''; date is a placeholder, not the award
+    date). EUR42.5M cumulative is not an event (author''s choice; consistent with EUR20M + EUR10M + unstated first equity
     round). Gap: first equity round (Invest-NL 2022), later Series A tranches.
+
+    [pass2 verify 2026-10-05, claude-opus-5-5] 1 pending items verified. Hyundai E&C Strategic MOU verified (mou, no value).
+    No changes.'

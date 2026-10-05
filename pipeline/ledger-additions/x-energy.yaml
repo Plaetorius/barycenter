@@ -1,0 +1,144 @@
+company: x-energy
+name: X-Energy, Inc.
+sector: fission
+notes: >
+  PASS2 gap-fill. Sources: SEC 424B4 (snapshot db86c83f, related-party and use sections not used in pass 1), Wayback copies of three
+  x-energy.com releases (ToS-forbidden origin, P2: Wayback only, original_url set) and the Wikipedia article as the independent
+  corroboration. WebSearch budget (200/200) was exhausted, so no further independent sources could be searched. Wayback worked
+  from this host this time. ADDED: (1) Series C-1 2024 participants named in the Oct 2024 Amazon release (Ken Griffin, Ares affiliates,
+  NGP, University of Michigan; no per-investor amounts). The release says "approximately $500 million" while the prospectus says
+  $626.5M raised in 2024 (cash C-1 in the existing event); not summed or changed. (2) Series C completion 2023-12-05: additional $80M
+  from Ares and Kam Ghaffarian, total Series C $235M including anticipated note conversions; prior investors OPG, Curtiss-Wright, DL E&C,
+  Doosan Enerbility. Only the $80M is counted (the $235M is cumulative and overlaps the C-2 note conversions). The $80M has no second
+  independent source (Wikipedia corroborates only the $235M total, "raised $235 million ... from existing investors"). (3) C-2 convertible
+  notes 2022-23, $113.0M aggregate, $40M OPG, $30M Ares (SEC prospectus); announced_on is a placeholder for "2022 and 2023". They were
+  later converted into Series C units (2024-10-11 $98.0M, 2025-09-30 $18.4M), so the Series C $235M and these notes overlap: DO NOT sum
+  them. Marked new_money here because the cash arrived as debt; a verifier may prefer to treat as duplicate of the Series C figure.
+  (4) Dow agreements: 2022 LOI, 2023 JDA (up to $50M of engineering, up to half ARDP-funded, half Dow), 2025 master project development
+  and commercial cooperation agreements; OPG 2022 framework agreement. Day-level dates are placeholders where only the quarter/year is stated.
+  NOT ADDED / OBSERVATIONS: Ares Acquisition Corporation SPAC (announced Dec 2022, terminated Oct 2023; Oct 25 2023 release: Dow adds $20M
+  convertible preferred PIPE commitment, total Dow $40M, Ares $50M, Ghaffarian about $30M, total PIPE about $100M) never closed, so it is
+  not a funding event. IPO underwriters (prospectus and pricing release): joint bookrunning managers J.P. Morgan, Morgan Stanley, Jefferies,
+  Moelis & Company (lead joint book-runners), Cantor, UBS Investment Bank, TD Cowen, Guggenheim Securities, Wolfe | Nomura Alliance;
+  schema has no underwriter role so they are not participants. No cornerstone investors are named in the prospectus (ARK interest
+  was non-binding, already removed). Series A/A-1/B (2018-2021) and Series D investor names: not evidenced by any source I could fetch
+  (prospectus gives only carrying values; pre-IPO holders of 5%+ include Ares, Segra, Jane Street as holders, which does not show round participation).
+events:
+- id: series-c1-2024
+  instrument: equity
+  announced_on: 2024-10-11
+  evidence:
+  - {field: announced_on, snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f, quote: "On October 11, 2024, in conjunction with the Series C-1 Preferred Units financing", basis: disclosed}
+  participants:
+  - investor: Ken Griffin (Citadel Founder and CEO)
+    investor_slug: ken-griffin
+    role: participant
+    evidence:
+    - {field: participant, snapshot: f2d85e1bc5eaabffb867aa868016a7ee11bc2e52c97f4e585f3b63086d307b9b, quote: "Citadel Founder and CEO Ken Griffin, affiliates of Ares Management Corporation (“Ares”), NGP, and the University of Michigan join Amazon’s Climate Pledge Fund in the financing round.", original_url: "https://x-energy.com/news/amazon-invests-in-x-energy-to-support-advanced-small-modular-nuclear-reactors-and-expand-carbon-free-power/", basis: disclosed}
+  - investor: Ares Management Corporation (affiliates)
+    investor_slug: ares-management
+    role: participant
+    evidence:
+    - {field: participant, snapshot: f2d85e1bc5eaabffb867aa868016a7ee11bc2e52c97f4e585f3b63086d307b9b, quote: "Citadel Founder and CEO Ken Griffin, affiliates of Ares Management Corporation (“Ares”), NGP, and the University of Michigan join Amazon’s Climate Pledge Fund in the financing round.", original_url: "https://x-energy.com/news/amazon-invests-in-x-energy-to-support-advanced-small-modular-nuclear-reactors-and-expand-carbon-free-power/", basis: disclosed}
+  - investor: NGP
+    investor_slug: ngp
+    role: participant
+    evidence:
+    - {field: participant, snapshot: f2d85e1bc5eaabffb867aa868016a7ee11bc2e52c97f4e585f3b63086d307b9b, quote: "Citadel Founder and CEO Ken Griffin, affiliates of Ares Management Corporation (“Ares”), NGP, and the University of Michigan join Amazon’s Climate Pledge Fund in the financing round.", original_url: "https://x-energy.com/news/amazon-invests-in-x-energy-to-support-advanced-small-modular-nuclear-reactors-and-expand-carbon-free-power/", basis: disclosed}
+  - investor: University of Michigan
+    investor_slug: university-of-michigan
+    role: participant
+    evidence:
+    - {field: participant, snapshot: f2d85e1bc5eaabffb867aa868016a7ee11bc2e52c97f4e585f3b63086d307b9b, quote: "Citadel Founder and CEO Ken Griffin, affiliates of Ares Management Corporation (“Ares”), NGP, and the University of Michigan join Amazon’s Climate Pledge Fund in the financing round.", original_url: "https://x-energy.com/news/amazon-invests-in-x-energy-to-support-advanced-small-modular-nuclear-reactors-and-expand-carbon-free-power/", basis: disclosed}
+- id: x-energy-series-c-2023-12-completion
+  instrument: equity
+  round_label: Series C completion (additional $80M; $235M total incl. note conversions)
+  round_group: series-c
+  announced_on: 2023-12-05
+  amount: {amount: 80000000, currency: USD, qualifier: exact}
+  evidence:
+  - {field: amount, snapshot: 2670be578489d6be60de8eafe4db655cc0d9a1f09a096bedf971e0cbb8db08a6, quote: "completed its Series C financing round with an additional $80 million from Ares Management Corporation and X-energy Founder, Kam Ghaffarian", original_url: "https://x-energy.com/news/x-energy-finalizes-235-million-series-c-financing/", basis: disclosed}
+  - {field: announced_on, snapshot: 2670be578489d6be60de8eafe4db655cc0d9a1f09a096bedf971e0cbb8db08a6, quote: "ROCKVILLE, MD – December 5, 2023", original_url: "https://x-energy.com/news/x-energy-finalizes-235-million-series-c-financing/", basis: disclosed}
+  - {field: round_label, snapshot: c4628f6b6d17f89fb5c05a0c5d57a47567b73dc6b8118e165a10389b8e17a615, quote: "In December 2023, the company raised $235 million of investment in a new funding round from existing investors.", basis: reported}
+  participants:
+  - investor: Ares Management Corporation
+    investor_slug: ares-management
+    role: lead
+    evidence:
+    - {field: participant, snapshot: 2670be578489d6be60de8eafe4db655cc0d9a1f09a096bedf971e0cbb8db08a6, quote: "an additional $80 million from Ares Management Corporation and X-energy Founder, Kam Ghaffarian", original_url: "https://x-energy.com/news/x-energy-finalizes-235-million-series-c-financing/", basis: disclosed}
+  - investor: Kam Ghaffarian (X-energy Founder)
+    investor_slug: kam-ghaffarian
+    role: participant
+    evidence:
+    - {field: participant, snapshot: 2670be578489d6be60de8eafe4db655cc0d9a1f09a096bedf971e0cbb8db08a6, quote: "an additional $80 million from Ares Management Corporation and X-energy Founder, Kam Ghaffarian", original_url: "https://x-energy.com/news/x-energy-finalizes-235-million-series-c-financing/", basis: disclosed}
+  - investor: Ontario Power Generation
+    investor_slug: ontario-power-generation
+    role: participant
+    evidence:
+    - {field: participant, snapshot: 2670be578489d6be60de8eafe4db655cc0d9a1f09a096bedf971e0cbb8db08a6, quote: "Previous investors in the Series C financing round include Ontario Power Generation, Curtiss-Wright Corporation, DL E&C, and Doosan Enerbility.", original_url: "https://x-energy.com/news/x-energy-finalizes-235-million-series-c-financing/", basis: disclosed}
+  - investor: Curtiss-Wright Corporation
+    investor_slug: curtiss-wright
+    role: participant
+    evidence:
+    - {field: participant, snapshot: 2670be578489d6be60de8eafe4db655cc0d9a1f09a096bedf971e0cbb8db08a6, quote: "Previous investors in the Series C financing round include Ontario Power Generation, Curtiss-Wright Corporation, DL E&C, and Doosan Enerbility.", original_url: "https://x-energy.com/news/x-energy-finalizes-235-million-series-c-financing/", basis: disclosed}
+  - investor: DL E&C
+    investor_slug: dl-enc
+    role: participant
+    evidence:
+    - {field: participant, snapshot: 2670be578489d6be60de8eafe4db655cc0d9a1f09a096bedf971e0cbb8db08a6, quote: "Previous investors in the Series C financing round include Ontario Power Generation, Curtiss-Wright Corporation, DL E&C, and Doosan Enerbility.", original_url: "https://x-energy.com/news/x-energy-finalizes-235-million-series-c-financing/", basis: disclosed}
+  - investor: Doosan Enerbility
+    investor_slug: doosan-enerbility
+    role: participant
+    evidence:
+    - {field: participant, snapshot: 2670be578489d6be60de8eafe4db655cc0d9a1f09a096bedf971e0cbb8db08a6, quote: "Previous investors in the Series C financing round include Ontario Power Generation, Curtiss-Wright Corporation, DL E&C, and Doosan Enerbility.", original_url: "https://x-energy.com/news/x-energy-finalizes-235-million-series-c-financing/", basis: disclosed}
+- id: x-energy-c2-convertible-notes-2022-23
+  instrument: debt
+  round_label: C-2 convertible notes (PIK 10%, later converted into Series C units)
+  announced_on: 2022-12-01
+  amount: {amount: 113000000, currency: USD, qualifier: exact}
+  evidence:
+  - {field: amount, snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f, quote: "the Company issued convertible notes payable in an aggregate principal amount of $113.0 million (“C-2 Notes”)", basis: disclosed}
+  - {field: announced_on, snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f, quote: "In 2022 and 2023, the Company issued convertible notes payable", basis: disclosed}
+  participants:
+  - investor: Ontario Power Generation (OPG)
+    investor_slug: ontario-power-generation
+    role: lender
+    amount: {amount: 40000000, currency: USD, qualifier: exact}
+    evidence:
+    - {field: participant, snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f, quote: "of which $40 million of the C-2 Notes were issued to Ontario Power Generation", basis: disclosed}
+  - investor: Ares X-Energy Holdings LP, Ares X-Energy Co-Invest LP and ACIP Investments Pooling LLC - Series 31 (Ares)
+    investor_slug: ares-management
+    role: lender
+    amount: {amount: 30000000, currency: USD, qualifier: exact}
+    evidence:
+    - {field: participant, snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f, quote: "$30 million of the C-2 Notes were issued to Ares X-Energy Holdings LP, Ares X-Energy Co-Invest LP and ACIP Investments Pooling LLC", basis: disclosed}
+agreements:
+- id: x-energy-dow-2023-jda
+  counterparty: The Dow Chemical Company
+  counterparty_slug: dow
+  type: partnership
+  binding: definitive
+  announced_on: 2023-03-01
+  value: {amount: 50000000, currency: USD, qualifier: up_to}
+  summary: Joint development agreement (Q1 2023; day is a placeholder) to demonstrate the Xe-100 at Dow's Seadrift, Texas site; up to $50M of engineering work, up to half eligible for ARDP funding and half funded by Dow. Preceded by a 2022 non-binding LOI; followed by Q1 2025 master project development and commercial cooperation agreements.
+  evidence:
+  - {field: agreement, snapshot: 4cf83f5aa6d55a086bb24e367815862fcf1e4bc66975772d34e6d26d4b0351b3, quote: "The JDA provides for up to $50 million in engineering work, up to half of which is eligible to be funded through ARDP, and the other half by Dow.", original_url: "https://x-energy.com/news/dow-increases-total-investment/", basis: disclosed}
+  - {field: announced_on, snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f, quote: "In the first quarter of 2023, the Company entered into a joint development agreement with Dow.", basis: disclosed}
+- id: x-energy-dow-2025-mpda
+  counterparty: The Dow Chemical Company
+  counterparty_slug: dow
+  type: partnership
+  binding: definitive
+  announced_on: 2025-01-01
+  summary: Master project development agreement and commercial cooperation agreement with Dow (first quarter of 2025; day is a placeholder). Dow is also a unitholder and holds a 2025 warrant vesting when the Xe-100 units are fully operational.
+  evidence:
+  - {field: agreement, snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f, quote: "In the first quarter of 2025, the Company entered into a master project development agreement and a commercial cooperation agreement with Dow.", basis: disclosed}
+- id: x-energy-opg-2022-framework
+  counterparty: Ontario Power Generation (OPG)
+  counterparty_slug: ontario-power-generation
+  type: partnership
+  binding: mou
+  announced_on: 2022-01-01
+  summary: 2022 framework agreement (day is a placeholder) to work exclusively on advanced nuclear industrial applications in Ontario and co-market the Xe-100 in Canada; OPG would operate any Xe-100 facilities under it. OPG is also an equity investor. Binding level approximated from "framework agreement".
+  evidence:
+  - {field: agreement, snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f, quote: "In 2022, X-energy and OPG entered into a framework agreement to work exclusively with one another", basis: disclosed}

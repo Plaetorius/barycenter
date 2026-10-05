@@ -1,0 +1,41 @@
+company: stellaria
+name: Stellaria SAS
+sector: fission
+notes: >
+  PASS2 gap-fill from stellaria.fr newsroom pages linked from the archived resources page. ADDED three agreements: Equinix pre-order
+  (500 MWe, 2025-11-26), CEA letter of intent for INB ALPHA at Cadarache (2026-04-23) and a Fos-sur-Mer integrated energy hub MoU with
+  Groupe Unitel / Énergie Hub (2026-07-16). No value stated for any. NOT FOUND (WebSearch budget exhausted): the 2023 first round
+  (amount, date, investors) and the France 2030 award date remain unsourced. The DAC filing for INB Alpha is a regulatory step, not
+  funding. The pre-order is not a funding event and carries no payment amount.
+events: []
+agreements:
+- id: stellaria-equinix-2025-preorder
+  counterparty: Equinix, Inc.
+  counterparty_slug: equinix
+  type: offtake
+  binding: definitive
+  announced_on: 2025-11-26
+  capacity_mw: 500
+  summary: Pre-order agreement for 500 MWe of power from the first Stellarium reactor (deployment planned from 2035) for Equinix AI-ready data centres; first capacity reservation on the Stellarium. Pre-order, no payment or value stated; binding level taken from "accord de précommande".
+  evidence:
+  - {field: agreement, snapshot: b46c3d646496628615eae3cbb78993fabc39507185f88b4d895de60ddbe995ed, quote: "Un accord de précommande à hauteur de 500 Mwe de puissance", basis: disclosed}
+  - {field: announced_on, snapshot: b46c3d646496628615eae3cbb78993fabc39507185f88b4d895de60ddbe995ed, quote: "novembre 26, 2025", basis: disclosed}
+- id: stellaria-cea-2026-inb-alpha-loi
+  counterparty: CEA (Commissariat à l'énergie atomique et aux énergies alternatives)
+  counterparty_slug: cea
+  type: site
+  binding: loi
+  announced_on: 2026-04-23
+  summary: Letter of intent on studying the siting of the INB ALPHA (critical experiment Alvin, demonstrator MegAlvin, salt fabrication facility) at CEA Cadarache.
+  evidence:
+  - {field: agreement, snapshot: cccf9919fc8174e946845204b48dea4e3d33e6efd0ee92105292886dbf9046b5, quote: "Stellaria et le CEA annoncent la signature d’une Lettre d’Intention (LOI) relative à l’étude de l’implantation d’une INB", basis: disclosed}
+  - {field: announced_on, snapshot: cccf9919fc8174e946845204b48dea4e3d33e6efd0ee92105292886dbf9046b5, quote: "avril 23, 2026", basis: disclosed}
+- id: stellaria-unitel-2026-fos-hub-mou
+  counterparty: Groupe Unitel and Énergie Hub
+  counterparty_slug: groupe-unitel
+  type: partnership
+  binding: mou
+  announced_on: 2026-07-16
+  summary: Memorandum of understanding to develop an integrated multi-energy hub in Fos-sur-Mer including phased deployment of several Stellarium reactors; no value stated.
+  evidence:
+  - {field: agreement, snapshot: e502eab1cfc64ed0db7d912f18f60bdbd5a2c8b28bd6d3cf6ed5ae0140990f62, quote: "annoncent la signature, le 16 juillet 2026, d’un mémorandum d’entente visant à développer un projet de hub énergétique", basis: disclosed}

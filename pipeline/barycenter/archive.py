@@ -1,6 +1,6 @@
 """Content-addressed archive for every fetched document.
 
-CLI:  .venv/bin/python -m barycenter.archive <url> [--source SOURCE_ID] [--header 'K: V'] [--api-policy REASON]
+CLI:  .venv/bin/python -m barycenter.archive <url> [--source SOURCE_ID] [--header 'K: V'] [--api-policy REASON] [--refresh]
 Prints a JSON line with the snapshot record. Bytes land in raw/<sha[:2]>/<sha>.<ext>; one manifest line per fetch
 is appended to raw/manifest.jsonl (committed copy: raw-manifest.jsonl is synced by `make manifest`).
 """
@@ -49,9 +49,27 @@ def _ext(content_type: str, url: str) -> str:
     return (mimetypes.guess_extension(ct) or Path(urlparse(url).path).suffix or ".bin").lstrip(".")
 
 
-def fetch(url: str, source: str = "adhoc", headers: dict[str, str] | None = None, api_policy: str | None = None) -> dict:
+_seen: dict[str, dict] | None = None
+
+
+def _already_archived(url: str) -> dict | None:
+    """Most recent successful fetch of this exact URL whose bytes are still on disk (never refetch what we hold)."""
+    global _seen
+    if _seen is None:
+        _seen = {}
+        if MANIFEST.exists():
+            for line in MANIFEST.read_text().splitlines():
+                rec = json.loads(line)
+                if rec.get("id") and rec.get("http_status") == 200 and rec.get("path") and (ROOT / rec["path"]).exists():
+                    _seen[rec["url"]] = rec
+    return _seen.get(url)
+
+
+def fetch(url: str, source: str = "adhoc", headers: dict[str, str] | None = None, api_policy: str | None = None, refresh: bool = False) -> dict:
     """api_policy: reason to skip robots.txt for a documented programmatic API whose own usage policy we follow
     (e.g. Wikidata SPARQL with a descriptive User-Agent). Logged in the manifest. Never used for HTML crawling."""
+    if not refresh and (hit := _already_archived(url)):
+        return {**hit, "cached": True}
     host = urlparse(url).netloc
     wait = MIN_INTERVAL_S - (time.monotonic() - _last_hit.get(host, 0))
     if wait > 0:
@@ -80,6 +98,8 @@ def fetch(url: str, source: str = "adhoc", headers: dict[str, str] | None = None
         bytes=len(body), path=str(path.relative_to(ROOT)),
     )
     _append(rec)
+    if rec.get("id") and rec.get("http_status") == 200 and _seen is not None:
+        _seen[url] = rec
     return rec
 
 
@@ -94,10 +114,11 @@ def main() -> int:
     ap.add_argument("url")
     ap.add_argument("--source", default="adhoc")
     ap.add_argument("--header", action="append", default=[])
+    ap.add_argument("--refresh", action="store_true", help="fetch again even if this URL is already archived")
     ap.add_argument("--api-policy", default=None, help="reason robots.txt is skipped (documented API only)")
     a = ap.parse_args()
     hdrs = dict(x.split(": ", 1) for x in a.header)
-    print(json.dumps(fetch(a.url, a.source, hdrs, a.api_policy), ensure_ascii=False))
+    print(json.dumps(fetch(a.url, a.source, hdrs, a.api_policy, a.refresh), ensure_ascii=False))
     return 0
 
 

@@ -1,0 +1,49 @@
+company: moltex-energy
+name: Moltex Energy Limited
+sector: fission
+notes: 'Pass 2 gap-fill. Added: (1) IDOM equity investment (Moltex release 2019-04-03 on moltexenergy.com, corroborated by NEI Magazine 2019-04-03): ''multi-million dollar (USD)'', no amount stated, so recorded without amount; the investing entity is Spain-based IDOM. (2) The public announcement of the Canadian federal funding, ISED release 2021-03-18 (''$50.5 million in Moltex Energy Canada Inc.'', quick facts ''$47.5 million through SIF and $3 million through REGI''), recorded as a duplicate of the existing SIF/ACOA events to supply their true announcement date (the ledger''s SIF announced_on 2020-09-30 is the agreement start date). Not additive. Not obtained: New Brunswick government release (gnb.ca, HTTP 403), OPG release (403), CNL release (403), SNC-Lavalin 2022 release, UK AMR Phase 1 page (UK BEIS funding; recipient and amount for Moltex not read). The CAD11.5M insolvency price and administration date remain unevidenced. Wikipedia lists IDOM, NB Power, OPG, ARPA-E and SNC-Lavalin as backers; only IDOM and ARPA-E (already recorded) are evidenced with an event here. EDGAR Form D probe for ''Moltex'': 0 hits.'
+events:
+- id: moltex-2019-idom-investment
+  instrument: equity
+  round_label: Strategic investment by IDOM (multi-million USD, amount undisclosed)
+  announced_on: '2019-04-03'
+  use_of_proceeds: Expand the New Brunswick office and accelerate pre-licensing (Vendor Design Review)
+  evidence:
+  - field: announced_on
+    snapshot: f3fc589c174c282947ef7f303a9f30d638154b0c3b3b8a1714e2e5e03c39ad2d
+    quote: Saint John, 3 April 2019
+    basis: disclosed
+  - field: round_label
+    snapshot: f3fc589c174c282947ef7f303a9f30d638154b0c3b3b8a1714e2e5e03c39ad2d
+    quote: Moltex Energy has secured a substantial investment from IDOM Consulting, Engineering, Architecture SAU
+    basis: disclosed
+  participants:
+  - investor: IDOM Consulting, Engineering, Architecture SAU
+    investor_slug: idom
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f3fc589c174c282947ef7f303a9f30d638154b0c3b3b8a1714e2e5e03c39ad2d
+      quote: Moltex Energy has secured a substantial investment from IDOM Consulting, Engineering, Architecture SAU
+      basis: disclosed
+- id: moltex-2021-canada-announcement-50m
+  instrument: debt
+  round_label: 'Government of Canada announcement: SIF C$47.5M plus REGI C$3M (same money as moltex-2020-canada-sif and moltex-2021-acoa-regi-1)'
+  announced_on: '2021-03-18'
+  amount:
+    amount: 50500000
+    currency: CAD
+    qualifier: exact
+  amount_kind: duplicate
+  supersedes: moltex-2020-canada-sif
+  program: Strategic Innovation Fund and REGI
+  evidence:
+  - field: announced_on
+    snapshot: d0833d33005f9866fd5b5f2d973c5df01bc216f643fd709308c8f05d39162c9a
+    quote: March 18, 2021 – Saint John, New Brunswick
+    basis: disclosed
+  - field: amount
+    snapshot: d0833d33005f9866fd5b5f2d973c5df01bc216f643fd709308c8f05d39162c9a
+    quote: today announced an investment of $50.5 million in Moltex Energy Canada Inc.
+    basis: disclosed
+agreements: []

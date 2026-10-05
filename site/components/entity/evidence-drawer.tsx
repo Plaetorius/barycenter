@@ -33,11 +33,11 @@ function Item({ it }: { it: EvidenceItem }) {
   return (
     <li className="space-y-1.5 border-t pt-3 first:border-t-0 first:pt-0">
       {/^"[\w ]+":/.test(it.quote)
-        ? <blockquote className="break-all border-l-2 border-ink-3 pl-3 font-mono text-xs leading-snug" aria-label="Record fragment from the source data">{it.quote}</blockquote>
-        : <blockquote className="border-l-2 border-ink-3 pl-3 font-serif text-[0.95rem] italic leading-snug">“{it.quote}”</blockquote>}
+        ? <blockquote className="break-all border-l-2 border-ink-3 pl-3 font-medium text-xs leading-snug" aria-label="Record fragment from the source data">{it.quote}</blockquote>
+        : <blockquote className="border-l-2 border-ink-3 pl-3 text-[0.95rem] leading-snug">“{it.quote}”</blockquote>}
       <p className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-muted-foreground">
-        <span className="rounded bg-muted px-1.5 py-0.5 font-mono uppercase tracking-wide">{it.basis}</span>
-        <span className={it.review === "verified" ? "rounded bg-[var(--inst-public)]/20 px-1.5 py-0.5 font-mono uppercase tracking-wide" : "rounded bg-fusion/25 px-1.5 py-0.5 font-mono uppercase tracking-wide"}>{it.review === "verified" ? "verified" : "unverified"}</span>
+        <span className="rounded bg-muted px-1.5 py-0.5 font-medium uppercase tracking-wide">{it.basis}</span>
+        <span className={it.review === "verified" ? "rounded bg-[var(--inst-public)]/20 px-1.5 py-0.5 font-medium uppercase tracking-wide" : "rounded bg-fusion/25 px-1.5 py-0.5 font-medium uppercase tracking-wide"}>{it.review === "verified" ? "verified" : "unverified"}</span>
         {shown && (
           <a href={it.original_url ?? it.url ?? "#"} target="_blank" rel="noreferrer noopener" className="inline-flex items-center gap-1 underline underline-offset-2">
             {host(shown)} <ExternalLink className="size-3" aria-hidden="true" />
@@ -48,7 +48,7 @@ function Item({ it }: { it: EvidenceItem }) {
         )}
         <span>fetched {fullDate(it.fetched_at)}</span>
       </p>
-      <p className="break-all font-mono text-[10px] text-ink-3">sha256 {it.snapshot}</p>
+      <p className="break-all font-medium text-[10px] text-ink-3">sha256 {it.snapshot}</p>
     </li>
   );
 }

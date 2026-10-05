@@ -1,5 +1,3 @@
-# Sourced company profile data. slug -> {country (ISO-2), hq_city, website, role, approach (taxonomy key), founded, logo, sources: [urls]}
-# Fills gaps in the census CSVs (many DOE-award recipients were never in the census). Every entry needs sources.
 profiles:
   aalo-atomics:
     country: US
@@ -361,6 +359,8 @@ profiles:
     founded: 2020
     sources:
     - https://www.radiantnuclear.com
+    logo: logos/radiant-nuclear.webp
+    logo_source: provided by the project owner (company brand asset)
   rolls-royce-smr:
     country: GB
     hq_city: Derby
@@ -493,3 +493,5 @@ profiles:
     founded: 2009
     sources:
     - https://x-energy.com
+    logo: logos/x-energy.webp
+    logo_source: provided by the project owner (company brand asset)
