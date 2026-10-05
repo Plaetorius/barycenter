@@ -1,0 +1,190 @@
+company: type-one-energy
+name: Type One Energy
+sector: fusion
+notes: >-
+  Type One Energy Group, Inc. (Knoxville TN; founded 2019 from UW-Madison). No issuer Form D exists on EDGAR (full-text
+  search returns only the investor SPV "INVEXT Type One Energy, a series of Invext LLC", CIK 2075398, Form D 2026-01-27,
+  not recorded as company funding). The company newsroom (typeoneenergy.com, no ToS bar) carries no funding releases
+  (the 2023 seed and 2024 extension releases are not on the current site and were not found in Wayback), so rounds rest
+  on TechCrunch (basis reported). WebSearch budget was exhausted, so earlier rounds could not be searched for.
+  CONFLICT: TechCrunch 2026-01-14 calls the 2023 round a seed extended to $82.5M total in 2024; TechCrunch 2026-08-15
+  (FusionX data) calls it an "extended Series A" totalling $82.5M. The 2024 extension tranche ($53.5M implied) has no
+  date or investor list in any fetched source and is recorded only as a cumulative statement. Cumulative figures differ:
+  more than $160M (TC 2026-01-14, Observer 2026-05), $174.5M (TC 2026-08-15); none are counted as rounds.
+  Series B ($250M target at $900M pre-money, TC 2026-01-14) is not closed as of 2026-06-16 (company says it "prepares to
+  close"); recorded without amount. Not recorded as events: (a) INFUSE-linked award DESC0025436 to Florida State
+  University, $374,244.14, 2024-09-01 to 2026-08-31, description "TYPE ONE ENERGY COLLABORATION RESEARCH WITH INFUSE"
+  (university recipient, policy D5; USAspending snapshot 47b5230ae6d4); (b) Tennessee Nuclear Energy Fund: WATE
+  (f3890739f694) states Type One "was the first recipient of funding through Tennessee's $50 million Nuclear Energy Fund",
+  amount and date not found; (c) Knox News (a2be15ec97b0) says a 2024 announcement of a "$223 million investment" in
+  Knoxville HQ (company capex plan, not funding). No SBIR awards found (probe sbir.md). No FIRE award to the company
+  (FIRE awardees are labs and universities). DOE Milestone per-company amount is undisclosed; $46M was the programme
+  total across 8 awardees; announcement day 2023-05-31 comes from Zap Energy's own release of the same programme
+  announcement (energy.gov article only says May 2023); VERIFIER added the Tokamak Energy 31 May 2023 release of the same selection as corroboration. ARPA-E BETHE selection $1.18M matches
+  USAspending DEAR0001287 ($1,180,000 obligated, outlays $831,039, 2020-09-08 start). TVA agreements: the July 2025
+  "first set of commercial contracts" has no stated value; Infinity Two is covered by an LOI only (final decisions subject
+  to TVA Board approval). Not recorded: ORNL pellet injector agreement (2026-08-06), UK Infinity Fusion Consortium (May
+  2026, with Tokamak Energy and AECOM), Barclays support (2026-07-21): no money or binding terms stated.
+events:
+  - id: type-one-seed-2023
+    instrument: equity
+    round_label: Seed
+    announced_on: 2023-03-28
+    amount: {amount: 29000000, currency: USD, qualifier: exact}
+    evidence:
+      - {field: amount, snapshot: "71d1b778d3f2b17011c913a510922c46e9e318c3fe83e75d0eb63c2588873c1b", quote: "an oversubscribed $29 million seed round co-led by Breakthrough Energy Ventures, TDK Ventures and Doral Energy Tech Ventures", basis: reported}
+      - {field: announced_on, snapshot: "71d1b778d3f2b17011c913a510922c46e9e318c3fe83e75d0eb63c2588873c1b", quote: "5:00 AM PDT · March 28, 2023", basis: reported}
+      - {field: round_label, snapshot: "71d1b778d3f2b17011c913a510922c46e9e318c3fe83e75d0eb63c2588873c1b", quote: "Fusion startup Type One Energy gets $29M seed round", basis: reported}
+    participants:
+      - investor: Breakthrough Energy Ventures
+        investor_slug: breakthrough-energy-ventures
+        role: lead
+        evidence:
+          - {field: participant, snapshot: "71d1b778d3f2b17011c913a510922c46e9e318c3fe83e75d0eb63c2588873c1b", quote: "co-led by Breakthrough Energy Ventures, TDK Ventures and Doral Energy Tech Ventures", basis: reported}
+      - investor: TDK Ventures
+        investor_slug: tdk-ventures
+        role: lead
+        evidence:
+          - {field: participant, snapshot: "71d1b778d3f2b17011c913a510922c46e9e318c3fe83e75d0eb63c2588873c1b", quote: "co-led by Breakthrough Energy Ventures, TDK Ventures and Doral Energy Tech Ventures", basis: reported}
+      - investor: Doral Energy Tech Ventures
+        investor_slug: doral-energy-tech
+        role: lead
+        evidence:
+          - {field: participant, snapshot: "71d1b778d3f2b17011c913a510922c46e9e318c3fe83e75d0eb63c2588873c1b", quote: "co-led by Breakthrough Energy Ventures, TDK Ventures and Doral Energy Tech Ventures", basis: reported}
+      - investor: Darco
+        investor_slug: darco
+        evidence:
+          - {field: participant, snapshot: "71d1b778d3f2b17011c913a510922c46e9e318c3fe83e75d0eb63c2588873c1b", quote: "Other participants include Darco, the Grantham Foundation, MILFAM, Orbia Ventures, Shorewind Capital, TRIREC and VAHOCA", basis: reported}
+      - investor: the Grantham Foundation
+        investor_slug: grantham-foundation
+        evidence:
+          - {field: participant, snapshot: "71d1b778d3f2b17011c913a510922c46e9e318c3fe83e75d0eb63c2588873c1b", quote: "Other participants include Darco, the Grantham Foundation, MILFAM, Orbia Ventures, Shorewind Capital, TRIREC and VAHOCA", basis: reported}
+      - investor: MILFAM
+        investor_slug: milfam
+        evidence:
+          - {field: participant, snapshot: "71d1b778d3f2b17011c913a510922c46e9e318c3fe83e75d0eb63c2588873c1b", quote: "Other participants include Darco, the Grantham Foundation, MILFAM, Orbia Ventures, Shorewind Capital, TRIREC and VAHOCA", basis: reported}
+      - investor: Orbia Ventures
+        investor_slug: orbia-ventures
+        evidence:
+          - {field: participant, snapshot: "71d1b778d3f2b17011c913a510922c46e9e318c3fe83e75d0eb63c2588873c1b", quote: "Other participants include Darco, the Grantham Foundation, MILFAM, Orbia Ventures, Shorewind Capital, TRIREC and VAHOCA", basis: reported}
+      - investor: Shorewind Capital
+        investor_slug: shorewind-capital
+        evidence:
+          - {field: participant, snapshot: "71d1b778d3f2b17011c913a510922c46e9e318c3fe83e75d0eb63c2588873c1b", quote: "Other participants include Darco, the Grantham Foundation, MILFAM, Orbia Ventures, Shorewind Capital, TRIREC and VAHOCA", basis: reported}
+      - investor: TRIREC
+        investor_slug: trirec
+        evidence:
+          - {field: participant, snapshot: "71d1b778d3f2b17011c913a510922c46e9e318c3fe83e75d0eb63c2588873c1b", quote: "Other participants include Darco, the Grantham Foundation, MILFAM, Orbia Ventures, Shorewind Capital, TRIREC and VAHOCA", basis: reported}
+      - investor: VAHOCA
+        investor_slug: vahoca
+        evidence:
+          - {field: participant, snapshot: "71d1b778d3f2b17011c913a510922c46e9e318c3fe83e75d0eb63c2588873c1b", quote: "Other participants include Darco, the Grantham Foundation, MILFAM, Orbia Ventures, Shorewind Capital, TRIREC and VAHOCA", basis: reported}
+  - id: type-one-seed-extended-cumulative-2024
+    instrument: equity
+    round_label: Seed extension (extended Series A per FusionX), cumulative total
+    announced_on: 2026-01-14
+    amount: {amount: 82500000, currency: USD, qualifier: exact}
+    amount_kind: cumulative
+    evidence:
+      - {field: amount, snapshot: "234d955a405b93aff10e25c65123fb130e3a678670dd43159308c76661dfaef7", quote: "Type One had previously raised a $29 million seed round in 2023 that was extended to a total of $82.5 million in 2024", basis: reported}
+      - {field: announced_on, snapshot: "234d955a405b93aff10e25c65123fb130e3a678670dd43159308c76661dfaef7", quote: "Tim De Chant 8:39 AM PST · January 14, 2026", basis: reported}
+      - {field: round_label, snapshot: "bb4ae1d3ca3ba4924fb951dbd722f5d6b33b2a815d4d6c845094f569dcbee9a0", quote: "including an extended Series A that totaled $82.5 million", basis: reported}
+    participants:
+      - investor: Breakthrough Energy Ventures
+        investor_slug: breakthrough-energy-ventures
+        evidence:
+          - {field: participant, snapshot: "234d955a405b93aff10e25c65123fb130e3a678670dd43159308c76661dfaef7", quote: "Investors in that round included Bill Gates’ Breakthrough Energy Ventures, Doral Energy-Tech Ventures, and TDK Ventures", basis: reported}
+      - investor: Doral Energy-Tech Ventures
+        investor_slug: doral-energy-tech
+        evidence:
+          - {field: participant, snapshot: "234d955a405b93aff10e25c65123fb130e3a678670dd43159308c76661dfaef7", quote: "Investors in that round included Bill Gates’ Breakthrough Energy Ventures, Doral Energy-Tech Ventures, and TDK Ventures", basis: reported}
+      - investor: TDK Ventures
+        investor_slug: tdk-ventures
+        evidence:
+          - {field: participant, snapshot: "234d955a405b93aff10e25c65123fb130e3a678670dd43159308c76661dfaef7", quote: "Investors in that round included Bill Gates’ Breakthrough Energy Ventures, Doral Energy-Tech Ventures, and TDK Ventures", basis: reported}
+  - id: type-one-convertible-note-2026-01
+    instrument: other
+    round_label: Convertible note (ahead of Series B)
+    announced_on: 2026-01-14
+    amount: {amount: 87000000, currency: USD, qualifier: exact}
+    use_of_proceeds: null
+    evidence:
+      - {field: amount, snapshot: "234d955a405b93aff10e25c65123fb130e3a678670dd43159308c76661dfaef7", quote: "Fusion power startup Type One Energy recently raised $87 million, TechCrunch has learned from sources familiar with the deal", basis: reported}
+      - {field: announced_on, snapshot: "234d955a405b93aff10e25c65123fb130e3a678670dd43159308c76661dfaef7", quote: "Tim De Chant 8:39 AM PST · January 14, 2026", basis: reported}
+      - {field: round_label, snapshot: "234d955a405b93aff10e25c65123fb130e3a678670dd43159308c76661dfaef7", quote: "The new funding is a convertible note", basis: reported}
+  - id: type-one-series-b-2026
+    instrument: equity
+    round_label: Series B (not yet closed)
+    announced_on: 2026-06-16
+    evidence:
+      - {field: announced_on, snapshot: "8ecd7af86842827e90d00decae682cf18692da6a3e215be15e5993afbcbf9f9d", quote: "Published: June 16, 2026", basis: disclosed}
+      - {field: round_label, snapshot: "8ecd7af86842827e90d00decae682cf18692da6a3e215be15e5993afbcbf9f9d", quote: "prepares to close its Series B funding round", basis: disclosed}
+  - id: type-one-cumulative-2026-08
+    instrument: equity
+    round_label: Total raised to date (FusionX via TechCrunch)
+    announced_on: 2026-08-15
+    amount: {amount: 174500000, currency: USD, qualifier: exact}
+    amount_kind: cumulative
+    evidence:
+      - {field: amount, snapshot: "bb4ae1d3ca3ba4924fb951dbd722f5d6b33b2a815d4d6c845094f569dcbee9a0", quote: "Type One has raised $174.5 million to date, according to FusionX", basis: reported}
+      - {field: announced_on, snapshot: "bb4ae1d3ca3ba4924fb951dbd722f5d6b33b2a815d4d6c845094f569dcbee9a0", quote: "Tim De Chant 6:15 AM PDT · August 15, 2026", basis: reported}
+  - id: type-one-arpa-e-bethe-2019
+    instrument: grant
+    round_label: ARPA-E BETHE
+    announced_on: 2019-11-07
+    amount: {amount: 1180000, currency: USD, qualifier: exact}
+    program: ARPA-E BETHE
+    obligated_usd: 1180000
+    evidence:
+      - {field: amount, snapshot: "541c9d053c1aa1be4f99879ad9b0d4e9026a5a46d142c80ac83f6a2c188e20a5", quote: "\"award\":\"1,180,000\",\"release_date\":\"Nov 07 2019\"", basis: disclosed}
+      - {field: announced_on, snapshot: "541c9d053c1aa1be4f99879ad9b0d4e9026a5a46d142c80ac83f6a2c188e20a5", quote: "\"release_date\":\"Nov 07 2019\",\"location\":\"Madison, WI\"", basis: disclosed}
+      - {field: amount, snapshot: "47b5230ae6d4a965b4a8a4ca726bb83ef518f2108255522e13a4ef493e4df294", quote: "\"Award ID\":\"DEAR0001287\",\"Recipient Name\":\"TYPE ONE ENERGY GROUP, INC.\",\"Recipient UEI\":\"D26JC7VM3Q71\",\"Award Amount\":1180000.0", basis: disclosed}
+    participants:
+      - investor: ARPA-E
+        investor_slug: arpa-e
+        role: grantor
+        evidence:
+          - {field: participant, snapshot: "47b5230ae6d4a965b4a8a4ca726bb83ef518f2108255522e13a4ef493e4df294", quote: "ADVANCED RESEARCH PROJECTS AGENCY - ENERGY", basis: disclosed}
+  - id: type-one-doe-milestone-2023
+    instrument: cost_share
+    round_label: DOE Milestone-Based Fusion Development Program
+    announced_on: 2023-05-31
+    program: DOE Milestone-Based Fusion Development Program
+    evidence:
+      - {field: announced_on, snapshot: "69b6dcec82c9dff9e92b6cb0b2745b6c2fd638b087c2a924c6554ee30662f301", quote: "8 selectees were announced in May 2023", basis: disclosed}
+      - {field: announced_on, snapshot: "ec85467b507c5f6d4172a8fd0cdb7cd9da084725cae810168449a33a2ee6e63d", quote: "Tokamak Energy selected for U.S. DOE Milestone-Based Fusion Development Program Stuart White 31 May 2023", basis: reported}
+      - {field: round_label, snapshot: "69b6dcec82c9dff9e92b6cb0b2745b6c2fd638b087c2a924c6554ee30662f301", quote: "The other Milestone awardees are Commonwealth Fusion Systems, Tokamak Energy, Type One Energy, Xcimer Energy, and Zap Energy", basis: disclosed}
+    participants:
+      - investor: DOE Office of Science, Fusion Energy Sciences
+        investor_slug: doe-fes
+        role: grantor
+        evidence:
+          - {field: participant, snapshot: "69b6dcec82c9dff9e92b6cb0b2745b6c2fd638b087c2a924c6554ee30662f301", quote: "Both programs, administered by DOE’s Fusion Energy Sciences (FES) program in the Office of Science", basis: disclosed}
+agreements:
+  - id: tva-first-contracts-2025-07
+    counterparty: Tennessee Valley Authority
+    counterparty_slug: tennessee-valley-authority
+    type: site
+    binding: definitive
+    announced_on: 2025-07-22
+    summary: First set of commercial contracts for Project Infinity (Bull Run site), signed with TVA Power Service Shops; no value stated.
+    evidence:
+      - {field: agreement, snapshot: "ad68d08f82832c7e0ed42ebc22b87c511a5306a0b396a9e00fac9d81ed68d2b0", quote: "signed the first set of commercial contracts related to Project Infinity", basis: disclosed}
+      - {field: announced_on, snapshot: "ad68d08f82832c7e0ed42ebc22b87c511a5306a0b396a9e00fac9d81ed68d2b0", quote: "Published: July 22, 2025", basis: disclosed}
+  - id: tva-infinity-two-loi-2025-09
+    counterparty: Tennessee Valley Authority
+    counterparty_slug: tennessee-valley-authority
+    type: site
+    binding: loi
+    announced_on: 2025-09-19
+    capacity_mw: 400
+    summary: TVA letter of intent for Type One's Infinity Two stellarator plant at the former Bull Run Fossil Plant; funding and offtake subject to TVA Board approval.
+    evidence:
+      - {field: agreement, snapshot: "10c35f769ecac08fd80f5d8ca0640ccfb570deaa8e3f17df333490fe969ed7e3", quote: "Infinity Two is a first-generation 400 MWe baseload power plant", basis: disclosed}
+      - {field: announced_on, snapshot: "10c35f769ecac08fd80f5d8ca0640ccfb570deaa8e3f17df333490fe969ed7e3", quote: "Published: September 19, 2025", basis: disclosed}
+      - {field: agreement, snapshot: "10c35f769ecac08fd80f5d8ca0640ccfb570deaa8e3f17df333490fe969ed7e3", quote: "The LOI also covers potential future use of the prototype facilities", basis: disclosed}
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  "on": 2026-10-05
+  note: "2 corrections. ARPA-E BETHE second amount quote replaced with one that shows the USAspending award amount (was recipient name only). DOE Milestone announced_on 2023-05-31 corroborated with Tokamak Energy's 31 May 2023 release (energy.gov only says May 2023). Checked: $29M 2023 seed and $87M 2026 convertible note rest on TechCrunch only (basis reported, correct); $82.5M seed-extension/'extended Series A' is a cumulative statement (not counted) and the naming conflict is documented; the ~$53.5M extension tranche itself has no event (gap). Series B is unclosed with no amount. Milestone per-company amount unknown (a FY25 USAspending recipient listing shows TYPE ONE ENERGY GROUP $4.5M under ALN 81.049, not award-level, not added)."

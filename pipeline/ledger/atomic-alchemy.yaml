@@ -1,0 +1,43 @@
+company: atomic-alchemy
+name: Atomic Alchemy
+sector: fission
+notes: 'Selected for DOE''s Reactor Pilot Program (DOE selection page 2025-08-12). DOE states each company is responsible for all
+  costs; USAspending records the OTA DENE0009582 with a net obligation of 0.0, so no funding event is written. Atomic Alchemy is an
+  Oklo subsidiary (Oklo ledger is owned by another agent). VERIFIER: Scope: Oklo subsidiary since 2025; should be shown under oklo,
+  not as a separate funded entity (no funding event, D1).'
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: 'Evidence verified (1 agreement, 0 events, 0 corrections): DOE release dated 2025-08-12 states companies bear all costs; USAspending
+    OTA DENE0009582 to ATOMIC ALCHEMY INC. has Award Amount 0.0, so no funding event is right. SCOPE: isotope producer and Oklo subsidiary;
+    no evidenced funding event, do not ship as a separate entity (D1); belongs under oklo. Gap: pre-acquisition funding (if any) and
+    the Oklo acquisition consideration not researched.'
+events: []
+agreements:
+- id: atomic-alchemy-reactor-pilot-ota
+  counterparty: U.S. Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: '2025-08-12'
+  summary: Other Transaction Agreement DENE0009582 for the DOE Reactor Pilot Program (DOE authorization pathway; no federal funds;
+    company bears all costs). USAspending shows $0.0 obligation, start 2026-01-06.
+  evidence:
+  - field: announced_on
+    snapshot: d92aed237e3d72eebae1422dcd91a89156bb7ec851d5eb319adbd1bf1c0d3730
+    quote: Energy.gov August 12, 2025
+    basis: disclosed
+  - field: summary
+    snapshot: d92aed237e3d72eebae1422dcd91a89156bb7ec851d5eb319adbd1bf1c0d3730
+    quote: Each company will be responsible for all costs associated with designing, manufacturing, constructing, operating, and decommissioning
+      their test reactors.
+    basis: disclosed
+  - field: summary
+    snapshot: 8198528cc0ab8ef49876bfc98538f56e1809764fd530c8894a91ff81b8ce7e17
+    quote: '"Award ID": "DENE0009582", "Recipient Name": "ATOMIC ALCHEMY INC."'
+    basis: disclosed
+  - field: summary
+    snapshot: 8198528cc0ab8ef49876bfc98538f56e1809764fd530c8894a91ff81b8ce7e17
+    quote: '"Award Amount": 0.0'
+    basis: disclosed

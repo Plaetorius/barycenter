@@ -1,0 +1,144 @@
+company: newcleo
+name: newcleo
+sector: fission
+notes: >-
+  Public via SPAC (NewHold Investment Corp III) since 2026-09-21; NASDAQ NWCL from 2026-09-22 (newcleo plc, CIK 2131813).
+  Group has several legal entities (newcleo SA / newcleo Ltd / newcleo plc; SIREN 912522240, 929009140; newcleo SPA, Turin).
+  Round history 2021-2024 rests on trade press (reported) because newcleo.com/news returned 404 and the Reuters and
+  firstonline copies of the Sept 2024 EUR135M / USD151M round are robots- or Cloudflare-blocked, so that round is NOT
+  recorded here (a reviewer should source it from the F-4 / 20-F history). Conflict: tech.eu (June 2022) says EUR100M raised
+  in August 2021, born2invest/BeBeez says USD118M closed in September 2021; announced_on of that event is month-approximate
+  (2021-09-01). The "EUR1bn round opened spring 2023" is a target, not recorded as funding; the 2024 EUR87M is its first
+  tranche. The 424B3 states "approximately $780 million in total private capital" (cumulative, not a round). France 2030
+  award (June 2023) amount not captured. Pre-PIPE / July 2026 Post-PIPE investors not named in the sources used; the
+  July Capital Raise (EUR15.89M, partly collected) is mentioned only as a collected portion so no event is recorded.
+  BODACC (capital-change notices for SIREN 912522240 on 2022-09-22 and 2024-02-01; 929009140 on 2024-11-12 and 2024-12-26)
+  were not re-archived (the OpenDataSoft mirror is robots-disallowed); not used as evidence.
+events:
+  - id: newcleo-2021-seed
+    instrument: equity
+    round_label: Seed / first round
+    announced_on: 2021-09-01
+    amount: {amount: 100000000, currency: EUR, qualifier: exact}
+    evidence:
+      - {field: amount, snapshot: 7984e71ba3ad02a16824bd4ab3c73d52b76c06231d4164cc02e34cfd22e65abd, quote: "Having already raised €100 million last August", basis: reported}
+      - {field: announced_on, snapshot: fb4ea01af9e70bc6e6259c135d4abb5e572b25111bb15500d6a84cea6ceea591, quote: "the previous round of $118 million closed in September 2021", basis: reported}
+      - {field: round_label, snapshot: 7984e71ba3ad02a16824bd4ab3c73d52b76c06231d4164cc02e34cfd22e65abd, quote: "Launched in September 2021", basis: reported}
+    participants:
+      - investor: Club degli Investitori
+        investor_slug: club-degli-investitori
+        role: participant
+        amount: {amount: 2300000, currency: EUR, qualifier: exact}
+        evidence:
+          - {field: participant, snapshot: fb4ea01af9e70bc6e6259c135d4abb5e572b25111bb15500d6a84cea6ceea591, quote: "participated in the 2021 round (with 2.3 million euros )", basis: reported}
+      - investor: LIFTT
+        investor_slug: liftt
+        role: participant
+        evidence:
+          - {field: participant, snapshot: fb4ea01af9e70bc6e6259c135d4abb5e572b25111bb15500d6a84cea6ceea591, quote: "LIFTT , a startup investment vehicle born from the public-private alliance", basis: reported}
+      - investor: Exor Seeds
+        investor_slug: exor
+        role: participant
+        evidence:
+          - {field: participant, snapshot: fb4ea01af9e70bc6e6259c135d4abb5e572b25111bb15500d6a84cea6ceea591, quote: "and Exor Seeds , the venture capital arm of Exor", basis: reported}
+  - id: newcleo-2022-equity
+    instrument: equity
+    round_label: 2022 equity round
+    announced_on: 2022-06-20
+    amount: {amount: 300000000, currency: EUR, qualifier: exact}
+    use_of_proceeds: international growth; feasibility studies with Orano
+    evidence:
+      - {field: amount, snapshot: 7984e71ba3ad02a16824bd4ab3c73d52b76c06231d4164cc02e34cfd22e65abd, quote: "London-based newcleo has raised €300 million in an equity funding round.", basis: reported}
+      - {field: announced_on, snapshot: 7984e71ba3ad02a16824bd4ab3c73d52b76c06231d4164cc02e34cfd22e65abd, quote: "Dan Taylor 20 June 2022", basis: reported}
+      - {field: round_label, snapshot: 7984e71ba3ad02a16824bd4ab3c73d52b76c06231d4164cc02e34cfd22e65abd, quote: "two-thirds of existing investors returned to further invest in the new round", basis: reported}
+  - id: newcleo-2024-tranche1
+    instrument: equity
+    round_label: First tranche of EUR1bn round opened 2023
+    announced_on: 2024-05-17
+    amount: {amount: 87000000, currency: EUR, qualifier: exact}
+    evidence:
+      - {field: amount, snapshot: fb4ea01af9e70bc6e6259c135d4abb5e572b25111bb15500d6a84cea6ceea591, quote: "has closed a first tranche of 87 million euros of the one billion mega-round", basis: reported}
+      - {field: announced_on, snapshot: fb4ea01af9e70bc6e6259c135d4abb5e572b25111bb15500d6a84cea6ceea591, quote: "Published 2 years ago on May 17, 2024", basis: reported}
+      - {field: round_label, snapshot: fb4ea01af9e70bc6e6259c135d4abb5e572b25111bb15500d6a84cea6ceea591, quote: "one billion mega-round opened in the spring 2023", basis: reported}
+    participants:
+      - investor: Viaro Energy
+        investor_slug: viaro-energy
+        role: participant
+        evidence:
+          - {field: participant, snapshot: fb4ea01af9e70bc6e6259c135d4abb5e572b25111bb15500d6a84cea6ceea591, quote: "involves investments from Viaro Energy and Tosto Group", basis: reported}
+      - investor: Tosto Group
+        investor_slug: tosto-group
+        role: participant
+        evidence:
+          - {field: participant, snapshot: fb4ea01af9e70bc6e6259c135d4abb5e572b25111bb15500d6a84cea6ceea591, quote: "involves investments from Viaro Energy and Tosto Group", basis: reported}
+  - id: newcleo-2025-october-capital-raise
+    instrument: equity
+    round_label: October Capital Raise (planned SA redeemable bonds replaced by newcleo Ordinary Shares; no bonds issued)
+    announced_on: 2025-10-01
+    closed_on: 2026-01-30
+    amount: {amount: 57400000, currency: EUR, qualifier: exact}
+    use_of_proceeds: general corporate purposes
+    evidence:
+      - {field: amount, snapshot: 6c5b689e71c6d1d7172dea9691dcac6862b4245396298e58c54a8ccf240196d8, quote: "newcleo completed the October Capital Raise, raising aggregate proceeds of €57.4 million at a purchase price of €3.40 per newcleo Ordinary Share", basis: disclosed}
+      - {field: announced_on, snapshot: 6c5b689e71c6d1d7172dea9691dcac6862b4245396298e58c54a8ccf240196d8, quote: "In October 2025, newcleo SA initiated a capital raise", basis: disclosed}
+  - id: newcleo-2026-pre-pipe
+    instrument: equity
+    round_label: Pre-PIPE Financing
+    announced_on: 2026-04-01
+    amount: {amount: 26300000, currency: EUR, qualifier: exact}
+    evidence:
+      - {field: amount, snapshot: 6c5b689e71c6d1d7172dea9691dcac6862b4245396298e58c54a8ccf240196d8, quote: "for an aggregate cash consideration of €26.3 million (the “Pre-PIPE Financing”)", basis: disclosed}
+      - {field: announced_on, snapshot: 6c5b689e71c6d1d7172dea9691dcac6862b4245396298e58c54a8ccf240196d8, quote: "In April 2026, newcleo entered into subscription agreements with various investors", basis: disclosed}
+      - {field: round_label, snapshot: 6c5b689e71c6d1d7172dea9691dcac6862b4245396298e58c54a8ccf240196d8, quote: "The closing of the Pre-PIPE Financing is not a closing condition of the Business Combination.", basis: disclosed}
+  - id: newcleo-2026-spac-pipe
+    instrument: spac
+    round_label: NewHold Investment Corp III business combination, PIPE
+    announced_on: 2026-05-26
+    closed_on: 2026-09-21
+    amount: {amount: 220000000, currency: USD, qualifier: exact}
+    use_of_proceeds: PIPE of 22,000,000 ordinary shares at USD10.00; trust-account cash is additional and depends on redemptions
+    evidence:
+      - {field: amount, snapshot: 6c5b689e71c6d1d7172dea9691dcac6862b4245396298e58c54a8ccf240196d8, quote: "for an aggregate purchase price equal to $220,000,000", basis: disclosed}
+      - {field: announced_on, snapshot: 6c5b689e71c6d1d7172dea9691dcac6862b4245396298e58c54a8ccf240196d8, quote: "on May 26, 2026, certain investors (the “PIPE Investors”) agreed to subscribe for and purchase an aggregate of 22,000,000 Company Ordinary Shares", basis: disclosed}
+      - {field: closed_on, snapshot: 98063d2c3aa29f0bf6facacb6e22ff6cbe419307d780a0eb933d8d07e8efb539, quote: "on September 21, 2026 (the “ Closing Date ”), SPAC and the Company consummated the Business Combination", basis: disclosed}
+  - id: newcleo-2024-lesto-grant
+    instrument: grant
+    round_label: Horizon Europe / Euratom LESTO (101166337)
+    announced_on: 2024-06-28
+    amount: {amount: 99975, currency: EUR, qualifier: exact}
+    program: Horizon Europe Euratom
+    evidence:
+      - {field: amount, snapshot: 8e686055177b8d46ba1947f7a2ab15273232b90a245d37fb9bfb6c2231305d68, quote: "€ 99 975,00 Address VIA GIUSEPPE GALLIANO 27", basis: disclosed}
+      - {field: announced_on, snapshot: 8e686055177b8d46ba1947f7a2ab15273232b90a245d37fb9bfb6c2231305d68, quote: "EC signature date 28 June 2024", basis: disclosed}
+    participants:
+      - investor: European Commission (Horizon Europe)
+        investor_slug: ec-horizon
+        role: grantor
+        evidence:
+          - {field: participant, snapshot: 8e686055177b8d46ba1947f7a2ab15273232b90a245d37fb9bfb6c2231305d68, quote: "LESTO Grant agreement ID: 101166337", basis: disclosed}
+agreements:
+  - id: newcleo-iit-ted-2025
+    counterparty: Istituto Italiano di Tecnologia
+    counterparty_slug: istituto-italiano-di-tecnologia
+    type: gov_contract
+    binding: definitive
+    announced_on: 2025-06-30
+    value: {amount: 2260423.70, currency: EUR, qualifier: exact}
+    summary: Award of Lot 5 (materials testing laboratory for energy-transition technologies) to NEWCLEO spa in TED notice 419818-2025; contract ceiling, not funding.
+    evidence:
+      - {field: agreement, snapshot: 7fb902643b067fadab92f7f11f5e01da89edbbee68ff23b219dbc3bb3cfccf1e, quote: "Winner: Official name : NEWCLEO spa Tender: Tender identifier : NEWCLEO Identifier of lot or group of lots : LOT-0005 Value of the tender : 2 260 423,70 EUR", basis: disclosed}
+      - {field: announced_on, snapshot: 7fb902643b067fadab92f7f11f5e01da89edbbee68ff23b219dbc3bb3cfccf1e, quote: "Publication date : 30/06/2025", basis: disclosed}
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  'on': 2026-10-05
+  note: >-
+    1 correction: October Capital Raise round_label (the 424B3 says the redeemable bonds were never issued; shares were
+    issued in lieu). Checked: EUR100M (Aug 2021, tech.eu) and USD118M (closed Sept 2021, born2invest) are the same round
+    (EUR100M ~ USD118M at 2021 rates), not a conflict in amount; EUR100M + EUR300M (June 2022) = the 'over EUR400M'
+    born2invest states, so the 2022 round is additional money, not cumulative. Month-only placeholder dates:
+    2021-09-01 (seed, closing month), 2025-10-01 (October Capital Raise, 'In October 2025'), 2026-04-01 (Pre-PIPE; the
+    424B3 elsewhere says subscriptions ran March-April 2026, EUR24.0M received in March). PIPE USD220M is the subscription
+    commitment of 2026-05-26 (investors could satisfy it by open-market purchases of SPAC shares); actual PIPE and trust
+    proceeds at the 2026-09-21 closing are not stated in the snapshots. Gaps: Sept 2024 EUR135M round, France 2030
+    award, July 2026 Capital Raise (EUR15.89M), SPAC trust proceeds.

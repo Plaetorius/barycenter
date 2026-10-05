@@ -1,0 +1,158 @@
+company: ultra-safe-nuclear
+name: Ultra Safe Nuclear Corporation
+sector: fission
+notes: |-
+  Form D (Ultra Safe Nuclear Corp, CIK 1802092, signed 2020-02-07): $17,398,650 sold to one investor, first sale 2020-01-30 (the only USNC Form D found; later rounds were not filed or not found). No investor named. Chapter 11 filed 2024-10-29, D. Del. case 24-12443 (KBO); debtor later styled Reactor Parent Wind-Down Inc.; liquidating plan confirmed 2025-04-10, effective 2025-04-14 (ElevenFlo summary, reported). Only bankruptcy-era financing and asset sales are evidenced here; USNC's earlier venture/grant history (pre-2024 rounds, DOE/NASA/ARPA-E awards, Series B that 'fell through') was NOT found in primary sources read and no amounts are recorded. ElevenFlo is an aggregator whose detail sections were not rendered in the archived HTML, so the $28M stalking-horse and $23M DIP figures are 'reported' from its summary paragraph, not from court filings (court-document links on that page were not fetched). The final price Standard Nuclear paid after auction is not verified (Standard's July 2026 424B4 confirms the purchase, court approval 2024-12-19 and closing 2024-12-27, but states no price in the passages read; the 424B4 also dates its APA 2024-11-21). NANO Nuclear Energy bought the MMR and Pylon business for $8.5M cash, closing 2025-01-10 (SEC 8-K). Verifier: the two Section 363 asset-sale events (Standard Nuclear $28M stalking horse, ElevenFlo snapshot eb534c38, closing 2024-12-27 per 424B4 snapshot c6e11893; NANO Nuclear $8.5M cash, APA 2024-12-18, closing 2025-01-10 per 8-K snapshot d9e7b126) were removed from events: they are purchases of assets out of the bankruptcy estate, not funding of USNC, and would otherwise be counted as money raised. The DIP figure is a committed facility from an aggregator summary (no draw amount evidenced), now amount_kind=ceiling. Form D announced_on moved from the first-sale date (2020-01-30) to the filing signature date (2020-02-07).
+  MERGE 2026-10-05 (USAspending supplement): DE-SC0021948 is to 'ULTRA SAFE NUCLEAR CORPORATION - TECHNOLOGIES' (UEI LD35F2QC1T37), a different UEI from the parent (VLUNV3T3X7D8); treated as the USNC-Tech subsidiary, ownership not evidenced in our snapshots (UNCERTAIN).
+verification:
+  status: verified
+  by: merge-verifier-agent (opus), 2026-10-05
+  'on': 2026-10-05
+  note: 'USAspending merge: 2 DOE Office of Science grants added (DE-SC0021948 USD 196,201.53 to USNC-Technologies; DE-SC0022735
+    USD 199,353 to Ultra Safe Nuclear Corp; both fully outlaid). Nothing skipped. Previous sign-off: verifier-agent (claude-opus-5-5),
+    2026-10-05: 4 corrections: removed the Standard Nuclear ($28M stalking horse) and NANO Nuclear ($8.5M) Section 363 asset-sale
+    events (purchases from the bankruptcy estate, not funding; facts kept in notes); JMB DIP $23M commitment set to up_to/ceiling
+    (no draw evidenced, aggregator source); Form D announced_on moved from first-sale date 2020-01-30 to filing date 2020-02-07.
+    Gaps: no pre-2024 rounds or grants evidenced beyond the 2020 Form D; DIP from ElevenFlo summary, not court filings.'
+events:
+- id: usnc-jmb-dip-2024
+  instrument: debt
+  round_label: Debtor-in-possession financing
+  announced_on: 2024-10-29
+  amount:
+    amount: 23000000
+    currency: USD
+    qualifier: up_to
+  amount_kind: ceiling
+  use_of_proceeds: Chapter 11 case funding on a 60-day 363 sale track
+  evidence:
+  - field: announced_on
+    snapshot: eb534c388989a25681947bac346e40306030323a6d3cd54966fea37f257f581f
+    quote: on October 29, 2024, under lead case number 24-12443 (KBO)
+    basis: reported
+  - field: amount
+    snapshot: eb534c388989a25681947bac346e40306030323a6d3cd54966fea37f257f581f
+    quote: a $23 million debtor-in-possession commitment from JMB Capital Partners Lending, LLC
+    basis: reported
+  participants:
+  - investor: JMB Capital Partners Lending, LLC
+    investor_slug: jmb-capital-partners-lending
+    role: lender
+    evidence:
+    - field: participant
+      snapshot: eb534c388989a25681947bac346e40306030323a6d3cd54966fea37f257f581f
+      quote: a $23 million debtor-in-possession commitment from JMB Capital Partners Lending, LLC
+      basis: reported
+- id: usnc-form-d-2020
+  instrument: equity
+  round_label: Form D offering (unlabelled)
+  announced_on: 2020-02-07
+  amount:
+    amount: 17398650
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: 9a4eadb7d0c5976d94649e0e300b7f4a2dc9abb5d5e421a73384f378c1d6e12f
+    quote: Francesco Venneri Chief Executive Officer 2020-02-07
+    basis: disclosed
+  - field: first_sale_on
+    snapshot: 9a4eadb7d0c5976d94649e0e300b7f4a2dc9abb5d5e421a73384f378c1d6e12f
+    quote: 06b false 2020-01-30 false true false 0 17398650 17398650 0 false 1
+    basis: disclosed
+  - field: amount
+    snapshot: 9a4eadb7d0c5976d94649e0e300b7f4a2dc9abb5d5e421a73384f378c1d6e12f
+    quote: 17398650 17398650 0 false 1
+    basis: disclosed
+- id: ultra-safe-nuclear-desc0021948
+  instrument: grant
+  round_label: DOE Office of Science grant DE-SC0021948, compact ceramic heat exchangers for MMR (recipient Ultra Safe Nuclear
+    Corporation - Technologies)
+  announced_on: '2021-09-27'
+  amount:
+    amount: 196201.53
+    currency: USD
+    qualifier: exact
+    usd: 196201.53
+  amount_kind: new_money
+  obligated_usd: 196201.53
+  disbursed_usd: 196201.53
+  program: DOE Office of Science
+  use_of_proceeds: COMPACT CERAMIC HEAT EXCHANGERS FOR MMR
+  evidence:
+  - field: amount
+    snapshot: b15ffe6884b051bbf46e5af8229c93ad5d2dbd282f059b07a0fe86422b4d91b3
+    quote: '"Award ID": "DESC0021948", "Recipient Name": "ULTRA SAFE NUCLEAR CORPORATION - TECHNOLOGIES", "Recipient UEI":
+      "LD35F2QC1T37", "Award Amount": 196201.53'
+    basis: disclosed
+  - field: announced_on
+    snapshot: b15ffe6884b051bbf46e5af8229c93ad5d2dbd282f059b07a0fe86422b4d91b3
+    quote: '"Base Obligation Date": "2021-09-27", "generated_internal_id": "ASST_NON_DESC0021948_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: b15ffe6884b051bbf46e5af8229c93ad5d2dbd282f059b07a0fe86422b4d91b3
+    quote: '"Award ID": "DESC0021948", "Recipient Name": "ULTRA SAFE NUCLEAR CORPORATION - TECHNOLOGIES"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: b15ffe6884b051bbf46e5af8229c93ad5d2dbd282f059b07a0fe86422b4d91b3
+    quote: '"Description": "COMPACT CERAMIC HEAT EXCHANGERS FOR MMR"'
+    basis: disclosed
+  - field: obligated_disbursed
+    snapshot: b15ffe6884b051bbf46e5af8229c93ad5d2dbd282f059b07a0fe86422b4d91b3
+    quote: '"Recipient UEI": "LD35F2QC1T37", "Award Amount": 196201.53, "Total Outlays": 196201.53'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: b15ffe6884b051bbf46e5af8229c93ad5d2dbd282f059b07a0fe86422b4d91b3
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: ultra-safe-nuclear-desc0022735
+  instrument: grant
+  round_label: DOE Office of Science grant DE-SC0022735, ceramic components for CSP (recipient Ultra Safe Nuclear Corp)
+  announced_on: '2022-07-19'
+  amount:
+    amount: 199353.0
+    currency: USD
+    qualifier: exact
+    usd: 199353.0
+  amount_kind: new_money
+  obligated_usd: 199353.0
+  disbursed_usd: 199353.0
+  program: DOE Office of Science
+  use_of_proceeds: AFFORDABLE, RELIABLE, HIGH-PERFORMANCE CERAMIC COMPONENTS FOR CSP
+  evidence:
+  - field: amount
+    snapshot: b15ffe6884b051bbf46e5af8229c93ad5d2dbd282f059b07a0fe86422b4d91b3
+    quote: '"Award ID": "DESC0022735", "Recipient Name": "ULTRA SAFE NUCLEAR CORP", "Recipient UEI": "VLUNV3T3X7D8", "Award
+      Amount": 199353.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: b15ffe6884b051bbf46e5af8229c93ad5d2dbd282f059b07a0fe86422b4d91b3
+    quote: '"Base Obligation Date": "2022-07-19", "generated_internal_id": "ASST_NON_DESC0022735_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: b15ffe6884b051bbf46e5af8229c93ad5d2dbd282f059b07a0fe86422b4d91b3
+    quote: '"Award ID": "DESC0022735", "Recipient Name": "ULTRA SAFE NUCLEAR CORP"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: b15ffe6884b051bbf46e5af8229c93ad5d2dbd282f059b07a0fe86422b4d91b3
+    quote: '"Description": "AFFORDABLE, RELIABLE, HIGH-PERFORMANCE CERAMIC COMPONENTS FOR CSP"'
+    basis: disclosed
+  - field: obligated_disbursed
+    snapshot: b15ffe6884b051bbf46e5af8229c93ad5d2dbd282f059b07a0fe86422b4d91b3
+    quote: '"Recipient UEI": "VLUNV3T3X7D8", "Award Amount": 199353.0, "Total Outlays": 199353.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: b15ffe6884b051bbf46e5af8229c93ad5d2dbd282f059b07a0fe86422b4d91b3
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+agreements: []

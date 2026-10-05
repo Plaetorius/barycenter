@@ -1,0 +1,18 @@
+id: prwires
+name: Press-release wires (Business Wire, PR Newswire, GlobeNewswire)
+owner: Business Wire (Berkshire Hathaway); Cision PR Newswire; GlobeNewswire (Notified)
+access: rss           # globenewswire keyword RSS works; prnewswire topic RSS only; businesswire blocks us (403) -> manual
+endpoint:
+  globenewswire: "https://www.globenewswire.com/RssFeed/keyword/{keyword}  (also /RssFeed/industry/1-Energy/..., /subjectcode/..)"
+  prnewswire: "https://www.prnewswire.com/rss/news-releases-list.rss and /rss/<topic>/<topic>-list.rss (no keyword feed found)"
+  businesswire: "none reachable (Akamai 403 on robots.txt and all pages for BarycenterBot)"
+auth: none
+rate_limit: unpublished; poll <= every 15 min
+licence: release text belongs to issuer; wires license redistribution to their customers; PRN ToS bars robots/scrapers/republication except as explicitly offered (RSS); GlobeNewswire terms page not machine-readable (manual review)
+robots: prnewswire allows /rss; globenewswire disallows /SubscribeToRss/ and /newsroom/rss/ but allows /RssFeed/; businesswire 403 (cannot read)
+yields: [issuer-authored releases incl. financing, SPAC, 8-K companion releases]
+identifiers: [wire release id, url, ticker (GlobeNewswire category)]
+cadence: continuous
+tier: B
+known_gaps: "Business Wire unreachable; PRN has no nuclear filter; GlobeNewswire feed holds 20 items per call; many private fusion/fission startups issue via Business Wire (Oklo did)."
+probe: docs/survey/probes/prwires.md

@@ -1,0 +1,92 @@
+company: ultra-safe-nuclear
+name: Ultra Safe Nuclear Corporation
+sector: fission
+notes: 'SUPPLEMENT (not in pipeline/ledger/ to avoid a duplicate company slug): DOE awards found in USAspending that the existing
+  ledger pipeline/ledger/ultra-safe-nuclear.yaml did not list by FAIN at the time of writing. Some amounts may already be
+  evidenced there from another source (check before merging; do not double count). Amount = USAspending ''Award Amount'' (cumulative
+  federal obligation), dates = Base Obligation Date else Start Date; one page of up to 50 rows per award-type group, DOE as
+  awarding agency, 2007-10-01..2026-09-30; zero/negative awards omitted.'
+events:
+- id: ultra-safe-nuclear-desc0021948
+  instrument: grant
+  round_label: DESC0021948
+  announced_on: '2021-09-27'
+  amount:
+    amount: 196201.53
+    currency: USD
+    qualifier: exact
+    usd: 196201.53
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 196201.53
+  disbursed_usd: 196201.53
+  use_of_proceeds: COMPACT CERAMIC HEAT EXCHANGERS FOR MMR
+  evidence:
+  - field: amount
+    snapshot: b15ffe6884b051bbf46e5af8229c93ad5d2dbd282f059b07a0fe86422b4d91b3
+    quote: '"Award ID": "DESC0021948", "Recipient Name": "ULTRA SAFE NUCLEAR CORPORATION - TECHNOLOGIES", "Recipient UEI":
+      "LD35F2QC1T37", "Award Amount": 196201.53'
+    basis: disclosed
+  - field: announced_on
+    snapshot: b15ffe6884b051bbf46e5af8229c93ad5d2dbd282f059b07a0fe86422b4d91b3
+    quote: '"Base Obligation Date": "2021-09-27", "generated_internal_id": "ASST_NON_DESC0021948_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: b15ffe6884b051bbf46e5af8229c93ad5d2dbd282f059b07a0fe86422b4d91b3
+    quote: '"Award ID": "DESC0021948", "Recipient Name": "ULTRA SAFE NUCLEAR CORPORATION - TECHNOLOGIES"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: b15ffe6884b051bbf46e5af8229c93ad5d2dbd282f059b07a0fe86422b4d91b3
+    quote: '"Description": "COMPACT CERAMIC HEAT EXCHANGERS FOR MMR"'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: b15ffe6884b051bbf46e5af8229c93ad5d2dbd282f059b07a0fe86422b4d91b3
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: ultra-safe-nuclear-desc0022735
+  instrument: grant
+  round_label: DESC0022735
+  announced_on: '2022-07-19'
+  amount:
+    amount: 199353.0
+    currency: USD
+    qualifier: exact
+    usd: 199353.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 199353.0
+  disbursed_usd: 199353.0
+  use_of_proceeds: AFFORDABLE, RELIABLE, HIGH-PERFORMANCE CERAMIC COMPONENTS FOR CSP
+  evidence:
+  - field: amount
+    snapshot: b15ffe6884b051bbf46e5af8229c93ad5d2dbd282f059b07a0fe86422b4d91b3
+    quote: '"Award ID": "DESC0022735", "Recipient Name": "ULTRA SAFE NUCLEAR CORP", "Recipient UEI": "VLUNV3T3X7D8", "Award
+      Amount": 199353.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: b15ffe6884b051bbf46e5af8229c93ad5d2dbd282f059b07a0fe86422b4d91b3
+    quote: '"Base Obligation Date": "2022-07-19", "generated_internal_id": "ASST_NON_DESC0022735_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: b15ffe6884b051bbf46e5af8229c93ad5d2dbd282f059b07a0fe86422b4d91b3
+    quote: '"Award ID": "DESC0022735", "Recipient Name": "ULTRA SAFE NUCLEAR CORP"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: b15ffe6884b051bbf46e5af8229c93ad5d2dbd282f059b07a0fe86422b4d91b3
+    quote: '"Description": "AFFORDABLE, RELIABLE, HIGH-PERFORMANCE CERAMIC COMPONENTS FOR CSP"'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: b15ffe6884b051bbf46e5af8229c93ad5d2dbd282f059b07a0fe86422b4d91b3
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+agreements: []

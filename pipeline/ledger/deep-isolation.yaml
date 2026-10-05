@@ -1,0 +1,159 @@
+company: deep-isolation
+name: Deep Isolation
+sector: fission
+notes: 'Built from USAspending spending_by_award search responses (POST, archived with request body in raw/manifest.jsonl, source_id
+  usaspending-post). Amount = USAspending ''Award Amount'' (cumulative federal obligation, not a ceiling and not an announced figure);
+  disbursed_usd = ''Total Outlays'' when present. Dates = ''Base Obligation Date'' (first obligation), else ''Start Date''. Search
+  was recipient-name text on awarding agency = Department of Energy over 2007-10-01..2026-09-30 and one page of up to 50 rows per
+  award-type group; awards with zero or negative net obligation are omitted. Recipient name variants not matched by the name search
+  may be missing. Government record, basis=disclosed. VERIFIER: Scope: recipient on all three awards is DEEP ISOLATION US, LLC (UEI
+  KFTAMCDMMCF1), the US operating entity of Deep Isolation Nuclear, Inc.; treated as the company. Deep Isolation is a back-end (deep-borehole
+  waste disposal) company, not a reactor or fuel developer.'
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: 'Verified 3 events (DEAR0001621 $3.59M ARPA-E ONWARDS STTR; DEAR0001797 $0.44M ARPA-E CREATE; DESC0025094 $0.20M SBIR), 0
+    amount/date errors. Checked against the archived USAspending award-level search (spending_level awards: one row per award, modifications
+    already netted, so one event per award and no per-modification duplicates). Award Amount = obligated to date (not a ceiling);
+    disbursed_usd = Total Outlays, now evidenced by its own quote (3 added). announced_on is the first-obligation date, not a press
+    date. Identity: recipient is the US LLC subsidiary, noted. SCOPE: evidence verified; entity is nuclear back-end (waste disposal).
+    It is in the fission census as back_end, so it fits a nuclear-funding map if the map covers the fuel cycle; tag it as non-generation.
+    Gaps: equity rounds and the ~$33M private placement in the census are not in this ledger.'
+events:
+- id: deep-isolation-dear0001621
+  instrument: grant
+  round_label: DEAR0001621
+  announced_on: '2022-07-14'
+  amount:
+    amount: 3590410.0
+    currency: USD
+    qualifier: exact
+    usd: 3590410.0
+  amount_kind: new_money
+  program: ARPA-E
+  obligated_usd: 3590410.0
+  disbursed_usd: 3492213.17
+  use_of_proceeds: 'DEEP ISOLATION US LLC: NEW ONWARDS STTR AWARD. CONTROL NUMBER: 2531-1505 PROJECT TITLE: UPWARDS: UNIVERSAL PER'
+  evidence:
+  - field: amount
+    snapshot: 2448222fe79f319caac6485b64353f1e28790ad32053311d9a2784fb510d7555
+    quote: '"Award ID": "DEAR0001621", "Recipient Name": "DEEP ISOLATION US, LLC", "Recipient UEI": "KFTAMCDMMCF1", "Award Amount":
+      3590410.0'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: 2448222fe79f319caac6485b64353f1e28790ad32053311d9a2784fb510d7555
+    quote: '"Award Amount": 3590410.0, "Total Outlays": 3492213.17'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 2448222fe79f319caac6485b64353f1e28790ad32053311d9a2784fb510d7555
+    quote: '"Base Obligation Date": "2022-07-14", "generated_internal_id": "ASST_NON_DEAR0001621_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 2448222fe79f319caac6485b64353f1e28790ad32053311d9a2784fb510d7555
+    quote: '"Award ID": "DEAR0001621", "Recipient Name": "DEEP ISOLATION US, LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 2448222fe79f319caac6485b64353f1e28790ad32053311d9a2784fb510d7555
+    quote: '"Description": "DEEP ISOLATION US LLC: NEW ONWARDS STTR AWARD. \nCONTROL NUMBER: 2531-1505\nPROJECT TITLE: UPWARDS:'
+    basis: disclosed
+  participants:
+  - investor: ARPA-E
+    investor_slug: arpa-e
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 2448222fe79f319caac6485b64353f1e28790ad32053311d9a2784fb510d7555
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: deep-isolation-dear0001797
+  instrument: grant
+  round_label: DEAR0001797
+  announced_on: '2023-09-22'
+  amount:
+    amount: 441674.0
+    currency: USD
+    qualifier: exact
+    usd: 441674.0
+  amount_kind: new_money
+  program: ARPA-E
+  obligated_usd: 441674.0
+  disbursed_usd: 441674.0
+  use_of_proceeds: 'DEEP ISOLATION, NEW CREATE TOPIC C AWARD (SBIR/STTR) CONTROL NUMBER: 2785-1553 PROJECT TITLE: SEQUENTIAL ADVAN'
+  evidence:
+  - field: amount
+    snapshot: 2448222fe79f319caac6485b64353f1e28790ad32053311d9a2784fb510d7555
+    quote: '"Award ID": "DEAR0001797", "Recipient Name": "DEEP ISOLATION US, LLC", "Recipient UEI": "KFTAMCDMMCF1", "Award Amount":
+      441674.0'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: 2448222fe79f319caac6485b64353f1e28790ad32053311d9a2784fb510d7555
+    quote: '"Award Amount": 441674.0, "Total Outlays": 441674.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 2448222fe79f319caac6485b64353f1e28790ad32053311d9a2784fb510d7555
+    quote: '"Base Obligation Date": "2023-09-22", "generated_internal_id": "ASST_NON_DEAR0001797_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 2448222fe79f319caac6485b64353f1e28790ad32053311d9a2784fb510d7555
+    quote: '"Award ID": "DEAR0001797", "Recipient Name": "DEEP ISOLATION US, LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 2448222fe79f319caac6485b64353f1e28790ad32053311d9a2784fb510d7555
+    quote: '"Description": "DEEP ISOLATION, NEW CREATE TOPIC C AWARD (SBIR/STTR)\nCONTROL NUMBER: 2785-1553\nPROJECT TITLE: SEQ'
+    basis: disclosed
+  participants:
+  - investor: ARPA-E
+    investor_slug: arpa-e
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 2448222fe79f319caac6485b64353f1e28790ad32053311d9a2784fb510d7555
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: deep-isolation-desc0025094
+  instrument: grant
+  round_label: DESC0025094
+  announced_on: '2024-08-23'
+  amount:
+    amount: 199892.0
+    currency: USD
+    qualifier: exact
+    usd: 199892.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 199892.0
+  disbursed_usd: 199892.0
+  use_of_proceeds: PROJECT PUCK (PERFORMANCE VALIDATION OF THE UNIVERSAL CANISTER SYSTEM FOR KAIROS POWER)
+  evidence:
+  - field: amount
+    snapshot: 2448222fe79f319caac6485b64353f1e28790ad32053311d9a2784fb510d7555
+    quote: '"Award ID": "DESC0025094", "Recipient Name": "DEEP ISOLATION US, LLC", "Recipient UEI": "KFTAMCDMMCF1", "Award Amount":
+      199892.0'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: 2448222fe79f319caac6485b64353f1e28790ad32053311d9a2784fb510d7555
+    quote: '"Award Amount": 199892.0, "Total Outlays": 199892.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 2448222fe79f319caac6485b64353f1e28790ad32053311d9a2784fb510d7555
+    quote: '"Base Obligation Date": "2024-08-23", "generated_internal_id": "ASST_NON_DESC0025094_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 2448222fe79f319caac6485b64353f1e28790ad32053311d9a2784fb510d7555
+    quote: '"Award ID": "DESC0025094", "Recipient Name": "DEEP ISOLATION US, LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 2448222fe79f319caac6485b64353f1e28790ad32053311d9a2784fb510d7555
+    quote: '"Description": "PROJECT PUCK (PERFORMANCE VALIDATION OF THE UNIVERSAL CANISTER SYSTEM FOR KAIROS POWER)"'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 2448222fe79f319caac6485b64353f1e28790ad32053311d9a2784fb510d7555
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+agreements: []

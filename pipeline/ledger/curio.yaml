@@ -1,0 +1,101 @@
+company: curio
+name: Curio (Curio Solutions; NuCycle)
+sector: fission
+notes: |-
+  [Verifier 2026-10-05] Added a recipient evidence item (the ARPA-E project record names organization 'Curio Solutions'); no other changes. Nuclear fuel recycling developer (NuCycle). Evidenced here: one ARPA-E award from the ARPA-E project JSON (recipient 'Curio Solutions', $5,000,000, release date Mar 15 2022). The census says '$5M 2023'; the ARPA-E record says Mar 15 2022 (record used as authoritative, discrepancy flagged). The $2.5M additional ARPA-E funding announced 2026-08-13 (Business Wire) could not be archived (HTTP 403 body), so it is NOT recorded; the curio.energy newsroom snapshot is stale (latest item Sept 2025). No equity rounds were found; census lifetime funding is 'undisclosed'. ARPA-E amount is the award total as listed by ARPA-E, not necessarily obligated/disbursed. The DOE national-lab public-private demonstration (Sept 2025) and Utilities Service Alliance partnership (June 2025) were not read for amounts.
+  MERGE 2026-10-05 (USAspending supplement): ARPA-E's USD 5M is the selected award value; USAspending DE-AR0001695 (recipient CURIO SOLUTIONS LLC, UEI LQE6FNEGR235) shows only USD 100,107 obligated so far, so the 5M is kept visible as a ceiling and only the obligation is counted. Further obligations will raise it.
+verification:
+  status: verified
+  by: merge-verifier-agent (opus), 2026-10-05
+  'on': 2026-10-05
+  note: 'USAspending merge: DE-AR0001695 is the same CURIE award as the ledger''s ARPA-E NuCycle event (USAspending description
+    ''CLOSING THE CYCLE WITH NUCYCLE''). Per reconciliation R7 and VERIFY rule 6 the USD 5M ARPA-E selection amount is now
+    amount_kind=ceiling and the obligation (USD 100,107, outlays USD 30,007, base obligation 2023-03-07, period to 2028-06-16)
+    is added as its own new_money event. 1 event added, 1 re-kinded. Previous sign-off: verifier-agent (Claude Opus 5.5),
+    2026-10-05: 1 correction: added a recipient evidence item (ARPA-E record names Curio Solutions). $5M ARPA-E award confirmed;
+    the 2026 $2.5M follow-on is not recorded (source not archivable).'
+events:
+- id: curio-arpa-e-nucycle-2022
+  instrument: grant
+  round_label: ARPA-E CURIE award, Closing the Cycle with NuCycle (selection amount; obligation recorded separately)
+  announced_on: 2022-03-15
+  amount:
+    amount: 5000000
+    currency: USD
+    qualifier: exact
+  program: ARPA-E
+  evidence:
+  - field: announced_on
+    snapshot: 6b6bb60837b2a55d2d229592d8a2d66e26f36bc7ad112269fff71209fb7e0de7
+    quote: '"award": "5,000,000", "release_date": "Mar 15 2022", "location": "Washington, DC"'
+    basis: disclosed
+  - field: amount
+    snapshot: 6b6bb60837b2a55d2d229592d8a2d66e26f36bc7ad112269fff71209fb7e0de7
+    quote: '"award": "5,000,000", "release_date": "Mar 15 2022", "location": "Washington, DC"'
+    basis: disclosed
+  - field: recipient
+    snapshot: 6b6bb60837b2a55d2d229592d8a2d66e26f36bc7ad112269fff71209fb7e0de7
+    quote: '"title": "Curio Solutions", "alias": "curio-solutions"'
+    basis: disclosed
+  participants:
+  - investor: ARPA-E
+    investor_slug: arpa-e
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 6b6bb60837b2a55d2d229592d8a2d66e26f36bc7ad112269fff71209fb7e0de7
+      quote: '"title": "Closing the Cycle with NuCycle"'
+      basis: disclosed
+  amount_kind: ceiling
+- id: curio-dear0001695
+  instrument: grant
+  round_label: ARPA-E CURIE cooperative agreement DE-AR0001695 (NuCycle), obligated to date
+  announced_on: '2023-03-07'
+  amount:
+    amount: 100107.0
+    currency: USD
+    qualifier: exact
+    usd: 100107.0
+  amount_kind: new_money
+  obligated_usd: 100107.0
+  disbursed_usd: 30007.0
+  program: ARPA-E
+  use_of_proceeds: 'CONTROL NUMBER: 2691-1527 CURIO SOLUTIONS LLC DE-FOA-0002691 CONVERTING UNF RADIOISOTOPES INTO ENERGY
+    (CURIE)'
+  evidence:
+  - field: amount
+    snapshot: d5307123a178cbc4f668656c4561bb9aae3d18d39a84fcecb6292e0808a34d2f
+    quote: '"Award ID": "DEAR0001695", "Recipient Name": "CURIO SOLUTIONS LLC", "Recipient UEI": "LQE6FNEGR235", "Award Amount":
+      100107.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: d5307123a178cbc4f668656c4561bb9aae3d18d39a84fcecb6292e0808a34d2f
+    quote: '"Base Obligation Date": "2023-03-07", "generated_internal_id": "ASST_NON_DEAR0001695_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: d5307123a178cbc4f668656c4561bb9aae3d18d39a84fcecb6292e0808a34d2f
+    quote: '"Award ID": "DEAR0001695", "Recipient Name": "CURIO SOLUTIONS LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: d5307123a178cbc4f668656c4561bb9aae3d18d39a84fcecb6292e0808a34d2f
+    quote: '"Description": "CONTROL NUMBER: 2691-1527\nCURIO SOLUTIONS LLC\nDE-FOA-0002691 CONVERTING UNF RADIOISOTOPES INTO
+      EN'
+    basis: disclosed
+  - field: obligated_disbursed
+    snapshot: d5307123a178cbc4f668656c4561bb9aae3d18d39a84fcecb6292e0808a34d2f
+    quote: '"Recipient UEI": "LQE6FNEGR235", "Award Amount": 100107.0, "Total Outlays": 30007.0'
+    basis: disclosed
+  - field: same_award
+    snapshot: d5307123a178cbc4f668656c4561bb9aae3d18d39a84fcecb6292e0808a34d2f
+    quote: CLOSING THE CYCLE WITH NUCYCLE
+    basis: disclosed
+  participants:
+  - investor: ARPA-E
+    investor_slug: arpa-e
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: d5307123a178cbc4f668656c4561bb9aae3d18d39a84fcecb6292e0808a34d2f
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+agreements: []

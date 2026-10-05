@@ -1,0 +1,24 @@
+id: trade-press
+name: Trade press (WNN, NucNet, ANS Newswire, Neutron Bytes, FIA, TechCrunch, Axios Pro, Latitude Media, Canary Media)
+owner: various
+access: rss
+endpoint:
+  wnn: "https://www.world-nuclear-news.org/rss"
+  nucnet: "https://www.nucnet.org/feed"
+  ans: "https://www.ans.org/news/feed/"
+  neutronbytes: "https://neutronbytes.com/feed/"
+  fia: "https://www.fusionindustryassociation.org/feed/"
+  techcrunch: "https://techcrunch.com/category/climate/feed/ ; https://techcrunch.com/tag/nuclear/feed/"
+  latitude: "https://www.latitudemedia.com/feed"
+  canary: "https://www.canarymedia.com/rss.rss"
+  axios_pro: none (paywalled)
+auth: none
+rate_limit: poll hourly
+licence: headline + link only; TechCrunch RSS terms allow display of feed content with attribution and link; NucNet feed states material can be freely used with NucNet quoted as source; Latitude ToS bars scraping; ANS ToS noncommercial; others unstated
+robots: all allow feeds; techcrunch, neutron bytes, axios disallow AI crawlers by name (not BarycenterBot)
+yields: [discovery of rounds/agreements, corroboration]
+identifiers: [url, guid]
+cadence: daily
+tier: C
+known_gaps: "Never sole source for an amount if a primary source exists. Feeds hold 10-50 recent items. WNN robots.txt returns an HTML 404 page (no rules)."
+probe: docs/survey/probes/trade-press.md

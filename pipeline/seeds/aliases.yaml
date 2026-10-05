@@ -1,0 +1,18 @@
+# Reviewed entity merges. Key = canonical slug, value = slugs that mean the same organisation.
+# `parents` documents fund vehicles / CVC arms and their firm (vehicle stays the investor of record; roll-up view is a later feature).
+merge:
+  east-x-ventures: [eastx-ventures]
+  eic: [eic-fund]
+  european-commission-horizon: [ec-horizon]
+  lawrence-livermore-national-laboratory: [llnl]
+  plural: [plural-platform]
+  alphabet: [google]
+parents:
+  gv: alphabet
+  rtx-ventures: rtx
+  hennessy-capital-investment-corp-vii: hennessy-capital-group
+  doe-fes: us-department-of-energy
+  doe-ne: us-department-of-energy
+  doe-ott: us-department-of-energy
+  doe-office-of-science: us-department-of-energy
+  battelle-energy-alliance: idaho-national-laboratory

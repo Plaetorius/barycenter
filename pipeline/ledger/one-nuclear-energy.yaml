@@ -1,0 +1,62 @@
+company: one-nuclear-energy
+name: ONE Nuclear Energy Inc.
+sector: fission
+notes: >-
+  Business combination of ONE Nuclear Energy LLC with Hennessy Capital Investment Corp. VII (HVII, CIK 1846416,
+  renamed ONE Nuclear Energy Inc.), closed 2026-09-23 per the 8-K filed 2026-09-29. The BCA contemplated a $1.0 billion
+  equity valuation (Base Purchase Price paid entirely in stock) and had no minimum-cash or financing condition; this is
+  a pre-money deal valuation, not recorded in a valuation field. Redemptions were heavy: 13,809,029 public shares
+  redeemed for about $146.5M, leaving about $1.7M in trust per the 2026-09-29 8-K Item 2.01 but about $2.2M per the
+  2026-09-23 8-K Item 8.01 (conflict; before expenses), so no cash amount is recorded on the SPAC event. A forward
+  purchase agreement (2026-09-22) with New Circle Capital Solutions LP (New Circle bought 4,987,103 redeemed public
+  shares) is not company funding. The HVII IPO (Jan 2025, 424B4 2025-01-17) is SPAC capital, not recorded. Pre-SPAC
+  private funding of ONE Nuclear LLC, grants, and the 10-Q/S-4 financing details were not examined; WebSearch budget was
+  exhausted. The sponsor and PIPE terms (if any) were not found in the closing 8-K. [Verifier 2026-10-05] HVII promissory note set to amount_kind ceiling: it is an up-to facility (max raised to $316,975 and then $620,000 by the 2026-08-07 omnibus amendment no. 3), drawn amount not stated, and the lender became the parent at closing. Gaps not recorded: B. Riley Principal Capital promissory note dated 2026-02-18 (amended seven times, $100,000 partially repaid 2026-09-23) and a B. Riley committed equity facility (CEF), both in the closing 8-K.
+events:
+  - id: one-nuclear-spac-hvii-2026
+    instrument: spac
+    round_label: Business combination with Hennessy Capital Investment Corp. VII
+    announced_on: 2025-10-22
+    closed_on: 2026-09-23
+    evidence:
+      - field: announced_on
+        snapshot: 8b14fd4f9abec67561ed0fc912d6666b17d151ec8524d0aad307f23a9fe8cc22
+        quote: "On October 22, 2025, Hennessy Capital Investment Corp. VII"
+        basis: disclosed
+      - field: closed_on
+        snapshot: c608c8b0d0853cbccad8ff7cd0c07c41c252b68db18fe3937e20d93fc1f676c4
+        quote: "On September 23, 2026 (the “Closing Date”), the registrant consummated the previously announced transactions"
+        basis: disclosed
+  - id: one-nuclear-hvii-bridge-note-2025
+    instrument: debt
+    round_label: Promissory note from HVII
+    announced_on: 2025-12-19
+    amount: {amount: 300000, currency: USD, qualifier: up_to}
+    amount_kind: ceiling
+    use_of_proceeds: third-party legal, accounting and audit services
+    evidence:
+      - field: announced_on
+        snapshot: d9189515128a53bc91b96298fa6bc74ef94f74f624f89bcdb803e5ccbd5dcc4a
+        quote: "on December 19, 2025, ONE Nuclear issued a promissory note"
+        basis: disclosed
+      - field: amount
+        snapshot: d9189515128a53bc91b96298fa6bc74ef94f74f624f89bcdb803e5ccbd5dcc4a
+        quote: "for loan advances up to an aggregate principal amount of $300,000"
+        basis: disclosed
+    participants:
+      - investor: Hennessy Capital Investment Corp. VII
+        investor_slug: hennessy-capital-investment-corp-vii
+        role: lender
+        evidence:
+          - field: participant
+            snapshot: d9189515128a53bc91b96298fa6bc74ef94f74f624f89bcdb803e5ccbd5dcc4a
+            quote: "a promissory note (as amended on March 31, 2026, the “Promissory Note”) to HVII"
+            basis: disclosed
+agreements: []
+verification:
+  status: verified
+  by: verifier-agent (Claude Opus 5.5), 2026-10-05
+  'on': '2026-10-05'
+  note: '1 correction: HVII promissory note (up to $300k, later $620k, drawn amount unstated, lender became parent) set to
+    ceiling. SPAC event correctly has no amount (trust $1.7M vs $2.2M conflict). Gaps: B. Riley note and committed equity
+    facility not recorded.'

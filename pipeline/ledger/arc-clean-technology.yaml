@@ -1,0 +1,74 @@
+company: arc-clean-technology
+name: ARC Clean Technology Inc.
+sector: fission
+notes: >-
+  Developer of the ARC-100 sodium-cooled fast reactor. Only the Series B (closed 2025-12-16) is evidenced; the amount is
+  undisclosed in the release and omitted. The release (via 24-7PressRelease, a wire republishing company text; the
+  company newsroom links to it) names five participants, no lead and no per-investor amounts; it also mentions a 'corporate
+  venture capital arm of a major energy company' without naming it (Banpu Ventures is the only corporate venture arm
+  named). The release says ARC is an awardee of DOE Advanced Reactor Demonstration Program grant funding and works with New
+  Brunswick Power (Point Lepreau) and Hatch; amounts and earlier rounds (Series A etc.), ARDP/Canadian public funding and
+  the KHNP collaboration agreement were not evidenced here. The company site shows a roadmap line 'Series B Closed'.
+events:
+  - id: arc-series-b-2025
+    instrument: equity
+    round_label: Series B
+    announced_on: 2025-12-16
+    use_of_proceeds: advance commercialization of the ARC-100, support DOE work, KHNP collaboration and Canadian project development
+    evidence:
+      - field: announced_on
+        snapshot: 40b9ed7e05da16f958a75b9b0cf8fc431496fd633f1f1d9453070a1638bb5628
+        quote: "WASHINGTON, DC, December 16, 2025 /24-7PressRelease/"
+        basis: disclosed
+      - field: round_label
+        snapshot: 40b9ed7e05da16f958a75b9b0cf8fc431496fd633f1f1d9453070a1638bb5628
+        quote: "today announced the successful closing of its Series B financing round"
+        basis: disclosed
+    participants:
+      - investor: Xplor Ventures
+        investor_slug: xplor-ventures
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: 40b9ed7e05da16f958a75b9b0cf8fc431496fd633f1f1d9453070a1638bb5628
+            quote: "Participants include Xplor Ventures, Hennessy Capital Group, Cleantech Ventures, Core Synergy and Banpu Ventures."
+            basis: disclosed
+      - investor: Hennessy Capital Group
+        investor_slug: hennessy-capital-group
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: 40b9ed7e05da16f958a75b9b0cf8fc431496fd633f1f1d9453070a1638bb5628
+            quote: "Participants include Xplor Ventures, Hennessy Capital Group, Cleantech Ventures, Core Synergy and Banpu Ventures."
+            basis: disclosed
+      - investor: Cleantech Ventures
+        investor_slug: cleantech-ventures
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: 40b9ed7e05da16f958a75b9b0cf8fc431496fd633f1f1d9453070a1638bb5628
+            quote: "Participants include Xplor Ventures, Hennessy Capital Group, Cleantech Ventures, Core Synergy and Banpu Ventures."
+            basis: disclosed
+      - investor: Core Synergy
+        investor_slug: core-synergy
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: 40b9ed7e05da16f958a75b9b0cf8fc431496fd633f1f1d9453070a1638bb5628
+            quote: "Participants include Xplor Ventures, Hennessy Capital Group, Cleantech Ventures, Core Synergy and Banpu Ventures."
+            basis: disclosed
+      - investor: Banpu Ventures
+        investor_slug: banpu-ventures
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: 40b9ed7e05da16f958a75b9b0cf8fc431496fd633f1f1d9453070a1638bb5628
+            quote: "Participants include Xplor Ventures, Hennessy Capital Group, Cleantech Ventures, Core Synergy and Banpu Ventures."
+            basis: disclosed
+agreements: []
+verification:
+  status: verified
+  by: verifier-agent (Claude Opus 5.5), 2026-10-05
+  'on': '2026-10-05'
+  note: 0 corrections. Series B (undisclosed amount, 2025-12-16) and its five named participants confirmed; no lead stated.
+    Earlier rounds and ARDP amounts not evidenced.

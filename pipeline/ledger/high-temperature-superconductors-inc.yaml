@@ -1,0 +1,66 @@
+company: high-temperature-superconductors-inc
+name: High Temperature Superconductors, Inc.
+sector: fusion
+notes: Built from USAspending spending_by_award search responses (POST, archived with request body in raw/manifest.jsonl, source_id
+  usaspending-post). Amount = USAspending 'Award Amount' (cumulative federal obligation, not a ceiling and not an announced figure);
+  disbursed_usd = 'Total Outlays' when present. Dates = 'Base Obligation Date' (first obligation), else 'Start Date'. Search was recipient-name
+  text on awarding agency = Department of Energy over 2007-10-01..2026-09-30 and one page of up to 50 rows per award-type group; awards
+  with zero or negative net obligation are omitted. Recipient name variants not matched by the name search may be missing. Government
+  record, basis=disclosed.
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: 'Verified 1 event (DEAR0001815, $6.0M obligated / $3.97M outlaid, ARPA-E superconductors programme cooperative agreement),
+    0 errors. Checked against the archived USAspending award-level search (spending_level awards: one row per award, modifications
+    already netted, so one event per award and no per-modification duplicates). Award Amount = obligated to date (not a ceiling);
+    disbursed_usd = Total Outlays, now evidenced by its own quote (1 added). announced_on is the first-obligation date, not a press
+    date. Recipient HIGH TEMPERATURE SUPERCONDUCTORS, INC. (UEI EEL2PLAVBNK3), the company. Scope: HTS tape maker (enabling tech);
+    the ARPA-E award is not fusion-specific, keep as enabling with that caveat. Gap: private funding not found.'
+events:
+- id: high-temperature-superconductors-inc-dear0001815
+  instrument: grant
+  round_label: DEAR0001815
+  announced_on: '2024-04-15'
+  amount:
+    amount: 6000000.0
+    currency: USD
+    qualifier: exact
+    usd: 6000000.0
+  amount_kind: new_money
+  program: ARPA-E
+  obligated_usd: 6000000.0
+  disbursed_usd: 3966980.84
+  use_of_proceeds: 'HIGH TEMPERATURE SUPERCONDUCTORS, INC. NEW SUPERCONDUCTORS AWARD CONTROL NUMBER: 2784-1734 TITLE: HIGH THROUGH'
+  evidence:
+  - field: amount
+    snapshot: a9ef8244f6e7425d8f4db3f20702e249da28aa3a88cdec994c9d75bcbd320412
+    quote: '"Award ID": "DEAR0001815", "Recipient Name": "HIGH TEMPERATURE SUPERCONDUCTORS, INC.", "Recipient UEI": "EEL2PLAVBNK3",
+      "Award Amount": 6000000.0'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: a9ef8244f6e7425d8f4db3f20702e249da28aa3a88cdec994c9d75bcbd320412
+    quote: '"Award Amount": 6000000.0, "Total Outlays": 3966980.84'
+    basis: disclosed
+  - field: announced_on
+    snapshot: a9ef8244f6e7425d8f4db3f20702e249da28aa3a88cdec994c9d75bcbd320412
+    quote: '"Base Obligation Date": "2024-04-15", "generated_internal_id": "ASST_NON_DEAR0001815_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: a9ef8244f6e7425d8f4db3f20702e249da28aa3a88cdec994c9d75bcbd320412
+    quote: '"Award ID": "DEAR0001815", "Recipient Name": "HIGH TEMPERATURE SUPERCONDUCTORS, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: a9ef8244f6e7425d8f4db3f20702e249da28aa3a88cdec994c9d75bcbd320412
+    quote: '"Description": "HIGH TEMPERATURE SUPERCONDUCTORS, INC. NEW SUPERCONDUCTORS AWARD\nCONTROL NUMBER: 2784-1734\nTITLE:'
+    basis: disclosed
+  participants:
+  - investor: ARPA-E
+    investor_slug: arpa-e
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: a9ef8244f6e7425d8f4db3f20702e249da28aa3a88cdec994c9d75bcbd320412
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+agreements: []

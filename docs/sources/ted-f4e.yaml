@@ -1,0 +1,17 @@
+id: ted-f4e
+name: TED (EU Tenders Electronic Daily) incl. Fusion for Energy (F4E/ITER) awards
+owner: EU Publications Office
+access: api             # POST JSON, anonymous search
+endpoint: https://api.ted.europa.eu/v3/notices/search
+auth: none for search (API key only for notice submission)
+rate_limit: "not published in what was read; self-limit 1 req/s"
+licence: "EU open data, believed CC BY 4.0 (verify)"
+robots: "ted.europa.eu/robots.txt allows notices; api.ted.europa.eu/robots.txt 404. Notice XML/HTML pages archived OK."
+yields: [contract award notices (can-standard, can-modif, can-desg): buyer, winner-name, winner-country, tender-value, total-value, contract-conclusion-date, lots; contract notices]
+identifiers: [publication-number (e.g. 419818-2025), winner org id (eForms), no PIC/LEI by default]
+cadence: daily
+tier: A
+known_gaps: >
+  winner-name/tender-value present on only part of can-standard notices (older, pre-eForms rows lack winners); full-text FT~ search is fuzzy (zero or noisy hits).
+  F4E: 390 notices total, 111 can-standard since 2024-01. Startups rarely appear as winners; hits are mostly large industrials.
+probe: docs/survey/probes/ted-f4e.md

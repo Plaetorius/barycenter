@@ -1,0 +1,206 @@
+company: lis-technologies
+name: LIS Technologies Inc.
+sector: fission
+notes: |-
+  Seven SEC Form D filings (CIK 1973276, exemption 506(b); first-sale dates 2023-03-15, 2023-08-02, 2024-03-15, 2024-08-16, 2024-12-04, 2025-05-16, 2026-03-18) are recorded as events (announced_on = the filing's signature date, the first-sale date is kept in round_label; amount = total sold; investor counts 9, 18, 43, 100, 226, 134, 102; no investors named). The 2023 filings state CAD receipts converted to USD ($147,986 CAD at 0.7258; $445,424 CAD at 0.7499). The Jan 2026 round is in EDGAR as a Form D of 2026-01-12 (first sale 2026-01-12, $16,014,029 sold, 88 investors, snapshot 1b332009...) while the company release says $17 Million: the release event below is kept with amount 17M and flagged as a source conflict; the Form D is NOT added as a second event. Form D totals: $57.5M through the Jan 2026 filing (all eight filings: $64.5M, including the Mar 2026 round), versus the release's '$64 Million' total as of 2026-01-13; the gap of about $6.5M is unexplained (earlier non-Form-D funding, or release rounding), so the cumulative event must not be added to the rounds. The 2026-03-30 EDGAR filing is the 2026-03-18 round. Oak Ridge, TN laser uranium-enrichment developer. Jan 2026 round evidenced by a company release on Newsfile. The release headline says the round brings total funding to $64M and is the 'fourth consecutive' oversubscribed round; earlier rounds are taken from the Form Ds above (the release does not list them), so the $64M is recorded as a cumulative statement and must NOT be summed with the round. Investors are unnamed ('a single large, accredited investor', 'returning advanced nuclear technology investors', insiders). The release also says the round was 240% oversubscribed; whether $17M is the closed total or the target is ambiguous in the text (headline says funding round of $17 Million). Not read: later Newsfile releases about a $1.38B planned investment (LIST Island) and a $6.2M facility acquisition, which are not funding.
+  MERGE 2026-10-05 (USAspending supplement): LIS holds a DOE LEU Enrichment Acquisition IDIQ task order (USD 0.5M, report on new enrichment capacity), recorded as a gov_contract agreement, not funding.
+verification:
+  status: verified
+  by: merge-verifier-agent (opus), 2026-10-05
+  'on': 2026-10-05
+  note: 'USAspending merge: the supplement has no funding events; 1 agreement added (LEU IDIQ report task order 89243225FNE400182,
+    USD 500,000, 2025-04-11). Nothing skipped. Previous sign-off: verifier-agent (claude-opus-5-5), 2026-10-05: 9 corrections.
+    7 Form D events: announced_on moved from first-sale date to the Form D signature date (source date; 2023-03-15 and 2023-08-02
+    offerings were both filed 2023-08-22), first-sale date kept in round_label. Release round: closed_on removed (release
+    only says ''has closed'' by the announcement date); added the Jan 2026 Form D (sold $16,014,029, signed 2026-01-12) as
+    an amount_conflict_form_d evidence item instead of a second event, so the money is counted once at the release figure
+    ($17M). Sums checked: Form Ds before Jan 2026 = $41.5M; + $16.0M = $57.5M; + Mar 2026 $7.0M = $64.5M. The release''s ''$64
+    Million'' total (as of 2026-01-13) is cumulative-only and is not reconciled ($17M vs $16.0M and $64M vs $57.5M unexplained).
+    EDGAR acceptance dates not checked (signature dates used).'
+events:
+- id: lis-technologies-round-2026-01
+  instrument: equity
+  round_label: Fourth oversubscribed funding round
+  announced_on: 2026-01-13
+  amount:
+    amount: 17000000
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: f64c4b4c09a946c5ca102dd72c98c4facbf63748fcee8bbb25cd47a081954b74
+    quote: 'January 13, 2026 8:59 AM EST | Source: LIS Technologies Inc.'
+    basis: disclosed
+  - field: amount
+    snapshot: f64c4b4c09a946c5ca102dd72c98c4facbf63748fcee8bbb25cd47a081954b74
+    quote: today announced that it has closed its 240% oversubscribed $17 Million funding round
+    basis: disclosed
+  - field: round_label
+    snapshot: f64c4b4c09a946c5ca102dd72c98c4facbf63748fcee8bbb25cd47a081954b74
+    quote: Announces Fourth Consecutive Oversubscribed Funding Round of $17 Million
+    basis: disclosed
+  - field: amount_conflict_form_d
+    snapshot: 1b3320090259c29d9d3495ecffaf3df6140863bd9a6d6baef271bc0791c7ea5a
+    quote: 06b false 2026-01-12 false true false 0 16014029 16014029 0 false 88
+    basis: disclosed
+- id: lis-technologies-cumulative-2026-01
+  instrument: equity
+  round_label: Cumulative funding to date
+  announced_on: 2026-01-13
+  amount:
+    amount: 64000000
+    currency: USD
+    qualifier: exact
+  amount_kind: cumulative
+  evidence:
+  - field: announced_on
+    snapshot: f64c4b4c09a946c5ca102dd72c98c4facbf63748fcee8bbb25cd47a081954b74
+    quote: 'January 13, 2026 8:59 AM EST | Source: LIS Technologies Inc.'
+    basis: disclosed
+  - field: amount
+    snapshot: f64c4b4c09a946c5ca102dd72c98c4facbf63748fcee8bbb25cd47a081954b74
+    quote: LIS Technologies closes 240% oversubscribed funding round of $17 Million, Totaling $64 Million.
+    basis: disclosed
+- id: lis-form-d-2023-03-15
+  instrument: equity
+  round_label: Form D offering (unlabelled; first sale 2023-03-15)
+  announced_on: 2023-08-22
+  amount:
+    amount: 107406
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: d0087720e5383f2192b60de6063faee689c64ff8ea08c6c07c6b2b9ac07131a6
+    quote: Jiang Yu Jiang Yu President 2023-08-22
+    basis: disclosed
+  - field: amount
+    snapshot: d0087720e5383f2192b60de6063faee689c64ff8ea08c6c07c6b2b9ac07131a6
+    quote: 06b false 2023-03-15 false true false 0 107406 107406 0
+    basis: disclosed
+- id: lis-form-d-2023-08-02
+  instrument: equity
+  round_label: Form D offering (unlabelled; first sale 2023-08-02)
+  announced_on: 2023-08-22
+  amount:
+    amount: 334023
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: 8a163d8e0998779ac43c452ceff4c96cbeab1cec42960e9f1d5b405c27d7230d
+    quote: Jiang Yu Jiang Yu President 2023-08-22
+    basis: disclosed
+  - field: amount
+    snapshot: 8a163d8e0998779ac43c452ceff4c96cbeab1cec42960e9f1d5b405c27d7230d
+    quote: 06b false 2023-08-02 false true false 0 334023 334023 0
+    basis: disclosed
+- id: lis-form-d-2024-03-15
+  instrument: equity
+  round_label: Form D offering (unlabelled; first sale 2024-03-15)
+  announced_on: 2024-03-22
+  amount:
+    amount: 1304551
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: 8576c87e8072d73b99e656be6813043963757bc31a61ae18431b9cc8343b0729
+    quote: Jiang Yu Jiang Yu President 2024-03-22
+    basis: disclosed
+  - field: amount
+    snapshot: 8576c87e8072d73b99e656be6813043963757bc31a61ae18431b9cc8343b0729
+    quote: 06b false 2024-03-15 false true false 0 1304551 1304551 0 false 43
+    basis: disclosed
+- id: lis-form-d-2024-08-16
+  instrument: equity
+  round_label: Form D offering (unlabelled; first sale 2024-08-16)
+  announced_on: 2024-08-19
+  amount:
+    amount: 8589536
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: 6778b35af46d614e887c84e62bcf092432d2321033e34f1a3b9fa1ddcf99c7be
+    quote: Jiang Yu Jiang Yu President 2024-08-19
+    basis: disclosed
+  - field: amount
+    snapshot: 6778b35af46d614e887c84e62bcf092432d2321033e34f1a3b9fa1ddcf99c7be
+    quote: 06b false 2024-08-16 false true false 0 8589536 8589536 0 false 100
+    basis: disclosed
+- id: lis-form-d-2024-12-04
+  instrument: equity
+  round_label: Form D offering (unlabelled; first sale 2024-12-04)
+  announced_on: 2024-12-04
+  amount:
+    amount: 21536136
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: e635fedbc368c88ebac622c7a81ab9b37f5728ceff36af038a8fbe1353039192
+    quote: Jiang Yu Jiang Yu President 2024-12-04
+    basis: disclosed
+  - field: amount
+    snapshot: e635fedbc368c88ebac622c7a81ab9b37f5728ceff36af038a8fbe1353039192
+    quote: 06b false 2024-12-04 false true false 0 21536136 21536136 0 false 226
+    basis: disclosed
+- id: lis-form-d-2025-05-16
+  instrument: equity
+  round_label: Form D offering (unlabelled; first sale 2025-05-16)
+  announced_on: 2025-05-16
+  amount:
+    amount: 9645774
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: 52778e6d291bcf37561da52d88670847a1bbfe0fcf40697f7285750781f6706f
+    quote: Jiang Yu Jiang Yu President 2025-05-16
+    basis: disclosed
+  - field: amount
+    snapshot: 52778e6d291bcf37561da52d88670847a1bbfe0fcf40697f7285750781f6706f
+    quote: 06b false 2025-05-16 false true false 0 9645774 9645774 0 false 134
+    basis: disclosed
+- id: lis-form-d-2026-03-18
+  instrument: equity
+  round_label: Form D offering (unlabelled; first sale 2026-03-18)
+  announced_on: 2026-03-24
+  amount:
+    amount: 7017780
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: d4a5973c4fe1d33c544362712057bbbd34c75c454b4ff286fadd1e41107c57b4
+    quote: Jiang Yu Jiang Yu President 2026-03-24
+    basis: disclosed
+  - field: amount
+    snapshot: d4a5973c4fe1d33c544362712057bbbd34c75c454b4ff286fadd1e41107c57b4
+    quote: 06b false 2026-03-18 false true false 0 7017780 7017780 0 false 102
+    basis: disclosed
+agreements:
+- id: lis-technologies-89243225fne400182
+  counterparty: U.S. Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: '2025-04-11'
+  summary: DOE task order 89243225FNE400182 under the LEU Enrichment Acquisition IDIQ to LIS Technologies Inc for a report
+    on deploying new enrichment capacity (USD 0.5M obligated). Paid service contract, not funding.
+  value:
+    amount: 500000.0
+    currency: USD
+    qualifier: exact
+    usd: 500000.0
+  evidence:
+  - field: amount
+    snapshot: b01214a9aa51706cb8308980be57d1f10076249f02b6a760930a58a4c0280405
+    quote: '"Award ID": "89243225FNE400182", "Recipient Name": "LIS TECHNOLOGIES INC", "Recipient UEI": "PDJTWAXZCHH3", "Award
+      Amount": 500000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: b01214a9aa51706cb8308980be57d1f10076249f02b6a760930a58a4c0280405
+    quote: '"Base Obligation Date": "2025-04-11", "generated_internal_id": "CONT_AWD_89243225FNE400182_8900_89243225DNE000030_8900"'
+    basis: disclosed

@@ -1,0 +1,165 @@
+company: terrestrial-energy
+name: Terrestrial Energy
+sector: fission
+notes: 'SUPPLEMENT (not in pipeline/ledger/ to avoid a duplicate company slug): DOE awards found in USAspending that the existing
+  ledger pipeline/ledger/terrestrial-energy.yaml did not list by FAIN at the time of writing. Some amounts may already be
+  evidenced there from another source (check before merging; do not double count). Amount = USAspending ''Award Amount'' (cumulative
+  federal obligation), dates = Base Obligation Date else Start Date; one page of up to 50 rows per award-type group, DOE as
+  awarding agency, 2007-10-01..2026-09-30; zero/negative awards omitted.'
+events:
+- id: terrestrial-energy-dene0008842
+  instrument: grant
+  round_label: DENE0008842
+  announced_on: '2019-01-29'
+  amount:
+    amount: 495108.28
+    currency: USD
+    qualifier: exact
+    usd: 495108.28
+  amount_kind: new_money
+  program: DOE Office of Nuclear Energy
+  obligated_usd: 495108.28
+  disbursed_usd: 227904.35
+  use_of_proceeds: FINANCIAL ASSISTANCE AWARD TO TERRESTRIAL ENERGY FOR PRE-LICENSING ACTIVITIES FOR THE IMSR
+  evidence:
+  - field: amount
+    snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+    quote: '"Award ID": "DENE0008842", "Recipient Name": "TERRESTRIAL ENERGY USA, INC.", "Recipient UEI": "GJKZMH1MMWT7",
+      "Award Amount": 495108.28'
+    basis: disclosed
+  - field: announced_on
+    snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+    quote: '"Base Obligation Date": "2019-01-29", "generated_internal_id": "ASST_NON_DENE0008842_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+    quote: '"Award ID": "DENE0008842", "Recipient Name": "TERRESTRIAL ENERGY USA, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+    quote: '"Description": "FINANCIAL ASSISTANCE AWARD TO TERRESTRIAL ENERGY FOR PRE-LICENSING ACTIVITIES FOR THE IMSR"'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Nuclear Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: terrestrial-energy-dene0009228
+  instrument: grant
+  round_label: DENE0009228
+  announced_on: '2022-06-29'
+  amount:
+    amount: 299183.82
+    currency: USD
+    qualifier: exact
+    usd: 299183.82
+  amount_kind: new_money
+  program: DOE Office of Nuclear Energy
+  obligated_usd: 299183.82
+  disbursed_usd: 299183.82
+  use_of_proceeds: TERRESTIAL ENERGY USA, INC AWARD UNDER DE-FOA-0001817
+  evidence:
+  - field: amount
+    snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+    quote: '"Award ID": "DENE0009228", "Recipient Name": "TERRESTRIAL ENERGY USA, INC.", "Recipient UEI": "GJKZMH1MMWT7",
+      "Award Amount": 299183.82'
+    basis: disclosed
+  - field: announced_on
+    snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+    quote: '"Base Obligation Date": "2022-06-29", "generated_internal_id": "ASST_NON_DENE0009228_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+    quote: '"Award ID": "DENE0009228", "Recipient Name": "TERRESTRIAL ENERGY USA, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+    quote: '"Description": "TERRESTIAL ENERGY USA, INC AWARD UNDER DE-FOA-0001817"'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Nuclear Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: terrestrial-energy-dene0009445
+  instrument: grant
+  round_label: DENE0009445
+  announced_on: '2024-02-28'
+  amount:
+    amount: 500000.0
+    currency: USD
+    qualifier: exact
+    usd: 500000.0
+  amount_kind: new_money
+  program: DOE Office of Nuclear Energy
+  obligated_usd: 500000.0
+  disbursed_usd: 361258.26
+  use_of_proceeds: COMPLETION OF IMSR® STANDARD DESIGN APPROVAL PRE LICENSING REVIEWS WITH NRC TO SUPPORT ADVANCED REACTOR
+    LICENS
+  evidence:
+  - field: amount
+    snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+    quote: '"Award ID": "DENE0009445", "Recipient Name": "TERRESTRIAL ENERGY USA, INC.", "Recipient UEI": "GJKZMH1MMWT7",
+      "Award Amount": 500000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+    quote: '"Base Obligation Date": "2024-02-28", "generated_internal_id": "ASST_NON_DENE0009445_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+    quote: '"Award ID": "DENE0009445", "Recipient Name": "TERRESTRIAL ENERGY USA, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+    quote: '"Description": "COMPLETION OF IMSR® STANDARD DESIGN APPROVAL PRE LICENSING REVIEWS WITH NRC TO SUPPORT ADVANCED
+      REA'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Nuclear Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+agreements:
+- id: terrestrial-energy-reactor-pilot-ota
+  counterparty: U.S. Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: '2025-08-12'
+  summary: Other Transaction Agreement DENE0009580 (recipient TERRESTRIAL ENERGY, INC.) for the DOE Reactor Pilot Program;
+    DOE authorization pathway, no federal funds, company bears all costs. USAspending shows /bin/zsh.0 obligation.
+  evidence:
+  - field: announced_on
+    snapshot: d92aed237e3d72eebae1422dcd91a89156bb7ec851d5eb319adbd1bf1c0d3730
+    quote: Energy.gov August 12, 2025
+    basis: disclosed
+  - field: summary
+    snapshot: d92aed237e3d72eebae1422dcd91a89156bb7ec851d5eb319adbd1bf1c0d3730
+    quote: Terrestrial Energy Inc., and Valar Atomics Inc.
+    basis: disclosed
+  - field: summary
+    snapshot: d92aed237e3d72eebae1422dcd91a89156bb7ec851d5eb319adbd1bf1c0d3730
+    quote: Each company will be responsible for all costs associated with designing, manufacturing, constructing, operating,
+      and decommissioning their test reactors.
+    basis: disclosed
+  - field: summary
+    snapshot: ddb3decd4034f0b85b670235a63cb6a61d4febf9e06c2ed96a58575a7defd6d1
+    quote: '"Award ID": "DENE0009580", "Recipient Name": "TERRESTRIAL ENERGY, INC."'
+    basis: disclosed
+  - field: summary
+    snapshot: ddb3decd4034f0b85b670235a63cb6a61d4febf9e06c2ed96a58575a7defd6d1
+    quote: '"Award Amount": 0.0'
+    basis: disclosed

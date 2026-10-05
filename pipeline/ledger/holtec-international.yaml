@@ -1,0 +1,315 @@
+company: holtec-international
+name: Holtec International / Holtec Nuclear Corp
+sector: fission
+notes: |-
+  [Verifier 2026-10-05] DOE loan restructured: the DOE project page and the S-1/A give a facility of up to $1.52B (LGA dated 2024-07-31, FFB lends, DOE guarantees); USAspending's Loan Value $1,450,241,177 differs (kept as evidence only; possibly principal excl. capitalized interest, note 1 allows $132.0M capitalized interest). The facility is now a ceiling (not counted); the money actually drawn (about $1.0B of FFB advances by 2026-06-30, per S-1/A) is recorded as its own new_money event. Borrower is Holtec Palisades, LLC, a subsidiary project company; the S-1/A consolidates it and describes the advances as received by 'we/us', so it is treated as group funding. Gap: the S-1/A also mentions a $300.0M State of Michigan grant deposited into the restart account (not recorded). Original notes follow. Private company; no priced equity rounds are disclosed in the sources reached (the S-1 describes the IPO only; S-1 financing history sections were not mined). Two events: (1) DOE loan guarantee/loan to Holtec Palisades LLC (a Holtec subsidiary project company for the Palisades restart), USAspending Loan Value USD1,450,241,177, subsidy cost USD18,058,475.02, issued 2024-07-31 (DOE record of decision page dated 2024-07-31 archived; it gives no amount). The amount in USAspending is the loan value of that award; DOE's own headline figure may differ (not evidenced here). (2) IPO of Holtec Nuclear Corporation (Nasdaq HNUC, CIK 2104277): confidential DRS 2026-01-30, public S-1 2026-07-10, S-1/A 2026-09-08 for 50,000,000 Class A shares at an expected USD15-18 (net proceeds about USD775.2M at USD16.50 midpoint), then WITHDRAWN: Form RW filed 2026-09-25 states no securities were issued or sold. No amount is entered on the IPO event so it is not counted as funding. Not recorded because not evidenced by an archived primary source: NJ EDA USD260M tax incentive (2014, Wikipedia/press only), UK government GBP30M for SMR-300 (Telegraph, 2023), DOE Environmental Management contracts to Holtec Government Services (USAspending shows USD106M of transactions since FY2020; contracts, not financing), Hyundai/other partnerships. Canada G&C, CORDIS, TED and BODACC probes have no Holtec records.
+  MERGE 2026-10-05 (USAspending supplement): the four DOE assistance awards are to Holtec Government Services LLC, which is treated as a Holtec group operating subsidiary (not a project SPV); the ARDP description names the beneficiary ('HOLTEC INTERNATIONAL IS DESIGNING THE SMR-160') and DE-NE0008843 concerns the SMR-160, but the ownership link is not evidenced in our snapshots (UNCERTAIN, review). The consent-based siting grant is spent-fuel siting outreach, not reactor development. USAspending 'Total Outlays' is account-level outlay data reported from FY2017/FY2020 onward, so disbursed_usd can understate payments on older awards.
+verification:
+  status: verified
+  by: merge-verifier-agent (opus), 2026-10-05
+  'on': 2026-10-05
+  note: 'USAspending merge: 4 DOE-NE events added, all to HOLTEC GOVERNMENT SERVICES LLC (UEI C9BJLUNH6FJ8): ARDP risk reduction
+    SMR-160 DE-NE0009055 (USD 104.15M obligated, 104.14M outlaid), U.S. Industry Opportunities DE-NE0008833 (5.01M) and DE-NE0008843
+    (0.18M), consent-based siting DE-NE0009336 (1.99M). Skipped: DELP0000153 Palisades loan (already in the ledger as the
+    USD 1.52B ceiling plus drawn advances; its USAspending Loan Value is already an evidence item). Previous sign-off: verifier-agent
+    (Claude Opus 5.5), 2026-10-05: 3 corrections: DOE Palisades loan restated as a $1.52B up_to ceiling (S-1/A and DOE project
+    page; USAspending $1,450,241,177 kept as evidence only); added the drawn amount as its own event (about $1.0B of FFB advances
+    by 2026-06-30, S-1/A); added Federal Financing Bank as lender. Borrower is subsidiary Holtec Palisades LLC (noted). Withdrawn
+    IPO carries no amount. Not recorded: $300M Michigan grant.'
+events:
+- id: holtec-2024-doe-palisades-loan
+  instrument: debt
+  round_label: DOE loan guarantee facility (FFB loan), Palisades restart (borrower Holtec Palisades LLC)
+  announced_on: 2024-07-31
+  amount:
+    amount: 1520000000
+    currency: USD
+    qualifier: up_to
+  amount_kind: ceiling
+  program: DOE Loan Programs Office (now Office of Energy Dominance Financing)
+  use_of_proceeds: Palisades Nuclear Restart Project, Van Buren County, Michigan
+  evidence:
+  - field: amount
+    snapshot: 0a61f38e3067913034a407b93493f8ac035124cf8d019dea950f624905b80269
+    quote: guarantees loan advances from the federal financing bank (the "ffb") to us in an amount of up to $1.52 billion
+    basis: disclosed
+  - field: amount_doe_headline
+    snapshot: 9505ea19a5e9665037c744e511522318de7ce76d0d0fa6a7ce42008d8b8a1f41
+    quote: the department of energy announced the closing of a $1.52 billion loan to holtec palisades, llc
+    basis: disclosed
+  - field: amount_usaspending
+    snapshot: cef3331431b5a34eca0777cbb77f087a01677df720fc9e30e35c933d77270175
+    quote: '"Loan Value":1450241177.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 0a61f38e3067913034a407b93493f8ac035124cf8d019dea950f624905b80269
+    quote: on july 31, 2024, we entered into a loan guarantee agreement (the "lga") with the doe
+    basis: disclosed
+  - field: announced_on
+    snapshot: cef3331431b5a34eca0777cbb77f087a01677df720fc9e30e35c933d77270175
+    quote: '"Issued Date":"2024-07-31"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1739f378a2556cbbc25f65dd6d6de14d8dc39635a445cbf3004b718456669b5c
+    quote: 'Record of Decision: Issuance of a Loan Guarantee to Holtec Palisades, LLC'
+    basis: disclosed
+  participants:
+  - investor: DOE Loan Programs Office / Office of Energy Dominance Financing (guarantor)
+    investor_slug: doe-edf
+    role: lender
+    evidence:
+    - field: participant
+      snapshot: cef3331431b5a34eca0777cbb77f087a01677df720fc9e30e35c933d77270175
+      quote: '"Awarding Sub Agency":"Department of Energy"'
+      basis: disclosed
+  - investor: Federal Financing Bank
+    investor_slug: federal-financing-bank
+    role: lender
+    evidence:
+    - field: participant
+      snapshot: 0a61f38e3067913034a407b93493f8ac035124cf8d019dea950f624905b80269
+      quote: the lga provides us with guaranteed funding of up to $1.52 billion through two
+      basis: disclosed
+- id: holtec-doe-palisades-loan-advances-to-2026h1
+  instrument: debt
+  round_label: FFB advances drawn under the DOE-guaranteed Palisades facility, 2025-01-17 to 2026-06-30
+  announced_on: 2026-09-08
+  closed_on: 2026-06-30
+  amount:
+    amount: 1000000000
+    currency: USD
+    qualifier: approx
+  program: DOE Loan Programs Office (now Office of Energy Dominance Financing)
+  use_of_proceeds: Palisades restart; drawn portion of the $1.52B ceiling (holtec-2024-doe-palisades-loan); $677.3M drawn
+    by 2025-12-31, $347.6M in H1 2026
+  evidence:
+  - field: amount
+    snapshot: 0a61f38e3067913034a407b93493f8ac035124cf8d019dea950f624905b80269
+    quote: as of june 30, 2026, total advances received from the ffb were $1.0 billion
+    basis: disclosed
+  - field: announced_on
+    snapshot: 0a61f38e3067913034a407b93493f8ac035124cf8d019dea950f624905b80269
+    quote: preliminary prospectus (subject to completion, dated september 8, 2026)
+    basis: disclosed
+  - field: drawn_2025
+    snapshot: 0a61f38e3067913034a407b93493f8ac035124cf8d019dea950f624905b80269
+    quote: as of december 31, 2025, total advances received from the ffb were $677.3 million
+    basis: disclosed
+  participants:
+  - investor: Federal Financing Bank
+    investor_slug: federal-financing-bank
+    role: lender
+    evidence:
+    - field: participant
+      snapshot: 0a61f38e3067913034a407b93493f8ac035124cf8d019dea950f624905b80269
+      quote: on january 17, 2025, we received our first loan advance from the ffb for the palisades restart
+      basis: disclosed
+- id: holtec-2026-ipo-withdrawn
+  instrument: ipo
+  round_label: WITHDRAWN IPO of Holtec Nuclear Corporation (Nasdaq HNUC); no securities sold
+  announced_on: 2026-07-10
+  use_of_proceeds: planned 50,000,000 Class A shares at USD15.00-18.00; proceeds to purchase Class A Interests from Holtec
+    International and general purposes; never completed
+  evidence:
+  - field: announced_on
+    snapshot: f56a4f5a33fbb780f92246be52ce488037f57d303a1a22dc6d86a06e2788f44f
+    quote: On July 10, 2026, Holtec Nuclear Corporation (the “ Company ”) initially filed the Registration Statement on Form
+      S-1
+    basis: disclosed
+  - field: round_label
+    snapshot: f56a4f5a33fbb780f92246be52ce488037f57d303a1a22dc6d86a06e2788f44f
+    quote: no securities have been issued or sold under the Registration Statement
+    basis: disclosed
+  - field: round_label
+    snapshot: 0a61f38e3067913034a407b93493f8ac035124cf8d019dea950f624905b80269
+    quote: We are offering 50,000,000 shares of our Class A common stock
+    basis: disclosed
+- id: holtec-international-dene0008833
+  instrument: grant
+  round_label: DOE-NE U.S. Industry Opportunities cooperative agreement DE-NE0008833 (recipient Holtec Government Services
+    LLC)
+  announced_on: '2020-03-26'
+  amount:
+    amount: 5006612.0
+    currency: USD
+    qualifier: exact
+    usd: 5006612.0
+  amount_kind: new_money
+  obligated_usd: 5006612.0
+  disbursed_usd: 3390132.09
+  program: DOE Office of Nuclear Energy
+  use_of_proceeds: 'COMPETITIVE COOPERATIVE AGREEMENT: U.S. INDUSTRY OPPORTUNITIES FOR ADVANCED NUCLEAR TECHNOLOGY DEVELOPMENT
+    FOA'
+  evidence:
+  - field: amount
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Award ID": "DENE0008833", "Recipient Name": "HOLTEC GOVERNMENT SERVICES LLC", "Recipient UEI": "C9BJLUNH6FJ8",
+      "Award Amount": 5006612.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Base Obligation Date": "2020-03-26", "generated_internal_id": "ASST_NON_DENE0008833_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Award ID": "DENE0008833", "Recipient Name": "HOLTEC GOVERNMENT SERVICES LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Description": "COMPETITIVE COOPERATIVE AGREEMENT:  U.S. INDUSTRY OPPORTUNITIES FOR ADVANCED NUCLEAR TECHNOLOGY
+      DEV'
+    basis: disclosed
+  - field: obligated_disbursed
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Recipient UEI": "C9BJLUNH6FJ8", "Award Amount": 5006612.0, "Total Outlays": 3390132.09'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Nuclear Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: holtec-international-dene0008843
+  instrument: grant
+  round_label: DOE-NE U.S. Industry Opportunities cooperative agreement DE-NE0008843, SMR-160 passive safety test programme
+    (recipient Holtec Government Services LLC)
+  announced_on: '2020-09-08'
+  amount:
+    amount: 182211.2
+    currency: USD
+    qualifier: exact
+    usd: 182211.2
+  amount_kind: new_money
+  obligated_usd: 182211.2
+  disbursed_usd: 94102.55
+  program: DOE Office of Nuclear Energy
+  use_of_proceeds: 'COMPETITIVE COOPERATIVE AGREEMENT: U.S. INDUSTRY OPPORTUNITIES FOR ADVANCED NUCLEAR TECHNOLOGY DEVELOPMENT
+    FOA'
+  evidence:
+  - field: amount
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Award ID": "DENE0008843", "Recipient Name": "HOLTEC GOVERNMENT SERVICES LLC", "Recipient UEI": "C9BJLUNH6FJ8",
+      "Award Amount": 182211.2'
+    basis: disclosed
+  - field: announced_on
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Base Obligation Date": "2020-09-08", "generated_internal_id": "ASST_NON_DENE0008843_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Award ID": "DENE0008843", "Recipient Name": "HOLTEC GOVERNMENT SERVICES LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Description": "COMPETITIVE COOPERATIVE AGREEMENT:  U.S. INDUSTRY OPPORTUNITIES FOR ADVANCED NUCLEAR TECHNOLOGY
+      DEV'
+    basis: disclosed
+  - field: obligated_disbursed
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Recipient UEI": "C9BJLUNH6FJ8", "Award Amount": 182211.2, "Total Outlays": 94102.55'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Nuclear Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: holtec-international-dene0009055
+  instrument: grant
+  round_label: DOE ARDP risk-reduction cooperative agreement DE-NE0009055, SMR-160 (recipient Holtec Government Services LLC)
+  announced_on: '2021-11-01'
+  amount:
+    amount: 104148813.0
+    currency: USD
+    qualifier: exact
+    usd: 104148813.0
+  amount_kind: new_money
+  obligated_usd: 104148813.0
+  disbursed_usd: 104140465.13
+  program: DOE Office of Nuclear Energy
+  use_of_proceeds: HOLTEC INTERNATIONAL IS DESIGNING THE SMR-160, A WALK-AWAY SAFE ADVANCED REACTOR WITH 160 MWE NET OUTPUT,
+    WITH
+  evidence:
+  - field: amount
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Award ID": "DENE0009055", "Recipient Name": "HOLTEC GOVERNMENT SERVICES LLC", "Recipient UEI": "C9BJLUNH6FJ8",
+      "Award Amount": 104148813.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Base Obligation Date": "2021-11-01", "generated_internal_id": "ASST_NON_DENE0009055_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Award ID": "DENE0009055", "Recipient Name": "HOLTEC GOVERNMENT SERVICES LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Description": "HOLTEC INTERNATIONAL IS DESIGNING THE SMR-160, A WALK-AWAY SAFE ADVANCED REACTOR WITH 160 MWE
+      NET O'
+    basis: disclosed
+  - field: obligated_disbursed
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Recipient UEI": "C9BJLUNH6FJ8", "Award Amount": 104148813.0, "Total Outlays": 104140465.13'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Nuclear Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: holtec-international-dene0009336
+  instrument: grant
+  round_label: DOE consent-based siting grant DE-NE0009336 (recipient Holtec Government Services LLC)
+  announced_on: '2023-09-25'
+  amount:
+    amount: 1986226.0
+    currency: USD
+    qualifier: exact
+    usd: 1986226.0
+  amount_kind: new_money
+  obligated_usd: 1986226.0
+  disbursed_usd: 1142699.34
+  program: DOE Office of Nuclear Energy
+  use_of_proceeds: NEW CONSENT BASED SITTING AWARD FOR HOLTEC GOVERNMENT SERVICES
+  evidence:
+  - field: amount
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Award ID": "DENE0009336", "Recipient Name": "HOLTEC GOVERNMENT SERVICES LLC", "Recipient UEI": "C9BJLUNH6FJ8",
+      "Award Amount": 1986226.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Base Obligation Date": "2023-09-25", "generated_internal_id": "ASST_NON_DENE0009336_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Award ID": "DENE0009336", "Recipient Name": "HOLTEC GOVERNMENT SERVICES LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Description": "NEW CONSENT BASED SITTING AWARD FOR HOLTEC GOVERNMENT SERVICES"'
+    basis: disclosed
+  - field: obligated_disbursed
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Recipient UEI": "C9BJLUNH6FJ8", "Award Amount": 1986226.0, "Total Outlays": 1142699.34'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Nuclear Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+agreements: []

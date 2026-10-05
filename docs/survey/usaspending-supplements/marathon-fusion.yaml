@@ -1,0 +1,95 @@
+company: marathon-fusion
+name: Marathon Fusion
+sector: fusion
+notes: 'SUPPLEMENT (not in pipeline/ledger/ to avoid a duplicate company slug): DOE awards found in USAspending that the existing
+  ledger pipeline/ledger/marathon-fusion.yaml did not list by FAIN at the time of writing. Some amounts may already be evidenced
+  there from another source (check before merging; do not double count). Amount = USAspending ''Award Amount'' (cumulative
+  federal obligation), dates = Base Obligation Date else Start Date; one page of up to 50 rows per award-type group, DOE as
+  awarding agency, 2007-10-01..2026-09-30; zero/negative awards omitted.'
+events:
+- id: marathon-fusion-dear0001790
+  instrument: grant
+  round_label: DEAR0001790
+  announced_on: '2023-09-22'
+  amount:
+    amount: 449065.26
+    currency: USD
+    qualifier: exact
+    usd: 449065.26
+  amount_kind: new_money
+  program: ARPA-E
+  obligated_usd: 449065.26
+  disbursed_usd: 449064.89
+  use_of_proceeds: MARATHON FUSION, 2784-1643, NEW CREATE TOPIC C AWARD INTEGRATED TEST ENVIRONMENT FOR METAL FOIL PUMPS IN
+    THE F
+  evidence:
+  - field: amount
+    snapshot: 6bd8f83b8c9a3b1f75c48380874dc13f19ac997751513c7627bbc25c93994416
+    quote: '"Award ID": "DEAR0001790", "Recipient Name": "MARATHON FUSION, INC.", "Recipient UEI": "LF2YSKDB6HL1", "Award
+      Amount": 449065.26'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 6bd8f83b8c9a3b1f75c48380874dc13f19ac997751513c7627bbc25c93994416
+    quote: '"Base Obligation Date": "2023-09-22", "generated_internal_id": "ASST_NON_DEAR0001790_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 6bd8f83b8c9a3b1f75c48380874dc13f19ac997751513c7627bbc25c93994416
+    quote: '"Award ID": "DEAR0001790", "Recipient Name": "MARATHON FUSION, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 6bd8f83b8c9a3b1f75c48380874dc13f19ac997751513c7627bbc25c93994416
+    quote: '"Description": "MARATHON FUSION, 2784-1643, NEW CREATE TOPIC C AWARD\n\nINTEGRATED TEST ENVIRONMENT FOR METAL
+      FOIL '
+    basis: disclosed
+  participants:
+  - investor: ARPA-E
+    investor_slug: arpa-e
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 6bd8f83b8c9a3b1f75c48380874dc13f19ac997751513c7627bbc25c93994416
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: marathon-fusion-dear0002075
+  instrument: grant
+  round_label: DEAR0002075
+  announced_on: '2026-03-06'
+  amount:
+    amount: 3630998.0
+    currency: USD
+    qualifier: exact
+    usd: 3630998.0
+  amount_kind: new_money
+  program: ARPA-E
+  obligated_usd: 3630998.0
+  disbursed_usd: 242506.9
+  use_of_proceeds: 'MARATHON FUSION: NEW AWARD VISION OPEN 2024, CONTROL# 3387-2677 PROJECT TITLE: PARTIAL IONIZATION CENTRIFUGE
+    E'
+  evidence:
+  - field: amount
+    snapshot: 6bd8f83b8c9a3b1f75c48380874dc13f19ac997751513c7627bbc25c93994416
+    quote: '"Award ID": "DEAR0002075", "Recipient Name": "MARATHON FUSION, INC.", "Recipient UEI": "LF2YSKDB6HL1", "Award
+      Amount": 3630998.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 6bd8f83b8c9a3b1f75c48380874dc13f19ac997751513c7627bbc25c93994416
+    quote: '"Base Obligation Date": "2026-03-06", "generated_internal_id": "ASST_NON_DEAR0002075_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 6bd8f83b8c9a3b1f75c48380874dc13f19ac997751513c7627bbc25c93994416
+    quote: '"Award ID": "DEAR0002075", "Recipient Name": "MARATHON FUSION, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 6bd8f83b8c9a3b1f75c48380874dc13f19ac997751513c7627bbc25c93994416
+    quote: '"Description": "MARATHON FUSION: NEW AWARD\nVISION OPEN 2024, CONTROL# 3387-2677\nPROJECT TITLE: PARTIAL IONIZATION'
+    basis: disclosed
+  participants:
+  - investor: ARPA-E
+    investor_slug: arpa-e
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 6bd8f83b8c9a3b1f75c48380874dc13f19ac997751513c7627bbc25c93994416
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+agreements: []

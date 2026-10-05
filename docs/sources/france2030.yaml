@@ -1,0 +1,21 @@
+id: france2030
+name: France 2030 laureates (AAP 'Reacteurs nucleaires innovants', operated by Bpifrance) and Bpifrance
+owner: French State (SGPI, DGE), Bpifrance operator
+access: html            # press kits (PDF) and ministry pages; no machine-readable laureate dataset found
+endpoint: https://www.entreprises.gouv.fr/la-direction-generale-des-entreprises/actualites/laureats-aap-reacteurs-nucleaires-innovants
+alt_endpoints:
+  - https://www.info.gouv.fr/upload/media/default/0001/09/1f514699f28ae1285b17e91661635c833412c95b.pdf   # 2024-03-21 press kit
+  - https://www.info.gouv.fr/upload/media/mixed/0001/16/07f6bd6743965f63238581b545712f0a8938573e.pdf     # 'Temps 2': Calogena + Jimmy
+auth: none
+rate_limit: n/a
+licence: "French public information (Licence Ouverte for gouv.fr content, believed); cite and link"
+robots: "allowed (pages archived)"
+yields: [laureate list with dates, TRANCHE totals (EUR 24.9M for 2 projects Jun 2023; EUR 77.2M for 6, Nov 2023; EUR 27.8M for last 3, Mar 2024), programme total EUR 129.8M for 11, phase caps (10/80/300 M EUR)]
+identifiers: [company name only; map to SIREN via recherche-entreprises]
+cadence: event-driven (calls 2 and 3 pending/unknown)
+tier: B
+known_gaps: >
+  Per-company amounts NOT published in the official kits (only tranche totals); Thorizon self-reports EUR 10M (WNN). Aid mixes subsidy and repayable advance.
+  Official text is internally inconsistent: EUR 27.8M is used both for the last 3 laureates and for CEA technical support (Assemblee report). data.gouv.fr search found no nuclear France 2030 dataset.
+  'Blue Capital / Blue Energy' has no match; the laureate is 'Blue Capsule'.
+probe: docs/survey/probes/france2030.md

@@ -1,0 +1,17 @@
+id: doe-programs
+name: DOE programme pages (ARDP, Milestone-Based Fusion, FIRE, INFUSE, GAIN, HALEU, Reactor Pilot, LPO)
+owner: US Department of Energy (NE, Office of Science FES, LPO, Idaho/Oak Ridge labs)
+access: html           # energy.gov Drupal articles/pages; no API. Sitemap https://www.energy.gov/sitemap.xml (50 pages, ~99k URLs, last regenerated 2026-04-20: stale). infuse.ornl.gov and gain.inl.gov separate sites
+endpoint: https://www.energy.gov/ne/advanced-reactor-demonstration-program ; https://www.energy.gov/articles/<slug> ; https://infuse.ornl.gov/
+auth: none
+rate_limit: unpublished; no blocks seen at 1 req/s on energy.gov (www.energy.gov robots allow)
+licence: US government work, public domain (energy.gov content); infuse/gain sites not verified
+robots: energy.gov robots disallow only Drupal admin paths, search/, user/
+yields: [programme -> awardee -> total award value and DOE share (ARDP risk reduction), initial funding (ARDP $80M each X-energy/TerraPower), voucher recipients (no money to company; lab-funded), HALEU allocation recipients (material, not money), Reactor Pilot Program selections (no federal funding), Milestone programme aggregate ($46M committed, 8 awardees named, per-company amounts not on page), LPO loan decisions/disbursements]
+identifiers: [company name only; award ids absent: join to USAspending by recipient + date; NRC docket where mentioned]
+cadence: event-driven press releases (several per month for NE); no machine-readable feed
+tier: B
+known_gaps: >
+  URL slugs unpredictable (several guessed program URLs 404). Milestone/FIRE page not located by sitemap; announcement found via the combined press release. Per-company Milestone amounts undisclosed on DOE pages.
+  Press-release dates are in page chrome and need parsing. 2 of 3 guessed program landing pages 404. LPO page structure changes (edf/ vs lpo/ paths).
+probe: docs/survey/probes/doe-programs.md

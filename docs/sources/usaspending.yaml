@@ -1,0 +1,21 @@
+id: usaspending
+name: USAspending.gov
+owner: US Treasury (Bureau of the Fiscal Service)
+access: api            # plus bulk: https://files.usaspending.gov/award_data_archive/ and /api/v2/bulk_download/
+endpoint: https://api.usaspending.gov/api/v2/   # POST search/spending_by_award/, GET awards/<generated_internal_id>/, POST transactions/
+auth: none
+rate_limit: unpublished; no throttling seen at 1 req/s over ~70 calls; self-limit 2 req/s
+licence: US public domain (federal spending data)
+robots: n/a (api.usaspending.gov/robots.txt 404)
+yields: [grant/cooperative-agreement/contract/loan awards; award_amount (obligated), total_outlays, non_federal_funding (cost share), total_funding, subaward_count, period of performance, assistance_listing (81.121 NE R&D, 81.049 SC), recipient UEI, awarding sub-agency, transaction modifications with dates]
+identifiers: [fain/piid ("DENE0009040"), generated_internal_id (ASST_NON_<fain>_<agency>), uei, recipient_hash, assistance_listing]
+cadence: DOE files monthly; API refreshed daily-weekly (awards/last_updated endpoint); sample last_modified 2026-09-22
+tier: A
+known_gaps: >
+  Search window floor 2007-10-01 (older via bulk). Keyword/recipient search is token text match: need recipient-name aliases.
+  award_type_codes must be from ONE group per call (grants 02-05, loans 07-08, contracts A-D, direct 06/10, other 09/11), loans sort key is "Loan Value".
+  TerraPower ARDP award sits under recipient "US SFR OWNER LLC" (DENE0009054, $1.697B obligated, $972M outlaid), not TerraPower.
+  Absent from search: Milestone-Based Fusion Development awards (CFS, Zap, etc.), Kairos Hermes ARDP risk-reduction ($303M DOE share per DOE page), Westinghouse eVinci: not retrievable by name or description.
+  Obligation != programme announcement amount (ARPA-E selection amount differs from obligated). Lab FWP/M&O work is not company level. Subawards partial.
+  No USAspending results for TAE or Aalo (no DOE financial assistance recorded under those names).
+probe: docs/survey/probes/usaspending.md

@@ -1,0 +1,287 @@
+company: radiant-nuclear
+name: Radiant Industries (Radiant Nuclear)
+sector: fission
+notes: "Radiant Industries, Inc. (SEC CIK 1914078), Kaleidos 1 MWe microreactor, El Segundo CA. Census slug radiant-nuclear. POLICY P2: radiantnuclear.com is ToS-forbidden. Wayback copies were tried (web.archive.org/web/2/ for series-d-announcement and series-b returned 404; series-c-close, /news and the availability API refused connections or returned 429), so NO radiantnuclear.com evidence is cited. Pre-policy probe snapshots of radiantnuclear.com (072c5b0f991a, 5d85cdd2e8a9, 62dbbd3d7344) are deliberately not used. Every amount rests on independent sources (SEC Form D, Orrick, SiliconANGLE, DCVC, USV, USAspending). WebSearch budget was exhausted and Exa was rate limited, so discovery was limited to URLs already known. GAPS: seed rounds (2020-2021, aggregator-only figures of $1.2M and $6M, not recorded); Series B and the Series C extension have no company/investor release in evidence (company page forbidden); Series D participants beyond the two leads are unnamed (\"current investors\"); DOE HALEU allocation and NRIC DOME support are not evidenced here (no fetched primary page) and carry no amounts; the DOE Reactor Pilot Program states no federal money. CONFLICTS: (1) Series A: USV says USV Climate Fund led a \"$10mm round\"; Form D total sold is $12.62M (aggregator says $13M); ledger uses the Form D figure. (2) Series C: DCVC says $100M; Form D (2024-11-15) $100.0M; the aggregator startupintros shows $170M, which appears to combine the Nov 2024 round with the 2025 Form D tranche ($66.0M, signed 2025-06-10). (3) Series D: Orrick/SiliconANGLE say \"more than $300 million\"; the Form D filed 2025-12-29 shows $268.8M sold of $350.0M offered (first sale 2025-12-15), probably a partial-close snapshot. Ledger records \">$300M\" and does not add the Form D total. The 2025-06-10 event (radiant-series-c-extension-2025) is an SEC Form D (first sale 2025-02-13) with no round label in the filing and no investor names; it is likely the Series C close/extension but that is unverified (company page forbidden). Participant lists for Series B and Series C come from startupintros.com (aggregator, basis reported, single source, may be incomplete or imperfect); review before publishing. Decisive Point-Radiant Industries I/II SPVs (CIK 2030456, 2126203; II sold $7.85M, filed 2026-06-24) are investor vehicles, not Radiant rounds, and are not recorded as events. Form D amounts are totals sold, not necessarily new in a single announced round. Form D signature date is used as announced_on where no release was fetched.\n VERIFIER (2026-10-05): removed 12 participants that rested only on the startupintros.com aggregator (Series B: Andreessen Horowitz, Founders Fund, Alumni Ventures, Lux Capital, Initialized Capital; Series C: Chevron Technology Ventures, Andreessen Horowitz, Founders Fund, Union Square Ventures, Draper Associates, Boost VC, Decisive Point). The aggregator Series C page merges the Nov 2024 round with the 2025 tranche ($170M) and appears to mix in later (Series D era) investors, so it cannot place an investor in a round; these names are leads for a future pass with a primary or investor source. Series C amount now also carries the Form D (signed 2024-11-15, $99,999,999 sold, first sale 2024-10-23). The $66.0M 2025 Form D (first sale 2025-02-13) is consistent with a Series C second close (SiliconANGLE: Series D came \"six months after its Series C\") and is a separate offering, not a duplicate of the $100M."
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: '13 corrections: 12 aggregator-only participants removed (5 Series B, 7 Series C); Series C amount gained primary Form D evidence. Amounts checked against Form D: A $12.62M, B $40.71M, C $100M, 2025 tranche $66.05M; Series D kept at >$300M (press) with the Form D $268.8M partial sale noted. Not confirmed: Series A/B round labels rest on the aggregator; the 2025 $66M tranche label; Series D participants beyond Draper and Boost; Army $750M (single investor-blog source, agreement only).'
+events:
+- id: radiant-series-a-2022
+  instrument: equity
+  round_label: Series A
+  announced_on: 2022-03-09
+  amount:
+    amount: 12619987
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: c409fb8f3631e5498a61319a76f280b43ea5e3c9f7284767f7741032d7a27e07
+    quote: 0 12619987 12619987 0
+    basis: disclosed
+  - field: announced_on
+    snapshot: 373ad10cfb5165655a7e2aadb56ab74ed58cbbe4a6a28deb18bda8b3c4f71c0c
+    quote: By Fred Wilson — March 9, 2022
+    basis: reported
+  - field: round_label
+    snapshot: d2390a8a644b3054b7dab1ab27cb867f8d46dcc95914461f49bf9dbf7871e99b
+    quote: Radiant - $13M Series A
+    basis: reported
+  participants:
+  - investor: Union Square Ventures
+    investor_slug: union-square-ventures
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 373ad10cfb5165655a7e2aadb56ab74ed58cbbe4a6a28deb18bda8b3c4f71c0c
+      quote: USV’s Climate Fund recently led a $10mm round that will take Radiant through a number of important milestones
+      basis: reported
+- id: radiant-series-b-2023
+  instrument: equity
+  round_label: Series B
+  announced_on: 2023-04-18
+  amount:
+    amount: 40714963
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: 006d51f52b2f377d01e8dbff0bf38ef829741ea08f14242120b80a962984c35a
+    quote: 45075413 40714963 4360450
+    basis: disclosed
+  - field: announced_on
+    snapshot: 006d51f52b2f377d01e8dbff0bf38ef829741ea08f14242120b80a962984c35a
+    quote: Chief Executive Officer 2023-04-18
+    basis: disclosed
+  - field: round_label
+    snapshot: c3cff89aa90103411bfd24e64f0e727a0986f9d592cf3adea3e6345c560a89f2
+    quote: Radiant - $40M Series B
+    basis: reported
+- id: radiant-series-c-2024
+  instrument: equity
+  round_label: Series C
+  announced_on: 2024-11-14
+  amount:
+    amount: 100000000
+    currency: USD
+    qualifier: exact
+  use_of_proceeds: Complete the Kaleidos Development Unit reactor and conduct fueled demonstration tests in 2026
+  evidence:
+  - field: amount
+    snapshot: 138f6d7a8b708b2e4fffb1377086550ee614c4b34325cafc43f6416d968a7224
+    quote: DCVC Climate has led a $ 100 million Series C funding round for the company
+    basis: reported
+  - field: announced_on
+    snapshot: 138f6d7a8b708b2e4fffb1377086550ee614c4b34325cafc43f6416d968a7224
+    quote: 14 Nov 2024
+    basis: reported
+  - field: round_label
+    snapshot: 138f6d7a8b708b2e4fffb1377086550ee614c4b34325cafc43f6416d968a7224
+    quote: DCVC Climate has led a $ 100 million Series C funding round for the company
+    basis: reported
+  - field: use_of_proceeds
+    snapshot: 138f6d7a8b708b2e4fffb1377086550ee614c4b34325cafc43f6416d968a7224
+    quote: Radiant will complete its Kaleidos Development Unit reactor and will conduct fueled demon­stra­tion tests in 2026
+    basis: reported
+  - field: amount
+    snapshot: 3178f30407c3f890708d8ebab97c78bc541f1af8afec258585431888aa7644f8
+    quote: 0 99999999 99999999 0
+    basis: disclosed
+  participants:
+  - investor: DCVC Climate
+    investor_slug: dcvc
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 138f6d7a8b708b2e4fffb1377086550ee614c4b34325cafc43f6416d968a7224
+      quote: DCVC Climate has led a $ 100 million Series C funding round for the company
+      basis: reported
+- id: radiant-series-c-extension-2025
+  instrument: equity
+  round_label: null
+  announced_on: 2025-06-10
+  amount:
+    amount: 66049991
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: 34d3b7dcdb24586040cbc6a11849a2d370c865237f3f3fa30ac304b42b7dfc87
+    quote: 0 66049991 66049991 0
+    basis: disclosed
+  - field: announced_on
+    snapshot: 34d3b7dcdb24586040cbc6a11849a2d370c865237f3f3fa30ac304b42b7dfc87
+    quote: Chief Operating Officer 2025-06-10
+    basis: disclosed
+- id: radiant-series-d-2025
+  instrument: equity
+  round_label: Series D
+  announced_on: 2025-12-17
+  amount:
+    amount: 300000000
+    currency: USD
+    qualifier: over
+  use_of_proceeds: Scale commercialization; build the R-50 factory in Oak Ridge, Tennessee
+  evidence:
+  - field: amount
+    snapshot: 0bc643c1ed44ad2a01f85d5f33f9d6c58e10c7de0fbc209df8d7029413e36254
+    quote: has successfully closed a Series D financing raising more than $300 million
+    basis: reported
+  - field: amount
+    snapshot: f8b9b3565d9e4521d26ffd3a31ce9405d1c2bf7c80c66e9f864f088e422df3ce
+    quote: said Wednesday it has raised more than $300 million in a late-stage funding round
+    basis: reported
+  - field: announced_on
+    snapshot: 0bc643c1ed44ad2a01f85d5f33f9d6c58e10c7de0fbc209df8d7029413e36254
+    quote: December.17.2025
+    basis: reported
+  - field: round_label
+    snapshot: 0bc643c1ed44ad2a01f85d5f33f9d6c58e10c7de0fbc209df8d7029413e36254
+    quote: has successfully closed a Series D financing
+    basis: reported
+  - field: use_of_proceeds
+    snapshot: 0bc643c1ed44ad2a01f85d5f33f9d6c58e10c7de0fbc209df8d7029413e36254
+    quote: prepares to break ground early next year on its recently announced R-50 factory in Oak Ridge, Tennessee
+    basis: reported
+  participants:
+  - investor: Draper Associates
+    investor_slug: draper-associates
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 0bc643c1ed44ad2a01f85d5f33f9d6c58e10c7de0fbc209df8d7029413e36254
+      quote: The round was led by Draper Associates and Boost VC
+      basis: reported
+  - investor: Boost VC
+    investor_slug: boost-vc
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 0bc643c1ed44ad2a01f85d5f33f9d6c58e10c7de0fbc209df8d7029413e36254
+      quote: The round was led by Draper Associates and Boost VC
+      basis: reported
+- id: radiant-doe-sttr-trisofuel
+  instrument: grant
+  announced_on: 2022-07-18
+  amount:
+    amount: 1348048
+    currency: USD
+    qualifier: exact
+  obligated_usd: 1348048
+  disbursed_usd: 1348048
+  program: DOE Office of Science STTR (CFDA 81.049), TRISO fuel performance modeling
+  evidence:
+  - field: amount
+    snapshot: f70913f45b2fa0164b81db71c6d4e3d18f6af0d82b87b62dec3b60f46f9c8550
+    quote: '"Award Amount":1348048.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: f70913f45b2fa0164b81db71c6d4e3d18f6af0d82b87b62dec3b60f46f9c8550
+    quote: '"Base Obligation Date":"2022-07-18"'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: f70913f45b2fa0164b81db71c6d4e3d18f6af0d82b87b62dec3b60f46f9c8550
+      quote: '"Awarding Agency":"Department of Energy"'
+      basis: disclosed
+- id: radiant-usaf-fa864923p0464
+  instrument: grant
+  announced_on: 2023-02-08
+  amount:
+    amount: 1249967
+    currency: USD
+    qualifier: exact
+  obligated_usd: 1249967
+  program: US Air Force contract FA864923P0464 (SBIR Phase II per docs/survey/probes/sbir.md), microreactor installation energy resilience
+  evidence:
+  - field: amount
+    snapshot: fdde8207282a509ddee633feea023b9375c3136ed9696dc73e71eb3ec079a1e1
+    quote: '"Award Amount":1249967.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: fdde8207282a509ddee633feea023b9375c3136ed9696dc73e71eb3ec079a1e1
+    quote: '"Base Obligation Date":"2023-02-08"'
+    basis: disclosed
+  participants:
+  - investor: Department of the Air Force
+    investor_slug: dod-afrl
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: fdde8207282a509ddee633feea023b9375c3136ed9696dc73e71eb3ec079a1e1
+      quote: '"Awarding Sub Agency":"Department of the Air Force"'
+      basis: disclosed
+- id: radiant-usaf-fa864921p1143
+  instrument: grant
+  announced_on: 2021-04-16
+  amount:
+    amount: 45299
+    currency: USD
+    qualifier: exact
+  obligated_usd: 45299
+  program: US Air Force contract FA864921P1143 (SBIR Phase I per docs/survey/probes/sbir.md), portable microreactor fleet simulation
+  evidence:
+  - field: amount
+    snapshot: fdde8207282a509ddee633feea023b9375c3136ed9696dc73e71eb3ec079a1e1
+    quote: '"Award Amount":45299.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: fdde8207282a509ddee633feea023b9375c3136ed9696dc73e71eb3ec079a1e1
+    quote: '"Base Obligation Date":"2021-04-16"'
+    basis: disclosed
+  participants:
+  - investor: Department of the Air Force
+    investor_slug: dod-afrl
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: fdde8207282a509ddee633feea023b9375c3136ed9696dc73e71eb3ec079a1e1
+      quote: '"Awarding Sub Agency":"Department of the Air Force"'
+      basis: disclosed
+agreements:
+- id: radiant-army-750m-2026
+  counterparty: U.S. Army
+  counterparty_slug: dod-army
+  type: gov_contract
+  binding: definitive
+  announced_on: 2026-08-26
+  value:
+    amount: 750000000
+    currency: USD
+    qualifier: exact
+  summary: Award to provide 15 microreactors to the U.S. Army, first delivery 2028. Single source (DCVC investor post); not corroborated by an Army or trade-press page, treat as reported.
+  evidence:
+  - field: agreement
+    snapshot: 6818c19405cceb10a16d26fcdc02168cdc55dba82800b4758a2de4ff04cd4bd3
+    quote: Radiant was just awarded $ 750 million to provide 15 microre­ac­tors to the U.S. Army, with first delivery in 2028
+    basis: reported
+- id: radiant-equinix-20-reactors
+  counterparty: Equinix
+  counterparty_slug: equinix
+  type: offtake
+  binding: loi
+  announced_on: 2025-12-18
+  summary: Deal with Equinix to purchase 20 reactors as reported by SiliconANGLE; binding level and original announcement date not verified (set conservatively to loi; date is the article date).
+  evidence:
+  - field: agreement
+    snapshot: f8b9b3565d9e4521d26ffd3a31ce9405d1c2bf7c80c66e9f864f088e422df3ce
+    quote: The company has already secured a deal with Equinix Inc., a global data center and interconnection provider, to purchase 20 reactors.
+    basis: reported
+- id: radiant-doe-reactor-pilot
+  counterparty: DOE Office of Nuclear Energy
+  counterparty_slug: doe-ne
+  type: partnership
+  binding: mou
+  announced_on: 2025-08-12
+  summary: Selected for DOE Reactor Pilot Program (release dated August 12, 2025); no federal funding, company bears all costs.
+  evidence:
+  - field: agreement
+    snapshot: d92aed237e3d72eebae1422dcd91a89156bb7ec851d5eb319adbd1bf1c0d3730
+    quote: Each company will be responsible for all costs associated with designing, manufacturing, constructing, operating, and decommissioning their test reactors.
+    basis: disclosed

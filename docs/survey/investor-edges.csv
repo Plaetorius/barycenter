@@ -1,0 +1,607 @@
+investor_slug,company_slug,round_label,date,role,amount_usd_if_disclosed,source_url,basis
+fifty-years,aalo-atomics,Seed,2023-04-11,lead,,https://www.aalo.com/post/aalo-atomics-raises-6-26m-seed-round,company_release
+valor-equity-partners,aalo-atomics,Seed,2023-04-11,participant,,https://www.aalo.com/post/aalo-atomics-raises-6-26m-seed-round,company_release
+earth-venture-capital,aalo-atomics,Series A,2024-07,participant,,https://www.aalo.com/post/aalo-atomics-raises-27m-series-a,company_release
+garage-capital,aalo-atomics,Series A,2024-07,participant,,https://www.aalo.com/post/aalo-atomics-raises-27m-series-a,company_release
+jeff-dean,aalo-atomics,Series A,2024-07,participant,,https://www.aalo.com/post/aalo-atomics-raises-27m-series-a,company_release
+tom-preston-werner,aalo-atomics,Series A,2024-07,participant,,https://www.aalo.com/post/aalo-atomics-raises-27m-series-a,company_release
+wayfinder,aalo-atomics,Series A,2024-07,participant,,https://www.aalo.com/post/aalo-atomics-raises-27m-series-a,company_release
+alumni-ventures,aalo-atomics,Series A,2024-08,participant,,https://www.aalo.com/post/aalo-atomics-raises-27m-series-a,company_release
+crosscut-ventures,aalo-atomics,Series A,2024-08,participant,,https://www.aalo.com/post/aalo-atomics-raises-27m-series-a,company_release
+fifty-years,aalo-atomics,Series A,2024-08,lead,,https://www.aalo.com/post/aalo-atomics-raises-27m-series-a,company_release
+harpoon-ventures,aalo-atomics,Series A,2024-08,participant,,https://www.aalo.com/post/aalo-atomics-raises-27m-series-a,company_release
+nucleation-capital,aalo-atomics,Series A,2024-08,participant,,https://www.aalo.com/post/aalo-atomics-raises-27m-series-a,company_release
+snr,aalo-atomics,Series A,2024-08,participant,,https://www.aalo.com/post/aalo-atomics-raises-27m-series-a,company_release
+valor-equity-partners,aalo-atomics,Series A,2024-08,lead,,https://www.aalo.com/post/aalo-atomics-raises-27m-series-a,company_release
+alumni-ventures,aalo-atomics,Series B,2025-08-19,participant,,https://techcrunch.com/2025/08/19/aalo-atomics-raises-100m-to-build-a-microreactor-and-data-center-together/,press
+crescent-enterprises,aalo-atomics,Series B,2025-08-19,participant,,https://techcrunch.com/2025/08/19/aalo-atomics-raises-100m-to-build-a-microreactor-and-data-center-together/,press
+crosscut-ventures,aalo-atomics,Series B,2025-08-19,participant,,https://techcrunch.com/2025/08/19/aalo-atomics-raises-100m-to-build-a-microreactor-and-data-center-together/,press
+fifty-years,aalo-atomics,Series B,2025-08-19,participant,,https://techcrunch.com/2025/08/19/aalo-atomics-raises-100m-to-build-a-microreactor-and-data-center-together/,press
+fine-structure-ventures,aalo-atomics,Series B,2025-08-19,participant,,https://techcrunch.com/2025/08/19/aalo-atomics-raises-100m-to-build-a-microreactor-and-data-center-together/,press
+gaingels,aalo-atomics,Series B,2025-08-19,participant,,https://techcrunch.com/2025/08/19/aalo-atomics-raises-100m-to-build-a-microreactor-and-data-center-together/,press
+harpoon-ventures,aalo-atomics,Series B,2025-08-19,participant,,https://techcrunch.com/2025/08/19/aalo-atomics-raises-100m-to-build-a-microreactor-and-data-center-together/,press
+hitachi-ventures,aalo-atomics,Series B,2025-08-19,participant,,https://techcrunch.com/2025/08/19/aalo-atomics-raises-100m-to-build-a-microreactor-and-data-center-together/,press
+kindred-ventures,aalo-atomics,Series B,2025-08-19,participant,,https://techcrunch.com/2025/08/19/aalo-atomics-raises-100m-to-build-a-microreactor-and-data-center-together/,press
+mcj,aalo-atomics,Series B,2025-08-19,participant,,https://techcrunch.com/2025/08/19/aalo-atomics-raises-100m-to-build-a-microreactor-and-data-center-together/,press
+nrg,aalo-atomics,Series B,2025-08-19,participant,,https://techcrunch.com/2025/08/19/aalo-atomics-raises-100m-to-build-a-microreactor-and-data-center-together/,press
+nucleation-capital,aalo-atomics,Series B,2025-08-19,participant,,https://techcrunch.com/2025/08/19/aalo-atomics-raises-100m-to-build-a-microreactor-and-data-center-together/,press
+perpetual-vc,aalo-atomics,Series B,2025-08-19,participant,,https://techcrunch.com/2025/08/19/aalo-atomics-raises-100m-to-build-a-microreactor-and-data-center-together/,press
+tishman-speyer,aalo-atomics,Series B,2025-08-19,participant,,https://techcrunch.com/2025/08/19/aalo-atomics-raises-100m-to-build-a-microreactor-and-data-center-together/,press
+valor-equity-partners,aalo-atomics,Series B,2025-08-19,lead,,https://techcrunch.com/2025/08/19/aalo-atomics-raises-100m-to-build-a-microreactor-and-data-center-together/,press
+vamosventures,aalo-atomics,Series B,2025-08-19,participant,,https://techcrunch.com/2025/08/19/aalo-atomics-raises-100m-to-build-a-microreactor-and-data-center-together/,press
+caffeinated-capital,antares,"Seed (lead, per Series A release)",2023-10,lead,,https://antaresindustries.com/updates/antares-secures-30-million-series-a-to-accelerate-defense-space-and-industrial-focused-nuclear-energy,company_release
+alt-capital,antares,Series A,2024-10-30,co-lead,,https://antaresindustries.com/updates/antares-secures-30-million-series-a-to-accelerate-defense-space-and-industrial-focused-nuclear-energy,company_release
+banter-capital,antares,Series A,2024-10-30,participant,,https://antaresindustries.com/updates/antares-secures-30-million-series-a-to-accelerate-defense-space-and-industrial-focused-nuclear-energy,company_release
+boxgroup,antares,Series A,2024-10-30,participant,,https://antaresindustries.com/updates/antares-secures-30-million-series-a-to-accelerate-defense-space-and-industrial-focused-nuclear-energy,company_release
+caffeinated-capital,antares,Series A,2024-10-30,co-lead,,https://antaresindustries.com/updates/antares-secures-30-million-series-a-to-accelerate-defense-space-and-industrial-focused-nuclear-energy,company_release
+rogue,antares,Series A,2024-10-30,participant,,https://antaresindustries.com/updates/antares-secures-30-million-series-a-to-accelerate-defense-space-and-industrial-focused-nuclear-energy,company_release
+shine-capital,antares,Series A,2024-10-30,participant,,https://antaresindustries.com/updates/antares-secures-30-million-series-a-to-accelerate-defense-space-and-industrial-focused-nuclear-energy,company_release
+shrug,antares,Series A,2024-10-30,participant,,https://antaresindustries.com/updates/antares-secures-30-million-series-a-to-accelerate-defense-space-and-industrial-focused-nuclear-energy,company_release
+uncommon-capital,antares,Series A,2024-10-30,participant,,https://antaresindustries.com/updates/antares-secures-30-million-series-a-to-accelerate-defense-space-and-industrial-focused-nuclear-energy,company_release
+alt-capital,antares,Series B,2025-12-02,participant,,https://www.ans.org/news/2025-12-04/article-7594/antares-raises-funds-for-microreactor-development/,press
+caffeinated-capital,antares,Series B,2025-12-02,participant,,https://www.ans.org/news/2025-12-04/article-7594/antares-raises-funds-for-microreactor-development/,press
+fiftythree-stations,antares,Series B,2025-12-02,participant,,https://www.ans.org/news/2025-12-04/article-7594/antares-raises-funds-for-microreactor-development/,press
+industrious-ventures,antares,Series B,2025-12-02,participant,,https://www.ans.org/news/2025-12-04/article-7594/antares-raises-funds-for-microreactor-development/,press
+shine-capital,antares,Series B,2025-12-02,lead,,https://www.ans.org/news/2025-12-04/article-7594/antares-raises-funds-for-microreactor-development/,press
+caffeinated-capital,antares,Series C,2026-07-27,co-lead,,https://finance.yahoo.com/energy/articles/antares-raises-470m-series-c-113000270.html,company_release
+industrious-ventures,antares,Series C,2026-07-27,participant,,https://finance.yahoo.com/energy/articles/antares-raises-470m-series-c-113000270.html,company_release
+paradigm,antares,Series C,2026-07-27,co-lead,,https://finance.yahoo.com/energy/articles/antares-raises-470m-series-c-113000270.html,company_release
+point72-ventures,antares,Series C,2026-07-27,participant,,https://finance.yahoo.com/energy/articles/antares-raises-470m-series-c-113000270.html,company_release
+shine-capital,antares,Series C,2026-07-27,participant,,https://finance.yahoo.com/energy/articles/antares-raises-470m-series-c-113000270.html,company_release
+angular-ventures,blue-energy,Series A,2024-10-09,participant,,https://finance.yahoo.com/news/blue-energy-secures-45m-funding-155114317.html,press
+at-one-ventures,blue-energy,Series A,2024-10-09,co-lead,,https://finance.yahoo.com/news/blue-energy-secures-45m-funding-155114317.html,press
+nucleation-capital,blue-energy,Series A,2024-10-09,participant,,https://finance.yahoo.com/news/blue-energy-secures-45m-funding-155114317.html,press
+propeller-ventures,blue-energy,Series A,2024-10-09,participant,,https://finance.yahoo.com/news/blue-energy-secures-45m-funding-155114317.html,press
+starlight-ventures,blue-energy,Series A,2024-10-09,participant,,https://finance.yahoo.com/news/blue-energy-secures-45m-funding-155114317.html,press
+tamarack-global,blue-energy,Series A,2024-10-09,participant,,https://finance.yahoo.com/news/blue-energy-secures-45m-funding-155114317.html,press
+the-engine,blue-energy,Series A,2024-10-09,co-lead,,https://finance.yahoo.com/news/blue-energy-secures-45m-funding-155114317.html,press
+at-one-ventures,blue-energy,Growth round (equity+debt),2026-04-21,participant,,https://techcrunch.com/2026/04/21/blue-energy-raises-380m-to-build-grid-scale-nuclear-reactors-in-shipyards/,press
+tamarack-global,blue-energy,Growth round (equity+debt),2026-04-21,participant,,https://techcrunch.com/2026/04/21/blue-energy-raises-380m-to-build-grid-scale-nuclear-reactors-in-shipyards/,press
+the-engine,blue-energy,Growth round (equity+debt),2026-04-21,participant,,https://techcrunch.com/2026/04/21/blue-energy-raises-380m-to-build-grid-scale-nuclear-reactors-in-shipyards/,press
+vxi-capital,blue-energy,Growth round (equity+debt),2026-04-21,lead,,https://techcrunch.com/2026/04/21/blue-energy-raises-380m-to-build-grid-scale-nuclear-reactors-in-shipyards/,press
+eni,commonwealth-fusion-systems,Seed/initial (Eni),2018-03,lead,50000000,https://en.wikipedia.org/wiki/Commonwealth_Fusion_Systems,wikipedia
+breakthrough-energy-ventures,commonwealth-fusion-systems,Series A,2019-06,existing,,https://cfs.energy/news-and-media/close-series-a-round/,company_release
+eni,commonwealth-fusion-systems,Series A,2019-06,existing,,https://cfs.energy/news-and-media/close-series-a-round/,company_release
+future-ventures,commonwealth-fusion-systems,Series A,2019-06,participant,,https://cfs.energy/news-and-media/close-series-a-round/,company_release
+khosla-ventures,commonwealth-fusion-systems,Series A,2019-06,participant,,https://cfs.energy/news-and-media/close-series-a-round/,company_release
+lowercarbon-capital,commonwealth-fusion-systems,Series A,2019-06,participant,,https://cfs.energy/news-and-media/close-series-a-round/,company_release
+moore-strategic-ventures,commonwealth-fusion-systems,Series A,2019-06,participant,,https://cfs.energy/news-and-media/close-series-a-round/,company_release
+safar-partners,commonwealth-fusion-systems,Series A,2019-06,participant,,https://cfs.energy/news-and-media/close-series-a-round/,company_release
+schooner-capital,commonwealth-fusion-systems,Series A,2019-06,participant,,https://cfs.energy/news-and-media/close-series-a-round/,company_release
+starlight-ventures,commonwealth-fusion-systems,Series A,2019-06,participant,,https://cfs.energy/news-and-media/close-series-a-round/,company_release
+the-engine,commonwealth-fusion-systems,Series A,2019-06,existing,,https://cfs.energy/news-and-media/close-series-a-round/,company_release
+breakthrough-energy-ventures,commonwealth-fusion-systems,Series A2,2020-05,existing,,https://www.wfmz.com/news/pr_newswire/pr_newswire_business/commonwealth-fusion-systems-raises-84-million-in-a2-round/article_8b512220-3f94-5492-bcc1-0a546afb7728.html,company_release
+devonshire-investors,commonwealth-fusion-systems,Series A2,2020-05,participant,,https://www.wfmz.com/news/pr_newswire/pr_newswire_business/commonwealth-fusion-systems-raises-84-million-in-a2-round/article_8b512220-3f94-5492-bcc1-0a546afb7728.html,company_release
+eni,commonwealth-fusion-systems,Series A2,2020-05,existing,,https://www.wfmz.com/news/pr_newswire/pr_newswire_business/commonwealth-fusion-systems-raises-84-million-in-a2-round/article_8b512220-3f94-5492-bcc1-0a546afb7728.html,company_release
+equinor,commonwealth-fusion-systems,Series A2,2020-05,participant,,https://www.wfmz.com/news/pr_newswire/pr_newswire_business/commonwealth-fusion-systems-raises-84-million-in-a2-round/article_8b512220-3f94-5492-bcc1-0a546afb7728.html,company_release
+future-ventures,commonwealth-fusion-systems,Series A2,2020-05,existing,,https://www.wfmz.com/news/pr_newswire/pr_newswire_business/commonwealth-fusion-systems-raises-84-million-in-a2-round/article_8b512220-3f94-5492-bcc1-0a546afb7728.html,company_release
+hostplus,commonwealth-fusion-systems,Series A2,2020-05,existing,,https://www.wfmz.com/news/pr_newswire/pr_newswire_business/commonwealth-fusion-systems-raises-84-million-in-a2-round/article_8b512220-3f94-5492-bcc1-0a546afb7728.html,company_release
+khosla-ventures,commonwealth-fusion-systems,Series A2,2020-05,existing,,https://www.wfmz.com/news/pr_newswire/pr_newswire_business/commonwealth-fusion-systems-raises-84-million-in-a2-round/article_8b512220-3f94-5492-bcc1-0a546afb7728.html,company_release
+moore-strategic-ventures,commonwealth-fusion-systems,Series A2,2020-05,existing,,https://www.wfmz.com/news/pr_newswire/pr_newswire_business/commonwealth-fusion-systems-raises-84-million-in-a2-round/article_8b512220-3f94-5492-bcc1-0a546afb7728.html,company_release
+safar-partners,commonwealth-fusion-systems,Series A2,2020-05,existing,,https://www.wfmz.com/news/pr_newswire/pr_newswire_business/commonwealth-fusion-systems-raises-84-million-in-a2-round/article_8b512220-3f94-5492-bcc1-0a546afb7728.html,company_release
+schooner-capital,commonwealth-fusion-systems,Series A2,2020-05,existing,,https://www.wfmz.com/news/pr_newswire/pr_newswire_business/commonwealth-fusion-systems-raises-84-million-in-a2-round/article_8b512220-3f94-5492-bcc1-0a546afb7728.html,company_release
+starlight-ventures,commonwealth-fusion-systems,Series A2,2020-05,existing,,https://www.wfmz.com/news/pr_newswire/pr_newswire_business/commonwealth-fusion-systems-raises-84-million-in-a2-round/article_8b512220-3f94-5492-bcc1-0a546afb7728.html,company_release
+temasek,commonwealth-fusion-systems,Series A2,2020-05,lead,,https://www.wfmz.com/news/pr_newswire/pr_newswire_business/commonwealth-fusion-systems-raises-84-million-in-a2-round/article_8b512220-3f94-5492-bcc1-0a546afb7728.html,company_release
+the-engine,commonwealth-fusion-systems,Series A2,2020-05,existing,,https://www.wfmz.com/news/pr_newswire/pr_newswire_business/commonwealth-fusion-systems-raises-84-million-in-a2-round/article_8b512220-3f94-5492-bcc1-0a546afb7728.html,company_release
+benioff-time-ventures,commonwealth-fusion-systems,Series B,2021-12,participant,,https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-1-8-billion-in-funding-to-commercialize-fusion-energy-301434560.html,company_release
+bill-gates,commonwealth-fusion-systems,Series B,2021-12,participant,,https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-1-8-billion-in-funding-to-commercialize-fusion-energy-301434560.html,company_release
+breakthrough-energy-ventures,commonwealth-fusion-systems,Series B,2021-12,existing,,https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-1-8-billion-in-funding-to-commercialize-fusion-energy-301434560.html,company_release
+coatue,commonwealth-fusion-systems,Series B,2021-12,participant,,https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-1-8-billion-in-funding-to-commercialize-fusion-energy-301434560.html,company_release
+dfj-growth,commonwealth-fusion-systems,Series B,2021-12,participant,,https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-1-8-billion-in-funding-to-commercialize-fusion-energy-301434560.html,company_release
+emerson-collective,commonwealth-fusion-systems,Series B,2021-12,participant,,https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-1-8-billion-in-funding-to-commercialize-fusion-energy-301434560.html,company_release
+eni,commonwealth-fusion-systems,Series B,2021-12,existing,,https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-1-8-billion-in-funding-to-commercialize-fusion-energy-301434560.html,company_release
+equinor,commonwealth-fusion-systems,Series B,2021-12,existing,,https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-1-8-billion-in-funding-to-commercialize-fusion-energy-301434560.html,company_release
+fine-structure-ventures,commonwealth-fusion-systems,Series B,2021-12,existing,,https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-1-8-billion-in-funding-to-commercialize-fusion-energy-301434560.html,company_release
+footprint-coalition,commonwealth-fusion-systems,Series B,2021-12,participant,,https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-1-8-billion-in-funding-to-commercialize-fusion-energy-301434560.html,company_release
+future-ventures,commonwealth-fusion-systems,Series B,2021-12,existing,,https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-1-8-billion-in-funding-to-commercialize-fusion-energy-301434560.html,company_release
+google,commonwealth-fusion-systems,Series B,2021-12,participant,,https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-1-8-billion-in-funding-to-commercialize-fusion-energy-301434560.html,company_release
+hostplus,commonwealth-fusion-systems,Series B,2021-12,existing,,https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-1-8-billion-in-funding-to-commercialize-fusion-energy-301434560.html,company_release
+jimco,commonwealth-fusion-systems,Series B,2021-12,participant,,https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-1-8-billion-in-funding-to-commercialize-fusion-energy-301434560.html,company_release
+john-doerr,commonwealth-fusion-systems,Series B,2021-12,participant,,https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-1-8-billion-in-funding-to-commercialize-fusion-energy-301434560.html,company_release
+js-capital,commonwealth-fusion-systems,Series B,2021-12,participant,,https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-1-8-billion-in-funding-to-commercialize-fusion-energy-301434560.html,company_release
+khosla-ventures,commonwealth-fusion-systems,Series B,2021-12,existing,,https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-1-8-billion-in-funding-to-commercialize-fusion-energy-301434560.html,company_release
+lowercarbon-capital,commonwealth-fusion-systems,Series B,2021-12,existing,,https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-1-8-billion-in-funding-to-commercialize-fusion-energy-301434560.html,company_release
+moore-strategic-ventures,commonwealth-fusion-systems,Series B,2021-12,existing,,https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-1-8-billion-in-funding-to-commercialize-fusion-energy-301434560.html,company_release
+safar-partners,commonwealth-fusion-systems,Series B,2021-12,existing,,https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-1-8-billion-in-funding-to-commercialize-fusion-energy-301434560.html,company_release
+schooner-capital,commonwealth-fusion-systems,Series B,2021-12,existing,,https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-1-8-billion-in-funding-to-commercialize-fusion-energy-301434560.html,company_release
+senator-investment-group,commonwealth-fusion-systems,Series B,2021-12,participant,,https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-1-8-billion-in-funding-to-commercialize-fusion-energy-301434560.html,company_release
+soros-fund-management,commonwealth-fusion-systems,Series B,2021-12,existing,,https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-1-8-billion-in-funding-to-commercialize-fusion-energy-301434560.html,company_release
+starlight-ventures,commonwealth-fusion-systems,Series B,2021-12,existing,,https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-1-8-billion-in-funding-to-commercialize-fusion-energy-301434560.html,company_release
+temasek,commonwealth-fusion-systems,Series B,2021-12,existing,,https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-1-8-billion-in-funding-to-commercialize-fusion-energy-301434560.html,company_release
+the-engine,commonwealth-fusion-systems,Series B,2021-12,existing,,https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-1-8-billion-in-funding-to-commercialize-fusion-energy-301434560.html,company_release
+tiger-global,commonwealth-fusion-systems,Series B,2021-12,lead,,https://www.prnewswire.com/news-releases/commonwealth-fusion-systems-raises-1-8-billion-in-funding-to-commercialize-fusion-energy-301434560.html,company_release
+bill-gates,commonwealth-fusion-systems,Series B2,2025-08,existing,,https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/,company_release
+breakthrough-energy-ventures,commonwealth-fusion-systems,Series B2,2025-08,existing,,https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/,company_release
+brevan-howard,commonwealth-fusion-systems,Series B2,2025-08,participant,,https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/,company_release
+counterpoint-global,commonwealth-fusion-systems,Series B2,2025-08,participant,,https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/,company_release
+emerson-collective,commonwealth-fusion-systems,Series B2,2025-08,existing,,https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/,company_release
+eni,commonwealth-fusion-systems,Series B2,2025-08,existing,,https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/,company_release
+eric-schmidt,commonwealth-fusion-systems,Series B2,2025-08,existing,,https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/,company_release
+ffa-private-bank,commonwealth-fusion-systems,Series B2,2025-08,participant,,https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/,company_release
+future-ventures,commonwealth-fusion-systems,Series B2,2025-08,existing,,https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/,company_release
+galaxy-interactive,commonwealth-fusion-systems,Series B2,2025-08,participant,,https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/,company_release
+gigascale-capital,commonwealth-fusion-systems,Series B2,2025-08,participant,,https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/,company_release
+google,commonwealth-fusion-systems,Series B2,2025-08,existing,,https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/,company_release
+hof-capital,commonwealth-fusion-systems,Series B2,2025-08,participant,,https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/,company_release
+hostplus,commonwealth-fusion-systems,Series B2,2025-08,existing,,https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/,company_release
+khosla-ventures,commonwealth-fusion-systems,Series B2,2025-08,existing,,https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/,company_release
+lowercarbon-capital,commonwealth-fusion-systems,Series B2,2025-08,existing,,https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/,company_release
+mitsui-mitsubishi-consortium,commonwealth-fusion-systems,Series B2,2025-08,participant,,https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/,company_release
+neva-sgr,commonwealth-fusion-systems,Series B2,2025-08,participant,,https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/,company_release
+nventures,commonwealth-fusion-systems,Series B2,2025-08,participant,,https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/,company_release
+planet-first-partners,commonwealth-fusion-systems,Series B2,2025-08,participant,,https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/,company_release
+safar-partners,commonwealth-fusion-systems,Series B2,2025-08,existing,,https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/,company_release
+stanley-druckenmiller,commonwealth-fusion-systems,Series B2,2025-08,participant,,https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/,company_release
+starlight-ventures,commonwealth-fusion-systems,Series B2,2025-08,existing,,https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/,company_release
+tiger-global,commonwealth-fusion-systems,Series B2,2025-08,existing,,https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/,company_release
+woori-technology,commonwealth-fusion-systems,Series B2,2025-08,participant,,https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/,company_release
+plynth-energy,commonwealth-fusion-systems,Minority stake (pre-$1B round),2026-06-11,unspecified,,https://www.cfs.energy/news-and-media/commonwealth-fusion-systems-announces-equity-investment-by-abu-dhabi-based-plynth-energy/,company_release
+hd-hyundai,commonwealth-fusion-systems,Equity round ($1B),2026-07-30,participant,,https://www.cfs.energy/news-and-media/commonwealth-fusion-systems-announces-equity-investment-by-hyundai-motor-group/,company_release
+eight-vc,deep-fission,Pre-seed,2024-08-22,lead,,https://www.businesswire.com/news/home/20240822455550/en/Breakthrough-Nuclear-Startup-Deep-Fission-Emerges-from-Stealth-Mode-with-%244M-in-Backing,company_release
+deep-future,deep-fission,Reverse merger + private placement,2025-09,participant,,https://www.ans.org/news/2025-09-08/article-7351/deep-fission-raises-30m-in-financing/,press
+ed-eisler,deep-fission,Reverse merger + private placement,2025-09,lead,,https://www.ans.org/news/2025-09-08/article-7351/deep-fission-raises-30m-in-financing/,press
+eight-vc,deep-fission,Reverse merger + private placement,2025-09,participant,,https://www.ans.org/news/2025-09-08/article-7351/deep-fission-raises-30m-in-financing/,press
+mark-tompkins-montrose,deep-fission,Reverse merger + private placement,2025-09,lead,,https://www.ans.org/news/2025-09-08/article-7351/deep-fission-raises-30m-in-financing/,press
+wave-function,deep-fission,Reverse merger + private placement,2025-09,participant,,https://www.ans.org/news/2025-09-08/article-7351/deep-fission-raises-30m-in-financing/,press
+deep-future,deep-fission,Private placement ($3.00/share) + reverse merger,2025-09-08,participant,,https://www.deepfission.com/newsroom/press-releases/detail/87/deep-fission-nuclear-completes-30m-financing-in-a-go-public-transaction,company_release
+ed-eisler,deep-fission,Private placement ($3.00/share) + reverse merger,2025-09-08,participant,,https://www.deepfission.com/newsroom/press-releases/detail/87/deep-fission-nuclear-completes-30m-financing-in-a-go-public-transaction,company_release
+eight-vc,deep-fission,Private placement ($3.00/share) + reverse merger,2025-09-08,participant,,https://www.deepfission.com/newsroom/press-releases/detail/87/deep-fission-nuclear-completes-30m-financing-in-a-go-public-transaction,company_release
+mark-tompkins-montrose,deep-fission,Private placement ($3.00/share) + reverse merger,2025-09-08,participant,,https://www.deepfission.com/newsroom/press-releases/detail/87/deep-fission-nuclear-completes-30m-financing-in-a-go-public-transaction,company_release
+wave-function,deep-fission,Private placement ($3.00/share) + reverse merger,2025-09-08,participant,,https://www.deepfission.com/newsroom/press-releases/detail/87/deep-fission-nuclear-completes-30m-financing-in-a-go-public-transaction,company_release
+blue-owl,deep-fission,Private placement,2026-02-10,participant,,https://pulse2.com/deep-fission-80-million-funding/,press
+ed-eisler,deep-fission,Private placement,2026-02-10,existing,,https://pulse2.com/deep-fission-80-million-funding/,press
+mark-tompkins-montrose,deep-fission,Private placement,2026-02-10,existing,,https://pulse2.com/deep-fission-80-million-funding/,press
+bdc-capital,general-fusion,Series B,2011,participant,,https://en.wikipedia.org/wiki/General_Fusion,wikipedia
+bezos-expeditions,general-fusion,Series B,2011,participant,,https://en.wikipedia.org/wiki/General_Fusion,wikipedia
+braemar-energy-ventures,general-fusion,Series B,2011,participant,,https://en.wikipedia.org/wiki/General_Fusion,wikipedia
+cenovus,general-fusion,Series B,2011,participant,,https://en.wikipedia.org/wiki/General_Fusion,wikipedia
+chrysalix,general-fusion,Series B,2011,participant,,https://en.wikipedia.org/wiki/General_Fusion,wikipedia
+entrepreneurs-fund,general-fusion,Series B,2011,participant,,https://en.wikipedia.org/wiki/General_Fusion,wikipedia
+pender,general-fusion,Series B,2011,participant,,https://en.wikipedia.org/wiki/General_Fusion,wikipedia
+khazanah,general-fusion,Series C,2015,lead,,https://en.wikipedia.org/wiki/General_Fusion,wikipedia
+bezos-expeditions,general-fusion,Series E (part 1),2019,participant,,https://en.wikipedia.org/wiki/General_Fusion,wikipedia
+chrysalix,general-fusion,Series E (part 1),2019,participant,,https://en.wikipedia.org/wiki/General_Fusion,wikipedia
+temasek,general-fusion,Series E (part 1),2019,participant,,https://en.wikipedia.org/wiki/General_Fusion,wikipedia
+bdc-capital,general-fusion,Series E (part 2),2021,participant,,https://en.wikipedia.org/wiki/General_Fusion,wikipedia
+bezos-expeditions,general-fusion,Series E (part 2),2021,participant,,https://en.wikipedia.org/wiki/General_Fusion,wikipedia
+segra-capital,general-fusion,Series E (part 2),2021,participant,,https://en.wikipedia.org/wiki/General_Fusion,wikipedia
+thistledown,general-fusion,Series E (part 2),2021,participant,,https://en.wikipedia.org/wiki/General_Fusion,wikipedia
+bdc-capital,general-fusion,Series F (first close),2023,participant,,https://en.wikipedia.org/wiki/General_Fusion,wikipedia
+gic,general-fusion,Series F (first close),2023,participant,,https://en.wikipedia.org/wiki/General_Fusion,wikipedia
+chrysalix,general-fusion,Pay-to-play financing,2025-08-21,participant,,https://generalfusion.com/post/a-new-day-general-fusion-closes-oversubscribed-us22-million-financing-welcomes-new-board-members/,company_release
+gaingels,general-fusion,Pay-to-play financing,2025-08-21,participant,,https://generalfusion.com/post/a-new-day-general-fusion-closes-oversubscribed-us22-million-financing-welcomes-new-board-members/,company_release
+hatch,general-fusion,Pay-to-play financing,2025-08-21,participant,,https://generalfusion.com/post/a-new-day-general-fusion-closes-oversubscribed-us22-million-financing-welcomes-new-board-members/,company_release
+jimco,general-fusion,Pay-to-play financing,2025-08-21,participant,,https://generalfusion.com/post/a-new-day-general-fusion-closes-oversubscribed-us22-million-financing-welcomes-new-board-members/,company_release
+milfam,general-fusion,Pay-to-play financing,2025-08-21,participant,,https://generalfusion.com/post/a-new-day-general-fusion-closes-oversubscribed-us22-million-financing-welcomes-new-board-members/,company_release
+pender,general-fusion,Pay-to-play financing,2025-08-21,participant,,https://generalfusion.com/post/a-new-day-general-fusion-closes-oversubscribed-us22-million-financing-welcomes-new-board-members/,company_release
+presight-capital,general-fusion,Pay-to-play financing,2025-08-21,participant,,https://generalfusion.com/post/a-new-day-general-fusion-closes-oversubscribed-us22-million-financing-welcomes-new-board-members/,company_release
+segra-capital,general-fusion,Pay-to-play financing,2025-08-21,participant,,https://generalfusion.com/post/a-new-day-general-fusion-closes-oversubscribed-us22-million-financing-welcomes-new-board-members/,company_release
+thistledown,general-fusion,Pay-to-play financing,2025-08-21,participant,,https://generalfusion.com/post/a-new-day-general-fusion-closes-oversubscribed-us22-million-financing-welcomes-new-board-members/,company_release
+alimco-re,general-fusion,PIPE (Spring Valley Acquisition Corp. III merger),2026-07-10,participant,,https://www.sec.gov/Archives/edgar/data/0002074850/000110465926106033/gfuz-20260630xf1.htm,filing
+alyeska,general-fusion,PIPE (Spring Valley Acquisition Corp. III merger),2026-07-10,lead,,https://www.sec.gov/Archives/edgar/data/0002074850/000110465926106033/gfuz-20260630xf1.htm,filing
+dsn-ventures,general-fusion,PIPE (Spring Valley Acquisition Corp. III merger),2026-07-10,participant,,https://www.sec.gov/Archives/edgar/data/0002074850/000110465926106033/gfuz-20260630xf1.htm,filing
+persian-road-ii,general-fusion,PIPE (Spring Valley Acquisition Corp. III merger),2026-07-10,participant,,https://www.sec.gov/Archives/edgar/data/0002074850/000110465926106033/gfuz-20260630xf1.htm,filing
+wolf-hill-partners,general-fusion,PIPE (Spring Valley Acquisition Corp. III merger),2026-07-10,participant,,https://www.sec.gov/Archives/edgar/data/0002074850/000110465926106033/gfuz-20260630xf1.htm,filing
+mithril-capital,helion-energy,Seed,2014-08,lead,,https://techcrunch.com/2021/11/05/helion-series-e/,press
+y-combinator,helion-energy,Seed,2014-08,participant,,https://en.wikipedia.org/wiki/Helion_Energy,wikipedia
+sam-altman,helion-energy,Early investment (round unlabeled; investor since 2015),2015,unspecified,,https://www.helionenergy.com/newsroom/helion-raises-500m,company_release
+capricorn-investment-group,helion-energy,Series E,2021-11,existing,,https://www.helionenergy.com/articles/helion-raises-500m/,company_release
+dustin-moskovitz,helion-energy,Series E,2021-11,existing,,https://www.helionenergy.com/articles/helion-raises-500m/,company_release
+mithril-capital,helion-energy,Series E,2021-11,existing,,https://www.helionenergy.com/articles/helion-raises-500m/,company_release
+sam-altman,helion-energy,Series E,2021-11,lead,375000000,https://www.cnbc.com/2021/11/05/sam-altman-puts-375-million-into-fusion-start-up-helion-energy.html,press
+capricorn-investment-group,helion-energy,Series F,2025-01-28,existing,,https://www.helionenergy.com/newsroom/helion-announces-425m-series-f-investment-to-scale-commercialized-fusion-power,company_release
+dustin-moskovitz,helion-energy,Series F,2025-01-28,existing,,https://www.helionenergy.com/newsroom/helion-announces-425m-series-f-investment-to-scale-commercialized-fusion-power,company_release
+lightspeed,helion-energy,Series F,2025-01-28,participant,,https://www.helionenergy.com/newsroom/helion-announces-425m-series-f-investment-to-scale-commercialized-fusion-power,company_release
+mithril-capital,helion-energy,Series F,2025-01-28,existing,,https://www.helionenergy.com/newsroom/helion-announces-425m-series-f-investment-to-scale-commercialized-fusion-power,company_release
+nucor,helion-energy,Series F,2025-01-28,existing,,https://www.helionenergy.com/newsroom/helion-announces-425m-series-f-investment-to-scale-commercialized-fusion-power,company_release
+sam-altman,helion-energy,Series F,2025-01-28,existing,,https://www.helionenergy.com/newsroom/helion-announces-425m-series-f-investment-to-scale-commercialized-fusion-power,company_release
+softbank-vision-fund-2,helion-energy,Series F,2025-01-28,participant,,https://www.helionenergy.com/newsroom/helion-announces-425m-series-f-investment-to-scale-commercialized-fusion-power,company_release
+alta-park-capital,helion-energy,Series G,2026-06-04,participant,,https://techcrunch.com/2026/06/04/helion-the-sam-altman-backed-fusion-startup-raises-465m-to-build-a-power-plant-for-microsoft/,press
+anti-fund,helion-energy,Series G,2026-06-04,participant,,https://techcrunch.com/2026/06/04/helion-the-sam-altman-backed-fusion-startup-raises-465m-to-build-a-power-plant-for-microsoft/,press
+bill-ford,helion-energy,Series G,2026-06-04,participant,,https://techcrunch.com/2026/06/04/helion-the-sam-altman-backed-fusion-startup-raises-465m-to-build-a-power-plant-for-microsoft/,press
+boxgroup,helion-energy,Series G,2026-06-04,participant,,https://techcrunch.com/2026/06/04/helion-the-sam-altman-backed-fusion-startup-raises-465m-to-build-a-power-plant-for-microsoft/,press
+capricorn-investment-group,helion-energy,Series G,2026-06-04,existing,,https://techcrunch.com/2026/06/04/helion-the-sam-altman-backed-fusion-startup-raises-465m-to-build-a-power-plant-for-microsoft/,press
+dustin-moskovitz,helion-energy,Series G,2026-06-04,existing,,https://techcrunch.com/2026/06/04/helion-the-sam-altman-backed-fusion-startup-raises-465m-to-build-a-power-plant-for-microsoft/,press
+lightspeed,helion-energy,Series G,2026-06-04,existing,,https://techcrunch.com/2026/06/04/helion-the-sam-altman-backed-fusion-startup-raises-465m-to-build-a-power-plant-for-microsoft/,press
+lux-capital,helion-energy,Series G,2026-06-04,participant,,https://techcrunch.com/2026/06/04/helion-the-sam-altman-backed-fusion-startup-raises-465m-to-build-a-power-plant-for-microsoft/,press
+mithril-capital,helion-energy,Series G,2026-06-04,existing,,https://techcrunch.com/2026/06/04/helion-the-sam-altman-backed-fusion-startup-raises-465m-to-build-a-power-plant-for-microsoft/,press
+peak-xv,helion-energy,Series G,2026-06-04,participant,,https://techcrunch.com/2026/06/04/helion-the-sam-altman-backed-fusion-startup-raises-465m-to-build-a-power-plant-for-microsoft/,press
+softbank-vision-fund-2,helion-energy,Series G,2026-06-04,existing,,https://techcrunch.com/2026/06/04/helion-the-sam-altman-backed-fusion-startup-raises-465m-to-build-a-power-plant-for-microsoft/,press
+thrive-capital,helion-energy,Series G,2026-06-04,lead,,https://techcrunch.com/2026/06/04/helion-the-sam-altman-backed-fusion-startup-raises-465m-to-build-a-power-plant-for-microsoft/,press
+bessemer-venture-partners,inertia-enterprises,Series A,2026-02-13,lead,,https://www.esgtoday.com/fusion-startup-inertia-raises-450-million-to-deliver-clean-energy-with-worlds-most-powerful-laser/,press
+gv,inertia-enterprises,Series A,2026-02-13,participant,,https://www.esgtoday.com/fusion-startup-inertia-raises-450-million-to-deliver-clean-energy-with-worlds-most-powerful-laser/,press
+long-journey-ventures,inertia-enterprises,Series A,2026-02-13,participant,,https://www.esgtoday.com/fusion-startup-inertia-raises-450-million-to-deliver-clean-energy-with-worlds-most-powerful-laser/,press
+modern-capital,inertia-enterprises,Series A,2026-02-13,participant,,https://www.esgtoday.com/fusion-startup-inertia-raises-450-million-to-deliver-clean-energy-with-worlds-most-powerful-laser/,press
+threshold-ventures,inertia-enterprises,Series A,2026-02-13,participant,,https://www.esgtoday.com/fusion-startup-inertia-raises-450-million-to-deliver-clean-energy-with-worlds-most-powerful-laser/,press
+samsung-ct,kairos-power,Strategic equity + in-kind services,2026-09-21,unspecified,70000000,https://techcrunch.com/2026/09/21/kairos-power-gets-up-to-100m-from-samsung-group-to-build-nuclear-reactor-for-google/,press
+first-round-capital,last-energy,Seed (date not stated),,unspecified,,https://www.energycentral.com/energy-biz/post/last-energy-books-40-million-series-b-funding-qwdOzJA0zDF2DHz,press
+armada-investments,last-energy,Series A,2021,participant,,https://startupintros.com/orgs/last-energy,press
+david-marquardt,last-energy,Series A,2021,participant,,https://startupintros.com/orgs/last-energy,press
+gigascale-capital,last-energy,Series A,2021,lead,,https://startupintros.com/orgs/last-energy,press
+quiet-capital,last-energy,Series A,2021,participant,,https://startupintros.com/orgs/last-energy,press
+autodesk-foundation,last-energy,Series B,2024-08-29,unspecified,,https://www.world-nuclear-news.org/articles/funding-and-commercial-agreements-grow-for-last-en,press
+gigascale-capital,last-energy,Series B,2024-08-29,unspecified,,https://www.world-nuclear-news.org/articles/funding-and-commercial-agreements-grow-for-last-en,press
+ae-ventures,last-energy,Series C,2025-12-16,participant,,https://entrepreneurloop.com/last-energy-funding-100m-series-c-nuclear-startup/,press
+astera-institute,last-energy,Series C,2025-12-16,lead,,https://entrepreneurloop.com/last-energy-funding-100m-series-c-nuclear-startup/,press
+galaxy-interactive,last-energy,Series C,2025-12-16,participant,,https://entrepreneurloop.com/last-energy-funding-100m-series-c-nuclear-startup/,press
+gigascale-capital,last-energy,Series C,2025-12-16,participant,,https://entrepreneurloop.com/last-energy-funding-100m-series-c-nuclear-startup/,press
+jam-fund,last-energy,Series C,2025-12-16,participant,,https://entrepreneurloop.com/last-energy-funding-100m-series-c-nuclear-startup/,press
+the-haskell-company,last-energy,Series C,2025-12-16,participant,,https://entrepreneurloop.com/last-energy-funding-100m-series-c-nuclear-startup/,press
+ultranative,last-energy,Series C,2025-12-16,participant,,https://entrepreneurloop.com/last-energy-funding-100m-series-c-nuclear-startup/,press
+woori-technology,last-energy,Series C,2025-12-16,participant,,https://entrepreneurloop.com/last-energy-funding-100m-series-c-nuclear-startup/,press
+1517-fund,marathon-fusion,Seed,2024-07-18,lead,,https://www.finsmes.com/2024/07/marathon-fusion-closes-5-9m-seed-funding.html,press
+anglo-american,marathon-fusion,Seed,2024-07-18,participant,,https://www.finsmes.com/2024/07/marathon-fusion-closes-5-9m-seed-funding.html,press
+malcolm-handley,marathon-fusion,Seed,2024-07-18,participant,,https://www.finsmes.com/2024/07/marathon-fusion-closes-5-9m-seed-funding.html,press
+shared-future-fund,marathon-fusion,Seed,2024-07-18,participant,,https://www.finsmes.com/2024/07/marathon-fusion-closes-5-9m-seed-funding.html,press
+uebermorgen,marathon-fusion,Seed,2024-07-18,participant,,https://www.finsmes.com/2024/07/marathon-fusion-closes-5-9m-seed-funding.html,press
+b2venture,marvel-fusion,Series B,2024-09,participant,,https://www.b2venture.vc/stories/marvel-fusion-raises-more-than-eu60-million-seriess-b,press
+bayern-kapital,marvel-fusion,Series B,2024-09,participant,,https://www.b2venture.vc/stories/marvel-fusion-raises-more-than-eu60-million-seriess-b,press
+deutsche-telekom,marvel-fusion,Series B,2024-09,participant,,https://www.b2venture.vc/stories/marvel-fusion-raises-more-than-eu60-million-seriess-b,press
+earlybird,marvel-fusion,Series B,2024-09,participant,,https://www.b2venture.vc/stories/marvel-fusion-raises-more-than-eu60-million-seriess-b,press
+hv-capital,marvel-fusion,Series B,2024-09,lead,,https://www.b2venture.vc/stories/marvel-fusion-raises-more-than-eu60-million-seriess-b,press
+sprind,marvel-fusion,Series B,2024-09,participant,,https://www.b2venture.vc/stories/marvel-fusion-raises-more-than-eu60-million-seriess-b,press
+tengelmann-ventures,marvel-fusion,Series B,2024-09,participant,,https://www.b2venture.vc/stories/marvel-fusion-raises-more-than-eu60-million-seriess-b,press
+albert-wenger,marvel-fusion,Series B extension,2025-03,participant,,https://www.marvelfusion.com/newsroom/marvel-fusion-extends-series-b-to-eur-113m-with-commitments-from-eqt-ventures-siemens-energy-and-european-innovation-council-eic-fund,company_release
+bayern-kapital,marvel-fusion,Series B extension,2025-03,existing,,https://www.marvelfusion.com/newsroom/marvel-fusion-extends-series-b-to-eur-113m-with-commitments-from-eqt-ventures-siemens-energy-and-european-innovation-council-eic-fund,company_release
+eic-fund,marvel-fusion,Series B extension,2025-03,participant,,https://www.marvelfusion.com/newsroom/marvel-fusion-extends-series-b-to-eur-113m-with-commitments-from-eqt-ventures-siemens-energy-and-european-innovation-council-eic-fund,company_release
+eqt-ventures,marvel-fusion,Series B extension,2025-03,participant,,https://www.marvelfusion.com/newsroom/marvel-fusion-extends-series-b-to-eur-113m-with-commitments-from-eqt-ventures-siemens-energy-and-european-innovation-council-eic-fund,company_release
+siemens-energy,marvel-fusion,Series B extension,2025-03,participant,,https://www.marvelfusion.com/newsroom/marvel-fusion-extends-series-b-to-eur-113m-with-commitments-from-eqt-ventures-siemens-energy-and-european-innovation-council-eic-fund,company_release
+tengelmann-ventures,marvel-fusion,Series B extension,2025-03,existing,,https://www.marvelfusion.com/newsroom/marvel-fusion-extends-series-b-to-eur-113m-with-commitments-from-eqt-ventures-siemens-energy-and-european-innovation-council-eic-fund,company_release
+douglass-robison,natura-resources,Founder initial funding,2017,unspecified,,https://naturaresources.com/about/milestones,company_release
+toyota-ventures,natura-resources,Venture investment,2025-10,unspecified,,https://medium.com/toyota-ventures/advancing-next-generation-nuclear-energy-our-investment-in-natura-resources-5b8ce642b16f,company_release
+nov,natura-resources,Strategic stock-for-stock (Shepherd Power sale),2025-12-10,unspecified,,https://www.stocktitan.net/news/NOV/nov-announces-sale-of-advanced-nuclear-development-company-shepherd-c6alfv8t4yry.html,press
+club-degli-investitori,newcleo,Founding round (EUR 100M),2021-09,participant,,https://tech.eu/2022/06/20/with-a-new-approach-to-nuclear-london-s-newcleo-clears-300-million-in-equity-raise/,press
+exor,newcleo,Founding round (EUR 100M),2021-09,participant,,https://tech.eu/2022/06/20/with-a-new-approach-to-nuclear-london-s-newcleo-clears-300-million-in-equity-raise/,press
+liftt,newcleo,Founding round (EUR 100M),2021-09,participant,,https://tech.eu/2022/06/20/with-a-new-approach-to-nuclear-london-s-newcleo-clears-300-million-in-equity-raise/,press
+azimut,newcleo,2022 equity raise (EUR 300M),2022-06,participant,,https://www.milanofinanza.it/news/la-startup-nucleare-newcleo-lancia-lancia-un-aumento-di-capitale-da-1-miliardo-202303201204186280,press
+club-degli-investitori,newcleo,2022 equity raise (EUR 300M),2022-06,existing,,https://tech.eu/2022/06/20/with-a-new-approach-to-nuclear-london-s-newcleo-clears-300-million-in-equity-raise/,press
+exor,newcleo,2022 equity raise (EUR 300M),2022-06,existing,,https://tech.eu/2022/06/20/with-a-new-approach-to-nuclear-london-s-newcleo-clears-300-million-in-equity-raise/,press
+liftt,newcleo,2022 equity raise (EUR 300M),2022-06,existing,,https://tech.eu/2022/06/20/with-a-new-approach-to-nuclear-london-s-newcleo-clears-300-million-in-equity-raise/,press
+tosto-group,newcleo,2024 tranche 1 (EUR 87M of EUR 1B plan),2024-05,participant,,https://born2invest.com/articles/newcleo-collects-87-million-euros/,press
+viaro-energy,newcleo,2024 tranche 1 (EUR 87M of EUR 1B plan),2024-05,participant,,https://born2invest.com/articles/newcleo-collects-87-million-euros/,press
+azimut,newcleo,Shareholder register at Sept 2024 close (EUR 535M cumulative),2024-09-30,existing,,https://www.firstonline.info/en/clean-nuclear-newcleo-closes-a-round-of-135-million-euros-here-are-the-shareholders/,press
+banca-sella,newcleo,Shareholder register at Sept 2024 close (EUR 535M cumulative),2024-09-30,existing,,https://www.firstonline.info/en/clean-nuclear-newcleo-closes-a-round-of-135-million-euros-here-are-the-shareholders/,press
+ersel,newcleo,Shareholder register at Sept 2024 close (EUR 535M cumulative),2024-09-30,existing,,https://www.firstonline.info/en/clean-nuclear-newcleo-closes-a-round-of-135-million-euros-here-are-the-shareholders/,press
+exor,newcleo,Shareholder register at Sept 2024 close (EUR 535M cumulative),2024-09-30,existing,,https://www.firstonline.info/en/clean-nuclear-newcleo-closes-a-round-of-135-million-euros-here-are-the-shareholders/,press
+inarcassa,newcleo,Sept 2024 close (EUR 135M),2024-09-30,participant,,https://www.reuters.com/business/energy/newcleo-raises-151-million-new-investors-moves-paris-2024-09-30/,press
+indigo-venture-i,newcleo,Shareholder register at Sept 2024 close (EUR 535M cumulative),2024-09-30,existing,,https://www.firstonline.info/en/clean-nuclear-newcleo-closes-a-round-of-135-million-euros-here-are-the-shareholders/,press
+ingerop,newcleo,Sept 2024 close (EUR 135M),2024-09-30,participant,,https://www.firstonline.info/en/clean-nuclear-newcleo-closes-a-round-of-135-million-euros-here-are-the-shareholders/,press
+kairos-it,newcleo,Shareholder register at Sept 2024 close (EUR 535M cumulative),2024-09-30,existing,,https://www.firstonline.info/en/clean-nuclear-newcleo-closes-a-round-of-135-million-euros-here-are-the-shareholders/,press
+liftt,newcleo,Shareholder register at Sept 2024 close (EUR 535M cumulative),2024-09-30,existing,,https://www.firstonline.info/en/clean-nuclear-newcleo-closes-a-round-of-135-million-euros-here-are-the-shareholders/,press
+progress-tech-transfer-fund,newcleo,Shareholder register at Sept 2024 close (EUR 535M cumulative),2024-09-30,existing,,https://www.firstonline.info/en/clean-nuclear-newcleo-closes-a-round-of-135-million-euros-here-are-the-shareholders/,press
+smart-capital,newcleo,Shareholder register at Sept 2024 close (EUR 535M cumulative),2024-09-30,existing,,https://www.firstonline.info/en/clean-nuclear-newcleo-closes-a-round-of-135-million-euros-here-are-the-shareholders/,press
+star-ventures,newcleo,Shareholder register at Sept 2024 close (EUR 535M cumulative),2024-09-30,existing,,https://www.firstonline.info/en/clean-nuclear-newcleo-closes-a-round-of-135-million-euros-here-are-the-shareholders/,press
+tosto-group,newcleo,Sept 2024 close (EUR 135M),2024-09-30,participant,,https://www.firstonline.info/en/clean-nuclear-newcleo-closes-a-round-of-135-million-euros-here-are-the-shareholders/,press
+azimut,newcleo,2025-26 round,2026-02-04,existing,,https://www.nucnet.org/news/european-nuclear-company-newcleo-closes-latest-funding-round-of-usd85-million-2-3-2026,press
+cementir,newcleo,2025-26 round,2026-02-04,participant,,https://www.nucnet.org/news/european-nuclear-company-newcleo-closes-latest-funding-round-of-usd85-million-2-3-2026,press
+cern-pension,newcleo,2025-26 round,2026-02-04,existing,,https://www.nucnet.org/news/european-nuclear-company-newcleo-closes-latest-funding-round-of-usd85-million-2-3-2026,press
+danieli,newcleo,2025-26 round,2026-02-04,participant,,https://www.nucnet.org/news/european-nuclear-company-newcleo-closes-latest-funding-round-of-usd85-million-2-3-2026,press
+indaco-ventures,newcleo,2025-26 round,2026-02-04,existing,,https://www.nucnet.org/news/european-nuclear-company-newcleo-closes-latest-funding-round-of-usd85-million-2-3-2026,press
+kairos-it,newcleo,2025-26 round,2026-02-04,existing,,https://www.nucnet.org/news/european-nuclear-company-newcleo-closes-latest-funding-round-of-usd85-million-2-3-2026,press
+nextchem-maire,newcleo,2025-26 round,2026-02-04,participant,,https://www.nucnet.org/news/european-nuclear-company-newcleo-closes-latest-funding-round-of-usd85-million-2-3-2026,press
+orion-industrial-ventures,newcleo,2025-26 round,2026-02-04,participant,,https://www.nucnet.org/news/european-nuclear-company-newcleo-closes-latest-funding-round-of-usd85-million-2-3-2026,press
+tosto-group,newcleo,2025-26 round,2026-02-04,existing,,https://www.nucnet.org/news/european-nuclear-company-newcleo-closes-latest-funding-round-of-usd85-million-2-3-2026,press
+blockstream-capital-holdings,newcleo,Pre-merger 5%+ holder (NewHold III / newcleo plc 424B3),2026-08-10,existing,,https://www.sec.gov/Archives/edgar/data/2131813/000114036126031950/ny20072209x8_424b3.htm,filing
+elysia-capital,newcleo,Pre-merger 5%+ holder (NewHold III / newcleo plc 424B3),2026-08-10,existing,,https://www.sec.gov/Archives/edgar/data/2131813/000114036126031950/ny20072209x8_424b3.htm,filing
+fin-posillipo,newcleo,Pre-merger 5%+ holder (NewHold III / newcleo plc 424B3),2026-08-10,existing,,https://www.sec.gov/Archives/edgar/data/2131813/000114036126031950/ny20072209x8_424b3.htm,filing
+dcvc,oklo,,,unspecified,,https://www.dcvc.com/companies,investor_portfolio_page
+sam-altman,oklo,Pre-SPAC Series A-3 preferred (date not stated),,participant,,https://www.sec.gov/Archives/edgar/data/1849056/000110465924052980/tm2324337-23_424b3.htm,filing
+y-combinator,oklo,Pre-SPAC Series A-1 preferred (date not stated),,participant,,https://www.sec.gov/Archives/edgar/data/1849056/000110465924052980/tm2324337-23_424b3.htm,filing
+y-combinator,oklo,Pre-SPAC Series A-2 preferred (date not stated),,participant,,https://www.sec.gov/Archives/edgar/data/1849056/000110465924052980/tm2324337-23_424b3.htm,filing
+y-combinator,oklo,Pre-SPAC common stock holder,,existing,,https://www.sec.gov/Archives/edgar/data/1849056/000110465924052980/tm2324337-23_424b3.htm,filing
+accel,oklo,Pre-SPAC venture (seed/early),2015,participant,,https://en.wikipedia.org/wiki/Oklo_Inc.,wikipedia
+draper-associates,oklo,Pre-SPAC venture (seed/early),2015,participant,,https://en.wikipedia.org/wiki/Oklo_Inc.,wikipedia
+dustin-moskovitz,oklo,Pre-SPAC venture (seed/early),2015,participant,,https://en.wikipedia.org/wiki/Oklo_Inc.,wikipedia
+sam-altman,oklo,Pre-SPAC venture (seed/early),2015,lead,,https://en.wikipedia.org/wiki/Oklo_Inc.,wikipedia
+sv-angel,oklo,Pre-SPAC venture (seed/early),2015,participant,,https://en.wikipedia.org/wiki/Oklo_Inc.,wikipedia
+alumni-ventures,pacific-fusion,,,unspecified,,https://www.av.vc/portfolio,investor_portfolio_page
+dcvc,pacific-fusion,,,unspecified,,https://www.dcvc.com/companies,investor_portfolio_page
+andrew-forrest,pacific-fusion,Series A (milestone-tranched),2024-10,participant,,https://www.energycentral.com/energy-biz/post/pacific-fusion-scores-900-million-series-funding-zxtaixkLJpbZeh1,press
+breakthrough-energy-ventures,pacific-fusion,Series A (milestone-tranched),2024-10,participant,,https://www.energycentral.com/energy-biz/post/pacific-fusion-scores-900-million-series-funding-zxtaixkLJpbZeh1,press
+citadel-ken-griffin,pacific-fusion,Series A (milestone-tranched),2024-10,participant,,https://www.energycentral.com/energy-biz/post/pacific-fusion-scores-900-million-series-funding-zxtaixkLJpbZeh1,press
+elad-gil,pacific-fusion,Series A (milestone-tranched),2024-10,participant,,https://www.energycentral.com/energy-biz/post/pacific-fusion-scores-900-million-series-funding-zxtaixkLJpbZeh1,press
+eric-schmidt,pacific-fusion,Series A (milestone-tranched),2024-10,participant,,https://www.energycentral.com/energy-biz/post/pacific-fusion-scores-900-million-series-funding-zxtaixkLJpbZeh1,press
+general-catalyst,pacific-fusion,Series A (milestone-tranched),2024-10,lead,,https://www.energycentral.com/energy-biz/post/pacific-fusion-scores-900-million-series-funding-zxtaixkLJpbZeh1,press
+john-doerr,pacific-fusion,Series A (milestone-tranched),2024-10,participant,,https://www.energycentral.com/energy-biz/post/pacific-fusion-scores-900-million-series-funding-zxtaixkLJpbZeh1,press
+lachy-groom,pacific-fusion,Series A (milestone-tranched),2024-10,participant,,https://www.energycentral.com/energy-biz/post/pacific-fusion-scores-900-million-series-funding-zxtaixkLJpbZeh1,press
+leitmotif,pacific-fusion,Series A (milestone-tranched),2024-10,participant,,https://www.energycentral.com/energy-biz/post/pacific-fusion-scores-900-million-series-funding-zxtaixkLJpbZeh1,press
+lightspeed,pacific-fusion,Series A (milestone-tranched),2024-10,participant,,https://www.energycentral.com/energy-biz/post/pacific-fusion-scores-900-million-series-funding-zxtaixkLJpbZeh1,press
+lowercarbon-capital,pacific-fusion,Series A (milestone-tranched),2024-10,participant,,https://www.energycentral.com/energy-biz/post/pacific-fusion-scores-900-million-series-funding-zxtaixkLJpbZeh1,press
+mustafa-suleyman,pacific-fusion,Series A (milestone-tranched),2024-10,participant,,https://www.energycentral.com/energy-biz/post/pacific-fusion-scores-900-million-series-funding-zxtaixkLJpbZeh1,press
+patrick-collison,pacific-fusion,Series A (milestone-tranched),2024-10,participant,,https://www.energycentral.com/energy-biz/post/pacific-fusion-scores-900-million-series-funding-zxtaixkLJpbZeh1,press
+reid-hoffman,pacific-fusion,Series A (milestone-tranched),2024-10,participant,,https://www.energycentral.com/energy-biz/post/pacific-fusion-scores-900-million-series-funding-zxtaixkLJpbZeh1,press
+richard-merkin,pacific-fusion,Series A (milestone-tranched),2024-10,participant,,https://www.energycentral.com/energy-biz/post/pacific-fusion-scores-900-million-series-funding-zxtaixkLJpbZeh1,press
+trousdale-ventures,pacific-fusion,Series A (milestone-tranched),2024-10,participant,,https://www.energycentral.com/energy-biz/post/pacific-fusion-scores-900-million-series-funding-zxtaixkLJpbZeh1,press
+htgf,proxima-fusion,Pre-seed,2023,participant,,https://en.wikipedia.org/wiki/Proxima_Fusion,wikipedia
+plural,proxima-fusion,Pre-seed,2023,participant,,https://en.wikipedia.org/wiki/Proxima_Fusion,wikipedia
+uvc-partners,proxima-fusion,Pre-seed,2023,participant,,https://en.wikipedia.org/wiki/Proxima_Fusion,wikipedia
+visionaries-club,proxima-fusion,Pre-seed,2023,participant,,https://en.wikipedia.org/wiki/Proxima_Fusion,wikipedia
+wilbe,proxima-fusion,Pre-seed,2023,participant,,https://en.wikipedia.org/wiki/Proxima_Fusion,wikipedia
+bayern-kapital,proxima-fusion,Seed,2024-04,participant,,https://tech.eu/2024/04/10/proxima-fusion-raises/,press
+dtcf,proxima-fusion,Seed,2024-04,participant,,https://tech.eu/2024/04/10/proxima-fusion-raises/,press
+htgf,proxima-fusion,Seed,2024-04,existing,,https://tech.eu/2024/04/10/proxima-fusion-raises/,press
+max-planck-foundation,proxima-fusion,Seed,2024-04,participant,,https://tech.eu/2024/04/10/proxima-fusion-raises/,press
+plural,proxima-fusion,Seed,2024-04,existing,,https://tech.eu/2024/04/10/proxima-fusion-raises/,press
+redalpine,proxima-fusion,Seed,2024-04,lead,,https://tech.eu/2024/04/10/proxima-fusion-raises/,press
+uvc-partners,proxima-fusion,Seed,2024-04,existing,,https://tech.eu/2024/04/10/proxima-fusion-raises/,press
+visionaries-club,proxima-fusion,Seed,2024-04,existing,,https://tech.eu/2024/04/10/proxima-fusion-raises/,press
+wilbe,proxima-fusion,Seed,2024-04,existing,,https://tech.eu/2024/04/10/proxima-fusion-raises/,press
+balderton,proxima-fusion,Series A,2025-06-11,co-lead,,https://www.proximafusion.com/press-news/proxima-fusion-raises-eu130m-series-a-to-build-worlds-first-stellarator-based-fusion-power-plant-in-the-2030s,company_release
+bayern-kapital,proxima-fusion,Series A,2025-06-11,participant,,https://www.proximafusion.com/press-news/proxima-fusion-raises-eu130m-series-a-to-build-worlds-first-stellarator-based-fusion-power-plant-in-the-2030s,company_release
+cherry-ventures,proxima-fusion,Series A,2025-06-11,co-lead,,https://www.proximafusion.com/press-news/proxima-fusion-raises-eu130m-series-a-to-build-worlds-first-stellarator-based-fusion-power-plant-in-the-2030s,company_release
+club-degli-investitori,proxima-fusion,Series A,2025-06-11,participant,,https://www.proximafusion.com/press-news/proxima-fusion-raises-eu130m-series-a-to-build-worlds-first-stellarator-based-fusion-power-plant-in-the-2030s,company_release
+dtcf,proxima-fusion,Series A,2025-06-11,participant,,https://www.proximafusion.com/press-news/proxima-fusion-raises-eu130m-series-a-to-build-worlds-first-stellarator-based-fusion-power-plant-in-the-2030s,company_release
+elaia,proxima-fusion,Series A,2025-06-11,participant,,https://www.proximafusion.com/press-news/proxima-fusion-raises-eu130m-series-a-to-build-worlds-first-stellarator-based-fusion-power-plant-in-the-2030s,company_release
+htgf,proxima-fusion,Series A,2025-06-11,participant,,https://www.proximafusion.com/press-news/proxima-fusion-raises-eu130m-series-a-to-build-worlds-first-stellarator-based-fusion-power-plant-in-the-2030s,company_release
+leitmotif,proxima-fusion,Series A,2025-06-11,participant,,https://www.proximafusion.com/press-news/proxima-fusion-raises-eu130m-series-a-to-build-worlds-first-stellarator-based-fusion-power-plant-in-the-2030s,company_release
+lightspeed,proxima-fusion,Series A,2025-06-11,participant,,https://www.proximafusion.com/press-news/proxima-fusion-raises-eu130m-series-a-to-build-worlds-first-stellarator-based-fusion-power-plant-in-the-2030s,company_release
+omnes-capital,proxima-fusion,Series A,2025-06-11,participant,,https://www.proximafusion.com/press-news/proxima-fusion-raises-eu130m-series-a-to-build-worlds-first-stellarator-based-fusion-power-plant-in-the-2030s,company_release
+plural,proxima-fusion,Series A,2025-06-11,participant,,https://www.proximafusion.com/press-news/proxima-fusion-raises-eu130m-series-a-to-build-worlds-first-stellarator-based-fusion-power-plant-in-the-2030s,company_release
+redalpine,proxima-fusion,Series A,2025-06-11,participant,,https://www.proximafusion.com/press-news/proxima-fusion-raises-eu130m-series-a-to-build-worlds-first-stellarator-based-fusion-power-plant-in-the-2030s,company_release
+uvc-partners,proxima-fusion,Series A,2025-06-11,participant,,https://www.proximafusion.com/press-news/proxima-fusion-raises-eu130m-series-a-to-build-worlds-first-stellarator-based-fusion-power-plant-in-the-2030s,company_release
+visionaries-club,proxima-fusion,Series A,2025-06-11,participant,,https://www.proximafusion.com/press-news/proxima-fusion-raises-eu130m-series-a-to-build-worlds-first-stellarator-based-fusion-power-plant-in-the-2030s,company_release
+wilbe,proxima-fusion,Series A,2025-06-11,participant,,https://www.proximafusion.com/press-news/proxima-fusion-raises-eu130m-series-a-to-build-worlds-first-stellarator-based-fusion-power-plant-in-the-2030s,company_release
+brevan-howard,proxima-fusion,Series A extension,2025-09,participant,,https://www.eu-startups.com/2025/09/german-fusion-startup-proxima-fusion-raises-additional-e15-million-as-it-accelerates-into-hardware-execution/,press
+cdp-venture,proxima-fusion,Series A extension,2025-09,participant,,https://www.eu-startups.com/2025/09/german-fusion-startup-proxima-fusion-raises-additional-e15-million-as-it-accelerates-into-hardware-execution/,press
+eic-fund,proxima-fusion,Series A extension,2025-09,participant,,https://www.eu-startups.com/2025/09/german-fusion-startup-proxima-fusion-raises-additional-e15-million-as-it-accelerates-into-hardware-execution/,press
+balderton,proxima-fusion,Series B,2026-07-07,existing,,https://techstartups.com/2026/07/07/google-backs-proxima-fusion-in-468m-funding-round-to-build-europes-first-commercial-fusion-power-plant/,press
+bayern-kapital,proxima-fusion,Series B,2026-07-07,existing,,https://www.eu-startups.com/2026/07/largest-european-fusion-investment-on-record-sees-proxima-fusion-raise-e411-million/,press
+brevan-howard,proxima-fusion,Series B,2026-07-07,existing,,https://www.eu-startups.com/2026/07/largest-european-fusion-investment-on-record-sees-proxima-fusion-raise-e411-million/,press
+burda-principal,proxima-fusion,Series B,2026-07-07,participant,,https://www.eu-startups.com/2026/07/largest-european-fusion-investment-on-record-sees-proxima-fusion-raise-e411-million/,press
+cdp-venture,proxima-fusion,Series B,2026-07-07,existing,,https://www.eu-startups.com/2026/07/largest-european-fusion-investment-on-record-sees-proxima-fusion-raise-e411-million/,press
+cherry-ventures,proxima-fusion,Series B,2026-07-07,existing,,https://techstartups.com/2026/07/07/google-backs-proxima-fusion-in-468m-funding-round-to-build-europes-first-commercial-fusion-power-plant/,press
+dst-global,proxima-fusion,Series B,2026-07-07,existing,,https://www.eu-startups.com/2026/07/largest-european-fusion-investment-on-record-sees-proxima-fusion-raise-e411-million/,press
+dtcf,proxima-fusion,Series B,2026-07-07,existing,,https://www.eu-startups.com/2026/07/largest-european-fusion-investment-on-record-sees-proxima-fusion-raise-e411-million/,press
+east-x-ventures,proxima-fusion,Series B,2026-07-07,lead,,https://techstartups.com/2026/07/07/google-backs-proxima-fusion-in-468m-funding-round-to-build-europes-first-commercial-fusion-power-plant/,press
+eic-fund,proxima-fusion,Series B,2026-07-07,existing,,https://www.eu-startups.com/2026/07/largest-european-fusion-investment-on-record-sees-proxima-fusion-raise-e411-million/,press
+elaia,proxima-fusion,Series B,2026-07-07,participant,,https://www.eu-startups.com/2026/07/largest-european-fusion-investment-on-record-sees-proxima-fusion-raise-e411-million/,press
+google,proxima-fusion,Series B,2026-07-07,unspecified,,https://techstartups.com/2026/07/07/google-backs-proxima-fusion-in-468m-funding-round-to-build-europes-first-commercial-fusion-power-plant/,press
+kfw-capital,proxima-fusion,Series B,2026-07-07,participant,,https://www.eu-startups.com/2026/07/largest-european-fusion-investment-on-record-sees-proxima-fusion-raise-e411-million/,press
+leitmotif,proxima-fusion,Series B,2026-07-07,existing,,https://www.eu-startups.com/2026/07/largest-european-fusion-investment-on-record-sees-proxima-fusion-raise-e411-million/,press
+lightspeed,proxima-fusion,Series B,2026-07-07,existing,,https://www.eu-startups.com/2026/07/largest-european-fusion-investment-on-record-sees-proxima-fusion-raise-e411-million/,press
+plural,proxima-fusion,Series B,2026-07-07,existing,,https://techstartups.com/2026/07/07/google-backs-proxima-fusion-in-468m-funding-round-to-build-europes-first-commercial-fusion-power-plant/,press
+redalpine,proxima-fusion,Series B,2026-07-07,participant,,https://www.eu-startups.com/2026/07/largest-european-fusion-investment-on-record-sees-proxima-fusion-raise-e411-million/,press
+rwe,proxima-fusion,Series B,2026-07-07,unspecified,,https://techstartups.com/2026/07/07/google-backs-proxima-fusion-in-468m-funding-round-to-build-europes-first-commercial-fusion-power-plant/,press
+sprind,proxima-fusion,Series B,2026-07-07,participant,,https://www.eu-startups.com/2026/07/largest-european-fusion-investment-on-record-sees-proxima-fusion-raise-e411-million/,press
+uvc-partners,proxima-fusion,Series B,2026-07-07,existing,,https://techstartups.com/2026/07/07/google-backs-proxima-fusion-in-468m-funding-round-to-build-europes-first-commercial-fusion-power-plant/,press
+xtx-ventures,proxima-fusion,Series B,2026-07-07,lead,,https://techstartups.com/2026/07/07/google-backs-proxima-fusion-in-468m-funding-round-to-build-europes-first-commercial-fusion-power-plant/,press
+alumni-ventures,radiant,,,unspecified,,https://www.av.vc/portfolio,investor_portfolio_page
+union-square-ventures,radiant,Series A,2022-03-09,lead,,https://www.usv.com/writing/2022/03/radiant/,press
+andreessen-horowitz,radiant,Series B,2023-04,lead,,https://startupintros.com/news/2023-04-01-radiant-series-b,press
+boost-vc,radiant,Series B,2023-04-24,participant,,https://www.radiantnuclear.com/blog/series-b/,company_release
+cantos,radiant,Series B,2023-04-24,participant,,https://www.radiantnuclear.com/blog/series-b/,company_release
+decisive-point,radiant,Series B,2023-04-24,participant,,https://www.radiantnuclear.com/blog/series-b/,company_release
+draper-associates,radiant,Series B,2023-04-24,participant,,https://www.radiantnuclear.com/blog/series-b/,company_release
+founders-fund,radiant,Series B,2023-04-24,participant,,https://www.radiantnuclear.com/blog/series-b/,company_release
+mckinley-alaska,radiant,Series B,2023-04-24,participant,,https://www.radiantnuclear.com/blog/series-b/,company_release
+dcvc,radiant,Series C,2024-11-14,lead,,https://www.dcvc.com/news-insights/radiant-industries-raises-100-million-dcvc-climate-led-series-c-to-speed-microreactors-to-market/,company_release
+align-ventures,radiant,Series C extension,2025-05,participant,,https://www.radiantnuclear.com/news/series-c-close,company_release
+ark-invest,radiant,Series C extension,2025-05,participant,,https://www.radiantnuclear.com/news/series-c-close,company_release
+crossbeam-venture-partners,radiant,Series C extension,2025-05,participant,,https://www.radiantnuclear.com/news/series-c-close,company_release
+dcvc,radiant,Series C extension,2025-05,lead,,https://www.radiantnuclear.com/news/series-c-close,company_release
+giant-ventures,radiant,Series C extension,2025-05,participant,,https://www.radiantnuclear.com/news/series-c-close,company_release
+gigascale-capital,radiant,Series C extension,2025-05,participant,,https://www.radiantnuclear.com/news/series-c-close,company_release
+hanwha-asset-management,radiant,Series C extension,2025-05,participant,,https://www.radiantnuclear.com/news/series-c-close,company_release
+hartbeat-ventures,radiant,Series C extension,2025-05,participant,,https://www.radiantnuclear.com/news/series-c-close,company_release
+pax-ventures,radiant,Series C extension,2025-05,participant,,https://www.radiantnuclear.com/news/series-c-close,company_release
+sga,radiant,Series C extension,2025-05,participant,,https://www.radiantnuclear.com/news/series-c-close,company_release
+stepstone-group,radiant,Series C extension,2025-05,participant,,https://www.radiantnuclear.com/news/series-c-close,company_release
+align-ventures,radiant,Series D,2025-12-17,existing,,https://www.orrick.com/en/News/2025/12/Radiant-Closes-Over-300-Million-in-Series-D-Funding,press
+andreessen-horowitz,radiant,Series D,2025-12-17,existing,,https://www.orrick.com/en/News/2025/12/Radiant-Closes-Over-300-Million-in-Series-D-Funding,press
+ark-invest,radiant,Series D,2025-12-17,existing,,https://www.orrick.com/en/News/2025/12/Radiant-Closes-Over-300-Million-in-Series-D-Funding,press
+boost-vc,radiant,Series D,2025-12-17,lead,,https://www.orrick.com/en/News/2025/12/Radiant-Closes-Over-300-Million-in-Series-D-Funding,press
+chevron-technology-ventures,radiant,Series D,2025-12-17,existing,,https://www.orrick.com/en/News/2025/12/Radiant-Closes-Over-300-Million-in-Series-D-Funding,press
+dcvc,radiant,Series D,2025-12-17,existing,,https://www.orrick.com/en/News/2025/12/Radiant-Closes-Over-300-Million-in-Series-D-Funding,press
+draper-associates,radiant,Series D,2025-12-17,lead,,https://www.orrick.com/en/News/2025/12/Radiant-Closes-Over-300-Million-in-Series-D-Funding,press
+founders-fund,radiant,Series D,2025-12-17,existing,,https://www.orrick.com/en/News/2025/12/Radiant-Closes-Over-300-Million-in-Series-D-Funding,press
+friends-family-capital,radiant,Series D,2025-12-17,participant,,https://www.orrick.com/en/News/2025/12/Radiant-Closes-Over-300-Million-in-Series-D-Funding,press
+giant-ventures,radiant,Series D,2025-12-17,existing,,https://www.orrick.com/en/News/2025/12/Radiant-Closes-Over-300-Million-in-Series-D-Funding,press
+in-q-tel,radiant,Series D,2025-12-17,existing,,https://www.orrick.com/en/News/2025/12/Radiant-Closes-Over-300-Million-in-Series-D-Funding,press
+stepstone-group,radiant,Series D,2025-12-17,existing,,https://www.orrick.com/en/News/2025/12/Radiant-Closes-Over-300-Million-in-Series-D-Funding,press
+union-square-ventures,radiant,Series D,2025-12-17,existing,,https://www.orrick.com/en/News/2025/12/Radiant-Closes-Over-300-Million-in-Series-D-Funding,press
+washington-harbour-partners,radiant,Series D,2025-12-17,existing,,https://www.orrick.com/en/News/2025/12/Radiant-Closes-Over-300-Million-in-Series-D-Funding,press
+alumni-ventures,realta-fusion,,,unspecified,,https://www.av.vc/portfolio,investor_portfolio_page
+khosla-ventures,realta-fusion,Seed,2023-05-31,lead,,https://techcrunch.com/2023/05/31/realta-fusion-seed-round-industrial-heat/,press
+avila-vc,realta-fusion,Series A,2025-05-14,participant,,https://www.esgtoday.com/nuclear-startup-realta-raises-36-million-to-commercialize-fusion-energy-tech/,press
+future-ventures,realta-fusion,Series A,2025-05-14,lead,,https://www.esgtoday.com/nuclear-startup-realta-raises-36-million-to-commercialize-fusion-energy-tech/,press
+gsbackers,realta-fusion,Series A,2025-05-14,participant,,https://www.esgtoday.com/nuclear-startup-realta-raises-36-million-to-commercialize-fusion-energy-tech/,press
+khosla-ventures,realta-fusion,Series A,2025-05-14,existing,,https://www.esgtoday.com/nuclear-startup-realta-raises-36-million-to-commercialize-fusion-energy-tech/,press
+mayfield,realta-fusion,Series A,2025-05-14,participant,,https://www.esgtoday.com/nuclear-startup-realta-raises-36-million-to-commercialize-fusion-energy-tech/,press
+siteground,realta-fusion,Series A,2025-05-14,participant,,https://www.esgtoday.com/nuclear-startup-realta-raises-36-million-to-commercialize-fusion-energy-tech/,press
+titletowntech,realta-fusion,Series A,2025-05-14,existing,,https://www.esgtoday.com/nuclear-startup-realta-raises-36-million-to-commercialize-fusion-energy-tech/,press
+wisconsin-alumni-research-foundation,realta-fusion,Series A,2025-05-14,existing,,https://www.esgtoday.com/nuclear-startup-realta-raises-36-million-to-commercialize-fusion-energy-tech/,press
+silicon-valley-bank,realta-fusion,Growth capital facility (debt),2026-02-17,unspecified,9500000,https://www.svb.com/news/client-news/realta-fusion-secures-$9.5-million-growth-capital-facility-from-silicon-valley-bank-a-division-of-first-citizens-bank/,company_release
+andreessen-horowitz,standard-nuclear,Seed,2025-06,unspecified,,https://valueaddvc.com/blog/standard-nuclear-s1-ipo-breakdown-valuation-microreactor,press
+crucible-capital,standard-nuclear,Seed,2025-06,unspecified,,https://valueaddvc.com/blog/standard-nuclear-s1-ipo-breakdown-valuation-microreactor,press
+fundomo,standard-nuclear,Seed,2025-06,unspecified,,https://valueaddvc.com/blog/standard-nuclear-s1-ipo-breakdown-valuation-microreactor,press
+washington-harbour-partners,standard-nuclear,Seed,2025-06,unspecified,,https://valueaddvc.com/blog/standard-nuclear-s1-ipo-breakdown-valuation-microreactor,press
+welara,standard-nuclear,Seed,2025-06,unspecified,,https://valueaddvc.com/blog/standard-nuclear-s1-ipo-breakdown-valuation-microreactor,press
+decisive-point,standard-nuclear,Seed,2025-06-10,lead,,https://www.businesswire.com/news/home/20250610455936/en/Standard-Nuclear-Emerges-from-Stealth-with-%2442-Million-in-Funding-to-Secure-the-Domestic-Advanced-Nuclear-Fuel-Supply-Chain,company_release
+andreessen-horowitz,standard-nuclear,Series A,2026-01-26,existing,,https://www.businesswire.com/news/home/20260126420607/en/Standard-Nuclear-Begins-Production-of-Advanced-HALEU-Fuel-and-Raises-$140-Million-in-Series-A-Funding,company_release
+chevron-technology-ventures,standard-nuclear,Series A,2026-01-26,participant,,https://www.businesswire.com/news/home/20260126420607/en/Standard-Nuclear-Begins-Production-of-Advanced-HALEU-Fuel-and-Raises-$140-Million-in-Series-A-Funding,company_release
+crucible-capital,standard-nuclear,Series A,2026-01-26,existing,,https://www.businesswire.com/news/home/20260126420607/en/Standard-Nuclear-Begins-Production-of-Advanced-HALEU-Fuel-and-Raises-$140-Million-in-Series-A-Funding,company_release
+decisive-point,standard-nuclear,Series A,2026-01-26,lead,,https://www.businesswire.com/news/home/20260126420607/en/Standard-Nuclear-Begins-Production-of-Advanced-HALEU-Fuel-and-Raises-$140-Million-in-Series-A-Funding,company_release
+fundomo,standard-nuclear,Series A,2026-01-26,existing,,https://www.businesswire.com/news/home/20260126420607/en/Standard-Nuclear-Begins-Production-of-Advanced-HALEU-Fuel-and-Raises-$140-Million-in-Series-A-Funding,company_release
+stepstone-group,standard-nuclear,Series A,2026-01-26,participant,,https://www.businesswire.com/news/home/20260126420607/en/Standard-Nuclear-Begins-Production-of-Advanced-HALEU-Fuel-and-Raises-$140-Million-in-Series-A-Funding,company_release
+washington-harbour-partners,standard-nuclear,Series A,2026-01-26,existing,,https://www.businesswire.com/news/home/20260126420607/en/Standard-Nuclear-Begins-Production-of-Advanced-HALEU-Fuel-and-Raises-$140-Million-in-Series-A-Funding,company_release
+welara,standard-nuclear,Series A,2026-01-26,existing,,https://www.businesswire.com/news/home/20260126420607/en/Standard-Nuclear-Begins-Production-of-Advanced-HALEU-Fuel-and-Raises-$140-Million-in-Series-A-Funding,company_release
+xtx-ventures,standard-nuclear,Series A,2026-01-26,participant,,https://www.businesswire.com/news/home/20260126420607/en/Standard-Nuclear-Begins-Production-of-Advanced-HALEU-Fuel-and-Raises-$140-Million-in-Series-A-Funding,company_release
+kuwait-investment-authority,tae-technologies,Funding round ($280M milestone tranche),2021-04,unspecified,,https://techcrunch.com/2021/04/08/claiming-a-landmark-in-fusion-energy-tae-technologies-sees-commercialization-by-2030/,press
+nea,tae-technologies,Funding round ($280M milestone tranche),2021-04,unspecified,,https://techcrunch.com/2021/04/08/claiming-a-landmark-in-fusion-energy-tae-technologies-sees-commercialization-by-2030/,press
+venrock,tae-technologies,Funding round ($280M milestone tranche),2021-04,unspecified,,https://techcrunch.com/2021/04/08/claiming-a-landmark-in-fusion-energy-tae-technologies-sees-commercialization-by-2030/,press
+vulcan,tae-technologies,Funding round ($280M milestone tranche),2021-04,unspecified,,https://techcrunch.com/2021/04/08/claiming-a-landmark-in-fusion-energy-tae-technologies-sees-commercialization-by-2030/,press
+wellcome-trust,tae-technologies,Funding round ($280M milestone tranche),2021-04,unspecified,,https://techcrunch.com/2021/04/08/claiming-a-landmark-in-fusion-energy-tae-technologies-sees-commercialization-by-2030/,press
+chevron-technology-ventures,tae-technologies,Funding round ($250M),2022-07-19,participant,,https://www.cnbc.com/2022/07/19/google-chevron-invest-in-fusion-startup-tae-technologies.html,press
+google,tae-technologies,Funding round ($250M),2022-07-19,participant,,https://www.cnbc.com/2022/07/19/google-chevron-invest-in-fusion-startup-tae-technologies.html,press
+sumitomo-corp-americas,tae-technologies,Funding round ($250M),2022-07-19,participant,,https://www.cnbc.com/2022/07/19/google-chevron-invest-in-fusion-startup-tae-technologies.html,press
+chevron-technology-ventures,tae-technologies,Funding round,2025-06-02,participant,,https://tae.com/tae-technologies-raises-150-million-in-latest-funding-round/,company_release
+google,tae-technologies,Funding round,2025-06-02,participant,,https://tae.com/tae-technologies-raises-150-million-in-latest-funding-round/,company_release
+nea,tae-technologies,Funding round,2025-06-02,participant,,https://tae.com/tae-technologies-raises-150-million-in-latest-funding-round/,company_release
+tmtg,tae-technologies,"Convertible note (debt, Trump Media)",2025-12,unspecified,200000000,https://www.stocktitan.net/sec-filings/DJT/s-4-trump-media-technology-group-corp-business-combination-registrati-ca78e626beab.html,filing
+bill-gates,terrapower,Series B (2010),2010-06,existing,,https://www.reuters.com/article/markets/asia/exclusive-bill-gates-backed-nuclear-startup-raises-35-million-idUSTRE65D4FG/,press
+charles-river-ventures-crv,terrapower,Series B (2010),2010-06,existing,,https://www.reuters.com/article/markets/asia/exclusive-bill-gates-backed-nuclear-startup-raises-35-million-idUSTRE65D4FG/,press
+khosla-ventures,terrapower,Series B (2010),2010-06,participant,,https://www.reuters.com/article/markets/asia/exclusive-bill-gates-backed-nuclear-startup-raises-35-million-idUSTRE65D4FG/,press
+bill-gates,terrapower,2022 equity raise,2022-08,co-lead,,https://www.terrapower.com/fundraise,company_release
+sk-group,terrapower,2022 equity raise,2022-08,co-lead,250000000,https://www.terrapower.com/fundraise,company_release
+arcelormittal,terrapower,2022 equity raise extension ($830M total),2022-11,participant,,https://www.terrapower.com/terrapower-announces-830-million-secured-in-2022,company_release
+bill-gates,terrapower,2022 equity raise extension ($830M total),2022-11,co-lead,,https://www.terrapower.com/terrapower-announces-830-million-secured-in-2022,company_release
+hd-hyundai,terrapower,2022 equity raise extension ($830M total),2022-11,participant,,https://www.terrapower.com/terrapower-announces-830-million-secured-in-2022,company_release
+sk-group,terrapower,2022 equity raise extension ($830M total),2022-11,co-lead,250000000,https://www.terrapower.com/terrapower-announces-830-million-secured-in-2022,company_release
+bill-gates,terrapower,2025 equity raise,2025-06,existing,,https://www.terrapower.com/terrapower-announces-650-million-fundraise,company_release
+hd-hyundai,terrapower,2025 equity raise,2025-06,existing,,https://www.terrapower.com/terrapower-announces-650-million-fundraise,company_release
+nventures,terrapower,2025 equity raise,2025-06,participant,,https://www.terrapower.com/terrapower-announces-650-million-fundraise,company_release
+khnp,terrapower,KHNP stake (via SK vehicle),2026-01,participant,,https://www.terrapower.com/KHNP-Joins-TerraPower-Investor-Base,company_release
+alyeska,terrestrial-energy,"PIPE (HCM II common stock, $10.00)",2025-10-28,unspecified,,https://www.sec.gov/Archives/edgar/data/2019804/000110465925116127/tmb-20250930xs1.htm,filing
+aqr-capital-management,terrestrial-energy,"PIPE (HCM II common stock, $10.00)",2025-10-28,unspecified,,https://www.sec.gov/Archives/edgar/data/2019804/000110465925116127/tmb-20250930xs1.htm,filing
+hbk-investments,terrestrial-energy,"PIPE (HCM II common stock, $10.00)",2025-10-28,unspecified,,https://www.sec.gov/Archives/edgar/data/2019804/000110465925116127/tmb-20250930xs1.htm,filing
+k2-principal-fund,terrestrial-energy,"PIPE (HCM II common stock, $10.00)",2025-10-28,unspecified,,https://www.sec.gov/Archives/edgar/data/2019804/000110465925116127/tmb-20250930xs1.htm,filing
+magnetar-capital,terrestrial-energy,"PIPE (HCM II common stock, $10.00)",2025-10-28,unspecified,,https://www.sec.gov/Archives/edgar/data/2019804/000110465925116127/tmb-20250930xs1.htm,filing
+mmcap-international,terrestrial-energy,"PIPE (HCM II common stock, $10.00)",2025-10-28,unspecified,,https://www.sec.gov/Archives/edgar/data/2019804/000110465925116127/tmb-20250930xs1.htm,filing
+nautilus-master-fund,terrestrial-energy,"PIPE (HCM II common stock, $10.00)",2025-10-28,unspecified,,https://www.sec.gov/Archives/edgar/data/2019804/000110465925116127/tmb-20250930xs1.htm,filing
+senator-investment-group,terrestrial-energy,"PIPE (HCM II common stock, $10.00)",2025-10-28,unspecified,,https://www.sec.gov/Archives/edgar/data/2019804/000110465925116127/tmb-20250930xs1.htm,filing
+sella-family,terrestrial-energy,Pre-SPAC holder (5%+ beneficial owner post-closing),2025-11-21,existing,,https://www.sec.gov/Archives/edgar/data/2019804/000110465925116127/tmb-20250930xs1.htm,filing
+alumni-ventures,thea-energy,,,unspecified,,https://www.av.vc/portfolio,investor_portfolio_page
+11-2-capital,thea-energy,Series A,2024-02-08,participant,,https://thea.energy/press-release/thea-energy-announces-20-million-series-a-financing/,company_release
+anglo-american,thea-energy,Series A,2024-02-08,participant,,https://thea.energy/press-release/thea-energy-announces-20-million-series-a-financing/,company_release
+hitachi-ventures,thea-energy,Series A,2024-02-08,participant,,https://thea.energy/press-release/thea-energy-announces-20-million-series-a-financing/,company_release
+lowercarbon-capital,thea-energy,Series A,2024-02-08,participant,,https://thea.energy/press-release/thea-energy-announces-20-million-series-a-financing/,company_release
+mercator-partners,thea-energy,Series A,2024-02-08,participant,,https://thea.energy/press-release/thea-energy-announces-20-million-series-a-financing/,company_release
+orion-industrial-ventures,thea-energy,Series A,2024-02-08,participant,,https://thea.energy/press-release/thea-energy-announces-20-million-series-a-financing/,company_release
+prelude-ventures,thea-energy,Series A,2024-02-08,lead,,https://thea.energy/press-release/thea-energy-announces-20-million-series-a-financing/,company_release
+starlight-ventures,thea-energy,Series A,2024-02-08,participant,,https://thea.energy/press-release/thea-energy-announces-20-million-series-a-financing/,company_release
+calm-ventures,thea-energy,Series B,2026-05-27,participant,,https://techcrunch.com/2026/05/27/with-a-new-100m-raise-princetons-thea-energy-is-now-a-top-funded-fusion-startup/,press
+climate-capital,thea-energy,Series B,2026-05-27,participant,,https://techcrunch.com/2026/05/27/with-a-new-100m-raise-princetons-thea-energy-is-now-a-top-funded-fusion-startup/,press
+divergent-capital,thea-energy,Series B,2026-05-27,participant,,https://techcrunch.com/2026/05/27/with-a-new-100m-raise-princetons-thea-energy-is-now-a-top-funded-fusion-startup/,press
+emerald-technology-ventures,thea-energy,Series B,2026-05-27,participant,,https://techcrunch.com/2026/05/27/with-a-new-100m-raise-princetons-thea-energy-is-now-a-top-funded-fusion-startup/,press
+gaingels,thea-energy,Series B,2026-05-27,participant,,https://techcrunch.com/2026/05/27/with-a-new-100m-raise-princetons-thea-energy-is-now-a-top-funded-fusion-startup/,press
+general-innovation-capital-partners,thea-energy,Series B,2026-05-27,participant,,https://techcrunch.com/2026/05/27/with-a-new-100m-raise-princetons-thea-energy-is-now-a-top-funded-fusion-startup/,press
+idemitsu,thea-energy,Series B,2026-05-27,participant,,https://techcrunch.com/2026/05/27/with-a-new-100m-raise-princetons-thea-energy-is-now-a-top-funded-fusion-startup/,press
+linse-capital,thea-energy,Series B,2026-05-27,participant,,https://techcrunch.com/2026/05/27/with-a-new-100m-raise-princetons-thea-energy-is-now-a-top-funded-fusion-startup/,press
+overlay-capital,thea-energy,Series B,2026-05-27,participant,,https://techcrunch.com/2026/05/27/with-a-new-100m-raise-princetons-thea-energy-is-now-a-top-funded-fusion-startup/,press
+timescale-ventures,thea-energy,Series B,2026-05-27,participant,,https://techcrunch.com/2026/05/27/with-a-new-100m-raise-princetons-thea-energy-is-now-a-top-funded-fusion-startup/,press
+us-innovative-technology-fund,thea-energy,Series B,2026-05-27,lead,,https://techcrunch.com/2026/05/27/with-a-new-100m-raise-princetons-thea-energy-is-now-a-top-funded-fusion-startup/,press
+what-if-ventures,thea-energy,Series B,2026-05-27,participant,,https://techcrunch.com/2026/05/27/with-a-new-100m-raise-princetons-thea-energy-is-now-a-top-funded-fusion-startup/,press
+british-patient-capital,tokamak-energy,Funding round,2024-11-20,participant,,https://tokamakenergy.com/2024/11/20/tokamak-energy-raises-125m-to-commercialise-transformative-fusion-and-magnet-technologies/,company_release
+bw-group,tokamak-energy,Funding round,2024-11-20,participant,,https://tokamakenergy.com/2024/11/20/tokamak-energy-raises-125m-to-commercialise-transformative-fusion-and-magnet-technologies/,company_release
+east-x-ventures,tokamak-energy,Funding round,2024-11-20,co-lead,,https://tokamakenergy.com/2024/11/20/tokamak-energy-raises-125m-to-commercialise-transformative-fusion-and-magnet-technologies/,company_release
+furukawa-electric,tokamak-energy,Funding round,2024-11-20,participant,,https://tokamakenergy.com/2024/11/20/tokamak-energy-raises-125m-to-commercialise-transformative-fusion-and-magnet-technologies/,company_release
+lingotto,tokamak-energy,Funding round,2024-11-20,co-lead,,https://tokamakenergy.com/2024/11/20/tokamak-energy-raises-125m-to-commercialise-transformative-fusion-and-magnet-technologies/,company_release
+sabanci-climate,tokamak-energy,Funding round,2024-11-20,participant,,https://tokamakenergy.com/2024/11/20/tokamak-energy-raises-125m-to-commercialise-transformative-fusion-and-magnet-technologies/,company_release
+breakthrough-energy-ventures,type-one-energy,Seed (first close),2023-03-28,co-lead,,https://techcrunch.com/2023/03/28/fusion-startup-type-one-fundraising/,press
+darco,type-one-energy,Seed (first close),2023-03-28,participant,,https://techcrunch.com/2023/03/28/fusion-startup-type-one-fundraising/,press
+doral-energy-tech,type-one-energy,Seed (first close),2023-03-28,co-lead,,https://techcrunch.com/2023/03/28/fusion-startup-type-one-fundraising/,press
+grantham-foundation,type-one-energy,Seed (first close),2023-03-28,participant,,https://techcrunch.com/2023/03/28/fusion-startup-type-one-fundraising/,press
+milfam,type-one-energy,Seed (first close),2023-03-28,participant,,https://techcrunch.com/2023/03/28/fusion-startup-type-one-fundraising/,press
+orbia-ventures,type-one-energy,Seed (first close),2023-03-28,participant,,https://techcrunch.com/2023/03/28/fusion-startup-type-one-fundraising/,press
+shorewind-capital,type-one-energy,Seed (first close),2023-03-28,participant,,https://techcrunch.com/2023/03/28/fusion-startup-type-one-fundraising/,press
+tdk-ventures,type-one-energy,Seed (first close),2023-03-28,co-lead,,https://techcrunch.com/2023/03/28/fusion-startup-type-one-fundraising/,press
+trirec,type-one-energy,Seed (first close),2023-03-28,participant,,https://techcrunch.com/2023/03/28/fusion-startup-type-one-fundraising/,press
+vahoca,type-one-energy,Seed (first close),2023-03-28,participant,,https://techcrunch.com/2023/03/28/fusion-startup-type-one-fundraising/,press
+breakthrough-energy-ventures,type-one-energy,Seed extension,2024-07,co-lead,,https://techcrunch.com/2024/07/30/bill-gates-backed-type-one-energy-lands-massive-seed-extension-to-commercialize-fusion-power/,press
+centaurus-capital,type-one-energy,Seed extension,2024-07,co-lead,,https://techcrunch.com/2024/07/30/bill-gates-backed-type-one-energy-lands-massive-seed-extension-to-commercialize-fusion-power/,press
+doral-energy-tech,type-one-energy,Seed extension,2024-07,participant,,https://techcrunch.com/2024/07/30/bill-gates-backed-type-one-energy-lands-massive-seed-extension-to-commercialize-fusion-power/,press
+foxglove-ventures,type-one-energy,Seed extension,2024-07,participant,,https://techcrunch.com/2024/07/30/bill-gates-backed-type-one-energy-lands-massive-seed-extension-to-commercialize-fusion-power/,press
+gd1,type-one-energy,Seed extension,2024-07,co-lead,,https://techcrunch.com/2024/07/30/bill-gates-backed-type-one-energy-lands-massive-seed-extension-to-commercialize-fusion-power/,press
+tdk-ventures,type-one-energy,Seed extension,2024-07,participant,,https://techcrunch.com/2024/07/30/bill-gates-backed-type-one-energy-lands-massive-seed-extension-to-commercialize-fusion-power/,press
+alleycorp,valar-atomics,Seed,2025-02-19,co-lead,,https://www.linkedin.com/feed/update/urn:li:activity:7298020412834172929,company_release
+balaji-srinivasan,valar-atomics,Seed,2025-02-19,participant,,https://www.linkedin.com/feed/update/urn:li:activity:7298020412834172929,company_release
+charlie-songhurst,valar-atomics,Seed,2025-02-19,participant,,https://www.linkedin.com/feed/update/urn:li:activity:7298020412834172929,company_release
+day-one-ventures,valar-atomics,Seed,2025-02-19,participant,,https://techcrunch.com/2025/02/20/valar-atomics-comes-out-of-stealth-with-19m-and-a-pilot-reactor-site/,press
+initialized-capital,valar-atomics,Seed,2025-02-19,co-lead,,https://www.linkedin.com/feed/update/urn:li:activity:7298020412834172929,company_release
+naval-ravikant,valar-atomics,Seed,2025-02-19,participant,,https://www.linkedin.com/feed/update/urn:li:activity:7298020412834172929,company_release
+riot-ventures,valar-atomics,Seed,2025-02-19,lead,,https://techcrunch.com/2025/02/20/valar-atomics-comes-out-of-stealth-with-19m-and-a-pilot-reactor-site/,press
+steel-atlas,valar-atomics,Seed,2025-02-19,participant,,https://www.linkedin.com/feed/update/urn:li:activity:7298020412834172929,company_release
+stifel-bank,valar-atomics,Seed,2025-02-19,participant,,https://www.linkedin.com/feed/update/urn:li:activity:7298020412834172929,company_release
+alumni-ventures,valar-atomics,Series A,2025-11,participant,,https://x.com/isaiah_p_taylor/status/1987875523452956807,press
+balerion,valar-atomics,Series A,2025-11,participant,,https://x.com/isaiah_p_taylor/status/1987875523452956807,press
+contrary,valar-atomics,Series A,2025-11,participant,,https://x.com/isaiah_p_taylor/status/1987875523452956807,press
+crosscut-ventures,valar-atomics,Series A,2025-11,participant,,https://x.com/isaiah_p_taylor/status/1987875523452956807,press
+day-one-ventures,valar-atomics,Series A,2025-11,co-lead,,https://x.com/isaiah_p_taylor/status/1987875523452956807,press
+dream-ventures,valar-atomics,Series A,2025-11,co-lead,,https://x.com/isaiah_p_taylor/status/1987875523452956807,press
+dtx,valar-atomics,Series A,2025-11,participant,,https://x.com/isaiah_p_taylor/status/1987875523452956807,press
+palmer-luckey,valar-atomics,Series A,2025-11,participant,,https://x.com/isaiah_p_taylor/status/1987875523452956807,press
+shyam-sankar,valar-atomics,Series A,2025-11,participant,,https://x.com/isaiah_p_taylor/status/1987875523452956807,press
+snowpoint-ventures,valar-atomics,Series A,2025-11,lead,,https://x.com/isaiah_p_taylor/status/1987875523452956807,press
+triplepoint,valar-atomics,Series A,2025-11,participant,,https://x.com/isaiah_p_taylor/status/1987875523452956807,press
+john-donovan,valar-atomics,Series A,2025-11-10,participant,,https://www.cnbc.com/2025/11/10/nuclear-startup-valar-atomics-raises-130-million.html,press
+apandion-capital,valar-atomics,Series B,2026-08-03,participant,,https://techcrunch.com/2026/08/03/sequoias-shaun-maguire-leads-1b-round-for-nuclear-startup-valar-atomics/,press
+atreides-management,valar-atomics,Series B,2026-08-03,participant,,https://techcrunch.com/2026/08/03/sequoias-shaun-maguire-leads-1b-round-for-nuclear-startup-valar-atomics/,press
+conviction,valar-atomics,Series B,2026-08-03,participant,,https://techcrunch.com/2026/08/03/sequoias-shaun-maguire-leads-1b-round-for-nuclear-startup-valar-atomics/,press
+dream-ventures,valar-atomics,Series B,2026-08-03,participant,,https://techcrunch.com/2026/08/03/sequoias-shaun-maguire-leads-1b-round-for-nuclear-startup-valar-atomics/,press
+hof-capital,valar-atomics,Series B,2026-08-03,participant,,https://techcrunch.com/2026/08/03/sequoias-shaun-maguire-leads-1b-round-for-nuclear-startup-valar-atomics/,press
+point72-ventures,valar-atomics,Series B,2026-08-03,participant,,https://techcrunch.com/2026/08/03/sequoias-shaun-maguire-leads-1b-round-for-nuclear-startup-valar-atomics/,press
+riot-ventures,valar-atomics,Series B,2026-08-03,participant,,https://techcrunch.com/2026/08/03/sequoias-shaun-maguire-leads-1b-round-for-nuclear-startup-valar-atomics/,press
+sequoia-capital,valar-atomics,Series B,2026-08-03,lead,,https://techcrunch.com/2026/08/03/sequoias-shaun-maguire-leads-1b-round-for-nuclear-startup-valar-atomics/,press
+snowpoint-ventures,valar-atomics,Series B,2026-08-03,participant,,https://techcrunch.com/2026/08/03/sequoias-shaun-maguire-leads-1b-round-for-nuclear-startup-valar-atomics/,press
+valor-equity-partners,valar-atomics,Series B,2026-08-03,participant,,https://techcrunch.com/2026/08/03/sequoias-shaun-maguire-leads-1b-round-for-nuclear-startup-valar-atomics/,press
+alumni-ventures,x-energy,Series B ($110M),2022-03,participant,,https://www.av.vc/blog/x-energy-the-next-generation-of-nuclear-reactors,press
+c5-capital,x-energy,Series B ($110M),2022-03,lead,,https://www.av.vc/blog/x-energy-the-next-generation-of-nuclear-reactors,press
+ares-management,x-energy,Series C-2 financing,2023-08,participant,30000000,https://www.sec.gov/Archives/edgar/data/1829432/000119312523233926/d437269dex992.htm,filing
+ares-management,x-energy,AAC PIPE commitment (convertible preferred; SPAC later terminated),2023-10-25,participant,50000000,https://x-energy.com/news/dow-increases-total-investment/,company_release
+dow,x-energy,AAC PIPE commitment (convertible preferred; SPAC later terminated),2023-10-25,participant,20000000,https://x-energy.com/news/dow-increases-total-investment/,company_release
+kam-ghaffarian,x-energy,AAC PIPE commitment (convertible preferred; SPAC later terminated),2023-10-25,participant,30000000,https://x-energy.com/news/dow-increases-total-investment/,company_release
+ares-management,x-energy,Series C ($235M),2023-12-05,participant,,https://x-energy.com/news/x-energy-finalizes-235-million-series-c-financing/,company_release
+curtiss-wright,x-energy,Series C ($235M),2023-12-05,participant,,https://x-energy.com/news/x-energy-finalizes-235-million-series-c-financing/,company_release
+dl-e-c,x-energy,Series C ($235M),2023-12-05,participant,,https://x-energy.com/news/x-energy-finalizes-235-million-series-c-financing/,company_release
+doosan-enerbility,x-energy,Series C ($235M),2023-12-05,participant,,https://x-energy.com/news/x-energy-finalizes-235-million-series-c-financing/,company_release
+kam-ghaffarian,x-energy,Series C ($235M),2023-12-05,participant,,https://x-energy.com/news/x-energy-finalizes-235-million-series-c-financing/,company_release
+ontario-power-generation,x-energy,Series C ($235M),2023-12-05,participant,,https://x-energy.com/news/x-energy-finalizes-235-million-series-c-financing/,company_release
+amazon,x-energy,Series C-1,2024-10,lead,,https://x-energy.com/media/news-releases/amazon-invests-in-x-energy-to-support-advanced-small-modular-nuclear-reactors-and-expand-carbon-free-power,company_release
+ares-management,x-energy,Series C-1,2024-10,participant,,https://x-energy.com/media/news-releases/amazon-invests-in-x-energy-to-support-advanced-small-modular-nuclear-reactors-and-expand-carbon-free-power,company_release
+citadel-ken-griffin,x-energy,Series C-1,2024-10,participant,,https://x-energy.com/media/news-releases/amazon-invests-in-x-energy-to-support-advanced-small-modular-nuclear-reactors-and-expand-carbon-free-power,company_release
+ngp-energy-capital,x-energy,Series C-1,2024-10,participant,,https://x-energy.com/media/news-releases/amazon-invests-in-x-energy-to-support-advanced-small-modular-nuclear-reactors-and-expand-carbon-free-power,company_release
+university-of-michigan,x-energy,Series C-1,2024-10,participant,,https://x-energy.com/media/news-releases/amazon-invests-in-x-energy-to-support-advanced-small-modular-nuclear-reactors-and-expand-carbon-free-power,company_release
+amazon,x-energy,Series C-1 upsized,2025-02,lead,,https://www.datacenterdynamics.com/en/news/smr-firm-x-energy-closes-700m-funding-round-led-by-amazon/,press
+ares-management,x-energy,Series C-1 upsized,2025-02,participant,,https://www.datacenterdynamics.com/en/news/smr-firm-x-energy-closes-700m-funding-round-led-by-amazon/,press
+emerson-collective,x-energy,Series C-1 upsized,2025-02,participant,,https://www.datacenterdynamics.com/en/news/smr-firm-x-energy-closes-700m-funding-round-led-by-amazon/,press
+jane-street,x-energy,Series C-1 upsized,2025-02,participant,,https://www.datacenterdynamics.com/en/news/smr-firm-x-energy-closes-700m-funding-round-led-by-amazon/,press
+segra-capital,x-energy,Series C-1 upsized,2025-02,participant,,https://www.datacenterdynamics.com/en/news/smr-firm-x-energy-closes-700m-funding-round-led-by-amazon/,press
+ares-management,x-energy,Series D,2025-11-24,existing,,https://www.latitudemedia.com/news/smr-developer-x-energy-secures-a-700-million-series-d/,press
+ark-invest,x-energy,Series D,2025-11-24,participant,,https://www.latitudemedia.com/news/smr-developer-x-energy-secures-a-700-million-series-d/,press
+corner-capital,x-energy,Series D,2025-11-24,participant,,https://www.latitudemedia.com/news/smr-developer-x-energy-secures-a-700-million-series-d/,press
+emerson-collective,x-energy,Series D,2025-11-24,existing,,https://www.latitudemedia.com/news/smr-developer-x-energy-secures-a-700-million-series-d/,press
+galvanize,x-energy,Series D,2025-11-24,participant,,https://www.latitudemedia.com/news/smr-developer-x-energy-secures-a-700-million-series-d/,press
+hood-river,x-energy,Series D,2025-11-24,participant,,https://www.clay.com/dossier/x-energy-funding,press
+jane-street,x-energy,Series D,2025-11-24,lead,,https://www.latitudemedia.com/news/smr-developer-x-energy-secures-a-700-million-series-d/,press
+ngp-energy-capital,x-energy,Series D,2025-11-24,existing,,https://www.latitudemedia.com/news/smr-developer-x-energy-secures-a-700-million-series-d/,press
+point72-ventures,x-energy,Series D,2025-11-24,participant,,https://www.clay.com/dossier/x-energy-funding,press
+reaves,x-energy,Series D,2025-11-24,participant,,https://www.clay.com/dossier/x-energy-funding,press
+segra-capital,x-energy,Series D,2025-11-24,existing,,https://www.latitudemedia.com/news/smr-developer-x-energy-secures-a-700-million-series-d/,press
+xtx-ventures,x-energy,Series D,2025-11-24,participant,,https://www.clay.com/dossier/x-energy-funding,press
+ark-invest,x-energy,IPO (Nasdaq: XE),2026-04-23,participant,,https://thenextweb.com/news/x-energy-ipo-1-billion-amazon,press
+breakthrough-energy-ventures,xcimer-energy,Series A,2024-06-04,participant,,https://xcimer.energy/news/100-million-raised-to-advance-inertial-fusion-energy-toward-commercialization/,company_release
+emerson-collective,xcimer-energy,Series A,2024-06-04,participant,,https://xcimer.energy/news/100-million-raised-to-advance-inertial-fusion-energy-toward-commercialization/,company_release
+gigascale-capital,xcimer-energy,Series A,2024-06-04,participant,,https://xcimer.energy/news/100-million-raised-to-advance-inertial-fusion-energy-toward-commercialization/,company_release
+hedosophia,xcimer-energy,Series A,2024-06-04,lead,,https://xcimer.energy/news/100-million-raised-to-advance-inertial-fusion-energy-toward-commercialization/,company_release
+lowercarbon-capital,xcimer-energy,Series A,2024-06-04,participant,,https://xcimer.energy/news/100-million-raised-to-advance-inertial-fusion-energy-toward-commercialization/,company_release
+prelude-ventures,xcimer-energy,Series A,2024-06-04,participant,,https://xcimer.energy/news/100-million-raised-to-advance-inertial-fusion-energy-toward-commercialization/,company_release
+starlight-ventures,xcimer-energy,Series A,2024-06-04,participant,,https://xcimer.energy/news/100-million-raised-to-advance-inertial-fusion-energy-toward-commercialization/,company_release
+rtx-ventures,xcimer-energy,Minority investment,2026-09-14,unspecified,,https://www.finsmes.com/2026/09/xcimer-energy-receives-investment-from-rtx-ventures.html,press
+addition,zap-energy,Series B,2021-05,lead,,https://legacy.zapenergy.com/news/zap-raises-series-b-to-advance-reactor-technology,company_release
+chevron-technology-ventures,zap-energy,Series B,2021-05,existing,,https://legacy.zapenergy.com/news/zap-raises-series-b-to-advance-reactor-technology,company_release
+energy-impact-partners,zap-energy,Series B,2021-05,participant,,https://legacy.zapenergy.com/news/zap-raises-series-b-to-advance-reactor-technology,company_release
+fourth-realm,zap-energy,Series B,2021-05,participant,,https://legacy.zapenergy.com/news/zap-raises-series-b-to-advance-reactor-technology,company_release
+ga-capital,zap-energy,Series B,2021-05,participant,,https://legacy.zapenergy.com/news/zap-raises-series-b-to-advance-reactor-technology,company_release
+lowercarbon-capital,zap-energy,Series B,2021-05,existing,,https://legacy.zapenergy.com/news/zap-raises-series-b-to-advance-reactor-technology,company_release
+addition,zap-energy,Series C,2022-06,participant,,https://globalventuring.com/university/zap-energy-zips-to-160m-series-c/,press
+breakthrough-energy-ventures,zap-energy,Series C,2022-06,participant,,https://globalventuring.com/university/zap-energy-zips-to-160m-series-c/,press
+chevron-technology-ventures,zap-energy,Series C,2022-06,participant,,https://globalventuring.com/university/zap-energy-zips-to-160m-series-c/,press
+dcvc,zap-energy,Series C,2022-06,participant,,https://globalventuring.com/university/zap-energy-zips-to-160m-series-c/,press
+energy-impact-partners,zap-energy,Series C,2022-06,participant,,https://globalventuring.com/university/zap-energy-zips-to-160m-series-c/,press
+lowercarbon-capital,zap-energy,Series C,2022-06,lead,,https://globalventuring.com/university/zap-energy-zips-to-160m-series-c/,press
+shell-ventures,zap-energy,Series C,2022-06,participant,,https://globalventuring.com/university/zap-energy-zips-to-160m-series-c/,press
+valor-equity-partners,zap-energy,Series C,2022-06,participant,,https://globalventuring.com/university/zap-energy-zips-to-160m-series-c/,press
+addition,zap-energy,Series D,2024-10,existing,,https://legacy.zapenergy.com/news/zap-attracts-130m-as-demo-system-begins-operations,company_release
+bam-elevate,zap-energy,Series D,2024-10,participant,,https://legacy.zapenergy.com/news/zap-attracts-130m-as-demo-system-begins-operations,company_release
+breakthrough-energy-ventures,zap-energy,Series D,2024-10,existing,,https://legacy.zapenergy.com/news/zap-attracts-130m-as-demo-system-begins-operations,company_release
+chevron-technology-ventures,zap-energy,Series D,2024-10,existing,,https://legacy.zapenergy.com/news/zap-attracts-130m-as-demo-system-begins-operations,company_release
+dcvc,zap-energy,Series D,2024-10,existing,,https://legacy.zapenergy.com/news/zap-attracts-130m-as-demo-system-begins-operations,company_release
+emerson-collective,zap-energy,Series D,2024-10,participant,,https://legacy.zapenergy.com/news/zap-attracts-130m-as-demo-system-begins-operations,company_release
+energy-impact-partners,zap-energy,Series D,2024-10,existing,,https://legacy.zapenergy.com/news/zap-attracts-130m-as-demo-system-begins-operations,company_release
+leitmotif,zap-energy,Series D,2024-10,participant,,https://legacy.zapenergy.com/news/zap-attracts-130m-as-demo-system-begins-operations,company_release
+lowercarbon-capital,zap-energy,Series D,2024-10,existing,,https://legacy.zapenergy.com/news/zap-attracts-130m-as-demo-system-begins-operations,company_release
+mizuho,zap-energy,Series D,2024-10,participant,,https://legacy.zapenergy.com/news/zap-attracts-130m-as-demo-system-begins-operations,company_release
+plynth-energy,zap-energy,Series D,2024-10,participant,,https://legacy.zapenergy.com/news/zap-attracts-130m-as-demo-system-begins-operations,company_release
+shell-ventures,zap-energy,Series D,2024-10,existing,,https://legacy.zapenergy.com/news/zap-attracts-130m-as-demo-system-begins-operations,company_release
+soros-fund-management,zap-energy,Series D,2024-10,lead,,https://legacy.zapenergy.com/news/zap-attracts-130m-as-demo-system-begins-operations,company_release
+xplor-ventures,zap-energy,Series D,2024-10,participant,,https://legacy.zapenergy.com/news/zap-attracts-130m-as-demo-system-begins-operations,company_release

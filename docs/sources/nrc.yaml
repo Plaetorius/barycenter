@@ -1,0 +1,17 @@
+id: nrc
+name: NRC advanced reactor pre-application list, applications and ADAMS
+owner: US Nuclear Regulatory Commission
+access: html           # pre-application pages; ADAMS Public Search API not verified (needs registration/key; legacy adams.nrc.gov/wba no longer resolves)
+endpoint: https://www.nrc.gov/facilities-safety/new-reactors/advanced-reactors/who-were-working-with/pre-application-activities
+auth: none for HTML; ADAMS API unverified
+rate_limit: unpublished; Akamai bot manager returned 403 on 3 of 7 requests at 1 req/s (Radiant, TerraPower, X-energy pages) after 4 successes
+licence: US government public record
+robots: nrc.gov/robots.txt allows * except search; Disallows /docs/ only for Akamai-SiteSnapshot and Amazonbot
+yields: [list of ~40 developers/vendors engaged in pre-application, technology group, microreactor flag, docket numbers (99902069 Kairos, 99902095 Oklo, 99902100/99902087 TerraPower, 99902128 Aalo), topical reports and status, ML accession numbers, page last-updated date]
+identifiers: [docket number, ADAMS ML accession, company name]
+cadence: pages updated weekly (list page last updated 2026-10-02)
+tier: A
+known_gaps: >
+  Stage not money. No fusion developers (not NRC power-reactor licensing). Stage (CP issued, COL under review) is on separate review pages, not the pre-application page.
+  Akamai 403s make scraping flaky: manual-upload fallback needed. ADAMS API unverified.
+probe: docs/survey/probes/nrc.md

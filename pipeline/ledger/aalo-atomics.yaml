@@ -1,0 +1,178 @@
+company: aalo-atomics
+name: Aalo Atomics
+sector: fission
+notes: >
+  Search quota was exhausted, so only primary pages reachable by direct fetch were used. Form D filings (16, 2024-08 to
+  2026-09, see docs/survey/probes/edgar.md) are investor SPVs/syndicates (Gaingels, GV via CGF2021, HII, BBVC, CC Ltd,
+  Solist): evidence that those platforms invested, NOT company rounds; none is recorded as an event. aalo.com/company states
+  "$300M+" of venture capital raised, which implies a round after the $100M Series B (census: reported $500M Series C in
+  progress Jul 2026) but no primary release for it was reachable, so no Series C event is recorded. The cumulative event is
+  dated with the snapshot date because the page carries no date. TechCrunch and DCD (Aug 2025, "more than $136 million"
+  raised to date) agree with 6.26+27+100. No Aalo SBIR/ARPA-E/USAspending money found (probes/sbir.md, usaspending.md,
+  arpa-e.md). The DOE Reactor Pilot Program is an authorization pathway, no funding amount stated. Series A and seed pages
+  do not name a lead for the Series A (thank-you list only); angels named in the seed post are omitted.
+events:
+  - id: aalo-seed-2023
+    instrument: equity
+    round_label: Seed
+    announced_on: 2023-04-11
+    amount: {amount: 6260000, currency: USD, qualifier: exact}
+    evidence:
+      - {field: amount, snapshot: "b6570ca1dd4ca83858bad8a47d925e16d97b32c9fd02246428c1525d29b84a47", quote: "Aalo Atomics has closed $6.26M in equity financing", basis: disclosed}
+      - {field: announced_on, snapshot: "b6570ca1dd4ca83858bad8a47d925e16d97b32c9fd02246428c1525d29b84a47", quote: "Published April 11, 2023", basis: disclosed}
+      - {field: round_label, snapshot: "b6570ca1dd4ca83858bad8a47d925e16d97b32c9fd02246428c1525d29b84a47", quote: "Aalo Atomics Raises $6.26M Seed Round", basis: disclosed}
+    participants:
+      - investor: "Fifty Years"
+        investor_slug: fifty-years
+        role: lead
+        evidence:
+          - {field: participant, snapshot: "b6570ca1dd4ca83858bad8a47d925e16d97b32c9fd02246428c1525d29b84a47", quote: "The round was led by Fifty Years, a deep-tech VC firm based in San Francisco", basis: disclosed}
+      - investor: "Valor Equity Partners"
+        investor_slug: valor-equity-partners
+        role: participant
+        evidence:
+          - {field: participant, snapshot: "b6570ca1dd4ca83858bad8a47d925e16d97b32c9fd02246428c1525d29b84a47", quote: "with participation by Valor Equity Partners (early SpaceX and Tesla investors)", basis: disclosed}
+  - id: aalo-series-a-2024
+    instrument: equity
+    round_label: Series A
+    announced_on: 2024-08-14
+    amount: {amount: 27000000, currency: USD, qualifier: exact}
+    evidence:
+      - {field: amount, snapshot: "f19b349e54342ac2ca2184ed9d338f7f1b4d768e12aa8a417bf475206d80cfc1", quote: "Investors are backing us with $27M", basis: disclosed}
+      - {field: announced_on, snapshot: "f19b349e54342ac2ca2184ed9d338f7f1b4d768e12aa8a417bf475206d80cfc1", quote: "Published August 14, 2024", basis: disclosed}
+      - {field: round_label, snapshot: "f19b349e54342ac2ca2184ed9d338f7f1b4d768e12aa8a417bf475206d80cfc1", quote: "Aalo Atomics Raises $27M Series A", basis: disclosed}
+    use_of_proceeds: "Scale team to 30, open Austin Factory HQ, NRC licensing work, build non-nuclear Aalo-0 prototype, commercial Aalo Fuel pathway"
+  - id: aalo-series-b-2025
+    instrument: equity
+    round_label: Series B
+    announced_on: 2025-08-19
+    amount: {amount: 100000000, currency: USD, qualifier: exact}
+    evidence:
+      - {field: amount, snapshot: "059a40db4fcc6ab66c449aa22932f1ef51eec6567af5cb4e6229d3ba498da942", quote: "raising $100 million in a Series B, the company announced today", basis: reported}
+      - {field: announced_on, snapshot: "059a40db4fcc6ab66c449aa22932f1ef51eec6567af5cb4e6229d3ba498da942", quote: "8:41 AM PDT · August 19, 2025", basis: reported}
+      - {field: round_label, snapshot: "059a40db4fcc6ab66c449aa22932f1ef51eec6567af5cb4e6229d3ba498da942", quote: "raising $100 million in a Series B", basis: reported}
+    participants:
+      - investor: "Valor Equity Partners"
+        investor_slug: valor-equity-partners
+        role: lead
+        evidence:
+          - {field: participant, snapshot: "059a40db4fcc6ab66c449aa22932f1ef51eec6567af5cb4e6229d3ba498da942", quote: "The Series B round was led by Valor Equity Partners", basis: reported}
+      - investor: "50Y"
+        investor_slug: fifty-years
+        role: participant
+        evidence:
+          - {field: participant, snapshot: "059a40db4fcc6ab66c449aa22932f1ef51eec6567af5cb4e6229d3ba498da942", quote: "The Series B round was led by Valor Equity Partners with participation from 50Y, Alumni Ventures, Crescent Enterprises, Crosscut, Fine Structure Ventures, Gaingels, Harpoon Ventures, Hitachi Ventures, Kindred Ventures, MCJ, NRG Energy, Nucleation Capital, Perpetual VC, Tishman Speyer, and VamosVentures.", basis: reported}
+      - investor: "Alumni Ventures"
+        investor_slug: alumni-ventures
+        role: participant
+        evidence:
+          - {field: participant, snapshot: "059a40db4fcc6ab66c449aa22932f1ef51eec6567af5cb4e6229d3ba498da942", quote: "The Series B round was led by Valor Equity Partners with participation from 50Y, Alumni Ventures, Crescent Enterprises, Crosscut, Fine Structure Ventures, Gaingels, Harpoon Ventures, Hitachi Ventures, Kindred Ventures, MCJ, NRG Energy, Nucleation Capital, Perpetual VC, Tishman Speyer, and VamosVentures.", basis: reported}
+      - investor: "Crescent Enterprises"
+        investor_slug: crescent-enterprises
+        role: participant
+        evidence:
+          - {field: participant, snapshot: "059a40db4fcc6ab66c449aa22932f1ef51eec6567af5cb4e6229d3ba498da942", quote: "The Series B round was led by Valor Equity Partners with participation from 50Y, Alumni Ventures, Crescent Enterprises, Crosscut, Fine Structure Ventures, Gaingels, Harpoon Ventures, Hitachi Ventures, Kindred Ventures, MCJ, NRG Energy, Nucleation Capital, Perpetual VC, Tishman Speyer, and VamosVentures.", basis: reported}
+      - investor: "Crosscut"
+        investor_slug: crosscut-ventures
+        role: participant
+        evidence:
+          - {field: participant, snapshot: "059a40db4fcc6ab66c449aa22932f1ef51eec6567af5cb4e6229d3ba498da942", quote: "The Series B round was led by Valor Equity Partners with participation from 50Y, Alumni Ventures, Crescent Enterprises, Crosscut, Fine Structure Ventures, Gaingels, Harpoon Ventures, Hitachi Ventures, Kindred Ventures, MCJ, NRG Energy, Nucleation Capital, Perpetual VC, Tishman Speyer, and VamosVentures.", basis: reported}
+      - investor: "Fine Structure Ventures"
+        investor_slug: fine-structure-ventures
+        role: participant
+        evidence:
+          - {field: participant, snapshot: "059a40db4fcc6ab66c449aa22932f1ef51eec6567af5cb4e6229d3ba498da942", quote: "The Series B round was led by Valor Equity Partners with participation from 50Y, Alumni Ventures, Crescent Enterprises, Crosscut, Fine Structure Ventures, Gaingels, Harpoon Ventures, Hitachi Ventures, Kindred Ventures, MCJ, NRG Energy, Nucleation Capital, Perpetual VC, Tishman Speyer, and VamosVentures.", basis: reported}
+      - investor: "Gaingels"
+        investor_slug: gaingels
+        role: participant
+        evidence:
+          - {field: participant, snapshot: "059a40db4fcc6ab66c449aa22932f1ef51eec6567af5cb4e6229d3ba498da942", quote: "The Series B round was led by Valor Equity Partners with participation from 50Y, Alumni Ventures, Crescent Enterprises, Crosscut, Fine Structure Ventures, Gaingels, Harpoon Ventures, Hitachi Ventures, Kindred Ventures, MCJ, NRG Energy, Nucleation Capital, Perpetual VC, Tishman Speyer, and VamosVentures.", basis: reported}
+      - investor: "Harpoon Ventures"
+        investor_slug: harpoon-ventures
+        role: participant
+        evidence:
+          - {field: participant, snapshot: "059a40db4fcc6ab66c449aa22932f1ef51eec6567af5cb4e6229d3ba498da942", quote: "The Series B round was led by Valor Equity Partners with participation from 50Y, Alumni Ventures, Crescent Enterprises, Crosscut, Fine Structure Ventures, Gaingels, Harpoon Ventures, Hitachi Ventures, Kindred Ventures, MCJ, NRG Energy, Nucleation Capital, Perpetual VC, Tishman Speyer, and VamosVentures.", basis: reported}
+      - investor: "Hitachi Ventures"
+        investor_slug: hitachi-ventures
+        role: participant
+        evidence:
+          - {field: participant, snapshot: "059a40db4fcc6ab66c449aa22932f1ef51eec6567af5cb4e6229d3ba498da942", quote: "The Series B round was led by Valor Equity Partners with participation from 50Y, Alumni Ventures, Crescent Enterprises, Crosscut, Fine Structure Ventures, Gaingels, Harpoon Ventures, Hitachi Ventures, Kindred Ventures, MCJ, NRG Energy, Nucleation Capital, Perpetual VC, Tishman Speyer, and VamosVentures.", basis: reported}
+      - investor: "Kindred Ventures"
+        investor_slug: kindred-ventures
+        role: participant
+        evidence:
+          - {field: participant, snapshot: "059a40db4fcc6ab66c449aa22932f1ef51eec6567af5cb4e6229d3ba498da942", quote: "The Series B round was led by Valor Equity Partners with participation from 50Y, Alumni Ventures, Crescent Enterprises, Crosscut, Fine Structure Ventures, Gaingels, Harpoon Ventures, Hitachi Ventures, Kindred Ventures, MCJ, NRG Energy, Nucleation Capital, Perpetual VC, Tishman Speyer, and VamosVentures.", basis: reported}
+      - investor: "MCJ"
+        investor_slug: mcj
+        role: participant
+        evidence:
+          - {field: participant, snapshot: "059a40db4fcc6ab66c449aa22932f1ef51eec6567af5cb4e6229d3ba498da942", quote: "The Series B round was led by Valor Equity Partners with participation from 50Y, Alumni Ventures, Crescent Enterprises, Crosscut, Fine Structure Ventures, Gaingels, Harpoon Ventures, Hitachi Ventures, Kindred Ventures, MCJ, NRG Energy, Nucleation Capital, Perpetual VC, Tishman Speyer, and VamosVentures.", basis: reported}
+      - investor: "NRG Energy"
+        investor_slug: nrg
+        role: participant
+        evidence:
+          - {field: participant, snapshot: "059a40db4fcc6ab66c449aa22932f1ef51eec6567af5cb4e6229d3ba498da942", quote: "The Series B round was led by Valor Equity Partners with participation from 50Y, Alumni Ventures, Crescent Enterprises, Crosscut, Fine Structure Ventures, Gaingels, Harpoon Ventures, Hitachi Ventures, Kindred Ventures, MCJ, NRG Energy, Nucleation Capital, Perpetual VC, Tishman Speyer, and VamosVentures.", basis: reported}
+      - investor: "Nucleation Capital"
+        investor_slug: nucleation-capital
+        role: participant
+        evidence:
+          - {field: participant, snapshot: "059a40db4fcc6ab66c449aa22932f1ef51eec6567af5cb4e6229d3ba498da942", quote: "The Series B round was led by Valor Equity Partners with participation from 50Y, Alumni Ventures, Crescent Enterprises, Crosscut, Fine Structure Ventures, Gaingels, Harpoon Ventures, Hitachi Ventures, Kindred Ventures, MCJ, NRG Energy, Nucleation Capital, Perpetual VC, Tishman Speyer, and VamosVentures.", basis: reported}
+      - investor: "Perpetual VC"
+        investor_slug: perpetual-vc
+        role: participant
+        evidence:
+          - {field: participant, snapshot: "059a40db4fcc6ab66c449aa22932f1ef51eec6567af5cb4e6229d3ba498da942", quote: "The Series B round was led by Valor Equity Partners with participation from 50Y, Alumni Ventures, Crescent Enterprises, Crosscut, Fine Structure Ventures, Gaingels, Harpoon Ventures, Hitachi Ventures, Kindred Ventures, MCJ, NRG Energy, Nucleation Capital, Perpetual VC, Tishman Speyer, and VamosVentures.", basis: reported}
+      - investor: "Tishman Speyer"
+        investor_slug: tishman-speyer
+        role: participant
+        evidence:
+          - {field: participant, snapshot: "059a40db4fcc6ab66c449aa22932f1ef51eec6567af5cb4e6229d3ba498da942", quote: "The Series B round was led by Valor Equity Partners with participation from 50Y, Alumni Ventures, Crescent Enterprises, Crosscut, Fine Structure Ventures, Gaingels, Harpoon Ventures, Hitachi Ventures, Kindred Ventures, MCJ, NRG Energy, Nucleation Capital, Perpetual VC, Tishman Speyer, and VamosVentures.", basis: reported}
+      - investor: "VamosVentures"
+        investor_slug: vamosventures
+        role: participant
+        evidence:
+          - {field: participant, snapshot: "059a40db4fcc6ab66c449aa22932f1ef51eec6567af5cb4e6229d3ba498da942", quote: "The Series B round was led by Valor Equity Partners with participation from 50Y, Alumni Ventures, Crescent Enterprises, Crosscut, Fine Structure Ventures, Gaingels, Harpoon Ventures, Hitachi Ventures, Kindred Ventures, MCJ, NRG Energy, Nucleation Capital, Perpetual VC, Tishman Speyer, and VamosVentures.", basis: reported}
+  - id: aalo-cumulative-300m-2026
+    instrument: equity
+    round_label: cumulative venture capital raised
+    announced_on: 2026-10-05
+    amount: {amount: 300000000, currency: USD, qualifier: over}
+    amount_kind: cumulative
+    evidence:
+      - {field: amount, snapshot: "5db834f0ad169346a6995c2713f7c6f110be9de9e8fbc862a7e99a30b9d9b1b1", quote: "$300M+ Hundreds of millions of venture capital raised", basis: disclosed}
+      - {field: announced_on, snapshot: "5db834f0ad169346a6995c2713f7c6f110be9de9e8fbc862a7e99a30b9d9b1b1", quote: "$300M+ Hundreds of millions of venture capital raised", basis: disclosed}
+agreements:
+  - id: aalo-doe-idaho-siting-mou-2024
+    counterparty: US Department of Energy
+    counterparty_slug: doe-ne
+    type: site
+    binding: mou
+    announced_on: 2024-08-14
+    summary: Siting MOU with DOE for the Aalo-X experimental reactor at the INL site (date = Series A post date, MOU signed earlier in the prior 9 months).
+    evidence:
+      - {field: agreement, snapshot: "f19b349e54342ac2ca2184ed9d338f7f1b4d768e12aa8a417bf475206d80cfc1", quote: "Signed a siting Memorandum of Understanding (MOU) with the DOE.", basis: disclosed}
+  - id: aalo-doe-reactor-pilot-program-2025
+    counterparty: US Department of Energy
+    counterparty_slug: doe-ne
+    type: gov_contract
+    binding: loi
+    announced_on: 2025-08-12
+    summary: Selected for DOE Reactor Pilot Program (authorization under the Atomic Energy Act); no funding amount stated. Aalo-X reached criticality 2026-07-04 per company.
+    evidence:
+      - {field: agreement, snapshot: "d92aed237e3d72eebae1422dcd91a89156bb7ec851d5eb319adbd1bf1c0d3730", quote: "today’s selected companies— Aalo Atomics Inc., Antares Nuclear Inc.", basis: disclosed}
+      - {field: announced_on, snapshot: "d92aed237e3d72eebae1422dcd91a89156bb7ec851d5eb319adbd1bf1c0d3730", quote: "August 12, 2025", basis: disclosed}
+  - id: aalo-crusoe-partnership-2026
+    counterparty: Crusoe
+    counterparty_slug: crusoe
+    type: partnership
+    binding: mou
+    announced_on: 2026-07-30
+    summary: Strategic partnership to develop and deploy the first nuclear-powered AI Factory data center; no capacity or value stated; binding level not stated (recorded as mou).
+    evidence:
+      - {field: agreement, snapshot: "c09f99f70de99f1bb90a66fdbf9295f1fcb32f7259f4795f5c6c5b75cb87e9d3", quote: "Crusoe and Aalo Form Strategic Partnership", basis: disclosed}
+      - {field: announced_on, snapshot: "c09f99f70de99f1bb90a66fdbf9295f1fcb32f7259f4795f5c6c5b75cb87e9d3", quote: "Published July 30, 2026", basis: disclosed}
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  "on": 2026-10-05
+  note: "10 corrections: removed the 10 Series A participants. Their only evidence is a general 'Special thanks to ... our investors/backers' list in the Series A post (50Y, Valor, Harpoon, Crosscut, SNR, Alumni Ventures, Earth Venture, Garage Capital, Wayfinder, Nucleation Capital). It does not say they took part in the Series A, and it mixes seed backers and angels. Confirmed: no SEC Form D is recorded as a round. The 16 Forms D are investor SPVs (Gaingels, GV/CGF2021, HII, BBVC, CC Ltd, Solist). The '$300M+' on aalo.com/company is kept only as cumulative (never counted). No primary release for a round after the $100M Series B was found, so the gap of about $167M+ (300 - 6.26 - 27 - 100) is unexplained and no Series C is recorded. Not confirmed: the Series B ($100M, Valor lead) rests on TechCrunch only (basis reported). The cumulative event is dated with the snapshot date because the page is undated."

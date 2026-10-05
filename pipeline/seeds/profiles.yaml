@@ -1,0 +1,3 @@
+# Sourced company profile data. slug -> {country (ISO-2), hq_city, website, role, approach (taxonomy key), founded, logo, sources: [urls]}
+# Fills gaps in the census CSVs (many DOE-award recipients were never in the census). Every entry needs sources.
+profiles: {}

@@ -1,0 +1,159 @@
+company: tibbar-plasma-technologies
+name: Tibbar Plasma Technologies, Inc.
+sector: fusion
+notes: 'Built from USAspending spending_by_award search responses (POST, archived with request body in raw/manifest.jsonl,
+  source_id usaspending-post). Amount = USAspending ''Award Amount'' (cumulative federal obligation, not a ceiling and not
+  an announced figure); disbursed_usd = ''Total Outlays'' when present. Dates = ''Base Obligation Date'' (first obligation),
+  else ''Start Date''. Search was recipient-name text on awarding agency = Department of Energy over 2007-10-01..2026-09-30
+  and one page of up to 50 rows per award-type group; awards with zero or negative net obligation are omitted. Recipient name
+  variants not matched by the name search may be missing. Government record, basis=disclosed. VERIFIER (2026-10-05): every
+  row re-checked against the archived search snapshot (amount, outlays, base obligation date all match) and against a per-award
+  USAspending award-detail snapshot (api/v2/awards/<id>/, source verify-usaspending). Rows are award-level aggregates, so
+  each event is one award, not a modification. Participant evidence now quotes the award''s assistance-listing title or awarding
+  office from the award-detail snapshot (the old quote only said ''Department of Energy''); obligated_usd now has its own
+  evidence ("total_obligation"). Where the search row showed ''Total Outlays'' 0.0 but the award detail has total_outlay null
+  (no File C outlay reporting, typical for pre-2020 or brand-new awards), disbursed_usd was removed: 0.0 meant ''not reported'',
+  not ''nothing paid''. DEAR0000677 (ARPA-E, 2016, $2.29M) funds plasma-based electrical transformers, not fusion; it is still
+  company money.'
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: '5 changes: 3 participant evidence items re-sourced; obligated evidence added; disbursed 0.0 removed on DEAR0000677
+    and DESC0018278 (pre-2019 awards with no outlay reporting). Recipient is the company. Scope OK (fusion developer); note
+    that the largest award (ARPA-E transformers) is non-fusion work.'
+events:
+- id: tibbar-plasma-technologies-dear0000677
+  instrument: grant
+  round_label: DEAR0000677
+  announced_on: '2016-04-28'
+  amount:
+    amount: 2290105.63
+    currency: USD
+    qualifier: exact
+    usd: 2290105.63
+  amount_kind: new_money
+  program: ARPA-E
+  obligated_usd: 2290105.63
+  use_of_proceeds: PLASMA-BASED ELECTRICAL TRANSFORMERS
+  evidence:
+  - field: amount
+    snapshot: e5880433f0bfa9c83699c0422f7a85f95a5348ca09d7902ee5ed28691f46298c
+    quote: '"Award ID": "DEAR0000677", "Recipient Name": "TIBBAR PLASMA TECHNOLOGIES, INC", "Recipient UEI": "K9VJCLJ798R8",
+      "Award Amount": 2290105.63'
+    basis: disclosed
+  - field: announced_on
+    snapshot: e5880433f0bfa9c83699c0422f7a85f95a5348ca09d7902ee5ed28691f46298c
+    quote: '"Base Obligation Date": "2016-04-28", "generated_internal_id": "ASST_NON_DEAR0000677_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: e5880433f0bfa9c83699c0422f7a85f95a5348ca09d7902ee5ed28691f46298c
+    quote: '"Award ID": "DEAR0000677", "Recipient Name": "TIBBAR PLASMA TECHNOLOGIES, INC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: e5880433f0bfa9c83699c0422f7a85f95a5348ca09d7902ee5ed28691f46298c
+    quote: '"Description": "PLASMA-BASED ELECTRICAL TRANSFORMERS"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 819e1e487536d1f817688a52f3d1b85f72ffc68a681ca0665f1f1a69d21e9433
+    quote: '"total_obligation":2290105.63'
+    basis: disclosed
+  participants:
+  - investor: ARPA-E
+    investor_slug: arpa-e
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 819e1e487536d1f817688a52f3d1b85f72ffc68a681ca0665f1f1a69d21e9433
+      quote: '"cfda_title":"Advanced Research Projects Agency - Energy"'
+      basis: disclosed
+- id: tibbar-plasma-technologies-desc0018278
+  instrument: grant
+  round_label: DESC0018278
+  announced_on: '2017-09-26'
+  amount:
+    amount: 90000.0
+    currency: USD
+    qualifier: exact
+    usd: 90000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 90000.0
+  use_of_proceeds: STABILITY AND CONTROL OF BURNING TOKAMAK PLASMAS WITH RESISTIVE WALLS
+  evidence:
+  - field: amount
+    snapshot: e5880433f0bfa9c83699c0422f7a85f95a5348ca09d7902ee5ed28691f46298c
+    quote: '"Award ID": "DESC0018278", "Recipient Name": "TIBBAR PLASMA TECHNOLOGIES, INC", "Recipient UEI": "K9VJCLJ798R8",
+      "Award Amount": 90000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: e5880433f0bfa9c83699c0422f7a85f95a5348ca09d7902ee5ed28691f46298c
+    quote: '"Base Obligation Date": "2017-09-26", "generated_internal_id": "ASST_NON_DESC0018278_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: e5880433f0bfa9c83699c0422f7a85f95a5348ca09d7902ee5ed28691f46298c
+    quote: '"Award ID": "DESC0018278", "Recipient Name": "TIBBAR PLASMA TECHNOLOGIES, INC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: e5880433f0bfa9c83699c0422f7a85f95a5348ca09d7902ee5ed28691f46298c
+    quote: '"Description": "STABILITY AND CONTROL OF BURNING TOKAMAK PLASMAS WITH RESISTIVE WALLS"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 3e1b1d343c92e0c388cce0c70a6deea7fe6dcc188819e4bf24d4bd7f37aa29a0
+    quote: '"total_obligation":90000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 3e1b1d343c92e0c388cce0c70a6deea7fe6dcc188819e4bf24d4bd7f37aa29a0
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: tibbar-plasma-technologies-desc0019016
+  instrument: grant
+  round_label: DESC0019016
+  announced_on: '2018-09-27'
+  amount:
+    amount: 299975.0
+    currency: USD
+    qualifier: exact
+    usd: 299975.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 299975.0
+  disbursed_usd: 201570.0
+  use_of_proceeds: STABILITY AND CONTROL OF BURNING TOKAMAK PLASMAS WITH RESISTIVE WALLS
+  evidence:
+  - field: amount
+    snapshot: e5880433f0bfa9c83699c0422f7a85f95a5348ca09d7902ee5ed28691f46298c
+    quote: '"Award ID": "DESC0019016", "Recipient Name": "TIBBAR PLASMA TECHNOLOGIES, INC", "Recipient UEI": "K9VJCLJ798R8",
+      "Award Amount": 299975.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: e5880433f0bfa9c83699c0422f7a85f95a5348ca09d7902ee5ed28691f46298c
+    quote: '"Base Obligation Date": "2018-09-27", "generated_internal_id": "ASST_NON_DESC0019016_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: e5880433f0bfa9c83699c0422f7a85f95a5348ca09d7902ee5ed28691f46298c
+    quote: '"Award ID": "DESC0019016", "Recipient Name": "TIBBAR PLASMA TECHNOLOGIES, INC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: e5880433f0bfa9c83699c0422f7a85f95a5348ca09d7902ee5ed28691f46298c
+    quote: '"Description": "STABILITY AND CONTROL OF BURNING TOKAMAK PLASMAS WITH RESISTIVE WALLS"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: fd01f3ce66edfb28809778292fa312b0a47d4b57737bf4e9ff0b36aedd4c88d7
+    quote: '"total_obligation":299975.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: fd01f3ce66edfb28809778292fa312b0a47d4b57737bf4e9ff0b36aedd4c88d7
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+agreements: []

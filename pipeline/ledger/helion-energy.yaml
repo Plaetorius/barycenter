@@ -1,0 +1,764 @@
+company: helion-energy
+name: Helion Energy
+sector: fusion
+notes: 'Built 2026-10-05. helionenergy.com is ToS-forbidden (P2): every company release is a Wayback copy (original_url set); all 2014-2026 amounts are corroborated by an independent source except where
+  noted below.
+
+  (1) Series G edited in place: the Wayback copy (2026-09-25) of the 2026-06-04 release carries an UPDATE banner saying the round closed at $500M in September 2026 up from $465M. Modelled as two events:
+  helion-series-g-2026-06-initial ($465M) and helion-series-g-2026-09-final ($500M, supersedes the initial). Do not sum them. GeekWire 2026-09-15 reports the +$35M extension (new crossover, pension and
+  sovereign wealth investors, unnamed). A closed_on date for the final close is not stated (only ''September 2026''). The Series G release names a ''university endowment fund'' (unnamed).
+
+  (2) Conflict: Helion release says Series F post-money $5.425B; TechCrunch wrote $5.245B (apparent typo). Ledger uses the company figure. Series E valuation $3B is ''reported'' (GeekWire citing Axios).
+  GeekWire''s June 2026 related-links line says ''$463 million'' in one place; $465M used everywhere else.
+
+  (3) Series E also carried ''the opportunity for an additional $1.7 billion ... tied to Helion reaching key performance milestones'' (committed, milestone-contingent). Not recorded as money raised. Altman''s
+  own $375M is stated by GeekWire (citing CNBC), recorded on his participant row only.
+
+  (4) 2015 event: SEC Form D for Helion Energy, Inc. (first sale 2015-06-19, filed 2015-07-06): $10,614,202 sold of $21,228,400 offered, 6 investors. No investor names, no round label, security type not
+  visible in the extracted text (assumed equity); announced_on is the Form D filing date because no announcement exists. TechCrunch 2021 says Sam Altman has been an investor and chairman since 2015 but
+  ties him to no specific round, so no participants are recorded. Form D amounts are ''sold at filing time'' and may understate the final round.
+
+  (5) Seed 2014: Form D (first sale 2014-07-29, $1,499,986, 3 investors) and TechCrunch (2014-08-14, YC and Mithril $1.5M). Mithril ''led'' per CEO quote in TechCrunch 2021.
+
+  (6) Series D ($40M, led by Dustin Moskovitz, $1.25B valuation, closed 2020-09-22): single-source (Helion release via Wayback). No independent article could be archived (search budget exhausted, GeekWire
+  search 403). The Series D release and GeekWire 2021 (''$72 million in venture capital and $5 million in government grants'' before Series E) are consistent with the $77.8M cumulative figure. Reviewer:
+  find an independent source.
+
+  (7) Gaps: Series A, B, C are not evidenced. Between the 2015 Form D and Series D the company raised roughly $26M that I could not attribute to named rounds ($77.8M cumulative - $40M Series D - $1.5M seed
+  - $10.6M 2015 - $5M grants). No Wikipedia/Crunchbase/PitchBook used. Wikipedia (not cited) mentions ''$7 million from NASA, DOE and DoD'' before 2014; not found in USAspending/SBIR probes (SBIR probe
+  found 0 Helion hits; early SBIRs likely went to MSNW, not Helion), so not recorded. INFUSE/FIRE/Milestone: probe notes show no Helion award.
+
+  (8) ARPA-E ALPHA: ARPA-E project record release date 2014-08-24 and amount $3,971,263; USAspending shows DEAR0000563 with period 2015-09-28 to 2018-09-29, same amount, no outlays reported. [verifier: that release_date is the ALPHA programme
+  date; announced_on changed to USAspending date_signed 2015-09-29.]
+
+  (9) SEC Form D 2026-09-11 for ''HII Helion Energy-01, a Series of HII Helion Energy LLC'' (CIK 2155060, $4,552,131, 53 investors, Hiive Markets sales compensation) is a pooled secondary vehicle holding
+  existing Helion shares, not Helion company financing: deliberately not an event. Helion itself filed no Form D for the 2020-2026 rounds.
+
+  (10) Nucor: the Sept 2023 agreement ''includes an investment by Nucor in Helion'' (amount undisclosed); recorded as an equity event with no amount plus an agreement. Series F and G release lists describe
+  Nucor as an existing investor. Not recorded: OpenAI power-supply negotiations (GeekWire 2026-03-23, a report only), Orion site permits/licences (regulatory, not funding), Helion''s own grants to 20 research
+  institutions (outflow). Orion groundbreaking July 2025 (Reuters, blocked by robots.txt).
+
+  (11) University endowment investor in Series F and G is unnamed in sources, so no participant row.'
+events:
+- id: helion-seed-2014-08
+  instrument: equity
+  round_label: Seed
+  round_group: seed
+  announced_on: '2014-08-14'
+  amount:
+    amount: 1499986
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: 7a656329de114332dc6db3915fbaee08c4b63e84e8edceb11743f1c34f937291
+    quote: 0 1499986 1499986 0 false 3
+    basis: disclosed
+  - field: amount
+    snapshot: 6ca14ae3b249c0d66a56c23b15c6efd1b8ca5c5f37dc59ef36e4e9d4ba466ff9
+    quote: Y Combinator and Mithril Capital Management are investing $1.5 million in Helion Energy
+    basis: reported
+  - field: announced_on
+    snapshot: 6ca14ae3b249c0d66a56c23b15c6efd1b8ca5c5f37dc59ef36e4e9d4ba466ff9
+    quote: 10:00 AM PDT · August 14, 2014
+    basis: reported
+  - field: round_label
+    snapshot: 7380191673eff9f865ca73dfa5d0f293034e5d8817a9f38087a3f7f6118a76f1
+    quote: Our first funding round was led by Mithril Capital, and Y Combinator was part of it.
+    basis: reported
+  participants:
+  - investor: Mithril Capital Management
+    investor_slug: mithril-capital
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 7380191673eff9f865ca73dfa5d0f293034e5d8817a9f38087a3f7f6118a76f1
+      quote: Our first funding round was led by Mithril Capital, and Y Combinator was part of it.
+      basis: reported
+    - field: participant
+      snapshot: 6ca14ae3b249c0d66a56c23b15c6efd1b8ca5c5f37dc59ef36e4e9d4ba466ff9
+      quote: Y Combinator and Mithril Capital Management are investing $1.5 million in Helion Energy
+      basis: reported
+  - investor: Y Combinator
+    investor_slug: y-combinator
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 6ca14ae3b249c0d66a56c23b15c6efd1b8ca5c5f37dc59ef36e4e9d4ba466ff9
+      quote: Y Combinator and Mithril Capital Management are investing $1.5 million in Helion Energy
+      basis: reported
+- id: helion-form-d-2015-06
+  instrument: equity
+  round_label: null
+  announced_on: '2015-07-06'
+  closed_on: null
+  amount:
+    amount: 10614202
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: 87e29dda2d249f396fbf99fe2194caf3c555754debaead3e25d706a520eab9bc
+    quote: 0 21228400 10614202 10614198 false 6
+    basis: disclosed
+  - field: announced_on
+    snapshot: 87e29dda2d249f396fbf99fe2194caf3c555754debaead3e25d706a520eab9bc
+    quote: /s/ David Kirtley David Kirtley President 2015-07-06
+    basis: disclosed
+- id: helion-series-d-2020-09
+  instrument: equity
+  round_label: Series D
+  round_group: series-d
+  announced_on: '2020-09-23'
+  closed_on: '2020-09-22'
+  amount:
+    amount: 40000000
+    currency: USD
+    qualifier: exact
+  valuation_post_usd: 1250000000.0
+  use_of_proceeds: to accelerate its work on its 6th fusion prototype, Trenta
+  evidence:
+  - field: amount
+    snapshot: 9aee7ba1775b3774e3060e4f0b67ce9e3c0b8c188066a8f4719593a725484405
+    quote: closed a $40 million Series D funding round led by investor and entrepreneur Dustin Moskovitz
+    original_url: https://www.helionenergy.com/newsroom/fusion-energy-startup-helion-energy-closes-latest-funding-round-at-1-25b-valuation
+    basis: disclosed
+  - field: announced_on
+    snapshot: 9aee7ba1775b3774e3060e4f0b67ce9e3c0b8c188066a8f4719593a725484405
+    quote: Fusion Energy Startup Helion Energy Closes Latest Funding Round at $1.25B Valuation September 23, 2020
+    original_url: https://www.helionenergy.com/newsroom/fusion-energy-startup-helion-energy-closes-latest-funding-round-at-1-25b-valuation
+    basis: disclosed
+  - field: round_label
+    snapshot: 9aee7ba1775b3774e3060e4f0b67ce9e3c0b8c188066a8f4719593a725484405
+    quote: closed a $40 million Series D funding round
+    original_url: https://www.helionenergy.com/newsroom/fusion-energy-startup-helion-energy-closes-latest-funding-round-at-1-25b-valuation
+    basis: disclosed
+  - field: valuation
+    snapshot: 9aee7ba1775b3774e3060e4f0b67ce9e3c0b8c188066a8f4719593a725484405
+    quote: today announced it has been valued at $1.25B after its latest fundraise
+    original_url: https://www.helionenergy.com/newsroom/fusion-energy-startup-helion-energy-closes-latest-funding-round-at-1-25b-valuation
+    basis: disclosed
+  - field: closed_on
+    snapshot: 9aee7ba1775b3774e3060e4f0b67ce9e3c0b8c188066a8f4719593a725484405
+    quote: Yesterday, Helion closed a $40 million Series D funding round
+    original_url: https://www.helionenergy.com/newsroom/fusion-energy-startup-helion-energy-closes-latest-funding-round-at-1-25b-valuation
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 9aee7ba1775b3774e3060e4f0b67ce9e3c0b8c188066a8f4719593a725484405
+    quote: The new funding will enable the company to accelerate its work on its 6th fusion prototype, Trenta.
+    original_url: https://www.helionenergy.com/newsroom/fusion-energy-startup-helion-energy-closes-latest-funding-round-at-1-25b-valuation
+    basis: disclosed
+  participants:
+  - investor: Dustin Moskovitz
+    investor_slug: dustin-moskovitz
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 9aee7ba1775b3774e3060e4f0b67ce9e3c0b8c188066a8f4719593a725484405
+      quote: Series D funding round led by investor and entrepreneur Dustin Moskovitz
+      original_url: https://www.helionenergy.com/newsroom/fusion-energy-startup-helion-energy-closes-latest-funding-round-at-1-25b-valuation
+      basis: disclosed
+- id: helion-series-e-2021-11
+  instrument: equity
+  round_label: Series E
+  round_group: series-e
+  announced_on: '2021-11-05'
+  amount:
+    amount: 500000000
+    currency: USD
+    qualifier: exact
+  valuation_post_usd: 3000000000.0
+  use_of_proceeds: to complete the construction of Polaris, Helion's seventh generation fusion generator
+  evidence:
+  - field: amount
+    snapshot: d24ee8d889d91319710340fffeaed3e2572d4d708e38b896beffc5d1ca95095d
+    quote: today announced the close of its Series E raise of $500 million.
+    original_url: https://www.helionenergy.com/articles/helion-raises-500m/
+    basis: disclosed
+  - field: amount
+    snapshot: 7380191673eff9f865ca73dfa5d0f293034e5d8817a9f38087a3f7f6118a76f1
+    quote: announced the close of its $0.5 billion Series E
+    basis: reported
+  - field: announced_on
+    snapshot: d24ee8d889d91319710340fffeaed3e2572d4d708e38b896beffc5d1ca95095d
+    quote: EVERETT, WASHINGTON. NOV. 5, 2021
+    original_url: https://www.helionenergy.com/articles/helion-raises-500m/
+    basis: disclosed
+  - field: round_label
+    snapshot: d24ee8d889d91319710340fffeaed3e2572d4d708e38b896beffc5d1ca95095d
+    quote: today announced the close of its Series E raise of $500 million.
+    original_url: https://www.helionenergy.com/articles/helion-raises-500m/
+    basis: disclosed
+  - field: valuation
+    snapshot: 9b42749c55175affbd5243eecde435605436c3a2b7a7484e0a92684d10673ac2
+    quote: Axios reported that Helion is now valued at $3 billion.
+    basis: reported
+  - field: use_of_proceeds
+    snapshot: d24ee8d889d91319710340fffeaed3e2572d4d708e38b896beffc5d1ca95095d
+    quote: The capital will be used to complete the construction of Polaris
+    original_url: https://www.helionenergy.com/articles/helion-raises-500m/
+    basis: disclosed
+  participants:
+  - investor: Sam Altman
+    investor_slug: sam-altman
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: d24ee8d889d91319710340fffeaed3e2572d4d708e38b896beffc5d1ca95095d
+      quote: The round was led by Sam Altman
+      original_url: https://www.helionenergy.com/articles/helion-raises-500m/
+      basis: disclosed
+    - field: participant
+      snapshot: 9b42749c55175affbd5243eecde435605436c3a2b7a7484e0a92684d10673ac2
+      quote: His contribution to the round was $375 million
+      basis: reported
+    amount:
+      amount: 375000000
+      currency: USD
+      qualifier: exact
+  - investor: Dustin Moskovitz
+    investor_slug: dustin-moskovitz
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: d24ee8d889d91319710340fffeaed3e2572d4d708e38b896beffc5d1ca95095d
+      quote: Existing investors, including Dustin Moskovitz, Mithril Capital and Capricorn Investment Group, also participated in the round.
+      original_url: https://www.helionenergy.com/articles/helion-raises-500m/
+      basis: disclosed
+  - investor: Mithril Capital
+    investor_slug: mithril-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: d24ee8d889d91319710340fffeaed3e2572d4d708e38b896beffc5d1ca95095d
+      quote: Existing investors, including Dustin Moskovitz, Mithril Capital and Capricorn Investment Group, also participated in the round.
+      original_url: https://www.helionenergy.com/articles/helion-raises-500m/
+      basis: disclosed
+  - investor: Capricorn Investment Group
+    investor_slug: capricorn-investment-group
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: d24ee8d889d91319710340fffeaed3e2572d4d708e38b896beffc5d1ca95095d
+      quote: Existing investors, including Dustin Moskovitz, Mithril Capital and Capricorn Investment Group, also participated in the round.
+      original_url: https://www.helionenergy.com/articles/helion-raises-500m/
+      basis: disclosed
+- id: helion-nucor-investment-2023-09
+  instrument: equity
+  round_label: Strategic investment
+  announced_on: '2023-09-27'
+  evidence:
+  - field: announced_on
+    snapshot: 0457a9ae34660b0779a9043819d21a0b9d545cd271a418d4f0aa0d3eab15495a
+    quote: EVERETT, Wash. – September 27, 2023
+    original_url: https://www.helionenergy.com/newsroom/helion-nucor-collaboration-to-deploy-500-mw-fusion-power-plant
+    basis: disclosed
+  - field: round_label
+    snapshot: 0457a9ae34660b0779a9043819d21a0b9d545cd271a418d4f0aa0d3eab15495a
+    quote: The agreement between the two companies, which includes an investment by Nucor in Helion
+    original_url: https://www.helionenergy.com/newsroom/helion-nucor-collaboration-to-deploy-500-mw-fusion-power-plant
+    basis: disclosed
+  - field: round_label
+    snapshot: 692eb7c2544c65dc5520446f0404ab181ea12150077b9b4d965407266eef5653
+    quote: The agreement includes an investment by Nucor in Helion
+    basis: reported
+  participants:
+  - investor: Nucor Corporation
+    investor_slug: nucor
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 0457a9ae34660b0779a9043819d21a0b9d545cd271a418d4f0aa0d3eab15495a
+      quote: The agreement between the two companies, which includes an investment by Nucor in Helion
+      original_url: https://www.helionenergy.com/newsroom/helion-nucor-collaboration-to-deploy-500-mw-fusion-power-plant
+      basis: disclosed
+    - field: participant
+      snapshot: 692eb7c2544c65dc5520446f0404ab181ea12150077b9b4d965407266eef5653
+      quote: The agreement includes an investment by Nucor in Helion
+      basis: reported
+- id: helion-series-f-2025-01
+  instrument: equity
+  round_label: Series F
+  round_group: series-f
+  announced_on: '2025-01-28'
+  amount:
+    amount: 425000000
+    currency: USD
+    qualifier: exact
+  valuation_post_usd: 5425000000.0
+  use_of_proceeds: to scale commercialization efforts for the company's groundbreaking fusion technology
+  evidence:
+  - field: amount
+    snapshot: 756e84e98d1bad0d3a8299b4c0e7c2852069a98a1e3c9aacbed6908c75466904
+    quote: announced a $425 million Series F investment round
+    original_url: https://www.helionenergy.com/newsroom/helion-announces-425m-series-f-investment-to-scale-commercialized-fusion-power
+    basis: disclosed
+  - field: amount
+    snapshot: 8b3692332407a7aba94633b8bf3dfd71b660b636dbd74fc8afac296a1618f8cb
+    quote: Helion announced Tuesday a $425 million Series F raise
+    basis: reported
+  - field: announced_on
+    snapshot: 756e84e98d1bad0d3a8299b4c0e7c2852069a98a1e3c9aacbed6908c75466904
+    quote: EVERETT, Wash. – January 28, 2025
+    original_url: https://www.helionenergy.com/newsroom/helion-announces-425m-series-f-investment-to-scale-commercialized-fusion-power
+    basis: disclosed
+  - field: round_label
+    snapshot: 756e84e98d1bad0d3a8299b4c0e7c2852069a98a1e3c9aacbed6908c75466904
+    quote: announced a $425 million Series F investment round
+    original_url: https://www.helionenergy.com/newsroom/helion-announces-425m-series-f-investment-to-scale-commercialized-fusion-power
+    basis: disclosed
+  - field: valuation
+    snapshot: 756e84e98d1bad0d3a8299b4c0e7c2852069a98a1e3c9aacbed6908c75466904
+    quote: values the company at $5.425 billion post-money
+    original_url: https://www.helionenergy.com/newsroom/helion-announces-425m-series-f-investment-to-scale-commercialized-fusion-power
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 756e84e98d1bad0d3a8299b4c0e7c2852069a98a1e3c9aacbed6908c75466904
+    quote: that will be used to scale commercialization efforts for the company’s groundbreaking fusion technology
+    original_url: https://www.helionenergy.com/newsroom/helion-announces-425m-series-f-investment-to-scale-commercialized-fusion-power
+    basis: disclosed
+  participants:
+  - investor: Lightspeed Venture Partners
+    investor_slug: lightspeed
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 756e84e98d1bad0d3a8299b4c0e7c2852069a98a1e3c9aacbed6908c75466904
+      quote: participation from new investors, including Lightspeed Venture Partners, SoftBank Vision Fund 2, and a major university endowment
+      original_url: https://www.helionenergy.com/newsroom/helion-announces-425m-series-f-investment-to-scale-commercialized-fusion-power
+      basis: disclosed
+    - field: participant
+      snapshot: 8b3692332407a7aba94633b8bf3dfd71b660b636dbd74fc8afac296a1618f8cb
+      quote: New investors in the round include Lightspeed Venture Partners, SoftBank Vision Fund 2, and a major university endowment.
+      basis: reported
+  - investor: SoftBank Vision Fund 2
+    investor_slug: softbank-vision-fund-2
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 756e84e98d1bad0d3a8299b4c0e7c2852069a98a1e3c9aacbed6908c75466904
+      quote: participation from new investors, including Lightspeed Venture Partners, SoftBank Vision Fund 2, and a major university endowment
+      original_url: https://www.helionenergy.com/newsroom/helion-announces-425m-series-f-investment-to-scale-commercialized-fusion-power
+      basis: disclosed
+    - field: participant
+      snapshot: 8b3692332407a7aba94633b8bf3dfd71b660b636dbd74fc8afac296a1618f8cb
+      quote: New investors in the round include Lightspeed Venture Partners, SoftBank Vision Fund 2, and a major university endowment.
+      basis: reported
+  - investor: Sam Altman
+    investor_slug: sam-altman
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 756e84e98d1bad0d3a8299b4c0e7c2852069a98a1e3c9aacbed6908c75466904
+      quote: existing investors including Sam Altman, Mithril Capital, Capricorn Investment Group, Dustin Moskovitz through Good Ventures Foundation, and Nucor
+      original_url: https://www.helionenergy.com/newsroom/helion-announces-425m-series-f-investment-to-scale-commercialized-fusion-power
+      basis: disclosed
+  - investor: Mithril Capital
+    investor_slug: mithril-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 756e84e98d1bad0d3a8299b4c0e7c2852069a98a1e3c9aacbed6908c75466904
+      quote: existing investors including Sam Altman, Mithril Capital, Capricorn Investment Group, Dustin Moskovitz through Good Ventures Foundation, and Nucor
+      original_url: https://www.helionenergy.com/newsroom/helion-announces-425m-series-f-investment-to-scale-commercialized-fusion-power
+      basis: disclosed
+  - investor: Capricorn Investment Group
+    investor_slug: capricorn-investment-group
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 756e84e98d1bad0d3a8299b4c0e7c2852069a98a1e3c9aacbed6908c75466904
+      quote: existing investors including Sam Altman, Mithril Capital, Capricorn Investment Group, Dustin Moskovitz through Good Ventures Foundation, and Nucor
+      original_url: https://www.helionenergy.com/newsroom/helion-announces-425m-series-f-investment-to-scale-commercialized-fusion-power
+      basis: disclosed
+  - investor: Dustin Moskovitz through Good Ventures Foundation
+    investor_slug: dustin-moskovitz
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 756e84e98d1bad0d3a8299b4c0e7c2852069a98a1e3c9aacbed6908c75466904
+      quote: existing investors including Sam Altman, Mithril Capital, Capricorn Investment Group, Dustin Moskovitz through Good Ventures Foundation, and Nucor
+      original_url: https://www.helionenergy.com/newsroom/helion-announces-425m-series-f-investment-to-scale-commercialized-fusion-power
+      basis: disclosed
+  - investor: Nucor
+    investor_slug: nucor
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 756e84e98d1bad0d3a8299b4c0e7c2852069a98a1e3c9aacbed6908c75466904
+      quote: existing investors including Sam Altman, Mithril Capital, Capricorn Investment Group, Dustin Moskovitz through Good Ventures Foundation, and Nucor
+      original_url: https://www.helionenergy.com/newsroom/helion-announces-425m-series-f-investment-to-scale-commercialized-fusion-power
+      basis: disclosed
+    - field: participant
+      snapshot: 8b3692332407a7aba94633b8bf3dfd71b660b636dbd74fc8afac296a1618f8cb
+      quote: Existing investors Sam Altman, Capricorn Investment Group, Mithril Capital, Dustin Moskovitz, and Nucor also participated.
+      basis: reported
+- id: helion-series-g-2026-06-initial
+  instrument: equity
+  round_label: Series G
+  round_group: series-g
+  announced_on: '2026-06-04'
+  amount:
+    amount: 465000000
+    currency: USD
+    qualifier: exact
+  valuation_post_usd: 15500000000.0
+  use_of_proceeds: to accelerate commercial deployment of fusion, scale manufacturing capacity, and expand the company's ability to deliver clean electricity to customers
+  evidence:
+  - field: amount
+    snapshot: 203b49c82d3f6fe7a7aac2f6f7fd9641a99c433da8d0f138b579e0861bfa66de
+    quote: announced a $465 million Series G investment round
+    original_url: https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power
+    basis: disclosed
+  - field: amount
+    snapshot: 00af6e353cbeedd2b4d9d7911447082b60e2040b360e3b9669e953ef8121dab5
+    quote: announced $465 million in new funding Thursday
+    basis: reported
+  - field: announced_on
+    snapshot: 203b49c82d3f6fe7a7aac2f6f7fd9641a99c433da8d0f138b579e0861bfa66de
+    quote: EVERETT, Wash. – June 4, 2026
+    original_url: https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power
+    basis: disclosed
+  - field: round_label
+    snapshot: 203b49c82d3f6fe7a7aac2f6f7fd9641a99c433da8d0f138b579e0861bfa66de
+    quote: announced a $465 million Series G investment round
+    original_url: https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power
+    basis: disclosed
+  - field: valuation
+    snapshot: 203b49c82d3f6fe7a7aac2f6f7fd9641a99c433da8d0f138b579e0861bfa66de
+    quote: values the company at $15.5 billion post-money
+    original_url: https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 203b49c82d3f6fe7a7aac2f6f7fd9641a99c433da8d0f138b579e0861bfa66de
+    quote: to accelerate commercial deployment of fusion, scale manufacturing capacity, and expand the company’s ability to deliver clean electricity to customers
+    original_url: https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power
+    basis: disclosed
+  participants:
+  - investor: Thrive Capital
+    investor_slug: thrive-capital
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 203b49c82d3f6fe7a7aac2f6f7fd9641a99c433da8d0f138b579e0861bfa66de
+      quote: The raise was led by Thrive Capital, with participation from additional new investors, including Alta Park Capital, Anti Fund, BoxGroup, Lux Capital, Peak XV Partners, and Ford Motor Company
+        Executive Chairman Bill Ford
+      original_url: https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power
+      basis: disclosed
+  - investor: Alta Park Capital
+    investor_slug: alta-park-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 203b49c82d3f6fe7a7aac2f6f7fd9641a99c433da8d0f138b579e0861bfa66de
+      quote: The raise was led by Thrive Capital, with participation from additional new investors, including Alta Park Capital, Anti Fund, BoxGroup, Lux Capital, Peak XV Partners, and Ford Motor Company
+        Executive Chairman Bill Ford
+      original_url: https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power
+      basis: disclosed
+  - investor: Anti Fund
+    investor_slug: anti-fund
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 203b49c82d3f6fe7a7aac2f6f7fd9641a99c433da8d0f138b579e0861bfa66de
+      quote: The raise was led by Thrive Capital, with participation from additional new investors, including Alta Park Capital, Anti Fund, BoxGroup, Lux Capital, Peak XV Partners, and Ford Motor Company
+        Executive Chairman Bill Ford
+      original_url: https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power
+      basis: disclosed
+  - investor: BoxGroup
+    investor_slug: boxgroup
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 203b49c82d3f6fe7a7aac2f6f7fd9641a99c433da8d0f138b579e0861bfa66de
+      quote: The raise was led by Thrive Capital, with participation from additional new investors, including Alta Park Capital, Anti Fund, BoxGroup, Lux Capital, Peak XV Partners, and Ford Motor Company
+        Executive Chairman Bill Ford
+      original_url: https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power
+      basis: disclosed
+  - investor: Lux Capital
+    investor_slug: lux-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 203b49c82d3f6fe7a7aac2f6f7fd9641a99c433da8d0f138b579e0861bfa66de
+      quote: The raise was led by Thrive Capital, with participation from additional new investors, including Alta Park Capital, Anti Fund, BoxGroup, Lux Capital, Peak XV Partners, and Ford Motor Company
+        Executive Chairman Bill Ford
+      original_url: https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power
+      basis: disclosed
+  - investor: Peak XV Partners
+    investor_slug: peak-xv
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 203b49c82d3f6fe7a7aac2f6f7fd9641a99c433da8d0f138b579e0861bfa66de
+      quote: The raise was led by Thrive Capital, with participation from additional new investors, including Alta Park Capital, Anti Fund, BoxGroup, Lux Capital, Peak XV Partners, and Ford Motor Company
+        Executive Chairman Bill Ford
+      original_url: https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power
+      basis: disclosed
+  - investor: Bill Ford
+    investor_slug: bill-ford
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 203b49c82d3f6fe7a7aac2f6f7fd9641a99c433da8d0f138b579e0861bfa66de
+      quote: The raise was led by Thrive Capital, with participation from additional new investors, including Alta Park Capital, Anti Fund, BoxGroup, Lux Capital, Peak XV Partners, and Ford Motor Company
+        Executive Chairman Bill Ford
+      original_url: https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power
+      basis: disclosed
+  - investor: Capricorn Technology Impact Funds
+    investor_slug: capricorn-investment-group
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 203b49c82d3f6fe7a7aac2f6f7fd9641a99c433da8d0f138b579e0861bfa66de
+      quote: plus existing investors, including Capricorn Technology Impact Funds, Lightspeed Venture Partners, Mithril Capital, Dustin Moskovitz through Good Ventures Foundation, SoftBank Vision Fund 2,
+        and a university endowment fund
+      original_url: https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power
+      basis: disclosed
+  - investor: Lightspeed Venture Partners
+    investor_slug: lightspeed
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 203b49c82d3f6fe7a7aac2f6f7fd9641a99c433da8d0f138b579e0861bfa66de
+      quote: plus existing investors, including Capricorn Technology Impact Funds, Lightspeed Venture Partners, Mithril Capital, Dustin Moskovitz through Good Ventures Foundation, SoftBank Vision Fund 2,
+        and a university endowment fund
+      original_url: https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power
+      basis: disclosed
+  - investor: Mithril Capital
+    investor_slug: mithril-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 203b49c82d3f6fe7a7aac2f6f7fd9641a99c433da8d0f138b579e0861bfa66de
+      quote: plus existing investors, including Capricorn Technology Impact Funds, Lightspeed Venture Partners, Mithril Capital, Dustin Moskovitz through Good Ventures Foundation, SoftBank Vision Fund 2,
+        and a university endowment fund
+      original_url: https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power
+      basis: disclosed
+  - investor: Dustin Moskovitz through Good Ventures Foundation
+    investor_slug: dustin-moskovitz
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 203b49c82d3f6fe7a7aac2f6f7fd9641a99c433da8d0f138b579e0861bfa66de
+      quote: plus existing investors, including Capricorn Technology Impact Funds, Lightspeed Venture Partners, Mithril Capital, Dustin Moskovitz through Good Ventures Foundation, SoftBank Vision Fund 2,
+        and a university endowment fund
+      original_url: https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power
+      basis: disclosed
+  - investor: SoftBank Vision Fund 2
+    investor_slug: softbank-vision-fund-2
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 203b49c82d3f6fe7a7aac2f6f7fd9641a99c433da8d0f138b579e0861bfa66de
+      quote: plus existing investors, including Capricorn Technology Impact Funds, Lightspeed Venture Partners, Mithril Capital, Dustin Moskovitz through Good Ventures Foundation, SoftBank Vision Fund 2,
+        and a university endowment fund
+      original_url: https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power
+      basis: disclosed
+- id: helion-series-g-2026-09-final
+  instrument: equity
+  round_label: Series G (final close)
+  round_group: series-g
+  announced_on: '2026-09-15'
+  amount:
+    amount: 500000000
+    currency: USD
+    qualifier: exact
+  supersedes: helion-series-g-2026-06-initial
+  evidence:
+  - field: amount
+    snapshot: 203b49c82d3f6fe7a7aac2f6f7fd9641a99c433da8d0f138b579e0861bfa66de
+    quote: 'UPDATE: Helion closed its oversubscribed Series G at $500M in September 2026, up from an initial close of $465M.'
+    original_url: https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power
+    basis: disclosed
+  - field: amount
+    snapshot: 403af50ee408099e468660d1a3a3381e5f5d7c35c288f2b972374c26340dcb15
+    quote: Kirtley said the investment now totals $500 million.
+    basis: reported
+  - field: announced_on
+    snapshot: 403af50ee408099e468660d1a3a3381e5f5d7c35c288f2b972374c26340dcb15
+    quote: Lisa Stiffler on Sep 15, 2026
+    basis: reported
+  - field: extension_amount
+    snapshot: 403af50ee408099e468660d1a3a3381e5f5d7c35c288f2b972374c26340dcb15
+    quote: Helion Energy on Tuesday said that it added $35 million to a funding round initially announced in June.
+    basis: reported
+  - field: round_label
+    snapshot: 403af50ee408099e468660d1a3a3381e5f5d7c35c288f2b972374c26340dcb15
+    quote: The Everett, Wash.-based fusion company originally shared news of a $465 million Series G round.
+    basis: reported
+- id: helion-arpa-e-alpha-2014
+  instrument: grant
+  program: ARPA-E ALPHA
+  round_label: Compression of FRC Targets for Fusion
+  announced_on: '2015-09-29'
+  amount:
+    amount: 3971263
+    currency: USD
+    qualifier: exact
+  obligated_usd: 3971263
+  evidence:
+  - field: amount
+    snapshot: 278ae6c2830870cd098db2bc6a75a04517318e3d8995eaa6ccb27e6d88287323
+    quote: '"award":"3,971,263","release_date":"Aug 24 2014"'
+    basis: disclosed
+  - field: amount
+    snapshot: f20bc6c3582603191eeb62e161c08931f96a17274a59805c05a8ea635fa14d46
+    quote: '"total_obligation":3971263.0'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: f20bc6c3582603191eeb62e161c08931f96a17274a59805c05a8ea635fa14d46
+    quote: '"total_obligation":3971263.0'
+    basis: disclosed
+  - field: recipient
+    snapshot: 2ad9b8707be8a43b4858145f300d7610aa6f4e9c692751815423ff2a44a9e320
+    quote: '"Award ID":"DEAR0000563","Recipient Name":"HELION ENERGY INC"'
+    basis: disclosed
+  - field: announced_on
+    snapshot: f20bc6c3582603191eeb62e161c08931f96a17274a59805c05a8ea635fa14d46
+    quote: '"date_signed":"2015-09-29"'
+    basis: disclosed
+  - field: program_release_date
+    snapshot: 278ae6c2830870cd098db2bc6a75a04517318e3d8995eaa6ccb27e6d88287323
+    quote: '"release_date":"Aug 24 2014","location":"Redmond, WA"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 278ae6c2830870cd098db2bc6a75a04517318e3d8995eaa6ccb27e6d88287323
+    quote: '"title":"Compression of FRC Targets for Fusion"'
+    basis: disclosed
+  participants:
+  - investor: ARPA-E
+    investor_slug: arpa-e
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 278ae6c2830870cd098db2bc6a75a04517318e3d8995eaa6ccb27e6d88287323
+      quote: '"title":"ALPHA","alias":"alpha"'
+      basis: disclosed
+- id: helion-cumulative-2020-09
+  instrument: equity
+  round_label: Cumulative to date
+  announced_on: '2020-09-23'
+  amount:
+    amount: 77800000
+    currency: USD
+    qualifier: exact
+  amount_kind: cumulative
+  evidence:
+  - field: amount
+    snapshot: 9aee7ba1775b3774e3060e4f0b67ce9e3c0b8c188066a8f4719593a725484405
+    quote: brings the company’s total funding amount to $77.8 million since its founding in 2013
+    original_url: https://www.helionenergy.com/newsroom/fusion-energy-startup-helion-energy-closes-latest-funding-round-at-1-25b-valuation
+    basis: disclosed
+  - field: announced_on
+    snapshot: 9aee7ba1775b3774e3060e4f0b67ce9e3c0b8c188066a8f4719593a725484405
+    quote: Fusion Energy Startup Helion Energy Closes Latest Funding Round at $1.25B Valuation September 23, 2020
+    original_url: https://www.helionenergy.com/newsroom/fusion-energy-startup-helion-energy-closes-latest-funding-round-at-1-25b-valuation
+    basis: disclosed
+- id: helion-cumulative-2021-11-gov-grants
+  instrument: grant
+  round_label: Cumulative government grants to date
+  announced_on: '2021-11-05'
+  amount:
+    amount: 5000000
+    currency: USD
+    qualifier: exact
+  amount_kind: cumulative
+  evidence:
+  - field: amount
+    snapshot: 9b42749c55175affbd5243eecde435605436c3a2b7a7484e0a92684d10673ac2
+    quote: previously raised $72 million in venture capital and $5 million in government grants
+    basis: reported
+  - field: announced_on
+    snapshot: 9b42749c55175affbd5243eecde435605436c3a2b7a7484e0a92684d10673ac2
+    quote: by Lisa Stiffler on Nov 5, 2021
+    basis: reported
+- id: helion-cumulative-2025-01
+  instrument: equity
+  round_label: Cumulative to date
+  announced_on: '2025-01-28'
+  amount:
+    amount: 1000000000
+    currency: USD
+    qualifier: over
+  amount_kind: cumulative
+  evidence:
+  - field: amount
+    snapshot: 756e84e98d1bad0d3a8299b4c0e7c2852069a98a1e3c9aacbed6908c75466904
+    quote: will bring the total invested in Helion to over $1 billion
+    original_url: https://www.helionenergy.com/newsroom/helion-announces-425m-series-f-investment-to-scale-commercialized-fusion-power
+    basis: disclosed
+  - field: announced_on
+    snapshot: 756e84e98d1bad0d3a8299b4c0e7c2852069a98a1e3c9aacbed6908c75466904
+    quote: EVERETT, Wash. – January 28, 2025
+    original_url: https://www.helionenergy.com/newsroom/helion-announces-425m-series-f-investment-to-scale-commercialized-fusion-power
+    basis: disclosed
+- id: helion-cumulative-2026-06
+  instrument: equity
+  round_label: Cumulative to date
+  announced_on: '2026-06-04'
+  amount:
+    amount: 1500000000
+    currency: USD
+    qualifier: exact
+  amount_kind: cumulative
+  evidence:
+  - field: amount
+    snapshot: 203b49c82d3f6fe7a7aac2f6f7fd9641a99c433da8d0f138b579e0861bfa66de
+    quote: brings the total invested to date in Helion to $1.5 billion
+    original_url: https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power
+    basis: disclosed
+  - field: announced_on
+    snapshot: 203b49c82d3f6fe7a7aac2f6f7fd9641a99c433da8d0f138b579e0861bfa66de
+    quote: EVERETT, Wash. – June 4, 2026
+    original_url: https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power
+    basis: disclosed
+agreements:
+- id: helion-microsoft-ppa-2023-05
+  counterparty: Microsoft
+  counterparty_slug: microsoft
+  type: ppa
+  binding: definitive
+  announced_on: '2023-05-10'
+  capacity_mw: 50
+  summary: Agreement for Helion to provide Microsoft electricity from its first fusion power plant (Orion, Malaga WA); Constellation is power marketer and manages transmission. Online by 2028, targeting
+    50 MW or greater after a 1-year ramp. Price and term not disclosed.
+  evidence:
+  - field: agreement
+    snapshot: 3198981e5a219a78a3ea5ee361147b35a619dd01e58129ac26e0689761469ffc
+    quote: today announced an agreement to provide Microsoft electricity from its first fusion power plant.
+    original_url: https://www.helionenergy.com/newsroom/helion-announces-worlds-first-fusion-ppa-with-microsoft
+    basis: disclosed
+  - field: capacity_mw
+    snapshot: 3198981e5a219a78a3ea5ee361147b35a619dd01e58129ac26e0689761469ffc
+    quote: will target power generation of 50 MW or greater after a 1-year ramp up period
+    original_url: https://www.helionenergy.com/newsroom/helion-announces-worlds-first-fusion-ppa-with-microsoft
+    basis: disclosed
+  - field: agreement
+    snapshot: 02e6302ee33679b78de2a86d3fc5361c887de1ad234d7fb9b2f06f4ebcc78536
+    quote: It announced a power purchase agreement with Microsoft this morning
+    basis: reported
+- id: helion-nucor-500mw-2023-09
+  counterparty: Nucor Corporation
+  counterparty_slug: nucor
+  type: offtake
+  binding: definitive
+  announced_on: '2023-09-27'
+  capacity_mw: 500
+  summary: Agreement to develop a 500 MWe fusion power plant at a Nucor steel manufacturing facility in the US; includes an equity investment by Nucor in Helion (see helion-nucor-investment-2023-09). Terms
+    and value not disclosed; binding level inferred from "agreement" wording.
+  evidence:
+  - field: agreement
+    snapshot: 0457a9ae34660b0779a9043819d21a0b9d545cd271a418d4f0aa0d3eab15495a
+    quote: today announced an agreement to develop a 500 MWe fusion power plant at a Nucor steel manufacturing facility in the United States.
+    original_url: https://www.helionenergy.com/newsroom/helion-nucor-collaboration-to-deploy-500-mw-fusion-power-plant
+    basis: disclosed
+  - field: agreement
+    snapshot: 692eb7c2544c65dc5520446f0404ab181ea12150077b9b4d965407266eef5653
+    quote: have agreed to develop a 500 MWe fusion power plant at a US Nucor steel manufacturing facility
+    basis: reported
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  'on': '2026-10-05'
+  note: "3 corrections. (1) ARPA-E ALPHA announced_on 2014-08-24 was the ALPHA programme release date (identical on the programme node), changed to USAspending date_signed 2015-09-29 (new snapshot f20bc6c3 of the award detail API); (2) its USAspending amount evidence quoted only the award id/recipient, replaced with '\"total_obligation\":3971263.0' and obligated_usd added (outlays null). (3) Series G final close announced_on evidence quoted 'on Tuesday' without a date; replaced with the GeekWire byline date (Sep 15, 2026). Checked and left: Series G initial/final modelled correctly (final supersedes initial, publish excludes the $465M); Series E $1.7B milestone money not counted; Altman $375M participant amount is reported (GeekWire citing CNBC); Series F valuation uses company figure $5.425B; 2015 Form D security type is equity (isEquityType true in the XML). Not confirmed: Series D ($40M, Moskovitz lead) still rests on the Helion release (Wayback) alone, no independent copy found (GeekWire 2020 URLs 404, search budget exhausted); Series A-C (~$26M) unevidenced; Nucor agreement type offtake/definitive is an inference from 'agreement to develop' wording (could be partnership)."

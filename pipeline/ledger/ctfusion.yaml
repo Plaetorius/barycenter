@@ -1,0 +1,109 @@
+company: ctfusion
+name: CTFusion
+sector: fusion
+notes: Built from USAspending spending_by_award search responses (POST, archived with request body in raw/manifest.jsonl, source_id
+  usaspending-post). Amount = USAspending 'Award Amount' (cumulative federal obligation, not a ceiling and not an announced figure);
+  disbursed_usd = 'Total Outlays' when present. Dates = 'Base Obligation Date' (first obligation), else 'Start Date'. Search was recipient-name
+  text on awarding agency = Department of Energy over 2007-10-01..2026-09-30 and one page of up to 50 rows per award-type group; awards
+  with zero or negative net obligation are omitted. Recipient name variants not matched by the name search may be missing. Government
+  record, basis=disclosed.
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: 'Verified 2 events (DESC0018844 $148,483 SBIR Phase I; DEAR0001098 $3,415,525 ARPA-E), 0 errors. Checked against the archived
+    USAspending award-level search (spending_level awards: one row per award, modifications already netted, so one event per award
+    and no per-modification duplicates). Award Amount = obligated to date (not a ceiling); disbursed_usd = Total Outlays, now evidenced
+    by its own quote (2 added). announced_on is the first-obligation date, not a press date. Recipient CTFUSION, INC. (UEI W4TNW9RLCLY6),
+    the company. Doubt: DESC0018844 shows $0 outlays for a closed 2018-19 award, likely a reporting gap. Scope: fusion developer,
+    keep. Gaps: private seed funding not recorded; company status (reported wind-down) not checked.'
+events:
+- id: ctfusion-desc0018844
+  instrument: grant
+  round_label: DESC0018844
+  announced_on: '2018-08-07'
+  amount:
+    amount: 148483.0
+    currency: USD
+    qualifier: exact
+    usd: 148483.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 148483.0
+  disbursed_usd: 0.0
+  use_of_proceeds: ADVANCED FEEDBACK CONTROL OF AC PLASMAS
+  evidence:
+  - field: amount
+    snapshot: be0ea8100d1956c8239f9841741aad56bce59370dfe2c4bfe80b09cd7a551e75
+    quote: '"Award ID": "DESC0018844", "Recipient Name": "CTFUSION, INC.", "Recipient UEI": "W4TNW9RLCLY6", "Award Amount": 148483.0'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: be0ea8100d1956c8239f9841741aad56bce59370dfe2c4bfe80b09cd7a551e75
+    quote: '"Award Amount": 148483.0, "Total Outlays": 0.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: be0ea8100d1956c8239f9841741aad56bce59370dfe2c4bfe80b09cd7a551e75
+    quote: '"Base Obligation Date": "2018-08-07", "generated_internal_id": "ASST_NON_DESC0018844_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: be0ea8100d1956c8239f9841741aad56bce59370dfe2c4bfe80b09cd7a551e75
+    quote: '"Award ID": "DESC0018844", "Recipient Name": "CTFUSION, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: be0ea8100d1956c8239f9841741aad56bce59370dfe2c4bfe80b09cd7a551e75
+    quote: '"Description": "ADVANCED FEEDBACK CONTROL OF AC PLASMAS"'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: be0ea8100d1956c8239f9841741aad56bce59370dfe2c4bfe80b09cd7a551e75
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: ctfusion-dear0001098
+  instrument: grant
+  round_label: DEAR0001098
+  announced_on: '2019-07-01'
+  amount:
+    amount: 3415525.01
+    currency: USD
+    qualifier: exact
+    usd: 3415525.01
+  amount_kind: new_money
+  program: ARPA-E
+  obligated_usd: 3415525.01
+  disbursed_usd: 2504721.46
+  use_of_proceeds: 'CONTROL NUMBER 1858-1616 CTFUSION INC. PROJECT TITLE: ''''PLASMA DRIVER TECHNOLOGY DEMONSTRATION FOR ECONOMICAL'
+  evidence:
+  - field: amount
+    snapshot: be0ea8100d1956c8239f9841741aad56bce59370dfe2c4bfe80b09cd7a551e75
+    quote: '"Award ID": "DEAR0001098", "Recipient Name": "CTFUSION, INC.", "Recipient UEI": "W4TNW9RLCLY6", "Award Amount": 3415525.01'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: be0ea8100d1956c8239f9841741aad56bce59370dfe2c4bfe80b09cd7a551e75
+    quote: '"Award Amount": 3415525.01, "Total Outlays": 2504721.46'
+    basis: disclosed
+  - field: announced_on
+    snapshot: be0ea8100d1956c8239f9841741aad56bce59370dfe2c4bfe80b09cd7a551e75
+    quote: '"Base Obligation Date": "2019-07-01", "generated_internal_id": "ASST_NON_DEAR0001098_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: be0ea8100d1956c8239f9841741aad56bce59370dfe2c4bfe80b09cd7a551e75
+    quote: '"Award ID": "DEAR0001098", "Recipient Name": "CTFUSION, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: be0ea8100d1956c8239f9841741aad56bce59370dfe2c4bfe80b09cd7a551e75
+    quote: '"Description": "CONTROL NUMBER 1858-1616\n\nCTFUSION INC.\n\nPROJECT TITLE: ''''PLASMA DRIVER TECHNOLOGY DEMONSTRATIO'
+    basis: disclosed
+  participants:
+  - investor: ARPA-E
+    investor_slug: arpa-e
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: be0ea8100d1956c8239f9841741aad56bce59370dfe2c4bfe80b09cd7a551e75
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+agreements: []

@@ -1,0 +1,38 @@
+company: blue-laser-fusion
+name: Blue Laser Fusion, Inc.
+sector: fusion
+notes: >
+  Reverse merger into Unite Acquisition 2 Corp. (a Form 10 shell, not a SPAC) with simultaneous PIPE, closed
+  2026-09-04 per the 8-K. The 8-K evidences $25,032,287.50 for the Initial Closing of the Offering (910,265 units at
+  $27.50); more closings may follow ("Initial Closing"). The census lists 62,852,415 (disclosed) for the same 8-K URL,
+  but that figure was not found in the 8-K text in this pass: do not use it until reconciled. No pre-merger private
+  rounds were evidenced (WebSearch budget exhausted); the company site mentions a DOE INFUSE project award (no amount).
+  Placement agent Laidlaw & Company (UK) Ltd. is a fee-earning agent, not recorded as a participant. Investor names
+  in the PIPE are not given in the 8-K text searched.
+events:
+  - id: blf-2026-09-merger-pipe
+    instrument: equity
+    round_label: Reverse merger private placement (PIPE), Initial Closing
+    round_group: reverse-merger-2026
+    announced_on: 2026-09-04
+    closed_on: 2026-09-04
+    amount: {amount: 25032287.50, currency: USD, qualifier: exact}
+    evidence:
+      - field: amount
+        snapshot: af771e8655ccd05849559a833731064ecdc51c5fc366c3792d026d2880196484
+        quote: an aggregate of 910,265 Units, for an aggregate purchase price of $25,032,287.50
+        basis: disclosed
+      - field: announced_on
+        snapshot: af771e8655ccd05849559a833731064ecdc51c5fc366c3792d026d2880196484
+        quote: "Date of Report (Date of earliest event reported): September 4, 2026"
+        basis: disclosed
+      - field: round_label
+        snapshot: af771e8655ccd05849559a833731064ecdc51c5fc366c3792d026d2880196484
+        quote: Simultaneously with the effective time of the Merger, we sold in a private placement offering
+        basis: disclosed
+verification:
+  status: verified
+  by: verifier-agent (Claude Opus 5.5), 2026-10-05
+  'on': '2026-10-05'
+  note: 0 corrections. $25,032,287.50 initial PIPE closing confirmed in the 8-K; the census $62.85M figure was not found in
+    the 8-K and is not used. Later closings not checked.

@@ -1,0 +1,101 @@
+company: openstar-technologies
+name: OpenStar Technologies
+sector: fusion
+notes: >
+  Wellington NZ levitated-dipole developer. Census row has no funding figure. Only two funding events could be evidenced
+  in this pass: the NZ Regional Infrastructure Fund loan (Feb 2026) and Soul Capital's seed equity (Oct 2025, amount not
+  disclosed). Earlier private rounds and the earlier NZ government grant (beehive release "Government backs fusion energy
+  research", linked from openstar.tech/news-and-media) were NOT evidenced: beehive.govt.nz returned an Incapsula
+  challenge page (snapshot d0203228 is not usable) and WebSearch budget was exhausted. Press headlines on openstar.tech
+  also mention an Outset Ventures link (TechCrunch 2025-05-27), not checked. RIF loan: devdiscourse and RNZ (which says
+  "commitment") are echoes of the Minister's statement; NucNet gives NZD35m (approx USD21m). Amount is a ceiling
+  ("up to"). Soul Capital date is month precision (October 2025), stored as 2025-10-01. Kyoto Fusioneering MOU
+  announced_on 2025-06-30 is taken from the release URL path (the page text has no date). Asia rule: Kyoto page is an
+  English primary release, no amounts. OpenStar legal name Open Star Technologies Limited.
+  Verifier: the RIF loan is "up to NZD35m", described as a "commitment" with no drawdown evidenced, so it is now
+  amount_kind=ceiling (the notes already called it a ceiling but the event was new_money). The Minister's own statement
+  (beehive.govt.nz) is not archived, so the loan rests on press (NucNet, RNZ) only. Soul Capital seed evidence is the
+  investor's own portfolio page (third party, basis reported); amount undisclosed and the round size unknown.
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  "on": 2026-10-05
+  note: "1 correction: RIF loan 'up to NZD35m' (a 'commitment', no draw evidenced) set to amount_kind=ceiling. Checked: Soul Capital seed (Oct 2025, investor portfolio page, amount undisclosed); Kyoto Fusioneering and PPPL MOUs carry no money. Gaps: Minister's statement not archived (press only); earlier NZ government grant and private rounds not evidenced."
+events:
+  - id: openstar-2026-02-rif-loan
+    instrument: debt
+    round_label: Regional Infrastructure Fund loan
+    announced_on: 2026-02-04
+    amount: {amount: 35000000, currency: NZD, qualifier: up_to}
+    amount_kind: ceiling
+    use_of_proceeds: specialised facility for OpenStar's next fusion machine (Tahi)
+    program: NZ Regional Infrastructure Fund
+    evidence:
+      - field: amount
+        snapshot: cca5d77804ca499b2768a315ec2f890e421a7e27c3a2dd0398363d73e34ab25e
+        quote: The government of New Zealand is investing up to NZD35m
+        basis: reported
+      - field: announced_on
+        snapshot: cca5d77804ca499b2768a315ec2f890e421a7e27c3a2dd0398363d73e34ab25e
+        quote: By David Dalton • 4 February 2026
+        basis: reported
+      - field: round_label
+        snapshot: 5ee1751030eaff5dcbe6bed6b127b80cd1f74b66e403bc1c54e5bd17f77f11ad
+        quote: confirming a loan through the Regional Infrastructure Fund
+        basis: reported
+    participants:
+      - investor: Regional Infrastructure Fund (New Zealand Government)
+        investor_slug: nz-regional-infrastructure-fund
+        role: lender
+        evidence:
+          - field: participant
+            snapshot: 5ee1751030eaff5dcbe6bed6b127b80cd1f74b66e403bc1c54e5bd17f77f11ad
+            quote: confirming a loan through the Regional Infrastructure Fund to support OpenStar Technologies
+            basis: reported
+  - id: openstar-2025-10-seed-soul-capital
+    instrument: equity
+    round_label: Seed
+    announced_on: 2025-10-01
+    evidence:
+      - field: announced_on
+        snapshot: 4952bd6cf3b99c67ed66b266b44078768a06cbd641bba75d3bffdc3b1cc563fd
+        quote: "Date Invested: October 2025 (Seed)"
+        basis: reported
+      - field: round_label
+        snapshot: 4952bd6cf3b99c67ed66b266b44078768a06cbd641bba75d3bffdc3b1cc563fd
+        quote: "Instrument: Equity Investment"
+        basis: reported
+    participants:
+      - investor: "Soul Capital (Fund: Te Pae ki te Rangi)"
+        investor_slug: soul-capital
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: 4952bd6cf3b99c67ed66b266b44078768a06cbd641bba75d3bffdc3b1cc563fd
+            quote: "Fund: Te Pae ki te Rangi Date Invested: October 2025 (Seed)"
+            basis: reported
+agreements:
+  - id: openstar-2025-kyoto-fusioneering-mou
+    counterparty: Kyoto Fusioneering
+    counterparty_slug: kyoto-fusioneering
+    type: partnership
+    binding: mou
+    announced_on: 2025-06-30
+    summary: MOU on gyrotron plasma heating, fuel cycle and thermal blanket collaboration; no money stated.
+    evidence:
+      - field: agreement
+        snapshot: dfcdf56c2449882feb4c6ea3e986f45113643be90be9df99998d7215d5bdaaa7
+        quote: Kyoto Fusioneering and OpenStar have entered into a Memorandum of Understanding (MOU)
+        basis: disclosed
+  - id: openstar-2026-pppl-mou
+    counterparty: Princeton Plasma Physics Laboratory
+    counterparty_slug: princeton-plasma-physics-laboratory
+    type: partnership
+    binding: mou
+    announced_on: 2026-09-29
+    summary: MOU formalising scientific, academic and educational cooperation on levitated-dipole fusion; no money stated.
+    evidence:
+      - field: agreement
+        snapshot: 8af258a9c7f93697f7bda20f6f808e8609dee7c6cd951f855da05d69b76f1f57
+        quote: have signed a memorandum of understanding (MOU), formalizing a new partnership
+        basis: disclosed

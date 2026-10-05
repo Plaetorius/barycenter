@@ -1,0 +1,345 @@
+company: pacific-fusion
+name: Pacific Fusion
+sector: fusion
+notes: |-
+  Built 2026-10-05. pacificfusion.com has no ToS prohibition found (probe newsrooms.md); resources pages fetched from www.pacificfusion.com.
+  - Series A: the company's own Oct 25 2024 post says 'more than $900 million ... to date', committed upfront and unlocked by milestones (tranche structure). It is a commitment, not cash received; amount is qualifier 'over'. Later statements (Power Magazine 2026-06-02 quoting CTO; TechCrunch 2026-08-15) say the Series A is $1B or 'topped $1 billion'; recorded as a separate cumulative-kind event so it is not summed with the $900M. No new money event after Series A is evidenced. Reviewer: find a primary source for the >$1B figure (no company post found).
+  - Participants: the company post lists the syndicate without per-investor amounts. Reid Hoffman is named by EnergyCentral (reported) but not in the company's own list; Lightspeed appears as 'Lightspeed' in the company post.
+  - No Form D by Pacific Fusion Corp. (EDGAR full-text search returned only 'AVSF - Pacific Fusion 2025, LLC', CIK 2065481, a 2025-04-25 Form D that looks like an investor SPV; not recorded as a company event).
+  - Public money: Albuquerque package approved by the city council 2025-09-15 (CityDesk 2025-09-26): $10M direct incentives plus $776.6M of tax breaks / industrial revenue bonds over 20 years, with job-creation milestones and clawback. KRQE reports the cash part as $9M of LEDA funds, KOB as $10M of economic development funds: conflict, recorded $10M (CityDesk) with the $9M noted as evidence 'amount_conflict'. The $776.6M IRB / property-tax abatement is NOT recorded as an event (tax benefit, not cash; would swamp totals); Pacific Fusion's own Los Lunas release claims '$57 million in direct benefits to the state of New Mexico, Bernalillo and Valencia counties, and the cities of Albuquerque and Los Lunas' (News-Bulletin 2025-12-18, snapshot 82542ac5b4). Not recorded separately.
+  - Federal: no DOE Milestone, FIRE, INFUSE, ARPA-E or SBIR award to Pacific Fusion found (not in the DOE Milestone list of 8 awardees; ARPA-E JSON and SBIR probes had no hit). Collaborations with LLNL, Sandia (CRADAs) and NNSA (MOU) are recorded as agreements, no dollar value stated.
+  - Bloomberg and Wired coverage of the launch was not used (paywall). WebSearch budget exhausted; Business Wire is blocked.
+  - VERIFIER 2026-10-05: Series A set to amount_kind=ceiling with committed_usd=900M: the whole round is committed upfront and paid in milestone tranches; the CTO said in June 2026 that 2 of 3 milestone sets were met, so a large but undisclosed part has been received. No source gives the drawn amount, so nothing is counted as received (same treatment as Helion's $1.7B milestone money). If the project decides to count tranched VC commitments as raised, flip it back to new_money. Albuquerque $10M = $9M state LEDA + $1M city (CityDesk), not a conflict with KRQE's $9M; milestone-gated reimbursement with clawback, so ceiling until disbursement is evidenced.
+  - Agreement slugs sandia-national-laboratories, lawrence-livermore-national-laboratory, doe-nnsa, city-of-albuquerque are proposed slugs (not in public-funders.csv).
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  "on": 2026-10-05
+  note: >-
+    4 corrections: Series A (>$900M) marked ceiling with committed_usd (milestone-tranched commitment, drawn amount undisclosed; CTO June 2026:
+    first two of three milestone sets achieved) and received-status evidence added; Albuquerque $10M incentive set to ceiling/up_to
+    (released only on job milestones, clawback); its "$9M vs $10M conflict" resolved as $9M state LEDA + $1M city, with participant
+    amounts and a new State of New Mexico grantor row (proposed slug state-of-new-mexico). Not confirmed: >$1B Series A figure (press only,
+    no company post); Reid Hoffman (EnergyCentral only, absent from the company's investor list); no federal award found; actual
+    tranche receipts unknown.
+events:
+- id: pf-series-a-2024
+  instrument: equity
+  round_label: Series A (milestone-tranched commitment; amount received undisclosed)
+  announced_on: '2024-10-25'
+  amount:
+    amount: 900000000.0
+    currency: USD
+    qualifier: over
+  amount_kind: ceiling
+  committed_usd: 900000000.0
+  use_of_proceeds: to build a high-gain pulsed magnetic fusion driver to achieve net facility gain
+  evidence:
+  - field: announced_on
+    snapshot: 25d99872abe0bd05bec94f39a8b146e00a2bce4b9d0a7cad2f56238db97b7e50
+    quote: October 25, 2024 Introducing Pacific Fusion
+    basis: disclosed
+  - field: amount
+    snapshot: 25d99872abe0bd05bec94f39a8b146e00a2bce4b9d0a7cad2f56238db97b7e50
+    quote: We have secured more than $900 million in our Series A to date.
+    basis: disclosed
+  - field: round_label
+    snapshot: 25d99872abe0bd05bec94f39a8b146e00a2bce4b9d0a7cad2f56238db97b7e50
+    quote: We have secured more than $900 million in our Series A to date.
+    basis: disclosed
+  - field: amount_corroboration
+    snapshot: 8e30b25da4965eaef25bfd9cdd76db32fdd3cc43b17327d1a8a9e96d035b8faf
+    quote: The firm has secured more than $900 million in investor commitments.
+    basis: reported
+  - field: structure
+    snapshot: 25d99872abe0bd05bec94f39a8b146e00a2bce4b9d0a7cad2f56238db97b7e50
+    quote: The funding is all committed upfront (to mitigate financing risk), and it’s unlocked as we achieve predefined milestones (to ensure accountability).
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 25d99872abe0bd05bec94f39a8b146e00a2bce4b9d0a7cad2f56238db97b7e50
+    quote: 'Our immediate goal: Net facility gain.'
+    basis: disclosed
+  - field: received_status
+    snapshot: 374ba6c4b3e5868edce5fe0c6ab76e5eccb6aa8a1d4eea81e87464ea81b1479d
+    quote: So far, we have achieved the first two sets of milestones gating our financing. The final set of milestones will unlock the remainder of the capital.
+    basis: reported
+  - field: received_status
+    snapshot: bb4ae1d3ca3ba4924fb951dbd722f5d6b33b2a815d4d6c845094f569dcbee9a0
+    quote: its investors will pay out in tranches when the company achieves specified milestones
+    basis: reported
+  participants:
+  - investor: General Catalyst
+    investor_slug: general-catalyst
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 25d99872abe0bd05bec94f39a8b146e00a2bce4b9d0a7cad2f56238db97b7e50
+      quote: Hemant Taneja of General Catalyst led the round.
+      basis: disclosed
+  - investor: Andrew Forrest
+    investor_slug: andrew-forrest
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 25d99872abe0bd05bec94f39a8b146e00a2bce4b9d0a7cad2f56238db97b7e50
+      quote: 'Alongside General Catalyst, a great mix of institutional VCs and individual company builders have participated, including: Andrew Forrest, Breakthrough Energy Ventures, Elad Gil, Eric Schmidt, John Doerr, Ken Griffin, Lachy Groom, Leitmotif, Lightspeed, Lowercarbon Capital, Mustafa Suleyman, Patrick Collison, Richard Merkin, and Trousdale Ventures.'
+      basis: disclosed
+  - investor: Breakthrough Energy Ventures
+    investor_slug: breakthrough-energy-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 25d99872abe0bd05bec94f39a8b146e00a2bce4b9d0a7cad2f56238db97b7e50
+      quote: 'Alongside General Catalyst, a great mix of institutional VCs and individual company builders have participated, including: Andrew Forrest, Breakthrough Energy Ventures, Elad Gil, Eric Schmidt, John Doerr, Ken Griffin, Lachy Groom, Leitmotif, Lightspeed, Lowercarbon Capital, Mustafa Suleyman, Patrick Collison, Richard Merkin, and Trousdale Ventures.'
+      basis: disclosed
+  - investor: Elad Gil
+    investor_slug: elad-gil
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 25d99872abe0bd05bec94f39a8b146e00a2bce4b9d0a7cad2f56238db97b7e50
+      quote: 'Alongside General Catalyst, a great mix of institutional VCs and individual company builders have participated, including: Andrew Forrest, Breakthrough Energy Ventures, Elad Gil, Eric Schmidt, John Doerr, Ken Griffin, Lachy Groom, Leitmotif, Lightspeed, Lowercarbon Capital, Mustafa Suleyman, Patrick Collison, Richard Merkin, and Trousdale Ventures.'
+      basis: disclosed
+  - investor: Eric Schmidt
+    investor_slug: eric-schmidt
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 25d99872abe0bd05bec94f39a8b146e00a2bce4b9d0a7cad2f56238db97b7e50
+      quote: 'Alongside General Catalyst, a great mix of institutional VCs and individual company builders have participated, including: Andrew Forrest, Breakthrough Energy Ventures, Elad Gil, Eric Schmidt, John Doerr, Ken Griffin, Lachy Groom, Leitmotif, Lightspeed, Lowercarbon Capital, Mustafa Suleyman, Patrick Collison, Richard Merkin, and Trousdale Ventures.'
+      basis: disclosed
+  - investor: John Doerr
+    investor_slug: john-doerr
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 25d99872abe0bd05bec94f39a8b146e00a2bce4b9d0a7cad2f56238db97b7e50
+      quote: 'Alongside General Catalyst, a great mix of institutional VCs and individual company builders have participated, including: Andrew Forrest, Breakthrough Energy Ventures, Elad Gil, Eric Schmidt, John Doerr, Ken Griffin, Lachy Groom, Leitmotif, Lightspeed, Lowercarbon Capital, Mustafa Suleyman, Patrick Collison, Richard Merkin, and Trousdale Ventures.'
+      basis: disclosed
+  - investor: Ken Griffin
+    investor_slug: citadel-ken-griffin
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 25d99872abe0bd05bec94f39a8b146e00a2bce4b9d0a7cad2f56238db97b7e50
+      quote: 'Alongside General Catalyst, a great mix of institutional VCs and individual company builders have participated, including: Andrew Forrest, Breakthrough Energy Ventures, Elad Gil, Eric Schmidt, John Doerr, Ken Griffin, Lachy Groom, Leitmotif, Lightspeed, Lowercarbon Capital, Mustafa Suleyman, Patrick Collison, Richard Merkin, and Trousdale Ventures.'
+      basis: disclosed
+  - investor: Lachy Groom
+    investor_slug: lachy-groom
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 25d99872abe0bd05bec94f39a8b146e00a2bce4b9d0a7cad2f56238db97b7e50
+      quote: 'Alongside General Catalyst, a great mix of institutional VCs and individual company builders have participated, including: Andrew Forrest, Breakthrough Energy Ventures, Elad Gil, Eric Schmidt, John Doerr, Ken Griffin, Lachy Groom, Leitmotif, Lightspeed, Lowercarbon Capital, Mustafa Suleyman, Patrick Collison, Richard Merkin, and Trousdale Ventures.'
+      basis: disclosed
+  - investor: Leitmotif
+    investor_slug: leitmotif
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 25d99872abe0bd05bec94f39a8b146e00a2bce4b9d0a7cad2f56238db97b7e50
+      quote: 'Alongside General Catalyst, a great mix of institutional VCs and individual company builders have participated, including: Andrew Forrest, Breakthrough Energy Ventures, Elad Gil, Eric Schmidt, John Doerr, Ken Griffin, Lachy Groom, Leitmotif, Lightspeed, Lowercarbon Capital, Mustafa Suleyman, Patrick Collison, Richard Merkin, and Trousdale Ventures.'
+      basis: disclosed
+  - investor: Lightspeed
+    investor_slug: lightspeed
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 25d99872abe0bd05bec94f39a8b146e00a2bce4b9d0a7cad2f56238db97b7e50
+      quote: 'Alongside General Catalyst, a great mix of institutional VCs and individual company builders have participated, including: Andrew Forrest, Breakthrough Energy Ventures, Elad Gil, Eric Schmidt, John Doerr, Ken Griffin, Lachy Groom, Leitmotif, Lightspeed, Lowercarbon Capital, Mustafa Suleyman, Patrick Collison, Richard Merkin, and Trousdale Ventures.'
+      basis: disclosed
+  - investor: Lowercarbon Capital
+    investor_slug: lowercarbon-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 25d99872abe0bd05bec94f39a8b146e00a2bce4b9d0a7cad2f56238db97b7e50
+      quote: 'Alongside General Catalyst, a great mix of institutional VCs and individual company builders have participated, including: Andrew Forrest, Breakthrough Energy Ventures, Elad Gil, Eric Schmidt, John Doerr, Ken Griffin, Lachy Groom, Leitmotif, Lightspeed, Lowercarbon Capital, Mustafa Suleyman, Patrick Collison, Richard Merkin, and Trousdale Ventures.'
+      basis: disclosed
+  - investor: Mustafa Suleyman
+    investor_slug: mustafa-suleyman
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 25d99872abe0bd05bec94f39a8b146e00a2bce4b9d0a7cad2f56238db97b7e50
+      quote: 'Alongside General Catalyst, a great mix of institutional VCs and individual company builders have participated, including: Andrew Forrest, Breakthrough Energy Ventures, Elad Gil, Eric Schmidt, John Doerr, Ken Griffin, Lachy Groom, Leitmotif, Lightspeed, Lowercarbon Capital, Mustafa Suleyman, Patrick Collison, Richard Merkin, and Trousdale Ventures.'
+      basis: disclosed
+  - investor: Patrick Collison
+    investor_slug: patrick-collison
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 25d99872abe0bd05bec94f39a8b146e00a2bce4b9d0a7cad2f56238db97b7e50
+      quote: 'Alongside General Catalyst, a great mix of institutional VCs and individual company builders have participated, including: Andrew Forrest, Breakthrough Energy Ventures, Elad Gil, Eric Schmidt, John Doerr, Ken Griffin, Lachy Groom, Leitmotif, Lightspeed, Lowercarbon Capital, Mustafa Suleyman, Patrick Collison, Richard Merkin, and Trousdale Ventures.'
+      basis: disclosed
+  - investor: Richard Merkin
+    investor_slug: richard-merkin
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 25d99872abe0bd05bec94f39a8b146e00a2bce4b9d0a7cad2f56238db97b7e50
+      quote: 'Alongside General Catalyst, a great mix of institutional VCs and individual company builders have participated, including: Andrew Forrest, Breakthrough Energy Ventures, Elad Gil, Eric Schmidt, John Doerr, Ken Griffin, Lachy Groom, Leitmotif, Lightspeed, Lowercarbon Capital, Mustafa Suleyman, Patrick Collison, Richard Merkin, and Trousdale Ventures.'
+      basis: disclosed
+  - investor: Trousdale Ventures
+    investor_slug: trousdale-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 25d99872abe0bd05bec94f39a8b146e00a2bce4b9d0a7cad2f56238db97b7e50
+      quote: 'Alongside General Catalyst, a great mix of institutional VCs and individual company builders have participated, including: Andrew Forrest, Breakthrough Energy Ventures, Elad Gil, Eric Schmidt, John Doerr, Ken Griffin, Lachy Groom, Leitmotif, Lightspeed, Lowercarbon Capital, Mustafa Suleyman, Patrick Collison, Richard Merkin, and Trousdale Ventures.'
+      basis: disclosed
+  - investor: Reid Hoffman
+    investor_slug: reid-hoffman
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 8e30b25da4965eaef25bfd9cdd76db32fdd3cc43b17327d1a8a9e96d035b8faf
+      quote: Reid Hoffman, Richard Merkin, and Trousdale Ventures.
+      basis: reported
+- id: pf-series-a-cumulative-2026
+  instrument: equity
+  round_label: Series A (cumulative, later statements)
+  announced_on: '2026-06-02'
+  amount:
+    amount: 1000000000.0
+    currency: USD
+    qualifier: approx
+  amount_kind: cumulative
+  evidence:
+  - field: announced_on
+    snapshot: 374ba6c4b3e5868edce5fe0c6ab76e5eccb6aa8a1d4eea81e87464ea81b1479d
+    quote: Pacific Fusion on June 2 said its core pulsed power technology is on track
+    basis: reported
+  - field: amount
+    snapshot: 374ba6c4b3e5868edce5fe0c6ab76e5eccb6aa8a1d4eea81e87464ea81b1479d
+    quote: We addressed that by raising a $1B Series A in a milestone-based structure.
+    basis: reported
+  - field: amount_corroboration
+    snapshot: bb4ae1d3ca3ba4924fb951dbd722f5d6b33b2a815d4d6c845094f569dcbee9a0
+    quote: Pacific Fusion burst out of the gate with a Series A that topped $1 billion, the startup has told TechCrunch.
+    basis: reported
+- id: pf-albuquerque-incentive-2025
+  instrument: grant
+  program: City of Albuquerque economic development incentives (LEDA / direct incentives)
+  round_label: Mesa del Sol campus incentive package (milestone-gated reimbursement, clawback; disbursement not evidenced)
+  announced_on: '2025-09-26'
+  amount:
+    amount: 10000000.0
+    currency: USD
+    qualifier: up_to
+  amount_kind: ceiling
+  evidence:
+  - field: announced_on
+    snapshot: 7b912f6a339c5af9e9bf6cc0a69e854f9968e5b4da4561c4bbf8bcd58e0f6201
+    quote: by Jesse Jones September 26, 2025
+    basis: reported
+  - field: amount
+    snapshot: 7b912f6a339c5af9e9bf6cc0a69e854f9968e5b4da4561c4bbf8bcd58e0f6201
+    quote: Pacific Fusion (PF) will get $10 million in direct incentives and $776.6 million in tax breaks over 20 years.
+    basis: reported
+  - field: amount_split
+    snapshot: 7b912f6a339c5af9e9bf6cc0a69e854f9968e5b4da4561c4bbf8bcd58e0f6201
+    quote: the $10 million in direct incentives includes $9 million from the state through the Local Economic Development Act and $1 million from the city
+    basis: reported
+  - field: amount_state_part
+    snapshot: c131a7351747e25e4de4015a18b6dfc52205489f1ece6284d3a5c49a533099b3
+    quote: “LEDA funds,” which would reimburse Pacific Fusion $9 million for expenses like land acquisition and infrastructure
+    basis: reported
+  - field: conditions
+    snapshot: 7b912f6a339c5af9e9bf6cc0a69e854f9968e5b4da4561c4bbf8bcd58e0f6201
+    quote: funds are released only when the company meets job creation milestones, with full repayment required if targets aren’t met
+    basis: reported
+  participants:
+  - investor: City of Albuquerque
+    investor_slug: city-of-albuquerque
+    role: grantor
+    amount:
+      amount: 1000000.0
+      currency: USD
+      qualifier: exact
+    evidence:
+    - field: participant
+      snapshot: 7b912f6a339c5af9e9bf6cc0a69e854f9968e5b4da4561c4bbf8bcd58e0f6201
+      quote: The Albuquerque City Council unanimously approved at the Sept. 15 council meeting on PF’s incentive package
+      basis: reported
+    - field: participant_amount
+      snapshot: 7b912f6a339c5af9e9bf6cc0a69e854f9968e5b4da4561c4bbf8bcd58e0f6201
+      quote: $9 million from the state through the Local Economic Development Act and $1 million from the city
+      basis: reported
+  - investor: State of New Mexico (Local Economic Development Act)
+    investor_slug: state-of-new-mexico
+    role: grantor
+    amount:
+      amount: 9000000.0
+      currency: USD
+      qualifier: exact
+    evidence:
+    - field: participant
+      snapshot: 7b912f6a339c5af9e9bf6cc0a69e854f9968e5b4da4561c4bbf8bcd58e0f6201
+      quote: $9 million from the state through the Local Economic Development Act and $1 million from the city
+      basis: reported
+agreements:
+- id: pf-sandia-crada-2024
+  counterparty: Sandia National Laboratories
+  counterparty_slug: sandia-national-laboratories
+  type: partnership
+  binding: definitive
+  announced_on: '2024-12-18'
+  summary: Cooperative Research and Development Agreement on pulsed magnetic fusion and high-yield fusion (100+ MJ); no funding amount stated.
+  evidence:
+  - field: announced_on
+    snapshot: b335f54e906b308f670c2f6ca102a1d728241847a1519ba405f72af195cf6baf
+    quote: December 18, 2024 Cooperative Research and Development Agreement with Sandia National Laboratories
+    basis: disclosed
+  - field: agreement
+    snapshot: b335f54e906b308f670c2f6ca102a1d728241847a1519ba405f72af195cf6baf
+    quote: today we are pleased to share that we have established a Cooperative Research and Development Agreement with Sandia National Laboratories
+    basis: disclosed
+- id: pf-llnl-crada-2025
+  counterparty: Lawrence Livermore National Laboratory
+  counterparty_slug: lawrence-livermore-national-laboratory
+  type: partnership
+  binding: definitive
+  announced_on: '2025-01-28'
+  summary: Cooperative Research and Development Agreement to deliver net facility gain and high-yield fusion; no funding amount stated.
+  evidence:
+  - field: announced_on
+    snapshot: 120dadb88492bdb6fbd8f5863962cc22093c25c94e5fb6fe3a53e9997070d3ac
+    quote: January 28, 2025 Cooperative Research and Development Agreement with Lawrence Livermore National Laboratory
+    basis: disclosed
+  - field: agreement
+    snapshot: 120dadb88492bdb6fbd8f5863962cc22093c25c94e5fb6fe3a53e9997070d3ac
+    quote: We are happy to announce our Cooperative Research and Development Agreement (CRADA) with Lawrence Livermore National Laboratory (LLNL).
+    basis: disclosed
+- id: pf-albuquerque-site-2025
+  counterparty: City of Albuquerque
+  counterparty_slug: city-of-albuquerque
+  type: site
+  binding: definitive
+  announced_on: '2025-09-26'
+  summary: Research and Manufacturing Campus at Mesa del Sol, Albuquerque NM (Demonstration System). City council approved incentive ordinances 2025-09-15. $1B-scale campus; the binding level is inferred from council-approved ordinances, not from a signed site lease seen in a source.
+  evidence:
+  - field: announced_on
+    snapshot: 7749425029af6d93d250d79ed670d8cdfbc1b9a338ffbd6adaad77085028feb6
+    quote: September 26, 2025 Written by Keith LeChien Pacific Fusion announces expansion to New Mexico
+    basis: disclosed
+  - field: agreement
+    snapshot: 7749425029af6d93d250d79ed670d8cdfbc1b9a338ffbd6adaad77085028feb6
+    quote: Pacific Fusion has selected Albuquerque, New Mexico, as the site for our first Research and Manufacturing Campus
+    basis: disclosed
+- id: pf-nnsa-mou-2026
+  counterparty: DOE National Nuclear Security Administration (NNSA)
+  counterparty_slug: doe-nnsa
+  type: partnership
+  binding: mou
+  announced_on: '2026-08-24'
+  summary: Public-private partnership MOU to collaborate on high-yield fusion, HED science, pulsed power; announced at Albuquerque groundbreaking. Page is dated August 25, 2026; dateline says August 24th.
+  evidence:
+  - field: announced_on
+    snapshot: 6d6070cffd1aa8d0812721b703cd099518973538cc0bfde355533c1fc4ecf46d
+    quote: Albuquerque, NM (August 24th)
+    basis: disclosed
+  - field: agreement
+    snapshot: 6d6070cffd1aa8d0812721b703cd099518973538cc0bfde355533c1fc4ecf46d
+    quote: announced a public-private partnership, the Memorandum of Understanding Regarding Collaboration on High-Yield Fusion
+    basis: disclosed

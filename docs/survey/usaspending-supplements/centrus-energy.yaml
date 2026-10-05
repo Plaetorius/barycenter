@@ -1,0 +1,141 @@
+company: centrus-energy
+name: Centrus Energy Corp.
+sector: fission
+notes: 'SUPPLEMENT (not in pipeline/ledger/ to avoid a duplicate company slug): DOE awards found in USAspending that the existing
+  ledger pipeline/ledger/centrus-energy.yaml did not list by FAIN at the time of writing. Some amounts may already be evidenced
+  there from another source (check before merging; do not double count). Amount = USAspending ''Award Amount'' (cumulative
+  federal obligation), dates = Base Obligation Date else Start Date; one page of up to 50 rows per award-type group, DOE as
+  awarding agency, 2007-10-01..2026-09-30; zero/negative awards omitted.'
+events:
+- id: centrus-energy-dene0000530
+  instrument: grant
+  round_label: DENE0000530
+  announced_on: '2012-11-30'
+  amount:
+    amount: 147951761.0
+    currency: USD
+    qualifier: exact
+    usd: 147951761.0
+  amount_kind: new_money
+  program: DOE Office of Nuclear Energy
+  obligated_usd: 147951761.0
+  use_of_proceeds: AMERICAN CENTRIFUGE CASCADE DEMONSTRATION TEST PROGRAM
+  evidence:
+  - field: amount
+    snapshot: edb40f1490e1d64cb17ae4de858ec4b5bebc87ab75b0e4f0ad6e1affc18a4d26
+    quote: '"Award ID": "DENE0000530", "Recipient Name": "CENTRUS ENERGY CORP.", "Recipient UEI": "D5GBKJUJFA54", "Award Amount":
+      147951761.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: edb40f1490e1d64cb17ae4de858ec4b5bebc87ab75b0e4f0ad6e1affc18a4d26
+    quote: '"Base Obligation Date": "2012-11-30", "generated_internal_id": "ASST_NON_DENE0000530_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: edb40f1490e1d64cb17ae4de858ec4b5bebc87ab75b0e4f0ad6e1affc18a4d26
+    quote: '"Award ID": "DENE0000530", "Recipient Name": "CENTRUS ENERGY CORP."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: edb40f1490e1d64cb17ae4de858ec4b5bebc87ab75b0e4f0ad6e1affc18a4d26
+    quote: '"Description": "AMERICAN CENTRIFUGE CASCADE DEMONSTRATION TEST PROGRAM"'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Nuclear Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: edb40f1490e1d64cb17ae4de858ec4b5bebc87ab75b0e4f0ad6e1affc18a4d26
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+agreements:
+- id: centrus-energy-89303519cne000005
+  counterparty: U.S. Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: '2019-05-31'
+  summary: 'DOE contract 89303519CNE000005: LETTER CONTRACT TO FACILITATE THE DEMONSTRATION OF HIGH ASSAY LOW ENRICHED URANIUM
+    (HALEU) PRODUCTION TO SUPPORT DOE RESEARCH AND DEVELOPMENT ACTIVITIES AND PROGRAMS'
+  value:
+    amount: 172974295.69
+    currency: USD
+    qualifier: exact
+    usd: 172974295.69
+  evidence:
+  - field: amount
+    snapshot: 9c87a3a865bdf21985212d5918e73591795a7c7e23bcf57df8bbb387560e9262
+    quote: '"Award ID": "89303519CNE000005", "Recipient Name": "AMERICAN CENTRIFUGE OPERATING, LLC", "Recipient UEI": "L8VHV5CNBV97",
+      "Award Amount": 172974295.69'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 9c87a3a865bdf21985212d5918e73591795a7c7e23bcf57df8bbb387560e9262
+    quote: '"Base Obligation Date": "2019-05-31", "generated_internal_id": "CONT_AWD_89303519CNE000005_8900_-NONE-_-NONE-"'
+    basis: disclosed
+- id: centrus-energy-89243223cne000030
+  counterparty: U.S. Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: '2022-11-30'
+  summary: 'DOE contract 89243223CNE000030: HIGH ASSAY LOW ENRICHED URANIUM (HALEU) CASCADE DEMO COMPLETION AND EXTENDED PRODUCTION'
+  value:
+    amount: 332041412.48
+    currency: USD
+    qualifier: exact
+    usd: 332041412.48
+  evidence:
+  - field: amount
+    snapshot: 9c87a3a865bdf21985212d5918e73591795a7c7e23bcf57df8bbb387560e9262
+    quote: '"Award ID": "89243223CNE000030", "Recipient Name": "AMERICAN CENTRIFUGE OPERATING, LLC", "Recipient UEI": "L8VHV5CNBV97",
+      "Award Amount": 332041412.48'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 9c87a3a865bdf21985212d5918e73591795a7c7e23bcf57df8bbb387560e9262
+    quote: '"Base Obligation Date": "2022-11-30", "generated_internal_id": "CONT_AWD_89243223CNE000030_8900_-NONE-_-NONE-"'
+    basis: disclosed
+- id: centrus-energy-89243225fne400178
+  counterparty: U.S. Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: '2025-04-11'
+  summary: 'DOE contract 89243225FNE400178: NEW TASK ORDER AWARD UNDER THE LOW-ENRICHED URANIUM (LEU) - ENRICHMENT ACQUISITION
+    IDIQ FOR AMERICAN CENTRIFUGE LLC FOR THE DEVELOPMENT OF A REPORT FOR THE DEPLOYMENT OF NEW ENRICHMENT CAPACITY AND PO'
+  value:
+    amount: 500000.0
+    currency: USD
+    qualifier: exact
+    usd: 500000.0
+  evidence:
+  - field: amount
+    snapshot: 9c87a3a865bdf21985212d5918e73591795a7c7e23bcf57df8bbb387560e9262
+    quote: '"Award ID": "89243225FNE400178", "Recipient Name": "AMERICAN CENTRIFUGE OPERATING, LLC", "Recipient UEI": "L8VHV5CNBV97",
+      "Award Amount": 500000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 9c87a3a865bdf21985212d5918e73591795a7c7e23bcf57df8bbb387560e9262
+    quote: '"Base Obligation Date": "2025-04-11", "generated_internal_id": "CONT_AWD_89243225FNE400178_8900_89243225DNE000026_8900"'
+    basis: disclosed
+- id: centrus-energy-89243226fne400212
+  counterparty: U.S. Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: '2026-07-01'
+  summary: 'DOE contract 89243226FNE400212: THE PURPOSE OF THIS TASK ORDER (TO) IS TO ESTABLISH NEW ANNUAL DOMESTIC COMMERCIAL
+    HIGH-ASSAY LOW-ENRICHED URANIUM (HALEU) CAPACITY AND BEGIN PRODUCTION OF HALEU UF6 FOR PURCHASE BY DOE.'
+  value:
+    amount: 900000000.0
+    currency: USD
+    qualifier: exact
+    usd: 900000000.0
+  evidence:
+  - field: amount
+    snapshot: 9c87a3a865bdf21985212d5918e73591795a7c7e23bcf57df8bbb387560e9262
+    quote: '"Award ID": "89243226FNE400212", "Recipient Name": "AMERICAN CENTRIFUGE OPERATING, LLC", "Recipient UEI": "L8VHV5CNBV97",
+      "Award Amount": 900000000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 9c87a3a865bdf21985212d5918e73591795a7c7e23bcf57df8bbb387560e9262
+    quote: '"Base Obligation Date": "2026-07-01", "generated_internal_id": "CONT_AWD_89243226FNE400212_8900_89243225DNE000022_8900"'
+    basis: disclosed

@@ -1,0 +1,66 @@
+slug,name,country,level,type,website
+doe-ne,DOE Office of Nuclear Energy,US,national,agency,https://www.energy.gov/ne
+doe-fes,"DOE Office of Science, Fusion Energy Sciences (FES)",US,national,agency,https://www.energy.gov/science/fes/fusion-energy-sciences
+arpa-e,ARPA-E (Advanced Research Projects Agency-Energy),US,national,agency,https://arpa-e.energy.gov
+doe-edf,DOE Office of Energy Dominance Financing (formerly Loan Programs Office),US,national,lender,https://www.energy.gov/lpo/portfolio
+doe-gain-infuse,DOE NRIC / GAIN / INFUSE (lab-access vouchers),US,national,program office,https://gain.inl.gov
+dod-army,US Army (Janus / microreactor programs),US,national,agency,https://www.army.mil
+dod-afrl,"US Air Force (AFRL, Eielson microreactor, SBIR)",US,national,agency,https://www.afrl.af.mil
+dod-diu,Defense Innovation Unit (DIU),US,national,agency,https://www.diu.mil
+dod-sco,DoD Strategic Capabilities Office (Project Pele),US,national,agency,https://www.cto.mil
+nasa,"NASA (fission surface power, space nuclear)",US,national,agency,https://www.nasa.gov
+sbir-gov,SBIR/STTR program (multi-agency),US,national,program office,https://www.sbir.gov
+in-q-tel,In-Q-Tel,US,national,venture arm of intelligence community,https://www.iqt.org
+texas-taneo,Texas Advanced Nuclear Energy Office,US,state,agency,https://gov.texas.gov
+utah-nlic,"State of Utah (Operation Gigawatt, Nuclear Lifecycle Innovation Campus)",US,state,agency,https://nlic.utah.gov
+ukaea,UK Atomic Energy Authority,GB,national,agency,https://www.gov.uk/government/organisations/uk-atomic-energy-authority
+step-fusion,UK Industrial Fusion Solutions (STEP Fusion),GB,national,government-owned company,https://stepfusion.com
+desnz,UK Department for Energy Security and Net Zero,GB,national,ministry,https://www.gov.uk/government/organisations/department-for-energy-security-and-net-zero
+gbe-n,Great British Energy - Nuclear,GB,national,government-owned company,https://www.gov.uk/government/organisations/great-british-energy-nuclear
+nwf,National Wealth Fund,GB,national,state investment bank,https://www.nationalwealthfund.org.uk
+bbb,British Business Bank / British Patient Capital,GB,national,state investment bank,https://www.british-business-bank.co.uk
+innovate-uk,Innovate UK / UKRI,GB,national,agency,https://gtr.ukri.org
+nws,Nuclear Waste Services (NDA),GB,national,agency,https://www.gov.uk/government/organisations/nuclear-waste-services
+euratom-eurofusion,EUROfusion / Euratom Research and Training Programme,EU,supranational,consortium / programme,https://euro-fusion.org
+ec-horizon,"European Commission (Horizon Europe, CORDIS)",EU,supranational,programme,https://cordis.europa.eu
+eic,"European Innovation Council (EIC Accelerator, EIC Fund)",EU,supranational,grant + equity fund,https://eic.ec.europa.eu
+eib,European Investment Bank,EU,supranational,lender,https://www.eib.org
+f4e,Fusion for Energy (F4E) / ITER Organization,EU,supranational,agency,https://fusionforenergy.europa.eu
+bmftr,"German Federal Ministry of Research, Technology and Space (BMFTR)",DE,national,ministry,https://www.bmftr.bund.de
+sprind,SPRIND (Federal Agency for Disruptive Innovation),DE,national,agency,https://www.sprind.org
+kfw,KfW / KfW Capital,DE,national,development bank,https://www.kfw-capital.de
+bayern-kapital,Bayern Kapital,DE,regional,state VC fund,https://www.bayernkapital.de
+bayern-stmwk,Free State of Bavaria (High-Tech Agenda),DE,regional,government,https://www.bayern.de
+france-2030,"France 2030 (SGPI, DGE, operator Bpifrance)",FR,national,programme,https://www.economie.gouv.fr/france-2030
+bpifrance,Bpifrance,FR,national,state investment bank,https://www.bpifrance.fr
+cea,CEA (French Alternative Energies and Atomic Energy Commission),FR,national,research organisation,https://www.cea.fr
+cdp-venture,CDP Venture Capital,IT,national,state VC fund,https://www.cdpventurecapital.it
+business-finland,Business Finland,FI,national,agency,https://www.businessfinland.fi
+tesi,Tesi (Finnish Industry Investment),FI,national,state VC fund,https://tesi.fi
+industrifonden,Industrifonden,SE,national,state-backed VC,https://www.industrifonden.com
+nrc-ca,Natural Resources Canada / NRC IRAP,CA,national,agency,https://natural-resources.canada.ca
+isde-sif,"Innovation, Science and Economic Development Canada (Strategic Innovation Fund)",CA,national,programme,https://ised-isde.canada.ca/site/strategic-innovation-fund
+cib,Canada Infrastructure Bank,CA,national,state investment bank,https://cib-bic.ca
+bdc-capital,BDC Capital,CA,national,state VC fund,https://www.bdc.ca
+opg,Ontario Power Generation,CA,provincial,provincially-owned utility,https://www.opg.com
+acoa,Atlantic Canada Opportunities Agency,CA,national,agency,https://www.canada.ca/en/atlantic-canada-opportunities.html
+mext-jp,"MEXT (Japan Ministry of Education, Culture, Sports, Science and Technology)",JP,national,ministry,https://www.mext.go.jp
+cao-jp,"Cabinet Office Japan (Moonshot, FAST fusion strategy)",JP,national,ministry,https://www8.cao.go.jp
+nedo,NEDO,JP,national,agency,https://www.nedo.go.jp
+jic,Japan Investment Corporation (JIC),JP,national,state investment fund,https://www.j-ic.co.jp
+jbic,JBIC,JP,national,export credit / development bank,https://www.jbic.go.jp
+msit-kr,Korea MSIT / KFE (Korea Institute of Fusion Energy),KR,national,ministry / institute,https://www.msit.go.kr
+khnp,Korea Hydro & Nuclear Power,KR,national,state-owned utility,https://www.khnp.co.kr
+cnnc,China National Nuclear Corporation (CNNC),CN,national,state-owned enterprise,https://www.cnnc.com.cn
+cfec,China Fusion Energy Co. (CNNC subsidiary),CN,national,state-owned enterprise,https://www.cnnc.com.cn
+kunlun-capital,Kunlun Capital (PetroChina),CN,national,state-owned investor,https://www.kunlun-capital.com
+ng-fund-cn,National Green Development Fund,CN,national,state fund,https://www.ngdf.com.cn
+dae-india,India Department of Atomic Energy,IN,national,ministry,https://dae.gov.in
+au-gov,Australian Government (ARENA / CSIRO / ANSTO),AU,national,agency,https://arena.gov.au
+temasek,Temasek,SG,national,sovereign_fund,https://www.temasek.com.sg
+gic,GIC,SG,national,sovereign_fund,https://www.gic.com.sg
+kia,Kuwait Investment Authority,KW,national,sovereign_fund,https://www.kia.gov.kw
+khazanah,Khazanah Nasional Berhad,MY,national,sovereign_fund,https://www.khazanah.com.my
+mubadala,Mubadala,AE,national,sovereign_fund (no nuclear-round hit found in R4 edges),https://www.mubadala.com
+pif,Public Investment Fund,SA,national,sovereign_fund (no nuclear-round hit found in R4 edges),https://www.pif.gov.sa
+cpp-investments,CPP Investments,CA,national,pension / public investor (no nuclear-round hit found in R4 edges),https://www.cppinvestments.com

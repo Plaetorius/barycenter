@@ -1,0 +1,328 @@
+company: x-energy
+name: X-Energy, Inc.
+sector: fission
+notes: "Public (Nasdaq: XE, CIK 2088896) since 2026-04-24; operating entity X-Energy Reactor Company, LLC (XERC), DOE recipient \"X ENERGY, LLC\". PRIMARY EVIDENCE = the SEC 424B4 prospectus dated 2026-04-23 (snapshot db86c83f, filed 2026-04-27) and USAspending JSON. P2 (x-energy.com is ToS-forbidden): no x-energy.com page is used as evidence. The Wayback Machine (web.archive.org) refused connections from this host during the session, so Wayback copies of the x-energy.com releases (Series C $235M 2022, Amazon 2024, Dow, IPO pricing) could not be archived; round amounts here come from the SEC prospectus alone and investor lists are therefore incomplete (only participants named in the prospectus). Not recorded for lack of an evidenced amount/date: Series A/A-1/B rounds, Series C (issued 2022-23; the prospectus only states the 2023-12-05 conversion of C-1 Notes, the 2024-10-11 conversion of $98.0M of C-2 Notes into Series C units and 2025-09-30 conversion of the remaining $18.4M, i.e. debt conversions), 2023 Bridge Loan from Ares Acquisition Holdings ($10.0M initial draw Oct 2023, further draws $14.2M and $25.8M, settled $53.5M), Live Oak credit facility (settled 2024), Bank of New York facility ($20.2M settled Oct 2024), and SPV Form D filings (Ares X-Energy Co-Invest LP $40.55M 2024-10-09; SCP X-Energy Holdco $19.2M then $29.9M; Lightcone Series D SPV $19.0M 2026-02-05; X-Energy Management LLC $22.8M 2025-07-01, see docs/survey/probes/edgar.md). No ATM program or follow-on offering found in the EDGAR submissions list up to 2026-09-04 (only IPO, S-8, 10-Qs, 8-Ks, 13Gs). DISCREPANCY KEPT OPEN: the prospectus says X-energy was awarded \"an initial $1.2 billion\" under ARDP (cooperative agreement DE-NE0009040: 50/50 cost share of $2.4 billion eligible costs, $1.2B reimbursement), while USAspending shows total_obligation $921,717,024 (obligated to date), non_federal_funding $1,231,504,986.50, total_funding $2,153,222,010.50 and total_account_obligation $1,083,615,571.33 for the same award. They are separate events in round_group ardp-xe100-demo and must not be summed; obligations are cumulative and revised by modification. A DOE-side announcement page was not fetched (energy.gov origin snapshot not taken), so the DOE-announced figure is evidenced via the SEC prospectus. NOTE ipo-2026 announced_on is the prospectus date; ARK Investment Management only \"indicated an interest\" in up to $105.0M so no participant amount is given. NOTE triso-x-48c-2024: the month (March 2024) is stated but not the day; 2024-03-01 is a placeholder; it is a tax credit (instrument other), not cash. NOTE series-d-2025: investor names not stated in the prospectus passage; Jane Street Global Trading appears only as an Original Equity Owner.\n VERIFIER (2026-10-05): ARDP follows the Kairos convention: the DOE $1.2B reimbursement commitment is a ceiling (up_to, not all obligated), the USAspending obligation $921.7M is the counted new_money figure (obligated_usd 921.7M, outlays 581.4M; total_account_obligation $1.08B differs and is not used). The 48C $150M is a tax credit not yet realised (applies on placement in service), now a ceiling, never cash. ARK removed as IPO participant: a non-binding indication of interest is not evidence of purchase. IPO: the Q2 2026 10-Q says the over-allotment was exercised (about 50.9M shares at $23.00, about $1.1B net); the event keeps the stated base-deal gross $1,017,857,157, so the counted IPO amount understates gross proceeds by about $153M (6,638,198 option shares x $23, computed, not stated). Series C-1 $626.5M is cash only; the $20.0M Amazon note converted separately, so no double count."
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: '6 corrections: ARDP DOE $1.2B -> ceiling and USAspending $921.7M obligation -> new_money with obligated/disbursed fields (was cumulative, so nothing was counted); 48C tax credit -> ceiling; ARK (indication of interest only) removed from IPO; Series C-1 2024 qualifier exact -> approx with notes-to-FS quote; IPO over-allotment exercise evidenced from the Q2 10-Q (amount left at stated base gross). Not confirmed: Series D and C-1 investor lists (prospectus does not name them; x-energy.com is ToS-blocked and Wayback was unreachable for the author); pre-2022 rounds absent.'
+events:
+- id: ipo-2026
+  instrument: ipo
+  round_label: Initial public offering (Nasdaq XE)
+  announced_on: 2026-04-23
+  closed_on: 2026-04-27
+  amount:
+    amount: 1017857157
+    currency: USD
+    qualifier: exact
+  use_of_proceeds: Purchase of newly issued Common Units of XERC; working capital and general corporate purposes including research and development
+  evidence:
+  - field: announced_on
+    snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f
+    quote: Prospectus dated April 23, 2026
+    basis: disclosed
+  - field: amount
+    snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f
+    quote: $ 1,017,857,157
+    basis: disclosed
+  - field: round_label
+    snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f
+    quote: This is the initial public offering of shares of Class A common stock of X-Energy, Inc.
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f
+    quote: We intend to use the proceeds from this offering to acquire newly issued Common Units from XERC.
+    basis: disclosed
+  - field: over_allotment
+    snapshot: b695297148c4c53fc5f03fbb28a0755ed42585caec35c7ba110c5a4d74490e06
+    quote: issued and sold an aggregate of approximately 50.9 million shares of our Class A Common Stock, which includes the exercise of the underwriters over-allotment option, at a public offering price of $23.00 per share
+    basis: disclosed
+- id: series-d-2025
+  instrument: equity
+  round_label: Series D Preferred Units
+  announced_on: 2025-11-21
+  closed_on: 2025-11-21
+  amount:
+    amount: 700000000
+    currency: USD
+    qualifier: approx
+  evidence:
+  - field: announced_on
+    snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f
+    quote: On November 21, 2025, the Company completed a financing round of Series D Preferred Units
+    basis: disclosed
+  - field: amount
+    snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f
+    quote: issuing 48,154,955 Series D Preferred Units and receiving gross cash proceeds of approximately $700.0 million
+    basis: disclosed
+  - field: round_label
+    snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f
+    quote: Series D Preferred Units On November 21, 2025
+    basis: disclosed
+- id: series-c1-extension-2025
+  instrument: equity
+  round_label: Series C-1 Preferred Units (additional closing)
+  round_group: series-c1
+  announced_on: 2025-01-24
+  closed_on: 2025-01-24
+  amount:
+    amount: 53400000
+    currency: USD
+    qualifier: approx
+  evidence:
+  - field: announced_on
+    snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f
+    quote: On January 24, 2025, the Company completed additional financing rounds of Series C-1 Preferred Units
+    basis: disclosed
+  - field: amount
+    snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f
+    quote: receiving gross cash proceeds of approximately $53.4 million from various investors
+    basis: disclosed
+- id: series-c1-2024
+  instrument: equity
+  round_label: Series C-1 Preferred Units
+  round_group: series-c1
+  announced_on: 2024-10-11
+  amount:
+    amount: 626500000
+    currency: USD
+    qualifier: approx
+  evidence:
+  - field: announced_on
+    snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f
+    quote: On October 11, 2024, in conjunction with the Series C-1 Preferred Units financing
+    basis: disclosed
+  - field: amount
+    snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f
+    quote: During the year ended December 31, 2024, we successfully raised $626.5 million from issuance of Series C-1 Preferred Units
+    basis: disclosed
+  - field: amount
+    snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f
+    quote: receipt of gross cash proceeds of approximately $626.5 million from various investors
+    basis: disclosed
+  participants:
+  - investor: Amazon.com NV Investment Holdings LLC
+    investor_slug: amazon
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f
+      quote: Amazon made an equity investment in X-energy in 2024
+      basis: disclosed
+- id: amazon-convertible-note-2024
+  instrument: debt
+  round_label: 2024 Convertible Note (converted into Series C-1 units on 2024-10-11)
+  round_group: series-c1
+  announced_on: 2024-09-26
+  amount:
+    amount: 20000000
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f
+    quote: On September 26, 2024, we entered into a convertible note with Amazon.com NV Investment Holdings LLC
+    basis: disclosed
+  - field: amount
+    snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f
+    quote: in the principal amount of $20.0 million (the “2024 Convertible Note”)
+    basis: disclosed
+  participants:
+  - investor: Amazon.com NV Investment Holdings LLC
+    investor_slug: amazon
+    role: lender
+    amount:
+      amount: 20000000
+      currency: USD
+      qualifier: exact
+    evidence:
+    - field: participant
+      snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f
+      quote: in the principal amount of $20.0 million (the “2024 Convertible Note”)
+      basis: disclosed
+- id: triso-x-48c-2024
+  instrument: other
+  round_label: IRA 48C advanced energy project investment tax credit (TRISO-X TX-1)
+  announced_on: 2024-03-01
+  amount:
+    amount: 150000000
+    currency: USD
+    qualifier: approx
+  program: IRA section 48C
+  evidence:
+  - field: announced_on
+    snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f
+    quote: In March of 2024, TRISO-X was awarded around $150.0 million investment tax credit
+    basis: disclosed
+  - field: amount
+    snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f
+    quote: TRISO-X was awarded around $150.0 million investment tax credit for the construction of its first purpose-built commercial-scale fuel fabrication facility, TX-1
+    basis: disclosed
+  amount_kind: ceiling
+- id: ardp-xe100-doe-commitment-2021
+  instrument: cost_share
+  round_label: ARDP Advanced Reactor Demonstration (Xe-100), DOE reimbursement commitment
+  round_group: ardp-xe100-demo
+  announced_on: 2021-02-02
+  amount:
+    amount: 1200000000
+    currency: USD
+    qualifier: up_to
+  committed_usd: 1200000000
+  program: DOE Advanced Reactor Demonstration Program (ARDP), Demonstration pathway
+  evidence:
+  - field: announced_on
+    snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f
+    quote: Cooperative Agreement between the U.S. Department of Energy and X-Energy, LLC, Award No. DE-NE0009040, effective as of February 2, 2021
+    basis: disclosed
+  - field: amount
+    snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f
+    quote: provides 50/50 cost share of $2.4 billion of eligible costs ($1.2 billion reimbursement) through 2027
+    basis: disclosed
+  participants:
+  - investor: U.S. Department of Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f
+      quote: in December 2020 was awarded an initial $1.2 billion as part of its selection as one of two awardees in the ARDP
+      basis: disclosed
+  amount_kind: ceiling
+- id: ardp-xe100-usaspending-obligated
+  instrument: cost_share
+  round_label: ARDP Xe-100 award DENE0009040 as recorded in USAspending (cumulative obligation)
+  round_group: ardp-xe100-demo
+  announced_on: 2021-02-02
+  amount:
+    amount: 921717024
+    currency: USD
+    qualifier: exact
+  amount_kind: new_money
+  obligated_usd: 921717024.0
+  disbursed_usd: 581350171.29
+  program: DOE ARDP (USAspending DENE0009040)
+  evidence:
+  - field: announced_on
+    snapshot: 3df5bb43960720e9fbb1440d6b718a73aa8ed040c58d22cbf98ccfff66f08251
+    quote: '"date_signed":"2021-02-02"'
+    basis: disclosed
+  - field: amount
+    snapshot: 3df5bb43960720e9fbb1440d6b718a73aa8ed040c58d22cbf98ccfff66f08251
+    quote: '"total_obligation":921717024.0'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: 3df5bb43960720e9fbb1440d6b718a73aa8ed040c58d22cbf98ccfff66f08251
+    quote: '"total_account_outlay":581350171.29'
+    basis: disclosed
+  participants:
+  - investor: Department of Energy (awarding agency)
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 3df5bb43960720e9fbb1440d6b718a73aa8ed040c58d22cbf98ccfff66f08251
+      quote: '"recipient_name":"X ENERGY, LLC"'
+      basis: disclosed
+- id: doe-xe100-2016-cooperative-agreement
+  instrument: grant
+  round_label: XE-100 Pebble Bed SMR cooperative agreement DENE0008472
+  announced_on: 2016-07-01
+  amount:
+    amount: 25499999.98
+    currency: USD
+    qualifier: exact
+  obligated_usd: 25499999.98
+  program: DOE NE (USAspending DENE0008472)
+  evidence:
+  - field: announced_on
+    snapshot: 8359cbc321acacc2b78a629fa82ee2c18ea1028b365a5203592e0d32bec29a14
+    quote: '"Start Date": "2016-07-01", "End Date": "2022-06-30"'
+    basis: disclosed
+  - field: amount
+    snapshot: 8359cbc321acacc2b78a629fa82ee2c18ea1028b365a5203592e0d32bec29a14
+    quote: '"Award Amount": 25499999.98, "Total Outlays": 5428268.85'
+    basis: disclosed
+  participants:
+  - investor: Department of Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 8359cbc321acacc2b78a629fa82ee2c18ea1028b365a5203592e0d32bec29a14
+      quote: '"Award ID": "DENE0008472", "Recipient Name": "X ENERGY, LLC"'
+      basis: disclosed
+- id: doe-first-of-a-kind-2018
+  instrument: cost_share
+  round_label: First of a Kind US Industry FOA, X-energy LLC (DENE0008745)
+  announced_on: 2018-05-21
+  amount:
+    amount: 18617645
+    currency: USD
+    qualifier: exact
+  obligated_usd: 18617645
+  program: DOE NE US Industry FOA (USAspending DENE0008745)
+  evidence:
+  - field: announced_on
+    snapshot: 8359cbc321acacc2b78a629fa82ee2c18ea1028b365a5203592e0d32bec29a14
+    quote: '"Start Date": "2018-05-21", "End Date": "2022-08-23"'
+    basis: disclosed
+  - field: amount
+    snapshot: 8359cbc321acacc2b78a629fa82ee2c18ea1028b365a5203592e0d32bec29a14
+    quote: '"Award Amount": 18617645.0, "Total Outlays": 10757623.83'
+    basis: disclosed
+  participants:
+  - investor: Department of Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 8359cbc321acacc2b78a629fa82ee2c18ea1028b365a5203592e0d32bec29a14
+      quote: '"Award ID": "DENE0008745", "Recipient Name": "X ENERGY, LLC"'
+      basis: disclosed
+agreements:
+- id: amazon-xe100-options-2024
+  counterparty: Amazon
+  counterparty_slug: amazon
+  type: offtake
+  binding: definitive
+  announced_on: 2024-10-16
+  capacity_mw: 5000
+  summary: Options for more than 5 GWe of new Xe-100 projects by 2039; first project at Energy Northwest site. Binding level not stated in source (contingent options); announced_on day is a placeholder for "October 2024".
+  evidence:
+  - field: agreement
+    snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f
+    quote: Announced engagement with Amazon for options to bring over 5 GWe of new power projects online by 2039
+    basis: disclosed
+- id: centrica-jda-2025
+  counterparty: Centrica
+  counterparty_slug: centrica
+  type: partnership
+  binding: mou
+  announced_on: 2025-09-01
+  capacity_mw: 6000
+  summary: Joint Development Agreement to deploy up to 6 GWe of Xe-100 capacity in the UK; the prospectus calls it non-binding. announced_on day is a placeholder for "September 2025".
+  evidence:
+  - field: agreement
+    snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f
+    quote: Our joint development agreement with Centrica is non-binding
+    basis: disclosed
+  - field: agreement
+    snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f
+    quote: 'September 2025 : Centrica and X-energy sign JDA to deploy 6 GWe of new nuclear capacity in the U.K.'
+    basis: disclosed
+- id: energy-northwest-jda-2023
+  counterparty: Energy Northwest
+  counterparty_slug: energy-northwest
+  type: site
+  binding: mou
+  announced_on: 2023-06-01
+  capacity_mw: 960
+  summary: Joint development agreement for up to 12 Xe-100 units (960 MWe) in central Washington. announced_on day is a placeholder for "June 2023".
+  evidence:
+  - field: agreement
+    snapshot: db86c83fcbef8023e810745e7dedfcbc8704e21ac346c0f6ef6efef96fc5f87f
+    quote: 'June 2023 : Signed JDA with Energy Northwest for up to 12 Xe-100s (960 MWe) in central Washington.'
+    basis: disclosed

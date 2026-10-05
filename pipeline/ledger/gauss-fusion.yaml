@@ -1,0 +1,71 @@
+company: gauss-fusion
+name: Gauss Fusion GmbH
+sector: fusion
+notes: >-
+  Little evidenced. Gauss Fusion is an industry-consortium GmbH (founders Alcen, ASG Superconductors, Bruker EAS, IDOM,
+  RI Research Instruments); the only funding amount found in a robots-permitted primary source is the EUR 8M founders'
+  pre-seed (Feb 2023, Bruker release). The census lists a "Grant 2024-04" and "EUR17M known" with no archivable source
+  found in this pass; not recorded. The Bruker release does not give per-founder amounts or say which founders put in the
+  EUR 8M, so the five founding companies are listed as participants on the strength of "founders' pre-seed financing"
+  (reviewer: confirm). BMFTR Fusion Hub STRIDE (coordinated by Proxima Fusion, Gauss Fusion and Max Planck IPP) is funded from
+  a EUR 125M first round across three hubs; Gauss's share is undisclosed so no amount is recorded. Not found in CORDIS
+  (no HE/H2020 hits per probe); no Foerderkatalog access (403); no Gauss-specific EIB/EIC record found. WebSearch budget exhausted.
+  Verifier: the STRIDE announced_on evidence quoted the coordinator sentence, which carries no date; replaced with the
+  BMFTR page date ("Meldung 29.07.2026") and kept the coordinator sentence as recipient evidence. The page says the three
+  hubs will "soon" connect and BMFTR provides "initially" EUR 125M across them, so Gauss's share is unknown and may not yet
+  be obligated. Founders' pre-seed participants: the release lists the five founding companies but does not state that
+  each contributed to the EUR 8M; kept on the strength of "founders' pre-seed", residual doubt.
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  "on": 2026-10-05
+  note: "1 correction: STRIDE event announced_on evidence replaced (old quote had no date) with the BMFTR page date 'Meldung 29.07.2026'; the coordinator sentence was kept as recipient evidence. Checked: EUR 8M founders' pre-seed (Bruker release 2023-02-28). Doubts: the release does not say each of the five founding companies contributed; Gauss's STRIDE share is undisclosed and may not yet be obligated; census EUR 17M and 2024 grant not evidenced."
+events:
+  - id: gauss-fusion-founders-pre-seed-2023-02
+    instrument: equity
+    round_label: Founders' pre-seed
+    announced_on: 2023-02-28
+    closed_on: 2023-02-01
+    amount: {amount: 8000000, currency: EUR, qualifier: exact}
+    use_of_proceeds: null
+    evidence:
+      - field: amount
+        snapshot: ae081374e7a52341ae40b586e7fc220745290891becba46ed2367396ac49f1b5
+        quote: "Gauss Fusion completed a founders’ pre-seed financing round with €8 million in initial capital"
+        basis: disclosed
+      - field: announced_on
+        snapshot: ae081374e7a52341ae40b586e7fc220745290891becba46ed2367396ac49f1b5
+        quote: "HANAU, Germany - February 28, 2023 - Gauss Fusion GmbH is a greentech venture"
+        basis: disclosed
+      - field: round_label
+        snapshot: ae081374e7a52341ae40b586e7fc220745290891becba46ed2367396ac49f1b5
+        quote: "founders’ pre-seed financing round"
+        basis: disclosed
+    participants:
+      - {investor: Alcen, investor_slug: alcen, role: participant, evidence: [{field: participant, snapshot: ae081374e7a52341ae40b586e7fc220745290891becba46ed2367396ac49f1b5, quote: "Founding companies and strategic partners from the fusion technology industry are Alcen (France), ASG Superconductors (Italy), Bruker EAS (Germany), IDOM (Spain), and RI Research Instruments (Germany)", basis: disclosed}]}
+      - {investor: ASG Superconductors, investor_slug: asg-superconductors, role: participant, evidence: [{field: participant, snapshot: ae081374e7a52341ae40b586e7fc220745290891becba46ed2367396ac49f1b5, quote: "Alcen (France), ASG Superconductors (Italy), Bruker EAS (Germany), IDOM (Spain)", basis: disclosed}]}
+      - {investor: Bruker EAS, investor_slug: bruker, role: participant, evidence: [{field: participant, snapshot: ae081374e7a52341ae40b586e7fc220745290891becba46ed2367396ac49f1b5, quote: "ASG Superconductors (Italy), Bruker EAS (Germany), IDOM (Spain), and RI Research Instruments (Germany)", basis: disclosed}]}
+      - {investor: IDOM, investor_slug: idom, role: participant, evidence: [{field: participant, snapshot: ae081374e7a52341ae40b586e7fc220745290891becba46ed2367396ac49f1b5, quote: "Bruker EAS (Germany), IDOM (Spain), and RI Research Instruments (Germany)", basis: disclosed}]}
+      - {investor: RI Research Instruments, investor_slug: ri-research-instruments, role: participant, evidence: [{field: participant, snapshot: ae081374e7a52341ae40b586e7fc220745290891becba46ed2367396ac49f1b5, quote: "IDOM (Spain), and RI Research Instruments (Germany)", basis: disclosed}]}
+  - id: gauss-fusion-bmftr-fusion-hub-stride-2026-07
+    instrument: grant
+    round_label: BMFTR Fusion Hub STRIDE (stellarator)
+    announced_on: 2026-07-29
+    program: BMFTR Fusionshubs
+    use_of_proceeds: Stellarator hub coordinated with Proxima Fusion and Max Planck IPP; Gauss share undisclosed (hub round total about EUR 125M across three hubs, not attributed to Gauss)
+    evidence:
+      - field: announced_on
+        snapshot: c4300ec19388a9894397aa1a072297f99301d30438d46113e45ae6a0db61fe3b
+        quote: "Meldung 29.07.2026"
+        basis: disclosed
+      - field: recipient
+        snapshot: c4300ec19388a9894397aa1a072297f99301d30438d46113e45ae6a0db61fe3b
+        quote: "Der von Proxima Fusion, Gauss Fusion und dem Max-Planck-Institut für Plasmaphysik koordinierte Hub"
+        basis: disclosed
+    participants:
+      - investor: German Federal Ministry of Research, Technology and Space (BMFTR)
+        investor_slug: bmftr
+        role: grantor
+        evidence:
+          - {field: participant, snapshot: c4300ec19388a9894397aa1a072297f99301d30438d46113e45ae6a0db61fe3b, quote: "Das BMFTR stellt dafür zunächst 125 Millionen Euro bereit", basis: disclosed}
+agreements: []

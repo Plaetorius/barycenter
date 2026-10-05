@@ -1,0 +1,141 @@
+company: fuse-energy-technologies
+name: Fuse Energy Technologies
+sector: fusion
+notes: >
+  Funding evidence is trade-press only, via the company's own library page (f.energy/library, snapshot 1c57c88e), which
+  lists third-party items with one-line summaries; the Ignition (typeform redirect) and Forbes/Bloomberg origins could
+  not be read (Ignition snapshot is a typeform stub; Forbes 403; Bloomberg is a paywall stub with only the headline).
+  So all amounts are basis=reported, from library blurbs. Sep 2024 round: $32M, valuation "over $200 million" per
+  Bloomberg headline (stored as floor 200M). No investor names found. Cumulative figures ($20M Jul 2024 Forbes, $52M
+  Apr 2025 EO video blurb) are recorded as cumulative, not rounds; $20M + $32M = $52M, so the cumulative figures are
+  consistent with the Sep 2024 round being new money on top of the earlier $20M; do not sum cumulative rows. Also, a Bloomberg item dated Aug 2026 ("Investors Bet on
+  Making Commercial Fusion a Reality") may relate to a newer round; not evidenced. The $151B Golden Dome SHIELD IDIQ is a
+  multiple-award ceiling for the program, awarded to subsidiary Fuse Federal Enterprise LLC; not Fuse funding and no
+  value recorded. Legal entity names vary: Fuse Energy Technologies Corp / Fuse Corporation / Fuse Federal Enterprise.
+  Verifier: the Bloomberg valuation item's URL is dated 2024-09-12 (the library lists it as Dec 2024), i.e. the same week as
+  the Ignition $32M report, so linking the "over $200 million" valuation (a floor, stored as 200M) to the Sep 2024 round is
+  plausible but rests on a headline only; announced_on stays at the Ignition item date (2024-09-16), the first report of the
+  $32M figure is possibly 2024-09-12. Removed a duplicate valuation on the Apr 2025 cumulative row (no valuation evidence).
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  "on": 2026-10-05
+  note: "2 corrections: removed a valuation_post_usd on the Apr 2025 cumulative row (no valuation evidence; duplicate of the Sep 2024 valuation); fixed the notes, since $20M + $32M = $52M makes the cumulative figures consistent. Checked: $32M round and the 'over $200M' valuation (Bloomberg URL dated 2024-09-12) both from library blurbs, basis reported. Gaps: no investors; no primary source for any amount; announced_on may be 2024-09-12 (Bloomberg) rather than 2024-09-16 (Ignition)."
+events:
+  - id: fuse-2024-09-round-32m
+    instrument: equity
+    round_label: Undisclosed round (Sep 2024)
+    announced_on: 2024-09-16
+    amount: {amount: 32000000, currency: USD, qualifier: exact}
+    valuation_post_usd: 200000000
+    evidence:
+      - field: amount
+        snapshot: 1c57c88e7eb7595c8cdf970a4c2da0d78db909feb0cf09e05ad2cf14589d04a7
+        quote: Fuse Energy Technologies Raises $32M
+        basis: reported
+      - field: announced_on
+        snapshot: 1c57c88e7eb7595c8cdf970a4c2da0d78db909feb0cf09e05ad2cf14589d04a7
+        quote: ignition-news.com/fuse-energy-technologies-raises-32m/ 2024-09-16
+        basis: reported
+      - field: valuation
+        snapshot: 1c57c88e7eb7595c8cdf970a4c2da0d78db909feb0cf09e05ad2cf14589d04a7
+        quote: Nuclear Startup Fuse Valued at Over $200 Million in New Funding
+        basis: reported
+  - id: fuse-2024-07-cumulative-20m
+    instrument: equity
+    round_label: Cumulative raised (Forbes, Jul 2024)
+    announced_on: 2024-07-03
+    amount: {amount: 20000000, currency: USD, qualifier: exact}
+    amount_kind: cumulative
+    evidence:
+      - field: amount
+        snapshot: 1c57c88e7eb7595c8cdf970a4c2da0d78db909feb0cf09e05ad2cf14589d04a7
+        quote: has raised $20 million and signed on Iran's former top nuclear scientist
+        basis: reported
+      - field: announced_on
+        snapshot: 1c57c88e7eb7595c8cdf970a4c2da0d78db909feb0cf09e05ad2cf14589d04a7
+        quote: fuse-fusion-energy-startup-cia/ 2024-07-03
+        basis: reported
+  - id: fuse-2025-04-cumulative-52m
+    instrument: equity
+    round_label: Cumulative raised (EO video, Apr 2025)
+    announced_on: 2025-04-23
+    amount: {amount: 52000000, currency: USD, qualifier: exact}
+    amount_kind: cumulative
+    evidence:
+      - field: amount
+        snapshot: 1c57c88e7eb7595c8cdf970a4c2da0d78db909feb0cf09e05ad2cf14589d04a7
+        quote: raising $52M in capital along the way
+        basis: reported
+      - field: announced_on
+        snapshot: 1c57c88e7eb7595c8cdf970a4c2da0d78db909feb0cf09e05ad2cf14589d04a7
+        quote: GkGWBGJlQrs 2025-04-23
+        basis: reported
+  - id: fuse-2024-02-afwerx-sbir
+    instrument: grant
+    round_label: AFWERX SBIR contract
+    announced_on: 2024-02-27
+    program: AFWERX SBIR (Department of the Air Force)
+    evidence:
+      - field: announced_on
+        snapshot: d703917bfc9be69c59c504610e7f72a4afa65ea7d16c44e81818aa1eadc51f07
+        quote: February 27 2024 Fuse Wins Air Force SBIR Contract to Prototype Lower Cost Nuclear Effects Testing
+        basis: disclosed
+    participants:
+      - investor: Department of the Air Force (AFWERX / Air Force Research Laboratory)
+        investor_slug: us-air-force-afwerx
+        role: grantor
+        evidence:
+          - field: participant
+            snapshot: d703917bfc9be69c59c504610e7f72a4afa65ea7d16c44e81818aa1eadc51f07
+            quote: it has been selected for an AFWERX Small Business Innovation Research (SBIR) contract
+            basis: disclosed
+agreements:
+  - id: fuse-2024-07-sandia-crada
+    counterparty: Sandia National Laboratories
+    counterparty_slug: sandia-national-laboratories
+    type: partnership
+    binding: definitive
+    announced_on: 2024-07-23
+    summary: CRADA on pulsed power technologies; announced by Fuse Federal.
+    evidence:
+      - field: agreement
+        snapshot: b853a228af9f1505ec0c07b754c46cf24456e492538d84c93707252b2b5f5079
+        quote: Fuse Signs Cooperative Research and Development Agreement (CRADA) with Sandia National Laboratories
+        basis: disclosed
+  - id: fuse-2025-07-lanl-crada
+    counterparty: Los Alamos National Laboratory
+    counterparty_slug: los-alamos-national-laboratory
+    type: partnership
+    binding: definitive
+    announced_on: 2025-07-16
+    summary: CRADA to advance pulsed power technologies for fusion energy and national security.
+    evidence:
+      - field: agreement
+        snapshot: 2b0cdfe8b9afe44eff1462f878ac639320160110d9b918f2e1c23f7855ce752f
+        quote: Fuse Teams Up with Los Alamos National Laboratory (LANL), Signs Cooperative Research and Development Agreement (CRADA)
+        basis: disclosed
+  - id: fuse-2026-02-mda-shield-idiq
+    counterparty: Missile Defense Agency
+    counterparty_slug: missile-defense-agency
+    type: gov_contract
+    binding: definitive
+    announced_on: 2026-02-02
+    summary: Fuse Federal Enterprise LLC awarded a place on the MDA SHIELD multiple-award IDIQ (program ceiling $151B, not Fuse's value); radiation testing.
+    evidence:
+      - field: agreement
+        snapshot: dd0178fee05ccb0032042f3b8b3ac90c126e606dd2a993922fea9361992bbe30
+        quote: has been awarded a contract for the Missile Defense Agency's (MDA) Scalable Homeland Innovative Enterprise Layered Defense (SHIELD) multiple-award
+        basis: disclosed
+  - id: fuse-2026-08-nnss-crada
+    counterparty: Nevada National Security Sites (Mission Support and Test Services)
+    counterparty_slug: nevada-national-security-sites
+    type: partnership
+    binding: definitive
+    announced_on: 2026-08-02
+    summary: Five-year umbrella CRADA with MSTS at NNSS.
+    evidence:
+      - field: agreement
+        snapshot: 3e0cb8b577b49676943ee11429f2b646b696aeb1f7ff1f8006b48729e5330bdb
+        quote: today announced the signing of a five-year Cooperative Research and Development Agreement (CRADA) with Mission Support and Test Services (MSTS)
+        basis: disclosed

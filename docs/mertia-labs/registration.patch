@@ -1,0 +1,59 @@
+diff --git a/components/tool/ToolCard.tsx b/components/tool/ToolCard.tsx
+index 1a71e63..2f3c4a7 100644
+--- a/components/tool/ToolCard.tsx
++++ b/components/tool/ToolCard.tsx
+@@ -1,4 +1,4 @@
+-import { ArrowRight, BookOpen, Waypoints } from "lucide-react";
++import { ArrowRight, BookOpen, Landmark, Link2, Waypoints } from "lucide-react";
+ import Image from "next/image";
+ 
+ import type { Fact, Tool } from "@/content.config";
+@@ -6,7 +6,7 @@ import type { Fact, Tool } from "@/content.config";
+ import { ContactDialog } from "./ContactDialog";
+ import { LoopVideo } from "./LoopVideo";
+ 
+-const FACT_ICONS: Record<Fact["icon"], typeof BookOpen> = { papers: Waypoints, journals: BookOpen };
++const FACT_ICONS: Record<Fact["icon"], typeof BookOpen> = { papers: Waypoints, journals: BookOpen, funding: Landmark, sources: Link2 };
+ 
+ interface ToolCardProps {
+   numeral: string;
+diff --git a/content.config.ts b/content.config.ts
+index 3bbd47f..104747e 100644
+--- a/content.config.ts
++++ b/content.config.ts
+@@ -16,7 +16,7 @@ export const SITE = {
+ } as const;
+ 
+ export interface Fact {
+-  icon: "papers" | "journals";
++  icon: "papers" | "journals" | "funding" | "sources";
+   text: string;
+ }
+ 
+@@ -73,12 +73,25 @@ export const TOOLS: Tool[] = [
+     },
+     origin: "https://fusion-literature-map.vercel.app",
+   },
++  {
++    slug: "barycenter",
++    name: "Barycenter",
++    description: "Who funds nuclear energy: every fusion and fission company with evidenced funding, the investors and governments behind it, how much and when.",
++    facts: [
++      { icon: "funding", text: "91 companies, 484 funding events" },
++      { icon: "sources", text: "A public source behind every figure" },
++    ],
++    cta: "Open Barycenter",
++    image: { src: "/barycenter.webp", width: 2400, height: 1500 },
++    // TODO before merging: deploy the Barycenter app (repo financing-map, folder site/) to Vercel and put its production URL here.
++    origin: "https://barycenter-labs.vercel.app",
++  },
+ ];
+ 
+ export const COPY = {
+   meta: {
+     title: "Mertia Labs",
+-    description: "Free, experimental tools from Mertia, built on real data. Tool I: Asterism, a map of sixty years of fusion research.",
++    description: "Free, experimental tools from Mertia, built on real data. Tool I: Asterism, a map of sixty years of fusion research. Tool II: Barycenter, who funds nuclear energy.",
+   },
+   page: { title: "Tools", subtitle: "Free and open-source instruments from Mertia, built on real data." },
+   contact: {

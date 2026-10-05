@@ -1,0 +1,43 @@
+company: stellarex
+name: Stellarex
+sector: fusion
+notes: INFUSE awards (in-kind lab-access vouchers; no dollar amount is published on the awards listing) from the ORNL INFUSE
+  awards listing pages archived by the ledger-infuse/ledger-commonwealth-fusion-systems runs (infuse.ornl.gov/awards/ and
+  /page/N). The listing gives project title, cycle, award date, company and host lab/university; the date shown is taken as
+  announced_on. Vouchers are not cash and must not be summed with funding.
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: 0 corrections. INFUSE 2023 voucher confirmed (SRNL host, tritium extraction). Per D5 this is lab money, in-kind, never
+    counted. Stellarex, Inc. is the company (the census lists Ottawa, CA). No cash funding is evidenced.
+events:
+- id: stellarex-infuse-2023-1
+  instrument: voucher
+  round_label: INFUSE 2023
+  announced_on: '2023-07-25'
+  program: INFUSE
+  evidence:
+  - field: announced_on
+    snapshot: c0aec09f6ea1ac078ae490ef74d8c35852e93d620682bf4c1f727ea6c98cf0e1
+    quote: INFUSE 2023 - July 25, 2023 | Stellarex, Inc. | Savannah River National Laboratory (SRNL)
+    basis: disclosed
+  - field: round_label
+    snapshot: c0aec09f6ea1ac078ae490ef74d8c35852e93d620682bf4c1f727ea6c98cf0e1
+    quote: INFUSE 2023 - July 25, 2023 | Stellarex, Inc. | Savannah River National Laboratory (SRNL)
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: c0aec09f6ea1ac078ae490ef74d8c35852e93d620682bf4c1f727ea6c98cf0e1
+    quote: Efficient Tritium Extraction from Liquid Lithium
+    basis: disclosed
+  participants:
+  - investor: INFUSE (Innovation Network for Fusion Energy)
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: c0aec09f6ea1ac078ae490ef74d8c35852e93d620682bf4c1f727ea6c98cf0e1
+      quote: INFUSE 2023 - July 25, 2023 | Stellarex, Inc. | Savannah River National Laboratory (SRNL)
+      basis: disclosed
+  use_of_proceeds: Efficient Tritium Extraction from Liquid Lithium
+agreements: []

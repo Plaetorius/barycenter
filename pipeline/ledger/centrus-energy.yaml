@@ -1,0 +1,672 @@
+company: centrus-energy
+name: Centrus Energy Corp.
+sector: fission
+notes: |-
+  Public company (CIK 1065059, ticker LEU; NYSE American through the FY2025 10-K and 2025 filings, the Sept 2026 8-K cover page shows NYSE). Not in the census CSVs under this slug as a developer (the census lists it under enrichment); slug centrus-energy as assigned. Primary sources are SEC filings (EDGAR submissions index snapshot 1a8382a2c54a, FY2025 10-K 046ee67114d3, 8-Ks, 424B5s). Per policy D8 one event per programme. NAMING CORRECTION: no "2023 Convertible Notes" or "2025 Convertible notes" exist under those labels; EDGAR shows two convertible issues, the 2.25% Convertible Senior Notes due 2030 (Nov 2024, $402.5M) and the 0% Convertible Senior Notes due 2032 (Aug 2025, $805M). No 2023 convertible found (2023 filings show only a Form S-3 shelf filed 2023-06-28, effective July 2023, and rights-agreement amendments). Net amounts raised per FY2025 10-K: $388.7M (2.25% notes) and $782.4M (0% notes) after costs; ATM proceeds $54.7M in 2024 and $523.7M in 2025 (both ATM programmes combined). Cash actually received under the Dec 2020 ATM was about $48M by Dec 2022 (424B5 of 2022-12-06) and $82.9M under the Feb 2024 ATM by 2025-05-09. DOE vs USAspending: DOE/company figures (headline award values) and USAspending cumulative transactions are kept as separate facts and not reconciled: the probe snapshot b121ea17e449 (recipient search AMERICAN CENTRIFUGE OPERATING, LLC, DOE awarding, 2019-10-01 to 2026-09-30) shows $1,376,015,708.17 while snapshot c235bd583a7e (search text CENTRUS ENERGY CORP.) shows $197,353,192.66 for the same recipient (UEI L8VHV5CNBV97); the reason for the gap is not known (different search matching, award coverage, or transaction netting). VERIFIER: the CENTRUS ENERGY CORP. text search only matches the subset of ACO transactions whose records carry the Centrus name (same recipient hash d527144c), so c235 is marked duplicate of b121 (the ACO recipient search, $1.376B, cumulative, not counted; it includes procurement contract obligations, not only assistance); the 2.7B Jan 2026 DOE package also has no listed Centrus LEU task order: DOE named ACO $900M for HALEU, General Matter $900M HALEU and Orano Federal Services $900M for LEU, so no DOE LEU task order to Centrus is evidenced. Centrus own investments (Oak Ridge more than $560M, Piketon expansion, Fluor EPC and Geiger Brothers contracts of Feb and Apr 2026) are spending, not funding, and not recorded. Not covered: pre-2019 history (2014 notes, Series B preferred), the Feb 2021 and Dec 2022 Series B exchanges and warrants with the MB Group (not new money), the 8.25% Notes redemption of 2025-03-26 (repayment), TENEX / Orano supply contracts, DOE ACO incremental modifications other than those listed (Phase 2 value rose from about $90M to $170.1M by 2025-12-31, only about $24M of that increase is separately evidenced as an event), an Oklo MOU (could not be found, web search budget exhausted; oklo.com not fetched per P2), fuel-supply customers other than Antares. Sept 2026 8-K (item 8.01) discloses advanced talks to acquire a manufacturing supplier for about $115-125M, not a financing event.
+  MERGE 2026-10-05 (USAspending supplement): DE-NE0000530 (2012) predates the Centrus name (the company was USEC Inc. until 2014; USAspending shows the current recipient name) and is the parent itself, not ACO; it falls outside the 2019+ window of the b121 cumulative event, so it is not double counted. HALEU Operation Contract 89243223CNE000030 shows USD 332,041,412.48 cumulative obligation in USAspending (snapshot 9c87a3a865bd) versus USD 282.2M across the three ledger events (150M base + 24M + 108.2M); the gap is later modifications, not added as an event. The earlier statement that no DOE LEU task order to Centrus is evidenced is superseded: ACO holds LEU IDIQ task order 89243225FNE400178 (USD 0.5M, 2025-04-11, a report on new enrichment capacity), recorded as an agreement. USAspending 'Total Outlays' is account-level outlay data reported from FY2017/FY2020 onward, so disbursed_usd can understate payments on older awards.
+verification:
+  status: verified
+  by: merge-verifier-agent (opus), 2026-10-05
+  'on': 2026-10-05
+  note: 'USAspending merge: 1 event added (DE-NE0000530 American Centrifuge Cascade Demonstration Test Program, 2012, USD
+    147.95M obligated, recipient CENTRUS ENERGY CORP.); obligated/outlay figures attached to 2 existing events (HALEU Demonstration
+    contract 89303519CNE000005: 172.97M obligated, 107.36M outlaid; HALEU task order 89243226FNE400212: 900M obligated, 0
+    outlaid); 1 agreement added (LEU IDIQ report task order USD 0.5M). Skipped as already in the ledger: 89303519CNE000005
+    and 89243226FNE400212 (same money as the demonstration and 2026 task-order events), 89243223CNE000030 (HALEU Operation
+    Contract, USD 332.0M cumulative obligation, already covered by the base, Phase 2 increment and Option 1a events). Previous
+    sign-off: verifier-agent (claude-opus-5-5), 2026-10-05: 11 corrections + 5 added ATM-sales events (per VERIFY check 6).
+    Ceilings: three ATM programmes (Dec 2020 $50M, raised by a $24M Dec 2022 supplement; Feb 2024 $100M->$200M; Nov 2025 $1B)
+    marked amount_kind ceiling; Feb 2024 announced_on evidence replaced by the supplement''s own date line. Actual ATM sales
+    added from SEC filings: ~$48M under the Dec 2020 supplement to 2022-12-05; $24.4M (2023), $56.7M (2024), $533.6M (2025)
+    from the FY2025 10-K; $55.0M in Q2 2026 from the 10-Q filed 2026-08-06 (new snapshot 3f1219d4). The figures are consistent:
+    $1B less the $554.5M remaining at 2026-06-30 = $445.5M under the Nov 2025 programme, i.e. ~$390.5M in late 2025 plus $55M
+    in 2026; this implies the Feb 2024 programme sold ~$199.9M in total. Convertibles: 2.25% due 2030 ($402.5M, priced 2024-11-05,
+    issued 2024-11-07) and 0% due 2032 ($805M, announced 2025-08-12, issued 2025-08-18); instrument debt and dates confirmed;
+    closed_on evidence added from the 10-K. DOE: HALEU Demonstration $115M -> up_to (8-K: DOE reimburses up to 80% of costs
+    up to a $115M maximum; 10-K: later funded up to $173M); $900M HALEU task order -> up_to (performance-based milestone payments).
+    USAspending: c235 ($197.4M) marked duplicate of b121 ($1.376B), see notes. Residual doubts: the HALEU Operation ~$150M
+    base value includes Centrus''s ~$30M Phase 1 cost share (DOE share ~$120M, not quoted as such); the HALEU contracts are
+    DOE procurement of HALEU/enrichment services, closer to revenue than to funding; the 2023 ATM figure ($24.4M) slightly
+    exceeds the $24M Dec 2022 supplement ceiling; all awards are to subsidiary American Centrifuge Operating, LLC (wholly
+    owned).'
+events:
+- id: centrus-follow-on-2020-08
+  instrument: follow_on
+  round_label: Underwritten public offering (Roth)
+  announced_on: 2020-08-21
+  amount:
+    amount: 23500000
+    currency: USD
+    qualifier: exact
+  use_of_proceeds: general working capital, technology development, repay debt or retire Series B Senior Preferred Stock
+  evidence:
+  - field: announced_on
+    snapshot: 41c43cebdd6ced31da0fb4263e6c0c907efae0b3e254e9a2259014116d26fa04
+    quote: On August 21, 2020, Centrus Energy Corp. (the “Company”) entered into an underwriting agreement
+    basis: disclosed
+  - field: amount
+    snapshot: 3fbf06b139aa9acf0e7cd6471422b5fd55eff7b3f34ec079fe7c5fca0d8b2925
+    quote: Public offering price $ 10.00 $ 23,500,000
+    basis: disclosed
+  - field: round_label
+    snapshot: 41c43cebdd6ced31da0fb4263e6c0c907efae0b3e254e9a2259014116d26fa04
+    quote: with Roth Capital Partners, LLC acting as sole book-running manager
+    basis: disclosed
+- id: centrus-atm-2020-b-riley
+  instrument: follow_on
+  round_label: ATM programme (B. Riley, Lake Street)
+  announced_on: 2020-12-31
+  amount:
+    amount: 50000000
+    currency: USD
+    qualifier: up_to
+  amount_kind: ceiling
+  evidence:
+  - field: announced_on
+    snapshot: 8f8410ab36e3d2ebfe03ede566a980302d56e24013715489f9dcb81927173a60
+    quote: dated December 31, 2020, which we refer to as the sales agreement
+    basis: disclosed
+  - field: amount
+    snapshot: 8f8410ab36e3d2ebfe03ede566a980302d56e24013715489f9dcb81927173a60
+    quote: having an aggregate offering price of up to $50,000,000 from time to time
+    basis: disclosed
+  - field: ceiling_increase_2022
+    snapshot: 7af63e0a5c618a7883c8d49eac833b48652a89c86706c1ad4a9fca64a95a4747
+    quote: we may offer and sell under this prospectus supplement shares of our Class A Common Stock, $0.10 par value per
+      share (the “Class A Common Stock”), having an aggregate offering price of up to $24,000,000
+    basis: disclosed
+- id: centrus-atm-2024-b-riley-lake-street-roth
+  instrument: follow_on
+  round_label: ATM programme (B. Riley, Lake Street, Roth), upsized May 2025
+  announced_on: 2024-02-09
+  amount:
+    amount: 200000000
+    currency: USD
+    qualifier: up_to
+  amount_kind: ceiling
+  evidence:
+  - field: announced_on
+    snapshot: 6477708652d46e177abf9ecc73d6e69f7f5579444dff3e7a7a6abba7b2c66bcd
+    quote: The date of this prospectus supplement is February 9, 2024.
+    basis: disclosed
+  - field: amount_initial
+    snapshot: 6477708652d46e177abf9ecc73d6e69f7f5579444dff3e7a7a6abba7b2c66bcd
+    quote: having an aggregate offering price of up to $100,000,000 from time to time through or to the Agents
+    basis: disclosed
+  - field: amount
+    snapshot: 9333738f18b3768f1ef661377abccc98819b54aa01d43027ca8fa3f4b10b2927
+    quote: by increasing the aggregate offering price of Class A Common Stock that may offered and sold pursuant to the Sales
+      Agreement to $200,000,000
+    basis: disclosed
+  - field: round_label
+    snapshot: 6d44cce3f4e666915f41bad0a340a51a5ce8017f85f564396b72fd4989602685
+    quote: we terminated our “at the market offering” program pursuant to our prior sales agreement, dated as of February
+      9, 2024
+    basis: disclosed
+- id: centrus-convertible-2-25pct-2030
+  instrument: debt
+  round_label: 2.25% Convertible Senior Notes due 2030 (Rule 144A)
+  announced_on: 2024-11-05
+  closed_on: 2024-11-07
+  amount:
+    amount: 402500000
+    currency: USD
+    qualifier: exact
+  use_of_proceeds: general working capital and corporate purposes
+  evidence:
+  - field: closed_on
+    snapshot: 046ee67114d3bd0c240963e70327ead8127314d4f9fab534998e2a7936b2ca5a
+    quote: On November 7, 2024, Centrus issued $ 402.5 million aggregate principal amount 2.25% Convertible Notes due 2030.
+    basis: disclosed
+  - field: announced_on
+    snapshot: dbef9b7afee37be35abf85d40924db38d04c71fb1ff836672eb972d18e076a65
+    quote: On November 5, 2024, Centrus Energy Corp. (the “Company”) issued a press release announcing the pricing of its
+      offering of $350 million aggregate principal amount of 2.25% convertible senior notes due 2030
+    basis: disclosed
+  - field: amount
+    snapshot: ad5e287959f145d6ea0c39d168f3ade9deccea2416abd6191fb334b5f5cf9850
+    quote: $402.5 million aggregate principal amount of the Company’s 2.25% convertible senior notes due 2030
+    basis: disclosed
+  - field: round_label
+    snapshot: ad5e287959f145d6ea0c39d168f3ade9deccea2416abd6191fb334b5f5cf9850
+    quote: The offer and sale of the Notes and the shares of the Company’s Class A common stock
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: ad5e287959f145d6ea0c39d168f3ade9deccea2416abd6191fb334b5f5cf9850
+    quote: The Company intends to use the net proceeds from the offering for general working capital and corporate purposes
+    basis: disclosed
+- id: centrus-convertible-0pct-2032
+  instrument: debt
+  round_label: 0% Convertible Senior Notes due 2032 (Rule 144A)
+  announced_on: 2025-08-12
+  closed_on: 2025-08-18
+  amount:
+    amount: 805000000
+    currency: USD
+    qualifier: exact
+  use_of_proceeds: general corporate purposes
+  evidence:
+  - field: closed_on
+    snapshot: 046ee67114d3bd0c240963e70327ead8127314d4f9fab534998e2a7936b2ca5a
+    quote: On August 18, 2025, Centrus issued $ 805.0 million aggregate principal amount 0% Convertible Notes due 2032.
+    basis: disclosed
+  - field: announced_on
+    snapshot: dcce4837b9d9b7fb72435788f7954ee64dd7680357b32922fe087f36bdfb2677
+    quote: On August 12, 2025, Centrus Energy Corp. (the “Company”) issued a press release announcing its intention to offer
+      $650 million aggregate principal amount of convertible senior notes due 2032
+    basis: disclosed
+  - field: amount
+    snapshot: 5ebe0bdad8ff8ca59b364a578dc5d0bb048304a4b928141f3d8cfc8d671c6b9c
+    quote: $805 million aggregate principal amount of the Company’s 0% convertible senior notes due 2032
+    basis: disclosed
+  - field: round_label
+    snapshot: 0a299ffb85871433ccdb9fd286661d417af51124f7a54bb1c382a50aa4bbe12e
+    quote: announcing the pricing of its offering of $700 million aggregate principal amount of 0% convertible senior notes
+      due 2032
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 5ebe0bdad8ff8ca59b364a578dc5d0bb048304a4b928141f3d8cfc8d671c6b9c
+    quote: The Company intends to use the net proceeds from the offering for general corporate purposes.
+    basis: disclosed
+- id: centrus-atm-2025-11-sales-agreement
+  instrument: follow_on
+  round_label: ATM programme (Barclays, Citigroup, UBS and others)
+  announced_on: 2025-11-06
+  amount:
+    amount: 1000000000
+    currency: USD
+    qualifier: up_to
+  amount_kind: ceiling
+  evidence:
+  - field: announced_on
+    snapshot: 6bdbb9ec7089ad83d395f86604dc5dcf1af1b02da2df9abb494e4d0a09053e26
+    quote: On November 6, 2025, Centrus Energy Corp. (the “Company”) entered into a Sales Agreement
+    basis: disclosed
+  - field: amount
+    snapshot: 6bdbb9ec7089ad83d395f86604dc5dcf1af1b02da2df9abb494e4d0a09053e26
+    quote: having an aggregate offering price of up to $1,000,000,000
+    basis: disclosed
+  - field: round_label
+    snapshot: 6d44cce3f4e666915f41bad0a340a51a5ce8017f85f564396b72fd4989602685
+    quote: Sales Agreement entered into with Barclays Capital Inc., Citigroup Global Markets Inc., UBS Securities LLC
+    basis: disclosed
+- id: centrus-follow-on-2026-09
+  instrument: follow_on
+  round_label: Underwritten public offering of shares, pre-funded warrants and common warrants (Guggenheim)
+  announced_on: 2026-09-09
+  amount:
+    amount: 500000064.02
+    currency: USD
+    qualifier: exact
+  use_of_proceeds: general working capital and corporate purposes
+  evidence:
+  - field: announced_on
+    snapshot: ab93e0d467cd0b532f9cce371fb20a87d5002df68a457e14c9ddd44a46a347c2
+    quote: On September 9, 2026, Centrus Energy Corp. (the “Company”) entered into an underwriting agreement
+    basis: disclosed
+  - field: amount
+    snapshot: df88fb6b5d2be5761dd19711dfdf93b901941b3bd97dd2554b5cf1297d2a9947
+    quote: Offering price $ 199.64 $ 199.54 $ 500,000,064.02
+    basis: disclosed
+  - field: round_label
+    snapshot: df88fb6b5d2be5761dd19711dfdf93b901941b3bd97dd2554b5cf1297d2a9947
+    quote: we are offering (i) 500,000 shares of our class a common stock
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: df88fb6b5d2be5761dd19711dfdf93b901941b3bd97dd2554b5cf1297d2a9947
+    quote: We intend to use the net proceeds for general working capital and corporate purposes
+    basis: disclosed
+- id: centrus-atm-sales-2021-2022
+  instrument: follow_on
+  round_label: ATM sales under the Dec 2020 sales agreement (prospectus supplement of 2020-12-31), cumulative to 2022-12-05
+  announced_on: 2022-12-05
+  amount:
+    amount: 48000000
+    currency: USD
+    qualifier: approx
+  evidence:
+  - field: amount
+    snapshot: 7af63e0a5c618a7883c8d49eac833b48652a89c86706c1ad4a9fca64a95a4747
+    quote: we have sold under a prospectus supplement, dated December 31, 2020, shares of our Class A Common Stock having
+      an aggregate offering price of approximately $48 million
+    basis: disclosed
+  - field: announced_on
+    snapshot: 7af63e0a5c618a7883c8d49eac833b48652a89c86706c1ad4a9fca64a95a4747
+    quote: The date of this prospectus supplement is December 5, 2022.
+    basis: disclosed
+- id: centrus-atm-sales-2023
+  instrument: follow_on
+  round_label: ATM sales in calendar 2023 (722,568 shares; Dec 2020 sales agreement, Dec 2022 supplement)
+  announced_on: 2026-02-11
+  amount:
+    amount: 24400000
+    currency: USD
+    qualifier: approx
+  evidence:
+  - field: amount
+    snapshot: 046ee67114d3bd0c240963e70327ead8127314d4f9fab534998e2a7936b2ca5a
+    quote: for a total of $533.6 million, $56.7 million, and $24.4 million in 2025, 2024, and 2023, respectively
+    basis: disclosed
+  - field: announced_on
+    snapshot: 046ee67114d3bd0c240963e70327ead8127314d4f9fab534998e2a7936b2ca5a
+    quote: Centrus Energy Corp. February 11, 2026 /s/ Amir V. Vexler
+    basis: disclosed
+- id: centrus-atm-sales-2024
+  instrument: follow_on
+  round_label: ATM sales in calendar 2024 (933,987 shares; Feb 2024 sales agreement)
+  announced_on: 2026-02-11
+  amount:
+    amount: 56700000
+    currency: USD
+    qualifier: approx
+  evidence:
+  - field: amount
+    snapshot: 046ee67114d3bd0c240963e70327ead8127314d4f9fab534998e2a7936b2ca5a
+    quote: for a total of $533.6 million, $56.7 million, and $24.4 million in 2025, 2024, and 2023, respectively
+    basis: disclosed
+  - field: announced_on
+    snapshot: 046ee67114d3bd0c240963e70327ead8127314d4f9fab534998e2a7936b2ca5a
+    quote: Centrus Energy Corp. February 11, 2026 /s/ Amir V. Vexler
+    basis: disclosed
+- id: centrus-atm-sales-2025
+  instrument: follow_on
+  round_label: ATM sales in calendar 2025 (2,866,261 shares; Feb 2024 agreement until its Nov 2025 termination, then Nov 2025
+    agreement)
+  announced_on: 2026-02-11
+  amount:
+    amount: 533600000
+    currency: USD
+    qualifier: approx
+  evidence:
+  - field: amount
+    snapshot: 046ee67114d3bd0c240963e70327ead8127314d4f9fab534998e2a7936b2ca5a
+    quote: for a total of $533.6 million, $56.7 million, and $24.4 million in 2025, 2024, and 2023, respectively
+    basis: disclosed
+  - field: announced_on
+    snapshot: 046ee67114d3bd0c240963e70327ead8127314d4f9fab534998e2a7936b2ca5a
+    quote: Centrus Energy Corp. February 11, 2026 /s/ Amir V. Vexler
+    basis: disclosed
+- id: centrus-atm-sales-2026-h1
+  instrument: follow_on
+  round_label: ATM sales in Q2 2026 (278,114 shares; Nov 2025 sales agreement)
+  announced_on: 2026-08-06
+  amount:
+    amount: 55000000
+    currency: USD
+    qualifier: approx
+  evidence:
+  - field: amount
+    snapshot: 3f1219d45e5911d0edb2ed4e3a7b73434117618eb14a911bf067c0350e3ac0b7
+    quote: the Company sold through ATM offerings an aggregate of 278,114 shares of its Class A Common Stock at the market
+      price in both the three and six months ended June 30, 2026 for a total of $ 55.0 million
+    basis: disclosed
+  - field: announced_on
+    snapshot: 3f1219d45e5911d0edb2ed4e3a7b73434117618eb14a911bf067c0350e3ac0b7
+    quote: Centrus Energy Corp. August 6, 2026 /s/ Yanhong Dai
+    basis: disclosed
+  - field: remaining_capacity
+    snapshot: 3f1219d45e5911d0edb2ed4e3a7b73434117618eb14a911bf067c0350e3ac0b7
+    quote: The aggregate market value of remaining securities eligible for offer and sale under this shelf registration statement
+      is approximately $554.5 million as of June 30, 2026.
+    basis: disclosed
+- id: centrus-doe-haleu-demonstration-2019
+  instrument: cost_share
+  round_label: HALEU Demonstration Contract (DOE)
+  announced_on: 2019-10-31
+  amount:
+    amount: 115000000
+    currency: USD
+    qualifier: up_to
+  program: DOE HALEU Demonstration Contract (Piketon, Ohio 16-centrifuge cascade)
+  evidence:
+  - field: amount
+    snapshot: 0f7e5dc93a539ef8b748eb71fdbeaafe11b1ea9d061e0e7c42a18c420d7c0349
+    quote: DOE will reimburse ACO for up to 80 percent of the total program costs up to a maximum amount of $115 million.
+      The corresponding 20 percent cost share for ACO would be $29 million.
+    basis: disclosed
+  - field: announced_on
+    snapshot: 0f7e5dc93a539ef8b748eb71fdbeaafe11b1ea9d061e0e7c42a18c420d7c0349
+    quote: On October 31, 2019, American Centrifuge Operating, LLC
+    basis: disclosed
+  - field: amount
+    snapshot: 046ee67114d3bd0c240963e70327ead8127314d4f9fab534998e2a7936b2ca5a
+    quote: Three-year, $115.0 million cost-share contract with DOE signed in 2019
+    basis: disclosed
+  - field: funded_up_to
+    snapshot: 046ee67114d3bd0c240963e70327ead8127314d4f9fab534998e2a7936b2ca5a
+    quote: The DOE funded the HALEU Demonstration Contract up to $173.0 million with a period of performance that ended November
+      30, 2022.
+    basis: disclosed
+  - field: obligated_disbursed
+    snapshot: 9c87a3a865bdf21985212d5918e73591795a7c7e23bcf57df8bbb387560e9262
+    quote: '"Award ID": "89303519CNE000005", "Recipient Name": "AMERICAN CENTRIFUGE OPERATING, LLC", "Recipient UEI": "L8VHV5CNBV97",
+      "Award Amount": 172974295.69, "Total Outlays": 107363124.41'
+    basis: disclosed
+  participants:
+  - investor: United States Department of Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 0f7e5dc93a539ef8b748eb71fdbeaafe11b1ea9d061e0e7c42a18c420d7c0349
+      quote: entered into a definitive agreement (the “Agreement”) with the United States Department of Energy
+      basis: disclosed
+  obligated_usd: 172974295.69
+  disbursed_usd: 107363124.41
+- id: centrus-doe-haleu-operation-2022
+  instrument: cost_share
+  round_label: HALEU Operation Contract (DOE), base value
+  announced_on: 2022-11-10
+  closed_on: 2022-11-30
+  amount:
+    amount: 150000000
+    currency: USD
+    qualifier: approx
+  program: DOE HALEU Operation Contract
+  evidence:
+  - field: announced_on
+    snapshot: 727aeb5aaa026dcb08b0d0f7e6fe6c95ff9ea866994babeba471b21dc843cc76
+    quote: On November 10, 2022, the U.S. Department of Energy (the Department) announced an approximately $150 million cost-shared
+      award
+    basis: disclosed
+  - field: amount
+    snapshot: 046ee67114d3bd0c240963e70327ead8127314d4f9fab534998e2a7936b2ca5a
+    quote: the DOE awarded the HALEU Operation Contract to the Company with a base contract value of approximately $150.0
+      million in two phases through 2024
+    basis: disclosed
+  - field: closed_on
+    snapshot: 8b93c30b4a6a026216f05074000a5195f6e32685a7dfb5b82d29903918e73820
+    quote: On November 30, 2022, American Centrifuge Operating, LLC
+    basis: disclosed
+  participants:
+  - investor: U.S. Department of Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 727aeb5aaa026dcb08b0d0f7e6fe6c95ff9ea866994babeba471b21dc843cc76
+      quote: an approximately $30 million cost share contribution from Centrus, matched by approximately $30 million from
+        the Department of Energy
+      basis: disclosed
+- id: centrus-doe-haleu-operation-phase2-increment-2024
+  instrument: other
+  round_label: HALEU Operation Contract Phase 2 incremental funding
+  announced_on: 2024-11-05
+  amount:
+    amount: 24000000
+    currency: USD
+    qualifier: approx
+  program: DOE HALEU Operation Contract
+  evidence:
+  - field: announced_on
+    snapshot: 213a65f42d75da07e0a302725c7b35d76dae48eac43ab321ebe6d5a623d6230b
+    quote: On November 5, 2024, the United States Department of Energy and American Centrifuge Operating, LLC
+    basis: disclosed
+  - field: amount
+    snapshot: 213a65f42d75da07e0a302725c7b35d76dae48eac43ab321ebe6d5a623d6230b
+    quote: to add approximately $24 million of incremental funding
+    basis: disclosed
+- id: centrus-doe-haleu-operation-option1a-2025
+  instrument: other
+  round_label: HALEU Operation Contract Option 1a funded value
+  announced_on: 2025-06-17
+  amount:
+    amount: 108200000
+    currency: USD
+    qualifier: exact
+  program: DOE HALEU Operation Contract
+  evidence:
+  - field: announced_on
+    snapshot: 8b93c30b4a6a026216f05074000a5195f6e32685a7dfb5b82d29903918e73820
+    quote: On June 17, 2025, the Department issued an amendment to the Contract
+    basis: disclosed
+  - field: amount
+    snapshot: 046ee67114d3bd0c240963e70327ead8127314d4f9fab534998e2a7936b2ca5a
+    quote: As of December 31, 2025, Option 1a is funded for the contract value of $108.2 million.
+    basis: disclosed
+- id: centrus-doe-haleu-task-order-2026
+  instrument: other
+  round_label: DOE HALEU enrichment task order, firm fixed price milestone payments
+  announced_on: 2026-01-05
+  closed_on: 2026-06-30
+  amount:
+    amount: 900000000
+    currency: USD
+    qualifier: up_to
+  program: DOE HALEU Production IDIQ task order (Piketon, Ohio)
+  evidence:
+  - field: announced_on
+    snapshot: 65d2f34c90e4efe46d5d592848107b385f91642765f0684fc9e2b6484cd5e82d
+    quote: American Centrifuge Operating ($900 million) to create domestic HALEU enrichment capacity
+    basis: disclosed
+  - field: amount
+    snapshot: 78013cd521330be89105bf6712450aeec085fad38a147491fb86ce52ada7a866
+    quote: The Contract establishes a firm fixed price of $900 million, to be paid incrementally as performance-based milestone
+      payments
+    basis: disclosed
+  - field: closed_on
+    snapshot: 78013cd521330be89105bf6712450aeec085fad38a147491fb86ce52ada7a866
+    quote: On June 30, 2026, American Centrifuge Operating, LLC
+    basis: disclosed
+  - field: announced_10k
+    snapshot: 046ee67114d3bd0c240963e70327ead8127314d4f9fab534998e2a7936b2ca5a
+    quote: The award also includes options, at the DOE’s discretion, for up to $170.0 million to produce and deliver HALEU
+      to the DOE.
+    basis: disclosed
+  - field: obligated_disbursed
+    snapshot: 9c87a3a865bdf21985212d5918e73591795a7c7e23bcf57df8bbb387560e9262
+    quote: '"Award ID": "89243226FNE400212", "Recipient Name": "AMERICAN CENTRIFUGE OPERATING, LLC", "Recipient UEI": "L8VHV5CNBV97",
+      "Award Amount": 900000000.0, "Total Outlays": 0.0'
+    basis: disclosed
+  participants:
+  - investor: U.S. Department of Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 65d2f34c90e4efe46d5d592848107b385f91642765f0684fc9e2b6484cd5e82d
+      quote: The following companies were awarded task orders totaling $2.7 billion to provide enrichment services for LEU
+        and HALEU
+      basis: disclosed
+  obligated_usd: 900000000.0
+  disbursed_usd: 0.0
+- id: centrus-usaspending-aco-doe-cumulative-b121
+  instrument: other
+  round_label: USAspending cumulative DOE transactions to American Centrifuge Operating (recipient search ACO)
+  announced_on: 2026-10-05
+  amount:
+    amount: 1376015708.17
+    currency: USD
+    qualifier: exact
+  amount_kind: cumulative
+  obligated_usd: 1376015708.17
+  program: USAspending spending_by_category/recipient, DOE awarding, 2019-10-01 to 2026-09-30
+  evidence:
+  - field: announced_on
+    snapshot: b121ea17e449cfc8956467b291eb41f79f9bbc3ea9ccbffbb21a9e1d7595e705
+    quote: '"name":"AMERICAN CENTRIFUGE OPERATING, LLC","code":"079679750","uei":"L8VHV5CNBV97"'
+    basis: disclosed
+  - field: amount
+    snapshot: b121ea17e449cfc8956467b291eb41f79f9bbc3ea9ccbffbb21a9e1d7595e705
+    quote: '"amount":1376015708.17'
+    basis: disclosed
+- id: centrus-usaspending-aco-doe-cumulative-c235
+  instrument: other
+  round_label: USAspending cumulative DOE transactions to American Centrifuge Operating (recipient search CENTRUS ENERGY CORP.)
+  announced_on: 2026-10-05
+  amount:
+    amount: 197353192.66
+    currency: USD
+    qualifier: exact
+  amount_kind: duplicate
+  supersedes: centrus-usaspending-aco-doe-cumulative-b121
+  obligated_usd: 197353192.66
+  program: USAspending spending_by_category/recipient, DOE awarding, 2019-10-01 to 2026-09-30
+  evidence:
+  - field: announced_on
+    snapshot: c235bd583a7e42c232a64751d3bb6611b2f35631c6dbaba7bfec1c7a2ca51a41
+    quote: '"name":"AMERICAN CENTRIFUGE OPERATING, LLC","code":"079679750","uei":"L8VHV5CNBV97"'
+    basis: disclosed
+  - field: amount
+    snapshot: c235bd583a7e42c232a64751d3bb6611b2f35631c6dbaba7bfec1c7a2ca51a41
+    quote: '"amount":197353192.66'
+    basis: disclosed
+- id: centrus-energy-dene0000530
+  instrument: cost_share
+  round_label: DOE American Centrifuge Cascade Demonstration Test Program cooperative agreement DE-NE0000530
+  announced_on: '2012-11-30'
+  amount:
+    amount: 147951761.0
+    currency: USD
+    qualifier: exact
+    usd: 147951761.0
+  amount_kind: new_money
+  obligated_usd: 147951761.0
+  program: DOE Office of Nuclear Energy
+  use_of_proceeds: AMERICAN CENTRIFUGE CASCADE DEMONSTRATION TEST PROGRAM
+  evidence:
+  - field: amount
+    snapshot: edb40f1490e1d64cb17ae4de858ec4b5bebc87ab75b0e4f0ad6e1affc18a4d26
+    quote: '"Award ID": "DENE0000530", "Recipient Name": "CENTRUS ENERGY CORP.", "Recipient UEI": "D5GBKJUJFA54", "Award Amount":
+      147951761.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: edb40f1490e1d64cb17ae4de858ec4b5bebc87ab75b0e4f0ad6e1affc18a4d26
+    quote: '"Base Obligation Date": "2012-11-30", "generated_internal_id": "ASST_NON_DENE0000530_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: edb40f1490e1d64cb17ae4de858ec4b5bebc87ab75b0e4f0ad6e1affc18a4d26
+    quote: '"Award ID": "DENE0000530", "Recipient Name": "CENTRUS ENERGY CORP."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: edb40f1490e1d64cb17ae4de858ec4b5bebc87ab75b0e4f0ad6e1affc18a4d26
+    quote: '"Description": "AMERICAN CENTRIFUGE CASCADE DEMONSTRATION TEST PROGRAM"'
+    basis: disclosed
+  - field: obligated_disbursed
+    snapshot: edb40f1490e1d64cb17ae4de858ec4b5bebc87ab75b0e4f0ad6e1affc18a4d26
+    quote: '"Award Amount": 147951761.0, "Total Outlays": null'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Nuclear Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: edb40f1490e1d64cb17ae4de858ec4b5bebc87ab75b0e4f0ad6e1affc18a4d26
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+agreements:
+- id: centrus-doe-haleu-production-idiq-2024
+  counterparty: U.S. Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: 2024-10-17
+  value:
+    amount: 2700000000
+    currency: USD
+    qualifier: up_to
+  term_years: 10
+  summary: HALEU production IDIQ (one of four awardees), minimum $2.0M, maximum $2.7B over ten years; ceiling not funding.
+    Task orders tracked as events.
+  evidence:
+  - field: agreement
+    snapshot: 72279d7a689802b9fa77026a038fd20f4774dfc704f59be88a35a954e5dbe848
+    quote: The award has a minimum contract value of $2.0 million and a maximum contract value of $2.7 billion over a ten-year
+      period.
+    basis: disclosed
+- id: centrus-doe-haleu-deconversion-idiq-2024
+  counterparty: U.S. Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: 2024-10-08
+  value:
+    amount: 800000000
+    currency: USD
+    qualifier: up_to
+  summary: HALEU deconversion IDIQ (one of six awardees), minimum $2M, maximum $800M; ceiling not funding.
+  evidence:
+  - field: agreement
+    snapshot: cc5ce299290740e0012dc04ab188e255f2dc814e363f049cebb5f7d820f205c1
+    quote: The award has a minimum contract value of $2 million and a maximum value of $800 million.
+    basis: disclosed
+- id: centrus-doe-leu-production-idiq-2024
+  counterparty: U.S. Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: 2024-12-11
+  value:
+    amount: 3400000000
+    currency: USD
+    qualifier: up_to
+  term_years: 10
+  summary: LEU production IDIQ (one of six awardees), minimum $2M, maximum $3.4B over ten years; ceiling not funding. No LEU
+    task order to Centrus evidenced.
+  evidence:
+  - field: agreement
+    snapshot: 43e060388085f150bb04b9265e3b639a1e050d94047044cf11c993476d8379b3
+    quote: The award has a minimum contract value of $2 million and a maximum value of $3.4 billion over a ten-year period.
+    basis: disclosed
+- id: centrus-doe-gcep-lease-amendment-2021
+  counterparty: U.S. Department of Energy
+  counterparty_slug: doe-ne
+  type: site
+  binding: definitive
+  announced_on: 2021-09-09
+  summary: Piketon GCEP lease (ACO sub-lessee) extended from May 31, 2022 to December 31, 2025.
+  evidence:
+  - field: agreement
+    snapshot: 4cf26346835694d115d7071f5cc0548441e0a81d45948801a0fce5089ce369cb
+    quote: was renewed and extended until December 31, 2025
+    basis: disclosed
+- id: centrus-terrapower-haleu-mou-2023
+  counterparty: TerraPower
+  counterparty_slug: terrapower
+  type: partnership
+  binding: mou
+  announced_on: 2023-07-17
+  summary: MOU to expand collaboration on commercial-scale domestic HALEU production for the Natrium reactor; builds on a
+    2021 services contract. No value stated.
+  evidence:
+  - field: agreement
+    snapshot: 7c936f98042a57ecf040432532534b34e486fb41871003d59abaf3034f53de7f
+    quote: announced today a new memorandum of understanding (MOU) to significantly expand their collaboration
+    basis: disclosed
+- id: centrus-antares-haleu-supply-2026
+  counterparty: Antares Nuclear
+  counterparty_slug: antares-nuclear
+  type: fuel_supply
+  binding: definitive
+  announced_on: 2026-09-17
+  summary: Multi-year definitive contract for Centrus to supply HALEU to Antares; deliveries to begin before end of decade.
+    Press release also says it includes prepayments (amount not stated in the 8-K).
+  evidence:
+  - field: agreement
+    snapshot: 4c4163c436192973756967ae132afb33ad0be645f6d8e9ad0aac0a03317b24c7
+    quote: it had signed a contract with Antares Nuclear to supply high-assay low-enriched uranium
+    basis: disclosed
+- id: centrus-energy-89243225fne400178
+  counterparty: U.S. Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: '2025-04-11'
+  summary: DOE task order 89243225FNE400178 under the LEU Enrichment Acquisition IDIQ to American Centrifuge Operating, LLC
+    for a report on deploying new enrichment capacity (USD 0.5M obligated). Paid service contract, not funding.
+  value:
+    amount: 500000.0
+    currency: USD
+    qualifier: exact
+    usd: 500000.0
+  evidence:
+  - field: amount
+    snapshot: 9c87a3a865bdf21985212d5918e73591795a7c7e23bcf57df8bbb387560e9262
+    quote: '"Award ID": "89243225FNE400178", "Recipient Name": "AMERICAN CENTRIFUGE OPERATING, LLC", "Recipient UEI": "L8VHV5CNBV97",
+      "Award Amount": 500000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 9c87a3a865bdf21985212d5918e73591795a7c7e23bcf57df8bbb387560e9262
+    quote: '"Base Obligation Date": "2025-04-11", "generated_internal_id": "CONT_AWD_89243225FNE400178_8900_89243225DNE000026_8900"'
+    basis: disclosed

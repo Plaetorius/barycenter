@@ -1,0 +1,47 @@
+company: hb11-energy
+name: HB11 Energy
+sector: fusion
+notes: 'INFUSE awards (in-kind lab-access vouchers; no dollar amount is published on the awards listing) from the ORNL INFUSE awards
+  listing pages archived by the ledger-infuse/ledger-commonwealth-fusion-systems runs (infuse.ornl.gov/awards/ and /page/N). The listing
+  gives project title, cycle, award date, company and host lab/university; the date shown is taken as announced_on. Vouchers are not
+  cash and must not be summed with funding. VERIFIER: Recipient on the INFUSE listing is HB11 Energy USA LLC (US subsidiary); host
+  is the University of Rochester. INFUSE awards pay the host lab or university to do work for the company (in-kind, no cash to the
+  company; D5: lab/university money is not company funding). Kept as amount-less voucher events for context only; they never count
+  toward raised totals and do not by themselves satisfy D1.'
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: 'Evidence verified (1 INFUSE voucher 2023-07-25, HB11 Energy USA LLC with University of Rochester), 0 fact corrections; notes
+    amended for D5. SCOPE: fusion developer, belongs in the map, but no cash funding event here; its private rounds (Australian equity)
+    are missing, so this ledger alone does not meet D1.'
+events:
+- id: hb11-energy-infuse-2023-1
+  instrument: voucher
+  round_label: INFUSE 2023
+  announced_on: '2023-07-25'
+  program: INFUSE
+  evidence:
+  - field: announced_on
+    snapshot: 3a32fe461f09a44ad24a8141c2bdfab1bc2b1d8a9a19f25864c6d7f86068c4ac
+    quote: INFUSE 2023 - July 25, 2023 | HB11 Energy USA LLC | University of Rochester
+    basis: disclosed
+  - field: round_label
+    snapshot: 3a32fe461f09a44ad24a8141c2bdfab1bc2b1d8a9a19f25864c6d7f86068c4ac
+    quote: INFUSE 2023 - July 25, 2023 | HB11 Energy USA LLC | University of Rochester
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 3a32fe461f09a44ad24a8141c2bdfab1bc2b1d8a9a19f25864c6d7f86068c4ac
+    quote: Design and simulation of innovative p-11B targets for IFE
+    basis: disclosed
+  participants:
+  - investor: INFUSE (Innovation Network for Fusion Energy)
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 3a32fe461f09a44ad24a8141c2bdfab1bc2b1d8a9a19f25864c6d7f86068c4ac
+      quote: INFUSE 2023 - July 25, 2023 | HB11 Energy USA LLC | University of Rochester
+      basis: disclosed
+  use_of_proceeds: Design and simulation of innovative p-11B targets for IFE
+agreements: []

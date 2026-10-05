@@ -1,0 +1,21 @@
+id: canada-gc
+name: Government of Canada Proactive Disclosure - Grants and Contributions (incl. Strategic Innovation Fund)
+owner: Treasury Board Secretariat (all federal departments report into it)
+access: api             # CKAN datastore_search on open.canada.ca (exact-match filters) + 2.3 GB CSV bulk
+endpoint: https://open.canada.ca/data/en/api/3/action/datastore_search?resource_id=1d15a62f-5656-49ad-8c88-f40ce689d831&filters={"recipient_legal_name":"<exact name>"}
+alt_endpoints:
+  - "https://open.canada.ca/data/dataset/432527ab-7aac-45b5-81d6-7597107a7013/resource/1d15a62f-5656-49ad-8c88-f40ce689d831/download/grants.csv  # 2,318,108,314 bytes; server throughput ~100 KB/s in test, a first streaming attempt died; use API or schedule a long job"
+  - https://search.open.canada.ca/grants   # HTML search UI
+auth: none
+rate_limit: "not published; self-limit 1 req/s. full-text q= is rejected for >100k rows; datastore_search_sql returned non-JSON (not supported)"
+licence: Open Government Licence - Canada
+robots: "open.canada.ca/robots.txt only disallows Drupal internals; /data/en/api/ allowed (archived)"
+yields: [grant/contribution agreement: recipient legal+operating name, business number, agreement_value (CAD), start/end date, owner_org, program name (e.g. 'SIF Stream 1- R&D'), amendment_number + amendment_date, province, NAICS, description]
+identifiers: [ref_number (e.g. 033-2019-2020-Q1-811346), recipient_business_number, amendment_number]
+cadence: quarterly (departments disclose each quarter; dataset metadata modified 2026-10-05)
+tier: A
+known_gaps: >
+  Each amendment is a separate row: take the highest amendment_number, do not sum. agreement_value = authorised maximum, not disbursed; repayable vs non-repayable not a field.
+  Exact-name filters only, and some departments store the name as 'X|X' (ACOA rows for Moltex): query both forms; legal-name variants miss (no hits for ARC Clean Technology*, CNL, Prodigy, newcleo, First Light under 12 name variants tried).
+  CNL/AECL funding is appropriation, not G&C. Crown-agency (e.g. Canada Infrastructure Bank, SDTC) investments are not G&C.
+probe: docs/survey/probes/canada-gc.md

@@ -1,0 +1,822 @@
+company: advanced-conductor-technologies
+name: Advanced Conductor Technologies LLC
+sector: fusion
+notes: 'Built from USAspending spending_by_award search responses (POST, archived with request body in raw/manifest.jsonl, source_id
+  usaspending-post). Amount = USAspending ''Award Amount'' (cumulative federal obligation, not a ceiling and not an announced figure);
+  disbursed_usd = ''Total Outlays'' when present. Dates = ''Base Obligation Date'' (first obligation), else ''Start Date''. Search
+  was recipient-name text on awarding agency = Department of Energy over 2007-10-01..2026-09-30 and one page of up to 50 rows per
+  award-type group; awards with zero or negative net obligation are omitted. Recipient name variants not matched by the name search
+  may be missing. Government record, basis=disclosed. VERIFIER: Scope: ACT is an HTS-cable (CORC) supplier, not a fusion developer.
+  Of the 18 DOE awards, 6 (DESC0009545, DESC0015775, DESC0018127, DESC0018710, DESC0021687, DESC0024159; about $4.0M obligated) are
+  accelerator/collider magnet SBIRs (Office of High Energy Physics topics) and DEAR0001459 ($1.5M) is the ARPA-E TINA aviation-cable
+  topic; only 6 awards (about $5.1M) name fusion. All are real company funding, but they are not fusion-specific money.'
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: 'Verified 18 events, 0 amount/date/recipient errors. Checked against the archived USAspending award-level search (spending_level
+    awards: one row per award, modifications already netted, so one event per award and no per-modification duplicates). Award Amount
+    = obligated to date (not a ceiling); disbursed_usd = Total Outlays, now evidenced by its own quote (15 added). announced_on is
+    the first-obligation date, not a press date. Recipient on every row is ADVANCED CONDUCTOR TECHNOLOGIES LLC (UEI CLNQLMBDRLH3),
+    the company itself. Scope: keep as enabling-tech (fusion magnet supply chain) but flag that about $5.5M of the $16.2M obligated
+    is for accelerator magnets or aviation cables, not fusion (listed in notes). Doubts: outlays 0.0 or null on closed early awards
+    (DESC0018710, DESC0007660, DESC0009485) reflect USAspending outlay-reporting gaps, not non-payment; participant quotes only show
+    ''Department of Energy'', the Office of Science / ARPA-E split rests on the award-ID prefix (DESC / DEAR). Not checked: non-DOE
+    awards (NASA, DoD SBIR) and any private equity.'
+events:
+- id: advanced-conductor-technologies-desc0007660
+  instrument: grant
+  round_label: DESC0007660
+  announced_on: '2012-02-15'
+  amount:
+    amount: 1149925.0
+    currency: USD
+    qualifier: exact
+    usd: 1149925.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 1149925.0
+  use_of_proceeds: REBCO COATED CONDUCTOR CABLES FOR FUSION MAGNETS
+  evidence:
+  - field: amount
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0007660", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC", "Recipient UEI": "CLNQLMBDRLH3", "Award
+      Amount": 1149925.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Base Obligation Date": "2012-02-15", "generated_internal_id": "ASST_NON_DESC0007660_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0007660", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Description": "REBCO COATED CONDUCTOR CABLES FOR FUSION MAGNETS"'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: advanced-conductor-technologies-desc0009545
+  instrument: grant
+  round_label: DESC0009545
+  announced_on: '2013-01-31'
+  amount:
+    amount: 1147874.44
+    currency: USD
+    qualifier: exact
+    usd: 1147874.44
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 1147874.44
+  disbursed_usd: 19999.0
+  use_of_proceeds: REBCO COATED CONDUCTOR CABLES FOR ACCELERATOR MAGNETS
+  evidence:
+  - field: amount
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0009545", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC", "Recipient UEI": "CLNQLMBDRLH3", "Award
+      Amount": 1147874.44'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award Amount": 1147874.44, "Total Outlays": 19999.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Base Obligation Date": "2013-01-31", "generated_internal_id": "ASST_NON_DESC0009545_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0009545", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Description": "REBCO COATED CONDUCTOR CABLES FOR ACCELERATOR MAGNETS"'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: advanced-conductor-technologies-desc0009485
+  instrument: grant
+  round_label: DESC0009485
+  announced_on: '2013-02-06'
+  amount:
+    amount: 149279.0
+    currency: USD
+    qualifier: exact
+    usd: 149279.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 149279.0
+  use_of_proceeds: DEMOUNTABLE JOINTS FOR HTS FUSION CABLES
+  evidence:
+  - field: amount
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0009485", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC", "Recipient UEI": "CLNQLMBDRLH3", "Award
+      Amount": 149279.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Base Obligation Date": "2013-02-06", "generated_internal_id": "ASST_NON_DESC0009485_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0009485", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Description": "DEMOUNTABLE JOINTS FOR HTS FUSION CABLES"'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: advanced-conductor-technologies-desc0013723
+  instrument: grant
+  round_label: DESC0013723
+  announced_on: '2015-05-21'
+  amount:
+    amount: 2285098.0
+    currency: USD
+    qualifier: exact
+    usd: 2285098.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 2285098.0
+  disbursed_usd: 1160098.0
+  use_of_proceeds: STABLE, LOW-LOSS JOINTS FOR HTS FUSION MAGNETS
+  evidence:
+  - field: amount
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0013723", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC", "Recipient UEI": "CLNQLMBDRLH3", "Award
+      Amount": 2285098.0'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award Amount": 2285098.0, "Total Outlays": 1160098.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Base Obligation Date": "2015-05-21", "generated_internal_id": "ASST_NON_DESC0013723_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0013723", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Description": "STABLE, LOW-LOSS JOINTS FOR HTS FUSION MAGNETS"'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: advanced-conductor-technologies-desc0015775
+  instrument: grant
+  round_label: DESC0015775
+  announced_on: '2016-06-08'
+  amount:
+    amount: 1149998.0
+    currency: USD
+    qualifier: exact
+    usd: 1149998.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 1149998.0
+  disbursed_usd: 199998.0
+  use_of_proceeds: DEVELOPMENT OF CORC WIRES FOR USE IN CANTED COSINE THETA ACCELERATOR MAGNETS
+  evidence:
+  - field: amount
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0015775", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC", "Recipient UEI": "CLNQLMBDRLH3", "Award
+      Amount": 1149998.0'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award Amount": 1149998.0, "Total Outlays": 199998.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Base Obligation Date": "2016-06-08", "generated_internal_id": "ASST_NON_DESC0015775_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0015775", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Description": "DEVELOPMENT OF CORC  WIRES FOR USE IN CANTED COSINE THETA ACCELERATOR MAGNETS"'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: advanced-conductor-technologies-desc0018125
+  instrument: grant
+  round_label: DESC0018125
+  announced_on: '2017-09-05'
+  amount:
+    amount: 1149999.0
+    currency: USD
+    qualifier: exact
+    usd: 1149999.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 1149999.0
+  disbursed_usd: 660000.0
+  use_of_proceeds: '19/C: HIGH-TEMPERATURE SUPERCONDUCTING CABLES FOR COMPACT FUSION REACTORS'
+  evidence:
+  - field: amount
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0018125", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC", "Recipient UEI": "CLNQLMBDRLH3", "Award
+      Amount": 1149999.0'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award Amount": 1149999.0, "Total Outlays": 660000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Base Obligation Date": "2017-09-05", "generated_internal_id": "ASST_NON_DESC0018125_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0018125", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Description": "19/C: HIGH-TEMPERATURE SUPERCONDUCTING CABLES FOR COMPACT FUSION REACTORS"'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: advanced-conductor-technologies-desc0018127
+  instrument: grant
+  round_label: DESC0018127
+  announced_on: '2017-09-06'
+  amount:
+    amount: 1150000.0
+    currency: USD
+    qualifier: exact
+    usd: 1150000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 1150000.0
+  disbursed_usd: 575000.0
+  use_of_proceeds: '26/B: CORC® CABLE BASED HIGH FIELD HYBRID MAGNETS FOR FUTURE COLLIDERS'
+  evidence:
+  - field: amount
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0018127", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC", "Recipient UEI": "CLNQLMBDRLH3", "Award
+      Amount": 1150000.0'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award Amount": 1150000.0, "Total Outlays": 575000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Base Obligation Date": "2017-09-06", "generated_internal_id": "ASST_NON_DESC0018127_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0018127", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Description": "26/B: CORC® CABLE BASED HIGH FIELD HYBRID MAGNETS FOR FUTURE COLLIDERS"'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: advanced-conductor-technologies-desc0018706
+  instrument: grant
+  round_label: DESC0018706
+  announced_on: '2018-06-15'
+  amount:
+    amount: 149088.34
+    currency: USD
+    qualifier: exact
+    usd: 149088.34
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 149088.34
+  disbursed_usd: 15000.0
+  use_of_proceeds: SMART CORC CABLES
+  evidence:
+  - field: amount
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0018706", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC", "Recipient UEI": "CLNQLMBDRLH3", "Award
+      Amount": 149088.34'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award Amount": 149088.34, "Total Outlays": 15000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Base Obligation Date": "2018-06-15", "generated_internal_id": "ASST_NON_DESC0018706_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0018706", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Description": "SMART CORC CABLES"'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: advanced-conductor-technologies-desc0018710
+  instrument: grant
+  round_label: DESC0018710
+  announced_on: '2018-06-26'
+  amount:
+    amount: 149822.3
+    currency: USD
+    qualifier: exact
+    usd: 149822.3
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 149822.3
+  disbursed_usd: 0.0
+  use_of_proceeds: HIGH-CURRENT DENSITY CORC® WIRES FOR USE IN ACCELERATOR MAGNETS
+  evidence:
+  - field: amount
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0018710", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC", "Recipient UEI": "CLNQLMBDRLH3", "Award
+      Amount": 149822.3'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award Amount": 149822.3, "Total Outlays": 0.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Base Obligation Date": "2018-06-26", "generated_internal_id": "ASST_NON_DESC0018710_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0018710", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Description": "HIGH-CURRENT DENSITY CORC® WIRES FOR USE IN ACCELERATOR MAGNETS"'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: advanced-conductor-technologies-desc0019934
+  instrument: grant
+  round_label: DESC0019934
+  announced_on: '2019-07-02'
+  amount:
+    amount: 2500000.0
+    currency: USD
+    qualifier: exact
+    usd: 2500000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 2500000.0
+  disbursed_usd: 2475000.0
+  use_of_proceeds: SMART CORC® CABLE TERMINATIONS WITH INTEGRATED QUENCH DETECTION
+  evidence:
+  - field: amount
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0019934", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC", "Recipient UEI": "CLNQLMBDRLH3", "Award
+      Amount": 2500000.0'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award Amount": 2500000.0, "Total Outlays": 2475000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Base Obligation Date": "2019-07-02", "generated_internal_id": "ASST_NON_DESC0019934_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0019934", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Description": "SMART CORC® CABLE TERMINATIONS WITH INTEGRATED QUENCH DETECTION"'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: advanced-conductor-technologies-desc0020710
+  instrument: grant
+  round_label: DESC0020710
+  announced_on: '2020-06-24'
+  amount:
+    amount: 200000.0
+    currency: USD
+    qualifier: exact
+    usd: 200000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 200000.0
+  disbursed_usd: 200000.0
+  use_of_proceeds: HIGH-STRENGTH COMPOSITE HTS CORC CABLES FOR PLASMA FUSION CONFINEMENT SYSTEMS
+  evidence:
+  - field: amount
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0020710", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC", "Recipient UEI": "CLNQLMBDRLH3", "Award
+      Amount": 200000.0'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award Amount": 200000.0, "Total Outlays": 200000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Base Obligation Date": "2020-06-24", "generated_internal_id": "ASST_NON_DESC0020710_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0020710", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Description": "HIGH-STRENGTH COMPOSITE HTS CORC CABLES FOR PLASMA FUSION CONFINEMENT SYSTEMS"'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: advanced-conductor-technologies-desc0021687
+  instrument: grant
+  round_label: DESC0021687
+  announced_on: '2021-06-08'
+  amount:
+    amount: 200000.0
+    currency: USD
+    qualifier: exact
+    usd: 200000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 200000.0
+  disbursed_usd: 200000.0
+  use_of_proceeds: HYBRID ACCELERATOR MAGNETS BASED ON DOG BONE SHAPED CORC; WIRE INSERTS FOR OPERATION BEYOND 20 T
+  evidence:
+  - field: amount
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0021687", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC", "Recipient UEI": "CLNQLMBDRLH3", "Award
+      Amount": 200000.0'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award Amount": 200000.0, "Total Outlays": 200000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Base Obligation Date": "2021-06-08", "generated_internal_id": "ASST_NON_DESC0021687_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0021687", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Description": "HYBRID ACCELERATOR MAGNETS BASED ON DOG BONE SHAPED CORC; WIRE INSERTS FOR OPERATION BEYOND 20 T"'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: advanced-conductor-technologies-dear0001459
+  instrument: grant
+  round_label: DEAR0001459
+  announced_on: '2021-08-18'
+  amount:
+    amount: 1499526.0
+    currency: USD
+    qualifier: exact
+    usd: 1499526.0
+  amount_kind: new_money
+  program: ARPA-E
+  obligated_usd: 1499526.0
+  disbursed_usd: 1499526.0
+  use_of_proceeds: NEW TINA SBIR TOPIC Q CABLES AWARD TO ADVANCED CONDUCTOR TECHNOLOGIES LLC CONTROL NUMBER 1954 - 1689 PROJECT T
+  evidence:
+  - field: amount
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DEAR0001459", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC", "Recipient UEI": "CLNQLMBDRLH3", "Award
+      Amount": 1499526.0'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award Amount": 1499526.0, "Total Outlays": 1499526.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Base Obligation Date": "2021-08-18", "generated_internal_id": "ASST_NON_DEAR0001459_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DEAR0001459", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Description": "NEW TINA SBIR TOPIC Q CABLES AWARD TO ADVANCED CONDUCTOR TECHNOLOGIES LLC\nCONTROL NUMBER 1954 - 16'
+    basis: disclosed
+  participants:
+  - investor: ARPA-E
+    investor_slug: arpa-e
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: advanced-conductor-technologies-desc0024288
+  instrument: grant
+  round_label: DESC0024288
+  announced_on: '2023-09-26'
+  amount:
+    amount: 200000.0
+    currency: USD
+    qualifier: exact
+    usd: 200000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 200000.0
+  disbursed_usd: 200000.0
+  use_of_proceeds: DEVELOPMENT OF LONG-LENGTH CORC CABLES AND CABLE-IN-CONDUIT-CONDUCTORS FOR COMPACT FUSION REACTORS
+  evidence:
+  - field: amount
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0024288", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC", "Recipient UEI": "CLNQLMBDRLH3", "Award
+      Amount": 200000.0'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award Amount": 200000.0, "Total Outlays": 200000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Base Obligation Date": "2023-09-26", "generated_internal_id": "ASST_NON_DESC0024288_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0024288", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Description": "DEVELOPMENT OF LONG-LENGTH CORC CABLES AND CABLE-IN-CONDUIT-CONDUCTORS FOR COMPACT FUSION REACTORS"'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: advanced-conductor-technologies-desc0024159
+  instrument: grant
+  round_label: DESC0024159
+  announced_on: '2023-09-29'
+  amount:
+    amount: 200000.0
+    currency: USD
+    qualifier: exact
+    usd: 200000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 200000.0
+  disbursed_usd: 200000.0
+  use_of_proceeds: NEXT GENERATION HIGH-TEMPERATURE SUPERCONDUCTING CORC CONDUCTORS FOR HIGH-FIELD ACCELERATOR MAGNETS
+  evidence:
+  - field: amount
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0024159", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC", "Recipient UEI": "CLNQLMBDRLH3", "Award
+      Amount": 200000.0'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award Amount": 200000.0, "Total Outlays": 200000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Base Obligation Date": "2023-09-29", "generated_internal_id": "ASST_NON_DESC0024159_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0024159", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Description": "NEXT GENERATION HIGH-TEMPERATURE SUPERCONDUCTING CORC CONDUCTORS FOR HIGH-FIELD ACCELERATOR MAGNETS'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: advanced-conductor-technologies-desc0024760
+  instrument: grant
+  round_label: DESC0024760
+  announced_on: '2024-03-08'
+  amount:
+    amount: 1300000.0
+    currency: USD
+    qualifier: exact
+    usd: 1300000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 1300000.0
+  disbursed_usd: 800000.0
+  use_of_proceeds: HIGH FIELD CORC SOLENOIDS
+  evidence:
+  - field: amount
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0024760", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC", "Recipient UEI": "CLNQLMBDRLH3", "Award
+      Amount": 1300000.0'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award Amount": 1300000.0, "Total Outlays": 800000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Base Obligation Date": "2024-03-08", "generated_internal_id": "ASST_NON_DESC0024760_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0024760", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Description": "HIGH FIELD CORC SOLENOIDS"'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: advanced-conductor-technologies-desc0025836
+  instrument: grant
+  round_label: DESC0025836
+  announced_on: '2025-05-09'
+  amount:
+    amount: 200000.0
+    currency: USD
+    qualifier: exact
+    usd: 200000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 200000.0
+  disbursed_usd: 200000.0
+  use_of_proceeds: CORC CABLES WOUND FROM OVERLAPPING TAPES
+  evidence:
+  - field: amount
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0025836", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC", "Recipient UEI": "CLNQLMBDRLH3", "Award
+      Amount": 200000.0'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award Amount": 200000.0, "Total Outlays": 200000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Base Obligation Date": "2025-05-09", "generated_internal_id": "ASST_NON_DESC0025836_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0025836", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Description": "CORC CABLES WOUND FROM OVERLAPPING TAPES"'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: advanced-conductor-technologies-desc0026890
+  instrument: grant
+  round_label: DESC0026890
+  announced_on: '2026-09-25'
+  amount:
+    amount: 1400000.0
+    currency: USD
+    qualifier: exact
+    usd: 1400000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 1400000.0
+  use_of_proceeds: DEVELOPMENT OF DOMESTIC SUPPLY CHAIN FOR HIGH-TEMPERATURE SUPERCONDUCTING CONDUCTOR ON ROUND CORE CABLES WOUND
+  evidence:
+  - field: amount
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0026890", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC", "Recipient UEI": "CLNQLMBDRLH3", "Award
+      Amount": 1400000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Base Obligation Date": "2026-09-25", "generated_internal_id": "ASST_NON_DESC0026890_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Award ID": "DESC0026890", "Recipient Name": "ADVANCED CONDUCTOR TECHNOLOGIES LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+    quote: '"Description": "DEVELOPMENT OF DOMESTIC SUPPLY CHAIN FOR HIGH-TEMPERATURE SUPERCONDUCTING CONDUCTOR ON ROUND CORE C'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: dd380210f070f04bb650eb422f5ec1a47c085044a727e647fe5e2a4271f11085
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+agreements: []

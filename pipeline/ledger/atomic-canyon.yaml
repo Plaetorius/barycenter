@@ -1,0 +1,107 @@
+company: atomic-canyon
+name: Atomic Canyon, Inc.
+sector: fission
+notes: >-
+  AI software for nuclear operations and licensing (Neutron, FERMI models). Only the May 2025 seed round is evidenced, from
+  the company's own announcement; the census's Tracxn link was not used. No later round appears on the company newsroom as of
+  its Aug 2026 item. Participant amounts are not disclosed. 'Previous angel investors' are unnamed and not recorded.
+  Agreements are recorded from the newsroom summary lines only (partnership terms and any funding not read).
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  "on": 2026-10-05
+  note: "0 corrections. Checked: $7M seed (company release 2025-05-28) led by Elevate Future Fund (Energy Impact Partners), with Commonweal, Plug and Play, Wischoff and Tower Research Ventures; agreements are partnerships with no money. Gaps: no other rounds evidenced; agreement terms not read (newsroom summaries only)."
+events:
+  - id: atomic-canyon-seed-2025
+    instrument: equity
+    round_label: Seed
+    announced_on: 2025-05-28
+    amount: {amount: 7000000, currency: USD, qualifier: exact}
+    use_of_proceeds: expand engineering team, deepen national-laboratory research partnerships, scale Neutron deployments to additional nuclear facilities
+    evidence:
+      - field: announced_on
+        snapshot: 4222d80ea22ffbdc1196d8d4677a3b9a1381c006c07bc05a4a8f576cb8ea7d3d
+        quote: "Atomic Canyon Team May 28, 2025"
+        basis: disclosed
+      - field: amount
+        snapshot: 4222d80ea22ffbdc1196d8d4677a3b9a1381c006c07bc05a4a8f576cb8ea7d3d
+        quote: "Atomic Canyon has closed a $7 million seed funding round"
+        basis: disclosed
+      - field: round_label
+        snapshot: 4222d80ea22ffbdc1196d8d4677a3b9a1381c006c07bc05a4a8f576cb8ea7d3d
+        quote: "$7 million seed funding round led by the Elevate Future Fund from Energy Impact Partners"
+        basis: disclosed
+    participants:
+      - investor: Elevate Future Fund (Energy Impact Partners)
+        investor_slug: energy-impact-partners
+        role: lead
+        evidence:
+          - field: participant
+            snapshot: 4222d80ea22ffbdc1196d8d4677a3b9a1381c006c07bc05a4a8f576cb8ea7d3d
+            quote: "led by the Elevate Future Fund from Energy Impact Partners"
+            basis: disclosed
+      - investor: Commonweal Ventures
+        investor_slug: commonweal-ventures
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: 4222d80ea22ffbdc1196d8d4677a3b9a1381c006c07bc05a4a8f576cb8ea7d3d
+            quote: "participation from Commonweal Ventures, Plug and Play Ventures, Wischoff Ventures, Tower Research Ventures, and previous angel investors"
+            basis: disclosed
+      - investor: Plug and Play Ventures
+        investor_slug: plug-and-play-ventures
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: 4222d80ea22ffbdc1196d8d4677a3b9a1381c006c07bc05a4a8f576cb8ea7d3d
+            quote: "participation from Commonweal Ventures, Plug and Play Ventures, Wischoff Ventures, Tower Research Ventures, and previous angel investors"
+            basis: disclosed
+      - investor: Wischoff Ventures
+        investor_slug: wischoff-ventures
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: 4222d80ea22ffbdc1196d8d4677a3b9a1381c006c07bc05a4a8f576cb8ea7d3d
+            quote: "participation from Commonweal Ventures, Plug and Play Ventures, Wischoff Ventures, Tower Research Ventures, and previous angel investors"
+            basis: disclosed
+      - investor: Tower Research Ventures
+        investor_slug: tower-research-ventures
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: 4222d80ea22ffbdc1196d8d4677a3b9a1381c006c07bc05a4a8f576cb8ea7d3d
+            quote: "participation from Commonweal Ventures, Plug and Play Ventures, Wischoff Ventures, Tower Research Ventures, and previous angel investors"
+            basis: disclosed
+agreements:
+  - id: atomic-canyon-iaea-2025
+    counterparty: International Atomic Energy Agency
+    counterparty_slug: iaea
+    type: partnership
+    binding: mou
+    announced_on: 2025-12-03
+    summary: Practical Arrangements partnership on AI-powered nuclear information management.
+    evidence:
+      - field: agreement
+        snapshot: 2dba1eff61f2f9294a0485321ec88be29055d2c05589faab5f60e892e50d9e90
+        quote: "Atomic Canyon and the International Atomic Energy Agency sign a Practical Arrangements partnership"
+        basis: disclosed
+      - field: announced_on
+        snapshot: 2dba1eff61f2f9294a0485321ec88be29055d2c05589faab5f60e892e50d9e90
+        quote: "December 3, 2025 Atomic Canyon Signs IAEA Agreement on AI for Nuclear"
+        basis: disclosed
+  - id: atomic-canyon-inl-benchmark-2025
+    counterparty: Idaho National Laboratory
+    counterparty_slug: idaho-national-laboratory
+    type: partnership
+    binding: mou
+    announced_on: 2025-09-11
+    summary: Joint initiative to establish standardized benchmarks for AI in nuclear energy applications.
+    evidence:
+      - field: agreement
+        snapshot: 2dba1eff61f2f9294a0485321ec88be29055d2c05589faab5f60e892e50d9e90
+        quote: "A joint initiative with INL will establish the first standardized benchmarks for evaluating AI in nuclear energy applications."
+        basis: disclosed
+      - field: announced_on
+        snapshot: 2dba1eff61f2f9294a0485321ec88be29055d2c05589faab5f60e892e50d9e90
+        quote: "September 11, 2025 Atomic Canyon and Idaho National Laboratory Launch Nuclear AI Benchmark Program"
+        basis: disclosed

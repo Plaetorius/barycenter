@@ -1,0 +1,95 @@
+company: moltex-energy
+name: Moltex Energy
+sector: fission
+notes: 'SUPPLEMENT (not in pipeline/ledger/ to avoid a duplicate company slug): DOE awards found in USAspending that the existing
+  ledger pipeline/ledger/moltex-energy.yaml did not list by FAIN at the time of writing. Some amounts may already be evidenced
+  there from another source (check before merging; do not double count). Amount = USAspending ''Award Amount'' (cumulative
+  federal obligation), dates = Base Obligation Date else Start Date; one page of up to 50 rows per award-type group, DOE as
+  awarding agency, 2007-10-01..2026-09-30; zero/negative awards omitted.'
+events:
+- id: moltex-energy-dear0000989
+  instrument: grant
+  round_label: DEAR0000989
+  announced_on: '2019-04-09'
+  amount:
+    amount: 239160.55
+    currency: USD
+    qualifier: exact
+    usd: 239160.55
+  amount_kind: new_money
+  program: ARPA-E
+  obligated_usd: 239160.55
+  disbursed_usd: 239160.55
+  use_of_proceeds: MOLTEX ENERGY USA, LLC (1798-1548) - NEW MEITNER AWARD THIS PROJECT WILL USE STATE-OF-THE-ART MODELING
+    AND SIM
+  evidence:
+  - field: amount
+    snapshot: 923dd4faacfb8ca2e7b3e40a21b800936682071eb56c90a1d72f2cd0dab4b0ce
+    quote: '"Award ID": "DEAR0000989", "Recipient Name": "MOLTEX ENERGY USA LLC", "Recipient UEI": "RRYLWJ5BU3S1", "Award
+      Amount": 239160.55'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 923dd4faacfb8ca2e7b3e40a21b800936682071eb56c90a1d72f2cd0dab4b0ce
+    quote: '"Base Obligation Date": "2019-04-09", "generated_internal_id": "ASST_NON_DEAR0000989_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 923dd4faacfb8ca2e7b3e40a21b800936682071eb56c90a1d72f2cd0dab4b0ce
+    quote: '"Award ID": "DEAR0000989", "Recipient Name": "MOLTEX ENERGY USA LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 923dd4faacfb8ca2e7b3e40a21b800936682071eb56c90a1d72f2cd0dab4b0ce
+    quote: '"Description": "MOLTEX ENERGY USA, LLC (1798-1548) - NEW MEITNER AWARD\n\nTHIS PROJECT WILL USE STATE-OF-THE-ART
+      MO'
+    basis: disclosed
+  participants:
+  - investor: ARPA-E
+    investor_slug: arpa-e
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 923dd4faacfb8ca2e7b3e40a21b800936682071eb56c90a1d72f2cd0dab4b0ce
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: moltex-energy-dear0001296
+  instrument: grant
+  round_label: DEAR0001296
+  announced_on: '2020-09-23'
+  amount:
+    amount: 19702.02
+    currency: USD
+    qualifier: exact
+    usd: 19702.02
+  amount_kind: new_money
+  program: ARPA-E
+  obligated_usd: 19702.02
+  disbursed_usd: 7513.7
+  use_of_proceeds: 'GEMINA DE-FOA-0002174 MOLTEX ENERGY USA, LLC - NEW CONDITIONAL AWARD CONTROL NO: 2174-1542 PROJECT TITLE:
+    SSR'
+  evidence:
+  - field: amount
+    snapshot: 923dd4faacfb8ca2e7b3e40a21b800936682071eb56c90a1d72f2cd0dab4b0ce
+    quote: '"Award ID": "DEAR0001296", "Recipient Name": "MOLTEX ENERGY USA LLC", "Recipient UEI": "RRYLWJ5BU3S1", "Award
+      Amount": 19702.02'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 923dd4faacfb8ca2e7b3e40a21b800936682071eb56c90a1d72f2cd0dab4b0ce
+    quote: '"Base Obligation Date": "2020-09-23", "generated_internal_id": "ASST_NON_DEAR0001296_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 923dd4faacfb8ca2e7b3e40a21b800936682071eb56c90a1d72f2cd0dab4b0ce
+    quote: '"Award ID": "DEAR0001296", "Recipient Name": "MOLTEX ENERGY USA LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 923dd4faacfb8ca2e7b3e40a21b800936682071eb56c90a1d72f2cd0dab4b0ce
+    quote: '"Description": "GEMINA DE-FOA-0002174\nMOLTEX ENERGY USA, LLC - NEW CONDITIONAL AWARD\nCONTROL NO: 2174-1542\nPROJE'
+    basis: disclosed
+  participants:
+  - investor: ARPA-E
+    investor_slug: arpa-e
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 923dd4faacfb8ca2e7b3e40a21b800936682071eb56c90a1d72f2cd0dab4b0ce
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+agreements: []

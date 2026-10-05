@@ -1,0 +1,17 @@
+id: eic-eib
+name: EIC Fund, EIB, EU Innovation Fund announcements
+owner: European Commission (EISMEA / EIC Fund), European Investment Bank
+access: html            # press releases + company releases; no verified structured feed
+endpoint: https://eic.ec.europa.eu/eic-fund_en
+auth: none
+rate_limit: n/a (HTML)
+licence: "EU web reuse generally CC BY 4.0 (Commission Decision 2011/833/EU); company releases = company copyright, cite only"
+robots: "eic.ec.europa.eu/robots.txt: only generic Drupal disallows; EIB/Innovation Fund endpoints NOT probed"
+yields: [equity participation (investor named, amount usually undisclosed per investor), loans (EIB), venture debt]
+identifiers: [none stable; match by company name]
+cadence: event-driven
+tier: B
+known_gaps: >
+  EIC Fund publishes no per-deal amount list found in this probe; amounts come from the company release (e.g. Marvel Series B extension EUR 50M for EQT, Siemens Energy, EIC Fund together).
+  EU Innovation Fund project list (Excel on climate.ec.europa.eu) and EIB project database NOT probed.
+probe: docs/survey/probes/eic-eib.md

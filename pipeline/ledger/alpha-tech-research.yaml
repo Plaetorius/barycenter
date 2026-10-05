@@ -1,0 +1,66 @@
+company: alpha-tech-research
+name: Alpha Tech Research Corp
+sector: fission
+notes: Built from USAspending spending_by_award search responses (POST, archived with request body in raw/manifest.jsonl, source_id
+  usaspending-post). Amount = USAspending 'Award Amount' (cumulative federal obligation, not a ceiling and not an announced figure);
+  disbursed_usd = 'Total Outlays' when present. Dates = 'Base Obligation Date' (first obligation), else 'Start Date'. Search was recipient-name
+  text on awarding agency = Department of Energy over 2007-10-01..2026-09-30 and one page of up to 50 rows per award-type group; awards
+  with zero or negative net obligation are omitted. Recipient name variants not matched by the name search may be missing. Government
+  record, basis=disclosed.
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: 'Verified 1 event (DESC0022922, $198,753 SBIR/STTR Phase I-size project grant, fully outlaid), 0 errors. Checked against the
+    archived USAspending award-level search (spending_level awards: one row per award, modifications already netted, so one event
+    per award and no per-modification duplicates). Award Amount = obligated to date (not a ceiling); disbursed_usd = Total Outlays,
+    now evidenced by its own quote (1 added). announced_on is the first-obligation date, not a press date. Recipient is ALPHA TECH
+    RESEARCH CORP. (UEI FDVHQ9GLKJY3), the company. Scope: MSR developer, belongs in the map. Gaps: no private rounds and no later
+    DOE/GAIN awards found by this search (GAIN vouchers go to labs, D5).'
+events:
+- id: alpha-tech-research-desc0022922
+  instrument: grant
+  round_label: DESC0022922
+  announced_on: '2022-07-28'
+  amount:
+    amount: 198753.0
+    currency: USD
+    qualifier: exact
+    usd: 198753.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 198753.0
+  disbursed_usd: 198753.0
+  use_of_proceeds: DEVELOPMENT OF A ROBUST THERMODYNAMIC REFERENCE ELECTRODE FOR FLUORIDE-BASED MOLTEN SALT APPLICATIONS
+  evidence:
+  - field: amount
+    snapshot: c5747a4ffa69f88c2dcb9804725dd1a5867697fbba6b52e851c59c471c7f12e2
+    quote: '"Award ID": "DESC0022922", "Recipient Name": "ALPHA TECH RESEARCH CORP.", "Recipient UEI": "FDVHQ9GLKJY3", "Award Amount":
+      198753.0'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: c5747a4ffa69f88c2dcb9804725dd1a5867697fbba6b52e851c59c471c7f12e2
+    quote: '"Award Amount": 198753.0, "Total Outlays": 198753.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: c5747a4ffa69f88c2dcb9804725dd1a5867697fbba6b52e851c59c471c7f12e2
+    quote: '"Base Obligation Date": "2022-07-28", "generated_internal_id": "ASST_NON_DESC0022922_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: c5747a4ffa69f88c2dcb9804725dd1a5867697fbba6b52e851c59c471c7f12e2
+    quote: '"Award ID": "DESC0022922", "Recipient Name": "ALPHA TECH RESEARCH CORP."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: c5747a4ffa69f88c2dcb9804725dd1a5867697fbba6b52e851c59c471c7f12e2
+    quote: '"Description": "DEVELOPMENT OF A ROBUST THERMODYNAMIC REFERENCE ELECTRODE FOR FLUORIDE-BASED MOLTEN SALT APPLICATIO'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: c5747a4ffa69f88c2dcb9804725dd1a5867697fbba6b52e851c59c471c7f12e2
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+agreements: []

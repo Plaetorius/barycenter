@@ -1,0 +1,320 @@
+company: first-light-fusion
+name: First Light Fusion
+sector: fusion
+notes: "WebSearch budget was exhausted, so evidence is limited to the company's own newsroom (WordPress feed, 20 pages crawled), UKAEA, Companies House filing-history HTML and EPSRC/BEIS mentions inside releases. NOT FOUND in archivable primary sources: the 2021-2022 Series B (widely reported as about USD 45M, led by Tencent; unverified here and deliberately not recorded), any Innovate UK / UKRI Gateway-to-Research per-project amounts (probe ukri.md lists 18 projects incl. GBP 6.14M EPSRC IFE grant EP/X025373/1 which is a university-led project total, not recorded as company funding), any EU/CORDIS or EIB/EIC award, German or SPRIND money (none applicable). UKAEA Fusion Industry Programme contracts are recorded without amounts because the GBP 8.1M total is split across 14 organisations with no per-organisation figure. The 2026 round is a FIRST CLOSE of a larger round; the final size is not announced. Companies House shows SH01 allotments dated 17 April 2026 (filed 22 May and 9 July 2026). The Dec 2020 release gives no round label. Seed (2011) date is month-level only (July 2011).\n VERIFIER (2026-10-05): REMOVED the event first-light-fusion-epsrc-prosperity-2023 (GBP 6M EPSRC Prosperity Partnership, company release 2023-05-22). The UKRI Gateway to Research record (EP/X025373/1, snapshot 77fe6e85bf99) is the same partnership: fund valuePounds 6141929, leadResearchOrganisation IMPERIAL COLLEGE LONDON, with Oxford and York, and First Light Fusion as the industry partner that match-funds. The grant is paid to the universities, so under the lab/university money policy (D5) and the different-recipient rule it is not company funding; it can appear as funder-page context or as a partnership. UKAEA Fusion Industry Programme and simulation awards are procurement contracts recorded as grant without amounts; reclassify if amounts are found. Seed day (2011-07-01) is a placeholder for July 2011."
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: '1 correction: EPSRC Prosperity Partnership GBP 6M event removed (UKRI GtR shows Imperial College London as grant holder, GBP 6,141,929; First Light is the match-funding partner). All other amounts, dates and participants match their company-release quotes (USD 25M Dec 2020 led by OSI; GBP 25M first close Apr 2026 led by East X Ventures/Starmaker One with UKAEA, IP Group, Hostplus; SH01 allotment 17 Apr 2026). Not confirmed: 2021-22 Series B (about USD 45M, Tencent-led per press) has no archived primary source; final size of the 2026 round; per-company UKAEA contract values.'
+events:
+- id: first-light-fusion-seed-2011
+  instrument: equity
+  round_label: Seed
+  announced_on: 2011-07-01
+  evidence:
+  - field: announced_on
+    snapshot: 8f720f1bdd3543f9fdc9b3087526d5234a962739101d6cdc96a14ae3ecc186ef
+    quote: The company was spun out from the University of Oxford in July 2011, with seed capital from IP Group plc, Parkwalk Advisors Ltd and private investors
+    basis: disclosed
+  - field: round_label
+    snapshot: 8f720f1bdd3543f9fdc9b3087526d5234a962739101d6cdc96a14ae3ecc186ef
+    quote: with seed capital from IP Group plc, Parkwalk Advisors Ltd and private investors
+    basis: disclosed
+  participants:
+  - investor: IP Group plc
+    investor_slug: ip-group
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 8f720f1bdd3543f9fdc9b3087526d5234a962739101d6cdc96a14ae3ecc186ef
+      quote: with seed capital from IP Group plc, Parkwalk Advisors Ltd and private investors
+      basis: disclosed
+  - investor: Parkwalk Advisors Ltd
+    investor_slug: parkwalk-advisors
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 8f720f1bdd3543f9fdc9b3087526d5234a962739101d6cdc96a14ae3ecc186ef
+      quote: with seed capital from IP Group plc, Parkwalk Advisors Ltd and private investors
+      basis: disclosed
+- id: first-light-fusion-beis-eef-2018
+  instrument: grant
+  round_label: BEIS Energy Entrepreneurs Fund grant (amount not stated)
+  announced_on: 2018-12-06
+  program: Energy Entrepreneurs Fund
+  use_of_proceeds: Fusion island concept development project with UKAEA Culham
+  evidence:
+  - field: announced_on
+    snapshot: ffe0b77d601e3b7249d12a05088ca9de9b81e8b8cc339bc7e8e9ad409a168814
+    quote: 'Published: December 6, 2018'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: ffe0b77d601e3b7249d12a05088ca9de9b81e8b8cc339bc7e8e9ad409a168814
+    quote: Thanks in part to an Energy Entrepreneurs Fund grant from the Department for Business, Energy & Industrial Strategy (BEIS), a fusion island concept development project is now underway
+    basis: disclosed
+  participants:
+  - investor: Department for Business, Energy & Industrial Strategy (BEIS)
+    investor_slug: uk-beis
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: ffe0b77d601e3b7249d12a05088ca9de9b81e8b8cc339bc7e8e9ad409a168814
+      quote: Energy Entrepreneurs Fund grant from the Department for Business, Energy & Industrial Strategy (BEIS)
+      basis: disclosed
+- id: first-light-fusion-oci-2020
+  instrument: equity
+  announced_on: 2020-12-22
+  amount:
+    amount: 25000000
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: 4fadc81f665f1e4d5214a22ad0aefedf45d9c1d9b304c977bb003bfd0343a8d8
+    quote: 'Published: December 22, 2020'
+    basis: disclosed
+  - field: amount
+    snapshot: 4fadc81f665f1e4d5214a22ad0aefedf45d9c1d9b304c977bb003bfd0343a8d8
+    quote: has raised $25 million from both existing and new investors
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 4fadc81f665f1e4d5214a22ad0aefedf45d9c1d9b304c977bb003bfd0343a8d8
+    quote: The new funding will enable First Light to add 23 new employees across its science, engineering and simulation departments
+    basis: disclosed
+  use_of_proceeds: Add 23 staff, upgrade computational and experimental resources, plan prototype gain-scale experiment
+  participants:
+  - investor: Oxford Sciences Innovation (OSI)
+    investor_slug: oxford-sciences-innovation
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 4fadc81f665f1e4d5214a22ad0aefedf45d9c1d9b304c977bb003bfd0343a8d8
+      quote: The funding round was led by Oxford Sciences Innovation (OSI) and includes IP Group plc and Hostplus
+      basis: disclosed
+  - investor: IP Group plc
+    investor_slug: ip-group
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 4fadc81f665f1e4d5214a22ad0aefedf45d9c1d9b304c977bb003bfd0343a8d8
+      quote: The funding round was led by Oxford Sciences Innovation (OSI) and includes IP Group plc and Hostplus
+      basis: disclosed
+  - investor: Hostplus
+    investor_slug: hostplus
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 4fadc81f665f1e4d5214a22ad0aefedf45d9c1d9b304c977bb003bfd0343a8d8
+      quote: The funding round was led by Oxford Sciences Innovation (OSI) and includes IP Group plc and Hostplus
+      basis: disclosed
+- id: first-light-fusion-ukaea-fip-diagnostics-2025
+  instrument: grant
+  round_label: UKAEA Fusion Industry Programme, sensing and diagnostics feasibility study (amount not stated)
+  announced_on: 2025-11-11
+  program: UKAEA Fusion Industry Programme
+  evidence:
+  - field: announced_on
+    snapshot: afde16da725698f333c9e7c2e8914de6c8b1654a91c2f7c94e978fbe93d88486
+    quote: 'Published: November 11, 2025'
+    basis: disclosed
+  - field: round_label
+    snapshot: afde16da725698f333c9e7c2e8914de6c8b1654a91c2f7c94e978fbe93d88486
+    quote: A team at First Light Fusion (FLF) has successfully completed a feasibility study project awarded by the United Kingdom Atomic Energy Authority (UKAEA) Fusion Industry Programme
+    basis: disclosed
+  participants:
+  - investor: UK Atomic Energy Authority (UKAEA)
+    investor_slug: ukaea
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: afde16da725698f333c9e7c2e8914de6c8b1654a91c2f7c94e978fbe93d88486
+      quote: awarded by the United Kingdom Atomic Energy Authority (UKAEA) Fusion Industry Programme
+      basis: disclosed
+- id: first-light-fusion-ukaea-fip-lithium-2026
+  instrument: grant
+  round_label: UKAEA Fusion Industry Programme, Natural Lithium Shielding (amount not stated; programme total GBP 8.1M across 14 organisations)
+  announced_on: 2026-02-03
+  program: UKAEA Fusion Industry Programme
+  evidence:
+  - field: announced_on
+    snapshot: 2c26bc29604f29ba8125d7fca249ae79cc4b4e339867741541e198944aca35a4
+    quote: 'Published: February 3, 2026'
+    basis: disclosed
+  - field: round_label
+    snapshot: 2c26bc29604f29ba8125d7fca249ae79cc4b4e339867741541e198944aca35a4
+    quote: has today announced it has been awarded funding for its Natural Lithium Shielding project under the United Kingdom Atomic Energy Authority (UKAEA) Fusion Industry Programme
+    basis: disclosed
+  - field: round_label
+    snapshot: 1ebb611e264af2b786478d39039ade8389d77e1dd8838cec1e34b18f824476ec
+    quote: First Light Fusion Ltd Natural lithium shielding
+    basis: disclosed
+  participants:
+  - investor: UK Atomic Energy Authority (UKAEA)
+    investor_slug: ukaea
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 2c26bc29604f29ba8125d7fca249ae79cc4b4e339867741541e198944aca35a4
+      quote: The programme has awarded a total of £8.1 million to 14 organisations
+      basis: disclosed
+- id: first-light-fusion-ukaea-simulation-2025
+  instrument: grant
+  round_label: UKAEA Industry Simulation Software for Fusion contract (amount not stated)
+  announced_on: 2025-12-09
+  program: UKAEA Industry Simulation Software for Fusion
+  evidence:
+  - field: announced_on
+    snapshot: 6afd226e260339b25a0bf276cbcb0ce1b834e332d79f1f5d209cba38da4a2f3b
+    quote: 'Published: December 9, 2025'
+    basis: disclosed
+  - field: round_label
+    snapshot: 6afd226e260339b25a0bf276cbcb0ce1b834e332d79f1f5d209cba38da4a2f3b
+    quote: has today announced it has been successfully awarded a contract with the UK Atomic Energy Authority’s (UKAEA) Industry Simulation Software for Fusion project
+    basis: disclosed
+  participants:
+  - investor: UK Atomic Energy Authority (UKAEA)
+    investor_slug: ukaea
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 6afd226e260339b25a0bf276cbcb0ce1b834e332d79f1f5d209cba38da4a2f3b
+      quote: successfully awarded a contract with the UK Atomic Energy Authority’s (UKAEA) Industry Simulation Software for Fusion project
+      basis: disclosed
+- id: first-light-fusion-first-close-2026
+  instrument: equity
+  round_label: First close of new funding round
+  announced_on: 2026-04-21
+  closed_on: 2026-04-17
+  amount:
+    amount: 25000000
+    currency: GBP
+    qualifier: exact
+  use_of_proceeds: Commercial development of FLARE Fusion Energy concept; major fusion milestones; growth of commercial amplification, simulation and test business
+  evidence:
+  - field: announced_on
+    snapshot: 154d7dd91f9783e57f0af65b937ffd3f2fc2a7fa25bb32c11afc018fdbbbb786
+    quote: 'Published: April 21, 2026'
+    basis: disclosed
+  - field: round_label
+    snapshot: 154d7dd91f9783e57f0af65b937ffd3f2fc2a7fa25bb32c11afc018fdbbbb786
+    quote: announced the successful first close of its latest funding round
+    basis: disclosed
+  - field: amount
+    snapshot: 154d7dd91f9783e57f0af65b937ffd3f2fc2a7fa25bb32c11afc018fdbbbb786
+    quote: The £25 million first close, led by UK venture firm East X Ventures and its fusion fund Starmaker One
+    basis: disclosed
+  - field: closed_on
+    snapshot: 9530ed187f34e5597c66102bc45769f947c188df650d92c01c99f2addbd7cf8e
+    quote: SH01 Statement of capital following an allotment of shares on 17 April 2026
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 154d7dd91f9783e57f0af65b937ffd3f2fc2a7fa25bb32c11afc018fdbbbb786
+    quote: will accelerate the commercial development of First Light Fusion’s ground-breaking FLARE Fusion Energy concept
+    basis: disclosed
+  participants:
+  - investor: East X Ventures (Starmaker One fusion fund)
+    investor_slug: east-x-ventures
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 154d7dd91f9783e57f0af65b937ffd3f2fc2a7fa25bb32c11afc018fdbbbb786
+      quote: led by UK venture firm East X Ventures and its fusion fund Starmaker One
+      basis: disclosed
+  - investor: UK Atomic Energy Authority (UKAEA)
+    investor_slug: ukaea
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 154d7dd91f9783e57f0af65b937ffd3f2fc2a7fa25bb32c11afc018fdbbbb786
+      quote: includes a significant strategic investment from the UK Atomic Energy Authority (UKAEA)
+      basis: disclosed
+  - investor: IP Group plc
+    investor_slug: ip-group
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 154d7dd91f9783e57f0af65b937ffd3f2fc2a7fa25bb32c11afc018fdbbbb786
+      quote: investment from existing shareholders IP Group plc and its Hostplus managed fund
+      basis: disclosed
+  - investor: Hostplus
+    investor_slug: hostplus
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 154d7dd91f9783e57f0af65b937ffd3f2fc2a7fa25bb32c11afc018fdbbbb786
+      quote: investment from existing shareholders IP Group plc and its Hostplus managed fund
+      basis: disclosed
+agreements:
+- id: first-light-fusion-ukaea-machine4-facility
+  counterparty: UK Atomic Energy Authority
+  counterparty_slug: ukaea
+  type: site
+  binding: definitive
+  announced_on: 2023-01-25
+  summary: Agreement to design and build a facility at Culham Campus to house the Machine 4 net-gain demonstrator. Machine 4 was later dropped (Feb 2025 strategy shift).
+  evidence:
+  - field: agreement
+    snapshot: 8f720f1bdd3543f9fdc9b3087526d5234a962739101d6cdc96a14ae3ecc186ef
+    quote: have today signed an agreement for the design and construction of a new purpose-built facility to house First Light’s Machine 4 at UKAEA’s Culham Campus
+    basis: disclosed
+- id: first-light-fusion-tractebel-framework
+  counterparty: Tractebel
+  counterparty_slug: tractebel
+  type: partnership
+  binding: definitive
+  announced_on: 2023-08-09
+  summary: Framework agreement for specialist engineering expertise on the Machine 4 gain demonstrator.
+  evidence:
+  - field: agreement
+    snapshot: 8642efce7721c596744b8e879a481343fafe8870f6fcffd570a4b83672b246d8
+    quote: have signed a framework agreement to provide specialist engineering expertise for the development of First Light’s gain demonstrator
+    basis: disclosed
+- id: first-light-fusion-idom-collaboration
+  counterparty: IDOM
+  counterparty_slug: idom
+  type: partnership
+  binding: definitive
+  announced_on: 2022-07-21
+  summary: Long-term collaboration agreement on reactor chamber design for a pilot plant.
+  evidence:
+  - field: agreement
+    snapshot: fb41db7489832060095f1a8fbba07283837d1d773c08476470da84cc7334143a
+    quote: has entered a long-term collaboration agreement with IDOM
+    basis: disclosed
+- id: first-light-fusion-sandia-z-machine
+  counterparty: Sandia National Laboratories
+  counterparty_slug: sandia-national-laboratories
+  type: partnership
+  binding: definitive
+  announced_on: 2024-02-13
+  summary: Access to Sandia's Z Machine; two additional shots granted for 2025 after the first experiment in Feb 2024. No funding amount stated.
+  evidence:
+  - field: agreement
+    snapshot: 103eca6fbae26979674c3c84a387468fb2f1264ee3f9f8dcf01aed77a961ae2f
+    quote: has been awarded two additional shots on the on the ‘Z Machine’ at Sandia National Laboratories
+    basis: disclosed
+- id: first-light-fusion-frazer-nash-loi
+  counterparty: Frazer-Nash Consultancy
+  counterparty_slug: frazer-nash-consultancy
+  type: partnership
+  binding: loi
+  announced_on: 2025-04-08
+  summary: Non-exclusive letter of understanding for multi-year engineering collaboration.
+  evidence:
+  - field: agreement
+    snapshot: 46895de55eb28d488d6fde2859999af02af9a09f3a16c6c6ebcd9528e260ac2a
+    quote: have signed a non-exclusive letter of understanding to collaborate on the development of cutting-edge engineering technologies
+    basis: disclosed
+- id: first-light-fusion-locai-contract
+  counterparty: Locai Labs Limited
+  counterparty_slug: locai-labs
+  type: partnership
+  binding: definitive
+  announced_on: 2026-04-23
+  summary: Contract for supply and deployment of a domain-specific LLM coding assistant (follows an MoU signed earlier in 2026). Value not stated.
+  evidence:
+  - field: agreement
+    snapshot: dbb5e641ca55ae4f9a115dcdbab87e9ca785b6e89d8e25921eeb7bf02b026533
+    quote: successful execution of a contract for the supply and deployment of a bespoke, domain-specific, Large Language Model (DSLM)
+    basis: disclosed

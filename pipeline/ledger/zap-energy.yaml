@@ -1,0 +1,511 @@
+company: zap-energy
+name: Zap Energy
+sector: fusion
+notes: |-
+  Built 2026-10-05. Sources: Zap Energy releases (zapenergy.com is robots-allowed, no ToS found), Chevron release via Wayback, TechCrunch 2022-06-22, SEC Form D (CIK 1714402), ARPA-E project JSON, USAspending, DOE FIRE/Milestone article.
+  Gaps / review items:
+  - No evidenced seed round. Zap emerged ~2017-18 (ARPA-E OPEN 2018 selection 2017-12-13); the 2019-08-28 Form D (offering $7.2M, $1.1M sold, 1 investor, accession 0001714402-19-000002) probably belongs to the pre-Series-A / Series A financing and is NOT recorded as a separate event. Series A amount ($6.5M) comes only from Zap's own Series B release; Series A participants beyond Chevron Technology Ventures are not named in a Series A release (Lowercarbon is called an 'existing investor' in May 2021).
+  - Several Zap /updates pages (Series C 2022, Mizuho 2024, Soros/Emerson 2024-09, EIP fund, $5M DOE grant) are empty-body redirect stubs on the current site; Series C was recovered from the 2022 Wayback copy of Zap's own release. Probe snapshot 'zap-energy-confirms-130m-round' is an empty body (e3b0c44298fc).
+  - Form D amounts are tranche/'sold so far' figures and are used only as corroboration (Series B $25.2M of $27.5M sold; Series C D/A $162.6M vs $160M announced; Series D $130.0M sold, 40 investors). Not separate events.
+  - DOE Milestone program: $5M initial federal funding (Zap release 2023-05-31). DOE says $46M initially committed across 8 awardees and payment is per verified milestone; milestone 1 certified 2025-02-25 and the preconceptual design milestone approved 2026-05-19 (Zap releases), but no payment amounts are stated, so no extra events. USAspending has no Milestone row for Zap. Modelled as cost_share (company contributes more than 50%).
+  - ARPA-E: selection amounts from ARPA-E JSON, obligated and outlays from USAspending (DEAR0001010 $6,767,334 obligated, $4,092,066.87 outlaid; DEAR0001260 $999,189.16 obligated, $537,961.64 outlaid). Dates are selection announcement dates.
+  - Also seen but not recorded as funding: 2025-07 award of 1M supercomputer node-hours (in-kind compute); 2024-09-22 White House/UAE joint statement (used only as evidence that Plynth Energy invested).
+  - Not found / not checked: INFUSE and FIRE awards (INFUSE awardee lists are JS-heavy and were not parsed; FIRE awardees are labs/universities per DOE), SBIR (probe found 0 Zap hits), Washington state grants. WebSearch budget was exhausted, so no broader sweep was possible.
+  - TechCrunch 2026-08-15 (FusionX data) states $325M raised; sum of events here is 6.5+27.5+160+130 = $324M private equity, consistent.
+events:
+- id: zap-series-a-2020
+  instrument: equity
+  round_label: Series A
+  announced_on: '2020-08-12'
+  amount:
+    amount: 6500000.0
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: f9412a78f189425a3b623a2deb4a87a12f6a8db955ab7cc7fbd8b30063550253
+    quote: 'Houston, Texas, August 12, 2020 — Chevron Corporation (NYSE: CVX) today announced a Series A investment in Zap Energy Inc.'
+    basis: disclosed
+    original_url: https://www.chevron.com/stories/chevron-invests-in-nuclear-fusion-start-up
+  - field: round_label
+    snapshot: f9412a78f189425a3b623a2deb4a87a12f6a8db955ab7cc7fbd8b30063550253
+    quote: today announced a Series A investment in Zap Energy Inc.
+    basis: disclosed
+    original_url: https://www.chevron.com/stories/chevron-invests-in-nuclear-fusion-start-up
+  - field: amount
+    snapshot: 37c980c24725ae9bc9a78ef646ba7c75d45dd22066ac1bd3055d2fe3ed9ec97f
+    quote: The new financing comes just nine months after closing a $6.5 million Series A funding round
+    basis: disclosed
+  participants:
+  - investor: Chevron Technology Ventures
+    investor_slug: chevron-technology-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f9412a78f189425a3b623a2deb4a87a12f6a8db955ab7cc7fbd8b30063550253
+      quote: Chevron Technology Ventures’ investment in fusion is an opportunity
+      basis: disclosed
+      original_url: https://www.chevron.com/stories/chevron-invests-in-nuclear-fusion-start-up
+- id: zap-series-b-2021
+  instrument: equity
+  round_label: Series B
+  announced_on: '2021-05-18'
+  amount:
+    amount: 27500000.0
+    currency: USD
+    qualifier: exact
+  use_of_proceeds: to advance key technologies relating to their fusion reactor
+  evidence:
+  - field: announced_on
+    snapshot: 37c980c24725ae9bc9a78ef646ba7c75d45dd22066ac1bd3055d2fe3ed9ec97f
+    quote: Date 18 May 2021
+    basis: disclosed
+  - field: amount
+    snapshot: 37c980c24725ae9bc9a78ef646ba7c75d45dd22066ac1bd3055d2fe3ed9ec97f
+    quote: today announced that it has raised $27.5 million in Series B funding
+    basis: disclosed
+  - field: round_label
+    snapshot: 37c980c24725ae9bc9a78ef646ba7c75d45dd22066ac1bd3055d2fe3ed9ec97f
+    quote: announced that it has raised $27.5 million in Series B funding
+    basis: disclosed
+  - field: amount_corroboration
+    snapshot: ae6d88f19ef75887071292de1ddf58a2b09dcd11506b67c322066464b1f7f2f6
+    quote: 2021-04-20 false true false 0 27500000 25249943 2250057
+    basis: disclosed
+    original_url: https://www.sec.gov/Archives/edgar/data/1714402/000171440221000002/primary_doc.xml
+  - field: use_of_proceeds
+    snapshot: 37c980c24725ae9bc9a78ef646ba7c75d45dd22066ac1bd3055d2fe3ed9ec97f
+    quote: Zap Energy will use this latest funding round to advance key technologies relating to their fusion reactor.
+    basis: disclosed
+  participants:
+  - investor: Addition
+    investor_slug: addition
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 37c980c24725ae9bc9a78ef646ba7c75d45dd22066ac1bd3055d2fe3ed9ec97f
+      quote: The round was led by Addition, with participation from Energy Impact Partners, GA Capital and Fourth Realm
+      basis: disclosed
+  - investor: Energy Impact Partners
+    investor_slug: energy-impact-partners
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 37c980c24725ae9bc9a78ef646ba7c75d45dd22066ac1bd3055d2fe3ed9ec97f
+      quote: with participation from Energy Impact Partners, GA Capital and Fourth Realm
+      basis: disclosed
+  - investor: GA Capital
+    investor_slug: ga-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 37c980c24725ae9bc9a78ef646ba7c75d45dd22066ac1bd3055d2fe3ed9ec97f
+      quote: with participation from Energy Impact Partners, GA Capital and Fourth Realm
+      basis: disclosed
+  - investor: Fourth Realm
+    investor_slug: fourth-realm
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 37c980c24725ae9bc9a78ef646ba7c75d45dd22066ac1bd3055d2fe3ed9ec97f
+      quote: with participation from Energy Impact Partners, GA Capital and Fourth Realm
+      basis: disclosed
+  - investor: Chevron Technology Ventures
+    investor_slug: chevron-technology-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 37c980c24725ae9bc9a78ef646ba7c75d45dd22066ac1bd3055d2fe3ed9ec97f
+      quote: as well as existing investors Chevron Technology Ventures and LowerCarbon Capital
+      basis: disclosed
+  - investor: LowerCarbon Capital
+    investor_slug: lowercarbon-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 37c980c24725ae9bc9a78ef646ba7c75d45dd22066ac1bd3055d2fe3ed9ec97f
+      quote: as well as existing investors Chevron Technology Ventures and LowerCarbon Capital
+      basis: disclosed
+- id: zap-series-c-2022
+  instrument: equity
+  round_label: Series C
+  announced_on: '2022-06-22'
+  amount:
+    amount: 160000000.0
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: 0a9064d320ce5d47d19a76b59c2c121e479b0bd0a17fec4951cd1d351f7f355a
+    quote: Press release / June 22, 2022
+    basis: disclosed
+    original_url: https://web.archive.org/web/20221201151715/https://www.zapenergy.com/news/first-plasmas-fuzeq-series-c
+  - field: amount
+    snapshot: 0a9064d320ce5d47d19a76b59c2c121e479b0bd0a17fec4951cd1d351f7f355a
+    quote: the company is also announcing the close of $160 million in Series C funding
+    basis: disclosed
+    original_url: https://web.archive.org/web/20221201151715/https://www.zapenergy.com/news/first-plasmas-fuzeq-series-c
+  - field: round_label
+    snapshot: 0a9064d320ce5d47d19a76b59c2c121e479b0bd0a17fec4951cd1d351f7f355a
+    quote: $160 million in Series C funding mark major milestones for Zap Energy
+    basis: disclosed
+    original_url: https://web.archive.org/web/20221201151715/https://www.zapenergy.com/news/first-plasmas-fuzeq-series-c
+  - field: amount_corroboration
+    snapshot: b9dfa7738662cd23e5b41478068f835e814291a9aa5840112f5734571f9b4586
+    quote: a $160 million Series C round and a successful test of a prototype fusion reactor
+    basis: reported
+  - field: amount_corroboration
+    snapshot: ee58b565e03144efdbdffbb0d3974aedd13fd82bfbf3a8331e8e9b23e11578c2
+    quote: 2022-05-24 false true false 0 162610820 162610820 0
+    basis: disclosed
+    original_url: https://www.sec.gov/Archives/edgar/data/1714402/000171440222000002/primary_doc.xml
+  participants:
+  - investor: Lowercarbon Capital
+    investor_slug: lowercarbon-capital
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 0a9064d320ce5d47d19a76b59c2c121e479b0bd0a17fec4951cd1d351f7f355a
+      quote: Zap Energy’s oversubscribed $160 million Series C funding round was led by Lowercarbon Capital
+      basis: disclosed
+      original_url: https://web.archive.org/web/20221201151715/https://www.zapenergy.com/news/first-plasmas-fuzeq-series-c
+  - investor: Breakthrough Energy Ventures
+    investor_slug: breakthrough-energy-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 0a9064d320ce5d47d19a76b59c2c121e479b0bd0a17fec4951cd1d351f7f355a
+      quote: a new set of investors that includes Breakthrough Energy Ventures , Shell Ventures , DCVC and Valor Equity Partners
+      basis: disclosed
+      original_url: https://web.archive.org/web/20221201151715/https://www.zapenergy.com/news/first-plasmas-fuzeq-series-c
+  - investor: Shell Ventures
+    investor_slug: shell-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 0a9064d320ce5d47d19a76b59c2c121e479b0bd0a17fec4951cd1d351f7f355a
+      quote: a new set of investors that includes Breakthrough Energy Ventures , Shell Ventures , DCVC and Valor Equity Partners
+      basis: disclosed
+      original_url: https://web.archive.org/web/20221201151715/https://www.zapenergy.com/news/first-plasmas-fuzeq-series-c
+  - investor: DCVC
+    investor_slug: dcvc
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 0a9064d320ce5d47d19a76b59c2c121e479b0bd0a17fec4951cd1d351f7f355a
+      quote: a new set of investors that includes Breakthrough Energy Ventures , Shell Ventures , DCVC and Valor Equity Partners
+      basis: disclosed
+      original_url: https://web.archive.org/web/20221201151715/https://www.zapenergy.com/news/first-plasmas-fuzeq-series-c
+  - investor: Valor Equity Partners
+    investor_slug: valor-equity-partners
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 0a9064d320ce5d47d19a76b59c2c121e479b0bd0a17fec4951cd1d351f7f355a
+      quote: a new set of investors that includes Breakthrough Energy Ventures , Shell Ventures , DCVC and Valor Equity Partners
+      basis: disclosed
+      original_url: https://web.archive.org/web/20221201151715/https://www.zapenergy.com/news/first-plasmas-fuzeq-series-c
+  - investor: Addition
+    investor_slug: addition
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 0a9064d320ce5d47d19a76b59c2c121e479b0bd0a17fec4951cd1d351f7f355a
+      quote: Existing ﬁnancial and strategic investors who have backed the new raise include Addition , Energy Impact Partners (EIP) and Chevron Technology Ventures
+      basis: disclosed
+      original_url: https://web.archive.org/web/20221201151715/https://www.zapenergy.com/news/first-plasmas-fuzeq-series-c
+  - investor: Energy Impact Partners (EIP)
+    investor_slug: energy-impact-partners
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 0a9064d320ce5d47d19a76b59c2c121e479b0bd0a17fec4951cd1d351f7f355a
+      quote: Existing ﬁnancial and strategic investors who have backed the new raise include Addition , Energy Impact Partners (EIP) and Chevron Technology Ventures
+      basis: disclosed
+      original_url: https://web.archive.org/web/20221201151715/https://www.zapenergy.com/news/first-plasmas-fuzeq-series-c
+  - investor: Chevron Technology Ventures
+    investor_slug: chevron-technology-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 0a9064d320ce5d47d19a76b59c2c121e479b0bd0a17fec4951cd1d351f7f355a
+      quote: Existing ﬁnancial and strategic investors who have backed the new raise include Addition , Energy Impact Partners (EIP) and Chevron Technology Ventures
+      basis: disclosed
+      original_url: https://web.archive.org/web/20221201151715/https://www.zapenergy.com/news/first-plasmas-fuzeq-series-c
+- id: zap-series-d-2024
+  instrument: equity
+  round_label: Series D
+  announced_on: '2024-10-09'
+  amount:
+    amount: 130000000.0
+    currency: USD
+    qualifier: exact
+  use_of_proceeds: to continue parallel development of both plasma R&D and systems-level plant engineering and integration, including the next generation in the company’s FuZE device series and a cutting-edge pulsed power capacitor bank
+  evidence:
+  - field: announced_on
+    snapshot: 7cf02d97b61e0de3d0ca014bec985d189c644eeab6bb794156d394d8f28a7308
+    quote: Date 9 October 2024
+    basis: disclosed
+  - field: amount
+    snapshot: 7cf02d97b61e0de3d0ca014bec985d189c644eeab6bb794156d394d8f28a7308
+    quote: closed $130 million of fresh capital
+    basis: disclosed
+  - field: round_label
+    snapshot: 7cf02d97b61e0de3d0ca014bec985d189c644eeab6bb794156d394d8f28a7308
+    quote: Zap’s $130 million Series D was led by Soros Fund Management LLC
+    basis: disclosed
+  - field: amount_corroboration
+    snapshot: 609ac645f0fe06d2825da861a77b9db28fb5749cab4cfc4faa7854e11c10456a
+    quote: 2024-07-15 false true false 0 129997713 129997713 0
+    basis: disclosed
+    original_url: https://www.sec.gov/Archives/edgar/data/1714402/000171440224000001/primary_doc.xml
+  - field: use_of_proceeds
+    snapshot: 7cf02d97b61e0de3d0ca014bec985d189c644eeab6bb794156d394d8f28a7308
+    quote: The new funding will be used to continue parallel development of both plasma R&D and systems-level plant engineering and integration
+    basis: disclosed
+  participants:
+  - investor: Soros Fund Management LLC
+    investor_slug: soros-fund-management
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 7cf02d97b61e0de3d0ca014bec985d189c644eeab6bb794156d394d8f28a7308
+      quote: Zap’s $130 million Series D was led by Soros Fund Management LLC, with participation by new investors that include BAM Elevate, Emerson Collective, Leitmotif, Mizuho Financial Group, Plynth Energy and Xplor Ventures.
+      basis: disclosed
+  - investor: BAM Elevate
+    investor_slug: bam-elevate
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 7cf02d97b61e0de3d0ca014bec985d189c644eeab6bb794156d394d8f28a7308
+      quote: Zap’s $130 million Series D was led by Soros Fund Management LLC, with participation by new investors that include BAM Elevate, Emerson Collective, Leitmotif, Mizuho Financial Group, Plynth Energy and Xplor Ventures.
+      basis: disclosed
+  - investor: Emerson Collective
+    investor_slug: emerson-collective
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 7cf02d97b61e0de3d0ca014bec985d189c644eeab6bb794156d394d8f28a7308
+      quote: Zap’s $130 million Series D was led by Soros Fund Management LLC, with participation by new investors that include BAM Elevate, Emerson Collective, Leitmotif, Mizuho Financial Group, Plynth Energy and Xplor Ventures.
+      basis: disclosed
+  - investor: Leitmotif
+    investor_slug: leitmotif
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 7cf02d97b61e0de3d0ca014bec985d189c644eeab6bb794156d394d8f28a7308
+      quote: Zap’s $130 million Series D was led by Soros Fund Management LLC, with participation by new investors that include BAM Elevate, Emerson Collective, Leitmotif, Mizuho Financial Group, Plynth Energy and Xplor Ventures.
+      basis: disclosed
+  - investor: Mizuho Financial Group
+    investor_slug: mizuho
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 7cf02d97b61e0de3d0ca014bec985d189c644eeab6bb794156d394d8f28a7308
+      quote: Zap’s $130 million Series D was led by Soros Fund Management LLC, with participation by new investors that include BAM Elevate, Emerson Collective, Leitmotif, Mizuho Financial Group, Plynth Energy and Xplor Ventures.
+      basis: disclosed
+  - investor: Plynth Energy
+    investor_slug: plynth-energy
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 7cf02d97b61e0de3d0ca014bec985d189c644eeab6bb794156d394d8f28a7308
+      quote: Zap’s $130 million Series D was led by Soros Fund Management LLC, with participation by new investors that include BAM Elevate, Emerson Collective, Leitmotif, Mizuho Financial Group, Plynth Energy and Xplor Ventures.
+      basis: disclosed
+    - field: participant
+      snapshot: 894104171e557b258395c492aec940df5be44bf543e9edab86c5d6b6ff24d53c
+      quote: Plynth Energy – a recently established Abu Dhabi government-owned early-stage fund focused on fusion technologies and supply chains – invested in the U.S. company
+      basis: disclosed
+  - investor: Xplor Ventures
+    investor_slug: xplor-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 7cf02d97b61e0de3d0ca014bec985d189c644eeab6bb794156d394d8f28a7308
+      quote: Zap’s $130 million Series D was led by Soros Fund Management LLC, with participation by new investors that include BAM Elevate, Emerson Collective, Leitmotif, Mizuho Financial Group, Plynth Energy and Xplor Ventures.
+      basis: disclosed
+  - investor: Addition
+    investor_slug: addition
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 7cf02d97b61e0de3d0ca014bec985d189c644eeab6bb794156d394d8f28a7308
+      quote: Current investors participating in the new round include Addition, Breakthrough Energy Ventures, Chevron Technology Ventures, DCVC, Energy Impact Partners, Lowercarbon Capital and Shell Ventures.
+      basis: disclosed
+  - investor: Breakthrough Energy Ventures
+    investor_slug: breakthrough-energy-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 7cf02d97b61e0de3d0ca014bec985d189c644eeab6bb794156d394d8f28a7308
+      quote: Current investors participating in the new round include Addition, Breakthrough Energy Ventures, Chevron Technology Ventures, DCVC, Energy Impact Partners, Lowercarbon Capital and Shell Ventures.
+      basis: disclosed
+  - investor: Chevron Technology Ventures
+    investor_slug: chevron-technology-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 7cf02d97b61e0de3d0ca014bec985d189c644eeab6bb794156d394d8f28a7308
+      quote: Current investors participating in the new round include Addition, Breakthrough Energy Ventures, Chevron Technology Ventures, DCVC, Energy Impact Partners, Lowercarbon Capital and Shell Ventures.
+      basis: disclosed
+  - investor: DCVC
+    investor_slug: dcvc
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 7cf02d97b61e0de3d0ca014bec985d189c644eeab6bb794156d394d8f28a7308
+      quote: Current investors participating in the new round include Addition, Breakthrough Energy Ventures, Chevron Technology Ventures, DCVC, Energy Impact Partners, Lowercarbon Capital and Shell Ventures.
+      basis: disclosed
+  - investor: Energy Impact Partners
+    investor_slug: energy-impact-partners
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 7cf02d97b61e0de3d0ca014bec985d189c644eeab6bb794156d394d8f28a7308
+      quote: Current investors participating in the new round include Addition, Breakthrough Energy Ventures, Chevron Technology Ventures, DCVC, Energy Impact Partners, Lowercarbon Capital and Shell Ventures.
+      basis: disclosed
+  - investor: Lowercarbon Capital
+    investor_slug: lowercarbon-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 7cf02d97b61e0de3d0ca014bec985d189c644eeab6bb794156d394d8f28a7308
+      quote: Current investors participating in the new round include Addition, Breakthrough Energy Ventures, Chevron Technology Ventures, DCVC, Energy Impact Partners, Lowercarbon Capital and Shell Ventures.
+      basis: disclosed
+  - investor: Shell Ventures
+    investor_slug: shell-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 7cf02d97b61e0de3d0ca014bec985d189c644eeab6bb794156d394d8f28a7308
+      quote: Current investors participating in the new round include Addition, Breakthrough Energy Ventures, Chevron Technology Ventures, DCVC, Energy Impact Partners, Lowercarbon Capital and Shell Ventures.
+      basis: disclosed
+- id: zap-cumulative-2024-10
+  instrument: equity
+  round_label: cumulative funding statement
+  announced_on: '2024-10-09'
+  amount:
+    amount: 330000000.0
+    currency: USD
+    qualifier: over
+  amount_kind: cumulative
+  evidence:
+  - field: announced_on
+    snapshot: 7cf02d97b61e0de3d0ca014bec985d189c644eeab6bb794156d394d8f28a7308
+    quote: Date 9 October 2024
+    basis: disclosed
+  - field: amount
+    snapshot: 7cf02d97b61e0de3d0ca014bec985d189c644eeab6bb794156d394d8f28a7308
+    quote: total funding that now surpasses $330M
+    basis: disclosed
+- id: zap-arpae-open2018
+  instrument: grant
+  program: ARPA-E OPEN 2018
+  round_label: Electrode Technology Development for the Sheared-Flow Z-Pinch Fusion Reactor
+  announced_on: '2017-12-13'
+  amount:
+    amount: 6767334.0
+    currency: USD
+    qualifier: exact
+  obligated_usd: 6767334.0
+  disbursed_usd: 4092066.87
+  evidence:
+  - field: announced_on
+    snapshot: 0ef149feafbb5ed2245353022fd6c70aca87d6b3387f8c09063088c196e01506
+    quote: '"award":"6,767,334","release_date":"Dec 13 2017","location":"Seattle, WA"'
+    basis: disclosed
+  - field: amount
+    snapshot: 0ef149feafbb5ed2245353022fd6c70aca87d6b3387f8c09063088c196e01506
+    quote: '"award":"6,767,334","release_date":"Dec 13 2017","location":"Seattle, WA"'
+    basis: disclosed
+  - field: amount_corroboration
+    snapshot: b623232ae08b7696d78adfb532548e6bb5bc2f179044f5104a8cc7d84812ca44
+    quote: '"Award ID":"DEAR0001010","Recipient Name":"ZAP ENERGY INC","Recipient UEI":"PAJUZGUV4YL3","Award Amount":6767334.0,"Total Outlays":4092066.87'
+    basis: disclosed
+  - field: program
+    snapshot: 0ef149feafbb5ed2245353022fd6c70aca87d6b3387f8c09063088c196e01506
+    quote: '"title":"OPEN 2018","alias":"open-2018"'
+    basis: disclosed
+  participants:
+  - investor: ARPA-E
+    investor_slug: arpa-e
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 0ef149feafbb5ed2245353022fd6c70aca87d6b3387f8c09063088c196e01506
+      quote: '"title":"OPEN 2018","alias":"open-2018"'
+      basis: disclosed
+- id: zap-arpae-bethe
+  instrument: grant
+  program: ARPA-E BETHE
+  round_label: Sheared Flow Stabilized Z-Pinch Performance Improvement
+  announced_on: '2019-11-07'
+  amount:
+    amount: 1000000.0
+    currency: USD
+    qualifier: exact
+  obligated_usd: 999189.16
+  disbursed_usd: 537961.64
+  evidence:
+  - field: announced_on
+    snapshot: 541c9d053c1aa1be4f99879ad9b0d4e9026a5a46d142c80ac83f6a2c188e20a5
+    quote: '"award":"1,000,000","release_date":"Nov 07 2019","location":"Seattle, WA"'
+    basis: disclosed
+  - field: amount
+    snapshot: 541c9d053c1aa1be4f99879ad9b0d4e9026a5a46d142c80ac83f6a2c188e20a5
+    quote: '"award":"1,000,000","release_date":"Nov 07 2019","location":"Seattle, WA"'
+    basis: disclosed
+  - field: amount_corroboration
+    snapshot: b623232ae08b7696d78adfb532548e6bb5bc2f179044f5104a8cc7d84812ca44
+    quote: '"Award ID":"DEAR0001260","Recipient Name":"ZAP ENERGY INC","Recipient UEI":"PAJUZGUV4YL3","Award Amount":999189.16,"Total Outlays":537961.64'
+    basis: disclosed
+  - field: program
+    snapshot: 541c9d053c1aa1be4f99879ad9b0d4e9026a5a46d142c80ac83f6a2c188e20a5
+    quote: '"title":"BETHE","alias":"bethe"'
+    basis: disclosed
+  participants:
+  - investor: ARPA-E
+    investor_slug: arpa-e
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 541c9d053c1aa1be4f99879ad9b0d4e9026a5a46d142c80ac83f6a2c188e20a5
+      quote: '"title":"BETHE","alias":"bethe"'
+      basis: disclosed
+- id: zap-doe-milestone-2023
+  instrument: cost_share
+  program: DOE Milestone-Based Fusion Development Program
+  round_label: Fusion pilot plant conceptual design
+  announced_on: '2023-05-31'
+  amount:
+    amount: 5000000.0
+    currency: USD
+    qualifier: up_to
+  evidence:
+  - field: announced_on
+    snapshot: 75724c2244f1bb02b9d11ad4c1747b2fac7f3bfbd0b29517a5ae31da8d5d8053
+    quote: Date 31 May 2023
+    basis: disclosed
+  - field: amount
+    snapshot: 75724c2244f1bb02b9d11ad4c1747b2fac7f3bfbd0b29517a5ae31da8d5d8053
+    quote: The award of $5 million in federal funding will contribute to the development of a pilot plant
+    basis: disclosed
+  - field: program
+    snapshot: 69b6dcec82c9dff9e92b6cb0b2745b6c2fd638b087c2a924c6554ee30662f301
+    quote: The other Milestone awardees are Commonwealth Fusion Systems, Tokamak Energy, Type One Energy, Xcimer Energy, and Zap Energy
+    basis: disclosed
+  participants:
+  - investor: U.S. Department of Energy (Office of Science, Fusion Energy Sciences)
+    investor_slug: doe-fes
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 75724c2244f1bb02b9d11ad4c1747b2fac7f3bfbd0b29517a5ae31da8d5d8053
+      quote: Zap Energy was selected by the U.S. Department of Energy (DOE) today for support of the conceptual design of a fusion pilot plant
+      basis: disclosed
+agreements: []
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  "on": 2026-10-05
+  note: "1 correction: DOE Milestone $5M qualifier exact -> up_to (payments are per verified milestone; DOE committed $46M initially across 8 awardees). All equity amounts, dates, leads and participants check against Zap/Chevron releases; Form D figures correctly kept as corroboration only; ARPA-E selection vs USAspending obligation correctly separated. Not confirmed: Series A date rests on Chevron's 2020-08-12 release plus Zap's 'nine months after' phrasing; no Zap Milestone row found in USAspending."

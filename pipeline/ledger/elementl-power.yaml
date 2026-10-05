@@ -1,0 +1,79 @@
+company: elementl-power
+name: Elementl Power Inc.
+sector: fission
+notes: >-
+  Form D (Elementl Power Inc., CIK 2021861, filed 2024-02-20, signed 2024-02-20): $5,000,015 sold to 3 investors, first sale
+  2023-12-13, total offering 'Indefinite'; announced_on is the first-sale date; round label and investors are not in the
+  filing. A separate Form D (AVSF - Elementl Power 2025, LLC, CIK 2105158, first sale 2026-01-08, $1,549,500 from 84
+  investors, 'Pooled Investment Fund') is an Alumni Ventures vehicle named after Elementl; it is not recorded as an event
+  because the amount invested into Elementl is not stated (snapshot 52e00ff4...); do not add it to the Elementl total.
+  Advanced-nuclear project developer / independent power producer (founded 2022). The only dated equity amount is the Form D above;
+  no labelled round was found. The homepage (snapshot 8bbd39b2...) lists backers 'Energy Impact Partners, T. Rowe Price, Prelude Ventures,
+  Breakwater North, and Alumni Ventures' without round, date or amount, so they are not attached as participants. Google's early-stage development capital commitment (2025-05-07) has an undisclosed amount. The CNBC
+  headline 'Google to fund development of three Elementl nuclear sites' is on the company newsroom list only. Also
+  listed but not read: ORNL siting partnership (2025-05-22), Ohio 1.5 GW BWRX-300 project with GE Vernova Hitachi
+  (2026-06-18). The Google release says each project would generate at least 600 MW, hence capacity 1,800 MW (three
+  sites), matching the newsroom's '1,800 megawatts'. WebSearch budget was exhausted.
+events:
+  - id: elementl-form-d-2023
+    instrument: equity
+    round_label: Form D offering (unlabelled)
+    announced_on: 2023-12-13
+    amount: {amount: 5000015, currency: USD, qualifier: exact}
+    evidence:
+      - field: announced_on
+        snapshot: 31d1a15e35b20b60ee457bb770d4f4b5eff4b0a004bd8aeb38dfc4f2d0666570
+        quote: "06b false 2023-12-13 false true false 0 Indefinite 5000015 Indefinite false 3"
+        basis: disclosed
+      - field: amount
+        snapshot: 31d1a15e35b20b60ee457bb770d4f4b5eff4b0a004bd8aeb38dfc4f2d0666570
+        quote: "Indefinite 5000015 Indefinite false 3"
+        basis: disclosed
+  - id: elementl-google-development-capital-2025
+    instrument: other
+    round_label: Google early-stage development capital for three nuclear sites
+    announced_on: 2025-05-07
+    use_of_proceeds: early-stage development of three advanced nuclear projects of at least 600 MW each
+    evidence:
+      - field: announced_on
+        snapshot: f3d22ea1ac8eda4a12c7ca4a51af7457c17da3efa75cd0ed3166a9615a54d306
+        quote: "News release · May 7, 2025"
+        basis: disclosed
+      - field: round_label
+        snapshot: f3d22ea1ac8eda4a12c7ca4a51af7457c17da3efa75cd0ed3166a9615a54d306
+        quote: "Google will commit early-stage development capital to advance the development of three projects."
+        basis: disclosed
+    participants:
+      - investor: Google
+        investor_slug: alphabet
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: f3d22ea1ac8eda4a12c7ca4a51af7457c17da3efa75cd0ed3166a9615a54d306
+            quote: "Google will commit early-stage development capital to advance the development of three projects."
+            basis: disclosed
+agreements:
+  - id: elementl-google-strategic-agreement-2025
+    counterparty: Google
+    counterparty_slug: alphabet
+    type: partnership
+    binding: definitive
+    announced_on: 2025-05-07
+    capacity_mw: 1800
+    summary: Strategic agreement to pre-position three advanced nuclear project sites, each at least 600 MW, with option for commercial off-take once complete.
+    evidence:
+      - field: agreement
+        snapshot: f3d22ea1ac8eda4a12c7ca4a51af7457c17da3efa75cd0ed3166a9615a54d306
+        quote: "today announced the signing of a strategic agreement with Google to pre-position three project sites for advanced nuclear energy"
+        basis: disclosed
+      - field: capacity_mw
+        snapshot: f3d22ea1ac8eda4a12c7ca4a51af7457c17da3efa75cd0ed3166a9615a54d306
+        quote: "Each project would generate at least 600 megawatts (MW) of power capacity, with the option for commercial off-take once complete."
+        basis: disclosed
+verification:
+  status: verified
+  by: verifier-agent (Claude Opus 5.5), 2026-10-05
+  'on': '2026-10-05'
+  note: '0 corrections. Form D $5,000,015 (first sale 2023-12-13) and the undisclosed Google development-capital commitment
+    confirmed against their quotes. Not confirmed: round labels and investors of the Form D money; Alumni Ventures SPV correctly
+    excluded.'

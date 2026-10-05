@@ -1,0 +1,56 @@
+company: general-matter
+name: General Matter
+sector: fission
+notes: 'SUPPLEMENT (not in pipeline/ledger/ to avoid a duplicate company slug): DOE awards found in USAspending that the existing
+  ledger pipeline/ledger/general-matter.yaml did not list by FAIN at the time of writing. Some amounts may already be evidenced
+  there from another source (check before merging; do not double count). Amount = USAspending ''Award Amount'' (cumulative
+  federal obligation), dates = Base Obligation Date else Start Date; one page of up to 50 rows per award-type group, DOE as
+  awarding agency, 2007-10-01..2026-09-30; zero/negative awards omitted.'
+events: []
+agreements:
+- id: general-matter-89243225fne400179
+  counterparty: U.S. Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: '2025-04-11'
+  summary: 'DOE contract 89243225FNE400179: NEW TASK ORDER AWARD UNDER THE LOW-ENRICHED URANIUM (LEU) - ENRICHMENT ACQUISITION
+    IDIQ FOR AMERICAN CENTRIFUGE LLC FOR THE DEVELOPMENT OF A REPORT FOR THE DEPLOYMENT OF NEW ENRICHMENT CAPACITY AND PO'
+  value:
+    amount: 395254.9
+    currency: USD
+    qualifier: exact
+    usd: 395254.9
+  evidence:
+  - field: amount
+    snapshot: 8673b4db907aabf9f18dd1ac4aab8713eae083b0ac0d2bf4576bda7c3d9f8992
+    quote: '"Award ID": "89243225FNE400179", "Recipient Name": "GENERAL MATTER, INC.", "Recipient UEI": "XFT2AME5FUB3", "Award
+      Amount": 395254.9'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 8673b4db907aabf9f18dd1ac4aab8713eae083b0ac0d2bf4576bda7c3d9f8992
+    quote: '"Base Obligation Date": "2025-04-11", "generated_internal_id": "CONT_AWD_89243225FNE400179_8900_89243225DNE000027_8900"'
+    basis: disclosed
+- id: general-matter-89243226fne400213
+  counterparty: U.S. Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: '2026-03-04'
+  summary: 'DOE contract 89243226FNE400213: THE PURPOSE OF THIS TASK ORDER (TO) IS TO ESTABLISH NEW ANNUAL DOMESTIC COMMERCIAL
+    HIGH-ASSAY LOW-ENRICHED URANIUM (HALEU) CAPACITY AND BEGIN PRODUCTION OF HALEU UF6 FOR PURCHASE BY DOE.'
+  value:
+    amount: 900000000.0
+    currency: USD
+    qualifier: exact
+    usd: 900000000.0
+  evidence:
+  - field: amount
+    snapshot: 8673b4db907aabf9f18dd1ac4aab8713eae083b0ac0d2bf4576bda7c3d9f8992
+    quote: '"Award ID": "89243226FNE400213", "Recipient Name": "GENERAL MATTER, INC.", "Recipient UEI": "XFT2AME5FUB3", "Award
+      Amount": 900000000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 8673b4db907aabf9f18dd1ac4aab8713eae083b0ac0d2bf4576bda7c3d9f8992
+    quote: '"Base Obligation Date": "2026-03-04", "generated_internal_id": "CONT_AWD_89243226FNE400213_8900_89243225DNE000023_8900"'
+    basis: disclosed

@@ -1,0 +1,12 @@
+recipient,start,agreement_value_CAD,owner_org,program,ref_number,amendment,amendment_date,end,archive_sha12
+General Fusion Inc.,2019-01-01,49275000.0,ic,SIF Stream 1- R&D,033-2019-2020-Q1-811346,0,,2024-06-30,c638ee082e54
+General Fusion Inc.,2019-01-01,49275000.0,ic,SIF Stream 1- R&D,033-2019-2020-Q1-811346,1,2020-07-14,2024-06-30,c638ee082e54
+General Fusion Inc.,2019-01-01,54275000.0,ic,SIF Stream 1- R&D,033-2019-2020-Q1-811346,2,2023-11-27,2024-06-30,c638ee082e54
+General Fusion Inc.,2019-05-29,69275000.0,ic,SIF Stream 1- R&D,033-2019-2020-Q1-811346,3,2025-01-22,2033-06-30,c638ee082e54
+General Fusion Inc.,2019-05-29,74275000.0,ic,SIF Stream 1 - R&D,033-2019-2020-Q1-811346,4,2026-03-26,2034-03-31,c638ee082e54
+General Fusion Inc.,2020-04-01,680988,nrc-cnrc,Innovation Assistance Program,172-2020-2021-Q1-950113,0,,2020-06-24,c638ee082e54
+Terrestrial Energy Inc.,2019-04-01,20000000.0,ic,SIF Stream 1- R&D,033-2020-2021-Q2-811861,0,,2022-12-31,d14e22db1c82
+Terrestrial Energy Inc.,2019-04-01,18923000.0,ic,SIF Stream 1- R&D,033-2020-2021-Q2-811861,1,2022-11-01,2022-12-31,d14e22db1c82
+Terrestrial Energy Inc.,2020-09-02,18923000.0,ic,SIF Stream 1 - R&D,033-2020-2021-Q2-811861,2,2026-03-31,2052-04-30,d14e22db1c82
+Moltex Energy Canada Inc.,2020-09-30,47500000.0,ic,SIF Stream 1- R&D,033-2020-2021-Q4-814523,0,,2025-03-31,0c98ab98618c
+Moltex Energy Canada Inc.,2021-03-16,47500000.0,ic,SIF Stream 1 - R&D,033-2020-2021-Q4-814523,1,2026-03-31,2054-07-31,0c98ab98618c

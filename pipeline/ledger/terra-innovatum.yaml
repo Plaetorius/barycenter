@@ -1,0 +1,95 @@
+company: terra-innovatum
+name: Terra Innovatum Global N.V.
+sector: fission
+notes: >-
+  Italian/Dutch microreactor developer listed via SPAC (GSR III Acquisition Corp.) on 2025-10-09, ticker NKLR, CIK 2067627.
+  Census lifetime figure of $130M (Nasdaq closing release) could not be re-verified: the release page was not archivable.
+  [Verifier 2026-10-05] SPAC amount now recorded from the FY2025 10-K cash flow: $69,878k proceeds from the business
+  combination net of transaction costs, plus $36,835k PIPE proceeds (matches the two PIPE events, $31.8M + $4.99M);
+  10-K total net $106,713k. Bridge amount changed from $5.0M (10-K narrative, May-Aug) to $5,690k (10-K cash flow;
+  Q3 10-Q says $5,687k over May, June, August and September 2025); closed_on moved to 2025-09-30. The
+  8-K says 8,524,394 public shares were not redeemed. Bridge loan size conflict: 10-K says gross cash proceeds $5.0M;
+  the Q3 10-Q says aggregate gross proceeds of $5,687 (thousands). Bridge announced_on is month-granular in the source
+  (May to August 2025); 2025-05-01 is a placeholder. The additional PIPE (approx $4.99M) has no stated date beyond
+  'subsequent to September 23, 2025'; 2025-09-23 is a lower bound. PIPE subscribers are not named in the sources read.
+  Not covered: pre-SPAC private rounds/grants (S-4/424B3 searched for 'raised|capital increase|Series' without result),
+  2026 post-listing financings (10-Q Aug 2026 not read for offerings/ELOC).
+events:
+  - id: terra-bridge-loans-2025
+    instrument: debt
+    round_label: Convertible bridge loans
+    announced_on: 2025-05-01
+    closed_on: 2025-09-30
+    amount: {amount: 5690000, currency: USD, qualifier: approx}
+    use_of_proceeds: pre-closing working capital; converted into ordinary shares at $7.00 at closing (10-K gives both 752,326 and 851,483 shares)
+    evidence:
+      - field: amount
+        snapshot: 66dbb11911d0ffc117272dc55e41430fa90d72233d63b85333c36881901a060f
+        quote: "cash flows from financing activities proceeds from bridge loans 5,690"
+        basis: disclosed
+      - field: amount_corroboration
+        snapshot: 119a6e5a5010d85a75c76ec68517376ff813a98dbac42d6da80622b1c5fea3e4
+        quote: "in may, june, august and september 2025, the company entered into a series of unsecured debt note subscription agreements (the \"bridge loans\") with multiple lenders, generating aggregate gross proceeds of $ 5,687"
+        basis: disclosed
+      - field: announced_on
+        snapshot: 66dbb11911d0ffc117272dc55e41430fa90d72233d63b85333c36881901a060f
+        quote: "between May 2025 and August 2025, Terra Innovatum entered into the Bridge Loans"
+        basis: disclosed
+  - id: terra-spac-gsr3-2025
+    instrument: spac
+    round_label: Business combination with GSR III Acquisition Corp.
+    announced_on: 2025-04-21
+    closed_on: 2025-10-09
+    amount: {amount: 69878000, currency: USD, qualifier: approx}
+    use_of_proceeds: cash from the GSR III trust after redemptions, net of transaction costs (10-K cash flow, USD thousands); PIPE recorded separately
+    evidence:
+      - field: amount
+        snapshot: 66dbb11911d0ffc117272dc55e41430fa90d72233d63b85333c36881901a060f
+        quote: "$69,878 of proceeds from business combinations, net of transaction costs, (ii) $36,835 of proceeds from pipe financing"
+        basis: disclosed
+      - field: announced_on
+        snapshot: 15f54816f558d3d66dab91d75c94b0b8c31d16772ceae090fbaa8f3aaff42051
+        quote: "(as amended, the “Business Combination Agreement”), dated April 21, 2025, with GSR III"
+        basis: disclosed
+      - field: closed_on
+        snapshot: 15f54816f558d3d66dab91d75c94b0b8c31d16772ceae090fbaa8f3aaff42051
+        quote: "on October 9, 2025 (the “Closing Date”), the Business Combination was consummated"
+        basis: disclosed
+  - id: terra-pipe-2025
+    instrument: equity
+    round_label: PIPE
+    announced_on: 2025-09-23
+    closed_on: 2025-10-09
+    amount: {amount: 31800000, currency: USD, qualifier: approx}
+    evidence:
+      - field: announced_on
+        snapshot: 15f54816f558d3d66dab91d75c94b0b8c31d16772ceae090fbaa8f3aaff42051
+        quote: "on September 23, 2025, GSR III entered into Subscription Agreements"
+        basis: disclosed
+      - field: amount
+        snapshot: 15f54816f558d3d66dab91d75c94b0b8c31d16772ceae090fbaa8f3aaff42051
+        quote: "for an aggregate total of approximately $31.8 million"
+        basis: disclosed
+  - id: terra-pipe-additional-2025
+    instrument: equity
+    round_label: PIPE (additional subscriptions)
+    announced_on: 2025-09-23
+    closed_on: 2025-10-09
+    amount: {amount: 4990000, currency: USD, qualifier: approx}
+    evidence:
+      - field: announced_on
+        snapshot: 15f54816f558d3d66dab91d75c94b0b8c31d16772ceae090fbaa8f3aaff42051
+        quote: "Subsequent to September 23, 2025, GSR III entered into PIPE Subscription Agreements for an additional 499,500 PIPE Shares"
+        basis: disclosed
+      - field: amount
+        snapshot: 15f54816f558d3d66dab91d75c94b0b8c31d16772ceae090fbaa8f3aaff42051
+        quote: "for an aggregate total of approximately $4.99 million"
+        basis: disclosed
+agreements: []
+verification:
+  status: verified
+  by: verifier-agent (Claude Opus 5.5), 2026-10-05
+  'on': '2026-10-05'
+  note: '2 corrections: SPAC event now carries $69,878k proceeds net of transaction costs (FY2025 10-K cash flow), previously
+    no amount; bridge loans changed from $5.0M exact to $5,690k approx (10-K cash flow; Q3 10-Q $5,687k) and closed_on to
+    2025-09-30. PIPE $31.8M + $4.99M confirmed (cash flow $36,835k). Census $130M not confirmed.'

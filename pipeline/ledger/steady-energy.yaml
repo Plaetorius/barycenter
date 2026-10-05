@@ -1,0 +1,151 @@
+company: steady-energy
+name: Steady Energy
+sector: fission
+notes: >-
+  Spun out of VTT in 2023. Steady Energy became a wholly owned subsidiary of 3North Partners Plc (Nasdaq First North
+  Finland listing, trading from 2026-10-02) via a share exchange signed 2026-09-11; the IPO page states trading in series A
+  shares started 2 October 2026 and the offering was oversubscribed. The 3North IPO is budgeted at up to EUR5M gross;
+  actual final proceeds were not found in the archived page, so no amount is invented (amount recorded is the stated cap,
+  qualifier up_to). Round B: EUR22M announced 2025-03-10 was described as "very close to completing its B-round"; the
+  round closed at EUR32M on 2025-07-01. The 22M event is marked amount_kind duplicate (supersedes steady-2025-series-b-close): it is the first tranche of the
+  same 32M round, do not add them. Seed (EUR2M, 2024) and the
+  Business Finland / Tesi earlier tranches named in the census could not be sourced: WebSearch budget was exhausted and the
+  company newsroom items for them were not located, so no seed event is recorded. Business Finland EUR10.5M is described as
+  a "loan" (R&D financing) in the company release. EIB up to EUR40M senior unsecured convertible loan is part of the
+  3North package (finance contract is with 3North Partners). Probe samples for Canada G&C, CORDIS, TED and BODACC found no
+  Steady Energy records. VERIFIER (2026-10-05): the EIB up-to-EUR40M convertible is a facility maximum with no drawn amount
+  stated, and the legal borrower is 3North Partners Plc (Steady's new parent), so it is amount_kind ceiling. The IPO up-to-EUR5M
+  is the offering cap (final proceeds unknown), so also ceiling. The EUR69.8M private placement is subscribed into 3North
+  Partners Plc (legal recipient = parent of Steady after the share exchange; proceeds released to the combined company);
+  commitments were conditional, and completion is inferred only from the listing going ahead on 2026-10-02.
+events:
+  - id: steady-2025-series-b-first-close
+    instrument: equity
+    round_label: B-round, interim milestone
+    announced_on: 2025-03-10
+    amount: {amount: 22000000, currency: EUR, qualifier: exact}
+    amount_kind: duplicate
+    supersedes: steady-2025-series-b-close
+    use_of_proceeds: full-scale pilot plant in Helsinki
+    evidence:
+      - {field: amount, snapshot: 470119c02a131695c0f42bde953f8c75d81dab175ec7bac00e59a77e67db6e80, quote: "has secured €22 million in funding and will commence constructing a full-scale pilot plant", basis: disclosed}
+      - {field: announced_on, snapshot: 470119c02a131695c0f42bde953f8c75d81dab175ec7bac00e59a77e67db6e80, quote: "March 10, 2025 Steady Energy secures €22M in funding", basis: disclosed}
+      - {field: round_label, snapshot: 470119c02a131695c0f42bde953f8c75d81dab175ec7bac00e59a77e67db6e80, quote: "brings the company very close to completing its B-round", basis: disclosed}
+    participants:
+      - investor: 92 Ventures (now 92 Capital)
+        investor_slug: 92-capital
+        role: lead
+        evidence:
+          - {field: participant, snapshot: 470119c02a131695c0f42bde953f8c75d81dab175ec7bac00e59a77e67db6e80, quote: "a €22M funding milestone led by 92 Ventures", basis: disclosed}
+      - investor: Lifeline Ventures
+        investor_slug: lifeline-ventures
+        role: participant
+        evidence:
+          - {field: participant, snapshot: 470119c02a131695c0f42bde953f8c75d81dab175ec7bac00e59a77e67db6e80, quote: "Lifeline Ventures, an investor in Steady Energy since its beginning, also participated in the recent funding round", basis: disclosed}
+  - id: steady-2025-series-b-close
+    instrument: equity
+    round_label: B-round, closed at target
+    announced_on: 2025-07-01
+    amount: {amount: 32000000, currency: EUR, qualifier: exact}
+    use_of_proceeds: team, design, sales in Sweden and Poland, pilot plant in Helsinki city centre
+    evidence:
+      - {field: amount, snapshot: da76a163a6a406482492c9fcce22e83d0971c804f6119089ac8fbb7074df0ebf, quote: "successfully secured the target of its €32 million funding round", basis: disclosed}
+      - {field: announced_on, snapshot: da76a163a6a406482492c9fcce22e83d0971c804f6119089ac8fbb7074df0ebf, quote: "July 1, 2025 Steady Energy completes €32 million funding round", basis: disclosed}
+      - {field: round_label, snapshot: da76a163a6a406482492c9fcce22e83d0971c804f6119089ac8fbb7074df0ebf, quote: "reaching the round’s halfway target in March, led by 92 Ventures", basis: disclosed}
+    participants:
+      - investor: 92 Ventures, now 92 Capital
+        investor_slug: 92-capital
+        role: lead
+        evidence:
+          - {field: participant, snapshot: da76a163a6a406482492c9fcce22e83d0971c804f6119089ac8fbb7074df0ebf, quote: "reaching the round’s halfway target in March, led by 92 Ventures, now 92 Capital", basis: disclosed}
+      - investor: LocalTapiola
+        investor_slug: localtapiola
+        role: participant
+        evidence:
+          - {field: participant, snapshot: da76a163a6a406482492c9fcce22e83d0971c804f6119089ac8fbb7074df0ebf, quote: "Major Finnish investors include LocalTapiola, a mutual insurance company, and Tesi (Finnish Industry Investment)", basis: disclosed}
+      - investor: Tesi (Finnish Industry Investment)
+        investor_slug: tesi
+        role: participant
+        evidence:
+          - {field: participant, snapshot: da76a163a6a406482492c9fcce22e83d0971c804f6119089ac8fbb7074df0ebf, quote: "Major Finnish investors include LocalTapiola, a mutual insurance company, and Tesi (Finnish Industry Investment)", basis: disclosed}
+      - investor: Move Energy
+        investor_slug: move-energy
+        role: participant
+        evidence:
+          - {field: participant, snapshot: da76a163a6a406482492c9fcce22e83d0971c804f6119089ac8fbb7074df0ebf, quote: "An investment by the Amsterdam-based venture capital firm Move Energy is among the new private equity", basis: disclosed}
+      - investor: Valo Ventures
+        investor_slug: valo-ventures
+        role: participant
+        evidence:
+          - {field: participant, snapshot: da76a163a6a406482492c9fcce22e83d0971c804f6119089ac8fbb7074df0ebf, quote: "Managing Partner at Valo Ventures and a new investor in Steady Energy", basis: disclosed}
+  - id: steady-2026-business-finland-loan
+    instrument: debt
+    round_label: Business Finland R&D loan for pilot plant
+    announced_on: 2026-06-18
+    amount: {amount: 10500000, currency: EUR, qualifier: exact}
+    program: Business Finland research and development financing
+    use_of_proceeds: construction of the pilot plant in Salmisaari, Helsinki
+    evidence:
+      - {field: amount, snapshot: cea33c83d8b628a8037a3fc747b06769dab911f56d5f9babcdbdbaa43cfde48b, quote: "has been granted a loan of 10.5-million euros by Innovation Funding Agency Business Finland", basis: disclosed}
+      - {field: announced_on, snapshot: cea33c83d8b628a8037a3fc747b06769dab911f56d5f9babcdbdbaa43cfde48b, quote: "June 18, 2026 Steady Energy secures 10.5 million euros in financing for pilot plant in Helsinki", basis: disclosed}
+    participants:
+      - investor: Business Finland
+        investor_slug: business-finland
+        role: lender
+        evidence:
+          - {field: participant, snapshot: cea33c83d8b628a8037a3fc747b06769dab911f56d5f9babcdbdbaa43cfde48b, quote: "Steady Energy Oy, the Finnish small nuclear power developer, has been granted a loan of 10.5-million euros by Innovation Funding Agency Business Finland", basis: disclosed}
+  - id: steady-2026-eib-convertible
+    instrument: debt
+    round_label: EIB senior unsecured convertible loan
+    announced_on: 2026-09-15
+    amount: {amount: 40000000, currency: EUR, qualifier: up_to}
+    amount_kind: ceiling
+    use_of_proceeds: R&D, testing and licensing of LDR-50, 2026-2028
+    evidence:
+      - {field: amount, snapshot: 2f07f96e70d93e1b992ae7946386104fdf22c8e21390e3ee8756713544a8bd9b, quote: "is providing Steady Energy with up to €40 million in financing", basis: disclosed}
+      - {field: announced_on, snapshot: 9c4dd4abcd49080c89bff51516e2ff0220b0a4d131c4100d326f654f9e3f90b7, quote: "Tuesday, 15 September 2026", basis: reported}
+      - {field: round_label, snapshot: 9c4dd4abcd49080c89bff51516e2ff0220b0a4d131c4100d326f654f9e3f90b7, quote: "The EIB investment is in the form of a senior unsecured convertible loan", basis: reported}
+    participants:
+      - investor: European Investment Bank
+        investor_slug: eib
+        role: lender
+        evidence:
+          - {field: participant, snapshot: 2f07f96e70d93e1b992ae7946386104fdf22c8e21390e3ee8756713544a8bd9b, quote: "The European Investment Bank (EIB) is providing Steady Energy with up to €40 million in financing", basis: disclosed}
+  - id: steady-2026-private-placement
+    instrument: equity
+    round_label: 3North Partners private placement (series A shares) in connection with the combination
+    announced_on: 2026-09-15
+    amount: {amount: 69800000, currency: EUR, qualifier: approx}
+    use_of_proceeds: finalising technology development, design and regulatory processes; building the organisation toward first TSCs
+    evidence:
+      - {field: amount, snapshot: 450ad2ad2db83e595e46fab3dce4d9ad9101ebae613343024be521ebb3aed65e, quote: "to subscribe for new series A shares in a Private Placement for the aggregate amount of approximately EUR 69.8 million", basis: disclosed}
+      - {field: announced_on, snapshot: 450ad2ad2db83e595e46fab3dce4d9ad9101ebae613343024be521ebb3aed65e, quote: "15 September 2026 Announcement of the transactions", basis: disclosed}
+      - {field: round_label, snapshot: 450ad2ad2db83e595e46fab3dce4d9ad9101ebae613343024be521ebb3aed65e, quote: "3North Partners has received, subject to certain conditions, irrevocable investor commitments", basis: disclosed}
+    participants:
+      - {investor: Elo Mutual Pension Insurance Company, investor_slug: elo-mutual-pension, role: participant, evidence: [{field: participant, snapshot: 450ad2ad2db83e595e46fab3dce4d9ad9101ebae613343024be521ebb3aed65e, quote: "from Elo Mutual Pension Insurance Company, Fortum Energy Holding B.V., Ilmarinen Mutual Pension Insurance Company, Mininvest Oy, Move Energy SMR Holding B.V., Orlen VC sp. z o.o., Finnish Industry Investment Ltd (Tesi), Varma Mutual Pension Insurance Company and Yes VC Select LP", basis: disclosed}]}
+      - {investor: Fortum Energy Holding B.V., investor_slug: fortum, role: participant, evidence: [{field: participant, snapshot: 450ad2ad2db83e595e46fab3dce4d9ad9101ebae613343024be521ebb3aed65e, quote: "from Elo Mutual Pension Insurance Company, Fortum Energy Holding B.V., Ilmarinen Mutual Pension Insurance Company, Mininvest Oy, Move Energy SMR Holding B.V., Orlen VC sp. z o.o., Finnish Industry Investment Ltd (Tesi), Varma Mutual Pension Insurance Company and Yes VC Select LP", basis: disclosed}]}
+      - {investor: Ilmarinen Mutual Pension Insurance Company, investor_slug: ilmarinen, role: participant, evidence: [{field: participant, snapshot: 450ad2ad2db83e595e46fab3dce4d9ad9101ebae613343024be521ebb3aed65e, quote: "from Elo Mutual Pension Insurance Company, Fortum Energy Holding B.V., Ilmarinen Mutual Pension Insurance Company, Mininvest Oy, Move Energy SMR Holding B.V., Orlen VC sp. z o.o., Finnish Industry Investment Ltd (Tesi), Varma Mutual Pension Insurance Company and Yes VC Select LP", basis: disclosed}]}
+      - {investor: Mininvest Oy, investor_slug: mininvest, role: participant, evidence: [{field: participant, snapshot: 450ad2ad2db83e595e46fab3dce4d9ad9101ebae613343024be521ebb3aed65e, quote: "from Elo Mutual Pension Insurance Company, Fortum Energy Holding B.V., Ilmarinen Mutual Pension Insurance Company, Mininvest Oy, Move Energy SMR Holding B.V., Orlen VC sp. z o.o., Finnish Industry Investment Ltd (Tesi), Varma Mutual Pension Insurance Company and Yes VC Select LP", basis: disclosed}]}
+      - {investor: Move Energy SMR Holding B.V., investor_slug: move-energy, role: participant, evidence: [{field: participant, snapshot: 450ad2ad2db83e595e46fab3dce4d9ad9101ebae613343024be521ebb3aed65e, quote: "from Elo Mutual Pension Insurance Company, Fortum Energy Holding B.V., Ilmarinen Mutual Pension Insurance Company, Mininvest Oy, Move Energy SMR Holding B.V., Orlen VC sp. z o.o., Finnish Industry Investment Ltd (Tesi), Varma Mutual Pension Insurance Company and Yes VC Select LP", basis: disclosed}]}
+      - {investor: Orlen VC sp. z o.o., investor_slug: orlen-vc, role: participant, evidence: [{field: participant, snapshot: 450ad2ad2db83e595e46fab3dce4d9ad9101ebae613343024be521ebb3aed65e, quote: "from Elo Mutual Pension Insurance Company, Fortum Energy Holding B.V., Ilmarinen Mutual Pension Insurance Company, Mininvest Oy, Move Energy SMR Holding B.V., Orlen VC sp. z o.o., Finnish Industry Investment Ltd (Tesi), Varma Mutual Pension Insurance Company and Yes VC Select LP", basis: disclosed}]}
+      - {investor: Finnish Industry Investment Ltd (Tesi), investor_slug: tesi, role: participant, evidence: [{field: participant, snapshot: 450ad2ad2db83e595e46fab3dce4d9ad9101ebae613343024be521ebb3aed65e, quote: "from Elo Mutual Pension Insurance Company, Fortum Energy Holding B.V., Ilmarinen Mutual Pension Insurance Company, Mininvest Oy, Move Energy SMR Holding B.V., Orlen VC sp. z o.o., Finnish Industry Investment Ltd (Tesi), Varma Mutual Pension Insurance Company and Yes VC Select LP", basis: disclosed}]}
+      - {investor: Varma Mutual Pension Insurance Company, investor_slug: varma, role: participant, evidence: [{field: participant, snapshot: 450ad2ad2db83e595e46fab3dce4d9ad9101ebae613343024be521ebb3aed65e, quote: "from Elo Mutual Pension Insurance Company, Fortum Energy Holding B.V., Ilmarinen Mutual Pension Insurance Company, Mininvest Oy, Move Energy SMR Holding B.V., Orlen VC sp. z o.o., Finnish Industry Investment Ltd (Tesi), Varma Mutual Pension Insurance Company and Yes VC Select LP", basis: disclosed}]}
+      - {investor: Yes VC Select LP, investor_slug: yes-vc-select, role: participant, evidence: [{field: participant, snapshot: 450ad2ad2db83e595e46fab3dce4d9ad9101ebae613343024be521ebb3aed65e, quote: "from Elo Mutual Pension Insurance Company, Fortum Energy Holding B.V., Ilmarinen Mutual Pension Insurance Company, Mininvest Oy, Move Energy SMR Holding B.V., Orlen VC sp. z o.o., Finnish Industry Investment Ltd (Tesi), Varma Mutual Pension Insurance Company and Yes VC Select LP", basis: disclosed}]}
+  - id: steady-2026-first-north-ipo
+    instrument: ipo
+    round_label: 3North Partners IPO on Nasdaq First North Growth Market Finland
+    announced_on: 2026-09-15
+    closed_on: 2026-10-02
+    amount: {amount: 5000000, currency: EUR, qualifier: up_to}
+    amount_kind: ceiling
+    use_of_proceeds: free float for orderly trading; combined with private placement for development and regulatory processes
+    evidence:
+      - {field: amount, snapshot: 450ad2ad2db83e595e46fab3dce4d9ad9101ebae613343024be521ebb3aed65e, quote: "3North Partners aims to collect gross proceeds of up to EUR 5 million in the initial public offering", basis: disclosed}
+      - {field: announced_on, snapshot: 450ad2ad2db83e595e46fab3dce4d9ad9101ebae613343024be521ebb3aed65e, quote: "15 September 2026 Announcement of the transactions", basis: disclosed}
+      - {field: closed_on, snapshot: 450ad2ad2db83e595e46fab3dce4d9ad9101ebae613343024be521ebb3aed65e, quote: "the offering was oversubscribed and trading in the series A shares started on 2 October 2026", basis: disclosed}
+agreements: []
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  "on": 2026-10-05
+  note: "4 corrections. EUR22M March 2025 tranche set to duplicate (supersedes steady-2025-series-b-close) and the reverse supersedes link on the EUR32M close removed, so the B-round counts once (EUR32M). EIB up-to-EUR40M convertible (borrower 3North Partners Plc, undrawn) set to ceiling. 3North IPO up-to-EUR5M cap set to ceiling (final proceeds not found). Residual: EUR69.8M private placement is into the parent 3North Partners Plc, commitments were conditional (completion inferred from the 2 Oct 2026 listing); LocalTapiola/Tesi described as 'major Finnish investors' in the close release, participation in this round implied not explicit. Gaps: seed (EUR2M 2024) and earlier Business Finland/Tesi money not sourced."

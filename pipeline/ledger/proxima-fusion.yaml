@@ -1,0 +1,291 @@
+company: proxima-fusion
+name: Proxima Fusion GmbH
+sector: fusion
+notes: >-
+  Sources: company releases (proximafusion.com, robots-permitted, no ToS prohibition found) plus FusionXInvest listing snippets for the 2023 pre-seed (reported).
+  Company claims "more than EUR 650 million" total incl. EUR 95M public grants (2026-07-07 release); recorded as a cumulative event, never counted as a round.
+  Pre-seed extension (2023-11-16): the listing says EUR 7.5M raised in pre-seed; the 2024 seed release calls the pre-seed "EUR 7.5M", so 7.5M is probably the pre-seed total, not new money; the extension event therefore has no amount.
+  Seed: FusionXInvest listing says EUR 20M, company release says EUR 20M ($21.7M); consistent. Series A EUR 130M (2025-06-11) plus EUR 15M extension (2025-09-09) = EUR 145M; the extension release states EUR 200M total funding (private + public).
+  EIC Accelerator: company states EUR 2.5M grant plus an opportunity for EUR 15M equity (EUR 17.5M blended); the equity part is an option, the EIC Fund appears as investor in the Series A extension and the EUR 411M round with amounts undisclosed. CORDIS shows EUR 2,471,437.50 (CSFPP 101188580) but CORDIS bulk is robots-disallowed and is NOT used here.
+  Not recorded as events (no Proxima-specific amount): BMFTR Fusion Hub STRIDE (Proxima, Gauss Fusion, IPP; hubs total about EUR 125M, 2026-07-29, snapshot 4d4f0eb0...); Bavaria's potential EUR 400M (non-binding MoU, subject to federal funding; recorded as an agreement). Lower Saxony EUR 21M is a planned contribution to an HTS tape facility under an MoU (recorded as an agreement).
+  SPRIND amount not probed; SPRIND and KfW Capital appear only as participants in the EUR 411M round. No Foerderkatalog, UKRI or EIB record found for Proxima (Foerderkatalog returns 403; Proxima Oxford is a subsidiary with no UKRI project found).
+  Verifier (2026-10-05): the 2026-07-07 release says the >EUR 650M includes "EUR 95 million in public grants", but only EUR 9M of grants (EIC 2.5M, BMBF 6.5M) are evidenced as events here, so about EUR 86M of public grants is unaccounted for (possibly STRIDE hub, SPRIND or other awards). EIC grant qualifier set to approx (CORDIS shows EUR 2,471,437.50, not used as evidence).
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  "on": 2026-10-05
+  note: "3 corrections: STRIDE agreement announced_on quote replaced (old quote proved no date; new quote states 29 July); EIC grant qualifier exact -> approx (release figure EUR 2.5M is rounded vs CORDIS 2,471,437.50); BMBF grant program text notes the EUR 6.5M may be the consortium total. All amounts, dates, leads and participants otherwise match their quotes; cumulative EUR 650M correctly not counted. Gaps: about EUR 86M of the EUR 95M public grants claimed by the company is not evidenced; pre-seed rests on press (FusionXInvest) only; pre-seed extension amount unknown (EUR 7.5M is probably the pre-seed total)."
+events:
+  - id: proxima-pre-seed-2023
+    instrument: equity
+    round_label: Pre-Seed
+    announced_on: 2023-05-19
+    amount: {amount: 7000000, currency: EUR, qualifier: exact}
+    evidence:
+      - {field: amount, snapshot: a1346d7ce107fc6139a62c8de26ae7be0b6b3f5a497a15b77bf291a114d66a27, quote: "secured €7mn in a pre-seed round jointly led by Plural Platform and UVC Partners", basis: reported}
+      - {field: announced_on, snapshot: a1346d7ce107fc6139a62c8de26ae7be0b6b3f5a497a15b77bf291a114d66a27, quote: "Proxima Fusion closes Pre-Seed round 19 May 2023", basis: reported}
+      - {field: round_label, snapshot: a1346d7ce107fc6139a62c8de26ae7be0b6b3f5a497a15b77bf291a114d66a27, quote: "Proxima Fusion closes Pre-Seed round", basis: reported}
+    participants:
+      - investor: Plural Platform
+        investor_slug: plural
+        role: lead
+        evidence: [{field: participant, snapshot: a1346d7ce107fc6139a62c8de26ae7be0b6b3f5a497a15b77bf291a114d66a27, quote: "jointly led by Plural Platform and UVC Partners", basis: reported}]
+      - investor: UVC Partners
+        investor_slug: uvc-partners
+        role: lead
+        evidence: [{field: participant, snapshot: a1346d7ce107fc6139a62c8de26ae7be0b6b3f5a497a15b77bf291a114d66a27, quote: "jointly led by Plural Platform and UVC Partners", basis: reported}]
+      - investor: HTGF
+        investor_slug: htgf
+        evidence: [{field: participant, snapshot: a1346d7ce107fc6139a62c8de26ae7be0b6b3f5a497a15b77bf291a114d66a27, quote: "with support from HTGF and the Wilbe Group", basis: reported}]
+      - investor: Wilbe Group
+        investor_slug: wilbe
+        evidence: [{field: participant, snapshot: a1346d7ce107fc6139a62c8de26ae7be0b6b3f5a497a15b77bf291a114d66a27, quote: "with support from HTGF and the Wilbe Group", basis: reported}]
+  - id: proxima-pre-seed-extension-2023
+    instrument: equity
+    round_label: Pre-Seed extension
+    announced_on: 2023-11-16
+    evidence:
+      - {field: announced_on, snapshot: a1346d7ce107fc6139a62c8de26ae7be0b6b3f5a497a15b77bf291a114d66a27, quote: "Proxima Fusion extends Pre-Seed round 16 November 2023", basis: reported}
+      - {field: round_label, snapshot: a1346d7ce107fc6139a62c8de26ae7be0b6b3f5a497a15b77bf291a114d66a27, quote: "Proxima Fusion extends Pre-Seed round", basis: reported}
+    participants:
+      - investor: Visionaries Tomorrow
+        investor_slug: visionaries-club
+        evidence: [{field: participant, snapshot: a1346d7ce107fc6139a62c8de26ae7be0b6b3f5a497a15b77bf291a114d66a27, quote: "New investors include Visionaries Tomorrow, Hummingbird Collective, and Achleitner Ventures", basis: reported}]
+      - investor: Hummingbird Collective
+        investor_slug: hummingbird-collective
+        evidence: [{field: participant, snapshot: a1346d7ce107fc6139a62c8de26ae7be0b6b3f5a497a15b77bf291a114d66a27, quote: "New investors include Visionaries Tomorrow, Hummingbird Collective, and Achleitner Ventures", basis: reported}]
+      - investor: Achleitner Ventures
+        investor_slug: achleitner-ventures
+        evidence: [{field: participant, snapshot: a1346d7ce107fc6139a62c8de26ae7be0b6b3f5a497a15b77bf291a114d66a27, quote: "New investors include Visionaries Tomorrow, Hummingbird Collective, and Achleitner Ventures", basis: reported}]
+  - id: proxima-seed-2024
+    instrument: equity
+    round_label: Seed
+    announced_on: 2024-04-10
+    amount: {amount: 20000000, currency: EUR, qualifier: exact}
+    evidence:
+      - {field: amount, snapshot: ded32f1971edc8533d8c9554c38321dc6aaeb504ee3f08401c3f6e1e17604021, quote: "has raised €20M ($21.7M) in seed funding", basis: disclosed}
+      - {field: announced_on, snapshot: ded32f1971edc8533d8c9554c38321dc6aaeb504ee3f08401c3f6e1e17604021, quote: "Munich, Germany , April 10, 2024", basis: disclosed}
+      - {field: round_label, snapshot: ded32f1971edc8533d8c9554c38321dc6aaeb504ee3f08401c3f6e1e17604021, quote: "Proxima Fusion Raises €20M Seed to Accelerate Timeline to Fusion Power", basis: disclosed}
+    participants:
+      - investor: redalpine
+        investor_slug: redalpine
+        role: lead
+        evidence: [{field: participant, snapshot: ded32f1971edc8533d8c9554c38321dc6aaeb504ee3f08401c3f6e1e17604021, quote: "Proxima Fusion’s seed round, led by redalpine", basis: disclosed}]
+      - investor: Bayern Kapital
+        investor_slug: bayern-kapital
+        evidence: [{field: participant, snapshot: ded32f1971edc8533d8c9554c38321dc6aaeb504ee3f08401c3f6e1e17604021, quote: "participation from the Bavarian government-backed Bayern Kapital, German government-backed DeepTech & Climate Fonds, and the Max Planck Foundation", basis: disclosed}]
+      - investor: DeepTech & Climate Fonds
+        investor_slug: dtcf
+        evidence: [{field: participant, snapshot: ded32f1971edc8533d8c9554c38321dc6aaeb504ee3f08401c3f6e1e17604021, quote: "participation from the Bavarian government-backed Bayern Kapital, German government-backed DeepTech & Climate Fonds, and the Max Planck Foundation", basis: disclosed}]
+      - investor: Max Planck Foundation
+        investor_slug: max-planck-foundation
+        evidence: [{field: participant, snapshot: ded32f1971edc8533d8c9554c38321dc6aaeb504ee3f08401c3f6e1e17604021, quote: "participation from the Bavarian government-backed Bayern Kapital, German government-backed DeepTech & Climate Fonds, and the Max Planck Foundation", basis: disclosed}]
+      - investor: Plural
+        investor_slug: plural
+        evidence: [{field: participant, snapshot: ded32f1971edc8533d8c9554c38321dc6aaeb504ee3f08401c3f6e1e17604021, quote: "Existing investors, including Plural, UVC Partners, High-Tech Gründerfonds, Wilbe, and TOMORROW of Visionaries Club", basis: disclosed}]
+      - investor: UVC Partners
+        investor_slug: uvc-partners
+        evidence: [{field: participant, snapshot: ded32f1971edc8533d8c9554c38321dc6aaeb504ee3f08401c3f6e1e17604021, quote: "Existing investors, including Plural, UVC Partners, High-Tech Gründerfonds, Wilbe, and TOMORROW of Visionaries Club", basis: disclosed}]
+      - investor: High-Tech Gründerfonds
+        investor_slug: htgf
+        evidence: [{field: participant, snapshot: ded32f1971edc8533d8c9554c38321dc6aaeb504ee3f08401c3f6e1e17604021, quote: "Existing investors, including Plural, UVC Partners, High-Tech Gründerfonds, Wilbe, and TOMORROW of Visionaries Club", basis: disclosed}]
+      - investor: Wilbe
+        investor_slug: wilbe
+        evidence: [{field: participant, snapshot: ded32f1971edc8533d8c9554c38321dc6aaeb504ee3f08401c3f6e1e17604021, quote: "Existing investors, including Plural, UVC Partners, High-Tech Gründerfonds, Wilbe, and TOMORROW of Visionaries Club", basis: disclosed}]
+      - investor: TOMORROW of Visionaries Club
+        investor_slug: visionaries-club
+        evidence: [{field: participant, snapshot: ded32f1971edc8533d8c9554c38321dc6aaeb504ee3f08401c3f6e1e17604021, quote: "Existing investors, including Plural, UVC Partners, High-Tech Gründerfonds, Wilbe, and TOMORROW of Visionaries Club", basis: disclosed}]
+  - id: proxima-eic-accelerator-grant-2024
+    instrument: grant
+    round_label: EIC Accelerator (grant component)
+    announced_on: 2024-07-15
+    amount: {amount: 2500000, currency: EUR, qualifier: approx}
+    program: EIC Accelerator
+    evidence:
+      - {field: amount, snapshot: f523e6efa267254bcaac6893782adcdd1a54013604ece61cd12769c1666ae6ba, quote: "Proxima will be awarded a €2.5M grant and an opportunity for €15M investment", basis: disclosed}
+      - {field: announced_on, snapshot: f523e6efa267254bcaac6893782adcdd1a54013604ece61cd12769c1666ae6ba, quote: "Munich, July 15, 2024", basis: disclosed}
+    participants:
+      - investor: European Innovation Council and SMEs Executive Agency (EISMEA)
+        investor_slug: eic
+        role: grantor
+        evidence: [{field: participant, snapshot: f523e6efa267254bcaac6893782adcdd1a54013604ece61cd12769c1666ae6ba, quote: "selected by the European Innovation Council and SMEs Executive Agency (EISMEA) as an awardee in its EIC Accelerator program", basis: disclosed}]
+  - id: proxima-bmbf-ai-grant-2024
+    instrument: grant
+    round_label: BMBF AI for Fusion Engineering
+    announced_on: 2024-12-10
+    amount: {amount: 6500000, currency: EUR, qualifier: exact}
+    program: BMBF AI for Fusion Engineering (Proxima coordinates; partners University of Bonn, Forschungszentrum Juelich, TUM; the release does not say whether EUR 6.5M is Proxima's share or the consortium total)
+    evidence:
+      - {field: amount, snapshot: 4a850aa971f01b938471354ad4f2fce75e8ea15bb69c640553116462b21fd1d3, quote: "has been awarded a grant of €6.5M from the German Federal Ministry of Education and Research (BMBF)", basis: disclosed}
+      - {field: announced_on, snapshot: 4a850aa971f01b938471354ad4f2fce75e8ea15bb69c640553116462b21fd1d3, quote: "Munich, Germany, December 10, 2024", basis: disclosed}
+    participants:
+      - investor: German Federal Ministry of Education and Research (BMBF)
+        investor_slug: bmftr
+        role: grantor
+        evidence: [{field: participant, snapshot: 4a850aa971f01b938471354ad4f2fce75e8ea15bb69c640553116462b21fd1d3, quote: "from the German Federal Ministry of Education and Research (BMBF)", basis: disclosed}]
+  - id: proxima-series-a-2025
+    instrument: equity
+    round_label: Series A
+    announced_on: 2025-06-11
+    amount: {amount: 130000000, currency: EUR, qualifier: exact}
+    evidence:
+      - {field: amount, snapshot: 7f75ff59f977415498e4ba5771f5b63637d3b0c2e6b2ed6c0a4f8e486267442f, quote: "the close of its €130 million ($150 million) Series A financing", basis: disclosed}
+      - {field: announced_on, snapshot: 7f75ff59f977415498e4ba5771f5b63637d3b0c2e6b2ed6c0a4f8e486267442f, quote: "Munich, Germany – June 11, 2025", basis: disclosed}
+      - {field: round_label, snapshot: 7f75ff59f977415498e4ba5771f5b63637d3b0c2e6b2ed6c0a4f8e486267442f, quote: "Proxima Fusion raises €130M Series A", basis: disclosed}
+    participants:
+      - investor: Cherry Ventures
+        investor_slug: cherry-ventures
+        role: lead
+        evidence: [{field: participant, snapshot: 7f75ff59f977415498e4ba5771f5b63637d3b0c2e6b2ed6c0a4f8e486267442f, quote: "co-led by Cherry Ventures and Balderton Capital", basis: disclosed}]
+      - investor: Balderton Capital
+        investor_slug: balderton
+        role: lead
+        evidence: [{field: participant, snapshot: 7f75ff59f977415498e4ba5771f5b63637d3b0c2e6b2ed6c0a4f8e486267442f, quote: "co-led by Cherry Ventures and Balderton Capital", basis: disclosed}]
+      - investor: UVC Partners
+        investor_slug: uvc-partners
+        evidence: [{field: participant, snapshot: 7f75ff59f977415498e4ba5771f5b63637d3b0c2e6b2ed6c0a4f8e486267442f, quote: "significant participation from UVC Partners, DeepTech & Climate Fonds (DTCF), Plural, Leitmotif, Lightspeed, Bayern Kapital, HTGF, Club degli Investitori, OMNES Capital, Elaia Partners, Visionaries Tomorrow, Wilbe, and redalpine", basis: disclosed}]
+      - investor: DeepTech & Climate Fonds (DTCF)
+        investor_slug: dtcf
+        evidence: [{field: participant, snapshot: 7f75ff59f977415498e4ba5771f5b63637d3b0c2e6b2ed6c0a4f8e486267442f, quote: "significant participation from UVC Partners, DeepTech & Climate Fonds (DTCF), Plural, Leitmotif, Lightspeed, Bayern Kapital, HTGF, Club degli Investitori, OMNES Capital, Elaia Partners, Visionaries Tomorrow, Wilbe, and redalpine", basis: disclosed}]
+      - investor: Plural
+        investor_slug: plural
+        evidence: [{field: participant, snapshot: 7f75ff59f977415498e4ba5771f5b63637d3b0c2e6b2ed6c0a4f8e486267442f, quote: "significant participation from UVC Partners, DeepTech & Climate Fonds (DTCF), Plural, Leitmotif, Lightspeed, Bayern Kapital, HTGF, Club degli Investitori, OMNES Capital, Elaia Partners, Visionaries Tomorrow, Wilbe, and redalpine", basis: disclosed}]
+      - investor: Leitmotif
+        investor_slug: leitmotif
+        evidence: [{field: participant, snapshot: 7f75ff59f977415498e4ba5771f5b63637d3b0c2e6b2ed6c0a4f8e486267442f, quote: "significant participation from UVC Partners, DeepTech & Climate Fonds (DTCF), Plural, Leitmotif, Lightspeed, Bayern Kapital, HTGF, Club degli Investitori, OMNES Capital, Elaia Partners, Visionaries Tomorrow, Wilbe, and redalpine", basis: disclosed}]
+      - investor: Lightspeed
+        investor_slug: lightspeed
+        evidence: [{field: participant, snapshot: 7f75ff59f977415498e4ba5771f5b63637d3b0c2e6b2ed6c0a4f8e486267442f, quote: "significant participation from UVC Partners, DeepTech & Climate Fonds (DTCF), Plural, Leitmotif, Lightspeed, Bayern Kapital, HTGF, Club degli Investitori, OMNES Capital, Elaia Partners, Visionaries Tomorrow, Wilbe, and redalpine", basis: disclosed}]
+      - investor: Bayern Kapital
+        investor_slug: bayern-kapital
+        evidence: [{field: participant, snapshot: 7f75ff59f977415498e4ba5771f5b63637d3b0c2e6b2ed6c0a4f8e486267442f, quote: "significant participation from UVC Partners, DeepTech & Climate Fonds (DTCF), Plural, Leitmotif, Lightspeed, Bayern Kapital, HTGF, Club degli Investitori, OMNES Capital, Elaia Partners, Visionaries Tomorrow, Wilbe, and redalpine", basis: disclosed}]
+      - investor: HTGF
+        investor_slug: htgf
+        evidence: [{field: participant, snapshot: 7f75ff59f977415498e4ba5771f5b63637d3b0c2e6b2ed6c0a4f8e486267442f, quote: "significant participation from UVC Partners, DeepTech & Climate Fonds (DTCF), Plural, Leitmotif, Lightspeed, Bayern Kapital, HTGF, Club degli Investitori, OMNES Capital, Elaia Partners, Visionaries Tomorrow, Wilbe, and redalpine", basis: disclosed}]
+      - investor: Club degli Investitori
+        investor_slug: club-degli-investitori
+        evidence: [{field: participant, snapshot: 7f75ff59f977415498e4ba5771f5b63637d3b0c2e6b2ed6c0a4f8e486267442f, quote: "significant participation from UVC Partners, DeepTech & Climate Fonds (DTCF), Plural, Leitmotif, Lightspeed, Bayern Kapital, HTGF, Club degli Investitori, OMNES Capital, Elaia Partners, Visionaries Tomorrow, Wilbe, and redalpine", basis: disclosed}]
+      - investor: OMNES Capital
+        investor_slug: omnes-capital
+        evidence: [{field: participant, snapshot: 7f75ff59f977415498e4ba5771f5b63637d3b0c2e6b2ed6c0a4f8e486267442f, quote: "significant participation from UVC Partners, DeepTech & Climate Fonds (DTCF), Plural, Leitmotif, Lightspeed, Bayern Kapital, HTGF, Club degli Investitori, OMNES Capital, Elaia Partners, Visionaries Tomorrow, Wilbe, and redalpine", basis: disclosed}]
+      - investor: Elaia Partners
+        investor_slug: elaia
+        evidence: [{field: participant, snapshot: 7f75ff59f977415498e4ba5771f5b63637d3b0c2e6b2ed6c0a4f8e486267442f, quote: "significant participation from UVC Partners, DeepTech & Climate Fonds (DTCF), Plural, Leitmotif, Lightspeed, Bayern Kapital, HTGF, Club degli Investitori, OMNES Capital, Elaia Partners, Visionaries Tomorrow, Wilbe, and redalpine", basis: disclosed}]
+      - investor: Visionaries Tomorrow
+        investor_slug: visionaries-club
+        evidence: [{field: participant, snapshot: 7f75ff59f977415498e4ba5771f5b63637d3b0c2e6b2ed6c0a4f8e486267442f, quote: "significant participation from UVC Partners, DeepTech & Climate Fonds (DTCF), Plural, Leitmotif, Lightspeed, Bayern Kapital, HTGF, Club degli Investitori, OMNES Capital, Elaia Partners, Visionaries Tomorrow, Wilbe, and redalpine", basis: disclosed}]
+      - investor: Wilbe
+        investor_slug: wilbe
+        evidence: [{field: participant, snapshot: 7f75ff59f977415498e4ba5771f5b63637d3b0c2e6b2ed6c0a4f8e486267442f, quote: "significant participation from UVC Partners, DeepTech & Climate Fonds (DTCF), Plural, Leitmotif, Lightspeed, Bayern Kapital, HTGF, Club degli Investitori, OMNES Capital, Elaia Partners, Visionaries Tomorrow, Wilbe, and redalpine", basis: disclosed}]
+      - investor: redalpine
+        investor_slug: redalpine
+        evidence: [{field: participant, snapshot: 7f75ff59f977415498e4ba5771f5b63637d3b0c2e6b2ed6c0a4f8e486267442f, quote: "significant participation from UVC Partners, DeepTech & Climate Fonds (DTCF), Plural, Leitmotif, Lightspeed, Bayern Kapital, HTGF, Club degli Investitori, OMNES Capital, Elaia Partners, Visionaries Tomorrow, Wilbe, and redalpine", basis: disclosed}]
+  - id: proxima-series-a-extension-2025
+    instrument: equity
+    round_label: Series A extension
+    announced_on: 2025-09-09
+    amount: {amount: 15000000, currency: EUR, qualifier: exact}
+    evidence:
+      - {field: amount, snapshot: 59df53065b48398ecd2f864f04697857d470cb3be88d5170e68028dd84343471, quote: "The €15 million Series A extension brings the company’s total funding to €200 million ($230M)", basis: disclosed}
+      - {field: announced_on, snapshot: 59df53065b48398ecd2f864f04697857d470cb3be88d5170e68028dd84343471, quote: "Munich, Germany – September 9, 2025", basis: disclosed}
+      - {field: round_label, snapshot: 59df53065b48398ecd2f864f04697857d470cb3be88d5170e68028dd84343471, quote: "Proxima Fusion Extends Series A to €200M Total Funding", basis: disclosed}
+    participants:
+      - investor: CDP Venture Capital
+        investor_slug: cdp-venture
+        evidence: [{field: participant, snapshot: 59df53065b48398ecd2f864f04697857d470cb3be88d5170e68028dd84343471, quote: "new funding from CDP Venture Capital (Cassa Depositi e Prestiti Group)", basis: disclosed}]
+      - investor: European Innovation Council Fund (EICF)
+        investor_slug: eic-fund
+        evidence: [{field: participant, snapshot: 59df53065b48398ecd2f864f04697857d470cb3be88d5170e68028dd84343471, quote: "the European Innovation Council Fund (EICF)", basis: disclosed}]
+      - investor: Brevan Howard Macro Venture Fund
+        investor_slug: brevan-howard
+        evidence: [{field: participant, snapshot: 59df53065b48398ecd2f864f04697857d470cb3be88d5170e68028dd84343471, quote: "Brevan Howard Macro Venture Fund", basis: disclosed}]
+  - id: proxima-financing-2026
+    instrument: equity
+    round_label: Financing round (EUR 411M)
+    announced_on: 2026-07-07
+    amount: {amount: 411000000, currency: EUR, qualifier: exact}
+    valuation_post_usd: 2700000000
+    use_of_proceeds: Stellarator Model Coil, HTS cable and magnet production expansion, stellarator engineering and manufacturing systems; Alpha demonstrator
+    evidence:
+      - {field: amount, snapshot: b1ff584f345df0d87ce9a9a83039edca37d5d1a19f7495cd11c0e0991cefc190, quote: "announced a €411 million ($468 million) financing round", basis: disclosed}
+      - {field: announced_on, snapshot: b1ff584f345df0d87ce9a9a83039edca37d5d1a19f7495cd11c0e0991cefc190, quote: "Munich, Oxford, Zurich (Europe), July 7, 2026", basis: disclosed}
+      - {field: round_label, snapshot: b1ff584f345df0d87ce9a9a83039edca37d5d1a19f7495cd11c0e0991cefc190, quote: "announced a €411 million ($468 million) financing round, bringing the company’s valuation to €2.4 billion ($2.7 billion)", basis: disclosed}
+    participants:
+      - investor: XTX Ventures
+        investor_slug: xtx-ventures
+        role: lead
+        evidence: [{field: participant, snapshot: b1ff584f345df0d87ce9a9a83039edca37d5d1a19f7495cd11c0e0991cefc190, quote: "The round was led by XTX Ventures and East X Ventures", basis: disclosed}]
+      - investor: East X Ventures
+        investor_slug: east-x-ventures
+        role: lead
+        evidence: [{field: participant, snapshot: b1ff584f345df0d87ce9a9a83039edca37d5d1a19f7495cd11c0e0991cefc190, quote: "The round was led by XTX Ventures and East X Ventures", basis: disclosed}]
+      - investor: RWE
+        investor_slug: rwe
+        evidence: [{field: participant, snapshot: b1ff584f345df0d87ce9a9a83039edca37d5d1a19f7495cd11c0e0991cefc190, quote: "with RWE and Google as strategic investors", basis: disclosed}]
+      - investor: Google
+        investor_slug: google
+        evidence: [{field: participant, snapshot: b1ff584f345df0d87ce9a9a83039edca37d5d1a19f7495cd11c0e0991cefc190, quote: "with RWE and Google as strategic investors", basis: disclosed}]
+      - investor: KfW Capital
+        investor_slug: kfw-capital
+        evidence: [{field: participant, snapshot: b1ff584f345df0d87ce9a9a83039edca37d5d1a19f7495cd11c0e0991cefc190, quote: "KfW Capital, SPRIND and Burda Principal Investments joined the round", basis: disclosed}]
+      - investor: SPRIND
+        investor_slug: sprind
+        evidence: [{field: participant, snapshot: b1ff584f345df0d87ce9a9a83039edca37d5d1a19f7495cd11c0e0991cefc190, quote: "KfW Capital, SPRIND and Burda Principal Investments joined the round", basis: disclosed}]
+      - investor: Burda Principal Investments
+        investor_slug: burda-principal
+        evidence: [{field: participant, snapshot: b1ff584f345df0d87ce9a9a83039edca37d5d1a19f7495cd11c0e0991cefc190, quote: "KfW Capital, SPRIND and Burda Principal Investments joined the round", basis: disclosed}]
+      - {investor: Plural, investor_slug: plural, evidence: [{field: participant, snapshot: b1ff584f345df0d87ce9a9a83039edca37d5d1a19f7495cd11c0e0991cefc190, quote: "returning investors including Plural, UVC Partners, Balderton, Cherry Ventures, DST Global Partners, Brevan Howard Macro Venture, Lightspeed, DTCF, redalpine, Leitmotif, Elaia, CDP Venture Capital, Bayern Kapital, and the EIC Fund", basis: disclosed}]}
+      - {investor: UVC Partners, investor_slug: uvc-partners, evidence: [{field: participant, snapshot: b1ff584f345df0d87ce9a9a83039edca37d5d1a19f7495cd11c0e0991cefc190, quote: "returning investors including Plural, UVC Partners, Balderton, Cherry Ventures, DST Global Partners, Brevan Howard Macro Venture, Lightspeed, DTCF, redalpine, Leitmotif, Elaia, CDP Venture Capital, Bayern Kapital, and the EIC Fund", basis: disclosed}]}
+      - {investor: Balderton, investor_slug: balderton, evidence: [{field: participant, snapshot: b1ff584f345df0d87ce9a9a83039edca37d5d1a19f7495cd11c0e0991cefc190, quote: "returning investors including Plural, UVC Partners, Balderton, Cherry Ventures, DST Global Partners, Brevan Howard Macro Venture, Lightspeed, DTCF, redalpine, Leitmotif, Elaia, CDP Venture Capital, Bayern Kapital, and the EIC Fund", basis: disclosed}]}
+      - {investor: Cherry Ventures, investor_slug: cherry-ventures, evidence: [{field: participant, snapshot: b1ff584f345df0d87ce9a9a83039edca37d5d1a19f7495cd11c0e0991cefc190, quote: "returning investors including Plural, UVC Partners, Balderton, Cherry Ventures, DST Global Partners, Brevan Howard Macro Venture, Lightspeed, DTCF, redalpine, Leitmotif, Elaia, CDP Venture Capital, Bayern Kapital, and the EIC Fund", basis: disclosed}]}
+      - {investor: DST Global Partners, investor_slug: dst-global, evidence: [{field: participant, snapshot: b1ff584f345df0d87ce9a9a83039edca37d5d1a19f7495cd11c0e0991cefc190, quote: "returning investors including Plural, UVC Partners, Balderton, Cherry Ventures, DST Global Partners, Brevan Howard Macro Venture, Lightspeed, DTCF, redalpine, Leitmotif, Elaia, CDP Venture Capital, Bayern Kapital, and the EIC Fund", basis: disclosed}]}
+      - {investor: Brevan Howard Macro Venture, investor_slug: brevan-howard, evidence: [{field: participant, snapshot: b1ff584f345df0d87ce9a9a83039edca37d5d1a19f7495cd11c0e0991cefc190, quote: "returning investors including Plural, UVC Partners, Balderton, Cherry Ventures, DST Global Partners, Brevan Howard Macro Venture, Lightspeed, DTCF, redalpine, Leitmotif, Elaia, CDP Venture Capital, Bayern Kapital, and the EIC Fund", basis: disclosed}]}
+      - {investor: Lightspeed, investor_slug: lightspeed, evidence: [{field: participant, snapshot: b1ff584f345df0d87ce9a9a83039edca37d5d1a19f7495cd11c0e0991cefc190, quote: "returning investors including Plural, UVC Partners, Balderton, Cherry Ventures, DST Global Partners, Brevan Howard Macro Venture, Lightspeed, DTCF, redalpine, Leitmotif, Elaia, CDP Venture Capital, Bayern Kapital, and the EIC Fund", basis: disclosed}]}
+      - {investor: DTCF, investor_slug: dtcf, evidence: [{field: participant, snapshot: b1ff584f345df0d87ce9a9a83039edca37d5d1a19f7495cd11c0e0991cefc190, quote: "returning investors including Plural, UVC Partners, Balderton, Cherry Ventures, DST Global Partners, Brevan Howard Macro Venture, Lightspeed, DTCF, redalpine, Leitmotif, Elaia, CDP Venture Capital, Bayern Kapital, and the EIC Fund", basis: disclosed}]}
+      - {investor: redalpine, investor_slug: redalpine, evidence: [{field: participant, snapshot: b1ff584f345df0d87ce9a9a83039edca37d5d1a19f7495cd11c0e0991cefc190, quote: "returning investors including Plural, UVC Partners, Balderton, Cherry Ventures, DST Global Partners, Brevan Howard Macro Venture, Lightspeed, DTCF, redalpine, Leitmotif, Elaia, CDP Venture Capital, Bayern Kapital, and the EIC Fund", basis: disclosed}]}
+      - {investor: Leitmotif, investor_slug: leitmotif, evidence: [{field: participant, snapshot: b1ff584f345df0d87ce9a9a83039edca37d5d1a19f7495cd11c0e0991cefc190, quote: "returning investors including Plural, UVC Partners, Balderton, Cherry Ventures, DST Global Partners, Brevan Howard Macro Venture, Lightspeed, DTCF, redalpine, Leitmotif, Elaia, CDP Venture Capital, Bayern Kapital, and the EIC Fund", basis: disclosed}]}
+      - {investor: Elaia, investor_slug: elaia, evidence: [{field: participant, snapshot: b1ff584f345df0d87ce9a9a83039edca37d5d1a19f7495cd11c0e0991cefc190, quote: "returning investors including Plural, UVC Partners, Balderton, Cherry Ventures, DST Global Partners, Brevan Howard Macro Venture, Lightspeed, DTCF, redalpine, Leitmotif, Elaia, CDP Venture Capital, Bayern Kapital, and the EIC Fund", basis: disclosed}]}
+      - {investor: CDP Venture Capital, investor_slug: cdp-venture, evidence: [{field: participant, snapshot: b1ff584f345df0d87ce9a9a83039edca37d5d1a19f7495cd11c0e0991cefc190, quote: "returning investors including Plural, UVC Partners, Balderton, Cherry Ventures, DST Global Partners, Brevan Howard Macro Venture, Lightspeed, DTCF, redalpine, Leitmotif, Elaia, CDP Venture Capital, Bayern Kapital, and the EIC Fund", basis: disclosed}]}
+      - {investor: Bayern Kapital, investor_slug: bayern-kapital, evidence: [{field: participant, snapshot: b1ff584f345df0d87ce9a9a83039edca37d5d1a19f7495cd11c0e0991cefc190, quote: "returning investors including Plural, UVC Partners, Balderton, Cherry Ventures, DST Global Partners, Brevan Howard Macro Venture, Lightspeed, DTCF, redalpine, Leitmotif, Elaia, CDP Venture Capital, Bayern Kapital, and the EIC Fund", basis: disclosed}]}
+      - {investor: EIC Fund, investor_slug: eic-fund, evidence: [{field: participant, snapshot: b1ff584f345df0d87ce9a9a83039edca37d5d1a19f7495cd11c0e0991cefc190, quote: "returning investors including Plural, UVC Partners, Balderton, Cherry Ventures, DST Global Partners, Brevan Howard Macro Venture, Lightspeed, DTCF, redalpine, Leitmotif, Elaia, CDP Venture Capital, Bayern Kapital, and the EIC Fund", basis: disclosed}]}
+  - id: proxima-cumulative-650m-2026
+    instrument: other
+    round_label: Cumulative funding to date (not a round)
+    announced_on: 2026-07-07
+    amount: {amount: 650000000, currency: EUR, qualifier: over}
+    amount_kind: cumulative
+    evidence:
+      - {field: amount, snapshot: b1ff584f345df0d87ce9a9a83039edca37d5d1a19f7495cd11c0e0991cefc190, quote: "Proxima has secured more than €650 million ($740 million), including €95 million in public grants", basis: disclosed}
+      - {field: announced_on, snapshot: b1ff584f345df0d87ce9a9a83039edca37d5d1a19f7495cd11c0e0991cefc190, quote: "Munich, Oxford, Zurich (Europe), July 7, 2026", basis: disclosed}
+agreements:
+  - id: proxima-bavaria-rwe-ipp-mou-2026
+    counterparty: Free State of Bavaria, RWE, Max Planck Institute for Plasma Physics (IPP)
+    counterparty_slug: bayern-stmwk
+    type: partnership
+    binding: mou
+    announced_on: 2026-02-26
+    summary: MoU for Alpha demonstrator (Garching) and Stellaris power plant (Gundremmingen); Bavaria indicated a potential 20 percent state co-financing subject to federal funding (company blog cites EUR 400M); not funding until committed.
+    evidence:
+      - {field: agreement, snapshot: 272cbe047478c5052acf87287f2af2e096fe565845cddf41f6aef1cc33654166, quote: "Subject to federal funding, the Free State of Bavaria has indicated a potential state co-financing contribution of 20 percent", basis: disclosed}
+      - {field: agreement, snapshot: 223492519b56bfee4d15ed7ccf094db5585fc83cfd852288583b54371c962d84, quote: "Bavaria is committing €400 million in state funding towards the Alpha project", basis: disclosed}
+  - id: proxima-lower-saxony-hts-mou-2026
+    counterparty: State of Lower Saxony
+    counterparty_slug: lower-saxony
+    type: partnership
+    binding: mou
+    announced_on: 2026-09-09
+    value: {amount: 21000000, currency: EUR, qualifier: exact}
+    summary: MoU for an HTS tape production facility (about EUR 140M for phases 1-2, half public); Lower Saxony plans EUR 21M; Proxima anchor customer. Planned, not an award.
+    evidence:
+      - {field: agreement, snapshot: 3f840f651d91f340c3ae021d59ff727a193820b54de5432fac8720b5c24fbf66, quote: "with the State of Lower Saxony providing €21 million", basis: disclosed}
+      - {field: announced_on, snapshot: 3f840f651d91f340c3ae021d59ff727a193820b54de5432fac8720b5c24fbf66, quote: "Hanover, 9 September 2026", basis: disclosed}
+  - id: proxima-stride-fusion-hub-2026
+    counterparty: BMFTR (STRIDE Fusion Hub with Gauss Fusion and IPP)
+    counterparty_slug: bmftr
+    type: gov_contract
+    binding: mou
+    announced_on: 2026-07-29
+    summary: Proxima co-coordinates the STRIDE stellarator hub, one of three BMFTR Fusion Hubs (about EUR 125M across hubs); Proxima-specific amount not stated.
+    evidence:
+      - {field: agreement, snapshot: 4d4f0eb089055427aec267916b0a3f72841d8fec5eafff5a07c534babec48213, quote: "Der von Proxima Fusion, Gauss Fusion und dem Max-Planck-Institut für Plasmaphysik koordinierte Hub", basis: disclosed}
+      - {field: announced_on, snapshot: 4d4f0eb089055427aec267916b0a3f72841d8fec5eafff5a07c534babec48213, quote: "Mit der Vorstellung der Fusionshubs am 29. Juli beginnt der Aufbau der Hubs", basis: disclosed}

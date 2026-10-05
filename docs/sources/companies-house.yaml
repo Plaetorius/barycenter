@@ -1,0 +1,18 @@
+id: companies-house
+name: UK Companies House (filing history, SH01, PSC, accounts)
+owner: UK Companies House
+access: api             # REST + HTML + bulk snapshots
+endpoint: https://api.company-information.service.gov.uk/
+auth: "free API key (HTTP Basic, key as username). Without key: 401 'Empty Authorization header' (verified). No key available in this probe, so API responses were NOT sampled."
+rate_limit: "600 requests / 5 minutes per key (docs, sha df7e1977a7b8); ban without notice if exceeded"
+licence: "Open Government Licence v3 (believed)"
+robots: "find-and-update.company-information.service.gov.uk/robots.txt 404 (no rules); filing-history pages archived OK"
+yields: [SH01 statement of capital after allotment (date + aggregate nominal GBP), RP04SH01 second filings, RESOLUTIONS, MR01 charges, PSC changes, CS01, accounts (iXBRL for filed ones)]
+identifiers: [company number (8 chars): Tokamak Energy 07054929, First Light Fusion 07555858, Astral Neutronics (trading as Astral Systems) 13376789]
+cadence: real-time
+tier: A
+known_gaps: >
+  Listing shows nominal share capital only. Amount raised needs the SH01 PDF (number of shares x amount paid per share incl. premium) via Document API (PDF, parsing needed).
+  Allotments are tranches, not rounds. Trade-name trap: 'Astral Systems Ltd' 07374982 (Haywards Heath, micro-company, no SH01) is NOT the fusion firm; Astral Systems trades as Astral Neutronics Ltd 13376789 (SH01 statements of capital filed 2026-04-14, 2026-06-29, 2026-07-16 per okredo mirror; CH page archived separately).
+  Not looked up: Moltex UK, Terrestrial UK, newcleo UK, Copenhagen Atomics UK.
+probe: docs/survey/probes/companies-house.md

@@ -1,0 +1,65 @@
+company: flibe-energy
+name: Flibe Energy, Inc.
+sector: fission
+notes: Built from USAspending spending_by_award search responses (POST, archived with request body in raw/manifest.jsonl, source_id
+  usaspending-post). Amount = USAspending 'Award Amount' (cumulative federal obligation, not a ceiling and not an announced figure);
+  disbursed_usd = 'Total Outlays' when present. Dates = 'Base Obligation Date' (first obligation), else 'Start Date'. Search was recipient-name
+  text on awarding agency = Department of Energy over 2007-10-01..2026-09-30 and one page of up to 50 rows per award-type group; awards
+  with zero or negative net obligation are omitted. Recipient name variants not matched by the name search may be missing. Government
+  record, basis=disclosed.
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: 'Verified 1 event (DENE0008845, $852,481 obligated / $540,235 outlaid, DOE-NE cost-shared cooperative agreement under the
+    U.S. Industry Opportunities FOA), 0 errors. Checked against the archived USAspending award-level search (spending_level awards:
+    one row per award, modifications already netted, so one event per award and no per-modification duplicates). Award Amount = obligated
+    to date (not a ceiling); disbursed_usd = Total Outlays, now evidenced by its own quote (1 added). announced_on is the first-obligation
+    date, not a press date. Recipient FLIBE ENERGY INC (UEI JK5RDF9E2EK7), the company. Scope: MSR developer, keep. Gaps: private
+    funding (undisclosed) and other DOE awards (e.g. GAIN vouchers, lab money) not recorded.'
+events:
+- id: flibe-energy-dene0008845
+  instrument: grant
+  round_label: DENE0008845
+  announced_on: '2019-03-29'
+  amount:
+    amount: 852481.36
+    currency: USD
+    qualifier: exact
+    usd: 852481.36
+  amount_kind: new_money
+  program: DOE Office of Nuclear Energy
+  obligated_usd: 852481.36
+  disbursed_usd: 540234.79
+  use_of_proceeds: 'COMPETITIVE COOPERATIVE AGREEMENT: U.S. INDUSTRY OPPORTUNITIES FOR ADVANCED NUCLEAR TECHNOLOGY DEVELOPMENT FOA'
+  evidence:
+  - field: amount
+    snapshot: fa86601a6840dd1e9525167096bc6cf2988c0b6dcd69a7ecfa32826eb9e9e6ea
+    quote: '"Award ID": "DENE0008845", "Recipient Name": "FLIBE ENERGY INC", "Recipient UEI": "JK5RDF9E2EK7", "Award Amount": 852481.36'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: fa86601a6840dd1e9525167096bc6cf2988c0b6dcd69a7ecfa32826eb9e9e6ea
+    quote: '"Award Amount": 852481.36, "Total Outlays": 540234.79'
+    basis: disclosed
+  - field: announced_on
+    snapshot: fa86601a6840dd1e9525167096bc6cf2988c0b6dcd69a7ecfa32826eb9e9e6ea
+    quote: '"Base Obligation Date": "2019-03-29", "generated_internal_id": "ASST_NON_DENE0008845_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: fa86601a6840dd1e9525167096bc6cf2988c0b6dcd69a7ecfa32826eb9e9e6ea
+    quote: '"Award ID": "DENE0008845", "Recipient Name": "FLIBE ENERGY INC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: fa86601a6840dd1e9525167096bc6cf2988c0b6dcd69a7ecfa32826eb9e9e6ea
+    quote: '"Description": "COMPETITIVE COOPERATIVE AGREEMENT:  U.S. INDUSTRY OPPORTUNITIES FOR ADVANCED NUCLEAR TECHNOLOGY DEV'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Nuclear Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: fa86601a6840dd1e9525167096bc6cf2988c0b6dcd69a7ecfa32826eb9e9e6ea
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+agreements: []

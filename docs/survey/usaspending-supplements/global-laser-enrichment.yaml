@@ -1,0 +1,76 @@
+company: global-laser-enrichment
+name: Global Laser Enrichment LLC
+sector: fission
+notes: 'SUPPLEMENT (not in pipeline/ledger/ to avoid a duplicate company slug): DOE awards found in USAspending that the existing
+  ledger pipeline/ledger/global-laser-enrichment.yaml did not list by FAIN at the time of writing. Some amounts may already
+  be evidenced there from another source (check before merging; do not double count). Amount = USAspending ''Award Amount''
+  (cumulative federal obligation), dates = Base Obligation Date else Start Date; one page of up to 50 rows per award-type
+  group, DOE as awarding agency, 2007-10-01..2026-09-30; zero/negative awards omitted.'
+events:
+- id: global-laser-enrichment-dene0009559
+  instrument: grant
+  round_label: DENE0009559
+  announced_on: '2026-06-25'
+  amount:
+    amount: 28443912.0
+    currency: USD
+    qualifier: exact
+    usd: 28443912.0
+  amount_kind: new_money
+  program: DOE Office of Nuclear Energy
+  obligated_usd: 28443912.0
+  disbursed_usd: 3006774.61
+  use_of_proceeds: THIS NOFO SEEKS APPLICATIONS TO ADDRESS TECHNOLOGICAL ADVANCEMENT ACROSS THE FRONT-END NUCLEAR FUEL CYCLE
+    TO E
+  evidence:
+  - field: amount
+    snapshot: c2aa80d86588c1c84bd98185ee6bb5ce799ceb16a372161501231bcf65bf0cab
+    quote: '"Award ID": "DENE0009559", "Recipient Name": "GLOBAL LASER ENRICHMENT LLC", "Recipient UEI": "V5CDRQGDGX76", "Award
+      Amount": 28443912.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: c2aa80d86588c1c84bd98185ee6bb5ce799ceb16a372161501231bcf65bf0cab
+    quote: '"Base Obligation Date": "2026-06-25", "generated_internal_id": "ASST_NON_DENE0009559_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: c2aa80d86588c1c84bd98185ee6bb5ce799ceb16a372161501231bcf65bf0cab
+    quote: '"Award ID": "DENE0009559", "Recipient Name": "GLOBAL LASER ENRICHMENT LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: c2aa80d86588c1c84bd98185ee6bb5ce799ceb16a372161501231bcf65bf0cab
+    quote: '"Description": "THIS NOFO SEEKS APPLICATIONS TO ADDRESS TECHNOLOGICAL ADVANCEMENT ACROSS THE FRONT-END NUCLEAR
+      FUEL'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Nuclear Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: c2aa80d86588c1c84bd98185ee6bb5ce799ceb16a372161501231bcf65bf0cab
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+agreements:
+- id: global-laser-enrichment-89243225fne400180
+  counterparty: U.S. Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: '2025-04-11'
+  summary: 'DOE contract 89243225FNE400180: NEW TASK ORDER AWARD UNDER THE LOW-ENRICHED URANIUM (LEU) - ENRICHMENT ACQUISITION
+    IDIQ FOR GLOBAL LASER ENRICHMENT LLC FOR THE DEVELOPMENT OF A REPORT FOR THE DEPLOYMENT OF NEW ENRICHMENT CAPACITY AN'
+  value:
+    amount: 376893.74
+    currency: USD
+    qualifier: exact
+    usd: 376893.74
+  evidence:
+  - field: amount
+    snapshot: 6c8cb330323a1b90914742f90ae631460d9b9341c052f07d2e44839957943b7c
+    quote: '"Award ID": "89243225FNE400180", "Recipient Name": "GLOBAL LASER ENRICHMENT LLC", "Recipient UEI": "V5CDRQGDGX76",
+      "Award Amount": 376893.74'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 6c8cb330323a1b90914742f90ae631460d9b9341c052f07d2e44839957943b7c
+    quote: '"Base Obligation Date": "2025-04-11", "generated_internal_id": "CONT_AWD_89243225FNE400180_8900_89243225DNE000028_8900"'
+    basis: disclosed

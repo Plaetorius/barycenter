@@ -1,0 +1,16 @@
+id: logos
+name: Organization logos (company site, Wikimedia Commons; logo APIs rejected as primary)
+owner: each company; Wikimedia Commons
+access: html
+endpoint: "per company homepage (link rel icon / header img|svg); Commons via MediaWiki API (extmetadata) and upload.wikimedia.org"
+auth: none
+rate_limit: 1 req/s per host
+licence: trademarks of each company (nominative use); Commons files Public domain (Helion, TerraPower) or CC BY 4.0 (Oklo); Brandfetch/logo.dev terms restrict caching (see probe)
+robots: company sites allow; commons.wikimedia.org robots blocks /w/api.php for generic agents (documented API; exception needed)
+yields: [logo image (SVG/PNG/WebP) with URL, sha256, fetch date, licence]
+identifiers: [domain, commons_filename]
+cadence: on entity creation, re-check yearly
+tier: B
+known_gaps: "No generic header-logo selector; apple-touch-icon missing for TerraPower; CFS icon is 2496px; Commons coverage 3/12; og:image is never a logo."
+chain: [company header logo (pinned), commons (PD/CC BY), apple-touch-icon, favicon.svg, monogram]
+probe: docs/survey/probes/logos.md

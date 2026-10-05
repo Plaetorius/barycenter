@@ -1,0 +1,17 @@
+id: sbir
+name: SBIR.gov awards
+owner: US Small Business Administration (SBIR/STTR program data)
+access: bulk           # API currently "undergoing maintenance" (docs page) and returns 403; use bulk CSV
+endpoint: https://data.www.sbir.gov/mod_awarddatapublic_no_abstract/award_data_no_abstract.csv   # 91.5MB, 219,649 rows; with abstracts: https://data.www.sbir.gov/awarddatapublic/award_data.csv
+auth: none
+rate_limit: unpublished; single file download
+licence: US government data, public; no explicit licence text captured (data-resources page). Contains PI/contact personal data: drop columns.
+robots: sbir.gov robots Drupal default; data.www.sbir.gov has no restriction seen (file fetched)
+yields: [company, award title, agency/branch, phase I/II, program SBIR/STTR, award amount, proposal award date, contract number, UEI, DUNS, topic code, employees, address]
+identifiers: [uei, duns, agency_tracking_number, contract (DE-SC00xxxxx, FA8649-xx-x-xxxx)]
+cadence: file regenerated continuously (max award year 2026, 303 rows for 2026 at probe time)
+tier: A
+known_gaps: >
+  API 403 / maintenance; file download only (also "10,000 records per download" on UI). UEI filled on 70% of rows (older rows DUNS). Only Radiant of the 10 sampled companies appears.
+  Mostly supply-chain firms (fusion magnets, diagnostics, gyrotrons), not the reactor developers: relevant for later layers. Contract number links to USAspending fain.
+probe: docs/survey/probes/sbir.md

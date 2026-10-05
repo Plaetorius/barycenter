@@ -1,0 +1,21 @@
+id: bodacc-fr
+name: BODACC (French official commercial gazette) + Annuaire des Entreprises API
+owner: DILA (Direction de l'information legale et administrative); DINUM/INSEE for the company search API
+access: bulk            # DILA open-data flux (XML tar.gz); Opendatasoft mirror API exists but robots-disallowed
+endpoint: https://echanges.dila.gouv.fr/OPENDATA/BODACC/   # FluxAnneeCourante/, FluxHistorique/ (index verified 2026-10-05)
+alt_endpoints:
+  - "https://bodacc-datadila.opendatasoft.com/api/explore/v2.1/catalog/datasets/annonces-commerciales/records  # works, JSON, but /api/ is Disallow in that host's robots.txt (archive tool refused)"
+  - https://recherche-entreprises.api.gouv.fr/search?q=<name>   # SIREN lookup + finances (ca, resultat_net), no key, archived
+auth: none
+rate_limit: "recherche-entreprises: published 7 req/s (not re-verified); Opendatasoft default quotas; DILA flux none"
+licence: "Licence Ouverte / Open Licence v2 (lov2) for BODACC and Annuaire (believed; verify)"
+robots: "echanges.dila.gouv.fr robots 404 (no rules). opendatasoft host disallows /api/. recherche-entreprises robots returns JSON 404 (no rules)."
+yields: [creations/immatriculations, 'modifications' flagged 'capital' (text only: 'Modification survenue sur le capital'), depot des comptes, procedures collectives (judgment type, date, liquidator)]
+identifiers: [SIREN (9 digits) in 'registre'; notice id (A/B/C + year + number)]
+cadence: daily
+tier: A
+known_gaps: >
+  Capital notices carry NO amount in structured fields (descriptif only: 'Modification du capital' / 'augmentation'); amounts sit in notice PDFs (url_complete) or are absent.
+  Legal-entity sprawl: newcleo has at least 3 SIREN (912522240 Operations, 929009140 holding, 979949153 Fuel Innovations). Name search is noisy (JIMMY = 8,475 hits).
+  Naarea 'etat_administratif' still 'A' in Annuaire while BODACC shows liquidation (see probe): use BODACC for status.
+probe: docs/survey/probes/bodacc-fr.md

@@ -1,0 +1,148 @@
+company: natura-resources
+name: Natura Resources LLC
+sector: fission
+notes: 'Company site is naturaresources.energy (aliases naturaresources.com; natura-resources.com from the census did not connect). Search quota exhausted and no primary release for a priced private round was reachable: the company boilerplate says only ''more than $120 million in private funding'' (cumulative, no investors, no dates; dated with the page date of the release carrying it) and a $120M State of Texas commitment. Texas commitment: the company milestone page dates it ''2025'' only, the event is dated by the earliest release in the snapshot set that states it (NGL release, 2026-02-03; it is a first-seen date, the commitment itself dates to 2025); the Texas administering agency/programme is not stated in the sources (HB 14 / Texas Advanced Nuclear Energy Office is a candidate, unverified), so the grantor slug state-of-texas is proposed. It is a commitment, not disbursed: amount_kind ceiling (visible, never counted in raised totals). The commitment is for the MSR-1 reactor at Abilene Christian University; whether the legal recipient is Natura or ACU is not stated in the sources. Founder Doug Robison donated $3.2M of research funding to ACU circa 2017 (Natura ''how a third-generation Texas oilman...'' article, Aug 2026): pre-company, not recorded. Federal money: Reactor Pilot Program carries no funds; DOE HALEU conditional commitment and FLiBe salt delivered 2026-09-18 from DOE/ORNL/INL are in-kind materials with no dollar value; USAspending (docs/survey/samples/doe-recipients-fy20-26.csv) shows Natura Resources LLC net 0 and Abilene Christian University USD 753,605 under CFDA 81.121 FY20-26, ACU is not Natura, so nothing recorded as a Natura grant. No ARPA-E/SBIR found (not searched specifically). Natura acquired Shepherd Power from NOV in 2025 (acquisition, not funding). Slugs state-of-texas, ngl-energy-partners, quadrant-nuclear-industries proposed.'
+events:
+- id: natura-private-funding-cumulative
+  instrument: equity
+  round_label: cumulative private funding (no round breakdown disclosed)
+  announced_on: 2026-07-21
+  amount:
+    amount: 120000000.0
+    currency: USD
+    qualifier: over
+  amount_kind: cumulative
+  evidence:
+  - field: amount
+    snapshot: 701a5261ff510c5dca8cb03758b94be7d62b15ae87d1bee54c74f6a88e13d16f
+    quote: has secured more than $120 million in private funding
+    basis: disclosed
+  - field: announced_on
+    snapshot: 701a5261ff510c5dca8cb03758b94be7d62b15ae87d1bee54c74f6a88e13d16f
+    quote: July 21, 2026
+    basis: disclosed
+- id: natura-texas-120m-commitment
+  instrument: grant
+  round_label: State of Texas commitment (MSR-1 demonstration reactor and desalination)
+  announced_on: 2026-02-03
+  amount:
+    amount: 120000000.0
+    currency: USD
+    qualifier: exact
+  amount_kind: ceiling
+  committed_usd: 120000000.0
+  program: Texas advanced nuclear support (administering agency not stated)
+  evidence:
+  - field: amount
+    snapshot: ef8d9cf72555340788028af6fefe639d0d762f6cb1c03efeae6da38043bb49cd
+    quote: a commitment of $120 million from the State of Texas
+    basis: disclosed
+  - field: announced_on
+    snapshot: ef8d9cf72555340788028af6fefe639d0d762f6cb1c03efeae6da38043bb49cd
+    quote: ABILENE, Texas, Feb. 3, 2026
+    basis: disclosed
+  - field: round_label
+    snapshot: 1ee9244eb4f0fecf532f54f0634f305a0c290e9dc3767aef09d56c590779e4f7
+    quote: The State of Texas commits $120 million to deploy the MSR-1 demonstration reactor and water desalination technologies
+    basis: disclosed
+  participants:
+  - investor: State of Texas
+    investor_slug: state-of-texas
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 1ee9244eb4f0fecf532f54f0634f305a0c290e9dc3767aef09d56c590779e4f7
+      quote: The State of Texas commits $120 million to deploy the MSR-1 demonstration reactor and water desalination technologies
+      basis: disclosed
+agreements:
+- id: natura-doe-reactor-pilot-2025
+  counterparty: US Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: loi
+  announced_on: 2025-08-12
+  summary: Selected for the DOE Reactor Pilot Program (authorization pathway); no funding amount.
+  evidence:
+  - field: agreement
+    snapshot: d92aed237e3d72eebae1422dcd91a89156bb7ec851d5eb319adbd1bf1c0d3730
+    quote: Natura Resources LLC
+    basis: disclosed
+  - field: announced_on
+    snapshot: d92aed237e3d72eebae1422dcd91a89156bb7ec851d5eb319adbd1bf1c0d3730
+    quote: August 12, 2025
+    basis: disclosed
+- id: natura-doe-haleu-2025
+  counterparty: US Department of Energy
+  counterparty_slug: doe-ne
+  type: fuel_supply
+  binding: loi
+  announced_on: 2025-08-26
+  summary: DOE conditional commitment (HALEU round 2) for Abilene Christian University / Natura Resources, for the MSR-1 molten salt research reactor under construction in Texas; in-kind material, quantity not stated here.
+  evidence:
+  - field: agreement
+    snapshot: 04760c24bff772de19acc9870d2680a98b63d8b8c78042cf9d106abef0227793
+    quote: Abilene Christian University/Natura Resources LLC, for use in a new molten salt research reactor
+    basis: disclosed
+  - field: announced_on
+    snapshot: 04760c24bff772de19acc9870d2680a98b63d8b8c78042cf9d106abef0227793
+    quote: August 26, 2025
+    basis: disclosed
+- id: natura-doe-nsda-2026
+  counterparty: US Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: 2026-07-21
+  summary: DOE approved the Nuclear Safety Design Agreement for the MSR-1 demonstration reactor at Abilene Christian University; framework for DOE authorization, no funding amount.
+  evidence:
+  - field: agreement
+    snapshot: 701a5261ff510c5dca8cb03758b94be7d62b15ae87d1bee54c74f6a88e13d16f
+    quote: the U.S. Department of Energy approved the Nuclear Safety Design Agreement (NSDA) for its demonstration reactor
+    basis: disclosed
+  - field: announced_on
+    snapshot: 701a5261ff510c5dca8cb03758b94be7d62b15ae87d1bee54c74f6a88e13d16f
+    quote: July 21, 2026
+    basis: disclosed
+- id: natura-ngl-permian-2026
+  counterparty: NGL Water Solutions Permian LLC (NGL Energy Partners LP)
+  counterparty_slug: ngl-energy-partners
+  type: partnership
+  binding: mou
+  announced_on: 2026-02-03
+  summary: Agreement to pursue combining Natura's 100 MW molten salt reactor with NGL's produced-water treatment and desalination in the Permian Basin; no value; binding level not stated.
+  evidence:
+  - field: agreement
+    snapshot: ef8d9cf72555340788028af6fefe639d0d762f6cb1c03efeae6da38043bb49cd
+    quote: has signed an agreement with NGL Water Solutions Permian LLC
+    basis: disclosed
+  - field: announced_on
+    snapshot: ef8d9cf72555340788028af6fefe639d0d762f6cb1c03efeae6da38043bb49cd
+    quote: ABILENE, Texas, Feb. 3, 2026
+    basis: disclosed
+  capacity_mw: 100
+- id: natura-qni-haleu-2026
+  counterparty: Quadrant Nuclear Industries, Inc.
+  counterparty_slug: quadrant-nuclear-industries
+  type: fuel_supply
+  binding: definitive
+  announced_on: 2026-06-11
+  summary: Formal agreement under which Natura serves as a recipient of HALEU (downblended) from QNI for its commercial reactors; quantity and value not stated.
+  evidence:
+  - field: agreement
+    snapshot: 947483df9ff9c447cbbced71cbf549a66cb057568c1bfd332c232be11ca57c66
+    quote: it has entered into a formal agreement with Quadrant Nuclear Industries, Inc. (QNI) to serve as a recipient of high-assay low-enriched uranium (HALEU)
+    basis: disclosed
+  - field: announced_on
+    snapshot: 947483df9ff9c447cbbced71cbf549a66cb057568c1bfd332c232be11ca57c66
+    quote: June 11, 2026
+    basis: disclosed
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  'on': 2026-10-05
+  note: >-
+    2 corrections. Texas $120M: amount_kind new_money -> ceiling (commitment only, no disbursement evidenced; legal
+    recipient Natura vs ACU not stated); announced_on 2026-06-11 -> 2026-02-03 (the NGL release of Feb 3, 2026 already
+    carries the commitment, so June 11 was not the earliest statement; true commitment date is 2025, month unknown,
+    and no 2025 primary was found). Cumulative '>$120M private funding' kept as cumulative (never counted). Not
+    confirmed: any priced round, the Texas administering agency/programme and disbursements.

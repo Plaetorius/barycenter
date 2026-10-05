@@ -1,0 +1,423 @@
+profiles:
+  advanced-conductor-technologies:
+    country: US
+    hq_city: Boulder
+    website: https://www.advancedconductor.com
+    role: components
+    approach: hts-magnets
+    sources:
+    - https://www.advancedconductor.com
+    logo: logos/advanced-conductor-technologies.webp
+    logo_source: https://www.advancedconductor.com/wp-content/uploads/2016/07/cropped-Site-icon-e1468877165439-2-180x180.jpg
+    logo_sha256: 3b0ba8bc0a0d71a448863741c477701937c37671fc06639ec6c99a5f5e585383
+  avalanche-energy:
+    country: US
+    hq_city: Tukwila
+    website: https://avalanche.energy
+    role: developer
+    approach: electrostatic
+    sources:
+    - https://avalanche.energy
+    logo: logos/avalanche-energy.webp
+    logo_source: https://cdn.prod.website-files.com/672b5efd9b36f32f1e3e2386/67884140a0ea715ee733bda9_webclip.png
+    logo_sha256: fa9465b3c7c04f2acc259b59b443e3d52c924070e8e6acba5899ad656f5bf61d
+  blue-laser-fusion:
+    country: US
+    hq_city: Goleta
+    website: https://www.bluelaserfusion.com
+    role: developer
+    approach: laser-icf
+    sources:
+    - https://www.bluelaserfusion.com
+    logo: logos/blue-laser-fusion.webp
+    logo_source: https://bluelaserfusion.com/wp-content/uploads/2025/03/cropped-favicon-180x180.png
+    logo_sha256: a166fbd12637c7384598b93e4fb0c514c15693df36c5d9818dde4341149ad166
+  commonwealth-fusion-systems:
+    country: US
+    hq_city: Devens
+    website: https://cfs.energy
+    role: developer
+    approach: tokamak
+    founded: 2018
+    sources:
+    - https://cfs.energy
+  energy-singularity:
+    country: CN
+    hq_city: Shanghai
+    website: https://www.energysingularity.cn/en
+    role: developer
+    approach: tokamak
+    founded: 2021
+    sources:
+    - https://www.energysingularity.cn/en
+  ex-fusion:
+    country: JP
+    hq_city: Kyoto
+    website: https://ex-fusion.com/
+    role: developer
+    approach: laser-icf
+    founded: 2021
+    sources:
+    - https://ex-fusion.com/
+    logo: logos/ex-fusion.webp
+    logo_source: https://ex-fusion.com/wp-content/uploads/2023/07/cropped-EX2-180x180.png
+    logo_sha256: 586769dcc15c47ec42158f0360097d7197db5d74a09c60fc6d2d82ed07098d30
+  first-light-fusion:
+    country: GB
+    hq_city: Kidlington
+    website: https://firstlightfusion.com
+    role: developer
+    approach: inertial-other
+    founded: 2011
+    sources:
+    - https://firstlightfusion.com
+    logo: logos/first-light-fusion.webp
+    logo_source: https://firstlightfusion.com/wp-content/uploads/2026/09/cropped-first-light-fusion-logo-mark-main-logo-no-core-rgb-900px-w-300ppi-180x180.png
+    logo_sha256: 93d69f76adc5c07656f40897a48c73bd1c379dd6ae0c12e1356c71b9e8db1827
+  focused-energy:
+    country: DE
+    hq_city: Darmstadt
+    website: https://www.focused-energy.co
+    role: developer
+    approach: laser-icf
+    founded: 2021
+    sources:
+    - https://www.focused-energy.co
+    logo: logos/focused-energy.webp
+    logo_source: https://cdn.prod.website-files.com/672b679d563c65aa8b967c48/672f9d9a2c790ce0135c0bbb_favicon%40256px.png
+    logo_sha256: cc9046fcb6c394ce7281a7db763c6ee02f0a25192be4758a828f5cb68e5d1333
+  fuse-energy-technologies:
+    country: US
+    hq_city: Albuquerque
+    website: https://www.f.energy
+    role: developer
+    approach: pulsed-power
+    sources:
+    - https://www.f.energy
+    logo: logos/fuse-energy-technologies.webp
+    logo_source: https://cdn.prod.website-files.com/66f19df813beb76e57334f46/6913749ca1b83a52dbe931d1_Webclip.png
+    logo_sha256: 576cf9313e87dca3b8403ae85cbb5eadf9a4e12c8b84685e7d3453b25a8bc6e9
+  gauss-fusion:
+    country: DE
+    hq_city: Garching
+    website: https://www.gauss-fusion.com
+    role: developer
+    approach: tokamak
+    founded: 2022
+    sources:
+    - https://www.gauss-fusion.com
+    logo: logos/gauss-fusion.webp
+    logo_source: https://gauss-fusion.com/apple-touch-icon.png
+    logo_sha256: 618a3df4422d92ca22f45a3edab8af8b32d3fa1db43767e1e409f9759db6047e
+  general-fusion:
+    country: CA
+    hq_city: Richmond
+    website: https://generalfusion.com
+    role: developer
+    approach: magnetized-target
+    founded: 2002
+    sources:
+    - https://generalfusion.com
+  hb11-energy:
+    country: AU
+    hq_city: Sydney
+    website: https://hb11.energy
+    role: developer
+    approach: laser-icf
+    sources:
+    - https://hb11.energy
+    logo: logos/hb11-energy.webp
+    logo_source: https://hb11.energy/apple-touch-icon.png
+    logo_sha256: 20658d6b6effb955147f71848254bab38df0ee75431aa542c58ba9923a7f3019
+  helical-fusion:
+    country: JP
+    hq_city: Tokyo
+    website: https://global.helicalfusion.com/
+    role: developer
+    approach: stellarator
+    founded: 2021
+    sources:
+    - https://global.helicalfusion.com/
+    logo: logos/helical-fusion.webp
+    logo_source: https://static.wixstatic.com/media/652328_c26c4b0aeb244be38365a4430fd35c71%7Emv2.jpg/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/652328_c26c4b0aeb244be38365a4430fd35c71%7Emv2.jpg
+    logo_sha256: 05ec17a36af8ff94302646c3d7b4ffe5717f90c652f09777e21e5179faa648d1
+  helicity-space:
+    country: US
+    website: https://www.helicityspace.com
+    role: developer
+    sources:
+    - https://www.helicityspace.com
+  helion-energy:
+    country: US
+    hq_city: Everett
+    website: https://www.helionenergy.com
+    role: developer
+    approach: frc
+    founded: 2013
+    sources:
+    - https://www.helionenergy.com
+    logo: logos/helion-energy.webp
+    logo_source: https://commons.wikimedia.org/wiki/File:Helion_Energy_logo_2021.svg
+    logo_sha256: e8f6ab309d70aa34a20464493c18fa8e7558790e60dc0b994db56059014df52e
+  hexium:
+    country: US
+    website: https://www.hexium.com
+    role: fuel
+    approach: fuel-cycle
+    sources:
+    - https://www.hexium.com
+  high-temperature-superconductors-inc:
+    country: US
+    hq_city: Santa Barbara
+    website: https://www.hitsuperconductors.com
+    role: components
+    approach: hts-magnets
+    founded: 2019
+    sources:
+    - https://www.hitsuperconductors.com
+  inertia-enterprises:
+    country: US
+    hq_city: Livermore
+    website: https://www.inertia.com
+    role: developer
+    approach: laser-icf
+    sources:
+    - https://www.inertia.com
+    logo: logos/inertia-enterprises.webp
+    logo_source: https://inertia.com/apple-touch-icon.png
+    logo_sha256: efcb59e884fc1d156871256e5671166f21430307f4941831d74d7203c34692e1
+  jupiter-volta:
+    country: US
+    hq_city: Berkeley
+    website: https://www.jupitervolta.com
+    role: developer
+    approach: enabling-systems
+    sources:
+    - https://www.jupitervolta.com
+    logo: logos/jupiter-volta.webp
+    logo_source: https://www.jupitervolta.com/favicon.png
+    logo_sha256: 958614aa3207714ad99d370dafe0e64c6bfeb51c94792fc184a9a89d172e095a
+  kyoto-fusioneering:
+    country: JP
+    hq_city: Tokyo
+    website: https://kyotofusioneering.com/en/
+    role: enabling
+    approach: fuel-cycle
+    founded: 2019
+    sources:
+    - https://kyotofusioneering.com/en/
+    logo: logos/kyoto-fusioneering.webp
+    logo_source: https://kyotofusioneering.com/kfwp/wp-content/themes/kf2026/common/img/common/apple-touch-icon.png
+    logo_sha256: 14e6f0488cc77592655fb26953cf1ba44d240ebf51f0350d812346ea365d463c
+  magneto-inertial-fusion-technologies:
+    country: US
+    hq_city: Tustin
+    website: https://www.miftec.com
+    role: developer
+    approach: pulsed-power
+    founded: 2008
+    sources:
+    - https://www.miftec.com
+    logo: logos/magneto-inertial-fusion-technologies.webp
+    logo_source: https://miftifusion.com/wp-content/uploads/2025/07/cropped-favicon-1-180x180.png
+    logo_sha256: 5e4b7159a7b441531103d3dc702fa42a662f8851f2e465d7d144e73ac508443a
+  marathon-fusion:
+    country: US
+    website: https://www.marathonfusion.com
+    role: fuel
+    approach: fuel-cycle
+    sources:
+    - https://www.marathonfusion.com
+    logo: logos/marathon-fusion.webp
+    logo_source: https://www.marathonfusion.com/apple-touch-icon.png
+    logo_sha256: 298c4c873c2c79ab6f12e257c17c062b9203f8bf5d740ee5aeafc21edacae1d2
+  marvel-fusion:
+    country: DE
+    hq_city: Munich
+    website: https://www.marvelfusion.com
+    role: developer
+    approach: laser-icf
+    founded: 2019
+    sources:
+    - https://www.marvelfusion.com
+    logo: logos/marvel-fusion.webp
+    logo_source: https://www.marvelfusion.com/favicons/apple-touch-icon.png
+    logo_sha256: eef21fe78cbf560adf2eec58a385db869624b3d79a239f45b9fc1e5a9a68749c
+  metox:
+    country: US
+    hq_city: Houston
+    website: https://www.metoxtech.com
+    role: components
+    approach: hts-magnets
+    sources:
+    - https://www.metoxtech.com
+  novatron-fusion-group:
+    country: SE
+    hq_city: Stockholm
+    website: https://www.novatronfusion.com
+    role: developer
+    approach: mirror
+    founded: 2019
+    sources:
+    - https://www.novatronfusion.com
+  openstar-technologies:
+    country: NZ
+    website: https://www.openstar.tech
+    role: developer
+    approach: levitated-dipole
+    sources:
+    - https://www.openstar.tech
+    logo: logos/openstar-technologies.webp
+    logo_source: https://cdn.prod.website-files.com/6473d1660b2c1f2c3780dfdc/64864f6748d5ac597dcd6e53_Webclip.png
+    logo_sha256: be7e1207b2135ddb1005d0ce16d057fc0ce79da3ccac648b878442fb672f6ce8
+  pacific-fusion:
+    country: US
+    hq_city: Fremont
+    website: https://www.pacificfusion.com
+    role: developer
+    approach: pulsed-power
+    founded: 2023
+    sources:
+    - https://www.pacificfusion.com
+    logo: logos/pacific-fusion.webp
+    logo_source: https://www.pacificfusion.com/apple-touch-icon.png
+    logo_sha256: 63f0765fba5569a618ca1eff049c93b72c311e1567eb1a22f1259162c21d7ef1
+  princeton-fusion-systems:
+    country: US
+    hq_city: Plainsboro
+    website: https://www.princetonfusionsystems.com
+    role: developer
+    approach: frc
+    sources:
+    - https://www.princetonfusionsystems.com
+  proxima-fusion:
+    country: DE
+    hq_city: Munich
+    website: https://www.proximafusion.com
+    role: developer
+    approach: stellarator
+    founded: 2023
+    sources:
+    - https://www.proximafusion.com
+    logo: logos/proxima-fusion.webp
+    logo_source: https://cdn.prod.website-files.com/6a885fb0914308518805c50f/6aa02cc8247b2b4c85c751b5_webclip.png
+    logo_sha256: 56e0eddb987d6839cf2097a961a6135daf024664afefb8697bd9e3baccb3eba8
+  realta-fusion:
+    country: US
+    hq_city: Madison
+    website: https://realtafusion.com
+    role: developer
+    approach: mirror
+    sources:
+    - https://realtafusion.com
+    logo: logos/realta-fusion.webp
+    logo_source: https://i0.wp.com/realtafusion.com/wp-content/uploads/2023/05/cropped-icon2.png?fit=180%2C180&#038;ssl=1
+    logo_sha256: 3a0bde9854d500f5042facf86be3043741cccb2d524d532b2715388d8a2d24e5
+  renaissance-fusion:
+    country: FR
+    hq_city: Grenoble
+    website: https://renaissancefusion.com
+    role: developer
+    approach: stellarator
+    founded: 2020
+    sources:
+    - https://renaissancefusion.com
+    logo: logos/renaissance-fusion.webp
+    logo_source: https://images.squarespace-cdn.com/content/v1/634e5ea0ef0229323101ddba/49da8aaf-48d9-4f4d-8e53-1300bdc3c8a4/header_logo.png?format=1500w
+    logo_sha256: d188feed8ec0d2d3e4d1ee50828dc6178a143be101ef4db7c0ca5523a11d92fc
+  startorus-fusion:
+    country: CN
+    hq_city: Xi'an
+    website: https://www.startorus.com/
+    role: developer
+    approach: spherical-tokamak
+    founded: 2021
+    sources:
+    - https://www.startorus.com/
+    logo: logos/startorus-fusion.webp
+    logo_source: https://www.startorus.com/apple-touch-icon.png
+    logo_sha256: b1434647d1c0c4888a325399360bb12e385fa95168fda5aa0536cfe3ba471117
+  stellarex:
+    country: CA
+    hq_city: Ottawa
+    website: https://stellarex.energy
+    role: developer
+    approach: stellarator
+    sources:
+    - https://stellarex.energy
+    logo: logos/stellarex.webp
+    logo_source: https://stellarex.energy/wp-content/smush-webp/2026/02/cropped-icon-180x180.png.webp
+    logo_sha256: 5ce94a1a14f33fc30d10f9a3e97b6a0d2559d7740c76f815f7aa93d629908e2a
+  tae-technologies:
+    country: US
+    hq_city: Foothill Ranch
+    website: https://tae.com
+    role: developer
+    approach: frc
+    founded: 1998
+    sources:
+    - https://tae.com
+  thea-energy:
+    country: US
+    hq_city: Kearny
+    website: https://thea.energy
+    role: developer
+    approach: stellarator
+    founded: 2022
+    sources:
+    - https://thea.energy
+    logo: logos/thea-energy.webp
+    logo_source: https://thea.energy/wp-content/uploads/2023/04/cropped-favicon-180x180.png
+    logo_sha256: 6066daea9b6f4e1974ba8a75ed29bb8b05337b31ea4f01fa1d9e8ec0486f107d
+  tibbar-plasma-technologies:
+    country: US
+    hq_city: Los Alamos
+    website: https://www.tibbartech.com
+    role: developer
+    approach: frc
+    sources:
+    - https://www.tibbartech.com
+    logo: logos/tibbar-plasma-technologies.webp
+    logo_source: https://www.tibbartech.com/wordpress/wp-content/uploads/2023/12/cropped-cropped-WebHeader190x190_120423-180x180.png
+    logo_sha256: 0b5f6982ca0c608ea57c7dd6ca544442b4f7c6eab4d19e23f530f76e9c888799
+  tokamak-energy:
+    country: GB
+    hq_city: Oxford
+    website: https://tokamakenergy.com
+    role: developer
+    approach: spherical-tokamak
+    founded: 2009
+    sources:
+    - https://tokamakenergy.com
+  type-one-energy:
+    country: US
+    hq_city: Knoxville
+    website: https://typeoneenergy.com
+    role: developer
+    approach: stellarator
+    sources:
+    - https://typeoneenergy.com
+    logo: logos/type-one-energy.webp
+    logo_source: https://typeoneenergy.com/wp-content/uploads/2025/12/cropped-favicon-180x180.png
+    logo_sha256: f3083b7d7eb9a2f5bc9391e44ba6608191af8de1aad711d3ab0eda5b6ac6f168
+  xcimer-energy:
+    country: US
+    hq_city: Denver
+    website: https://www.xcimer.com
+    role: developer
+    approach: laser-icf
+    founded: 2022
+    sources:
+    - https://www.xcimer.com
+  zap-energy:
+    country: US
+    hq_city: Everett
+    website: https://www.zapenergy.com
+    role: developer
+    approach: pulsed-power
+    founded: 2017
+    sources:
+    - https://www.zapenergy.com
+    logo: logos/zap-energy.webp
+    logo_source: https://www.zapenergy.com/favicon/apple-touch-icon.png
+    logo_sha256: cbac64bc33509cf15b77f5ca683ff5b806528ddcde97e98759347729e317bc52

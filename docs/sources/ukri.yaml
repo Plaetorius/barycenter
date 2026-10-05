@@ -1,0 +1,17 @@
+id: ukri
+name: UKRI Gateway to Research (GtR) incl. Innovate UK, EPSRC, STFC
+owner: UK Research and Innovation
+access: api             # REST, JSON via Accept: application/json (XML default)
+endpoint: https://gtr.ukri.org/gtr/api/
+auth: none
+rate_limit: "not stated in what was read; self-limit 2 req/s (used 0.4 s sleep without issue)"
+licence: "Open Government Licence v3 (believed; verify on GtR 'about')"
+robots: "gtr.ukri.org/robots.txt returns 404 JSON (no rules)"
+yields: [grant (project fund value GBP, start/end, lead funder, grant category), lead/partner organisation roles, project abstracts]
+identifiers: [GtR organisation UUID (NOT deduplicated, same company appears 2-4 times), project UUID, RCUK grant ref (e.g. 104651)]
+cadence: weekly
+tier: A
+known_gaps: >
+  Fund value is the whole project, not the participant share. Organisation records duplicated (Tokamak Energy x3, Moltex x4, FLF x3).
+  Innovate UK programmes since ~2025 (and ARIA, UKAEA, DESNZ) not visible. EPSRC rows for company-named projects are mostly university grants where the firm is a collaborator.
+probe: docs/survey/probes/ukri.md

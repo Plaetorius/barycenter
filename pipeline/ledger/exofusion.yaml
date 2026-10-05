@@ -1,0 +1,99 @@
+company: exofusion
+name: ExoFusion
+sector: fusion
+notes: 'Built from USAspending spending_by_award search responses (POST, archived with request body in raw/manifest.jsonl, source_id
+  usaspending-post). Amount = USAspending ''Award Amount'' (cumulative federal obligation, not a ceiling and not an announced figure);
+  disbursed_usd = ''Total Outlays'' when present. Dates = ''Base Obligation Date'' (first obligation), else ''Start Date''. Search
+  was recipient-name text on awarding agency = Department of Energy over 2007-10-01..2026-09-30 and one page of up to 50 rows per
+  award-type group; awards with zero or negative net obligation are omitted. Recipient name variants not matched by the name search
+  may be missing. Government record, basis=disclosed. INFUSE awards (in-kind lab-access vouchers; no dollar amount is published on
+  the awards listing) from the ORNL INFUSE awards listing pages archived by the ledger-infuse/ledger-commonwealth-fusion-systems runs
+  (infuse.ornl.gov/awards/ and /page/N). The listing gives project title, cycle, award date, company and host lab/university; the
+  date shown is taken as announced_on. Vouchers are not cash and must not be summed with funding. VERIFIER: The INFUSE 2024 voucher''s
+  host is Penn State University. INFUSE awards pay the host lab or university to do work for the company (in-kind, no cash to the
+  company; D5: lab/university money is not company funding). Kept as amount-less voucher events for context only; they never count
+  toward raised totals and do not by themselves satisfy D1.'
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: 'Verified 2 events: ARPA-E DEAR0001995 ($499,946 obligated / $223,938 outlaid; FOA DE-FOA-0003240 CHADWICK, recipient EXOFUSION
+    INC) and INFUSE 2024 voucher (Penn State, no amount). 0 fact errors. Checked against the archived USAspending award-level search
+    (spending_level awards: one row per award, modifications already netted, so one event per award and no per-modification duplicates).
+    Award Amount = obligated to date (not a ceiling); disbursed_usd = Total Outlays, now evidenced by its own quote (1 added). announced_on
+    is the first-obligation date, not a press date. Voucher noted as university money (D5). Scope: enabling-tech (liquid-metal plasma-facing
+    components), keep. Gap: private funding not found.'
+events:
+- id: exofusion-dear0001995
+  instrument: grant
+  round_label: DEAR0001995
+  announced_on: '2025-01-14'
+  amount:
+    amount: 499946.0
+    currency: USD
+    qualifier: exact
+    usd: 499946.0
+  amount_kind: new_money
+  program: ARPA-E
+  obligated_usd: 499946.0
+  disbursed_usd: 223937.58
+  use_of_proceeds: THIS COOPERATIVE AGREEMENT IS AWARDED TO EXOFUSION, INC. FOR A PROJECT ENTITLED, ''NOVEL LIQUID METAL PLASMA F
+  evidence:
+  - field: amount
+    snapshot: fcb75d677ddafe7939ebae9733aef8b721d085be717019098670881955475d0b
+    quote: '"Award ID": "DEAR0001995", "Recipient Name": "EXOFUSION INC", "Recipient UEI": "G1ZWNLDVCSK4", "Award Amount": 499946.0'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: fcb75d677ddafe7939ebae9733aef8b721d085be717019098670881955475d0b
+    quote: '"Award Amount": 499946.0, "Total Outlays": 223937.58'
+    basis: disclosed
+  - field: announced_on
+    snapshot: fcb75d677ddafe7939ebae9733aef8b721d085be717019098670881955475d0b
+    quote: '"Base Obligation Date": "2025-01-14", "generated_internal_id": "ASST_NON_DEAR0001995_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: fcb75d677ddafe7939ebae9733aef8b721d085be717019098670881955475d0b
+    quote: '"Award ID": "DEAR0001995", "Recipient Name": "EXOFUSION INC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: fcb75d677ddafe7939ebae9733aef8b721d085be717019098670881955475d0b
+    quote: '"Description": "THIS COOPERATIVE AGREEMENT IS AWARDED TO EXOFUSION, INC. FOR A PROJECT ENTITLED, ''''NOVEL LIQUID MET'
+    basis: disclosed
+  participants:
+  - investor: ARPA-E
+    investor_slug: arpa-e
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: fcb75d677ddafe7939ebae9733aef8b721d085be717019098670881955475d0b
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: exofusion-infuse-2024-1
+  instrument: voucher
+  round_label: INFUSE 2024
+  announced_on: '2024-08-08'
+  program: INFUSE
+  evidence:
+  - field: announced_on
+    snapshot: 3f9772b8ec59d53744feb78696ee70a5bf5374e400119fd6b346a0f18241ff31
+    quote: INFUSE 2024 - August 8, 2024 | ExoFusion | Penn State University
+    basis: disclosed
+  - field: round_label
+    snapshot: 3f9772b8ec59d53744feb78696ee70a5bf5374e400119fd6b346a0f18241ff31
+    quote: INFUSE 2024 - August 8, 2024 | ExoFusion | Penn State University
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 3f9772b8ec59d53744feb78696ee70a5bf5374e400119fd6b346a0f18241ff31
+    quote: Testing Novel Liquid Metal PFC compositions
+    basis: disclosed
+  participants:
+  - investor: INFUSE (Innovation Network for Fusion Energy)
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 3f9772b8ec59d53744feb78696ee70a5bf5374e400119fd6b346a0f18241ff31
+      quote: INFUSE 2024 - August 8, 2024 | ExoFusion | Penn State University
+      basis: disclosed
+  use_of_proceeds: Testing Novel Liquid Metal PFC compositions
+agreements: []

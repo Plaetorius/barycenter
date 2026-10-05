@@ -1,0 +1,20 @@
+id: edgar
+name: SEC EDGAR (submissions API, Form D, full-text search, S-1/424B/8-K)
+owner: US Securities and Exchange Commission
+access: api            # data.sec.gov JSON + sec.gov/Archives static files + efts.sec.gov (unofficial FTS JSON)
+endpoint: https://data.sec.gov/submissions/CIK##########.json   # also https://efts.sec.gov/LATEST/search-index?q=...&forms=D ; https://www.sec.gov/Archives/edgar/data/<cik>/<adsh-nodash>/primary_doc.xml
+auth: none (descriptive User-Agent with contact required; efts and data.sec.gov return 403 without one)
+rate_limit: 10 req/s per user across all machines (SEC Fair Access, https://www.sec.gov/about/developer-resources); self-limit 1 req/s via archive tool
+licence: US government work, public domain (filings are the issuers' own disclosures; no reuse restriction on sec.gov data)
+robots: "sec.gov/robots.txt Allow /Archives/edgar/data; Disallow /cgi-bin and (via Drupal block) /search*. data.sec.gov has no robots (404). efts.sec.gov robots -> 403. Use only Archives/, data.sec.gov, efts. Do NOT use /cgi-bin/browse-edgar."
+yields: [form_d offering_amount, amount_sold, first_sale_date, investor_count, exemption (06b/3C), issuer entity, SPV vehicles; S-1/424B4/424B5 offering terms (ATM size, IPO shares x price); 8-K item 1.01/3.02 financing and merger agreements; 13G holders]
+identifiers: [cik, accession_number(adsh), file_number(021-xxxxxx for Form D), ticker, sic]
+cadence: real-time (submissions API updates seconds after acceptance); Form D bulk dataset quarterly
+tier: A
+known_gaps: >
+  Form D only exists for issuers who file (Reg D). Of 10 sampled companies: Form D by operating company found for CFS (4, last 2021-12), Helion (2, last 2015),
+  Zap (5, last 2024-07), Radiant (5, last 2025-12), X Energy Reactor Co (1, 2021); none for TerraPower, Kairos, TAE, Oklo-pre-SPAC.
+  CFS Aug-2025 and Helion Jan-2025 rounds have no Form D under the issuer CIK. Investor SPV Form Ds (Aalo 16, X-energy 7, Radiant 2, Helion 1, CFS 1) record the SPV raise, not the company round: double-count risk.
+  Form D "amount sold" is cumulative per offering and revised by D/A; offering amount can be "Indefinite". 6 of 49 sampled have sold=0. relatedPersons is personal data: never ingest.
+  efts is unofficial (undocumented, not under data.sec.gov), search window 2001+, name matching is fuzzy (X-energy query returned Strata-X etc.).
+probe: docs/survey/probes/edgar.md

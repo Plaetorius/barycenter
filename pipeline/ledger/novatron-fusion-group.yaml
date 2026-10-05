@@ -1,0 +1,194 @@
+company: novatron-fusion-group
+name: Novatron Fusion Group
+sector: fusion
+notes: >
+  Company releases (novatronfusion.com) are primary. Series A1 amount: the Mar 2025 release says "oversubscribed funding
+  round of EUR 10 million in equity"; the probe other-eu.md recorded "EUR 13M (St1)" from an unarchived search snippet
+  -- conflict, not used; the 10M (company) figure is recorded. Release dates are taken from the newsroom category page
+  list (M/D/YY). EIC Pathfinder TauEB: company release says 3 million (project total, EUR 2,944,905 per CORDIS, shared
+  among 6 participants); Novatron's own net EU contribution EUR 1,499,000 per CORDIS (project 101186012, EC signature
+  2024-10-25, start 2024-11-01), used as the event amount (quote ties the figure to the NFG participant block address; verifier confirmed the per-participant contributions sum to EUR 2,944,905). Q2 2026 recap says NFG "was awarded the EIC Accelerator", final
+  funding decision subject to grant agreement: no amount or date, so not recorded as an event. Entity note: two PICs for
+  Novatron Fusion Group AB (887579101, 880863306). Seed investors named: Climentum (lead), Industrifonden, Santander
+  InnoEnergy Climate Fund, KTH Holding, EIT InnoEnergy; no individual amounts disclosed. Possible earlier pre-seed (2022)
+  not found.
+events:
+  - id: novatron-2023-seed
+    instrument: equity
+    round_label: Seed
+    announced_on: 2023-08-29
+    amount: {amount: 5000000, currency: EUR, qualifier: exact}
+    use_of_proceeds: Build pre-commercial prototypes
+    evidence:
+      - field: amount
+        snapshot: 0045ac869b1cf574a8239be3378b1608c4d0afca78210b8689e3c150555ed08a
+        quote: "announced today the successful closure of its seed round, raising EUR 5 million"
+        basis: disclosed
+      - field: announced_on
+        snapshot: 79388b66dcdbe99f4cdef400524302ee1ad1102ff3e655f0fca6717c5cb70cbb
+        quote: "Peter Fagerberg 8/29/23"
+        basis: disclosed
+      - field: round_label
+        snapshot: 0045ac869b1cf574a8239be3378b1608c4d0afca78210b8689e3c150555ed08a
+        quote: "successful closure of its seed round"
+        basis: disclosed
+    participants:
+      - investor: Climentum Capital
+        investor_slug: climentum-capital
+        role: lead
+        evidence:
+          - field: participant
+            snapshot: 0045ac869b1cf574a8239be3378b1608c4d0afca78210b8689e3c150555ed08a
+            quote: "The round was led by Climentum Capital"
+            basis: disclosed
+      - investor: Industrifonden
+        investor_slug: industrifonden
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: 0045ac869b1cf574a8239be3378b1608c4d0afca78210b8689e3c150555ed08a
+            quote: "in syndication with Industrifonden, Santander InnoEnergy Climate Fund"
+            basis: disclosed
+      - investor: Santander InnoEnergy Climate Fund
+        investor_slug: santander-innoenergy-climate-fund
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: 0045ac869b1cf574a8239be3378b1608c4d0afca78210b8689e3c150555ed08a
+            quote: "in syndication with Industrifonden, Santander InnoEnergy Climate Fund"
+            basis: disclosed
+      - investor: KTH Holding
+        investor_slug: kth-holding
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: 0045ac869b1cf574a8239be3378b1608c4d0afca78210b8689e3c150555ed08a
+            quote: "with renewed investments by KTH Holding and EIT InnoEnergy"
+            basis: disclosed
+      - investor: EIT InnoEnergy
+        investor_slug: eit-innoenergy
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: 0045ac869b1cf574a8239be3378b1608c4d0afca78210b8689e3c150555ed08a
+            quote: "with renewed investments by KTH Holding and EIT InnoEnergy"
+            basis: disclosed
+  - id: novatron-2024-eic-pathfinder-taueb
+    instrument: grant
+    program: EIC Pathfinder (TauEB, project 101186012)
+    announced_on: 2024-12-09
+    amount: {amount: 1499000, currency: EUR, qualifier: exact}
+    evidence:
+      - field: amount
+        snapshot: 8d6ac96f2d89ae44e02bd9037293a715b05fec8481dae26630ad39ed37564f33
+        quote: "€ 1 499 000,00 Address MISSIONSVAGEN 12"
+        basis: disclosed
+      - field: announced_on
+        snapshot: 79388b66dcdbe99f4cdef400524302ee1ad1102ff3e655f0fca6717c5cb70cbb
+        quote: "Guest User 12/9/24"
+        basis: disclosed
+    participants:
+      - investor: European Innovation Council (EIC Pathfinder)
+        investor_slug: eic
+        role: grantor
+        evidence:
+          - field: participant
+            snapshot: addaff79ff93eb875db58cfc479602984be8d53d0ff400eaf1de8182138f6210
+            quote: "funded by the prestigious EIC Pathfinder Program"
+            basis: disclosed
+  - id: novatron-2025-series-a1
+    instrument: equity
+    round_label: Series A1
+    announced_on: 2025-03-19
+    amount: {amount: 10000000, currency: EUR, qualifier: exact}
+    evidence:
+      - field: amount
+        snapshot: bdb7e41488c02c8d0b426a6b3f1f025dc63c365b2d010d913d51f2db54ac889d
+        quote: "the oversubscribed funding round of €10 million in equity"
+        basis: disclosed
+      - field: announced_on
+        snapshot: 79388b66dcdbe99f4cdef400524302ee1ad1102ff3e655f0fca6717c5cb70cbb
+        quote: "Jeanette Mattsson 3/19/25"
+        basis: disclosed
+      - field: round_label
+        snapshot: bdb7e41488c02c8d0b426a6b3f1f025dc63c365b2d010d913d51f2db54ac889d
+        quote: "successful closing of its Series A1 funding round"
+        basis: disclosed
+    participants:
+      - investor: St1
+        investor_slug: st1
+        role: lead
+        evidence:
+          - field: participant
+            snapshot: bdb7e41488c02c8d0b426a6b3f1f025dc63c365b2d010d913d51f2db54ac889d
+            quote: "As lead investor, St1 will provide long-term value"
+            basis: disclosed
+      - investor: TomEnterprise
+        investor_slug: tomenterprise
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: bdb7e41488c02c8d0b426a6b3f1f025dc63c365b2d010d913d51f2db54ac889d
+            quote: "new investors, including TomEnterprise, Unit E Limited and Axon Partners Group"
+            basis: disclosed
+      - investor: Unit E Limited
+        investor_slug: unit-e
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: bdb7e41488c02c8d0b426a6b3f1f025dc63c365b2d010d913d51f2db54ac889d
+            quote: "new investors, including TomEnterprise, Unit E Limited and Axon Partners Group"
+            basis: disclosed
+      - investor: Axon Partners Group
+        investor_slug: axon-partners-group
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: bdb7e41488c02c8d0b426a6b3f1f025dc63c365b2d010d913d51f2db54ac889d
+            quote: "new investors, including TomEnterprise, Unit E Limited and Axon Partners Group"
+            basis: disclosed
+      - investor: Climentum Capital
+        investor_slug: climentum-capital
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: bdb7e41488c02c8d0b426a6b3f1f025dc63c365b2d010d913d51f2db54ac889d
+            quote: "existing investors: Climentum Capital, Santander InnoEnergy Climate Fund, Granitor and Industrifonden"
+            basis: disclosed
+      - investor: Santander InnoEnergy Climate Fund
+        investor_slug: santander-innoenergy-climate-fund
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: bdb7e41488c02c8d0b426a6b3f1f025dc63c365b2d010d913d51f2db54ac889d
+            quote: "existing investors: Climentum Capital, Santander InnoEnergy Climate Fund, Granitor and Industrifonden"
+            basis: disclosed
+      - investor: Granitor
+        investor_slug: granitor
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: bdb7e41488c02c8d0b426a6b3f1f025dc63c365b2d010d913d51f2db54ac889d
+            quote: "existing investors: Climentum Capital, Santander InnoEnergy Climate Fund, Granitor and Industrifonden"
+            basis: disclosed
+      - investor: Industrifonden
+        investor_slug: industrifonden
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: bdb7e41488c02c8d0b426a6b3f1f025dc63c365b2d010d913d51f2db54ac889d
+            quote: "existing investors: Climentum Capital, Santander InnoEnergy Climate Fund, Granitor and Industrifonden"
+            basis: disclosed
+agreements: []
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  'on': 2026-10-05
+  note: >-
+    1 correction: the EIC Pathfinder amount quote was a bare figure; replaced with a quote anchored to the NFG block
+    (amount followed by NFG's address). Adjacency confirmed: CORDIS contributions KTH 591,000 + KIPT 221,875 + NFG
+    1,499,000 + KIC InnoEnergy SE 70,625 (+ third parties 158,030 and 16,250) + UKAEA 388,125 = 2,944,905, so the
+    company's '3 million' is the project total and the NFG share is EUR 1,499,000. Seed EUR5M and Series A1 EUR10M equity
+    match their releases; leads only where stated (Climentum; St1 'as lead investor'). Dates come from the newsroom
+    list (M/D/YY) and match the release pages (seed 'Aug 29'). Not confirmed: the probe's EUR13M A1 figure (likely incl.
+    non-equity), EIC Accelerator award (no amount), any 2022 pre-seed.

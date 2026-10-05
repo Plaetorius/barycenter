@@ -1,0 +1,15 @@
+id: fx
+name: FX (ECB via Frankfurter) and inflation (FRED CPI)
+owner: Frankfurter (open source) / ECB; St. Louis Fed (FRED) / BLS
+access: api
+endpoint: "https://api.frankfurter.dev/v1/{date}?base=EUR&symbols=USD ; https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCSL"
+auth: "Frankfurter none; FRED CSV none, FRED JSON API needs free key (HTTP 400 without)"
+rate_limit: Frankfurter no quotas stated; FRED unpublished for CSV
+licence: "ECB reference rates (provider terms); FRED: credit FRED, keep copyright notices, non-commercial default, check commercial use; CPIAUCSL is BLS data"
+robots: allows
+yields: [daily EUR reference rates since 1999-01-04, monthly CPI-U since 1947-01]
+identifiers: [currency code, date, series_id]
+cadence: daily for FX, monthly for CPI
+tier: A
+known_gaps: "Weekend/holiday dates return previous working day; ~30 ECB currencies only; latest CPI lags ~5-6 weeks; company-stated USD conversions (e.g. Proxima 411M EUR = $468M) differ slightly from ECB rate."
+probe: docs/survey/probes/fx.md

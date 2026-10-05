@@ -1,0 +1,12 @@
+# Reference totals for the coverage section. Reference only: never cited as the source of a fact.
+benchmarks:
+  - id: fusion-report-lifetime
+    label: The Fusion Report, lifetime private fusion funding as of 2026-06-30
+    usd: 11520000000
+    scope: fusion
+    url: https://thefusionreport.substack.com/p/commercial-fusion-energy-funding
+  - id: fia-since-2021
+    label: Fusion Industry Association, private fusion investment since 2021 (report 2026)
+    usd: 14240000000
+    scope: fusion
+    url: https://www.neimagazine.com/news/fusion-industry-attracts-record-annual-funding-of-4-48bn/

@@ -1,0 +1,281 @@
+company: nano-nuclear-energy
+name: NANO Nuclear Energy Inc.
+sector: fission
+notes: >
+  Public company (Nasdaq: NNE, CIK 1923891, fiscal year ends Sep 30). Primary evidence is SEC EDGAR (8-K, 424B4/424B5, 10-K
+  for FY2025 filed 2025-12-18, Form D XML); data.sec.gov submissions snapshot 57c0ac6c4a83 was used to enumerate filings.
+  Census slug nano-nuclear-energy (universe-fission.csv). Convention for public-company offerings: one event per
+  offering/programme. IPO, July 2024 and October 2024 follow-ons are recorded at the base firm-commitment gross amount; the
+  over-allotment closings are separate evidence items on the same event (IPO +$1,537,500 on 2024-05-22; July 2024 +about $2.7M
+  on 2024-07-18; Oct 2024 +about $5.4M on 2024-10-29, per the FY2025 10-K and 8-Ks) and are NOT added to the stated amount.
+  Pre-IPO rounds (Seed/Angel/Series A/Series B) are from the IPO prospectus 424B4 (period text only, so announced_on is the
+  first day of the month in which the round began and closed_on is the last day of the month it ended) and corroborated by four Form D filings (2022-04-27 $290,000 sold, 18 investors; 2023-02-16 $3,681,869,
+  56 investors; 2023-06-08 $1,945,000, 12 investors; 2024-01-23 $2,166,437, 14 investors). The Form D amounts do not map
+  one-to-one to prospectus rounds: Series A $1,945,000 matches the 2023-06 Form D exactly; Series B is $2,466,437 in the
+  prospectus/10-K (822,144 shares at $3.00) but the Form D shows $2,166,437 sold (the other $360,000 was received after
+  Dec 31 2023 per the prospectus). The prospectus figure is used. Also disclosed: a $5,000,000 put-right subscription for
+  2,000,000 shares at $2.50 signed in FY2023 as part of the Series A round (mezzanine equity) - not recorded as a separate
+  event because no date is given. The 2022-04 Form D ($290,000) is not mapped to a round. No investor in any pre-IPO round,
+  PIPE or offering is named in the filings (unnamed institutional investors; placement agents Titan Partners Group for 2025
+  PIPEs, Benchmark Company as IPO/follow-on underwriter), so no participants are recorded; underwriters/agents are not
+  funders. Oct 2024 follow-on: the 8-K says closing on 2024-10-25 while the 10-K says 2024-10-23 (the 10-K date is the
+  pricing/underwriting date); 8-K closing date used. Shelf registrations (S-3 up to $900M, effective 2025) are capacity, not
+  events. The $400M ATM (sales agreement 2025-07-25; prospectus supplement filed 2026-03-13) is one event, ceiling recorded
+  as up_to and amount_kind ceiling; the 10-Q for the quarter ended 2026-06-30 reports the first ATM sales ($26.75M, June 2026), recorded as event nano-atm-sales-2026-06 (verifier). Not evidenced / not recorded: any DOE cash grant
+  (none found; only an unfunded-amount GAIN voucher and a subcontract under DOE's LEU Acquisition Program, no value stated);
+  USAspending was not queried because the archive CLI is GET-only and the search endpoint is POST. Nano's own $2.0M equity
+  investment in LIS Technologies (Aug 2024) is an outflow and is not recorded. Acquisitions (USNC assets $8.5M 2024-12, STS
+  up to $13.0M 2026-05) are not funding; USNC and Radnostix deals are recorded as agreements (type partnership, nearest enum
+  for asset purchases). HALEU Energy Fuel Inc. is a wholly-owned subsidiary (the acquirer in the Radnostix deal).
+events:
+  - id: nano-seed-2022
+    instrument: equity
+    round_label: Seed
+    announced_on: 2022-03-01
+    closed_on: 2022-04-30
+    amount: {amount: 375000, currency: USD, qualifier: exact}
+    evidence:
+      - {field: amount, snapshot: "df880caa621b86756ff7a898685a5dcdcf6cef809aae9b5db7f845f48561cd69", quote: "the Company sold 7,500,000 shares of common stock at a price of $0.05 per share for proceeds of $375,000 as part of the Company’s Seed Round", basis: disclosed}
+      - {field: announced_on, snapshot: "df880caa621b86756ff7a898685a5dcdcf6cef809aae9b5db7f845f48561cd69", quote: "The Seed Round began in March 2022 and ended in April 2022.", basis: disclosed}
+      - {field: round_label, snapshot: "df880caa621b86756ff7a898685a5dcdcf6cef809aae9b5db7f845f48561cd69", quote: "as part of the Company’s Seed Round", basis: disclosed}
+  - id: nano-angel-2022
+    instrument: equity
+    round_label: Angel Round
+    announced_on: 2022-04-01
+    closed_on: 2023-02-28
+    amount: {amount: 4146869, currency: USD, qualifier: exact}
+    evidence:
+      - {field: amount, snapshot: "df880caa621b86756ff7a898685a5dcdcf6cef809aae9b5db7f845f48561cd69", quote: "the Company sold 2,326,500 shares of common stock at a price of $1.00 per share for proceeds of $2,326,500 as part of the Company’s Angel Round", basis: disclosed}
+      - {field: amount, snapshot: "df880caa621b86756ff7a898685a5dcdcf6cef809aae9b5db7f845f48561cd69", quote: "the Company sold 1,820,369 shares of common stock at a price of $1.00 per share for proceeds of $1,820,369 as part of the Company’s Angel Round", basis: disclosed}
+      - {field: announced_on, snapshot: "df880caa621b86756ff7a898685a5dcdcf6cef809aae9b5db7f845f48561cd69", quote: "The Angel Round began in April 2022 and ended in February 2023.", basis: disclosed}
+      - {field: round_label, snapshot: "df880caa621b86756ff7a898685a5dcdcf6cef809aae9b5db7f845f48561cd69", quote: "as part of the Company’s Angel Round", basis: disclosed}
+      - {field: corroboration, snapshot: "f5d9b9db6c61acb7296e45bcb013f656921b8a34c6bcb73ed0852a83b9afe66e", quote: "2023-02-08 false true false 0 3681869 3681869 0 false 56", basis: disclosed}
+  - id: nano-series-a-2023
+    instrument: equity
+    round_label: Series A
+    announced_on: 2023-04-01
+    closed_on: 2023-06-30
+    amount: {amount: 1945000, currency: USD, qualifier: exact}
+    evidence:
+      - {field: amount, snapshot: "df880caa621b86756ff7a898685a5dcdcf6cef809aae9b5db7f845f48561cd69", quote: "the Company sold 778,000 shares of common stock at a price of $2.50 per share for proceeds of $1,945,000 as part of the Company’s Series A Round", basis: disclosed}
+      - {field: announced_on, snapshot: "df880caa621b86756ff7a898685a5dcdcf6cef809aae9b5db7f845f48561cd69", quote: "The Series A Round began in April 2023 and ended in June 2023.", basis: disclosed}
+      - {field: round_label, snapshot: "df880caa621b86756ff7a898685a5dcdcf6cef809aae9b5db7f845f48561cd69", quote: "as part of the Company’s Series A Round", basis: disclosed}
+      - {field: corroboration, snapshot: "ffaeb7d49da15d2edaf188452e605a857730ab81904533c2e5cfb11e884d74fb", quote: "2023-06-02 false true false 0 1945000 1945000 0 false 12", basis: disclosed}
+  - id: nano-series-b-2024
+    instrument: equity
+    round_label: Series B
+    announced_on: 2023-12-01
+    closed_on: 2024-01-31
+    amount: {amount: 2466437, currency: USD, qualifier: exact}
+    evidence:
+      - {field: amount, snapshot: "df880caa621b86756ff7a898685a5dcdcf6cef809aae9b5db7f845f48561cd69", quote: "sold and issued 822,144 common shares at a price of $3.00 per common share for gross proceeds of $2,466,437 in the Series B Round", basis: disclosed}
+      - {field: announced_on, snapshot: "71abe29ae8d18ca903aa50f1b077670c65ec6ed6f4d9e8b8ffcae31c5fcf0fda", quote: "began in December 2023 and ended in January 2024", basis: disclosed}
+      - {field: round_label, snapshot: "df880caa621b86756ff7a898685a5dcdcf6cef809aae9b5db7f845f48561cd69", quote: "The Series B Round was completed in January 2024.", basis: disclosed}
+      - {field: corroboration, snapshot: "df2bf65e29984ae5ea491a806edf4ca47ad1f6b712fcb5d65a9c0c04f7ed61d4", quote: "2024-01-08 false true false 0 2166437 2166437 0 false 14", basis: disclosed}
+  - id: nano-ipo-2024
+    instrument: ipo
+    round_label: "Initial public offering (Nasdaq: NNE, $4.00/share, Benchmark Company sole book-runner)"
+    announced_on: 2024-05-07
+    closed_on: 2024-05-10
+    amount: {amount: 10250000, currency: USD, qualifier: approx}
+    evidence:
+      - {field: amount, snapshot: "1f85a74d333f3f1c281bfcd388f034c8db68c131fa71ed7eccc89950c341d32e", quote: "generating gross proceeds of approximately $10,250,000", basis: disclosed}
+      - {field: announced_on, snapshot: "1f85a74d333f3f1c281bfcd388f034c8db68c131fa71ed7eccc89950c341d32e", quote: "On May 7, 2024, Nano Nuclear Energy Inc., a Nevada corporation,", basis: disclosed}
+      - {field: round_label, snapshot: "1f85a74d333f3f1c281bfcd388f034c8db68c131fa71ed7eccc89950c341d32e", quote: "firm commitment underwritten initial public offering", basis: disclosed}
+      - {field: over_allotment, snapshot: "0d65a7e2e8192e4511f636450c271133ca8584a41dccb4c3bda02e62f3db3e0f", quote: "generating gross proceeds to the Company of $1,537,500", basis: disclosed}
+  - id: nano-follow-on-2024-07
+    instrument: follow_on
+    round_label: "July 2024 firm-commitment follow-on (units, $20.00)"
+    announced_on: 2024-07-11
+    closed_on: 2024-07-15
+    amount: {amount: 18000000, currency: USD, qualifier: approx}
+    evidence:
+      - {field: amount, snapshot: "e1c1034dfeb61433a850cc71258186100892591996f9393d1364d84a80c1a7fc", quote: "generating gross proceeds of approximately $18.00 million", basis: disclosed}
+      - {field: announced_on, snapshot: "7c536edc93bfb7f441db957dc369fb0bf65b40cb9700edf92eda316c65c0e6fc", quote: "On July 11, 2024, NANO Nuclear Energy Inc., a Nevada corporation,", basis: disclosed}
+      - {field: round_label, snapshot: "7c536edc93bfb7f441db957dc369fb0bf65b40cb9700edf92eda316c65c0e6fc", quote: "an offering price of $20.00 per Unit", basis: disclosed}
+      - {field: over_allotment, snapshot: "71abe29ae8d18ca903aa50f1b077670c65ec6ed6f4d9e8b8ffcae31c5fcf0fda", quote: "generating gross proceeds to the Company of approximately $ 2.7 million", basis: disclosed}
+  - id: nano-follow-on-2024-10
+    instrument: follow_on
+    round_label: "October 2024 firm-commitment follow-on (units, $17.00)"
+    announced_on: 2024-10-23
+    closed_on: 2024-10-25
+    amount: {amount: 36000000, currency: USD, qualifier: approx}
+    evidence:
+      - {field: amount, snapshot: "82c7bfb6c2f8a7335d68e62eeb926f3e6e98c4a9dc408846a57a6bdb14431807", quote: "generating gross proceeds of approximately $36 million", basis: disclosed}
+      - {field: announced_on, snapshot: "208f45d9ffe424fbbf901fa50ffbf5d6ba751ce8af51b3d432647a154c76ab61", quote: "On October 23, 2024, Nano Nuclear Energy Inc., a Nevada corporation,", basis: disclosed}
+      - {field: round_label, snapshot: "208f45d9ffe424fbbf901fa50ffbf5d6ba751ce8af51b3d432647a154c76ab61", quote: "an offering price of $17.00 per Unit", basis: disclosed}
+      - {field: over_allotment, snapshot: "71abe29ae8d18ca903aa50f1b077670c65ec6ed6f4d9e8b8ffcae31c5fcf0fda", quote: "generating gross proceeds to the Company of approximately $ 5.4 million", basis: disclosed}
+  - id: nano-pipe-2024-11
+    instrument: equity
+    round_label: November 2024 private placement (shares + warrants)
+    announced_on: 2024-11-24
+    closed_on: 2024-11-27
+    amount: {amount: 60000048, currency: USD, qualifier: exact}
+    use_of_proceeds: "General working capital and general corporate purposes, which could include potential acquisitions of complementary businesses or assets"
+    evidence:
+      - {field: amount, snapshot: "5fc3163de62eb21173116e1b3558e27773199b60a7d75bad8ee5adb0244bc5e8", quote: "an aggregate of $60,000,048 of securities of the Company in a private placement", basis: disclosed}
+      - {field: announced_on, snapshot: "5fc3163de62eb21173116e1b3558e27773199b60a7d75bad8ee5adb0244bc5e8", quote: "On November 24, 2024, Nano Nuclear Energy Inc., a Nevada corporation", basis: disclosed}
+      - {field: closed_on, snapshot: "5fc3163de62eb21173116e1b3558e27773199b60a7d75bad8ee5adb0244bc5e8", quote: "The Private Placement closed on November 27, 2024.", basis: disclosed}
+      - {field: use_of_proceeds, snapshot: "5fc3163de62eb21173116e1b3558e27773199b60a7d75bad8ee5adb0244bc5e8", quote: "general working capital and general corporate purposes, which could include potential acquisitions of complementary businesses or assets", basis: disclosed}
+  - id: nano-pipe-2025-05
+    instrument: equity
+    round_label: "May 2025 private placement ($27.00/share)"
+    announced_on: 2025-05-26
+    closed_on: 2025-05-28
+    amount: {amount: 105000003, currency: USD, qualifier: exact}
+    use_of_proceeds: "Research and development, marketing, general working capital and general corporate purposes, which could include potential acquisitions"
+    evidence:
+      - {field: amount, snapshot: "01cc43abf19a1bff3fe41d7a4b5a03792c02b959388f893b8cec961d3d38a342", quote: "for gross proceeds of $105,000,003", basis: disclosed}
+      - {field: announced_on, snapshot: "01cc43abf19a1bff3fe41d7a4b5a03792c02b959388f893b8cec961d3d38a342", quote: "On May 26, 2025, Nano Nuclear Energy Inc., a Nevada corporation", basis: disclosed}
+      - {field: closed_on, snapshot: "01cc43abf19a1bff3fe41d7a4b5a03792c02b959388f893b8cec961d3d38a342", quote: "The Private Placement closed on May 28, 2025.", basis: disclosed}
+      - {field: use_of_proceeds, snapshot: "01cc43abf19a1bff3fe41d7a4b5a03792c02b959388f893b8cec961d3d38a342", quote: "The Company intends to use these net proceeds for research and development, marketing, general working capital and general corporate purposes", basis: disclosed}
+  - id: nano-atm-2025-07
+    instrument: follow_on
+    round_label: "ATM programme (sales agreement 2025-07-25 with TD Cowen, UBS, Piper Sandler; $400M)"
+    announced_on: 2025-07-25
+    amount: {amount: 400000000, currency: USD, qualifier: up_to}
+    amount_kind: ceiling
+    use_of_proceeds: "Advancement and development of technologies, particularly the KRONOS MMR reactor, general corporate purposes, possible acquisitions, and working capital"
+    evidence:
+      - {field: amount, snapshot: "fd6210290b8acda50988e475d427053877a25773d3c015f10fd4bc61d3cc48ad", quote: "we may offer and sell up to $400,000,000 of shares of our common stock from time to time through or to the Sales Agents", basis: disclosed}
+      - {field: announced_on, snapshot: "71abe29ae8d18ca903aa50f1b077670c65ec6ed6f4d9e8b8ffcae31c5fcf0fda", quote: "On July 25, 2025, we entered into a sales agreement", basis: disclosed}
+      - {field: round_label, snapshot: "fd6210290b8acda50988e475d427053877a25773d3c015f10fd4bc61d3cc48ad", quote: "“At the market offering” that may be made from time to time through our Sales Agents", basis: disclosed}
+      - {field: use_of_proceeds, snapshot: "fd6210290b8acda50988e475d427053877a25773d3c015f10fd4bc61d3cc48ad", quote: "We intend to use the net proceeds from these sales for the advancement and development of our technologies, particularly our KRONOS MMR™ reactor", basis: disclosed}
+  - id: nano-atm-sales-2026-06
+    instrument: follow_on
+    round_label: "ATM programme sales, June 2026 (1,000,000 shares at $26.75; first sales under the 2025 ATM)"
+    announced_on: 2026-08-12
+    closed_on: 2026-06-30
+    amount: {amount: 26750000, currency: USD, qualifier: exact}
+    evidence:
+      - {field: amount, snapshot: "7319fbdbd8b6ced7066e198d0b6ebad4400d514e3fc581713e3a93b99534e926", quote: "the Company sold 1,000,000 Placement Shares under the 2025 ATM Program at a price of $ 26.75 per share, resulting in gross proceeds of $ 26,750,000", basis: disclosed}
+      - {field: announced_on, snapshot: "7319fbdbd8b6ced7066e198d0b6ebad4400d514e3fc581713e3a93b99534e926", quote: "Date: August 12, 2026 By: /s/ James Walker", basis: disclosed}
+      - {field: closed_on, snapshot: "7319fbdbd8b6ced7066e198d0b6ebad4400d514e3fc581713e3a93b99534e926", quote: "Sales under the 2025 ATM Program commenced in June 2026", basis: disclosed}
+      - {field: remaining_capacity, snapshot: "7319fbdbd8b6ced7066e198d0b6ebad4400d514e3fc581713e3a93b99534e926", quote: "No additional Placement Shares have been sold under the 2025 ATM Program from July 1, 2026 through the date of this Report", basis: disclosed}
+  - id: nano-pipe-2025-10
+    instrument: equity
+    round_label: "October 2025 private placement ($47.11/share)"
+    announced_on: 2025-10-07
+    closed_on: 2025-10-10
+    amount: {amount: 400000000, currency: USD, qualifier: approx}
+    use_of_proceeds: "Advance development, construction and regulatory licensing of the KRONOS MMR Energy System, other micro reactor projects, possible strategic acquisitions, and general corporate purposes"
+    evidence:
+      - {field: amount, snapshot: "153c66773ed2f81697f7638cb19cebd7d86702281f9dfc2910f83ca27110c8c5", quote: "for gross proceeds of approximately $400,000,000", basis: disclosed}
+      - {field: announced_on, snapshot: "153c66773ed2f81697f7638cb19cebd7d86702281f9dfc2910f83ca27110c8c5", quote: "On October 7, 2025, Nano Nuclear Energy Inc., a Nevada corporation", basis: disclosed}
+      - {field: closed_on, snapshot: "153c66773ed2f81697f7638cb19cebd7d86702281f9dfc2910f83ca27110c8c5", quote: "The Private Placement closed on October 10, 2025.", basis: disclosed}
+      - {field: use_of_proceeds, snapshot: "153c66773ed2f81697f7638cb19cebd7d86702281f9dfc2910f83ca27110c8c5", quote: "advance development, construction and regulatory licensing activities", basis: disclosed}
+  - id: nano-gain-voucher-2026
+    instrument: voucher
+    round_label: DOE GAIN voucher NE-26-38854 (ORNL SCALE/TSUNAMI uncertainty quantification support for KRONOS MMR)
+    announced_on: 2026-04-09
+    program: "DOE Gateway for Accelerated Innovation in Nuclear (GAIN)"
+    evidence:
+      - {field: announced_on, snapshot: "79ba5be9290a7a13128baf2ef54f413773a381ceb6407a275e020f4115272343", quote: "On April 9, 2026, Nano Nuclear Energy Inc. (the “Company”) issued a press release announcing that it has been awarded", basis: disclosed}
+      - {field: round_label, snapshot: "79ba5be9290a7a13128baf2ef54f413773a381ceb6407a275e020f4115272343", quote: "awarded a Gateway for Accelerated Innovations in Nuclear (GAIN) Voucher, NE-26-38854", basis: disclosed}
+    participants:
+      - investor: "U.S. Department of Energy (DOE)"
+        investor_slug: doe-gain-infuse
+        role: grantor
+        evidence:
+          - {field: participant, snapshot: "79ba5be9290a7a13128baf2ef54f413773a381ceb6407a275e020f4115272343", quote: "Voucher, NE-26-38854, by U.S. Department of Energy (DOE) relating to its KRONOS MMR™ Energy System", basis: disclosed}
+agreements:
+  - id: nano-radnostix-apa-2026
+    counterparty: "Radnostix, Inc. (f/k/a International Isotopes, Inc.) and International Isotopes Fluorine Products, Inc."
+    counterparty_slug: radnostix
+    type: partnership
+    binding: definitive
+    announced_on: 2026-10-01
+    value: {amount: 13500000, currency: USD, qualifier: approx}
+    summary: "Asset Purchase Agreement dated 2026-09-28 (press release 2026-10-01) by which Nano and its subsidiary HALEU Energy Fuel Inc. agree to buy Sellers' U.S. nuclear fuel processing assets (NRC Material License SUB-1011, NM air permit, patents, design materials for the planned Lea County NM DUF6 deconversion and fluorine extraction plant): $9.5M cash (less $0.5M escrowed deposit) plus $4M restricted stock; closing expected in 90-120 days subject to NRC consent. Value is the sum of the two stated components. Acquisition, not funding."
+    evidence:
+      - {field: agreement, snapshot: "f4e5c2ef18641c125a7bd69e302cb3efa62b7a15bbe43d0a6318ae5cfaa4b60c", quote: "entered into an Asset Purchase Agreement (the “Purchase Agreement”) with Radnostix, Inc. (f/k/a International Isotopes, Inc.)", basis: disclosed}
+      - {field: announced_on, snapshot: "f4e5c2ef18641c125a7bd69e302cb3efa62b7a15bbe43d0a6318ae5cfaa4b60c", quote: "On October 1, 2026, the Company issued a press release announcing the acquisition of RNX and IIFP.", basis: disclosed}
+      - {field: value, snapshot: "f4e5c2ef18641c125a7bd69e302cb3efa62b7a15bbe43d0a6318ae5cfaa4b60c", quote: "pay Sellers $9.5 million in cash", basis: disclosed}
+      - {field: value, snapshot: "f4e5c2ef18641c125a7bd69e302cb3efa62b7a15bbe43d0a6318ae5cfaa4b60c", quote: "issue to RNX $4 million of restricted shares of the Company’s common stock", basis: disclosed}
+  - id: nano-usnc-apa-2024
+    counterparty: "Ultra Safe Nuclear Corporation (Chapter 11 debtor) and affiliates"
+    counterparty_slug: ultra-safe-nuclear
+    type: partnership
+    binding: definitive
+    announced_on: 2024-12-18
+    value: {amount: 8500000, currency: USD, qualifier: exact}
+    summary: "Asset Purchase Agreement for USNC's micro modular reactor (now KRONOS MMR) and Pylon transportable reactor (now LOKI MMR) businesses out of Chapter 11, $8.5M cash; closing 8-K 2025-01-14, Canadian-entity piece completed later (8-Ks 2025-08-20, 2025-10-22). Acquisition, not funding."
+    evidence:
+      - {field: agreement, snapshot: "00254d0a5857fd3506fce4de083e3e4dadc53b615bc82845cbb7e6f401bb9acf", quote: "for a total purchase price of $8,500,000 in cash", basis: disclosed}
+      - {field: announced_on, snapshot: "00254d0a5857fd3506fce4de083e3e4dadc53b615bc82845cbb7e6f401bb9acf", quote: "On December 18, 2024, Nano Nuclear Energy Inc., a Nevada corporation", basis: disclosed}
+      - {field: value, snapshot: "00254d0a5857fd3506fce4de083e3e4dadc53b615bc82845cbb7e6f401bb9acf", quote: "for a total purchase price of $8,500,000 in cash", basis: disclosed}
+  - id: nano-uiuc-sponsored-research
+    counterparty: "The Board of Trustees of the University of Illinois (UIUC)"
+    counterparty_slug: university-of-illinois
+    type: partnership
+    binding: definitive
+    announced_on: 2025-03-29
+    summary: "Sponsored Research Agreement (effective 2022-01-01, assigned from USNC to Nano by Amendment No. 2 on 2025-03-29, term to 2027-02-28) under which Nano and UIUC construct, license and deploy a KRONOS MMR research and test reactor on the UIUC campus; NRC construction permit application submitted 2026-04-02 and accepted 2026-05-20."
+    evidence:
+      - {field: agreement, snapshot: "71abe29ae8d18ca903aa50f1b077670c65ec6ed6f4d9e8b8ffcae31c5fcf0fda", quote: "will construct, obtain regulatory approval for, and deploy a KRONOS MMR™ research and test reactor on the UIUC campus", basis: disclosed}
+      - {field: announced_on, snapshot: "71abe29ae8d18ca903aa50f1b077670c65ec6ed6f4d9e8b8ffcae31c5fcf0fda", quote: "On March 29, 2025, we executed a Sponsored Research Agreement Amendment No. 2", basis: disclosed}
+  - id: nano-inl-spp-2023
+    counterparty: "Idaho National Laboratory (managed by Battelle Energy Alliance for DOE)"
+    counterparty_slug: idaho-national-laboratory
+    type: gov_contract
+    binding: definitive
+    announced_on: 2023-02-14
+    summary: "Strategic Partnership Project agreement for an INL Expert Review Panel of the ZEUS microreactor design, managed by BEA for DOE; no dollar value stated. Also 200 hours of INL subject-matter-expert support through NRIC."
+    evidence:
+      - {field: agreement, snapshot: "71abe29ae8d18ca903aa50f1b077670c65ec6ed6f4d9e8b8ffcae31c5fcf0fda", quote: "On February 14, 2023, we entered into a Strategic Partnership Project (SPP) agreement with INL for an Expert Review Panel of our ZEUS™ microreactor design.", basis: disclosed}
+      - {field: announced_on, snapshot: "71abe29ae8d18ca903aa50f1b077670c65ec6ed6f4d9e8b8ffcae31c5fcf0fda", quote: "On February 14, 2023, we entered into a Strategic Partnership Project (SPP) agreement with INL", basis: disclosed}
+  - id: nano-doe-leu-acquisition-2024
+    counterparty: "U.S. Department of Energy (LEU Acquisition Program; prime contractor LIS Technologies)"
+    counterparty_slug: doe-ne
+    type: gov_contract
+    binding: definitive
+    announced_on: 2024-12-01
+    summary: "Nano and LIS Technologies (prime) selected by DOE as one of six contract awardees in the LEU Acquisition Program; Nano is key subcontractor. No value stated. announced_on is the month only (December 2024; day not given, set to the 1st)."
+    evidence:
+      - {field: agreement, snapshot: "71abe29ae8d18ca903aa50f1b077670c65ec6ed6f4d9e8b8ffcae31c5fcf0fda", quote: "LIST and our company were selected by the DOE to participate as one of six contract awardees in the DOE’s LEU Acquisition Program", basis: disclosed}
+      - {field: announced_on, snapshot: "71abe29ae8d18ca903aa50f1b077670c65ec6ed6f4d9e8b8ffcae31c5fcf0fda", quote: "In December 2024, we announced that LIST and our company were selected by the DOE", basis: disclosed}
+  - id: nano-doe-haleu-consortium-2023
+    counterparty: "U.S. Department of Energy (HALEU Consortium)"
+    counterparty_slug: doe-ne
+    type: partnership
+    binding: mou
+    announced_on: 2023-02-01
+    summary: "Founding member of the DOE HALEU Consortium (membership, not a funded award; binding level uncertain, recorded as mou). announced_on is the month only (February 2023)."
+    evidence:
+      - {field: agreement, snapshot: "71abe29ae8d18ca903aa50f1b077670c65ec6ed6f4d9e8b8ffcae31c5fcf0fda", quote: "In February 2023, we were selected as an official founding member of the DOE’s new HALEU Consortium", basis: disclosed}
+      - {field: announced_on, snapshot: "71abe29ae8d18ca903aa50f1b077670c65ec6ed6f4d9e8b8ffcae31c5fcf0fda", quote: "In February 2023, we were selected as an official founding member", basis: disclosed}
+  - id: nano-digihost-mou-2024
+    counterparty: "Digihost Technology Inc."
+    counterparty_slug: digihost-technology
+    type: partnership
+    binding: mou
+    announced_on: 2024-12-12
+    summary: "Non-binding MOU to advance transition to carbon-free energy at Digihost's 60 MW plant in upstate New York; joint NYSERDA RFI response 2024-12-16."
+    evidence:
+      - {field: agreement, snapshot: "71abe29ae8d18ca903aa50f1b077670c65ec6ed6f4d9e8b8ffcae31c5fcf0fda", quote: "we entered into a non-binding memorandum of understanding with Digihost to advance the transition to carbon-free energy at Digihost’s 60-megawatt power plant", basis: disclosed}
+      - {field: announced_on, snapshot: "71abe29ae8d18ca903aa50f1b077670c65ec6ed6f4d9e8b8ffcae31c5fcf0fda", quote: "on December 12, 2024, we entered into a non-binding memorandum of understanding with Digihost", basis: disclosed}
+  - id: nano-dioxitek-mou-2025
+    counterparty: "Dioxitek S.A. (Argentina)"
+    counterparty_slug: dioxitek
+    type: fuel_supply
+    binding: mou
+    announced_on: 2025-08-01
+    summary: "Non-binding MOU (executed August 2025, day not given) framework to assess Argentine natural uranium conversion capacity; later a private proposal for a UF6 production facility (8-K 2026-04-08)."
+    evidence:
+      - {field: agreement, snapshot: "6d02265abcbc8652fd81e592465a220b4d1ce157ed0a50536c0de3d4d92f4193", quote: "which established a non-binding framework to assess the current capacities of natural uranium conversion and supporting infrastructure in Argentina", basis: disclosed}
+      - {field: announced_on, snapshot: "6d02265abcbc8652fd81e592465a220b4d1ce157ed0a50536c0de3d4d92f4193", quote: "executed in August 2025", basis: disclosed}
+  - id: nano-uramerica-mou-2025
+    counterparty: "UrAmerica Ltd."
+    counterparty_slug: uramerica
+    type: fuel_supply
+    binding: mou
+    announced_on: 2025-07-01
+    summary: "MOU with Argentine uranium exploration company to explore strategic development across Argentina's uranium-fuel supply chain (announced July 2025; day not given)."
+    evidence:
+      - {field: agreement, snapshot: "71abe29ae8d18ca903aa50f1b077670c65ec6ed6f4d9e8b8ffcae31c5fcf0fda", quote: "we have signed a memorandum of understanding with UrAmerica Ltd. (“UrAmerica”), a private exploration company", basis: disclosed}
+      - {field: announced_on, snapshot: "71abe29ae8d18ca903aa50f1b077670c65ec6ed6f4d9e8b8ffcae31c5fcf0fda", quote: "In July 2025, we announced that we have signed a memorandum of understanding with UrAmerica", basis: disclosed}
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  "on": 2026-10-05
+  note: "2 corrections + 1 added event (per VERIFY check 6). (1) $400M ATM: amount_kind ceiling, removed committed_usd (an ATM ceiling is not committed money). (2) Added nano-atm-sales-2026-06: $26.75M gross from 1,000,000 shares at $26.75 in June 2026, the first sales under the programme, from the 10-Q filed 2026-08-12 (new snapshot 7319fbdb); $373.25M remained available and no further sales through the 10-Q date. Pre-IPO rounds, IPO, July/Oct 2024 follow-ons and the three PIPEs check against the 424B4, 8-Ks and 10-K. No convertible notes found for NANO. Gap: the 8-K of 2026-10-02 (items 1.01/3.02) concerns the Radnostix asset purchase, already an agreement; ATM sales after 2026-08-12 unknown."

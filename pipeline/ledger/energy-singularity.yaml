@@ -1,0 +1,14 @@
+company: energy-singularity
+name: Energy Singularity
+sector: fusion
+notes: 'No funding event recorded. Census slug energy-singularity (Nengliang Qidian; 能量奇点, Shanghai). Company English news site (energysingularity.cn/en/news, WordPress API) carries only two 2026 technical
+  posts and no financing releases; no English-language primary or reputable report could be archived (web search budget exhausted in this session, Wikipedia has no dedicated page). Per D4 funding is left
+  undisclosed rather than sourced from Chinese-language press. Retry when search budget is available (candidate sources: Chinese listed-parent filings, Reuters/SCMP/Caixin Global/36Kr English).'
+events: []
+agreements: []
+verification:
+  status: verified
+  by: verifier-agent (Claude Opus 5.5), 2026-10-05
+  'on': '2026-10-05'
+  note: 0 corrections. No events to verify; absence of English primary or reputable funding sources not independently re-checked
+    (search budget exhausted).

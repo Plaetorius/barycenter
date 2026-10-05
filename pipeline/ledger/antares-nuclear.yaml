@@ -1,0 +1,496 @@
+company: antares-nuclear
+name: Antares Nuclear
+sector: fission
+notes: 'Primary sources: antaresindustries.com update posts (fetched directly); ANS Nuclear Newswire used only for the Series B equity/debt split (reported). Search quota exhausted. Rounds are split into equity and debt events sharing round_group (Series B: $96M = $71M equity + $25M debt; Series C: $470M = $370M equity + $100M debt); the company letter states $96M Series B but the split is from ANS only. Lifetime total: ANS says ''more than $130 million'' to date after Series B (consistent with 8+30+96); census lifetime left undisclosed. Valuation not found. Public money: Air Force SBIR Phase 2 x3 totalling $3.75M (2024-09); DOE GAIN voucher (in-kind, no amount); $161M Space Force Strategic Breakthrough award (2026-09-11; entered as up_to because the post does not say whether the amount is obligated or a ceiling; ANS describes it as a DoD award); Army Janus OTA (no value stated); DOE Reactor Pilot Program, criticality agreement and HALEU allocation carry no money. TechCrunch 2026-07-27 corroborates the Series C and says Antares is one of three finalists in the Pentagon ANPI programme (not recorded). Slug humba-ventures and pathbreaker are proposed (not in investors.csv).'
+events:
+- id: antares-seed-2023
+  instrument: equity
+  round_label: Seed
+  announced_on: 2023-10-31
+  amount:
+    amount: 8000000.0
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: 1c8931fc275111ae245d19539bfb7d064194435785d1d56b0ef1b041fb09cd64
+    quote: Antares has received $8M in seed funding
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1c8931fc275111ae245d19539bfb7d064194435785d1d56b0ef1b041fb09cd64
+    quote: Oct 31, 2023
+    basis: disclosed
+  - field: round_label
+    snapshot: 1c8931fc275111ae245d19539bfb7d064194435785d1d56b0ef1b041fb09cd64
+    quote: Antares announces $8M seed round
+    basis: disclosed
+  participants:
+  - investor: Caffeinated Capital
+    investor_slug: caffeinated-capital
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 91e0007d297624ba8575b299c884c6228fdf36463d807ea480a64f9f7c4051a9
+      quote: existing lead seed investor Caffeinated Capital
+      basis: disclosed
+  - investor: Humba Ventures
+    investor_slug: humba-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 1c8931fc275111ae245d19539bfb7d064194435785d1d56b0ef1b041fb09cd64
+      quote: Investors include Caffeinated Capital, Humba Ventures, Pathbreaker, Rogue VC, Shrug, Uncommon Capital, and many awesome angels.
+      basis: disclosed
+  - investor: Pathbreaker
+    investor_slug: pathbreaker
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 1c8931fc275111ae245d19539bfb7d064194435785d1d56b0ef1b041fb09cd64
+      quote: Investors include Caffeinated Capital, Humba Ventures, Pathbreaker, Rogue VC, Shrug, Uncommon Capital, and many awesome angels.
+      basis: disclosed
+  - investor: Rogue VC
+    investor_slug: rogue
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 1c8931fc275111ae245d19539bfb7d064194435785d1d56b0ef1b041fb09cd64
+      quote: Investors include Caffeinated Capital, Humba Ventures, Pathbreaker, Rogue VC, Shrug, Uncommon Capital, and many awesome angels.
+      basis: disclosed
+  - investor: Shrug
+    investor_slug: shrug
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 1c8931fc275111ae245d19539bfb7d064194435785d1d56b0ef1b041fb09cd64
+      quote: Investors include Caffeinated Capital, Humba Ventures, Pathbreaker, Rogue VC, Shrug, Uncommon Capital, and many awesome angels.
+      basis: disclosed
+  - investor: Uncommon Capital
+    investor_slug: uncommon-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 1c8931fc275111ae245d19539bfb7d064194435785d1d56b0ef1b041fb09cd64
+      quote: Investors include Caffeinated Capital, Humba Ventures, Pathbreaker, Rogue VC, Shrug, Uncommon Capital, and many awesome angels.
+      basis: disclosed
+- id: antares-series-a-2024
+  instrument: equity
+  round_label: Series A
+  announced_on: 2024-10-30
+  amount:
+    amount: 30000000.0
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: 91e0007d297624ba8575b299c884c6228fdf36463d807ea480a64f9f7c4051a9
+    quote: Antares has raised $30M in Series A financing
+    basis: disclosed
+  - field: announced_on
+    snapshot: 91e0007d297624ba8575b299c884c6228fdf36463d807ea480a64f9f7c4051a9
+    quote: Oct 30, 2024
+    basis: disclosed
+  - field: round_label
+    snapshot: 91e0007d297624ba8575b299c884c6228fdf36463d807ea480a64f9f7c4051a9
+    quote: Antares Secures $30 Million Series A
+    basis: disclosed
+  participants:
+  - investor: Alt Cap
+    investor_slug: alt-capital
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 91e0007d297624ba8575b299c884c6228fdf36463d807ea480a64f9f7c4051a9
+      quote: The round was co-led by Alt Cap and existing lead seed investor Caffeinated Capital, with participation from Rogue, Uncommon Capital, Shrug, Banter Capital, Box Group, and Shine Capital.
+      basis: disclosed
+  - investor: Caffeinated Capital
+    investor_slug: caffeinated-capital
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 91e0007d297624ba8575b299c884c6228fdf36463d807ea480a64f9f7c4051a9
+      quote: The round was co-led by Alt Cap and existing lead seed investor Caffeinated Capital, with participation from Rogue, Uncommon Capital, Shrug, Banter Capital, Box Group, and Shine Capital.
+      basis: disclosed
+  - investor: Rogue
+    investor_slug: rogue
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 91e0007d297624ba8575b299c884c6228fdf36463d807ea480a64f9f7c4051a9
+      quote: The round was co-led by Alt Cap and existing lead seed investor Caffeinated Capital, with participation from Rogue, Uncommon Capital, Shrug, Banter Capital, Box Group, and Shine Capital.
+      basis: disclosed
+  - investor: Uncommon Capital
+    investor_slug: uncommon-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 91e0007d297624ba8575b299c884c6228fdf36463d807ea480a64f9f7c4051a9
+      quote: The round was co-led by Alt Cap and existing lead seed investor Caffeinated Capital, with participation from Rogue, Uncommon Capital, Shrug, Banter Capital, Box Group, and Shine Capital.
+      basis: disclosed
+  - investor: Shrug
+    investor_slug: shrug
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 91e0007d297624ba8575b299c884c6228fdf36463d807ea480a64f9f7c4051a9
+      quote: The round was co-led by Alt Cap and existing lead seed investor Caffeinated Capital, with participation from Rogue, Uncommon Capital, Shrug, Banter Capital, Box Group, and Shine Capital.
+      basis: disclosed
+  - investor: Banter Capital
+    investor_slug: banter-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 91e0007d297624ba8575b299c884c6228fdf36463d807ea480a64f9f7c4051a9
+      quote: The round was co-led by Alt Cap and existing lead seed investor Caffeinated Capital, with participation from Rogue, Uncommon Capital, Shrug, Banter Capital, Box Group, and Shine Capital.
+      basis: disclosed
+  - investor: Box Group
+    investor_slug: boxgroup
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 91e0007d297624ba8575b299c884c6228fdf36463d807ea480a64f9f7c4051a9
+      quote: The round was co-led by Alt Cap and existing lead seed investor Caffeinated Capital, with participation from Rogue, Uncommon Capital, Shrug, Banter Capital, Box Group, and Shine Capital.
+      basis: disclosed
+  - investor: Shine Capital
+    investor_slug: shine-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 91e0007d297624ba8575b299c884c6228fdf36463d807ea480a64f9f7c4051a9
+      quote: The round was co-led by Alt Cap and existing lead seed investor Caffeinated Capital, with participation from Rogue, Uncommon Capital, Shrug, Banter Capital, Box Group, and Shine Capital.
+      basis: disclosed
+- id: antares-series-b-equity-2025
+  instrument: equity
+  round_label: Series B
+  announced_on: 2025-12-02
+  amount:
+    amount: 71000000.0
+    currency: USD
+    qualifier: exact
+  round_group: antares-series-b-2025
+  evidence:
+  - field: amount
+    snapshot: 23ee2c794a27e4c41ac70deb79d12dcd8fa49f726dfab4613bf61c14522b8e7c
+    quote: raised $71 million in new equity capital and $25 million in debt
+    basis: reported
+  - field: announced_on
+    snapshot: 409d918caaf0d7307fec3ffd6d5c5cc00c07326487f7a2c2af0253b0d32a69e1
+    quote: Dec 2, 2025
+    basis: disclosed
+  - field: round_label
+    snapshot: 409d918caaf0d7307fec3ffd6d5c5cc00c07326487f7a2c2af0253b0d32a69e1
+    quote: announce our $96 million Series B
+    basis: disclosed
+  participants:
+  - investor: Shine Capital
+    investor_slug: shine-capital
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 23ee2c794a27e4c41ac70deb79d12dcd8fa49f726dfab4613bf61c14522b8e7c
+      quote: led by Shine Capital with participation from Alt Capital, Caffeinated, FiftyThree Stations, Industrious, and other investors
+      basis: reported
+  - investor: Alt Capital
+    investor_slug: alt-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 23ee2c794a27e4c41ac70deb79d12dcd8fa49f726dfab4613bf61c14522b8e7c
+      quote: led by Shine Capital with participation from Alt Capital, Caffeinated, FiftyThree Stations, Industrious, and other investors
+      basis: reported
+  - investor: Caffeinated
+    investor_slug: caffeinated-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 23ee2c794a27e4c41ac70deb79d12dcd8fa49f726dfab4613bf61c14522b8e7c
+      quote: led by Shine Capital with participation from Alt Capital, Caffeinated, FiftyThree Stations, Industrious, and other investors
+      basis: reported
+  - investor: FiftyThree Stations
+    investor_slug: fiftythree-stations
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 23ee2c794a27e4c41ac70deb79d12dcd8fa49f726dfab4613bf61c14522b8e7c
+      quote: led by Shine Capital with participation from Alt Capital, Caffeinated, FiftyThree Stations, Industrious, and other investors
+      basis: reported
+  - investor: Industrious
+    investor_slug: industrious-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 23ee2c794a27e4c41ac70deb79d12dcd8fa49f726dfab4613bf61c14522b8e7c
+      quote: led by Shine Capital with participation from Alt Capital, Caffeinated, FiftyThree Stations, Industrious, and other investors
+      basis: reported
+- id: antares-series-b-debt-2025
+  instrument: debt
+  round_label: Series B (debt component)
+  announced_on: 2025-12-02
+  amount:
+    amount: 25000000.0
+    currency: USD
+    qualifier: exact
+  round_group: antares-series-b-2025
+  use_of_proceeds: Equipment, factory build-out, and uranium procurement
+  evidence:
+  - field: amount
+    snapshot: 23ee2c794a27e4c41ac70deb79d12dcd8fa49f726dfab4613bf61c14522b8e7c
+    quote: raised $71 million in new equity capital and $25 million in debt
+    basis: reported
+  - field: announced_on
+    snapshot: 409d918caaf0d7307fec3ffd6d5c5cc00c07326487f7a2c2af0253b0d32a69e1
+    quote: Dec 2, 2025
+    basis: disclosed
+- id: antares-series-c-equity-2026
+  instrument: equity
+  round_label: Series C
+  announced_on: 2026-07-27
+  amount:
+    amount: 370000000.0
+    currency: USD
+    qualifier: exact
+  round_group: antares-series-c-2026
+  evidence:
+  - field: amount
+    snapshot: f6f3d8845ec4e067338c24d6d3f06de181220a05e7c34f2bf27a9a547acc1856
+    quote: which includes $370 million in equity and $100 million in debt
+    basis: disclosed
+  - field: announced_on
+    snapshot: f6f3d8845ec4e067338c24d6d3f06de181220a05e7c34f2bf27a9a547acc1856
+    quote: Jul 27, 2026
+    basis: disclosed
+  - field: round_label
+    snapshot: f6f3d8845ec4e067338c24d6d3f06de181220a05e7c34f2bf27a9a547acc1856
+    quote: Antares has raised $470 million in Series C funding
+    basis: disclosed
+  participants:
+  - investor: Paradigm
+    investor_slug: paradigm
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: f6f3d8845ec4e067338c24d6d3f06de181220a05e7c34f2bf27a9a547acc1856
+      quote: co-led by Paradigm and Caffeinated Capital, with participation from Point72 Ventures, Shine Capital, Industrious Ventures, and others
+      basis: disclosed
+  - investor: Caffeinated Capital
+    investor_slug: caffeinated-capital
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: f6f3d8845ec4e067338c24d6d3f06de181220a05e7c34f2bf27a9a547acc1856
+      quote: co-led by Paradigm and Caffeinated Capital, with participation from Point72 Ventures, Shine Capital, Industrious Ventures, and others
+      basis: disclosed
+  - investor: Point72 Ventures
+    investor_slug: point72-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f6f3d8845ec4e067338c24d6d3f06de181220a05e7c34f2bf27a9a547acc1856
+      quote: co-led by Paradigm and Caffeinated Capital, with participation from Point72 Ventures, Shine Capital, Industrious Ventures, and others
+      basis: disclosed
+  - investor: Shine Capital
+    investor_slug: shine-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f6f3d8845ec4e067338c24d6d3f06de181220a05e7c34f2bf27a9a547acc1856
+      quote: co-led by Paradigm and Caffeinated Capital, with participation from Point72 Ventures, Shine Capital, Industrious Ventures, and others
+      basis: disclosed
+  - investor: Industrious Ventures
+    investor_slug: industrious-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f6f3d8845ec4e067338c24d6d3f06de181220a05e7c34f2bf27a9a547acc1856
+      quote: co-led by Paradigm and Caffeinated Capital, with participation from Point72 Ventures, Shine Capital, Industrious Ventures, and others
+      basis: disclosed
+- id: antares-series-c-debt-2026
+  instrument: debt
+  round_label: Series C (debt component)
+  announced_on: 2026-07-27
+  amount:
+    amount: 100000000.0
+    currency: USD
+    qualifier: exact
+  round_group: antares-series-c-2026
+  evidence:
+  - field: amount
+    snapshot: f6f3d8845ec4e067338c24d6d3f06de181220a05e7c34f2bf27a9a547acc1856
+    quote: which includes $370 million in equity and $100 million in debt
+    basis: disclosed
+  - field: announced_on
+    snapshot: f6f3d8845ec4e067338c24d6d3f06de181220a05e7c34f2bf27a9a547acc1856
+    quote: Jul 27, 2026
+    basis: disclosed
+- id: antares-usaf-sbir-2024
+  instrument: grant
+  round_label: 3 Phase 2 SBIR awards (US Air Force)
+  announced_on: 2024-09-17
+  amount:
+    amount: 3750000.0
+    currency: USD
+    qualifier: exact
+  program: SBIR Phase 2 (US Air Force / AFWERX)
+  evidence:
+  - field: amount
+    snapshot: d924b94f3bbc1dcb8c8d10d27254e6769094b8364913f1971323561ba887aa73
+    quote: Antares awarded $3.75M in Department of Defense Funding
+    basis: disclosed
+  - field: announced_on
+    snapshot: d924b94f3bbc1dcb8c8d10d27254e6769094b8364913f1971323561ba887aa73
+    quote: Sep 17, 2024
+    basis: disclosed
+  - field: round_label
+    snapshot: d924b94f3bbc1dcb8c8d10d27254e6769094b8364913f1971323561ba887aa73
+    quote: awarded 3 Phase 2 SBIR awards with the U.S. Air Force
+    basis: disclosed
+  participants:
+  - investor: US Air Force (AFWERX SBIR)
+    investor_slug: dod-afrl
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: d924b94f3bbc1dcb8c8d10d27254e6769094b8364913f1971323561ba887aa73
+      quote: awarded 3 Phase 2 SBIR awards with the U.S. Air Force
+      basis: disclosed
+- id: antares-doe-gain-voucher-2024
+  instrument: voucher
+  round_label: DOE GAIN voucher (ORNL core design audit)
+  announced_on: 2024-09-25
+  program: DOE GAIN voucher
+  evidence:
+  - field: announced_on
+    snapshot: 00f25b3e049aa5dc8f2afc76eab1ea3926058e61439febba9c0c583749e7bb34
+    quote: Sep 25, 2024
+    basis: disclosed
+  - field: round_label
+    snapshot: 00f25b3e049aa5dc8f2afc76eab1ea3926058e61439febba9c0c583749e7bb34
+    quote: awarded Antares a voucher to support its core design work with Oak Ridge National Laboratory
+    basis: disclosed
+  participants:
+  - investor: US Department of Energy (GAIN)
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 00f25b3e049aa5dc8f2afc76eab1ea3926058e61439febba9c0c583749e7bb34
+      quote: The U.S. Department of Energy's Gateway for Accelerated Innovation in Nuclear (GAIN) program awarded Antares a voucher
+      basis: disclosed
+- id: antares-space-force-strategic-breakthrough-2026
+  instrument: other
+  round_label: Strategic Breakthrough award (Dept of the Air Force, Space)
+  announced_on: 2026-09-11
+  amount:
+    amount: 161000000.0
+    currency: USD
+    qualifier: up_to
+  amount_kind: ceiling
+  program: Strategic Breakthrough award (selection; no obligation or contract value evidenced)
+  evidence:
+  - field: amount
+    snapshot: 917350ca6a70593efd410e5885c6c823752cbd32b3bd7bbc61541f9959a31590
+    quote: Selected for $161M Strategic Breakthrough Award to Demonstrate Space Reactor
+    basis: disclosed
+  - field: announced_on
+    snapshot: 917350ca6a70593efd410e5885c6c823752cbd32b3bd7bbc61541f9959a31590
+    quote: Sep 11, 2026
+    basis: disclosed
+  - field: round_label
+    snapshot: 917350ca6a70593efd410e5885c6c823752cbd32b3bd7bbc61541f9959a31590
+    quote: selected by the Office of the Assistant Secretary of the Air Force for Space Acquisition and Integration for a Strategic Breakthrough award
+    basis: disclosed
+  participants:
+  - investor: Office of the Assistant Secretary of the Air Force for Space Acquisition and Integration
+    investor_slug: dod-afrl
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 917350ca6a70593efd410e5885c6c823752cbd32b3bd7bbc61541f9959a31590
+      quote: selected by the Office of the Assistant Secretary of the Air Force for Space Acquisition and Integration for a Strategic Breakthrough award
+      basis: disclosed
+agreements:
+- id: antares-doe-rpp-2025
+  counterparty: US Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: loi
+  announced_on: 2025-08-12
+  summary: Selected for the DOE Reactor Pilot Program (authorization pathway), no funding amount stated.
+  evidence:
+  - field: agreement
+    snapshot: d92aed237e3d72eebae1422dcd91a89156bb7ec851d5eb319adbd1bf1c0d3730
+    quote: Antares Nuclear Inc.
+    basis: disclosed
+  - field: announced_on
+    snapshot: d92aed237e3d72eebae1422dcd91a89156bb7ec851d5eb319adbd1bf1c0d3730
+    quote: August 12, 2025
+    basis: disclosed
+- id: antares-doe-criticality-agreement-2025
+  counterparty: US Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: 2025-09-22
+  summary: Executed agreement with DOE to take an advanced reactor critical by July 4, 2026 (Mark-0 at INL); criticality reached 2026-06-04 per company.
+  evidence:
+  - field: agreement
+    snapshot: 683dfd306b0158c28eedb0c938ee975419c8686e0f712528ef9d9a4e23f38242
+    quote: we executed our agreement with the U.S. Department of Energy (DOE) to take an advanced reactor critical
+    basis: disclosed
+  - field: announced_on
+    snapshot: 683dfd306b0158c28eedb0c938ee975419c8686e0f712528ef9d9a4e23f38242
+    quote: Sep 22, 2025
+    basis: disclosed
+- id: antares-doe-haleu-allocation-2025
+  counterparty: US Department of Energy
+  counterparty_slug: doe-ne
+  type: fuel_supply
+  binding: loi
+  announced_on: 2025-08-26
+  summary: DOE conditional commitment to allocate HALEU for the Antares microreactor (round 2 of DOE HALEU allocation); quantity not stated here.
+  evidence:
+  - field: agreement
+    snapshot: 04760c24bff772de19acc9870d2680a98b63d8b8c78042cf9d106abef0227793
+    quote: Antares Nuclear, Inc., for use in their advanced microreactor design
+    basis: disclosed
+  - field: announced_on
+    snapshot: 04760c24bff772de19acc9870d2680a98b63d8b8c78042cf9d106abef0227793
+    quote: August 26, 2025
+    basis: disclosed
+- id: antares-army-janus-2026
+  counterparty: US Army / Defense Innovation Unit
+  counterparty_slug: dod-army
+  type: gov_contract
+  binding: definitive
+  announced_on: 2026-08-26
+  summary: Other Transactions Authority agreement under the Army Janus Program to own, construct and operate a microreactor at Fort Bragg; dollar value not stated.
+  evidence:
+  - field: agreement
+    snapshot: 1c82a18e8efb03046772e2f5171dbaca9e3e4e055216cbc598799b22501019cb
+    quote: awarded an Other Transactions Authority agreement under the U.S. Army's Janus Program
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1c82a18e8efb03046772e2f5171dbaca9e3e4e055216cbc598799b22501019cb
+    quote: Aug 26, 2026
+    basis: disclosed
+- id: antares-standard-nuclear-fsa-2026
+  counterparty: Standard Nuclear
+  counterparty_slug: standard-nuclear
+  type: fuel_supply
+  binding: definitive
+  announced_on: 2026-08-27
+  summary: 'Binding multi-year TRISO fuel supply agreement: up to eight MTU of TRISO fuel through 2035; value not stated.'
+  evidence:
+  - field: agreement
+    snapshot: eec88863f25d782cfc328bfcdb91dfcf4b237ab94cecbee0f2d82415cb488cfa
+    quote: the execution of a binding multi-year fuel supply agreement (FSA) with Standard Nuclear
+    basis: disclosed
+  - field: announced_on
+    snapshot: eec88863f25d782cfc328bfcdb91dfcf4b237ab94cecbee0f2d82415cb488cfa
+    quote: Aug 27, 2026
+    basis: disclosed
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  "on": 2026-10-05
+  note: "1 correction: the $161M Space Force Strategic Breakthrough award is a selection ('Selected for $161M'). The company post gives no obligation, contract value or payment, so it is now amount_kind ceiling (kept visible, not counted). Not confirmed: (a) the Series B equity/debt split ($71M/$25M) rests on ANS Nuclear Newswire only (basis reported), and the CEO letter names no investors; (b) the Series B and Series C debt components ($25M, $100M) name no lender and may be facilities rather than drawn debt; (c) the SBIR $3.75M is a company-stated total for 3 Phase II awards, with no USAspending/SBIR record matched. Web search budget was exhausted, so no independent check of the $161M was possible."

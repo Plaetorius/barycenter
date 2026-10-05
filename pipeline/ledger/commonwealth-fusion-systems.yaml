@@ -1,0 +1,1121 @@
+company: commonwealth-fusion-systems
+name: Commonwealth Fusion Systems
+sector: fusion
+notes: 'Built 2026-10-05 under P2 (cfs.energy is ToS-forbidden): CFS release evidence is the Wayback copy (original_url set) corroborated by independent press (TechCrunch, Latitude Media, Richmond BizSense)
+  and SEC Form D XML. web.archive.org later refused connections during the session, so older CFS releases (2018 Series A, Dec 2021 Series B, 2020 round, DOE grants pages) could NOT be fetched from Wayback;
+  those rounds rest on SEC Form D (disclosed) plus independent press (MIT News, Axios).
+
+  GAPS / CHECK: (1) Series B (2021) investor list and lead (Tiger Global lead per general knowledge) not evidenced: WSJ is paywalled; no participants recorded. announced_on 2021-12-02 is the Form D signature
+  date; public announcement was reported around 2021-12-01. (2) 2020 round: Form D shows $80.6M sold of $100.0M offering (first sale 2020-05-11); press at the time reported ~$84M (bizjournals returned 403);
+  label unverified. (3) Series A: Eni $50M announced 2018-03-09 (MIT News) is a tranche of the $115M Series A (Form D D/A 2019: $114,999,971, 24 investors, first sale 2018-05-30); [verifier: the $115M event is now
+  the counted new_money event and the Eni $50M event is amount_kind=duplicate superseding it.] Original
+  Form D 2018 showed $64,594,246 sold of $100.0M (5 investors). (4) Oct 2020 Form D for ''Commonwealth Fusion Systems PML SPV 1 LP'' ($1.975M, 10 investors) is an investor vehicle, not recorded as an event.
+  (5) The Plynth Energy stake (2026-06-11, undisclosed) may be part of the $1B raise; Hyundai was stated to be part of the $1B raise (2026-09-10). Plynth kept as a separate no-amount event. (6) Total raised:
+  CFS says $4B; FusionX via TechCrunch says $3.94B. (7) DOE Milestone Program: $46M initial obligations were across 8 awardees; CFS share undisclosed and no USAspending row; not split. (8) USAspending DESC0021623
+  (DOE SC, $1.54M, 2021) and ARPA-E BETHE DEAR0001259 (obligated $1.29M + $1.55M non-federal; ARPA-E selection amount $2.39M) carry the same project title (''Pulsed HTS central solenoid''); relationship
+  unclear, do not sum without reconciliation. (9) INFUSE: awards are lab-access vouchers with no dollar amounts on the program site; dates are the INFUSE listing dates; listing pages archived cover cycles
+  2021B-2025 only (page 10+ returned the home page); earlier CFS INFUSE awards (2019-2021A) are likely but not evidenced. (10) FIRE: no company awardees (labs/universities only). SBIR: none found (probe).
+  No Virginia state or Chesterfield County incentive amounts could be evidenced (virginiamercury returned 403). ARPA-E news item ''ARPA-E award boosts CFS quest for best fusion power plant materials'' (cfs.energy)
+  not retrievable; the ARPA-E project index shows only BETHE for CFS. 2026-06/07 TechCrunch aggregator figures come from FusionX (reference only). Series B2 TechCrunch states no single investor led. Slugs
+  ''moore-strategic-ventures'', ''schooner-capital'', ''dominion-energy'', ''ma-business-builds'' are proposed (not in investors.csv/public-funders.csv).'
+events:
+- id: cfs-2018-03-eni-series-a-first-close
+  instrument: equity
+  round_label: Series A (first announced investment, Eni)
+  round_group: series-a
+  announced_on: '2018-03-09'
+  amount:
+    amount: 50000000.0
+    currency: USD
+    qualifier: exact
+  amount_kind: duplicate
+  supersedes: cfs-2019-06-series-a-115m
+  use_of_proceeds: Support SPARC/high-field magnet research at MIT and CFS's development effort
+  evidence:
+  - field: announced_on
+    snapshot: 7b4c000fc5784ff316b7ea31538541b8ca1dc62c7ce6fbc909aaaf6c19272e78
+    quote: March 9, 2018
+    basis: reported
+  - field: amount
+    snapshot: 7b4c000fc5784ff316b7ea31538541b8ca1dc62c7ce6fbc909aaaf6c19272e78
+    quote: CFS is announcing today that it has attracted an investment of $50 million in support of this effort from the Italian energy company Eni.
+    basis: reported
+  - field: round_label
+    snapshot: 7b4c000fc5784ff316b7ea31538541b8ca1dc62c7ce6fbc909aaaf6c19272e78
+    quote: completed its first round of venture financing with a total of $115 million
+    basis: reported
+  participants:
+  - investor: Eni
+    investor_slug: eni
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 7b4c000fc5784ff316b7ea31538541b8ca1dc62c7ce6fbc909aaaf6c19272e78
+      quote: it has attracted an investment of $50 million in support of this effort from the Italian energy company Eni
+      basis: reported
+    amount:
+      amount: 50000000.0
+      currency: USD
+      qualifier: exact
+- id: cfs-2019-06-series-a-115m
+  instrument: equity
+  round_label: Series A
+  round_group: series-a
+  announced_on: '2019-06-28'
+  amount:
+    amount: 114999971.0
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: 01abccc9e70a22828ee246fc8231ee1f00d914d363803f37090d42cb9a63c5e1
+    quote: Jun 28, 2019
+    basis: reported
+  - field: amount
+    snapshot: 01abccc9e70a22828ee246fc8231ee1f00d914d363803f37090d42cb9a63c5e1
+    quote: raised $115 million in Series A funding
+    basis: reported
+  - field: amount
+    snapshot: 713ca7162f8ccae2733f3ed3e0bed9656ea88d78a924c2a8ef1e2c6b4a7797ef
+    quote: 114999971 114999971 0 false 24
+    basis: disclosed
+  - field: round_label
+    snapshot: 01abccc9e70a22828ee246fc8231ee1f00d914d363803f37090d42cb9a63c5e1
+    quote: raised $115 million in Series A funding
+    basis: reported
+  participants:
+  - investor: Future Ventures
+    investor_slug: future-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 01abccc9e70a22828ee246fc8231ee1f00d914d363803f37090d42cb9a63c5e1
+      quote: 'Investors: Future Ventures, Khosla Ventures, Lowercase Capital, Moore Strategic Ventures, Safar Partners, Schooner Capital, Starlight Ventures, Breakthrough Energy Ventures, Eni and The Engine.'
+      basis: reported
+  - investor: Khosla Ventures
+    investor_slug: khosla-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 01abccc9e70a22828ee246fc8231ee1f00d914d363803f37090d42cb9a63c5e1
+      quote: 'Investors: Future Ventures, Khosla Ventures, Lowercase Capital, Moore Strategic Ventures, Safar Partners, Schooner Capital, Starlight Ventures, Breakthrough Energy Ventures, Eni and The Engine.'
+      basis: reported
+  - investor: Lowercase Capital
+    investor_slug: lowercarbon-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 01abccc9e70a22828ee246fc8231ee1f00d914d363803f37090d42cb9a63c5e1
+      quote: 'Investors: Future Ventures, Khosla Ventures, Lowercase Capital, Moore Strategic Ventures, Safar Partners, Schooner Capital, Starlight Ventures, Breakthrough Energy Ventures, Eni and The Engine.'
+      basis: reported
+  - investor: Moore Strategic Ventures
+    investor_slug: moore-strategic-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 01abccc9e70a22828ee246fc8231ee1f00d914d363803f37090d42cb9a63c5e1
+      quote: 'Investors: Future Ventures, Khosla Ventures, Lowercase Capital, Moore Strategic Ventures, Safar Partners, Schooner Capital, Starlight Ventures, Breakthrough Energy Ventures, Eni and The Engine.'
+      basis: reported
+  - investor: Safar Partners
+    investor_slug: safar-partners
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 01abccc9e70a22828ee246fc8231ee1f00d914d363803f37090d42cb9a63c5e1
+      quote: 'Investors: Future Ventures, Khosla Ventures, Lowercase Capital, Moore Strategic Ventures, Safar Partners, Schooner Capital, Starlight Ventures, Breakthrough Energy Ventures, Eni and The Engine.'
+      basis: reported
+  - investor: Schooner Capital
+    investor_slug: schooner-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 01abccc9e70a22828ee246fc8231ee1f00d914d363803f37090d42cb9a63c5e1
+      quote: 'Investors: Future Ventures, Khosla Ventures, Lowercase Capital, Moore Strategic Ventures, Safar Partners, Schooner Capital, Starlight Ventures, Breakthrough Energy Ventures, Eni and The Engine.'
+      basis: reported
+  - investor: Starlight Ventures
+    investor_slug: starlight-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 01abccc9e70a22828ee246fc8231ee1f00d914d363803f37090d42cb9a63c5e1
+      quote: 'Investors: Future Ventures, Khosla Ventures, Lowercase Capital, Moore Strategic Ventures, Safar Partners, Schooner Capital, Starlight Ventures, Breakthrough Energy Ventures, Eni and The Engine.'
+      basis: reported
+  - investor: Breakthrough Energy Ventures
+    investor_slug: breakthrough-energy-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 01abccc9e70a22828ee246fc8231ee1f00d914d363803f37090d42cb9a63c5e1
+      quote: 'Investors: Future Ventures, Khosla Ventures, Lowercase Capital, Moore Strategic Ventures, Safar Partners, Schooner Capital, Starlight Ventures, Breakthrough Energy Ventures, Eni and The Engine.'
+      basis: reported
+  - investor: Eni
+    investor_slug: eni
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 01abccc9e70a22828ee246fc8231ee1f00d914d363803f37090d42cb9a63c5e1
+      quote: 'Investors: Future Ventures, Khosla Ventures, Lowercase Capital, Moore Strategic Ventures, Safar Partners, Schooner Capital, Starlight Ventures, Breakthrough Energy Ventures, Eni and The Engine.'
+      basis: reported
+  - investor: The Engine
+    investor_slug: the-engine
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 01abccc9e70a22828ee246fc8231ee1f00d914d363803f37090d42cb9a63c5e1
+      quote: 'Investors: Future Ventures, Khosla Ventures, Lowercase Capital, Moore Strategic Ventures, Safar Partners, Schooner Capital, Starlight Ventures, Breakthrough Energy Ventures, Eni and The Engine.'
+      basis: reported
+- id: cfs-2020-05-form-d-round
+  instrument: equity
+  round_label: Unlabelled 2020 equity offering (SEC Form D)
+  announced_on: '2020-05-26'
+  amount:
+    amount: 80600007.0
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: 606e36e58cfa4a988e35406722e1d9364319cf9943593efe17c689e2bdcf434d
+    quote: Robert Mumgaard President 2020-05-26
+    basis: disclosed
+  - field: amount
+    snapshot: 606e36e58cfa4a988e35406722e1d9364319cf9943593efe17c689e2bdcf434d
+    quote: 100000004 80600007 19399997 false 23
+    basis: disclosed
+  - field: round_label
+    snapshot: 606e36e58cfa4a988e35406722e1d9364319cf9943593efe17c689e2bdcf434d
+    quote: 2020-05-11 false true false 0 100000004
+    basis: disclosed
+- id: cfs-2021-11-series-b-1-8b
+  instrument: equity
+  round_label: Series B
+  round_group: series-b
+  announced_on: '2021-12-02'
+  amount:
+    amount: 1816074299.0
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: 447852a1bcae678f2f0efdc3ed9a6f89208ab0f1098176f375228137457f9c30
+    quote: Robert Mumgaard President 2021-12-02
+    basis: disclosed
+  - field: amount
+    snapshot: 447852a1bcae678f2f0efdc3ed9a6f89208ab0f1098176f375228137457f9c30
+    quote: 1816074299 1816074299 0 false 72
+    basis: disclosed
+  - field: amount
+    snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+    quote: CFS’ $1.8 billion Series B round in 2021
+    basis: disclosed
+    original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - field: amount
+    snapshot: 4cbd60fd71d345b4e2973e98cd5649d67e517b4424bc1bfde368029de31091b5
+    quote: CFS catapulted into the lead in 2021 with a $1.8 billion Series B.
+    basis: reported
+  - field: round_label
+    snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+    quote: CFS’ $1.8 billion Series B round in 2021
+    basis: disclosed
+    original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+- id: cfs-2025-08-series-b2-863m
+  instrument: equity
+  round_label: Series B2
+  round_group: series-b
+  announced_on: '2025-08-28'
+  amount:
+    amount: 863000000.0
+    currency: USD
+    qualifier: exact
+  use_of_proceeds: Complete SPARC and progress development work on the first ARC power plant in Virginia
+  evidence:
+  - field: announced_on
+    snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+    quote: DEVENS, Mass. (Aug. 28, 2025)
+    basis: disclosed
+    original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - field: announced_on
+    snapshot: 46b250747a4734330dd39d3e2ad8597f9c4feb9aae73c93556fae4f2c5d3ba29
+    quote: August 28, 2025
+    basis: reported
+  - field: amount
+    snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+    quote: today announced that it raised $863 million in a Series B2 fundraising round
+    basis: disclosed
+    original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - field: amount
+    snapshot: 46b250747a4734330dd39d3e2ad8597f9c4feb9aae73c93556fae4f2c5d3ba29
+    quote: Fusion power startup Commonwealth Fusion Systems has raised $863 million from a long list of investors
+    basis: reported
+  - field: amount
+    snapshot: a829c99105e5b6516bc2aa1bf6a402e1bac53d79b9af822acad27963f36dda80
+    quote: The startup raised a $863 million Series B2 round, it announced this week.
+    basis: reported
+  - field: round_label
+    snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+    quote: today announced that it raised $863 million in a Series B2 fundraising round
+    basis: disclosed
+    original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - field: use_of_proceeds
+    snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+    quote: CFS will use the funds to complete SPARC , its fusion demonstration machine, and progress on development work on its first ARC power plant in Virginia.
+    basis: disclosed
+    original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - field: lead
+    snapshot: 46b250747a4734330dd39d3e2ad8597f9c4feb9aae73c93556fae4f2c5d3ba29
+    quote: No single investor led the round
+    basis: reported
+  participants:
+  - investor: Brevan Howard Macro Venture Fund
+    investor_slug: brevan-howard
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+      quote: Brevan Howard Macro Venture Fund; Counterpoint Global (Morgan Stanley);
+      basis: disclosed
+      original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - investor: Counterpoint Global (Morgan Stanley)
+    investor_slug: counterpoint-global
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+      quote: Counterpoint Global (Morgan Stanley);
+      basis: disclosed
+      original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - investor: Stanley Druckenmiller
+    investor_slug: stanley-druckenmiller
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+      quote: Counterpoint Global (Morgan Stanley); Stanley Druckenmiller;
+      basis: disclosed
+      original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - investor: FFA Private Bank (Dubai) Ltd.
+    investor_slug: ffa-private-bank
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+      quote: FFA Private Bank (Dubai) Ltd.;
+      basis: disclosed
+      original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - investor: Galaxy Interactive, a venture platform within Galaxy Digital Inc.
+    investor_slug: galaxy-interactive
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+      quote: Galaxy Interactive, a venture platform within Galaxy Digital Inc.
+      basis: disclosed
+      original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - investor: Gigascale Capital
+    investor_slug: gigascale-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+      quote: Gigascale Capital; HOF Capital;
+      basis: disclosed
+      original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - investor: HOF Capital
+    investor_slug: hof-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+      quote: Gigascale Capital; HOF Capital;
+      basis: disclosed
+      original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - investor: Neva SGR (Intesa Sanpaolo Bank)
+    investor_slug: neva-sgr
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+      quote: Neva SGR (Intesa Sanpaolo Bank)
+      basis: disclosed
+      original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - investor: NVentures (NVIDIA's venture capital arm)
+    investor_slug: nventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+      quote: NVentures (NVIDIA’s venture capital arm)
+      basis: disclosed
+      original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - investor: Planet First Partners
+    investor_slug: planet-first-partners
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+      quote: Planet First Partners;
+      basis: disclosed
+      original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - investor: Woori Venture Partners US
+    investor_slug: woori-technology
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+      quote: Woori Venture Partners US;
+      basis: disclosed
+      original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - investor: Consortium of 12 Japanese companies led by MITSUI & CO., Ltd. and Mitsubishi Corp.
+    investor_slug: mitsui-mitsubishi-consortium
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+      quote: A consortium of 12 Japanese companies led by MITSUI & CO., Ltd. and Mitsubishi Corp. also participated.
+      basis: disclosed
+      original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - investor: Breakthrough Energy Ventures
+    investor_slug: breakthrough-energy-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+      quote: Breakthrough Energy Ventures; Emerson Collective; Eni; Future Ventures; Gates Frontier; Google;
+      basis: disclosed
+      original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - investor: Emerson Collective
+    investor_slug: emerson-collective
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+      quote: Breakthrough Energy Ventures; Emerson Collective; Eni; Future Ventures; Gates Frontier; Google;
+      basis: disclosed
+      original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - investor: Eni
+    investor_slug: eni
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+      quote: Breakthrough Energy Ventures; Emerson Collective; Eni; Future Ventures; Gates Frontier; Google;
+      basis: disclosed
+      original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - investor: Future Ventures
+    investor_slug: future-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+      quote: Breakthrough Energy Ventures; Emerson Collective; Eni; Future Ventures; Gates Frontier; Google;
+      basis: disclosed
+      original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - investor: Gates Frontier
+    investor_slug: bill-gates
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+      quote: Breakthrough Energy Ventures; Emerson Collective; Eni; Future Ventures; Gates Frontier; Google;
+      basis: disclosed
+      original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - investor: Google
+    investor_slug: google
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+      quote: Breakthrough Energy Ventures; Emerson Collective; Eni; Future Ventures; Gates Frontier; Google;
+      basis: disclosed
+      original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - investor: Hostplus Superannuation Fund
+    investor_slug: hostplus
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+      quote: Hostplus Superannuation Fund; Khosla Ventures; Lowercarbon Capital;
+      basis: disclosed
+      original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - investor: Khosla Ventures
+    investor_slug: khosla-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+      quote: Hostplus Superannuation Fund; Khosla Ventures; Lowercarbon Capital;
+      basis: disclosed
+      original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - investor: Lowercarbon Capital
+    investor_slug: lowercarbon-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+      quote: Hostplus Superannuation Fund; Khosla Ventures; Lowercarbon Capital;
+      basis: disclosed
+      original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - investor: Safar Partners
+    investor_slug: safar-partners
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+      quote: Safar Partners; Eric Schmidt, former CEO of Google; Starlight Ventures; Tiger Global;
+      basis: disclosed
+      original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - investor: Eric Schmidt
+    investor_slug: eric-schmidt
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+      quote: Safar Partners; Eric Schmidt, former CEO of Google; Starlight Ventures; Tiger Global;
+      basis: disclosed
+      original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - investor: Starlight Ventures
+    investor_slug: starlight-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+      quote: Safar Partners; Eric Schmidt, former CEO of Google; Starlight Ventures; Tiger Global;
+      basis: disclosed
+      original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+  - investor: Tiger Global
+    investor_slug: tiger-global
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f5292e32d44f669d501de6d71472b98519c48b31b442f6ee0204127c72c6ebcf
+      quote: Safar Partners; Eric Schmidt, former CEO of Google; Starlight Ventures; Tiger Global;
+      basis: disclosed
+      original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-863-million-series-b2-round-to-accelerate-the-commercialization-of-fusion-energy/
+- id: cfs-2026-06-plynth-energy-stake
+  instrument: equity
+  round_label: Strategic minority stake (Plynth Energy)
+  announced_on: '2026-06-11'
+  evidence:
+  - field: announced_on
+    snapshot: cf171e1e3ec6ab6a216e8b0733bd19cf096572a29754a3d5a442e206db92d86f
+    quote: DEVENS, Mass. (June 11, 2026)
+    basis: disclosed
+    original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-announces-equity-investment-by-abu-dhabi-based-plynth-energy/
+  - field: round_label
+    snapshot: cf171e1e3ec6ab6a216e8b0733bd19cf096572a29754a3d5a442e206db92d86f
+    quote: Plynth Energy, an Abu Dhabi government-owned early-stage fund, acquired a minority stake in CFS
+    basis: disclosed
+    original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-announces-equity-investment-by-abu-dhabi-based-plynth-energy/
+  participants:
+  - investor: Plynth Energy
+    investor_slug: plynth-energy
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: cf171e1e3ec6ab6a216e8b0733bd19cf096572a29754a3d5a442e206db92d86f
+      quote: Plynth Energy, an Abu Dhabi government-owned early-stage fund, acquired a minority stake in CFS
+      basis: disclosed
+      original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-announces-equity-investment-by-abu-dhabi-based-plynth-energy/
+- id: cfs-2026-07-additional-equity-1b
+  instrument: equity
+  round_label: Additional equity financing (unlabelled)
+  announced_on: '2026-07-30'
+  amount:
+    amount: 1000000000.0
+    currency: USD
+    qualifier: exact
+  use_of_proceeds: 'Accelerate commercialization: complete SPARC assembly and develop the ARC power plant (Fall Line Fusion Power Station, Virginia)'
+  evidence:
+  - field: announced_on
+    snapshot: b65c8a2efdee4f115f7043edafd8f3e93232e444a83e8e9a3c2ca9db3056abf3
+    quote: DEVENS, Mass. (July 30, 2026)
+    basis: disclosed
+    original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion/
+  - field: amount
+    snapshot: b65c8a2efdee4f115f7043edafd8f3e93232e444a83e8e9a3c2ca9db3056abf3
+    quote: today announced that it raised $1 billion of additional equity financing
+    basis: disclosed
+    original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion/
+  - field: amount
+    snapshot: e13e3020a70b02f7a388b1a908ef51fadebad3ca2dbd02a6330327870e8e6610
+    quote: CFS announced Thursday that it raised $1 billion in a new round
+    basis: reported
+  - field: amount
+    snapshot: 60e4b350a161bd22e3cc1727749db8854f8aaac39222f24ec4ba3c252417cddc
+    quote: has secured $1 billion in equity financing in its latest capital raise
+    basis: reported
+  - field: round_label
+    snapshot: b65c8a2efdee4f115f7043edafd8f3e93232e444a83e8e9a3c2ca9db3056abf3
+    quote: today announced that it raised $1 billion of additional equity financing
+    basis: disclosed
+    original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion/
+  - field: use_of_proceeds
+    snapshot: b65c8a2efdee4f115f7043edafd8f3e93232e444a83e8e9a3c2ca9db3056abf3
+    quote: CFS will use the funds raised to further accelerate its progress to commercialization.
+    basis: disclosed
+    original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion/
+  participants:
+  - investor: Hyundai Motor Group
+    investor_slug: hd-hyundai
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f7f43ea73956f737d33afc897bb1f0e3c0975724b5f0b3e28696723b76e577f7
+      quote: Hyundai Motor Group (HMG) became an investor during the company’s recent $1 billion fundraise
+      basis: disclosed
+      original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-announces-equity-investment-by-hyundai-motor-group/
+- id: cfs-2026-07-cumulative-4b
+  instrument: equity
+  round_label: Total capital raised since 2018 (statement, not a round)
+  announced_on: '2026-07-30'
+  amount:
+    amount: 4000000000.0
+    currency: USD
+    qualifier: exact
+  amount_kind: cumulative
+  evidence:
+  - field: announced_on
+    snapshot: b65c8a2efdee4f115f7043edafd8f3e93232e444a83e8e9a3c2ca9db3056abf3
+    quote: DEVENS, Mass. (July 30, 2026)
+    basis: disclosed
+    original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion/
+  - field: amount
+    snapshot: b65c8a2efdee4f115f7043edafd8f3e93232e444a83e8e9a3c2ca9db3056abf3
+    quote: The company has raised $4 billion in capital since it was founded in 2018.
+    basis: disclosed
+    original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion/
+  - field: amount
+    snapshot: 4cbd60fd71d345b4e2973e98cd5649d67e517b4424bc1bfde368029de31091b5
+    quote: bringing its total raised to $3.94 billion, according to FusionX
+    basis: reported
+- id: cfs-2019-11-arpa-e-bethe
+  instrument: grant
+  round_label: ARPA-E BETHE
+  program: ARPA-E BETHE
+  announced_on: '2020-09-28'
+  amount:
+    amount: 1288316.58
+    currency: USD
+    qualifier: exact
+  obligated_usd: 1288316.58
+  disbursed_usd: 1199161.48
+  evidence:
+  - field: announced_on
+    snapshot: 22511ba1d2a1c5dadca7e35bb5fa522a391da465c4044bfee77a55300dcb6476
+    quote: '"date_signed":"2020-09-28"'
+    basis: disclosed
+  - field: program_release_date
+    snapshot: 541c9d053c1aa1be4f99879ad9b0d4e9026a5a46d142c80ac83f6a2c188e20a5
+    quote: '"award":"2,390,000","release_date":"Nov 07 2019","location":"Cambridge, MA"'
+    basis: disclosed
+  - field: amount
+    snapshot: 22511ba1d2a1c5dadca7e35bb5fa522a391da465c4044bfee77a55300dcb6476
+    quote: '"total_obligation":1288316.58'
+    basis: disclosed
+  - field: selection_amount
+    snapshot: 541c9d053c1aa1be4f99879ad9b0d4e9026a5a46d142c80ac83f6a2c188e20a5
+    quote: '"award":"2,390,000","release_date":"Nov 07 2019","location":"Cambridge, MA"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 541c9d053c1aa1be4f99879ad9b0d4e9026a5a46d142c80ac83f6a2c188e20a5
+    quote: '"acronym":"Breakthroughs Enabling THermonuclear-fusion Energy"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 22511ba1d2a1c5dadca7e35bb5fa522a391da465c4044bfee77a55300dcb6476
+    quote: '"total_obligation":1288316.58'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: 22511ba1d2a1c5dadca7e35bb5fa522a391da465c4044bfee77a55300dcb6476
+    quote: '"total_outlay":1199161.48'
+    basis: disclosed
+  participants:
+  - investor: ARPA-E
+    investor_slug: arpa-e
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 541c9d053c1aa1be4f99879ad9b0d4e9026a5a46d142c80ac83f6a2c188e20a5
+      quote: '"acronym":"Breakthroughs Enabling THermonuclear-fusion Energy"'
+      basis: disclosed
+- id: cfs-2021-09-doe-sc-desc0021623
+  instrument: grant
+  round_label: DOE Office of Science project grant DESC0021623
+  program: DOE Office of Science financial assistance (CFDA 81.049)
+  announced_on: '2021-09-24'
+  amount:
+    amount: 1537791.0
+    currency: USD
+    qualifier: exact
+  obligated_usd: 1537791.0
+  disbursed_usd: 1537791.0
+  evidence:
+  - field: announced_on
+    snapshot: ee561537b2afd23d3c4a43a8ebb7dfb4c9acb939f106814b0f8f5feb5a7ebe22
+    quote: '"date_signed":"2021-09-24"'
+    basis: disclosed
+  - field: amount
+    snapshot: ee561537b2afd23d3c4a43a8ebb7dfb4c9acb939f106814b0f8f5feb5a7ebe22
+    quote: '"total_obligation":1537791.0'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: ee561537b2afd23d3c4a43a8ebb7dfb4c9acb939f106814b0f8f5feb5a7ebe22
+    quote: '"total_obligation":1537791.0'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: ee561537b2afd23d3c4a43a8ebb7dfb4c9acb939f106814b0f8f5feb5a7ebe22
+    quote: '"total_outlay":1537791.0'
+    basis: disclosed
+  - field: round_label
+    snapshot: ee561537b2afd23d3c4a43a8ebb7dfb4c9acb939f106814b0f8f5feb5a7ebe22
+    quote: '"fain":"DESC0021623"'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science (Fusion Energy Sciences)
+    investor_slug: doe-fes
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: ee561537b2afd23d3c4a43a8ebb7dfb4c9acb939f106814b0f8f5feb5a7ebe22
+      quote: '"fain":"DESC0021623"'
+      basis: disclosed
+- id: cfs-2023-05-doe-milestone-program
+  instrument: grant
+  round_label: Milestone-Based Fusion Development Program (initial awards)
+  program: DOE Milestone-Based Fusion Development Program
+  announced_on: '2023-05-31'
+  evidence:
+  - field: announced_on
+    snapshot: 84c735909b3db548666698b268e4a8d6763bbeb60fb4fa506cffaf72107d1fa6
+    quote: The DOE announced awards totaling $46 million for an initial 18 months of work on May 31.
+    basis: reported
+  - field: round_label
+    snapshot: 69b6dcec82c9dff9e92b6cb0b2745b6c2fd638b087c2a924c6554ee30662f301
+    quote: The other Milestone awardees are Commonwealth Fusion Systems, Tokamak Energy, Type One Energy, Xcimer Energy, and Zap Energy
+    basis: disclosed
+  participants:
+  - investor: U.S. Department of Energy (Fusion Energy Sciences)
+    investor_slug: doe-fes
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 84c735909b3db548666698b268e4a8d6763bbeb60fb4fa506cffaf72107d1fa6
+      quote: the Department of Energy has selected eight companies for the public-private Milestone-Based Fusion Development Program
+      basis: reported
+- id: cfs-2026-02-ma-business-builds-grant
+  instrument: grant
+  round_label: Massachusetts Business Builds Capital Grant
+  program: Massachusetts Business Builds Capital Grant Program
+  announced_on: '2026-02-11'
+  amount:
+    amount: 2500000.0
+    currency: USD
+    qualifier: exact
+  use_of_proceeds: Install high energy and high-density battery storage systems and complete construction of the SPARC facility
+  evidence:
+  - field: announced_on
+    snapshot: c158c9969060a73ddb98546080617482703a088435d3f14b2b3c7c991b585e56
+    quote: 'Updated: February 11, 2026'
+    basis: reported
+  - field: amount
+    snapshot: c158c9969060a73ddb98546080617482703a088435d3f14b2b3c7c991b585e56
+    quote: Commonwealth Fusion Systems will receive the largest grant at $2.5 million, the state said
+    basis: reported
+  - field: round_label
+    snapshot: c158c9969060a73ddb98546080617482703a088435d3f14b2b3c7c991b585e56
+    quote: through the Business Builds Capital Grant Program
+    basis: reported
+  - field: use_of_proceeds
+    snapshot: c158c9969060a73ddb98546080617482703a088435d3f14b2b3c7c991b585e56
+    quote: install high energy and high-density battery storage systems and complete construction of the SPARC facility
+    basis: reported
+  participants:
+  - investor: Healey-Driscoll administration (Massachusetts Business Builds Capital Grant Program)
+    investor_slug: ma-business-builds
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: c158c9969060a73ddb98546080617482703a088435d3f14b2b3c7c991b585e56
+      quote: the Healey-Driscoll administration announced Wednesday
+      basis: reported
+- id: cfs-infuse-2025-mechanical-characterization-of-neutron-irradiated-tungsten
+  instrument: voucher
+  round_label: INFUSE 2025
+  program: DOE INFUSE (ORNL/PPPL, FES-funded)
+  announced_on: '2025-09-10'
+  use_of_proceeds: Collaboration with Oak Ridge National Laboratory (ORNL)
+  evidence:
+  - field: announced_on
+    snapshot: 398b567189796840676f664c2caa21112f49510be7a6040d2e651e49894f454a
+    quote: INFUSE 2025 - September 10, 2025 | Commonwealth Fusion Systems | Oak Ridge National Laboratory (ORNL)
+    basis: disclosed
+  - field: round_label
+    snapshot: 398b567189796840676f664c2caa21112f49510be7a6040d2e651e49894f454a
+    quote: INFUSE 2025 - September 10, 2025 | Commonwealth Fusion Systems | Oak Ridge National Laboratory (ORNL)
+    basis: disclosed
+  participants:
+  - investor: DOE INFUSE program (ORNL/PPPL, DOE Office of Science FES)
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 398b567189796840676f664c2caa21112f49510be7a6040d2e651e49894f454a
+      quote: INFUSE 2025 - September 10, 2025 | Commonwealth Fusion Systems | Oak Ridge National Laboratory (ORNL)
+      basis: disclosed
+- id: cfs-infuse-2024-solps-derived-separatrix-operating-space-scalings-for-inform
+  instrument: voucher
+  round_label: INFUSE 2024
+  program: DOE INFUSE (ORNL/PPPL, FES-funded)
+  announced_on: '2024-08-08'
+  use_of_proceeds: Collaboration with Oak Ridge National Laboratory (ORNL)
+  evidence:
+  - field: announced_on
+    snapshot: 3f9772b8ec59d53744feb78696ee70a5bf5374e400119fd6b346a0f18241ff31
+    quote: INFUSE 2024 - August 8, 2024 | Commonwealth Fusion Systems | Oak Ridge National Laboratory (ORNL)
+    basis: disclosed
+  - field: round_label
+    snapshot: 3f9772b8ec59d53744feb78696ee70a5bf5374e400119fd6b346a0f18241ff31
+    quote: INFUSE 2024 - August 8, 2024 | Commonwealth Fusion Systems | Oak Ridge National Laboratory (ORNL)
+    basis: disclosed
+  participants:
+  - investor: DOE INFUSE program (ORNL/PPPL, DOE Office of Science FES)
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 3f9772b8ec59d53744feb78696ee70a5bf5374e400119fd6b346a0f18241ff31
+      quote: INFUSE 2024 - August 8, 2024 | Commonwealth Fusion Systems | Oak Ridge National Laboratory (ORNL)
+      basis: disclosed
+- id: cfs-infuse-2023-deuterium-retention-in-boron-dust
+  instrument: voucher
+  round_label: INFUSE 2023
+  program: DOE INFUSE (ORNL/PPPL, FES-funded)
+  announced_on: '2023-07-25'
+  use_of_proceeds: Collaboration with Princeton Plasma Physics Laboratory (PPPL)
+  evidence:
+  - field: announced_on
+    snapshot: e4160207e742f087a2f273d32d8c6906d899a125dbde6347ac7bbe3c1a652f5b
+    quote: INFUSE 2023 - July 25, 2023 | Commonwealth Fusion Systems | Princeton Plasma Physics Laboratory (PPPL)
+    basis: disclosed
+  - field: round_label
+    snapshot: e4160207e742f087a2f273d32d8c6906d899a125dbde6347ac7bbe3c1a652f5b
+    quote: INFUSE 2023 - July 25, 2023 | Commonwealth Fusion Systems | Princeton Plasma Physics Laboratory (PPPL)
+    basis: disclosed
+  participants:
+  - investor: DOE INFUSE program (ORNL/PPPL, DOE Office of Science FES)
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: e4160207e742f087a2f273d32d8c6906d899a125dbde6347ac7bbe3c1a652f5b
+      quote: INFUSE 2023 - July 25, 2023 | Commonwealth Fusion Systems | Princeton Plasma Physics Laboratory (PPPL)
+      basis: disclosed
+- id: cfs-infuse-2023-informing-arc-divertor-design-and-plasma-facing-material-sel
+  instrument: voucher
+  round_label: INFUSE 2023
+  program: DOE INFUSE (ORNL/PPPL, FES-funded)
+  announced_on: '2023-07-25'
+  use_of_proceeds: Collaboration with University of California - Los Angeles
+  evidence:
+  - field: announced_on
+    snapshot: 3a32fe461f09a44ad24a8141c2bdfab1bc2b1d8a9a19f25864c6d7f86068c4ac
+    quote: INFUSE 2023 - July 25, 2023 | Commonwealth Fusion Systems | University of California - Los Angeles
+    basis: disclosed
+  - field: round_label
+    snapshot: 3a32fe461f09a44ad24a8141c2bdfab1bc2b1d8a9a19f25864c6d7f86068c4ac
+    quote: INFUSE 2023 - July 25, 2023 | Commonwealth Fusion Systems | University of California - Los Angeles
+    basis: disclosed
+  participants:
+  - investor: DOE INFUSE program (ORNL/PPPL, DOE Office of Science FES)
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 3a32fe461f09a44ad24a8141c2bdfab1bc2b1d8a9a19f25864c6d7f86068c4ac
+      quote: INFUSE 2023 - July 25, 2023 | Commonwealth Fusion Systems | University of California - Los Angeles
+      basis: disclosed
+- id: cfs-infuse-2023-electrochemical-evaluation-of-hydrogen-concentration-and-dif
+  instrument: voucher
+  round_label: INFUSE 2023
+  program: DOE INFUSE (ORNL/PPPL, FES-funded)
+  announced_on: '2023-07-25'
+  use_of_proceeds: Collaboration with University of California - Berkeley
+  evidence:
+  - field: announced_on
+    snapshot: 3a32fe461f09a44ad24a8141c2bdfab1bc2b1d8a9a19f25864c6d7f86068c4ac
+    quote: INFUSE 2023 - July 25, 2023 | Commonwealth Fusion Systems | University of California - Berkeley
+    basis: disclosed
+  - field: round_label
+    snapshot: 3a32fe461f09a44ad24a8141c2bdfab1bc2b1d8a9a19f25864c6d7f86068c4ac
+    quote: INFUSE 2023 - July 25, 2023 | Commonwealth Fusion Systems | University of California - Berkeley
+    basis: disclosed
+  participants:
+  - investor: DOE INFUSE program (ORNL/PPPL, DOE Office of Science FES)
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 3a32fe461f09a44ad24a8141c2bdfab1bc2b1d8a9a19f25864c6d7f86068c4ac
+      quote: INFUSE 2023 - July 25, 2023 | Commonwealth Fusion Systems | University of California - Berkeley
+      basis: disclosed
+- id: cfs-infuse-2022a-characterization-of-turbulent-transport-and-confinement-in-a
+  instrument: voucher
+  round_label: INFUSE 2022A
+  program: DOE INFUSE (ORNL/PPPL, FES-funded)
+  announced_on: '2023-06-15'
+  use_of_proceeds: Collaboration with University of California San Diego
+  evidence:
+  - field: announced_on
+    snapshot: 3a32fe461f09a44ad24a8141c2bdfab1bc2b1d8a9a19f25864c6d7f86068c4ac
+    quote: INFUSE 2022A - June 15, 2023 | Commonwealth Fusion Systems | University of California San Diego
+    basis: disclosed
+  - field: round_label
+    snapshot: 3a32fe461f09a44ad24a8141c2bdfab1bc2b1d8a9a19f25864c6d7f86068c4ac
+    quote: INFUSE 2022A - June 15, 2023 | Commonwealth Fusion Systems | University of California San Diego
+    basis: disclosed
+  participants:
+  - investor: DOE INFUSE program (ORNL/PPPL, DOE Office of Science FES)
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 3a32fe461f09a44ad24a8141c2bdfab1bc2b1d8a9a19f25864c6d7f86068c4ac
+      quote: INFUSE 2022A - June 15, 2023 | Commonwealth Fusion Systems | University of California San Diego
+      basis: disclosed
+- id: cfs-infuse-2022b-a-modern-neutronics-modeling-uncertainty-methodology-towards
+  instrument: voucher
+  round_label: INFUSE 2022B
+  program: DOE INFUSE (ORNL/PPPL, FES-funded)
+  announced_on: '2023-01-17'
+  use_of_proceeds: Collaboration with Oak Ridge National Laboratory (ORNL)
+  evidence:
+  - field: announced_on
+    snapshot: 3a32fe461f09a44ad24a8141c2bdfab1bc2b1d8a9a19f25864c6d7f86068c4ac
+    quote: INFUSE 2022B - January 17, 2023 | Commonwealth Fusion Systems | Oak Ridge National Laboratory (ORNL)
+    basis: disclosed
+  - field: round_label
+    snapshot: 3a32fe461f09a44ad24a8141c2bdfab1bc2b1d8a9a19f25864c6d7f86068c4ac
+    quote: INFUSE 2022B - January 17, 2023 | Commonwealth Fusion Systems | Oak Ridge National Laboratory (ORNL)
+    basis: disclosed
+  participants:
+  - investor: DOE INFUSE program (ORNL/PPPL, DOE Office of Science FES)
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 3a32fe461f09a44ad24a8141c2bdfab1bc2b1d8a9a19f25864c6d7f86068c4ac
+      quote: INFUSE 2022B - January 17, 2023 | Commonwealth Fusion Systems | Oak Ridge National Laboratory (ORNL)
+      basis: disclosed
+- id: cfs-infuse-2022b-oxide-dispersion-strengthened-ferritic-steel-wire-feedstock
+  instrument: voucher
+  round_label: INFUSE 2022B
+  program: DOE INFUSE (ORNL/PPPL, FES-funded)
+  announced_on: '2023-01-17'
+  use_of_proceeds: Collaboration with Pacific Northwest National Laboratory (PNNL)
+  evidence:
+  - field: announced_on
+    snapshot: 3a32fe461f09a44ad24a8141c2bdfab1bc2b1d8a9a19f25864c6d7f86068c4ac
+    quote: INFUSE 2022B - January 17, 2023 | Commonwealth Fusion Systems | Pacific Northwest National Laboratory (PNNL)
+    basis: disclosed
+  - field: round_label
+    snapshot: 3a32fe461f09a44ad24a8141c2bdfab1bc2b1d8a9a19f25864c6d7f86068c4ac
+    quote: INFUSE 2022B - January 17, 2023 | Commonwealth Fusion Systems | Pacific Northwest National Laboratory (PNNL)
+    basis: disclosed
+  participants:
+  - investor: DOE INFUSE program (ORNL/PPPL, DOE Office of Science FES)
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 3a32fe461f09a44ad24a8141c2bdfab1bc2b1d8a9a19f25864c6d7f86068c4ac
+      quote: INFUSE 2022B - January 17, 2023 | Commonwealth Fusion Systems | Pacific Northwest National Laboratory (PNNL)
+      basis: disclosed
+- id: cfs-infuse-2022a-machine-learning-assisted-prediction-of-tungsten-heavy-alloy
+  instrument: voucher
+  round_label: INFUSE 2022A
+  program: DOE INFUSE (ORNL/PPPL, FES-funded)
+  announced_on: '2022-06-15'
+  use_of_proceeds: Collaboration with MIT
+  evidence:
+  - field: announced_on
+    snapshot: 5bc8910b59f6319e50e9630e0766e825c9db4f51ecfe49e599df7a04f6c42e7f
+    quote: INFUSE 2022A - June 15, 2022 | Commonwealth Fusion Systems | MIT
+    basis: disclosed
+  - field: round_label
+    snapshot: 5bc8910b59f6319e50e9630e0766e825c9db4f51ecfe49e599df7a04f6c42e7f
+    quote: INFUSE 2022A - June 15, 2022 | Commonwealth Fusion Systems | MIT
+    basis: disclosed
+  participants:
+  - investor: DOE INFUSE program (ORNL/PPPL, DOE Office of Science FES)
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 5bc8910b59f6319e50e9630e0766e825c9db4f51ecfe49e599df7a04f6c42e7f
+      quote: INFUSE 2022A - June 15, 2022 | Commonwealth Fusion Systems | MIT
+      basis: disclosed
+- id: cfs-infuse-2022a-agile-design-workflow-for-plasma-facing-fusion-components-wi
+  instrument: voucher
+  round_label: INFUSE 2022A
+  program: DOE INFUSE (ORNL/PPPL, FES-funded)
+  announced_on: '2022-06-15'
+  use_of_proceeds: Collaboration with Oak Ridge National Laboratory (ORNL)
+  evidence:
+  - field: announced_on
+    snapshot: 5bc8910b59f6319e50e9630e0766e825c9db4f51ecfe49e599df7a04f6c42e7f
+    quote: INFUSE 2022A - June 15, 2022 | Commonwealth Fusion Systems | Oak Ridge National Laboratory (ORNL)
+    basis: disclosed
+  - field: round_label
+    snapshot: 5bc8910b59f6319e50e9630e0766e825c9db4f51ecfe49e599df7a04f6c42e7f
+    quote: INFUSE 2022A - June 15, 2022 | Commonwealth Fusion Systems | Oak Ridge National Laboratory (ORNL)
+    basis: disclosed
+  participants:
+  - investor: DOE INFUSE program (ORNL/PPPL, DOE Office of Science FES)
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 5bc8910b59f6319e50e9630e0766e825c9db4f51ecfe49e599df7a04f6c42e7f
+      quote: INFUSE 2022A - June 15, 2022 | Commonwealth Fusion Systems | Oak Ridge National Laboratory (ORNL)
+      basis: disclosed
+- id: cfs-infuse-2022a-assessing-elm-mitigation-by-pellet-triggering-in-sparc-low-c
+  instrument: voucher
+  round_label: INFUSE 2022A
+  program: DOE INFUSE (ORNL/PPPL, FES-funded)
+  announced_on: '2022-06-15'
+  use_of_proceeds: Collaboration with Oak Ridge National Laboratory (ORNL)
+  evidence:
+  - field: announced_on
+    snapshot: 213f3f28e72d9f5a878ecb03ce0ff25d1b1f688c6b45fc9f7f3666442d8339d7
+    quote: INFUSE 2022A - June 15, 2022 | Commonwealth Fusion Systems | Oak Ridge National Laboratory (ORNL)
+    basis: disclosed
+  - field: round_label
+    snapshot: 213f3f28e72d9f5a878ecb03ce0ff25d1b1f688c6b45fc9f7f3666442d8339d7
+    quote: INFUSE 2022A - June 15, 2022 | Commonwealth Fusion Systems | Oak Ridge National Laboratory (ORNL)
+    basis: disclosed
+  participants:
+  - investor: DOE INFUSE program (ORNL/PPPL, DOE Office of Science FES)
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 213f3f28e72d9f5a878ecb03ce0ff25d1b1f688c6b45fc9f7f3666442d8339d7
+      quote: INFUSE 2022A - June 15, 2022 | Commonwealth Fusion Systems | Oak Ridge National Laboratory (ORNL)
+      basis: disclosed
+- id: cfs-infuse-2021b-magnetic-pumps-for-molten-salt-fusion-devices
+  instrument: voucher
+  round_label: INFUSE 2021B
+  program: DOE INFUSE (ORNL/PPPL, FES-funded)
+  announced_on: '2021-11-22'
+  use_of_proceeds: Collaboration with Oak Ridge National Laboratory (ORNL)
+  evidence:
+  - field: announced_on
+    snapshot: 213f3f28e72d9f5a878ecb03ce0ff25d1b1f688c6b45fc9f7f3666442d8339d7
+    quote: INFUSE 2021B - November 22, 2021 | Commonwealth Fusion Systems | Oak Ridge National Laboratory (ORNL)
+    basis: disclosed
+  - field: round_label
+    snapshot: 213f3f28e72d9f5a878ecb03ce0ff25d1b1f688c6b45fc9f7f3666442d8339d7
+    quote: INFUSE 2021B - November 22, 2021 | Commonwealth Fusion Systems | Oak Ridge National Laboratory (ORNL)
+    basis: disclosed
+  participants:
+  - investor: DOE INFUSE program (ORNL/PPPL, DOE Office of Science FES)
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 213f3f28e72d9f5a878ecb03ce0ff25d1b1f688c6b45fc9f7f3666442d8339d7
+      quote: INFUSE 2021B - November 22, 2021 | Commonwealth Fusion Systems | Oak Ridge National Laboratory (ORNL)
+      basis: disclosed
+- id: cfs-infuse-2021b-neutron-ion-handshake-for-fusion-materials
+  instrument: voucher
+  round_label: INFUSE 2021B
+  program: DOE INFUSE (ORNL/PPPL, FES-funded)
+  announced_on: '2021-11-22'
+  use_of_proceeds: Collaboration with Sandia National Laboratories (SNL)
+  evidence:
+  - field: announced_on
+    snapshot: 213f3f28e72d9f5a878ecb03ce0ff25d1b1f688c6b45fc9f7f3666442d8339d7
+    quote: INFUSE 2021B - November 22, 2021 | Commonwealth Fusion Systems | Sandia National Laboratories (SNL)
+    basis: disclosed
+  - field: round_label
+    snapshot: 213f3f28e72d9f5a878ecb03ce0ff25d1b1f688c6b45fc9f7f3666442d8339d7
+    quote: INFUSE 2021B - November 22, 2021 | Commonwealth Fusion Systems | Sandia National Laboratories (SNL)
+    basis: disclosed
+  participants:
+  - investor: DOE INFUSE program (ORNL/PPPL, DOE Office of Science FES)
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 213f3f28e72d9f5a878ecb03ce0ff25d1b1f688c6b45fc9f7f3666442d8339d7
+      quote: INFUSE 2021B - November 22, 2021 | Commonwealth Fusion Systems | Sandia National Laboratories (SNL)
+      basis: disclosed
+agreements:
+- id: cfs-google-arc-ppa
+  counterparty: Google
+  counterparty_slug: google
+  type: ppa
+  binding: definitive
+  announced_on: '2025-06-30'
+  capacity_mw: 200.0
+  summary: Google to buy 200 MW (half of ARC output); Google also invested in CFS. Value and term not disclosed.
+  evidence:
+  - field: agreement
+    snapshot: 8b5df6aa301781c9326f777b0fb01b4c2967f3020ddd17919256bff92e15bc03
+    quote: Commonwealth Fusion Systems (CFS) will send Google 200 megawatts of electricity from its Arc power plant
+    basis: reported
+  - field: agreement
+    snapshot: b65c8a2efdee4f115f7043edafd8f3e93232e444a83e8e9a3c2ca9db3056abf3
+    quote: Google and Eni , two investors in CFS that also signed power purchase agreements (PPAs) to buy more than half the power the plant will produce
+    basis: disclosed
+    original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion/
+- id: cfs-eni-arc-ppa
+  counterparty: Eni
+  counterparty_slug: eni
+  type: ppa
+  binding: definitive
+  announced_on: '2025-09-22'
+  value:
+    amount: 1000000000.0
+    currency: USD
+    qualifier: over
+  summary: Eni to buy more than $1 billion worth of power from ARC; MW and term not disclosed.
+  evidence:
+  - field: agreement
+    snapshot: a772b7b9342a38a5b9a1a45ceac7a4e162c3d7a4b2bd28f4aaebb899c492f978
+    quote: Commonwealth Fusion Systems has agreed to sell Italian energy company Eni more than $1 billion worth of power from its first fusion reactor.
+    basis: reported
+  - field: agreement
+    snapshot: b65c8a2efdee4f115f7043edafd8f3e93232e444a83e8e9a3c2ca9db3056abf3
+    quote: Google and Eni , two investors in CFS that also signed power purchase agreements (PPAs) to buy more than half the power the plant will produce
+    basis: disclosed
+    original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion/
+- id: cfs-dominion-arc-site
+  counterparty: Dominion Energy
+  counterparty_slug: dominion-energy
+  type: site
+  binding: mou
+  announced_on: '2024-12-17'
+  capacity_mw: 400.0
+  summary: ARC site in Chesterfield County, Virginia; CFS leases the land from Dominion and Dominion helps with permits/grid connection; no money changes hands. Binding level not stated in source (set conservatively).
+  evidence:
+  - field: agreement
+    snapshot: 4738b738548cef4aaa4dd253ecaa2452c420018f311d78504ba06614a719947a
+    quote: CFS is leasing the land for Arc from Dominion, though apart from that, no money is changing hands between the two partners.
+    basis: reported
+- id: cfs-hyundai-partnership
+  counterparty: Hyundai Motor Group
+  counterparty_slug: hd-hyundai
+  type: partnership
+  binding: mou
+  announced_on: '2026-09-10'
+  summary: Equity investment is first step of a partnership to explore collaboration on future ARC plants and fusion in Korea; no terms disclosed.
+  evidence:
+  - field: agreement
+    snapshot: f7f43ea73956f737d33afc897bb1f0e3c0975724b5f0b3e28696723b76e577f7
+    quote: The investment marks the first step in a partnership between the companies as they explore avenues of collaboration on future ARC power plants.
+    basis: disclosed
+    original_url: https://cfs.energy/news-and-media/commonwealth-fusion-systems-announces-equity-investment-by-hyundai-motor-group/
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  'on': '2026-10-05'
+  note: "6 corrections. (1) Series A double count: cfs-2019-06-series-a-115m changed cumulative -> new_money (it is the Series A round per Form D D/A and Axios) and its unsupported closed_on 2019-07-01 (D/A signature date) removed; (2) cfs-2018-03-eni-series-a-first-close set amount_kind=duplicate, supersedes the $115M event (Eni's $50M sits inside the $115M; 2018 Form D $64.6M from 5 investors + later sales = $115M). (3) cfs-2020-05-form-d-round relabelled 'Unlabelled 2020 equity offering (SEC Form D)' and round_group series-a removed (no source calls it Series A). (4) cfs-2026-07-additional-equity-1b round_group series-b removed (release does not call it Series B). (5) ARPA-E BETHE: amount changed from the $2.39M ARPA-E listing figure to the USAspending obligation $1,288,316.58 (project closed 2023, outlays $1.20M); the $2.39M kept as field selection_amount. (6) BETHE announced_on 2019-11-07 was the BETHE programme release date (same value on the programme node), changed to USAspending date_signed 2020-09-28. Not confirmed: Series B 2021 participants/lead (all archived press copies 403/404); 2020 round label and whether it reached the reported $84M; date the $115M Series A was first announced (Boston Globe, likely mid-2018; Axios 2019-06-28 used); whether DESC0021623 ($1.54M SC grant, same project title) overlaps the BETHE selection amount; INFUSE 2022A listing dated 'June 15, 2023' for the UCSD project looks like a site typo for 2022 (kept as published); whether Plynth stake is inside the $1B raise (no amount, so no double count)."

@@ -1,0 +1,220 @@
+company: holtec-international
+name: Holtec International / Holtec Nuclear Corp
+sector: fission
+notes: 'SUPPLEMENT (not in pipeline/ledger/ to avoid a duplicate company slug): DOE awards found in USAspending that the existing
+  ledger pipeline/ledger/holtec-international.yaml did not list by FAIN at the time of writing. Some amounts may already be
+  evidenced there from another source (check before merging; do not double count). Amount = USAspending ''Award Amount'' (cumulative
+  federal obligation), dates = Base Obligation Date else Start Date; one page of up to 50 rows per award-type group, DOE as
+  awarding agency, 2007-10-01..2026-09-30; zero/negative awards omitted.'
+events:
+- id: holtec-international-dene0008833
+  instrument: grant
+  round_label: DENE0008833
+  announced_on: '2020-03-26'
+  amount:
+    amount: 5006612.0
+    currency: USD
+    qualifier: exact
+    usd: 5006612.0
+  amount_kind: new_money
+  program: DOE Office of Nuclear Energy
+  obligated_usd: 5006612.0
+  disbursed_usd: 3390132.09
+  use_of_proceeds: 'COMPETITIVE COOPERATIVE AGREEMENT: U.S. INDUSTRY OPPORTUNITIES FOR ADVANCED NUCLEAR TECHNOLOGY DEVELOPMENT
+    FOA'
+  evidence:
+  - field: amount
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Award ID": "DENE0008833", "Recipient Name": "HOLTEC GOVERNMENT SERVICES LLC", "Recipient UEI": "C9BJLUNH6FJ8",
+      "Award Amount": 5006612.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Base Obligation Date": "2020-03-26", "generated_internal_id": "ASST_NON_DENE0008833_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Award ID": "DENE0008833", "Recipient Name": "HOLTEC GOVERNMENT SERVICES LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Description": "COMPETITIVE COOPERATIVE AGREEMENT:  U.S. INDUSTRY OPPORTUNITIES FOR ADVANCED NUCLEAR TECHNOLOGY
+      DEV'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Nuclear Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: holtec-international-dene0008843
+  instrument: grant
+  round_label: DENE0008843
+  announced_on: '2020-09-08'
+  amount:
+    amount: 182211.2
+    currency: USD
+    qualifier: exact
+    usd: 182211.2
+  amount_kind: new_money
+  program: DOE Office of Nuclear Energy
+  obligated_usd: 182211.2
+  disbursed_usd: 94102.55
+  use_of_proceeds: 'COMPETITIVE COOPERATIVE AGREEMENT: U.S. INDUSTRY OPPORTUNITIES FOR ADVANCED NUCLEAR TECHNOLOGY DEVELOPMENT
+    FOA'
+  evidence:
+  - field: amount
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Award ID": "DENE0008843", "Recipient Name": "HOLTEC GOVERNMENT SERVICES LLC", "Recipient UEI": "C9BJLUNH6FJ8",
+      "Award Amount": 182211.2'
+    basis: disclosed
+  - field: announced_on
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Base Obligation Date": "2020-09-08", "generated_internal_id": "ASST_NON_DENE0008843_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Award ID": "DENE0008843", "Recipient Name": "HOLTEC GOVERNMENT SERVICES LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Description": "COMPETITIVE COOPERATIVE AGREEMENT:  U.S. INDUSTRY OPPORTUNITIES FOR ADVANCED NUCLEAR TECHNOLOGY
+      DEV'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Nuclear Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: holtec-international-dene0009055
+  instrument: grant
+  round_label: DENE0009055
+  announced_on: '2021-11-01'
+  amount:
+    amount: 104148813.0
+    currency: USD
+    qualifier: exact
+    usd: 104148813.0
+  amount_kind: new_money
+  program: DOE Office of Nuclear Energy
+  obligated_usd: 104148813.0
+  disbursed_usd: 104140465.13
+  use_of_proceeds: HOLTEC INTERNATIONAL IS DESIGNING THE SMR-160, A WALK-AWAY SAFE ADVANCED REACTOR WITH 160 MWE NET OUTPUT,
+    WITH
+  evidence:
+  - field: amount
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Award ID": "DENE0009055", "Recipient Name": "HOLTEC GOVERNMENT SERVICES LLC", "Recipient UEI": "C9BJLUNH6FJ8",
+      "Award Amount": 104148813.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Base Obligation Date": "2021-11-01", "generated_internal_id": "ASST_NON_DENE0009055_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Award ID": "DENE0009055", "Recipient Name": "HOLTEC GOVERNMENT SERVICES LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Description": "HOLTEC INTERNATIONAL IS DESIGNING THE SMR-160, A WALK-AWAY SAFE ADVANCED REACTOR WITH 160 MWE
+      NET O'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Nuclear Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: holtec-international-dene0009336
+  instrument: grant
+  round_label: DENE0009336
+  announced_on: '2023-09-25'
+  amount:
+    amount: 1986226.0
+    currency: USD
+    qualifier: exact
+    usd: 1986226.0
+  amount_kind: new_money
+  program: DOE Office of Nuclear Energy
+  obligated_usd: 1986226.0
+  disbursed_usd: 1142699.34
+  use_of_proceeds: NEW CONSENT BASED SITTING AWARD FOR HOLTEC GOVERNMENT SERVICES
+  evidence:
+  - field: amount
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Award ID": "DENE0009336", "Recipient Name": "HOLTEC GOVERNMENT SERVICES LLC", "Recipient UEI": "C9BJLUNH6FJ8",
+      "Award Amount": 1986226.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Base Obligation Date": "2023-09-25", "generated_internal_id": "ASST_NON_DENE0009336_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Award ID": "DENE0009336", "Recipient Name": "HOLTEC GOVERNMENT SERVICES LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+    quote: '"Description": "NEW CONSENT BASED SITTING AWARD FOR HOLTEC GOVERNMENT SERVICES"'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Nuclear Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: b8011cfb946ea342a2eff6b33235e33aba6ada75370a2a76dab4f7dc1c8eb0d6
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: holtec-international-delp0000153
+  instrument: debt
+  round_label: DELP0000153
+  announced_on: '2024-03-04'
+  amount:
+    amount: 1450241177.0
+    currency: USD
+    qualifier: exact
+    usd: 1450241177.0
+  amount_kind: new_money
+  program: DOE Loan Programs Office
+  committed_usd: 1450241177.0
+  use_of_proceeds: HOLTEC PALISADES LLC LOAN EIR0007
+  evidence:
+  - field: amount
+    snapshot: 496e1c34660b17e64db95088886f65565fb9734f73b84a50a1f0053c4435123a
+    quote: '"Award ID": "DELP0000153", "Recipient Name": "HOLTEC PALISADES LLC", "Recipient UEI": "SPLDUNDWZ371", "Loan Value":
+      1450241177.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 496e1c34660b17e64db95088886f65565fb9734f73b84a50a1f0053c4435123a
+    quote: '"Base Obligation Date": "2024-03-04", "generated_internal_id": "ASST_NON_DELP0000153_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 496e1c34660b17e64db95088886f65565fb9734f73b84a50a1f0053c4435123a
+    quote: '"Award ID": "DELP0000153", "Recipient Name": "HOLTEC PALISADES LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 496e1c34660b17e64db95088886f65565fb9734f73b84a50a1f0053c4435123a
+    quote: '"Description": "HOLTEC PALISADES LLC LOAN EIR0007"'
+    basis: disclosed
+  participants:
+  - investor: DOE Loan Programs Office
+    investor_slug: doe-edf
+    role: lender
+    evidence:
+    - field: participant
+      snapshot: 496e1c34660b17e64db95088886f65565fb9734f73b84a50a1f0053c4435123a
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+agreements: []

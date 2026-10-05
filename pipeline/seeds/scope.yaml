@@ -1,0 +1,6 @@
+# Reviewed scope decisions. Excluded ledgers are not published; reasons are listed on the methodology page.
+exclude:
+  bwx-technologies: Large listed defence and naval-fuel contractor; one small grant to a subsidiary does not describe its financing.
+  american-centrifuge-operating: Subsidiary of Centrus Energy; its contracts are recorded under Centrus.
+  atomic-alchemy: Subsidiary of Oklo with no funding event of its own; recorded under Oklo.
+  niowave: Mostly particle-accelerator hardware for Office of Science facilities; only a handful of awards relate to reactors or fuel.

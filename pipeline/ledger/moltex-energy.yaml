@@ -1,0 +1,216 @@
+company: moltex-energy
+name: Moltex Energy
+sector: fission
+notes: |-
+  STATUS: Moltex Energy Limited (UK parent) is in administration; on 2026-08-13 Moltex announced that Nuclea Energy Inc. signed a definitive agreement to acquire the technology portfolio and subsidiaries (completion subject to UK NSI Act approval). The census cites CBC (insolvency 2025-03; assets offered to Nuclea for CAD11.5M) but the CBC page timed out repeatedly in the archive tool and is NOT evidence here; the CAD11.5M price and the March 2025 insolvency date are unverified. Funding: Moltex states "more than C$96 million in private, Canadian and U.S. public-sector funding" (cumulative, not a round, not to be summed with events). Evidenced public events: ISED Strategic Innovation Fund CAD47.5M (ref 033-2020-2021-Q4-814523: amendment 0 start 2020-09-30, amendment 1 on 2026-03-31 restated start 2021-03-16, value unchanged; SIF values are authorised maxima, usually conditionally repayable, disbursements unknown) and two ACOA REGI contributions (CAD3.0M start 2021-02-12; CAD2,666,667 start 2024-01-30) found under the pipe-duplicated legal name "Moltex Energy Canada Inc.|Moltex Energy Canada Inc.". The census figure CAD5M from New Brunswick and further private rounds could not be sourced (CBC unreachable, WebSearch budget exhausted). USAspending: Moltex Energy USA LLC shows only a net negative DOE transaction (-USD9,384.43), no event. CORDIS, TED, BODACC probes: no records (UK affiliate not EU-funded). Verifier: administration confirmed by the 2026-08-13 company release (snapshot 498d7712: assets bought "from Moltex Energy Limited, which is currently in administration"); the administration start date is not in any evidenced source. The SIF record says "this is a repayable contribution" and amendment 1 (2026-03-31) extends the end date to 2054-07-31, i.e. a repayment schedule, so the event is now instrument=debt with ISED as lender (not a grant). ACOA REGI items are "conditionally repayable contribution" and stay as grant (government contribution, conditional repayment). All three are agreement maxima with no disbursement data; with the parent in administration, repayment/forgiveness status is unknown. The SIF announced_on (2020-09-30) is the original agreement start date, not a public announcement date; amendment 1 restates start 2021-03-16, which is closer to the public announcement of the federal support (not archived).
+  MERGE 2026-10-05 (USAspending supplement): the earlier statement that USAspending shows only a net negative DOE transaction for Moltex Energy USA LLC is superseded; award-level search finds the two ARPA-E awards above. Recipient is the US subsidiary of the group (same treatment as Moltex Energy Canada Inc.).
+verification:
+  status: verified
+  by: merge-verifier-agent (opus), 2026-10-05
+  'on': 2026-10-05
+  note: 'USAspending merge: 2 ARPA-E events added to US subsidiary Moltex Energy USA LLC: MEITNER DE-AR0000989 (USD 239,160.55
+    obligated and outlaid, 2019-04-09) and GEMINA DE-AR0001296 (USD 19,702.02 obligated, 7,513.70 outlaid, 2020-09-23). Nothing
+    skipped. Previous sign-off: verifier-agent (claude-opus-5-5), 2026-10-05: 2 corrections: SIF CAD47.5M re-typed from grant
+    to debt with ISED as lender (record says ''this is a repayable contribution''; amendment extends the end date to 2054).
+    Checked: administration of Moltex Energy Limited confirmed by the 2026-08-13 release (''currently in administration'');
+    ACOA REGI CAD3.0M and CAD2.67M are conditionally repayable, kept as grants; C$96M is cumulative. Gaps: administration
+    start date, CBC CAD11.5M price, private rounds and New Brunswick money not evidenced; disbursements unknown; SIF announced_on
+    is the agreement start date.'
+events:
+- id: moltex-2020-canada-sif
+  instrument: debt
+  round_label: ISED Strategic Innovation Fund, Stream 1 R&D (repayable contribution)
+  announced_on: 2020-09-30
+  amount:
+    amount: 47500000
+    currency: CAD
+    qualifier: up_to
+  program: Strategic Innovation Fund Stream 1 - R&D
+  evidence:
+  - field: amount
+    snapshot: 0c98ab98618cce8983e17879a8fe280052c74622a9273d96d613a7c267d1d514
+    quote: '"agreement_value": "47500000.0"'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 0c98ab98618cce8983e17879a8fe280052c74622a9273d96d613a7c267d1d514
+    quote: '"agreement_start_date": "2020-09-30"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 0c98ab98618cce8983e17879a8fe280052c74622a9273d96d613a7c267d1d514
+    quote: '"prog_name_en": "SIF Stream 1- R&D"'
+    basis: disclosed
+  participants:
+  - investor: Innovation, Science and Economic Development Canada (Strategic Innovation Fund)
+    investor_slug: isde-sif
+    role: lender
+    evidence:
+    - field: participant
+      snapshot: 0c98ab98618cce8983e17879a8fe280052c74622a9273d96d613a7c267d1d514
+      quote: '"owner_org": "ic"'
+      basis: disclosed
+- id: moltex-2021-acoa-regi-1
+  instrument: grant
+  round_label: ACOA REGI Business Scale-up and Productivity (first contribution)
+  announced_on: 2021-02-12
+  amount:
+    amount: 3000000
+    currency: CAD
+    qualifier: up_to
+  program: ACOA REGI - Business Scale-up and Productivity
+  evidence:
+  - field: amount
+    snapshot: 0128b1980b53882c1bd01ddcb5b263d71689ba790b389bf73040bc55c0ec20aa
+    quote: '"agreement_value": "3000000"'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 0128b1980b53882c1bd01ddcb5b263d71689ba790b389bf73040bc55c0ec20aa
+    quote: '"agreement_start_date": "2021-02-12"'
+    basis: disclosed
+  participants:
+  - investor: Atlantic Canada Opportunities Agency
+    investor_slug: acoa
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 0128b1980b53882c1bd01ddcb5b263d71689ba790b389bf73040bc55c0ec20aa
+      quote: '"owner_org": "acoa-apeca"'
+      basis: disclosed
+- id: moltex-2024-acoa-regi-2
+  instrument: grant
+  round_label: ACOA REGI Business Scale-up and Productivity (second contribution)
+  announced_on: 2024-01-30
+  amount:
+    amount: 2666667
+    currency: CAD
+    qualifier: up_to
+  program: ACOA REGI - Business Scale-up and Productivity
+  evidence:
+  - field: amount
+    snapshot: 0128b1980b53882c1bd01ddcb5b263d71689ba790b389bf73040bc55c0ec20aa
+    quote: '"agreement_value": "2666667"'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 0128b1980b53882c1bd01ddcb5b263d71689ba790b389bf73040bc55c0ec20aa
+    quote: '"agreement_start_date": "2024-01-30"'
+    basis: disclosed
+  participants:
+  - investor: Atlantic Canada Opportunities Agency
+    investor_slug: acoa
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 0128b1980b53882c1bd01ddcb5b263d71689ba790b389bf73040bc55c0ec20aa
+      quote: '"owner_org": "acoa-apeca"'
+      basis: disclosed
+- id: moltex-cumulative-funding
+  instrument: other
+  round_label: Cumulative private and public funding (company statement, not a round)
+  announced_on: 2026-08-13
+  amount:
+    amount: 96000000
+    currency: CAD
+    qualifier: over
+  amount_kind: cumulative
+  evidence:
+  - field: amount
+    snapshot: 498d7712082366de70de2da14f141783fe01de1d8cca3dd446cb10e39783b3d9
+    quote: has benefited from the commitment of more than C$96 million in private, Canadian and U.S. public-sector funding
+    basis: disclosed
+  - field: announced_on
+    snapshot: 498d7712082366de70de2da14f141783fe01de1d8cca3dd446cb10e39783b3d9
+    quote: Saint John, NB, August 13, 2026
+    basis: disclosed
+- id: moltex-energy-dear0000989
+  instrument: grant
+  round_label: ARPA-E MEITNER cooperative agreement DE-AR0000989 (recipient Moltex Energy USA LLC)
+  announced_on: '2019-04-09'
+  amount:
+    amount: 239160.55
+    currency: USD
+    qualifier: exact
+    usd: 239160.55
+  amount_kind: new_money
+  obligated_usd: 239160.55
+  disbursed_usd: 239160.55
+  program: ARPA-E
+  use_of_proceeds: MOLTEX ENERGY USA, LLC (1798-1548) - NEW MEITNER AWARD THIS PROJECT WILL USE STATE-OF-THE-ART MODELING
+    AND SIM
+  evidence:
+  - field: amount
+    snapshot: 923dd4faacfb8ca2e7b3e40a21b800936682071eb56c90a1d72f2cd0dab4b0ce
+    quote: '"Award ID": "DEAR0000989", "Recipient Name": "MOLTEX ENERGY USA LLC", "Recipient UEI": "RRYLWJ5BU3S1", "Award
+      Amount": 239160.55'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 923dd4faacfb8ca2e7b3e40a21b800936682071eb56c90a1d72f2cd0dab4b0ce
+    quote: '"Base Obligation Date": "2019-04-09", "generated_internal_id": "ASST_NON_DEAR0000989_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 923dd4faacfb8ca2e7b3e40a21b800936682071eb56c90a1d72f2cd0dab4b0ce
+    quote: '"Award ID": "DEAR0000989", "Recipient Name": "MOLTEX ENERGY USA LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 923dd4faacfb8ca2e7b3e40a21b800936682071eb56c90a1d72f2cd0dab4b0ce
+    quote: '"Description": "MOLTEX ENERGY USA, LLC (1798-1548) - NEW MEITNER AWARD\n\nTHIS PROJECT WILL USE STATE-OF-THE-ART
+      MO'
+    basis: disclosed
+  - field: obligated_disbursed
+    snapshot: 923dd4faacfb8ca2e7b3e40a21b800936682071eb56c90a1d72f2cd0dab4b0ce
+    quote: '"Recipient UEI": "RRYLWJ5BU3S1", "Award Amount": 239160.55, "Total Outlays": 239160.55'
+    basis: disclosed
+  participants:
+  - investor: ARPA-E
+    investor_slug: arpa-e
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 923dd4faacfb8ca2e7b3e40a21b800936682071eb56c90a1d72f2cd0dab4b0ce
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: moltex-energy-dear0001296
+  instrument: grant
+  round_label: ARPA-E GEMINA cooperative agreement DE-AR0001296 (recipient Moltex Energy USA LLC)
+  announced_on: '2020-09-23'
+  amount:
+    amount: 19702.02
+    currency: USD
+    qualifier: exact
+    usd: 19702.02
+  amount_kind: new_money
+  obligated_usd: 19702.02
+  disbursed_usd: 7513.7
+  program: ARPA-E
+  use_of_proceeds: 'GEMINA DE-FOA-0002174 MOLTEX ENERGY USA, LLC - NEW CONDITIONAL AWARD CONTROL NO: 2174-1542 PROJECT TITLE:
+    SSR'
+  evidence:
+  - field: amount
+    snapshot: 923dd4faacfb8ca2e7b3e40a21b800936682071eb56c90a1d72f2cd0dab4b0ce
+    quote: '"Award ID": "DEAR0001296", "Recipient Name": "MOLTEX ENERGY USA LLC", "Recipient UEI": "RRYLWJ5BU3S1", "Award
+      Amount": 19702.02'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 923dd4faacfb8ca2e7b3e40a21b800936682071eb56c90a1d72f2cd0dab4b0ce
+    quote: '"Base Obligation Date": "2020-09-23", "generated_internal_id": "ASST_NON_DEAR0001296_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 923dd4faacfb8ca2e7b3e40a21b800936682071eb56c90a1d72f2cd0dab4b0ce
+    quote: '"Award ID": "DEAR0001296", "Recipient Name": "MOLTEX ENERGY USA LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 923dd4faacfb8ca2e7b3e40a21b800936682071eb56c90a1d72f2cd0dab4b0ce
+    quote: '"Description": "GEMINA DE-FOA-0002174\nMOLTEX ENERGY USA, LLC - NEW CONDITIONAL AWARD\nCONTROL NO: 2174-1542\nPROJE'
+    basis: disclosed
+  - field: obligated_disbursed
+    snapshot: 923dd4faacfb8ca2e7b3e40a21b800936682071eb56c90a1d72f2cd0dab4b0ce
+    quote: '"Recipient UEI": "RRYLWJ5BU3S1", "Award Amount": 19702.02, "Total Outlays": 7513.7'
+    basis: disclosed
+  participants:
+  - investor: ARPA-E
+    investor_slug: arpa-e
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 923dd4faacfb8ca2e7b3e40a21b800936682071eb56c90a1d72f2cd0dab4b0ce
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+agreements: []

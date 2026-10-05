@@ -1,0 +1,117 @@
+company: startorus-fusion
+name: Startorus Fusion
+sector: fusion
+notes: 'Source: company English news page (startorus.com/company-news/484.html), basis disclosed (company''s own English release). The release says the A and A+ rounds also funded the work but gives no
+  amounts or dates; earlier rounds (angel/Pre-A/A/A+) not evidenced by an English primary or reputable report here, so omitted. Web search budget exhausted so no trade-press corroboration of the 880M CNY
+  figure; reviewer should corroborate. Release dated 2026-08-08 says ''recently completed''; closed_on not stated. Shanghai S&T Venture Capital fund is a follow-on (previous) investor.
+  Verifier: the CNY 880M amount, A++ label, date and all nine participants are verbatim in the company''s own English
+  release (primary, basis disclosed, consistent with policy D4). It remains uncorroborated by any independent source: the
+  verifier''s WebSearch budget was also exhausted, so no second source was checked. No lead is stated, so all participants
+  stay role=participant. The release date (2026-08-08) is the publication date; the round "recently" completed, closing date
+  unknown.'
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  "on": 2026-10-05
+  note: "0 corrections. Checked: CNY 880M A++ round, date 2026-08-08 and all nine participants are verbatim in the company's own English release (primary, disclosed, per D4); no lead stated. Not corroborated: no independent source found (verifier WebSearch budget also exhausted). Earlier A/A+ rounds not evidenced."
+events:
+- id: startorus-series-a-plus-plus-2026-08
+  instrument: equity
+  round_label: A++
+  announced_on: '2026-08-08'
+  amount:
+    amount: 880000000
+    currency: CNY
+    qualifier: exact
+  use_of_proceeds: Shanghai Jiading Experimental Base, NTST build-out and operation, design and construction of CTRFR-1 / Startorus-1, HTS magnets and AI plasma control
+  evidence:
+  - field: amount
+    snapshot: c77f7a14a954341833117b51a0941ec54028e6bdc2581c0222e538c3089ade9c
+    quote: has completed its A++ round financing, raising 880 million RMB
+    basis: disclosed
+  - field: announced_on
+    snapshot: c77f7a14a954341833117b51a0941ec54028e6bdc2581c0222e538c3089ade9c
+    quote: Startorus Fusion Completes A New Round of Financing of 880 Million Yuan to Advance the Engineering Progress of Fusion Energy Company News 2026-08-08
+    basis: disclosed
+  - field: round_label
+    snapshot: c77f7a14a954341833117b51a0941ec54028e6bdc2581c0222e538c3089ade9c
+    quote: has completed its A++ round financing
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: c77f7a14a954341833117b51a0941ec54028e6bdc2581c0222e538c3089ade9c
+    quote: will fund the construction of the Shanghai Jiading Experimental Base, the build-out and operation of NTST
+    basis: disclosed
+  participants:
+  - investor: Shenzhen Investment Holding Capital
+    investor_slug: shenzhen-investment-holding-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: c77f7a14a954341833117b51a0941ec54028e6bdc2581c0222e538c3089ade9c
+      quote: This financing round brings together investment institutions including Shenzhen Investment Holding Capital
+      basis: disclosed
+  - investor: Shenzhen Credit Guarantee Venture Capital
+    investor_slug: shenzhen-credit-guarantee-venture-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: c77f7a14a954341833117b51a0941ec54028e6bdc2581c0222e538c3089ade9c
+      quote: Shenzhen Credit Guarantee Venture Capital, ABC Capital
+      basis: disclosed
+  - investor: ABC Capital
+    investor_slug: abc-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: c77f7a14a954341833117b51a0941ec54028e6bdc2581c0222e538c3089ade9c
+      quote: Shenzhen Credit Guarantee Venture Capital, ABC Capital, BOCOM International Ventures
+      basis: disclosed
+  - investor: BOCOM International Ventures
+    investor_slug: bocom-international-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: c77f7a14a954341833117b51a0941ec54028e6bdc2581c0222e538c3089ade9c
+      quote: ABC Capital, BOCOM International Ventures, GGV Capital
+      basis: disclosed
+  - investor: GGV Capital
+    investor_slug: ggv-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: c77f7a14a954341833117b51a0941ec54028e6bdc2581c0222e538c3089ade9c
+      quote: BOCOM International Ventures, GGV Capital, Yongxin Fangzhou Capital
+      basis: disclosed
+  - investor: Yongxin Fangzhou Capital
+    investor_slug: yongxin-fangzhou-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: c77f7a14a954341833117b51a0941ec54028e6bdc2581c0222e538c3089ade9c
+      quote: GGV Capital, Yongxin Fangzhou Capital, COCOCAPITAL Corporation
+      basis: disclosed
+  - investor: COCOCAPITAL Corporation
+    investor_slug: cococapital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: c77f7a14a954341833117b51a0941ec54028e6bdc2581c0222e538c3089ade9c
+      quote: Yongxin Fangzhou Capital, COCOCAPITAL Corporation and PreIPO Capital
+      basis: disclosed
+  - investor: PreIPO Capital
+    investor_slug: preipo-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: c77f7a14a954341833117b51a0941ec54028e6bdc2581c0222e538c3089ade9c
+      quote: COCOCAPITAL Corporation and PreIPO Capital
+      basis: disclosed
+  - investor: Shanghai S&T Venture Capital (Group) Co., Ltd. (intellectual property fund)
+    investor_slug: shanghai-st-venture-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: c77f7a14a954341833117b51a0941ec54028e6bdc2581c0222e538c3089ade9c
+      quote: Previous investors such as the intellectual property fund under Shanghai S&T Venture Capital (Group) Co., Ltd.
+      basis: disclosed
+agreements: []

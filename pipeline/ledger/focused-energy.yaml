@@ -1,0 +1,277 @@
+company: focused-energy
+name: Focused Energy
+sector: fusion
+notes: >-
+  Series A (USD 240M, announced 2026-05-27, completed 2026-07-02 with Lowercarbon) is evidenced from the company
+  releases (German release of 2026-05-27; Lowercarbon release 2026-07-02) plus TechCrunch (reported). No amounts per
+  investor are disclosed. TechCrunch calls RWE "the main investor"; the company release calls Prime Movers Lab the
+  "bisherige Lead-Investor" (existing lead investor); roles are therefore recorded as participant, not lead.
+  GAPS: the 2023 seed round (listed on the company homepage milestones) has no amount or exact date in any
+  archivable source found, so no seed event is written. The company's English announcement page and the RWE release
+  were not found (RWE URL guess 404). WebSearch budget was exhausted, so SPRIND, EIC Fund and Hesse (MBG) amounts
+  inside the Series A are unknown. Pre-2026 German federal grants (BMBF) are not evidenced (Foerderkatalog blocked
+  per probe). TechCrunch says the company "has also received $200 million in grants" (not itemised, not recorded as an
+  event). The RWE Biblis site arrangement is mentioned (RWE "ermoeglicht die Nutzung des Standorts Biblis") but the
+  binding level of the agreement is not stated, so no site agreement is recorded. USAspending: Milestone award
+  DESC0024883 (7.5M obligated; DOE does not publish a per-company amount in its press release). The EIC EUROPA
+  grant (101257418) is a consortium project; only Focused Energy's own net EU contribution is recorded.
+  VERIFIER (2026-10-05): Milestone award DESC0024883 recipient is FOCUSED ENERGY INC (US subsidiary of Focused Energy GmbH);
+  announced_on changed from period start (2024-06-05) to date_signed (2024-06-03); Focused was among the 8 Milestone selectees
+  announced 2023-05-31. The BMFTR hub event is a 'planned' federal funding decision with no amount (not counted). Biblis plans of
+  EUR200M/EUR500M private investment are company capex, not funding.
+events:
+  - id: focused-energy-series-a-2026
+    instrument: equity
+    round_label: Series A
+    announced_on: 2026-05-27
+    closed_on: 2026-07-02
+    amount:
+      amount: 240000000
+      currency: USD
+      qualifier: exact
+    evidence:
+      - field: amount
+        snapshot: da3995cc4a5abe5a43060601511262f9d2bb168faae5322e3f830cfd84eceb79
+        quote: "hat in einer Serie-A-Finanzierungsrunde 240 Millionen US-Dollar eingeworben"
+        basis: disclosed
+      - field: announced_on
+        snapshot: da3995cc4a5abe5a43060601511262f9d2bb168faae5322e3f830cfd84eceb79
+        quote: "Darmstadt, 27. Mai 2026"
+        basis: disclosed
+      - field: round_label
+        snapshot: da3995cc4a5abe5a43060601511262f9d2bb168faae5322e3f830cfd84eceb79
+        quote: "Serie-A-Finanzierungsrunde"
+        basis: disclosed
+      - field: closed_on
+        snapshot: 432207e510d213566338a4a5b98f8ee486d82fd74d57beeb2d42065aea12be93
+        quote: "The formal closing of Lowercarbon Capital's participation marks the completion of the round."
+        basis: disclosed
+    participants:
+      - investor: RWE
+        investor_slug: rwe
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: da3995cc4a5abe5a43060601511262f9d2bb168faae5322e3f830cfd84eceb79
+            quote: "Zu den Kapitalgebern zählen neben RWE die Bundesagentur für Sprunginnovationen SPRIND"
+            basis: disclosed
+          - field: participant
+            snapshot: 810d525cbac18c9a5efaa5671d60d25998f1fd186649b3dff69206509e41dfa2
+            quote: "RWE was the main investor in the Series A, Focused Energy told TechCrunch."
+            basis: reported
+      - investor: SPRIND (Bundesagentur für Sprunginnovationen)
+        investor_slug: sprind
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: da3995cc4a5abe5a43060601511262f9d2bb168faae5322e3f830cfd84eceb79
+            quote: "die Bundesagentur für Sprunginnovationen SPRIND, der European Innovation Council Fund"
+            basis: disclosed
+      - investor: European Innovation Council Fund
+        investor_slug: eic-fund
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: da3995cc4a5abe5a43060601511262f9d2bb168faae5322e3f830cfd84eceb79
+            quote: "SPRIND, der European Innovation Council Fund, die Beteiligungs-Managementgesellschaft Hessen"
+            basis: disclosed
+      - investor: Beteiligungs-Managementgesellschaft Hessen
+        investor_slug: beteiligungs-managementgesellschaft-hessen
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: da3995cc4a5abe5a43060601511262f9d2bb168faae5322e3f830cfd84eceb79
+            quote: "die Beteiligungs-Managementgesellschaft Hessen, Futury Capital sowie der bisherige Lead-Investor Prime Movers Lab"
+            basis: disclosed
+      - investor: Futury Capital
+        investor_slug: futury-capital
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: da3995cc4a5abe5a43060601511262f9d2bb168faae5322e3f830cfd84eceb79
+            quote: "die Beteiligungs-Managementgesellschaft Hessen, Futury Capital sowie der bisherige Lead-Investor Prime Movers Lab"
+            basis: disclosed
+      - investor: Prime Movers Lab
+        investor_slug: prime-movers-lab
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: da3995cc4a5abe5a43060601511262f9d2bb168faae5322e3f830cfd84eceb79
+            quote: "Futury Capital sowie der bisherige Lead-Investor Prime Movers Lab aus den USA"
+            basis: disclosed
+      - investor: Lowercarbon Capital
+        investor_slug: lowercarbon-capital
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: 432207e510d213566338a4a5b98f8ee486d82fd74d57beeb2d42065aea12be93
+            quote: "today announces the participation of Lowercarbon Capital in its Series A financing round"
+            basis: disclosed
+      - investor: EastX Ventures
+        investor_slug: eastx-ventures
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: 432207e510d213566338a4a5b98f8ee486d82fd74d57beeb2d42065aea12be93
+            quote: "Futury Capital, EastX Ventures, and Prime Movers Lab"
+            basis: disclosed
+  - id: focused-energy-cumulative-private-2026
+    instrument: equity
+    round_label: Cumulative private capital (statement)
+    announced_on: 2026-06-02
+    amount:
+      amount: 300000000
+      currency: USD
+      qualifier: exact
+    amount_kind: cumulative
+    evidence:
+      - field: amount
+        snapshot: 810d525cbac18c9a5efaa5671d60d25998f1fd186649b3dff69206509e41dfa2
+        quote: "brings the company’s total private capital raised to $300 million, the company told TechCrunch"
+        basis: reported
+      - field: announced_on
+        snapshot: 810d525cbac18c9a5efaa5671d60d25998f1fd186649b3dff69206509e41dfa2
+        quote: "10:01 AM PDT · June 2, 2026"
+        basis: reported
+  - id: focused-energy-doe-milestone-desc0024883
+    instrument: grant
+    round_label: DOE Milestone-Based Fusion Development Program
+    announced_on: 2024-06-03
+    amount:
+      amount: 7500000
+      currency: USD
+      qualifier: exact
+    committed_usd: 7500000
+    obligated_usd: 7500000
+    disbursed_usd: 2150000
+    program: Milestone-Based Fusion Development Program (DOE Office of Science FES)
+    use_of_proceeds: INERTIAL FUSION ENERGY WITH HIGH-GAIN PROTON FAST IGNITION
+    evidence:
+      - field: amount
+        snapshot: 348cb2f4895795d4a7ddfe442dfef7cba93c08643c7d733aae0fd88b421046fd
+        quote: '"total_obligation":7500000.0'
+        basis: disclosed
+      - field: announced_on
+        snapshot: 348cb2f4895795d4a7ddfe442dfef7cba93c08643c7d733aae0fd88b421046fd
+        quote: '"date_signed":"2024-06-03"'
+        basis: disclosed
+      - field: disbursed_usd
+        snapshot: 348cb2f4895795d4a7ddfe442dfef7cba93c08643c7d733aae0fd88b421046fd
+        quote: '"total_account_outlay":2150000.0'
+        basis: disclosed
+      - field: program
+        snapshot: 69b6dcec82c9dff9e92b6cb0b2745b6c2fd638b087c2a924c6554ee30662f301
+        quote: "Demonstration of ion-beam focusing to support the fast-ignition approach to inertial fusion energy"
+        basis: disclosed
+    participants:
+      - investor: US Department of Energy, Office of Science (Fusion Energy Sciences)
+        investor_slug: doe-fes
+        role: grantor
+        evidence:
+          - field: participant
+            snapshot: 348cb2f4895795d4a7ddfe442dfef7cba93c08643c7d733aae0fd88b421046fd
+            quote: '"recipient_name":"FOCUSED ENERGY INC"'
+            basis: disclosed
+          - field: participant
+            snapshot: 348cb2f4895795d4a7ddfe442dfef7cba93c08643c7d733aae0fd88b421046fd
+            quote: '"subtier_agency":{"name":"Department of Energy","code":"8900"'
+            basis: disclosed
+  - id: focused-energy-eic-europa-101257418
+    instrument: grant
+    round_label: EIC Pathfinder (EUROPA, grant agreement 101257418)
+    announced_on: 2025-12-18
+    amount:
+      amount: 125000
+      currency: EUR
+      qualifier: exact
+    program: Horizon Europe, European Innovation Council
+    evidence:
+      - field: amount
+        snapshot: b6005228c31af33b2caaaee84bfcd5106dc0b0248e30fbe5e40517e83f18a613
+        quote: "deducted by the EU contribution to its linked third party. It considers the distribution of the EU financial contribution between direct beneficiaries of the project and other types of participants, like third-party participants. € 125 000,00"
+        basis: disclosed
+      - field: announced_on
+        snapshot: b6005228c31af33b2caaaee84bfcd5106dc0b0248e30fbe5e40517e83f18a613
+        quote: "EC signature date 18 December 2025"
+        basis: disclosed
+    participants:
+      - investor: European Innovation Council (European Commission)
+        investor_slug: eic
+        role: grantor
+        evidence:
+          - field: participant
+            snapshot: b6005228c31af33b2caaaee84bfcd5106dc0b0248e30fbe5e40517e83f18a613
+            quote: "Funded under The European Innovation Council (EIC)"
+            basis: disclosed
+  - id: focused-energy-horizon-infra-4u-pi-101290656
+    instrument: grant
+    round_label: Horizon Europe Research Infrastructures (4U-PI, grant agreement 101290656)
+    announced_on: 2026-05-07
+    amount:
+      amount: 252117.5
+      currency: EUR
+      qualifier: exact
+    program: Horizon Europe, Research infrastructures
+    evidence:
+      - field: amount
+        snapshot: 93037db2b9fcce606264912bd6ad16847c6d1bdbb206e208dbaeb285daf2ae77
+        quote: "deducted by the EU contribution to its linked third party. It considers the distribution of the EU financial contribution between direct beneficiaries of the project and other types of participants, like third-party participants. € 252 117,50"
+        basis: disclosed
+      - field: announced_on
+        snapshot: 93037db2b9fcce606264912bd6ad16847c6d1bdbb206e208dbaeb285daf2ae77
+        quote: "EC signature date 7 May 2026"
+        basis: disclosed
+    participants:
+      - investor: European Commission (Horizon Europe)
+        investor_slug: european-commission-horizon
+        role: grantor
+        evidence:
+          - field: participant
+            snapshot: 93037db2b9fcce606264912bd6ad16847c6d1bdbb206e208dbaeb285daf2ae77
+            quote: "Funded under Research infrastructures"
+            basis: disclosed
+  - id: focused-energy-bmftr-laser-fusion-hub-2026
+    instrument: grant
+    round_label: BMFTR national Laser Fusion Hub (Fusion 2040)
+    announced_on: 2026-07-29
+    program: Fusion 2040 / Hightech-Agenda, national fusion hubs (BMFTR)
+    evidence:
+      - field: announced_on
+        snapshot: a237e8afb47fd50ed03868514532e9c00028c7a5b79460aa33c1040aec9bebe1
+        quote: "Biblis / Darmstadt, 29. Juli 2026"
+        basis: disclosed
+      - field: round_label
+        snapshot: a237e8afb47fd50ed03868514532e9c00028c7a5b79460aa33c1040aec9bebe1
+        quote: "Die geplante Förderung des Fusionsprojekts von Focused Energy durch den Bund"
+        basis: disclosed
+    participants:
+      - investor: German Federal Ministry of Research, Technology and Space (BMFTR)
+        investor_slug: bmftr
+        role: grantor
+        evidence:
+          - field: participant
+            snapshot: a237e8afb47fd50ed03868514532e9c00028c7a5b79460aa33c1040aec9bebe1
+            quote: "Das Bundesministerium für Forschung, Technologie und Raumfahrt (BMFTR) verleiht Focused Energy damit eine tragende Rolle"
+            basis: disclosed
+agreements:
+  - id: focused-energy-lle-research-collaboration-2026
+    counterparty: University of Rochester Laboratory for Laser Energetics (LLE)
+    counterparty_slug: university-of-rochester-lle
+    type: partnership
+    binding: definitive
+    announced_on: 2026-03-20
+    value:
+      amount: 6900000
+      currency: USD
+      qualifier: exact
+    summary: Industrial-sponsored research agreement awarded to LLE by Focused Energy (money flows from Focused Energy to LLE; not funding received).
+    evidence:
+      - field: agreement
+        snapshot: 405c50418b92782589ec20ed8513959354d13a860006a78ccf0f5a98d9ff1886
+        quote: "Energetics (LLE) have established a $6.9 million partnership, the largest single industrial-sponsored research agreement awarded to LLE"
+        basis: disclosed
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  "on": 2026-10-05
+  note: "3 corrections. DOE Milestone DESC0024883 (recipient FOCUSED ENERGY INC, US subsidiary) announced_on changed from period start to date_signed 2024-06-03, outlay evidence and a DOE grantor quote added; BMFTR Laser Fusion Hub event given a round_label quote showing a planned federal funding decision (no amount, not counted). Checked: Series A $240M (2026-05-27, completed 2026-07-02 with Lowercarbon), no lead asserted given the RWE 'main investor' vs Prime Movers Lab 'bisherige Lead-Investor' conflict; CORDIS net EU contributions EUR125,000 (EUROPA) and EUR252,117.50 (4U-PI) confirmed as Focused Energy GmbH's own lines. Gaps: 2023 seed, BMBF grants, TechCrunch '$200M in grants' unitemised."

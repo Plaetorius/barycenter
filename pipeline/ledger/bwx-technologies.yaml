@@ -1,0 +1,70 @@
+company: bwx-technologies
+name: BWX Technologies, Inc.
+sector: fission
+notes: 'Built from USAspending spending_by_award search responses (POST, archived with request body in raw/manifest.jsonl, source_id
+  usaspending-post). Amount = USAspending ''Award Amount'' (cumulative federal obligation, not a ceiling and not an announced figure);
+  disbursed_usd = ''Total Outlays'' when present. Dates = ''Base Obligation Date'' (first obligation), else ''Start Date''. Search
+  was recipient-name text on awarding agency = Department of Energy over 2007-10-01..2026-09-30 and one page of up to 50 rows per
+  award-type group; awards with zero or negative net obligation are omitted. Recipient name variants not matched by the name search
+  may be missing. Government record, basis=disclosed. VERIFIER: Scope: the single award is to BWXT NUCLEAR ENERGY, INC. (UEI C4L1VT236AA1),
+  a subsidiary of BWX Technologies, Inc. BWXT is a large listed contractor (naval reactors, NNSA, components); its DOE procurement
+  contracts are revenue and are rightly absent. A $2.7M cost-shared cooperative agreement is not representative of how BWXT is financed.'
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: 'Evidence verified (1 event DENE0008744, $2,693,740 obligated / $1,527,923 outlaid, FOA DE-FOA-0001817 industry cooperative
+    agreement), 0 amount/date errors; Checked against the archived USAspending award-level search (spending_level awards: one row
+    per award, modifications already netted, so one event per award and no per-modification duplicates). Award Amount = obligated
+    to date (not a ceiling); disbursed_usd = Total Outlays, now evidenced by its own quote (1 added). announced_on is the first-obligation
+    date, not a press date. Identity: recipient is subsidiary BWXT Nuclear Energy, Inc., noted. SCOPE: status verified covers the
+    evidence only. BWXT is a diversified public contractor, not a venture- or grant-funded nuclear energy developer; recommend excluding
+    it from the funding map (or showing it as a supplier without a funding total). If kept, the IPO/spin-off and debt are not recorded
+    (gap).'
+events:
+- id: bwx-technologies-dene0008744
+  instrument: grant
+  round_label: DENE0008744
+  announced_on: '2018-08-01'
+  amount:
+    amount: 2693740.42
+    currency: USD
+    qualifier: exact
+    usd: 2693740.42
+  amount_kind: new_money
+  program: DOE Office of Nuclear Energy
+  obligated_usd: 2693740.42
+  disbursed_usd: 1527923.15
+  use_of_proceeds: 'COMPETITIVE COOPERATIVE AGREEMENT AWARD UNDER FOA DE-FOA-0001817 FOA TITLE: ''''U.S. INDUSTRY OPPORTUNITIES FOR'
+  evidence:
+  - field: amount
+    snapshot: 488b66697db80a6a0b292414647e3cc327f04548f4db40b6fedf58e3223c011e
+    quote: '"Award ID": "DENE0008744", "Recipient Name": "BWXT NUCLEAR ENERGY, INC.", "Recipient UEI": "C4L1VT236AA1", "Award Amount":
+      2693740.42'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: 488b66697db80a6a0b292414647e3cc327f04548f4db40b6fedf58e3223c011e
+    quote: '"Award Amount": 2693740.42, "Total Outlays": 1527923.15'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 488b66697db80a6a0b292414647e3cc327f04548f4db40b6fedf58e3223c011e
+    quote: '"Base Obligation Date": "2018-08-01", "generated_internal_id": "ASST_NON_DENE0008744_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 488b66697db80a6a0b292414647e3cc327f04548f4db40b6fedf58e3223c011e
+    quote: '"Award ID": "DENE0008744", "Recipient Name": "BWXT NUCLEAR ENERGY, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 488b66697db80a6a0b292414647e3cc327f04548f4db40b6fedf58e3223c011e
+    quote: '"Description": "COMPETITIVE COOPERATIVE AGREEMENT AWARD UNDER FOA DE-FOA-0001817\nFOA TITLE: ''''U.S. INDUSTRY OPPORT'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Nuclear Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 488b66697db80a6a0b292414647e3cc327f04548f4db40b6fedf58e3223c011e
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+agreements: []

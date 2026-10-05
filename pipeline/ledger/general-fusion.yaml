@@ -1,0 +1,788 @@
+company: general-fusion
+name: General Fusion
+sector: fusion
+notes: 'Sources: SEC F-4/424B3 prospectus (CIK 2074850, snapshot ea0db30c), 8-Ks, 20-F, General Fusion releases (generalfusion.com is fetchable), Canada G&C JSON, Wayback copies of 2019-2021 pages. GAPS:
+  no primary source retrievable for Series A-C (2007-2018), Cenovus/Chrysalix/Bezos Expeditions early investments, SDTC and UK government support; WebSearch budget was exhausted and older release URLs not
+  found. Series D 2019 rests on two press-digest stubs on the company site (reported). CONFLICTS/DOUBLE-COUNT WARNINGS: (1) Aug 2025: release says US$22M (C$31M); SEC says Rights Offering US$18.4M (incl.
+  US$1.4M related-party loan settlement) plus CAD 5.0M (~US$3.6M) SIF commitment = ~US$22.0M. The SIF 2026-03-26 amendment event (CAD 5M) is the same money as the SIF part of the US$22M headline; the ledger
+  counts the equity at 18.4M only. (2) SAFEs: SEC gross US$44.5M (Q4 2025 to Jan 2026) vs Globe and Mail via TechCrunch US$51.1M from ~70 investors. (3) Series F: release said US$25M combined first close
+  incl. BC grant; SEC says Class F Series 1 total proceeds US$20.9M (July 2023); announced_on is the release date, closed_on approximated to month-end July 2023. (4) SIF agreement values are authorised
+  maxima (Canada G&C); contributions come with warrants issued to the Crown. The cumulative event is amount_kind=cumulative and must not be summed with increments. SPAC: Spring Valley Acquisition Corp.
+  III IPO (US$230M, 2025-09-05) is the SPAC''s own capital, recorded for completeness; trust was heavily redeemed (21,075,896 shares per 20-F pro forma note). The listing event has no amount: company says
+  it entered public markets with approximately US$150M cash inclusive of net private placement and trust proceeds; TechCrunch/FusionX reports US$127M net. PIPE: 10,556,367 units at $10.20 = ~US$107.7M gross
+  vs ''approximately US$105M'' in releases; anchor Alyeska inferred from the 20-F beneficial ownership text (8-K only says ''Anchor PIPE Investor''). Nasdaq trading began 2026-07-13 as GFUZ (closing 2026-07-10).
+  Date precision: SAFE announced_on is month-start (Nov 2025); Series D 2019 year from post context. INFUSE and NSERC events carry no amounts; NSERC award is joint with SFU. No ATM programme found. BC grant
+  announced_on is the Series F release date (August 2023, exact day not stated). Reviewer: check new-entity slugs (british-columbia-government, canadian-nuclear-laboratories, tobias-lutke, triumf, renexia,
+  kyoto-fusioneering). VERIFIER 2026-10-05: the CA$20M CNL/BDC lead investment (Aug 2024) is the same money as the July 2024 US$15.8M secured
+  convertible notes (2024 financing inflows were only the notes plus US$1.5M SIF warrants); the notes later converted into Class B Series 2
+  shares in the Aug 2025 rights offering (non-cash, excluded from the US$18.4M). SPAC trust: 21,075,896 of 23,000,000 SVAC shares were redeemed,
+  so the US$230M SPAC IPO is a ceiling; the residual trust cash reaching General Fusion is not stated in any snapshot (gap). The US$1B
+  pro-forma equity value assumed no redemptions and was removed from valuation_post_usd. INFUSE vouchers fund the national lab (SRNL), not
+  General Fusion. SIF: CAD 74.3M actually received by 2026-06-02 (equal to agreement value), so SIF increments are real money; the prospectus
+  elsewhere says only CAD 3.9M of the final CAD 5.0M had been funded (internal inconsistency).'
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  "on": 2026-10-05
+  note: >-
+    8 corrections: CNL/BDC CA$20M (2024) marked duplicate of the July 2024 US$15.8M convertible notes; Spring Valley III US$230M IPO set to
+    ceiling (92% of trust redeemed, SPAC's own capital); valuation_post_usd US$1B removed from SPAC listing (pro forma assuming no
+    redemptions); PIPE participant Alyeska downgraded lead -> participant (8-K names only an unnamed "Anchor PIPE Investor"; Alyeska holds
+    7.84M of 10.56M PIPE units, so anchor is likely but inferred) with PIPE-warrant quote added; Series E participants Jeff Bezos, Tobias
+    Lutke, Kam Ghaffarian removed (named as existing individual investors, not as Series E participants); 2019 round_label "Series D"
+    replaced (quote says only "latest round"); SIF cumulative event got the "received CAD 74.3M" evidence; notes on INFUSE recipient.
+    Not confirmed: 2019 US$65M (press digest only; POWER says ">$100 million", probably CAD or incl. other money); net SPAC trust cash to
+    GF; SAFE US$44.5M (SEC) vs US$51.1M (Globe via TechCrunch); PIPE ~US$105M vs 10,556,367 x $10.20 = US$107.7M; Series A-C missing.
+events:
+- id: general-fusion-series-d-2019
+  instrument: equity
+  round_label: 2019 financing round (reported; "Series D" label not evidenced)
+  announced_on: '2019-12-16'
+  amount:
+    amount: 65000000
+    currency: USD
+    qualifier: approx
+  evidence:
+  - field: amount
+    snapshot: ad8a8de035c909577e8c425f0cb0af82c4567f7491264953d65494f999e71edd
+    quote: has raised US$65-million to build a prototype plant
+    basis: reported
+    original_url: https://generalfusion.com/2019/12/no-carbon-emissions-no-meltdowns-b-c-s-general-fusion-aims-to-build-safe-clean-power-plant-of-the-future-with-us65-million-funding/
+  - field: announced_on
+    snapshot: 260db0ef983576960b0c71caed7ec77552ecb9be14b7aca4051bf8d301a2354a
+    quote: announced Dec. 16 that it raised more than $100 million in its latest round of financing
+    basis: reported
+    original_url: https://generalfusion.com/2020/01/canadian-company-has-funding-for-fusion-demonstration-plant/
+  - field: round_label
+    snapshot: 260db0ef983576960b0c71caed7ec77552ecb9be14b7aca4051bf8d301a2354a
+    quote: latest round of financing
+    basis: reported
+    original_url: https://generalfusion.com/2020/01/canadian-company-has-funding-for-fusion-demonstration-plant/
+- id: general-fusion-sif-2019
+  instrument: cost_share
+  round_label: SIF Stream 1 R&D contribution agreement (initial)
+  announced_on: '2019-05-29'
+  amount:
+    amount: 49275000
+    currency: CAD
+    qualifier: exact
+  program: Strategic Innovation Fund Stream 1
+  evidence:
+  - field: amount
+    snapshot: c638ee082e546e2d3dcd3762f41042a6061fc927b4665a852f68edb5b62c551e
+    quote: '"agreement_number":"811346","agreement_value":"49275000.0"'
+    basis: disclosed
+  - field: announced_on
+    snapshot: ea0db30c00c175571b43becde22c17c4d6aa5e27fe49aeb9bcb324246d6fcd67
+    quote: Strategic Innovation Fund Contribution Agreement dated May 29, 2019
+    basis: disclosed
+  - field: round_label
+    snapshot: c638ee082e546e2d3dcd3762f41042a6061fc927b4665a852f68edb5b62c551e
+    quote: '"prog_name_en":"SIF Stream 1- R&D"'
+    basis: disclosed
+  participants:
+  - investor: Government of Canada Strategic Innovation Fund
+    investor_slug: isde-sif
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: c638ee082e546e2d3dcd3762f41042a6061fc927b4665a852f68edb5b62c551e
+      quote: '"prog_name_en":"SIF Stream 1- R&D"'
+      basis: disclosed
+- id: general-fusion-nrc-iap-2020
+  instrument: grant
+  round_label: NRC Innovation Assistance Program
+  announced_on: '2020-04-01'
+  amount:
+    amount: 680988
+    currency: CAD
+    qualifier: exact
+  program: NRC Innovation Assistance Program
+  evidence:
+  - field: amount
+    snapshot: c638ee082e546e2d3dcd3762f41042a6061fc927b4665a852f68edb5b62c551e
+    quote: '"agreement_value":"680988"'
+    basis: disclosed
+  - field: announced_on
+    snapshot: c638ee082e546e2d3dcd3762f41042a6061fc927b4665a852f68edb5b62c551e
+    quote: '"agreement_start_date":"2020-04-01"'
+    basis: disclosed
+  - field: round_label
+    snapshot: c638ee082e546e2d3dcd3762f41042a6061fc927b4665a852f68edb5b62c551e
+    quote: '"prog_name_en":"Innovation Assistance Program"'
+    basis: disclosed
+  participants:
+  - investor: National Research Council of Canada
+    investor_slug: nrc-ca
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: c638ee082e546e2d3dcd3762f41042a6061fc927b4665a852f68edb5b62c551e
+      quote: '"owner_org":"nrc-cnrc"'
+      basis: disclosed
+- id: general-fusion-series-e-2021
+  instrument: equity
+  round_label: Series E
+  announced_on: '2021-11-30'
+  amount:
+    amount: 130000000
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: eafc12389aa321700c9f7a53035c27fd91cab5e2e0568edb96155043a1e18dd7
+    quote: closing an oversubscribed $130 million (USD) Series E funding round
+    basis: disclosed
+    original_url: https://generalfusion.com/2021/11/general-fusion-closes-oversubscribed-130-million-transitional-financing-round/
+  - field: announced_on
+    snapshot: eafc12389aa321700c9f7a53035c27fd91cab5e2e0568edb96155043a1e18dd7
+    quote: VANCOUVER, Canada (30 November 2021)
+    basis: disclosed
+    original_url: https://generalfusion.com/2021/11/general-fusion-closes-oversubscribed-130-million-transitional-financing-round/
+  - field: round_label
+    snapshot: eafc12389aa321700c9f7a53035c27fd91cab5e2e0568edb96155043a1e18dd7
+    quote: Series E funding round
+    basis: disclosed
+    original_url: https://generalfusion.com/2021/11/general-fusion-closes-oversubscribed-130-million-transitional-financing-round/
+  participants:
+  - investor: Temasek
+    investor_slug: temasek
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: eafc12389aa321700c9f7a53035c27fd91cab5e2e0568edb96155043a1e18dd7
+      quote: This financing, led by Temasek,
+      basis: disclosed
+      original_url: https://generalfusion.com/2021/11/general-fusion-closes-oversubscribed-130-million-transitional-financing-round/
+  - investor: GIC
+    investor_slug: gic
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: eafc12389aa321700c9f7a53035c27fd91cab5e2e0568edb96155043a1e18dd7
+      quote: Temasek, GIC, the Jameel Investment Management Company (JIMCO)
+      basis: disclosed
+      original_url: https://generalfusion.com/2021/11/general-fusion-closes-oversubscribed-130-million-transitional-financing-round/
+  - investor: Jameel Investment Management Company (JIMCO)
+    investor_slug: jimco
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: eafc12389aa321700c9f7a53035c27fd91cab5e2e0568edb96155043a1e18dd7
+      quote: the Jameel Investment Management Company (JIMCO)
+      basis: disclosed
+      original_url: https://generalfusion.com/2021/11/general-fusion-closes-oversubscribed-130-million-transitional-financing-round/
+  - investor: Business Development Bank of Canada (BDC)
+    investor_slug: bdc-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: eafc12389aa321700c9f7a53035c27fd91cab5e2e0568edb96155043a1e18dd7
+      quote: the Business Development Bank of Canada (BDC)
+      basis: disclosed
+      original_url: https://generalfusion.com/2021/11/general-fusion-closes-oversubscribed-130-million-transitional-financing-round/
+  - investor: Segra Capital
+    investor_slug: segra-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: eafc12389aa321700c9f7a53035c27fd91cab5e2e0568edb96155043a1e18dd7
+      quote: the hedge fund firm Segra Capital
+      basis: disclosed
+      original_url: https://generalfusion.com/2021/11/general-fusion-closes-oversubscribed-130-million-transitional-financing-round/
+- id: general-fusion-series-f-2023
+  instrument: equity
+  round_label: Series F (first close; Class F Series 1)
+  announced_on: '2023-08-09'
+  amount:
+    amount: 20900000
+    currency: USD
+    qualifier: exact
+  closed_on: '2023-07-31'
+  evidence:
+  - field: amount
+    snapshot: ea0db30c00c175571b43becde22c17c4d6aa5e27fe49aeb9bcb324246d6fcd67
+    quote: for total proceeds of $20.9 million
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1d33b095e7304e9e4ac9431b6c41b5793eb28a4f3591863d5fe737ef91461fd9
+    quote: RICHMOND, Canada (August 9, 2023)
+    basis: disclosed
+  - field: round_label
+    snapshot: 1d33b095e7304e9e4ac9431b6c41b5793eb28a4f3591863d5fe737ef91461fd9
+    quote: completed the first close of its Series F raise
+    basis: disclosed
+  - field: closed_on
+    snapshot: ea0db30c00c175571b43becde22c17c4d6aa5e27fe49aeb9bcb324246d6fcd67
+    quote: In July 2023, General Fusion issued 9,541,285 Series 1 Class F preferred shares
+    basis: disclosed
+  participants:
+  - investor: BDC Capital
+    investor_slug: bdc-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 1d33b095e7304e9e4ac9431b6c41b5793eb28a4f3591863d5fe737ef91461fd9
+      quote: The round was anchored by existing investors, BDC Capital and GIC.
+      basis: disclosed
+  - investor: GIC
+    investor_slug: gic
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 1d33b095e7304e9e4ac9431b6c41b5793eb28a4f3591863d5fe737ef91461fd9
+      quote: The round was anchored by existing investors, BDC Capital and GIC.
+      basis: disclosed
+- id: general-fusion-bc-grant-2023
+  instrument: grant
+  round_label: Government of British Columbia grant
+  announced_on: '2023-08-09'
+  amount:
+    amount: 5000000
+    currency: CAD
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: af55d7800f7e57cd2c3f9d3c75cdf42e47021c3d7607f2a6cc469e7599ac707c
+    quote: the B.C. Government announced CA$5 million in provincial support
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1d33b095e7304e9e4ac9431b6c41b5793eb28a4f3591863d5fe737ef91461fd9
+    quote: It also included new grant funding from the Government of British Columbia
+    basis: disclosed
+  participants:
+  - investor: Government of British Columbia
+    investor_slug: british-columbia-government
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 1d33b095e7304e9e4ac9431b6c41b5793eb28a4f3591863d5fe737ef91461fd9
+      quote: new grant funding from the Government of British Columbia
+      basis: disclosed
+- id: general-fusion-sif-2023-amendment
+  instrument: cost_share
+  round_label: SIF contribution agreement, increase
+  announced_on: '2023-12-04'
+  amount:
+    amount: 5000000
+    currency: CAD
+    qualifier: exact
+  program: Strategic Innovation Fund Stream 1
+  evidence:
+  - field: amount
+    snapshot: af55d7800f7e57cd2c3f9d3c75cdf42e47021c3d7607f2a6cc469e7599ac707c
+    quote: Canada’s Strategic Innovation Fund (SIF) has awarded CA$5 million
+    basis: disclosed
+  - field: announced_on
+    snapshot: af55d7800f7e57cd2c3f9d3c75cdf42e47021c3d7607f2a6cc469e7599ac707c
+    quote: RICHMOND, Canada (December 4, 2023)
+    basis: disclosed
+  - field: round_label
+    snapshot: c638ee082e546e2d3dcd3762f41042a6061fc927b4665a852f68edb5b62c551e
+    quote: '"amendment_number":"2","amendment_date":"2023-11-27"'
+    basis: disclosed
+  participants:
+  - investor: Government of Canada Strategic Innovation Fund
+    investor_slug: isde-sif
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: af55d7800f7e57cd2c3f9d3c75cdf42e47021c3d7607f2a6cc469e7599ac707c
+      quote: Canada’s Strategic Innovation Fund (SIF) has awarded CA$5 million
+      basis: disclosed
+- id: general-fusion-sif-2025-amendment
+  instrument: cost_share
+  round_label: SIF contribution agreement, third amendment
+  announced_on: '2025-01-22'
+  amount:
+    amount: 15000000
+    currency: CAD
+    qualifier: exact
+  program: Strategic Innovation Fund Stream 1
+  evidence:
+  - field: amount
+    snapshot: ea0db30c00c175571b43becde22c17c4d6aa5e27fe49aeb9bcb324246d6fcd67
+    quote: the Company received CAD 15.0 million (approximately $10.5 million) during the year ended December 31, 2025
+    basis: disclosed
+  - field: announced_on
+    snapshot: c638ee082e546e2d3dcd3762f41042a6061fc927b4665a852f68edb5b62c551e
+    quote: '"amendment_number":"3","amendment_date":"2025-01-22"'
+    basis: disclosed
+  - field: round_label
+    snapshot: ea0db30c00c175571b43becde22c17c4d6aa5e27fe49aeb9bcb324246d6fcd67
+    quote: As a result of the third amending agreement
+    basis: disclosed
+  participants:
+  - investor: Government of Canada Strategic Innovation Fund
+    investor_slug: isde-sif
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: ea0db30c00c175571b43becde22c17c4d6aa5e27fe49aeb9bcb324246d6fcd67
+      quote: As a result of the third amending agreement
+      basis: disclosed
+- id: general-fusion-sif-2026-amendment
+  instrument: cost_share
+  round_label: SIF (now Strategic Response Fund) amended and restated contribution agreement
+  announced_on: '2026-03-26'
+  amount:
+    amount: 5000000
+    currency: CAD
+    qualifier: exact
+  program: Strategic Innovation Fund Stream 1
+  evidence:
+  - field: amount
+    snapshot: ea0db30c00c175571b43becde22c17c4d6aa5e27fe49aeb9bcb324246d6fcd67
+    quote: General Fusion received a new commitment of CAD 5.0 million
+    basis: disclosed
+  - field: announced_on
+    snapshot: c638ee082e546e2d3dcd3762f41042a6061fc927b4665a852f68edb5b62c551e
+    quote: '"amendment_number":"4","amendment_date":"2026-03-26"'
+    basis: disclosed
+  - field: round_label
+    snapshot: ea0db30c00c175571b43becde22c17c4d6aa5e27fe49aeb9bcb324246d6fcd67
+    quote: Amended and Restated SIF Contribution Agreement
+    basis: disclosed
+  participants:
+  - investor: Government of Canada Strategic Innovation Fund
+    investor_slug: isde-sif
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: c638ee082e546e2d3dcd3762f41042a6061fc927b4665a852f68edb5b62c551e
+      quote: '"prog_name_en":"SIF Stream 1 - R&D"'
+      basis: disclosed
+- id: general-fusion-sif-cumulative-2026
+  instrument: cost_share
+  round_label: SIF agreement total value after amendment 4 (cumulative)
+  announced_on: '2026-03-26'
+  amount:
+    amount: 74275000
+    currency: CAD
+    qualifier: exact
+  amount_kind: cumulative
+  program: Strategic Innovation Fund Stream 1
+  evidence:
+  - field: amount
+    snapshot: c638ee082e546e2d3dcd3762f41042a6061fc927b4665a852f68edb5b62c551e
+    quote: '"agreement_number":"811346","agreement_value":"74275000.0"'
+    basis: disclosed
+  - field: announced_on
+    snapshot: c638ee082e546e2d3dcd3762f41042a6061fc927b4665a852f68edb5b62c551e
+    quote: '"amendment_number":"4","amendment_date":"2026-03-26"'
+    basis: disclosed
+  - field: amount_received
+    snapshot: ea0db30c00c175571b43becde22c17c4d6aa5e27fe49aeb9bcb324246d6fcd67
+    quote: as of June 2, 2026, the Company has received CAD 74.3 million (approximately $55.1 million) in funding from SRF
+    basis: disclosed
+- id: general-fusion-convertible-notes-2024
+  instrument: debt
+  round_label: Secured convertible promissory notes
+  announced_on: '2024-07-16'
+  amount:
+    amount: 15800000
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: ea0db30c00c175571b43becde22c17c4d6aa5e27fe49aeb9bcb324246d6fcd67
+    quote: with an aggregate principal amount of $15.8 million
+    basis: disclosed
+  - field: announced_on
+    snapshot: ea0db30c00c175571b43becde22c17c4d6aa5e27fe49aeb9bcb324246d6fcd67
+    quote: On July 16, 2024, the Company issued convertible promissory notes
+    basis: disclosed
+- id: general-fusion-cnl-bdc-2024
+  instrument: equity
+  round_label: LM26 financing (CNL and BDC Capital; funded via the July 2024 secured convertible notes)
+  announced_on: '2024-08-08'
+  amount_kind: duplicate
+  supersedes: general-fusion-convertible-notes-2024
+  amount:
+    amount: 20000000
+    currency: CAD
+    qualifier: exact
+  evidence:
+  - field: amount_kind
+    snapshot: ea0db30c00c175571b43becde22c17c4d6aa5e27fe49aeb9bcb324246d6fcd67
+    quote: cash inflows from financing activities consisted mainly of $15.8 million of proceeds from the issuance of convertible promissory notes and $1.5 million of proceeds from the issuance of SIF warrants
+    basis: disclosed
+  - field: amount
+    snapshot: 5355adcbae9099d348fe915303ec4d50ff849f3122dace311ec3fd7b89bef572
+    quote: with a new CA$20 million investment from Canadian Nuclear Laboratories (CNL)
+    basis: disclosed
+  - field: announced_on
+    snapshot: 5355adcbae9099d348fe915303ec4d50ff849f3122dace311ec3fd7b89bef572
+    quote: Chalk River, ON (August 8, 2024)
+    basis: disclosed
+  - field: round_label
+    snapshot: 5355adcbae9099d348fe915303ec4d50ff849f3122dace311ec3fd7b89bef572
+    quote: lead investment of CA$10 million each in General Fusion
+    basis: disclosed
+  participants:
+  - investor: Canadian Nuclear Laboratories
+    investor_slug: canadian-nuclear-laboratories
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 5355adcbae9099d348fe915303ec4d50ff849f3122dace311ec3fd7b89bef572
+      quote: lead investment of CA$10 million each in General Fusion
+      basis: disclosed
+    amount:
+      amount: 10000000
+      currency: CAD
+      qualifier: exact
+  - investor: BDC Capital
+    investor_slug: bdc-capital
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 5355adcbae9099d348fe915303ec4d50ff849f3122dace311ec3fd7b89bef572
+      quote: lead investment of CA$10 million each in General Fusion
+      basis: disclosed
+    amount:
+      amount: 10000000
+      currency: CAD
+      qualifier: exact
+- id: general-fusion-nserc-alliance-2024
+  instrument: grant
+  round_label: NSERC Alliance (with Simon Fraser University)
+  announced_on: '2024-11-13'
+  evidence:
+  - field: announced_on
+    snapshot: efadb422f149e329d40a9e8830b06ea726d7128d597af0f27746cefed23850de
+    quote: RICHMOND, British Columbia (November 13, 2024)
+    basis: disclosed
+  - field: round_label
+    snapshot: efadb422f149e329d40a9e8830b06ea726d7128d597af0f27746cefed23850de
+    quote: Alliance program has awarded funding
+    basis: disclosed
+- id: general-fusion-rights-offering-2025
+  instrument: equity
+  round_label: Rights Offering (US$22M headline financing)
+  announced_on: '2025-08-21'
+  closed_on: '2025-08-06'
+  amount:
+    amount: 18400000
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: ea0db30c00c175571b43becde22c17c4d6aa5e27fe49aeb9bcb324246d6fcd67
+    quote: On August 6, 2025, the Company closed a rights offering financing for total proceeds of $18.4 million
+    basis: disclosed
+  - field: announced_on
+    snapshot: 9e6b16f8cacf001a7a88e1f55304f3a694df54922e585ec20967e4763ffc0b28
+    quote: RICHMOND, British Columbia (August 21, 2025)
+    basis: disclosed
+  - field: closed_on
+    snapshot: ea0db30c00c175571b43becde22c17c4d6aa5e27fe49aeb9bcb324246d6fcd67
+    quote: On August 6, 2025, the Company closed a rights offering
+    basis: disclosed
+  - field: round_label
+    snapshot: 9e6b16f8cacf001a7a88e1f55304f3a694df54922e585ec20967e4763ffc0b28
+    quote: General Fusion closes oversubscribed US$22 million financing
+    basis: disclosed
+  - field: amount_press_release
+    snapshot: 9e6b16f8cacf001a7a88e1f55304f3a694df54922e585ec20967e4763ffc0b28
+    quote: General Fusion has closed US$22 million (C$31 million) in new financing
+    basis: disclosed
+  participants:
+  - investor: Segra Capital
+    investor_slug: segra-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 9e6b16f8cacf001a7a88e1f55304f3a694df54922e585ec20967e4763ffc0b28
+      quote: Investors in this round include Segra Capital
+      basis: disclosed
+  - investor: PenderFund (Pender Growth Fund Inc. and Pender Small Cap Opportunities Fund)
+    investor_slug: pender
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 9e6b16f8cacf001a7a88e1f55304f3a694df54922e585ec20967e4763ffc0b28
+      quote: PenderFund (via Pender Growth Fund Inc. (TSX-V:PTF) and Pender Small Cap Opportunities Fund)
+      basis: disclosed
+  - investor: Chrysalix Venture Capital
+    investor_slug: chrysalix
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 9e6b16f8cacf001a7a88e1f55304f3a694df54922e585ec20967e4763ffc0b28
+      quote: Chrysalix Venture Capital, MILFAM LLC
+      basis: disclosed
+  - investor: MILFAM LLC
+    investor_slug: milfam
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 9e6b16f8cacf001a7a88e1f55304f3a694df54922e585ec20967e4763ffc0b28
+      quote: Chrysalix Venture Capital, MILFAM LLC
+      basis: disclosed
+  - investor: JIMCO
+    investor_slug: jimco
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 9e6b16f8cacf001a7a88e1f55304f3a694df54922e585ec20967e4763ffc0b28
+      quote: MILFAM LLC, JIMCO, the global investment arm of the Jameel family
+      basis: disclosed
+  - investor: Gaingels
+    investor_slug: gaingels
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 9e6b16f8cacf001a7a88e1f55304f3a694df54922e585ec20967e4763ffc0b28
+      quote: the Jameel family, Gaingels, Thistledown Capital
+      basis: disclosed
+  - investor: Thistledown Capital
+    investor_slug: thistledown
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 9e6b16f8cacf001a7a88e1f55304f3a694df54922e585ec20967e4763ffc0b28
+      quote: the Jameel family, Gaingels, Thistledown Capital
+      basis: disclosed
+  - investor: Presight Capital
+    investor_slug: presight-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 9e6b16f8cacf001a7a88e1f55304f3a694df54922e585ec20967e4763ffc0b28
+      quote: Thistledown Capital, Presight Capital, and Hatch Ltd.
+      basis: disclosed
+  - investor: Hatch Ltd.
+    investor_slug: hatch
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 9e6b16f8cacf001a7a88e1f55304f3a694df54922e585ec20967e4763ffc0b28
+      quote: Presight Capital, and Hatch Ltd.
+      basis: disclosed
+- id: general-fusion-safe-2025
+  instrument: equity
+  round_label: SAFE financing
+  announced_on: '2025-11-01'
+  amount:
+    amount: 44500000
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: ea0db30c00c175571b43becde22c17c4d6aa5e27fe49aeb9bcb324246d6fcd67
+    quote: closed a Simple Agreement for Future Equity financing for gross proceeds of $44.5 million
+    basis: disclosed
+  - field: announced_on
+    snapshot: ea0db30c00c175571b43becde22c17c4d6aa5e27fe49aeb9bcb324246d6fcd67
+    quote: issued by General Fusion between November 2025 and January 2026
+    basis: disclosed
+  - field: round_label
+    snapshot: ea0db30c00c175571b43becde22c17c4d6aa5e27fe49aeb9bcb324246d6fcd67
+    quote: Simple Agreement for Future Equity
+    basis: disclosed
+  - field: amount_conflict_reported
+    snapshot: bb4ae1d3ca3ba4924fb951dbd722f5d6b33b2a815d4d6c845094f569dcbee9a0
+    quote: securities filings in Canada revealed that the company had raised $51.1 million in SAFE notes from nearly 70 investors
+    basis: reported
+- id: spring-valley-iii-ipo-2025
+  instrument: ipo
+  round_label: Spring Valley Acquisition Corp. III IPO (SPAC trust before redemptions; not General Fusion money)
+  announced_on: '2025-09-03'
+  closed_on: '2025-09-05'
+  amount_kind: ceiling
+  amount:
+    amount: 230000000
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: amount_kind
+    snapshot: ddfef197d3bac4f14c6e5b5bfeba53c47bc7ff9624fa6483225a0f2f57b4b894
+    quote: Reflects redemptions of 21,075,896 General Fusion Class A common shares in connection with the Business Combination
+    basis: disclosed
+  - field: amount_kind
+    snapshot: 1d6fe522a9a3c4609360951a87b02c1217567a1a99f065504d4ced71ae819190
+    quote: US$230 million of SVAC's trust capital (assuming no redemptions)
+    basis: disclosed
+  - field: amount
+    snapshot: 5885530d6367517d28eaa4f85731e82130054e487f07c41d493b6bdc142912fd
+    quote: generating gross proceeds to the Company of $230,000,000
+    basis: disclosed
+  - field: announced_on
+    snapshot: 5885530d6367517d28eaa4f85731e82130054e487f07c41d493b6bdc142912fd
+    quote: On September 3, 2025, the registration statement on Form S-1
+    basis: disclosed
+  - field: closed_on
+    snapshot: ea0db30c00c175571b43becde22c17c4d6aa5e27fe49aeb9bcb324246d6fcd67
+    quote: On September 5, 2025, we completed the Initial Public Offering of 23,000,000 Units
+    basis: disclosed
+  - field: round_label
+    snapshot: ea0db30c00c175571b43becde22c17c4d6aa5e27fe49aeb9bcb324246d6fcd67
+    quote: Initial Public Offering of 23,000,000 Units
+    basis: disclosed
+- id: general-fusion-pipe-2026
+  instrument: equity
+  round_label: PIPE (convertible preferred shares and warrants)
+  announced_on: '2026-01-22'
+  closed_on: '2026-07-10'
+  amount:
+    amount: 105000000
+    currency: USD
+    qualifier: approx
+  evidence:
+  - field: amount
+    snapshot: 883b50376565546aca62723db1f765cf8d7c071bbda91929d4535291d6c45966
+    quote: a private placement of approximately US$105 million of convertible preferred shares and warrants
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1d6fe522a9a3c4609360951a87b02c1217567a1a99f065504d4ced71ae819190
+    quote: FOR IMMEDIATE RELEASE January 22, 2026
+    basis: disclosed
+  - field: closed_on
+    snapshot: ddfef197d3bac4f14c6e5b5bfeba53c47bc7ff9624fa6483225a0f2f57b4b894
+    quote: On July 10, 2026 (the “Closing Date”)
+    basis: disclosed
+  - field: round_label
+    snapshot: 09b817da0dd70852af98a9b2bb57d2b055e6b2a1b34bcdb814ca6e9546fc4097
+    quote: units of the Company at a price of $10.20 per unit
+    basis: disclosed
+  - field: amount_gross_units
+    snapshot: 09b817da0dd70852af98a9b2bb57d2b055e6b2a1b34bcdb814ca6e9546fc4097
+    quote: 10,556,367 units of the Company at a price of $10.20 per unit
+    basis: disclosed
+  participants:
+  - investor: Alyeska Master Fund, L.P.
+    investor_slug: alyeska
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: ddfef197d3bac4f14c6e5b5bfeba53c47bc7ff9624fa6483225a0f2f57b4b894
+      quote: which prohibits Alyeska Master Fund, L.P. from converting or exercising
+      basis: disclosed
+    - field: participant
+      snapshot: ddfef197d3bac4f14c6e5b5bfeba53c47bc7ff9624fa6483225a0f2f57b4b894
+      quote: 7,843,137 New GF Subordinate Voting Shares issuable upon the exercise of New GF PIPE Warrants
+      basis: disclosed
+- id: general-fusion-spac-listing-2026
+  instrument: spac
+  round_label: Business combination with Spring Valley Acquisition Corp. III; Nasdaq listing as GFUZ
+  announced_on: '2026-01-22'
+  closed_on: '2026-07-10'
+  evidence:
+  - field: announced_on
+    snapshot: 1d6fe522a9a3c4609360951a87b02c1217567a1a99f065504d4ced71ae819190
+    quote: FOR IMMEDIATE RELEASE January 22, 2026
+    basis: disclosed
+  - field: round_label
+    snapshot: 1d6fe522a9a3c4609360951a87b02c1217567a1a99f065504d4ced71ae819190
+    quote: General Fusion listing on the Nasdaq and trading under the ticker symbol “GFUZ”
+    basis: disclosed
+  - field: closed_on
+    snapshot: ddfef197d3bac4f14c6e5b5bfeba53c47bc7ff9624fa6483225a0f2f57b4b894
+    quote: consummated its previously announced business combination
+    basis: disclosed
+  - field: valuation_announced_assuming_no_redemptions
+    snapshot: 1d6fe522a9a3c4609360951a87b02c1217567a1a99f065504d4ced71ae819190
+    quote: approximately US$1 billion pro-forma equity value
+    basis: disclosed
+  - field: listing
+    snapshot: 35f8c9b4603254fdad716300eedb1876fba470cf6c035c667dae48ebed6f7bc6
+    quote: to begin trading on the Nasdaq under the ticker symbol “GFUZ” on July 13
+    basis: disclosed
+  - field: cash_after_closing
+    snapshot: 35f8c9b4603254fdad716300eedb1876fba470cf6c035c667dae48ebed6f7bc6
+    quote: inclusive of net transaction proceeds from the private placement and trust capital
+    basis: disclosed
+  - field: net_proceeds_reported
+    snapshot: bb4ae1d3ca3ba4924fb951dbd722f5d6b33b2a815d4d6c845094f569dcbee9a0
+    quote: the transaction net the company $127 million, per FusionX
+    basis: reported
+- id: general-fusion-infuse-srnl
+  instrument: voucher
+  round_label: DOE INFUSE (Savannah River National Laboratory fuel-cycle study)
+  announced_on: '2026-05-04'
+  program: INFUSE
+  evidence:
+  - field: announced_on
+    snapshot: dc604e52aab373c8ff2dcaa89dc78ce5fd27c6bb304bd341480d1e972cdd2db8
+    quote: VANCOUVER, British Columbia – May 4, 2026
+    basis: disclosed
+  - field: round_label
+    snapshot: dc604e52aab373c8ff2dcaa89dc78ce5fd27c6bb304bd341480d1e972cdd2db8
+    quote: completed under the U.S. Department of Energy’s INFUSE program
+    basis: disclosed
+  participants:
+  - investor: U.S. Department of Energy INFUSE program
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: dc604e52aab373c8ff2dcaa89dc78ce5fd27c6bb304bd341480d1e972cdd2db8
+      quote: completed under the U.S. Department of Energy’s INFUSE program
+      basis: disclosed
+agreements:
+- id: general-fusion-renexia-2026
+  counterparty: Renexia S.p.A.
+  counterparty_slug: renexia
+  type: partnership
+  binding: mou
+  announced_on: '2026-06-24'
+  summary: Milestone-based framework agreement for site evaluation and potential commercial deployment of MTF power plants in Italy; definitive agreements contemplated, no capacity or value stated. Binding
+    level inferred from release language.
+  evidence:
+  - field: agreement
+    snapshot: 77a842f45c94d38e60b35357438efe12085b6f50115083c0ebf6321c919abe49
+    quote: established a milestone-based framework for collaboration on the commercial deployment
+    basis: disclosed
+  - field: announced_on
+    snapshot: 77a842f45c94d38e60b35357438efe12085b6f50115083c0ebf6321c919abe49
+    quote: VANCOUVER, British Columbia – June 24, 2026
+    basis: disclosed
+- id: general-fusion-cnl-cnri-2024
+  counterparty: Canadian Nuclear Laboratories
+  counterparty_slug: canadian-nuclear-laboratories
+  type: partnership
+  binding: mou
+  announced_on: '2024-04-03'
+  summary: CNL project (via CNRI program) to advance power plant design for a General Fusion MTF plant. Binding level not stated; recorded as mou.
+  evidence:
+  - field: agreement
+    snapshot: 61c9a21312eb08a4cf196d74290492b1129ffdca9656203f7e18a54acc9cf238
+    quote: General Fusion has launched a new project in collaboration with Canadian Nuclear Laboratories
+    basis: disclosed
+  - field: announced_on
+    snapshot: 61c9a21312eb08a4cf196d74290492b1129ffdca9656203f7e18a54acc9cf238
+    quote: RICHMOND, British Columbia (April 4, 2024)
+    basis: disclosed
+- id: general-fusion-triumf-2023
+  counterparty: TRIUMF
+  counterparty_slug: triumf
+  type: partnership
+  binding: mou
+  announced_on: '2023-10-25'
+  summary: MOU framework for scientific and technical collaboration on LM26 diagnostics.
+  evidence:
+  - field: agreement
+    snapshot: 86550c7f60a7309e50bd868d1d14e29ccaf7b194b902ccd980e4a0871e11b496
+    quote: have signed a Memorandum of Understanding (MOU) that provides a framework for scientific and technical collaboration
+    basis: disclosed
+  - field: announced_on
+    snapshot: 86550c7f60a7309e50bd868d1d14e29ccaf7b194b902ccd980e4a0871e11b496
+    quote: RICHMOND, Canada (October 25, 2023)
+    basis: disclosed
+- id: general-fusion-kyoto-fusioneering-2023
+  counterparty: Kyoto Fusioneering
+  counterparty_slug: kyoto-fusioneering
+  type: partnership
+  binding: mou
+  announced_on: '2023-10-11'
+  summary: MOU to collaborate on tritium fuel cycle, liquid metal balance of plant and power conversion for MTF.
+  evidence:
+  - field: agreement
+    snapshot: cc3bbb7f0f04bdf9dd48980ec5d0bdf58904df1a48d6824bf30e090cb4f855e8
+    quote: announced a Memorandum of Understanding (MOU) to accelerate the commercialization
+    basis: disclosed
+  - field: announced_on
+    snapshot: cc3bbb7f0f04bdf9dd48980ec5d0bdf58904df1a48d6824bf30e090cb4f855e8
+    quote: RICHMOND, Canada; TOKYO, Japan (October 11, 2023)
+    basis: disclosed

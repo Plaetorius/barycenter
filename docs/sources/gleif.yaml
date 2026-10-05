@@ -1,0 +1,15 @@
+id: gleif
+name: GLEIF Legal Entity Identifier API (and OpenCorporates, rejected)
+owner: Global Legal Entity Identifier Foundation
+access: api
+endpoint: "https://api.gleif.org/api/v1/lei-records?filter[fulltext]=<name>"
+auth: none
+rate_limit: 60 req/min (vendor documentation, not verified here)
+licence: CC0 (GLEIF); OpenCorporates: key required, paid from GBP 2,250/yr, free tier for public-benefit by application, ODbL not verified
+robots: n/a (API)
+yields: [LEI, legal name, jurisdiction, legal address, registration status, parent relationships (Level 2)]
+identifiers: [lei]
+cadence: monthly
+tier: A
+known_gaps: "3 of 12 probe companies have a parent LEI (CFS, Proxima, Oklo); Tokamak LAPSED; TerraPower hit is a Spanish subsidiary; name search noisy."
+probe: docs/survey/probes/gleif.md

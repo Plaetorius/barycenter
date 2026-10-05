@@ -1,0 +1,75 @@
+company: helicity-space
+name: Helicity Space
+sector: fusion
+notes: 'INFUSE awards (in-kind lab-access vouchers; no dollar amount is published on the awards listing) from the ORNL INFUSE awards
+  listing pages archived by the ledger-infuse/ledger-commonwealth-fusion-systems runs (infuse.ornl.gov/awards/ and /page/N). The listing
+  gives project title, cycle, award date, company and host lab/university; the date shown is taken as announced_on. Vouchers are not
+  cash and must not be summed with funding. VERIFIER: Listing names the company ''HelicitySpace''; hosts are Swarthmore (2022A) and
+  Caltech (2025), both universities. INFUSE awards pay the host lab or university to do work for the company (in-kind, no cash to
+  the company; D5: lab/university money is not company funding). Kept as amount-less voucher events for context only; they never count
+  toward raised totals and do not by themselves satisfy D1.'
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: 'Evidence verified (2 INFUSE vouchers: 2022-06-15 Swarthmore, 2025-09-10 Caltech; titles correctly attributed), 0 fact corrections;
+    notes amended for D5. SCOPE: fusion propulsion/energy developer, keep, but no cash funding event in this ledger; the ~$5M seed
+    (census, reported) is missing, so this ledger alone does not meet D1.'
+events:
+- id: helicity-space-infuse-2025-1
+  instrument: voucher
+  round_label: INFUSE 2025
+  announced_on: '2025-09-10'
+  program: INFUSE
+  evidence:
+  - field: announced_on
+    snapshot: d95e21c6db16696f9df901cc247d824a55fb37cbbe73ad0726cb2c9de4571a9f
+    quote: INFUSE 2025 - September 10, 2025 | HelicitySpace | CalTech
+    basis: disclosed
+  - field: round_label
+    snapshot: d95e21c6db16696f9df901cc247d824a55fb37cbbe73ad0726cb2c9de4571a9f
+    quote: INFUSE 2025 - September 10, 2025 | HelicitySpace | CalTech
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: d95e21c6db16696f9df901cc247d824a55fb37cbbe73ad0726cb2c9de4571a9f
+    quote: Measuring Electron Temperature in the ECLAIR Experiment
+    basis: disclosed
+  participants:
+  - investor: INFUSE (Innovation Network for Fusion Energy)
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: d95e21c6db16696f9df901cc247d824a55fb37cbbe73ad0726cb2c9de4571a9f
+      quote: INFUSE 2025 - September 10, 2025 | HelicitySpace | CalTech
+      basis: disclosed
+  use_of_proceeds: Measuring Electron Temperature in the ECLAIR Experiment
+- id: helicity-space-infuse-022a-2
+  instrument: voucher
+  round_label: INFUSE 2022A
+  announced_on: '2022-06-15'
+  program: INFUSE
+  evidence:
+  - field: announced_on
+    snapshot: 9021eb746452d65548805e9c90817d0f7536a4ef98fc6a7819c3ee73915ad7a7
+    quote: INFUSE 2022A - June 15, 2022 | HelicitySpace | Swarthmore University
+    basis: disclosed
+  - field: round_label
+    snapshot: 9021eb746452d65548805e9c90817d0f7536a4ef98fc6a7819c3ee73915ad7a7
+    quote: INFUSE 2022A - June 15, 2022 | HelicitySpace | Swarthmore University
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 9021eb746452d65548805e9c90817d0f7536a4ef98fc6a7819c3ee73915ad7a7
+    quote: Observing Density Evolution During Merging of Plectonemic Taylor states
+    basis: disclosed
+  participants:
+  - investor: INFUSE (Innovation Network for Fusion Energy)
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 9021eb746452d65548805e9c90817d0f7536a4ef98fc6a7819c3ee73915ad7a7
+      quote: INFUSE 2022A - June 15, 2022 | HelicitySpace | Swarthmore University
+      basis: disclosed
+  use_of_proceeds: Observing Density Evolution During Merging of Plectonemic Taylor states
+agreements: []

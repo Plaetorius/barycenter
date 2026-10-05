@@ -1,0 +1,44 @@
+company: nucube-energy
+name: NuCube Energy
+sector: fission
+notes: GAIN voucher (in-kind; DOE page states 'GAIN voucher recipients do not receive direct financial awards'). No cash funding
+  found in DOE sources; no USAspending rows for NuCube in the sweep. Dollar value of the voucher is not published.
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: 0 corrections. GAIN voucher (2024-12-19, with INL) confirmed; the DOE page states that recipients do not receive direct
+    financial awards. Per D5 it is lab money, in-kind, never counted. The project (heat exchanger for CO2-to-carbon) is only
+    loosely reactor-related. Private funding (~$13M reported in census) is not in the ledger.
+events:
+- id: nucube-energy-gain-voucher-2024-12
+  instrument: voucher
+  round_label: GAIN voucher (December 2024 round)
+  announced_on: '2024-12-19'
+  program: GAIN
+  use_of_proceeds: Assess and optimize the performance of a heat exchanger conceptual design with Idaho National Laboratory
+  evidence:
+  - field: announced_on
+    snapshot: 0b19b583b8d68dbcf78b655c16c1a329742322ad973b98b0f5e65ab0caed77f0
+    quote: Office of Nuclear Energy December 19, 2024
+    basis: disclosed
+  - field: round_label
+    snapshot: 0b19b583b8d68dbcf78b655c16c1a329742322ad973b98b0f5e65ab0caed77f0
+    quote: announced today that four companies will be provided vouchers to advance nuclear fuel and technologies
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 0b19b583b8d68dbcf78b655c16c1a329742322ad973b98b0f5e65ab0caed77f0
+    quote: NuCube Energy (Idaho Falls, ID) will team up with Idaho National Laboratory to assess and optimize the performance
+      of a heat exchanger conceptual design
+    basis: disclosed
+  participants:
+  - investor: Gateway for Accelerated Innovation in Nuclear (GAIN)
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 0b19b583b8d68dbcf78b655c16c1a329742322ad973b98b0f5e65ab0caed77f0
+      quote: The Gateway for Accelerated Innovation in Nuclear (GAIN) announced today that four companies will be provided
+        vouchers
+      basis: disclosed
+agreements: []

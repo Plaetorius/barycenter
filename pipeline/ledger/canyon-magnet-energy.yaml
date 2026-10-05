@@ -1,0 +1,67 @@
+company: canyon-magnet-energy
+name: Canyon Magnet Energy
+sector: fusion
+notes: Built from USAspending spending_by_award search responses (POST, archived with request body in raw/manifest.jsonl, source_id
+  usaspending-post). Amount = USAspending 'Award Amount' (cumulative federal obligation, not a ceiling and not an announced figure);
+  disbursed_usd = 'Total Outlays' when present. Dates = 'Base Obligation Date' (first obligation), else 'Start Date'. Search was recipient-name
+  text on awarding agency = Department of Energy over 2007-10-01..2026-09-30 and one page of up to 50 rows per award-type group; awards
+  with zero or negative net obligation are omitted. Recipient name variants not matched by the name search may be missing. Government
+  record, basis=disclosed.
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: 'Verified 1 event (DESC0025965, $195,629 obligated / $72,670 outlaid, SBIR Phase I-size grant on HTS cable quench detection),
+    0 errors. Checked against the archived USAspending award-level search (spending_level awards: one row per award, modifications
+    already netted, so one event per award and no per-modification duplicates). Award Amount = obligated to date (not a ceiling);
+    disbursed_usd = Total Outlays, now evidenced by its own quote (1 added). announced_on is the first-obligation date, not a press
+    date. Recipient CANYON MAGNET ENERGY INC (UEI PAKXDAHPZ9C7), the company. Doubt: period of performance starts 2025-02-18 but first
+    obligation is 2025-08-18; announced_on uses the obligation date. Scope: enabling-tech (HTS magnets), keep. Gap: no private funding
+    found.'
+events:
+- id: canyon-magnet-energy-desc0025965
+  instrument: grant
+  round_label: DESC0025965
+  announced_on: '2025-08-18'
+  amount:
+    amount: 195629.0
+    currency: USD
+    qualifier: exact
+    usd: 195629.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 195629.0
+  disbursed_usd: 72670.0
+  use_of_proceeds: QUENCH DETECTION USING LTS WIRES FOR HIGH CURRENT HTS CABLES FOR COMPACT FUSION REACTORS
+  evidence:
+  - field: amount
+    snapshot: cf9f96b073886f250da74a8640fcdcd7244a803e1c801318b6bd4745d2d39ac7
+    quote: '"Award ID": "DESC0025965", "Recipient Name": "CANYON MAGNET ENERGY INC", "Recipient UEI": "PAKXDAHPZ9C7", "Award Amount":
+      195629.0'
+    basis: disclosed
+  - field: disbursed_usd
+    snapshot: cf9f96b073886f250da74a8640fcdcd7244a803e1c801318b6bd4745d2d39ac7
+    quote: '"Award Amount": 195629.0, "Total Outlays": 72670.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: cf9f96b073886f250da74a8640fcdcd7244a803e1c801318b6bd4745d2d39ac7
+    quote: '"Base Obligation Date": "2025-08-18", "generated_internal_id": "ASST_NON_DESC0025965_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: cf9f96b073886f250da74a8640fcdcd7244a803e1c801318b6bd4745d2d39ac7
+    quote: '"Award ID": "DESC0025965", "Recipient Name": "CANYON MAGNET ENERGY INC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: cf9f96b073886f250da74a8640fcdcd7244a803e1c801318b6bd4745d2d39ac7
+    quote: '"Description": "QUENCH DETECTION USING LTS WIRES FOR HIGH CURRENT HTS CABLES FOR COMPACT FUSION REACTORS"'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: cf9f96b073886f250da74a8640fcdcd7244a803e1c801318b6bd4745d2d39ac7
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+agreements: []

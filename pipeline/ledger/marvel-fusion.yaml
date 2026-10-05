@@ -1,0 +1,314 @@
+company: marvel-fusion
+name: Marvel Fusion GmbH
+sector: fusion
+notes: 'Evidence gaps: no archivable primary source found for the 2021 round (led by Earlybird, per the Series B text) or the 2022 Series A, nor for the seed; amounts not evidenced so no events written (WebSearch budget exhausted, newsroom only lists releases from 2023). Series B first close: b2venture (an investor) and TechCrunch list different investor sets (TechCrunch: Bayern Kapital, Tengelmann, SPRIND; b2venture: Athos, Primepulse, Plural, Earlybird, b2venture); both are recorded as participants, none with own amounts. TechCrunch dated 2024-09-25 PDT, b2venture 2024-09-26. EIC Accelerator: "blended finance option of up to EUR 17.5M" (grant 2.5M + up to 15M equity) is an option, not a completed event; the grant part is recorded from CORDIS (EUR 2,489,221.49); the EIC Fund share of the 2025 extension is undisclosed. EIC STEP Scale Up (release 2025-11-19): selected to due diligence for a PROSPECTIVE equity investment of up to EUR 30M; not recorded as funding. FusioTile: ~EUR 11M BMFTR funding is the consortium total (Marvel, Zeiss Jena, Fraunhofer IOF, TU Ilmenau, Lenstec), Marvel''s share undisclosed, so amount omitted. BMFTR Laser Fusion Hub (2026-07-29): amount not stated in the release (hub is co-led with Focused Energy); DOE RISE hub ($16M to the hub, CSU/SLAC lead, Marvel a partner) not recorded as Marvel funding. SPRIND funded the first two laser prototypes via Pulsed Light Technologies (no amount or date found). The 2025-03-27 release claims EUR 385M total funding (EUR 170M private, EUR 215M public cooperation projects), recorded as cumulative only. SPRIND Series B participation rests on press only. CORDIS bulk and BODACC not used; only the allowed project fact-sheet page was archived. VERIFIER (2026-10-05): Series B first close (EUR 62.8M, Sept 2024) and extension (EUR 50M, Mar 2025) are real tranches of one round (company: total round EUR 113M, i.e. 62.8 + 50 rounded), so both stay new_money in round_group series-b; the EIC Fund equity sits inside the EUR 50M extension (TechCrunch: the EIC equity "if made will be an extension of this round") and must not be added again. The DOE INFUSE award is delivered "in partnership with Colorado State University": INFUSE money normally goes to the partner institution, not the company, so even if an amount is found it should not count as Marvel funding without a source naming Marvel as recipient.'
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: '2 corrections: EIC Accelerator grant amount set to the exact CORDIS figure EUR 2,489,221.49 (was truncated); INFUSE recipient caveat added to notes. Series B and extension confirmed as distinct tranches (62.8 + 50 = 113 per company), no duplicate. Not confirmed: Series B first-close investor list rests on press/investor pages only (TechCrunch and b2venture list different sets; union kept); SPRIND participation is press-only; 2021 round, Series A and seed have no evidenced events.'
+events:
+- id: marvel-fusion-series-b-2024
+  instrument: equity
+  round_label: Series B
+  round_group: series-b
+  announced_on: 2024-09-26
+  amount:
+    amount: 62800000
+    currency: EUR
+    qualifier: exact
+  use_of_proceeds: ramp up technology development for a commercial fusion power plant
+  evidence:
+  - field: amount
+    snapshot: 9fcb5b8d61aaa2858607e6ac0a3189ed7badd6fe27cd54d57ec5b26cccbe6791
+    basis: reported
+    quote: they have raised EUR 62.8 million in the closing of a Series B round
+  - field: announced_on
+    snapshot: 9fcb5b8d61aaa2858607e6ac0a3189ed7badd6fe27cd54d57ec5b26cccbe6791
+    basis: reported
+    quote: Marvel Fusion Raises more than €60 Million Series B to Reach Full Proof of Technology Portfolio September 26, 2024
+  - field: round_label
+    snapshot: b762afc8df8c14d4416844a7d3b44646e729b9e8ce731ad51388c7b408d06c6b
+    basis: reported
+    quote: marvel recently raised €62.8 million in a series b round
+  - field: use_of_proceeds
+    snapshot: 9fcb5b8d61aaa2858607e6ac0a3189ed7badd6fe27cd54d57ec5b26cccbe6791
+    basis: reported
+    quote: to ramp up technology development for a commercial fusion power plant
+  participants:
+  - investor: HV Capital
+    investor_slug: hv-capital
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 9fcb5b8d61aaa2858607e6ac0a3189ed7badd6fe27cd54d57ec5b26cccbe6791
+      basis: reported
+      quote: which was led by HV Capital
+  - investor: b2venture
+    investor_slug: b2venture
+    evidence:
+    - field: participant
+      snapshot: 9fcb5b8d61aaa2858607e6ac0a3189ed7badd6fe27cd54d57ec5b26cccbe6791
+      basis: reported
+      quote: We at b2venture contributed to the round
+  - investor: Earlybird Venture Capital
+    investor_slug: earlybird
+    evidence:
+    - field: participant
+      snapshot: 9fcb5b8d61aaa2858607e6ac0a3189ed7badd6fe27cd54d57ec5b26cccbe6791
+      basis: reported
+      quote: with existing investors Earlybird Venture Capital, Athos Venture, Primepulse, and Plural Platform
+  - investor: Athos Venture
+    investor_slug: athos-venture
+    evidence:
+    - field: participant
+      snapshot: 9fcb5b8d61aaa2858607e6ac0a3189ed7badd6fe27cd54d57ec5b26cccbe6791
+      basis: reported
+      quote: with existing investors Earlybird Venture Capital, Athos Venture, Primepulse, and Plural Platform
+  - investor: Primepulse
+    investor_slug: primepulse
+    evidence:
+    - field: participant
+      snapshot: 9fcb5b8d61aaa2858607e6ac0a3189ed7badd6fe27cd54d57ec5b26cccbe6791
+      basis: reported
+      quote: with existing investors Earlybird Venture Capital, Athos Venture, Primepulse, and Plural Platform
+  - investor: Plural Platform
+    investor_slug: plural-platform
+    evidence:
+    - field: participant
+      snapshot: 9fcb5b8d61aaa2858607e6ac0a3189ed7badd6fe27cd54d57ec5b26cccbe6791
+      basis: reported
+      quote: with existing investors Earlybird Venture Capital, Athos Venture, Primepulse, and Plural Platform
+  - investor: Deutsche Telekom
+    investor_slug: deutsche-telekom
+    evidence:
+    - field: participant
+      snapshot: 9fcb5b8d61aaa2858607e6ac0a3189ed7badd6fe27cd54d57ec5b26cccbe6791
+      basis: reported
+      quote: Deutsche Telekom invests strategically in Marvel Fusion’s technology
+  - investor: Bayern Kapital
+    investor_slug: bayern-kapital
+    evidence:
+    - field: participant
+      snapshot: b762afc8df8c14d4416844a7d3b44646e729b9e8ce731ad51388c7b408d06c6b
+      basis: reported
+      quote: hv capital led the round with participation from b2venture, bayern kapital, deutsche telekom, earlybird, sprind, and tengelmann ventures
+  - investor: SPRIND
+    investor_slug: sprind
+    evidence:
+    - field: participant
+      snapshot: b762afc8df8c14d4416844a7d3b44646e729b9e8ce731ad51388c7b408d06c6b
+      basis: reported
+      quote: hv capital led the round with participation from b2venture, bayern kapital, deutsche telekom, earlybird, sprind, and tengelmann ventures
+  - investor: Tengelmann Ventures
+    investor_slug: tengelmann-ventures
+    evidence:
+    - field: participant
+      snapshot: b762afc8df8c14d4416844a7d3b44646e729b9e8ce731ad51388c7b408d06c6b
+      basis: reported
+      quote: hv capital led the round with participation from b2venture, bayern kapital, deutsche telekom, earlybird, sprind, and tengelmann ventures
+- id: marvel-fusion-series-b-extension-2025
+  instrument: equity
+  round_label: Series B extension
+  round_group: series-b
+  announced_on: 2025-03-27
+  amount:
+    amount: 50000000
+    currency: EUR
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: fa0cfb4fd50cc7917418483d7839ab6ce48f3f6b304f48e9372d6b7be0498e48
+    basis: disclosed
+    quote: extension of its Series B funding round by EUR 50 million, bringing the total round to EUR 113 million
+  - field: announced_on
+    snapshot: fa0cfb4fd50cc7917418483d7839ab6ce48f3f6b304f48e9372d6b7be0498e48
+    basis: disclosed
+    quote: Press Release MAR 27, 2025 Marvel Fusion extends Series B to EUR 113m
+  - field: round_label
+    snapshot: fa0cfb4fd50cc7917418483d7839ab6ce48f3f6b304f48e9372d6b7be0498e48
+    basis: disclosed
+    quote: Marvel Fusion extends Series B to EUR 113m with commitments from EQT Ventures, Siemens Energy and European Innovation Council (EIC) Fund
+  participants:
+  - investor: EQT Ventures
+    investor_slug: eqt-ventures
+    evidence:
+    - field: participant
+      snapshot: fa0cfb4fd50cc7917418483d7839ab6ce48f3f6b304f48e9372d6b7be0498e48
+      basis: disclosed
+      quote: The extension includes new investments from EQT Ventures, Siemens Energy Ventures, and the European Innovation Council (EIC) Fund
+  - investor: Siemens Energy Ventures
+    investor_slug: siemens-energy
+    evidence:
+    - field: participant
+      snapshot: fa0cfb4fd50cc7917418483d7839ab6ce48f3f6b304f48e9372d6b7be0498e48
+      basis: disclosed
+      quote: The extension includes new investments from EQT Ventures, Siemens Energy Ventures, and the European Innovation Council (EIC) Fund
+  - investor: European Innovation Council (EIC) Fund
+    investor_slug: eic-fund
+    evidence:
+    - field: participant
+      snapshot: fa0cfb4fd50cc7917418483d7839ab6ce48f3f6b304f48e9372d6b7be0498e48
+      basis: disclosed
+      quote: The extension includes new investments from EQT Ventures, Siemens Energy Ventures, and the European Innovation Council (EIC) Fund
+  - investor: Tengelmann Ventures
+    investor_slug: tengelmann-ventures
+    evidence:
+    - field: participant
+      snapshot: fa0cfb4fd50cc7917418483d7839ab6ce48f3f6b304f48e9372d6b7be0498e48
+      basis: disclosed
+      quote: Existing investors Tengelmann Ventures and Bayern Kapital contributed again
+  - investor: Bayern Kapital
+    investor_slug: bayern-kapital
+    evidence:
+    - field: participant
+      snapshot: fa0cfb4fd50cc7917418483d7839ab6ce48f3f6b304f48e9372d6b7be0498e48
+      basis: disclosed
+      quote: Existing investors Tengelmann Ventures and Bayern Kapital contributed again
+- id: marvel-fusion-cumulative-2025-03
+  instrument: other
+  round_label: Cumulative funding statement
+  announced_on: 2025-03-27
+  amount_kind: cumulative
+  amount:
+    amount: 385000000
+    currency: EUR
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: fa0cfb4fd50cc7917418483d7839ab6ce48f3f6b304f48e9372d6b7be0498e48
+    basis: disclosed
+    quote: brings the total funding to EUR 385m, of which EUR 170m is in private investments and EUR 215m in public cooperation projects
+  - field: announced_on
+    snapshot: fa0cfb4fd50cc7917418483d7839ab6ce48f3f6b304f48e9372d6b7be0498e48
+    basis: disclosed
+    quote: Press Release MAR 27, 2025 Marvel Fusion extends Series B to EUR 113m
+- id: marvel-fusion-eic-accelerator-grant-2024
+  instrument: grant
+  round_label: EIC Accelerator (CFE-NANO, grant 101189082)
+  announced_on: 2024-11-30
+  amount:
+    amount: 2489221.49
+    currency: EUR
+    qualifier: exact
+  program: EIC Accelerator / Horizon Europe
+  evidence:
+  - field: amount
+    snapshot: e9c7114cf7fa3b7fef8dfcafd466aa522aaec4b9797783844a8a4ad197155883
+    basis: disclosed
+    quote: € 2 489 221,49
+  - field: announced_on
+    snapshot: e9c7114cf7fa3b7fef8dfcafd466aa522aaec4b9797783844a8a4ad197155883
+    basis: disclosed
+    quote: EC signature date 30 November 2024
+  - field: round_label
+    snapshot: e9c7114cf7fa3b7fef8dfcafd466aa522aaec4b9797783844a8a4ad197155883
+    basis: disclosed
+    quote: Funded under The European Innovation Council (EIC)
+  participants:
+  - investor: European Innovation Council
+    investor_slug: eic
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: e9c7114cf7fa3b7fef8dfcafd466aa522aaec4b9797783844a8a4ad197155883
+      basis: disclosed
+      quote: Funded under The European Innovation Council (EIC)
+- id: marvel-fusion-doe-infuse-2025
+  instrument: grant
+  round_label: DOE INFUSE award
+  announced_on: 2025-09-22
+  program: DOE INFUSE (with Colorado State University); amount undisclosed
+  evidence:
+  - field: announced_on
+    snapshot: 31524a5606024682fbd6d7aa6e7a6063315020a15ee79aa3b58e94db0faa8a3a
+    basis: disclosed
+    quote: Press Release SEP 22, 2025 Marvel Fusion Awarded U.S. DOE Grant to Advance Laser Fusion Energy
+  - field: round_label
+    snapshot: 31524a5606024682fbd6d7aa6e7a6063315020a15ee79aa3b58e94db0faa8a3a
+    basis: disclosed
+    quote: received a U.S. Department of Energy (DOE) INFUSE award for its proposal
+  participants:
+  - investor: U.S. Department of Energy
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 31524a5606024682fbd6d7aa6e7a6063315020a15ee79aa3b58e94db0faa8a3a
+      basis: disclosed
+      quote: received a U.S. Department of Energy (DOE) INFUSE award for its proposal
+- id: marvel-fusion-fusiotile-bmftr-2025
+  instrument: grant
+  round_label: FusioTile (BMFTR consortium project)
+  announced_on: 2025-11-20
+  program: BMFTR FusioTile; consortium total approx EUR 11M, Marvel share undisclosed, amount omitted
+  evidence:
+  - field: announced_on
+    snapshot: ac5a5779a86736abd3e8ea3ccd1ffb2f5a217fb847f703abe8e842e6406803ba
+    basis: disclosed
+    quote: 'Press Release NOV 20, 2025 FusioTile Project: German Consortium Makes Progress'
+  - field: round_label
+    snapshot: ac5a5779a86736abd3e8ea3ccd1ffb2f5a217fb847f703abe8e842e6406803ba
+    basis: disclosed
+    quote: Launched in February 2025, the three-year project with funding of approximately €11 million by the German Federal Ministry for Research, Technology, and Space (BMFTR)
+  participants:
+  - investor: German Federal Ministry for Research, Technology, and Space (BMFTR)
+    investor_slug: bmftr
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: ac5a5779a86736abd3e8ea3ccd1ffb2f5a217fb847f703abe8e842e6406803ba
+      basis: disclosed
+      quote: funding of approximately €11 million by the German Federal Ministry for Research, Technology, and Space (BMFTR)
+- id: marvel-fusion-bmftr-laser-fusion-hub-2026
+  instrument: grant
+  round_label: BMFTR Laser Fusion Hub (Hubs for Fusion)
+  announced_on: 2026-07-29
+  program: BMFTR Hubs for Fusion / Hightech Agenda; co-led with Focused Energy; amount not stated
+  evidence:
+  - field: announced_on
+    snapshot: fcc7cd26501e240813bea06adba795c71abd2511847154a2fb521969b0533639
+    basis: disclosed
+    quote: Munich/Hamburg/Kiel, 29 July 2026
+  - field: round_label
+    snapshot: fcc7cd26501e240813bea06adba795c71abd2511847154a2fb521969b0533639
+    basis: disclosed
+    quote: The BMFTR is funding the hubs under the “Hubs for Fusion” funding directive, which is part of the federal government’s Hightech Agenda
+  participants:
+  - investor: German Federal Ministry for Research, Technology and Space (BMFTR)
+    investor_slug: bmftr
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: fcc7cd26501e240813bea06adba795c71abd2511847154a2fb521969b0533639
+      basis: disclosed
+      quote: The German Federal Ministry for Research, Technology and Space (BMFTR) today announced funding for the Laser Fusion Hub
+agreements:
+- id: marvel-fusion-csu-atlas-2023
+  counterparty: Colorado State University
+  counterparty_slug: colorado-state-university
+  type: partnership
+  binding: mou
+  announced_on: 2023-08-07
+  value:
+    amount: 150000000
+    currency: USD
+    qualifier: exact
+  summary: Emerging public-private partnership to build a $150M laser and fusion research facility (ATLAS) at CSU Foothills Campus; value is facility cost, not Marvel funding.
+  evidence:
+  - field: agreement
+    snapshot: 45f40e174a74ca89b283daf89de5d5d1dc00e99c2c20794a34d4bcf9aee7121c
+    basis: disclosed
+    quote: The $150 million venture creates a public-private partnership to support construction of a next-generation, high-power laser and fusion research facility
+- id: marvel-fusion-colorado-siemens-loi-2026
+  counterparty: State of Colorado and Siemens Energy
+  counterparty_slug: colorado-siemens-energy
+  type: partnership
+  binding: loi
+  announced_on: 2026-08-12
+  summary: Letter of intent for transatlantic fusion collaboration (R&D, supply chain, talent); signed 9 June 2026, announced 12 August 2026.
+  evidence:
+  - field: agreement
+    snapshot: 28303dfead1fd95c18a69ccd825c5eaa077af96fcaed205cb6b524efd2baa5eb
+    basis: disclosed
+    quote: Marvel Fusion, the State of Colorado and Siemens Energy signed a Letter of Intent (LOI) to strengthen transatlantic collaboration

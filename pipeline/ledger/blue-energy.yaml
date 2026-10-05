@@ -1,0 +1,210 @@
+company: blue-energy
+name: Blue Energy
+sector: fission
+notes: 'Primary: blueenergy.co press releases (company site is blueenergy.co; blueenergynuclear.com in the census did not connect). Series A $45M is from Yahoo/GlobalData (Power Technology) because the Business Wire release returned 403; the release date (2024-10-08) comes from the company news index, GlobalData is dated 2024-10-09. The $380M financing (2026-04-21) is described by TechCrunch as split between equity and debt, the company release and Bloomberg do not give the split, so it is recorded once with instrument other (mixed equity and debt, split undisclosed; amount_kind new_money; do not count it all as equity). Constellation Technology Ventures'' strategic equity investment (2026-07-16) has no amount. No seed round found (Blue Energy formed 2023; the siliconangle ''Bluecore Energy'' seed of $10M is a different company, not recorded). Starlight Ventures also appears in the census as a Series A investor. NRC construction-permit application and licensing milestones, SocGen as financing advisor and the TBPN/CERAWeek items are not funding. No DOE Reactor Pilot Program, ARPA-E, SBIR or other public grant found; the company says it avoids reliance on taxpayer dollars. Slugs constellation, ge-vernova-hitachi and unnamed-datacenter-cloud-provider are proposed (not in investors.csv).'
+events:
+- id: blue-energy-series-a-2024
+  instrument: equity
+  round_label: Series A
+  announced_on: 2024-10-08
+  amount:
+    amount: 45000000.0
+    currency: USD
+    qualifier: exact
+  use_of_proceeds: Advance core engineering work and site development, and secure additional partnerships
+  evidence:
+  - field: amount
+    snapshot: 7156ce486bda28738ec10d3337bfa25465c3d950f32f2833ddfee057b7396955
+    quote: has completed a $45m Series A fundraising round
+    basis: reported
+  - field: announced_on
+    snapshot: 8f06d4e2c6276139b07e9987785d793d4f37bbdf7ee32a649235dbc8b5f38bfb
+    quote: Blue Energy Secures $45M to Make Clean, Reliable Nuclear Power Commercially Viable October 8, 2024
+    basis: disclosed
+  - field: round_label
+    snapshot: 7156ce486bda28738ec10d3337bfa25465c3d950f32f2833ddfee057b7396955
+    quote: has completed a $45m Series A fundraising round
+    basis: reported
+  participants:
+  - investor: Engine Ventures
+    investor_slug: the-engine
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 7156ce486bda28738ec10d3337bfa25465c3d950f32f2833ddfee057b7396955
+      quote: has completed a $45m Series A fundraising round co-led by Engine Ventures and At One Ventures. The funding involved contributions from capital firms Angular Ventures, Tamarack Global, Propeller Ventures, Starlight Ventures and Nucleation Capital.
+      basis: reported
+  - investor: At One Ventures
+    investor_slug: at-one-ventures
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 7156ce486bda28738ec10d3337bfa25465c3d950f32f2833ddfee057b7396955
+      quote: has completed a $45m Series A fundraising round co-led by Engine Ventures and At One Ventures. The funding involved contributions from capital firms Angular Ventures, Tamarack Global, Propeller Ventures, Starlight Ventures and Nucleation Capital.
+      basis: reported
+  - investor: Angular Ventures
+    investor_slug: angular-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 7156ce486bda28738ec10d3337bfa25465c3d950f32f2833ddfee057b7396955
+      quote: has completed a $45m Series A fundraising round co-led by Engine Ventures and At One Ventures. The funding involved contributions from capital firms Angular Ventures, Tamarack Global, Propeller Ventures, Starlight Ventures and Nucleation Capital.
+      basis: reported
+  - investor: Tamarack Global
+    investor_slug: tamarack-global
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 7156ce486bda28738ec10d3337bfa25465c3d950f32f2833ddfee057b7396955
+      quote: has completed a $45m Series A fundraising round co-led by Engine Ventures and At One Ventures. The funding involved contributions from capital firms Angular Ventures, Tamarack Global, Propeller Ventures, Starlight Ventures and Nucleation Capital.
+      basis: reported
+  - investor: Propeller Ventures
+    investor_slug: propeller-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 7156ce486bda28738ec10d3337bfa25465c3d950f32f2833ddfee057b7396955
+      quote: has completed a $45m Series A fundraising round co-led by Engine Ventures and At One Ventures. The funding involved contributions from capital firms Angular Ventures, Tamarack Global, Propeller Ventures, Starlight Ventures and Nucleation Capital.
+      basis: reported
+  - investor: Starlight Ventures
+    investor_slug: starlight-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 7156ce486bda28738ec10d3337bfa25465c3d950f32f2833ddfee057b7396955
+      quote: has completed a $45m Series A fundraising round co-led by Engine Ventures and At One Ventures. The funding involved contributions from capital firms Angular Ventures, Tamarack Global, Propeller Ventures, Starlight Ventures and Nucleation Capital.
+      basis: reported
+  - investor: Nucleation Capital
+    investor_slug: nucleation-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 7156ce486bda28738ec10d3337bfa25465c3d950f32f2833ddfee057b7396955
+      quote: has completed a $45m Series A fundraising round co-led by Engine Ventures and At One Ventures. The funding involved contributions from capital firms Angular Ventures, Tamarack Global, Propeller Ventures, Starlight Ventures and Nucleation Capital.
+      basis: reported
+- id: blue-energy-380m-2026
+  instrument: other
+  round_label: $380M financing (equity and debt, split not disclosed)
+  announced_on: 2026-04-21
+  amount:
+    amount: 380000000.0
+    currency: USD
+    qualifier: exact
+  use_of_proceeds: Procurement of long-lead equipment, project development activities, and general corporate purposes
+  evidence:
+  - field: amount
+    snapshot: acda2b59b4d8bf1f21266be7b99487709e13eb825f0c03dbc3e494868d07c875
+    quote: today announced that it has raised $380 million in financing
+    basis: disclosed
+  - field: announced_on
+    snapshot: acda2b59b4d8bf1f21266be7b99487709e13eb825f0c03dbc3e494868d07c875
+    quote: April 21, 2026
+    basis: disclosed
+  - field: round_label
+    snapshot: acda2b59b4d8bf1f21266be7b99487709e13eb825f0c03dbc3e494868d07c875
+    quote: Blue Energy Raises $380M to Build World's First Project-Financeable Nuclear Plant
+    basis: disclosed
+  - field: instrument
+    snapshot: bfa405aff476bfac1ece79b3e775fd9b9b716d1613422823c3f7776f58fe719b
+    quote: Blue Energy has raised $380 million in financing split between equity and debt
+    basis: reported
+  participants:
+  - investor: VXI Capital
+    investor_slug: vxi-capital
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: acda2b59b4d8bf1f21266be7b99487709e13eb825f0c03dbc3e494868d07c875
+      quote: The fundraise was led by VXI Capital with significant backing from Engine Ventures and participation from other existing investors, including At One Ventures and Tamarack Global.
+      basis: disclosed
+  - investor: Engine Ventures
+    investor_slug: the-engine
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: acda2b59b4d8bf1f21266be7b99487709e13eb825f0c03dbc3e494868d07c875
+      quote: The fundraise was led by VXI Capital with significant backing from Engine Ventures and participation from other existing investors, including At One Ventures and Tamarack Global.
+      basis: disclosed
+  - investor: At One Ventures
+    investor_slug: at-one-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: acda2b59b4d8bf1f21266be7b99487709e13eb825f0c03dbc3e494868d07c875
+      quote: The fundraise was led by VXI Capital with significant backing from Engine Ventures and participation from other existing investors, including At One Ventures and Tamarack Global.
+      basis: disclosed
+  - investor: Tamarack Global
+    investor_slug: tamarack-global
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: acda2b59b4d8bf1f21266be7b99487709e13eb825f0c03dbc3e494868d07c875
+      quote: The fundraise was led by VXI Capital with significant backing from Engine Ventures and participation from other existing investors, including At One Ventures and Tamarack Global.
+      basis: disclosed
+- id: blue-energy-constellation-2026
+  instrument: equity
+  round_label: Strategic investment (amount undisclosed)
+  announced_on: 2026-07-16
+  evidence:
+  - field: announced_on
+    snapshot: b63d9c5683a76c86ed50798bebda24e4b5c1f035a04b64711ee4d3655af02a14
+    quote: July 16, 2026
+    basis: disclosed
+  - field: round_label
+    snapshot: b63d9c5683a76c86ed50798bebda24e4b5c1f035a04b64711ee4d3655af02a14
+    quote: a strategic equity investment from Constellation Technology Ventures
+    basis: disclosed
+  participants:
+  - investor: Constellation Technology Ventures (Constellation)
+    investor_slug: constellation
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: b63d9c5683a76c86ed50798bebda24e4b5c1f035a04b64711ee4d3655af02a14
+      quote: a strategic equity investment from Constellation Technology Ventures, the venture arm of Constellation
+      basis: disclosed
+agreements:
+- id: blue-energy-gvh-victoria-tx-2026
+  counterparty: GE Vernova Hitachi Nuclear Energy
+  counterparty_slug: ge-vernova-hitachi
+  type: partnership
+  binding: definitive
+  announced_on: 2026-08-13
+  summary: Agreement launching next phase of collaboration on a 2.5 GW gas-plus-nuclear plant in Victoria, Texas (about 1 GW gas turbines 2030, plus up to 1.5 GW from up to five BWRX-300 SMRs from 2032); advances engineering design, licensing and safety analysis; subject to a 2027 final investment decision.
+  evidence:
+  - field: agreement
+    snapshot: ee4bc911e3c56cf4c475fcbcf57d037b5995e9f2e31f6beb6ebf50da14279348
+    quote: the signing of an agreement that launches the next phase of their collaboration to deploy a 2.5 GW gas-plus-nuclear power plant in Texas
+    basis: disclosed
+  - field: announced_on
+    snapshot: ee4bc911e3c56cf4c475fcbcf57d037b5995e9f2e31f6beb6ebf50da14279348
+    quote: August 13, 2026
+    basis: disclosed
+  capacity_mw: 2500
+- id: blue-energy-datacenter-offtake-loi-2024
+  counterparty: Unnamed data centre and cloud provider
+  counterparty_slug: unnamed-datacenter-cloud-provider
+  type: offtake
+  binding: loi
+  announced_on: 2024-10-09
+  summary: Letter of intent with a data centre and cloud provider as off-taker for the first plant (per GlobalData/Power Technology); counterparty, capacity and value not stated.
+  evidence:
+  - field: agreement
+    snapshot: 7156ce486bda28738ec10d3337bfa25465c3d950f32f2833ddfee057b7396955
+    quote: The company has already signed a letter of intent with a data centre and cloud provider
+    basis: reported
+  - field: announced_on
+    snapshot: 7156ce486bda28738ec10d3337bfa25465c3d950f32f2833ddfee057b7396955
+    quote: October 9, 2024
+    basis: reported
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  'on': 2026-10-05
+  note: >-
+    1 correction: the $380M financing instrument equity -> other, with a TechCrunch evidence item stating the
+    equity/debt split (the company release says only 'financing'); the debt part, if a facility, may be partly undrawn
+    and no source says how much was drawn. Series A $45M rests on GlobalData/Yahoo (basis reported; the Business Wire
+    snapshot 887e7f54 is an Access Denied page); the release date 2024-10-08 is confirmed by the company news index.
+    Participants match their quotes; leads only where the source says 'co-led'/'led'. No Form D checked (not in snapshot
+    set). The LOI offtake agreement is dated by the GlobalData article (2024-10-09), not the release.

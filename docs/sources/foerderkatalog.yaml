@@ -1,0 +1,20 @@
+id: foerderkatalog
+name: Foerderkatalog des Bundes (federal R&D grants), BMFTR fusion hubs, SPRIND
+owner: German federal ministries (BMFTR, BMWE, BMUKN ...), Projekttraeger
+access: manual          # BarycenterBot got HTTP 403 on foerderportal.bund.de (archive sha ab7686230701); no robots.txt readable (403)
+endpoint: https://foerderportal.bund.de/foekat/jsp/StartAction.do
+alt_endpoints:
+  - https://www.bmftr.bund.de/SharedDocs/Pressemitteilungen/DE/2026/07/Fusion.html   # hubs decision 2026-07-29
+  - https://www.marvelfusion.com/newsroom/german-federal-government-backs-laser-fusion
+auth: none for the UI; blocked for our UA
+rate_limit: unknown
+licence: "unknown for Foerderkatalog (Foerderdatenbank XML export is open but is a different database, schemes not awards)"
+robots: "403 on /robots.txt and on the app; treat as blocked => manual. No evasion attempted."
+yields: [per-project grants: Foerderkennzeichen, recipient, Foerdersumme, term (per Foerderkatalog description; NOT sampled), plus ministry press releases with programme totals]
+identifiers: [Foerderkennzeichen (FKZ), recipient name]
+cadence: continuous (Foerderkatalog states >310,000 Vorhaben in BMFTR/BMUKN/BMWE/BMLEH/BMV/BMJV)
+tier: A (blocked) / B (press)
+known_gaps: >
+  Only projects ministries release; no Laender grants (Bavaria, Hesse). Hubs: ~EUR 125M first round, per-company split not published.
+  Proxima ('EUR 95M public grants') and Marvel ('EUR 215M public cooperation projects') totals are company statements.
+probe: docs/survey/probes/foerderkatalog.md

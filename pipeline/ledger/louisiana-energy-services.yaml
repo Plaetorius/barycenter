@@ -1,0 +1,44 @@
+company: louisiana-energy-services
+name: Louisiana Energy Services LLC
+sector: fission
+notes: 'Built from USAspending spending_by_award search responses (POST, archived with request body in raw/manifest.jsonl,
+  source_id usaspending-post). Amount = USAspending ''Award Amount'' (cumulative federal obligation, not a ceiling and not
+  an announced figure); disbursed_usd = ''Total Outlays'' when present. Dates = ''Base Obligation Date'' (first obligation),
+  else ''Start Date''. Search was recipient-name text on awarding agency = Department of Energy over 2007-10-01..2026-09-30
+  and one page of up to 50 rows per award-type group; awards with zero or negative net obligation are omitted. Recipient name
+  variants not matched by the name search may be missing. Government record, basis=disclosed. Omitted rows: DEEM0002122, 89303326PEM000265
+  (zero or null obligation, or non-fuel/non-development contracts such as waste or site services).'
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: '0 corrections. No funding events, which is correct: the only DOE money is a $500K task order (an agreement, value
+    = obligated amount, confirmed in the snapshot) under the LEU enrichment acquisition IDIQ, plus omitted UF6 storage service
+    contracts. Recipient LES LLC (Urenco USA) is the company. SCOPE: LES is an enrichment-plant owner (fuel cycle), not a
+    reactor developer, and has no evidenced funding event. Recommend keeping it only in a fuel-cycle layer with the agreement,
+    not in funding totals.'
+events: []
+agreements:
+- id: louisiana-energy-services-89243225fne400181
+  counterparty: U.S. Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: '2025-04-11'
+  summary: 'DOE contract 89243225FNE400181: NEW TASK ORDER AWARD UNDER THE LOW-ENRICHED URANIUM (LEU) - ENRICHMENT ACQUISITION
+    IDIQ FOR LOUISIAN ENERGY SERVICES LLC FOR THE DEVELOPMENT OF A REPORT FOR THE DEPLOYMENT OF NEW ENRICHMENT CAPACITY A'
+  value:
+    amount: 500000.0
+    currency: USD
+    qualifier: exact
+    usd: 500000.0
+  evidence:
+  - field: amount
+    snapshot: 8364c7ecf3ec84c0910c5c973e4a3e0c470d774d37768419521b564576f1a92a
+    quote: '"Award ID": "89243225FNE400181", "Recipient Name": "LOUISIANA ENERGY SERVICES, LLC", "Recipient UEI": "GCDLCGGYBFR3",
+      "Award Amount": 500000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 8364c7ecf3ec84c0910c5c973e4a3e0c470d774d37768419521b564576f1a92a
+    quote: '"Base Obligation Date": "2025-04-11", "generated_internal_id": "CONT_AWD_89243225FNE400181_8900_89243225DNE000029_8900"'
+    basis: disclosed

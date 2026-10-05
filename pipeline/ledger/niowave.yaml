@@ -1,0 +1,1613 @@
+company: niowave
+name: Niowave
+sector: fission
+notes: 'Built from USAspending spending_by_award search responses (POST, archived with request body in raw/manifest.jsonl,
+  source_id usaspending-post). Amount = USAspending ''Award Amount'' (cumulative federal obligation, not a ceiling and not
+  an announced figure); disbursed_usd = ''Total Outlays'' when present. Dates = ''Base Obligation Date'' (first obligation),
+  else ''Start Date''. Search was recipient-name text on awarding agency = Department of Energy over 2007-10-01..2026-09-30
+  and one page of up to 50 rows per award-type group; awards with zero or negative net obligation are omitted. Recipient name
+  variants not matched by the name search may be missing. Government record, basis=disclosed. VERIFIER (2026-10-05): every
+  row re-checked against the archived search snapshot (amount, outlays, base obligation date all match) and against a per-award
+  USAspending award-detail snapshot (api/v2/awards/<id>/, source verify-usaspending). Rows are award-level aggregates, so
+  each event is one award, not a modification. Participant evidence now quotes the award''s assistance-listing title or awarding
+  office from the award-detail snapshot (the old quote only said ''Department of Energy''); obligated_usd now has its own
+  evidence ("total_obligation"). Where the search row showed ''Total Outlays'' 0.0 but the award detail has total_outlay null
+  (no File C outlay reporting, typical for pre-2020 or brand-new awards), disbursed_usd was removed: 0.0 meant ''not reported'',
+  not ''nothing paid''. Three awards appear twice under old and new DOE ID formats (FG02-07ER84861/DEFG0207ER84861, FG02-08ER85172/DEFG0208ER85172,
+  FG02-08ER85014/DEFG0208ER85014). The legacy totals look like Phase I plus the later Phase II obligations (e.g. 850K = 100K
+  + 750K), so the new-format rows are marked duplicate. SCOPE: Niowave is a superconducting-accelerator and medical-isotope
+  company. Most of its 31 Office of Science SBIR/STTR awards are accelerator hardware for DOE science facilities (SRF cavities,
+  crab cavities for LHC/RHIC, electron guns), not nuclear energy. Only DESC0011355, DESC0017733, DESC0018544, DESC0018691
+  and DESC0020857 (fast-neutron irradiation, subcritical fuel testbed, lead-bismuth corrosion, advanced fast-reactor fuels)
+  relate to nuclear energy; the NNSA DENA awards are Mo-99 isotope production.'
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: '37 changes: 3 new-format rows marked duplicate (same award as the legacy FG02 row); 35 participant evidence items
+    re-sourced; obligated evidence added; disbursed 0.0 removed on 3 awards whose outlays were never reported. Recipient is
+    Niowave, Inc. throughout. SCOPE: evidence is right, but Niowave is an isotope/accelerator company. I recommend excluding
+    it from a nuclear-energy funding map, or keeping it only in an isotopes/fuel-cycle layer with just the 5 reactor-related
+    SBIRs. The ~$40M+ of accelerator SBIRs must not count as nuclear-energy funding.'
+events:
+- id: niowave-fg02-07er84861
+  instrument: grant
+  round_label: FG02-07ER84861
+  announced_on: '2007-08-02'
+  amount:
+    amount: 1074807.0
+    currency: USD
+    qualifier: exact
+    usd: 1074807.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 1074807.0
+  use_of_proceeds: DEVELOPMENT OF A LOW FREQUENCY SUPERCONDUCTING RF ELECTRON GUN
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "FG02-07ER84861", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      1074807.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2007-08-02", "generated_internal_id": "ASST_NON_FG02-07ER84861_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "FG02-07ER84861", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "DEVELOPMENT OF A LOW FREQUENCY SUPERCONDUCTING RF ELECTRON GUN"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 30d58b4846d3fa8185a67efa59a83d99af663fab79eef6a527ed444a184ee832
+    quote: '"total_obligation":1074807.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 30d58b4846d3fa8185a67efa59a83d99af663fab79eef6a527ed444a184ee832
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-fg02-08er85172
+  instrument: grant
+  round_label: FG02-08ER85172
+  announced_on: '2008-07-30'
+  amount:
+    amount: 850000.0
+    currency: USD
+    qualifier: exact
+    usd: 850000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 850000.0
+  use_of_proceeds: DEVELOPMNET OF A SUPERCONDUCTING RF MULTI-CAVITIES FOR ELECTRON LINACS
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "FG02-08ER85172", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      850000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2008-07-30", "generated_internal_id": "ASST_NON_FG02-08ER85172_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "FG02-08ER85172", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "DEVELOPMNET OF A SUPERCONDUCTING RF MULTI-CAVITIES FOR ELECTRON LINACS"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 7fa850db500029be6bd231a72ee0d150ea63d0b32a2568f2fc52b94d788bda50
+    quote: '"total_obligation":850000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 7fa850db500029be6bd231a72ee0d150ea63d0b32a2568f2fc52b94d788bda50
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-fg02-08er85014
+  instrument: grant
+  round_label: FG02-08ER85014
+  announced_on: '2008-07-30'
+  amount:
+    amount: 850000.0
+    currency: USD
+    qualifier: exact
+    usd: 850000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 850000.0
+  use_of_proceeds: DEVELOPMENT OF A SUPERCONDUCTIN RF 105 GHZ LANDAU CAVITY FOR SYNCHROTRON LIGHT SOURCES
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "FG02-08ER85014", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      850000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2008-07-30", "generated_internal_id": "ASST_NON_FG02-08ER85014_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "FG02-08ER85014", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "DEVELOPMENT OF A SUPERCONDUCTIN RF 105 GHZ LANDAU CAVITY FOR SYNCHROTRON LIGHT SOURCES"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 96df1795583fcdbfb68a669a0fb61d16dfd8d3e07b4455a0497e0da1abb66466
+    quote: '"total_obligation":850000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 96df1795583fcdbfb68a669a0fb61d16dfd8d3e07b4455a0497e0da1abb66466
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-desc0001215
+  instrument: grant
+  round_label: DESC0001215
+  announced_on: '2009-07-20'
+  amount:
+    amount: 2200000.0
+    currency: USD
+    qualifier: exact
+    usd: 2200000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 2200000.0
+  use_of_proceeds: DEVELOPMENT OF A TUNABLE 28MHZ SUPERCONDUCTING RF CAVITY FOR RHIC
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0001215", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      2200000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2009-07-20", "generated_internal_id": "ASST_NON_DESC0001215_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0001215", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "DEVELOPMENT OF A TUNABLE 28MHZ SUPERCONDUCTING RF CAVITY FOR RHIC"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 22eeb3c4f0abdefb3a1bda700b59b18e054634c612efdcad3e2314a895e9f5d1
+    quote: '"total_obligation":2200000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 22eeb3c4f0abdefb3a1bda700b59b18e054634c612efdcad3e2314a895e9f5d1
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-defg0208er85172
+  instrument: grant
+  round_label: DEFG0208ER85172
+  announced_on: '2009-08-17'
+  amount:
+    amount: 750000.0
+    currency: USD
+    qualifier: exact
+    usd: 750000.0
+  amount_kind: duplicate
+  program: DOE Office of Science
+  obligated_usd: 750000.0
+  use_of_proceeds: DEVELOPMENT OF A SRF MULTI-SPOKE CAVITIES FOR ELECTRON LINACS
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DEFG0208ER85172", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      750000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2009-08-17", "generated_internal_id": "ASST_NON_DEFG0208ER85172_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DEFG0208ER85172", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "DEVELOPMENT OF A SRF MULTI-SPOKE CAVITIES FOR ELECTRON LINACS"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 44e71af7f0ece15d01578fc41e9cc987958da12845568b0811a4c0688145f825
+    quote: '"total_obligation":750000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 44e71af7f0ece15d01578fc41e9cc987958da12845568b0811a4c0688145f825
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+  supersedes: niowave-fg02-08er85172
+- id: niowave-defg0208er85014
+  instrument: grant
+  round_label: DEFG0208ER85014
+  announced_on: '2009-08-17'
+  amount:
+    amount: 750000.0
+    currency: USD
+    qualifier: exact
+    usd: 750000.0
+  amount_kind: duplicate
+  program: DOE Office of Science
+  obligated_usd: 750000.0
+  use_of_proceeds: DEVELOPMENT OF A SRF 1.5 GHZ LANDAU CAVITY FOR SYNCHROTRON LIGHT SOURCES
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DEFG0208ER85014", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      750000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2009-08-17", "generated_internal_id": "ASST_NON_DEFG0208ER85014_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DEFG0208ER85014", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "DEVELOPMENT OF A SRF 1.5 GHZ LANDAU CAVITY FOR SYNCHROTRON LIGHT SOURCES"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 19a5f4790650175b108974d5617dbade575187ce0fa54119ff85c8c3c27820ec
+    quote: '"total_obligation":750000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 19a5f4790650175b108974d5617dbade575187ce0fa54119ff85c8c3c27820ec
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+  supersedes: niowave-fg02-08er85014
+- id: niowave-desc0001709
+  instrument: grant
+  round_label: DESC0001709
+  announced_on: '2009-09-12'
+  amount:
+    amount: 1700000.0
+    currency: USD
+    qualifier: exact
+    usd: 1700000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 1700000.0
+  use_of_proceeds: DEVELOPMENT OF A 400 MHZ SUPERCONDUCTING RF CRABBING CAVITY
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0001709", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      1700000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2009-09-12", "generated_internal_id": "ASST_NON_DESC0001709_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0001709", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "DEVELOPMENT OF A 400 MHZ SUPERCONDUCTING RF CRABBING CAVITY"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 3cc9e0ea00f67844efb997b66914c00276240f438f0b23f2449293b958e8353b
+    quote: '"total_obligation":1700000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 3cc9e0ea00f67844efb997b66914c00276240f438f0b23f2449293b958e8353b
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-desc0001706
+  instrument: grant
+  round_label: DESC0001706
+  announced_on: '2009-09-12'
+  amount:
+    amount: 200000.0
+    currency: USD
+    qualifier: exact
+    usd: 200000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 200000.0
+  use_of_proceeds: DEVELOPMENT OF A 499 MHZ SUPERCONDUCTING RF DEFLECTING CAVITY
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0001706", "Recipient Name": "NIOWAVE INC", "Recipient UEI": null, "Award Amount": 200000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2009-09-12", "generated_internal_id": "ASST_NON_DESC0001706_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0001706", "Recipient Name": "NIOWAVE INC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "DEVELOPMENT OF A 499 MHZ SUPERCONDUCTING RF DEFLECTING CAVITY"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 5cb20afe427b0c0c91c9e02dad004fc1d76a547ce4e3a3825986807b50012a27
+    quote: '"total_obligation":200000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 5cb20afe427b0c0c91c9e02dad004fc1d76a547ce4e3a3825986807b50012a27
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-defg0207er84861
+  instrument: grant
+  round_label: DEFG0207ER84861
+  announced_on: '2009-09-14'
+  amount:
+    amount: 600000.0
+    currency: USD
+    qualifier: exact
+    usd: 600000.0
+  amount_kind: duplicate
+  program: DOE Office of Science
+  obligated_usd: 600000.0
+  use_of_proceeds: DEVELOPMENT OF A LOW FREQUENCY SRF ELECTRON GUN PHASE II
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DEFG0207ER84861", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      600000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2009-09-14", "generated_internal_id": "ASST_NON_DEFG0207ER84861_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DEFG0207ER84861", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "DEVELOPMENT OF A LOW FREQUENCY SRF ELECTRON GUN PHASE II"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: ced40f3fe58bd63c3223ec49b0b8d5cc818c1bc16220397bce13eac4af5f537e
+    quote: '"total_obligation":600000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: ced40f3fe58bd63c3223ec49b0b8d5cc818c1bc16220397bce13eac4af5f537e
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+  supersedes: niowave-fg02-07er84861
+- id: niowave-desc0001206
+  instrument: grant
+  round_label: DESC0001206
+  announced_on: '2009-09-22'
+  amount:
+    amount: 200000.0
+    currency: USD
+    qualifier: exact
+    usd: 200000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 200000.0
+  use_of_proceeds: 'TITLE: FABRICATION OF NIOBIUM CAVITIES DIRECTLY FROM LARGE GRAIN INGOT; PI: TERRY GRIMM'
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0001206", "Recipient Name": "NIOWAVE INC", "Recipient UEI": null, "Award Amount": 200000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2009-09-22", "generated_internal_id": "ASST_NON_DESC0001206_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0001206", "Recipient Name": "NIOWAVE INC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "TITLE: FABRICATION OF NIOBIUM CAVITIES DIRECTLY FROM LARGE GRAIN INGOT; PI: TERRY GRIMM"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: f83dc10b7fb041708841274fd9a3b28d598f80650211f66d55ee55e4d6d4f7cc
+    quote: '"total_obligation":200000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: f83dc10b7fb041708841274fd9a3b28d598f80650211f66d55ee55e4d6d4f7cc
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-desc0004202
+  instrument: grant
+  round_label: DESC0004202
+  announced_on: '2010-09-09'
+  amount:
+    amount: 200000.0
+    currency: USD
+    qualifier: exact
+    usd: 200000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 200000.0
+  use_of_proceeds: 'TAS::89 0222::TAS NEW PHASE I SBIR; TITLE: DEVELOPMENT OF SUPERCONDUCTING PHOTONIC BAND GAP ACCELERATING
+    CAVIT'
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0004202", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      200000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2010-09-09", "generated_internal_id": "ASST_NON_DESC0004202_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0004202", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "TAS::89 0222::TAS  NEW PHASE I SBIR; TITLE: DEVELOPMENT OF SUPERCONDUCTING PHOTONIC BAND GAP ACCELE'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 2b370c50b5ed96a47a5a99026e2424b3c8d5b89f313e29424f0460a6250cb455
+    quote: '"total_obligation":200000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 2b370c50b5ed96a47a5a99026e2424b3c8d5b89f313e29424f0460a6250cb455
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-desc0004220
+  instrument: grant
+  round_label: DESC0004220
+  announced_on: '2010-09-14'
+  amount:
+    amount: 1325000.0
+    currency: USD
+    qualifier: exact
+    usd: 1325000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 1325000.0
+  use_of_proceeds: 'TAS::89 0222::TAS NEW PHASE I 2010 STTR; TITLE: DEVELOPMENT OF AN SRF CRAB CROSSING CAVITY FOR AN ELECTRON
+    ION'
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0004220", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      1325000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2010-09-14", "generated_internal_id": "ASST_NON_DESC0004220_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0004220", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "TAS::89 0222::TAS  NEW PHASE I  2010 STTR; TITLE: DEVELOPMENT OF AN SRF CRAB CROSSING CAVITY FOR
+      AN'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 5678373c2707138aef6946d962206b2abd973ef1aeb75e598b74bfe84382e82b
+    quote: '"total_obligation":1325000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 5678373c2707138aef6946d962206b2abd973ef1aeb75e598b74bfe84382e82b
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-desc0004219
+  instrument: grant
+  round_label: DESC0004219
+  announced_on: '2010-09-14'
+  amount:
+    amount: 200000.0
+    currency: USD
+    qualifier: exact
+    usd: 200000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 200000.0
+  use_of_proceeds: 'TAS::89 0222::TAS NEW PHASE I 2010 STTR; TITLE: DEVELOPMENT OF AN SRF DEFLECTING/CRABBING SYSTEM; PI:
+    JEAN DEL'
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0004219", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      200000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2010-09-14", "generated_internal_id": "ASST_NON_DESC0004219_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0004219", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "TAS::89 0222::TAS  NEW PHASE I  2010 STTR; TITLE: DEVELOPMENT OF AN SRF DEFLECTING/CRABBING SYSTEM;'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 397f2440fb1f4e85b14f0d7d56bad7639b4ca4ba89ed3804aaa3dd3bd0992057
+    quote: '"total_obligation":200000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 397f2440fb1f4e85b14f0d7d56bad7639b4ca4ba89ed3804aaa3dd3bd0992057
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-desc0006345
+  instrument: grant
+  round_label: DESC0006345
+  announced_on: '2011-06-22'
+  amount:
+    amount: 1300000.0
+    currency: USD
+    qualifier: exact
+    usd: 1300000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 1300000.0
+  use_of_proceeds: DEVELOPMENT OF A SUPERCONDUCTING RF 500 MHZ QUARTER WAVE RESONATOR FOR SYNCHROTRON LIGHT SOURCES
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0006345", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      1300000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2011-06-22", "generated_internal_id": "ASST_NON_DESC0006345_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0006345", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "DEVELOPMENT OF A SUPERCONDUCTING RF 500 MHZ QUARTER WAVE RESONATOR FOR SYNCHROTRON LIGHT SOURCES"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 6af19fb367238892e63abddd4316fcdf3c15d69b61a31d3b2cb1183d97068412
+    quote: '"total_obligation":1300000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 6af19fb367238892e63abddd4316fcdf3c15d69b61a31d3b2cb1183d97068412
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-desc0006341
+  instrument: grant
+  round_label: DESC0006341
+  announced_on: '2011-06-22'
+  amount:
+    amount: 1300000.0
+    currency: USD
+    qualifier: exact
+    usd: 1300000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 1300000.0
+  use_of_proceeds: DEVELOPMENT OF A SUPERCONDUCTING RF MULTI-SPOKE CAVITY FOR COMPACT LIGHT SOURCES
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0006341", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      1300000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2011-06-22", "generated_internal_id": "ASST_NON_DESC0006341_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0006341", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "DEVELOPMENT OF A SUPERCONDUCTING RF MULTI-SPOKE CAVITY FOR COMPACT LIGHT SOURCES"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: faccb337d2fd9c13eec333157a0991c17c885a800254f29536f4d54b9ca63167
+    quote: '"total_obligation":1300000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: faccb337d2fd9c13eec333157a0991c17c885a800254f29536f4d54b9ca63167
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-desc0007519
+  instrument: grant
+  round_label: DESC0007519
+  announced_on: '2012-02-16'
+  amount:
+    amount: 2150000.0
+    currency: USD
+    qualifier: exact
+    usd: 2150000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 2150000.0
+  use_of_proceeds: 400 MHZ LHC CRAB CRYOMODULE WITH HOM DAMPERS, TUNERS AND COUPLERS
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0007519", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      2150000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2012-02-16", "generated_internal_id": "ASST_NON_DESC0007519_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0007519", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "400 MHZ LHC CRAB CRYOMODULE WITH HOM DAMPERS, TUNERS AND COUPLERS"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 3f9c6c3faf0c61b67d2dda972e63874e215a78da193a0b67fef918ac6e7046a0
+    quote: '"total_obligation":2150000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 3f9c6c3faf0c61b67d2dda972e63874e215a78da193a0b67fef918ac6e7046a0
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-desc0007518
+  instrument: grant
+  round_label: DESC0007518
+  announced_on: '2012-02-16'
+  amount:
+    amount: 150000.0
+    currency: USD
+    qualifier: exact
+    usd: 150000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 150000.0
+  use_of_proceeds: CONTINUOUS WAVE THERMIONIC COPPER RF GUN FOR COMPACT FELS
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0007518", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      150000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2012-02-16", "generated_internal_id": "ASST_NON_DESC0007518_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0007518", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "CONTINUOUS WAVE THERMIONIC COPPER RF GUN FOR COMPACT FELS"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: fb903e5ae31167c16bfee2c3d4d3fa1d127853d488c6d3b2955edfa9b5b00fcd
+    quote: '"total_obligation":150000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: fb903e5ae31167c16bfee2c3d4d3fa1d127853d488c6d3b2955edfa9b5b00fcd
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-desc0007517
+  instrument: grant
+  round_label: DESC0007517
+  announced_on: '2012-02-16'
+  amount:
+    amount: 150000.0
+    currency: USD
+    qualifier: exact
+    usd: 150000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 150000.0
+  use_of_proceeds: DEVELOPMENT OF A SUPERCONDUCTING RF CRABBING SYSTEM BASED ON A QUARTER WAVE RESONATOR FOR ULTRASHORT PULSES
+    AT
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0007517", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      150000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2012-02-16", "generated_internal_id": "ASST_NON_DESC0007517_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0007517", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "DEVELOPMENT OF A SUPERCONDUCTING RF CRABBING SYSTEM BASED ON A QUARTER WAVE RESONATOR FOR ULTRASHOR'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: db389577c239b17ec2c3b05d8e6e2906fc960b9d9309b801677b405cba421362
+    quote: '"total_obligation":150000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: db389577c239b17ec2c3b05d8e6e2906fc960b9d9309b801677b405cba421362
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-desc0007520
+  instrument: grant
+  round_label: DESC0007520
+  announced_on: '2012-02-24'
+  amount:
+    amount: 1150000.0
+    currency: USD
+    qualifier: exact
+    usd: 1150000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 1150000.0
+  use_of_proceeds: COMMERCIAL SUPERCONDUCTING ELECTRON LINAC FOR RADIOISOTOPE PRODUCTION
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0007520", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      1150000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2012-02-24", "generated_internal_id": "ASST_NON_DESC0007520_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0007520", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "COMMERCIAL SUPERCONDUCTING ELECTRON LINAC FOR RADIOISOTOPE PRODUCTION"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: d46c13e6928bdc3993706d8b0a891c803315134fdad55e26847b06892092a051
+    quote: '"total_obligation":1150000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: d46c13e6928bdc3993706d8b0a891c803315134fdad55e26847b06892092a051
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-desc0009512
+  instrument: grant
+  round_label: DESC0009512
+  announced_on: '2013-02-12'
+  amount:
+    amount: 1150000.0
+    currency: USD
+    qualifier: exact
+    usd: 1150000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 1150000.0
+  use_of_proceeds: HPC MODELING TO AID ACCELERATOR COMPONENT MANUFACTURING
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0009512", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      1150000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2013-02-12", "generated_internal_id": "ASST_NON_DESC0009512_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0009512", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "HPC MODELING TO AID ACCELERATOR COMPONENT MANUFACTURING"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: b301d7317ef8ec62435c3c88a3cf8841f8f3f1af6c38db6484c987b5d3259e00
+    quote: '"total_obligation":1150000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: b301d7317ef8ec62435c3c88a3cf8841f8f3f1af6c38db6484c987b5d3259e00
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-desc0009523
+  instrument: grant
+  round_label: DESC0009523
+  announced_on: '2013-02-17'
+  amount:
+    amount: 1150000.0
+    currency: USD
+    qualifier: exact
+    usd: 1150000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 1150000.0
+  use_of_proceeds: DEVELOPMENT OF A SUPERCONDUCTING RF HARMONIC CAVITY FOR ERHIC
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0009523", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      1150000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2013-02-17", "generated_internal_id": "ASST_NON_DESC0009523_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0009523", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "DEVELOPMENT OF A SUPERCONDUCTING RF HARMONIC CAVITY FOR ERHIC"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 5509bebe625c23ecd62aa83739b2d38d8bc66599c24575a422bbc7ebaa4f3da3
+    quote: '"total_obligation":1150000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 5509bebe625c23ecd62aa83739b2d38d8bc66599c24575a422bbc7ebaa4f3da3
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-desc0009704
+  instrument: grant
+  round_label: DESC0009704
+  announced_on: '2013-02-19'
+  amount:
+    amount: 150000.0
+    currency: USD
+    qualifier: exact
+    usd: 150000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 150000.0
+  use_of_proceeds: DEVELOPMENT OF A HIGH-BRIGHTNESS FIELD-EMISSION SUPERCONDUCTING RF GUN
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0009704", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      150000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2013-02-19", "generated_internal_id": "ASST_NON_DESC0009704_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0009704", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "DEVELOPMENT OF A HIGH-BRIGHTNESS FIELD-EMISSION SUPERCONDUCTING RF GUN"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 9c60ea4b2628dd79b33025d4a2c3e7a5b7637129365d60641c6ac0476cf2c5ea
+    quote: '"total_obligation":150000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 9c60ea4b2628dd79b33025d4a2c3e7a5b7637129365d60641c6ac0476cf2c5ea
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-desc0011236
+  instrument: grant
+  round_label: DESC0011236
+  announced_on: '2014-02-06'
+  amount:
+    amount: 1150000.0
+    currency: USD
+    qualifier: exact
+    usd: 1150000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 1150000.0
+  use_of_proceeds: LIQUID METAL BREMSSTRAHLUNG CONVERTERS FOR HIGH POWER ELECTRON BEAMS
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0011236", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      1150000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2014-02-06", "generated_internal_id": "ASST_NON_DESC0011236_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0011236", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "LIQUID METAL BREMSSTRAHLUNG CONVERTERS FOR HIGH POWER ELECTRON BEAMS"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 123059a5e094990e4971483d6c8f5d69a0d9a6f593d5aa3ec7cbd94a4aa87b0e
+    quote: '"total_obligation":1150000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 123059a5e094990e4971483d6c8f5d69a0d9a6f593d5aa3ec7cbd94a4aa87b0e
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-desc0011355
+  instrument: grant
+  round_label: DESC0011355
+  announced_on: '2014-02-12'
+  amount:
+    amount: 2725000.0
+    currency: USD
+    qualifier: exact
+    usd: 2725000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 2725000.0
+  use_of_proceeds: A FAST SPECTRUM NEUTRON SOURCE FOR MATERIALS IRRADIATION USING A SUPERCONDUCTING ELECTRON LINAC
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0011355", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      2725000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2014-02-12", "generated_internal_id": "ASST_NON_DESC0011355_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0011355", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "A FAST SPECTRUM NEUTRON SOURCE FOR MATERIALS IRRADIATION USING A SUPERCONDUCTING ELECTRON LINAC"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: b09e84f3d4bcd1bbcb67efc026366ddc1efd5348e09640383a229d3a63d23ac7
+    quote: '"total_obligation":2725000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: b09e84f3d4bcd1bbcb67efc026366ddc1efd5348e09640383a229d3a63d23ac7
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-desc0011356
+  instrument: grant
+  round_label: DESC0011356
+  announced_on: '2014-02-12'
+  amount:
+    amount: 1150000.0
+    currency: USD
+    qualifier: exact
+    usd: 1150000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 1150000.0
+  use_of_proceeds: HIGH INTENSITY X-RAY GENERATOR TO ELIMINATE HIGH ACTIVITY SOURCES USED FOR STERILIZATION
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0011356", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      1150000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2014-02-12", "generated_internal_id": "ASST_NON_DESC0011356_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0011356", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "HIGH INTENSITY X-RAY GENERATOR TO ELIMINATE HIGH ACTIVITY SOURCES USED FOR STERILIZATION"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 3d9b6611c92e94108e5bde913231775cb50976a1ae709433879b2a5d40a5f664
+    quote: '"total_obligation":1150000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 3d9b6611c92e94108e5bde913231775cb50976a1ae709433879b2a5d40a5f664
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-desc0013851
+  instrument: grant
+  round_label: DESC0013851
+  announced_on: '2015-06-10'
+  amount:
+    amount: 1150000.0
+    currency: USD
+    qualifier: exact
+    usd: 1150000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 1150000.0
+  use_of_proceeds: DEVELOPMENT OF HOM COUPLERS FOR THE LHC SUPERCONDUCTING CRAB CAVITIES
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0013851", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      1150000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2015-06-10", "generated_internal_id": "ASST_NON_DESC0013851_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0013851", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "DEVELOPMENT OF HOM COUPLERS FOR THE LHC SUPERCONDUCTING CRAB CAVITIES"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: d6f42e5ff185b979cecc094a51e2c2824e3958c98f4d222fcf96de0468fc0b05
+    quote: '"total_obligation":1150000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: d6f42e5ff185b979cecc094a51e2c2824e3958c98f4d222fcf96de0468fc0b05
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-desc0015821
+  instrument: grant
+  round_label: DESC0015821
+  announced_on: '2016-06-10'
+  amount:
+    amount: 1150000.0
+    currency: USD
+    qualifier: exact
+    usd: 1150000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 1150000.0
+  use_of_proceeds: BACKBOMBARDMENT-FREE THERMIONIC CATHODE ELECTRON GUN FOR AMPERE AVERAGE CURRENT
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0015821", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      1150000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2016-06-10", "generated_internal_id": "ASST_NON_DESC0015821_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0015821", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "BACKBOMBARDMENT-FREE THERMIONIC CATHODE ELECTRON GUN FOR AMPERE AVERAGE CURRENT"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: dad834f4e1713ed60ec2faa943bb6ce67de5f9fac7a18722995e2cda670df592
+    quote: '"total_obligation":1150000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: dad834f4e1713ed60ec2faa943bb6ce67de5f9fac7a18722995e2cda670df592
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-desc0017733
+  instrument: grant
+  round_label: DESC0017733
+  announced_on: '2017-08-28'
+  amount:
+    amount: 1150000.0
+    currency: USD
+    qualifier: exact
+    usd: 1150000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 1150000.0
+  disbursed_usd: 451629.0
+  use_of_proceeds: A SUBCRITICAL TESTBED FOR FAST NEUTRON IRRADIATION OF NOVEL FUELS AND CLADDING IN FAST REACTORS
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0017733", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      1150000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2017-08-28", "generated_internal_id": "ASST_NON_DESC0017733_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0017733", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "A SUBCRITICAL TESTBED FOR FAST NEUTRON IRRADIATION OF NOVEL FUELS AND CLADDING IN FAST REACTORS"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 1e39c191f34b544f3b6d6050fd63d220c1773c732115adaf6640643ee24bb51d
+    quote: '"total_obligation":1150000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 1e39c191f34b544f3b6d6050fd63d220c1773c732115adaf6640643ee24bb51d
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-desc0017734
+  instrument: grant
+  round_label: DESC0017734
+  announced_on: '2017-08-30'
+  amount:
+    amount: 1106088.0
+    currency: USD
+    qualifier: exact
+    usd: 1106088.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 1106088.0
+  disbursed_usd: 587388.96
+  use_of_proceeds: DEVELOPMENT OF HIGH-Q SRF STRUCTURES BY NITROGEN DOPING FOR SUPERCONDUCTING ELECTRON LINACS
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0017734", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      1106088.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2017-08-30", "generated_internal_id": "ASST_NON_DESC0017734_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0017734", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "DEVELOPMENT OF HIGH-Q SRF STRUCTURES BY NITROGEN DOPING FOR SUPERCONDUCTING ELECTRON LINACS"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 810c7d620cfa8a9c67a776eb4249311ad086fdfd1815cfe48801900bb5e08635
+    quote: '"total_obligation":1106088.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 810c7d620cfa8a9c67a776eb4249311ad086fdfd1815cfe48801900bb5e08635
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-desc0018529
+  instrument: grant
+  round_label: DESC0018529
+  announced_on: '2018-04-03'
+  amount:
+    amount: 1109082.0
+    currency: USD
+    qualifier: exact
+    usd: 1109082.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 1109082.0
+  disbursed_usd: 926316.0
+  use_of_proceeds: ULTRAFAST ELECTRON MICROSCOPY MODULE TO UPGRADE EXISTING COMMERCIAL ELECTRON MICROSCOPES
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0018529", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      1109082.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2018-04-03", "generated_internal_id": "ASST_NON_DESC0018529_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0018529", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "ULTRAFAST ELECTRON MICROSCOPY MODULE TO UPGRADE EXISTING COMMERCIAL ELECTRON MICROSCOPES"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: baecbae209a10aa9b19c471145c799e7fe725599aee7cd9e9aa1249380aefd32
+    quote: '"total_obligation":1109082.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: baecbae209a10aa9b19c471145c799e7fe725599aee7cd9e9aa1249380aefd32
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-desc0018544
+  instrument: grant
+  round_label: DESC0018544
+  announced_on: '2018-04-09'
+  amount:
+    amount: 150000.0
+    currency: USD
+    qualifier: exact
+    usd: 150000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 150000.0
+  use_of_proceeds: DEVELOPMENT OF CORROSION RESISTANT BIMETALLIC STRUCTURES FOR LEAD-BISMUTH COOLED HIGH TEMPERATURE REACTOR
+    SYST
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0018544", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      150000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2018-04-09", "generated_internal_id": "ASST_NON_DESC0018544_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0018544", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "DEVELOPMENT OF CORROSION RESISTANT BIMETALLIC STRUCTURES FOR LEAD-BISMUTH COOLED HIGH TEMPERATURE
+      R'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: c0037a9150d53be5140acfcff48c3e57c922c77c50acaf9dbebd69081370f580
+    quote: '"total_obligation":150000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: c0037a9150d53be5140acfcff48c3e57c922c77c50acaf9dbebd69081370f580
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-desc0018691
+  instrument: grant
+  round_label: DESC0018691
+  announced_on: '2018-06-29'
+  amount:
+    amount: 866148.0
+    currency: USD
+    qualifier: exact
+    usd: 866148.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 866148.0
+  disbursed_usd: 716148.0
+  use_of_proceeds: A CORROSION TEST STATION FOR IMPROVED CHARACTERIZATION AND EXAMINATION CAPABILITIES OF ADVANCED NUCLEAR
+    REACTO
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0018691", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      866148.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2018-06-29", "generated_internal_id": "ASST_NON_DESC0018691_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0018691", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "A CORROSION TEST STATION FOR IMPROVED CHARACTERIZATION AND EXAMINATION CAPABILITIES OF ADVANCED
+      NUC'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 8bf46d7f01d8473d445766a6d0aa6c11e3f0aa7fa638dcba1e9d8b716e7a6ad9
+    quote: '"total_obligation":866148.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 8bf46d7f01d8473d445766a6d0aa6c11e3f0aa7fa638dcba1e9d8b716e7a6ad9
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-dena0003925
+  instrument: grant
+  round_label: DENA0003925
+  announced_on: '2019-07-22'
+  amount:
+    amount: 15000000.0
+    currency: USD
+    qualifier: exact
+    usd: 15000000.0
+  amount_kind: new_money
+  program: DOE National Nuclear Security Administration
+  obligated_usd: 15000000.0
+  disbursed_usd: 10305489.46
+  use_of_proceeds: NIOWAVE INC. THE BASE MOD PROVIDES $5M, WHICH FULLY FUNDS THIS 3-YEAR AWARD.
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DENA0003925", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      15000000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2019-07-22", "generated_internal_id": "ASST_NON_DENA0003925_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DENA0003925", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "NIOWAVE INC.\n\n\nTHE BASE MOD PROVIDES $5M, WHICH FULLY FUNDS THIS 3-YEAR AWARD."'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 237f934a9e00eb55383436ff6b27bb9cb1ec4a5f0affafe726ce854d7fcc215b
+    quote: '"total_obligation":15000000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE National Nuclear Security Administration
+    investor_slug: doe-nnsa
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 237f934a9e00eb55383436ff6b27bb9cb1ec4a5f0affafe726ce854d7fcc215b
+      quote: '"office_agency_name":"NNSA NON-MO CNTRCTNG OPS DIV"'
+      basis: disclosed
+- id: niowave-desc0020857
+  instrument: grant
+  round_label: DESC0020857
+  announced_on: '2020-07-01'
+  amount:
+    amount: 179835.0
+    currency: USD
+    qualifier: exact
+    usd: 179835.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 179835.0
+  disbursed_usd: 159673.96
+  use_of_proceeds: FABRICATION AND TESTING OF ADVANCED FUELS FOR LEAD AND SODIUM COOLED FAST REACTORS
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0020857", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      179835.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2020-07-01", "generated_internal_id": "ASST_NON_DESC0020857_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DESC0020857", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "FABRICATION AND TESTING OF ADVANCED FUELS FOR LEAD AND SODIUM COOLED FAST REACTORS"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 9ec9f9c1ef79fb36a3aa76a2f7a49e740ac3873887816fa6015678d793ad9de2
+    quote: '"total_obligation":179835.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 9ec9f9c1ef79fb36a3aa76a2f7a49e740ac3873887816fa6015678d793ad9de2
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: niowave-dena0004012
+  instrument: grant
+  round_label: DENA0004012
+  announced_on: '2021-12-03'
+  amount:
+    amount: 3254448.0
+    currency: USD
+    qualifier: exact
+    usd: 3254448.0
+  amount_kind: new_money
+  program: DOE National Nuclear Security Administration
+  obligated_usd: 3254448.0
+  disbursed_usd: 3254448.0
+  use_of_proceeds: NIOWAVE IS CURRENTLY IN PHASE 2 OF A THREE-PHASE PROGRAM SUPPORTED BY THE NNSA MO-99 CA TO PRODUCE 10 KCI/WEEK
+  evidence:
+  - field: amount
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DENA0004012", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      3254448.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Base Obligation Date": "2021-12-03", "generated_internal_id": "ASST_NON_DENA0004012_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Award ID": "DENA0004012", "Recipient Name": "NIOWAVE, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 1505113a68a4099e806d3dfbfa919c0fdb08f1ada86e57de19ab6acf930212bb
+    quote: '"Description": "NIOWAVE IS CURRENTLY IN PHASE 2 OF A THREE-PHASE PROGRAM SUPPORTED BY THE NNSA MO-99 CA TO PRODUCE '
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: bd44548b162a63f5a6f38375a44cbc6c69072cc5d784a17ade1263655e05ca57
+    quote: '"total_obligation":3254448.0'
+    basis: disclosed
+  participants:
+  - investor: DOE National Nuclear Security Administration
+    investor_slug: doe-nnsa
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: bd44548b162a63f5a6f38375a44cbc6c69072cc5d784a17ade1263655e05ca57
+      quote: '"office_agency_name":"NNSA NON-MO CNTRCTNG OPS DIV"'
+      basis: disclosed
+agreements:
+- id: niowave-dena0003431
+  counterparty: U.S. Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: '2016-09-28'
+  summary: 'DOE contract DENA0003431: IGF::CL::IGF SBIR PHASE III - COMPARISON OF LARGE CO-60 IRRADIATION FACILITIES TO SUPERCONDUCTING
+    ELECTRON LINAC IRRADIATION FACILITIES'
+  value:
+    amount: 994653.0
+    currency: USD
+    qualifier: exact
+    usd: 994653.0
+  evidence:
+  - field: amount
+    snapshot: 46ab94ff01ffc3f8dfc366813301f70a648b788435e2a816d29af9e7c2f2ee16
+    quote: '"Award ID": "DENA0003431", "Recipient Name": "NIOWAVE, INC.", "Recipient UEI": "WJLJSN2AT8P1", "Award Amount":
+      994653.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 46ab94ff01ffc3f8dfc366813301f70a648b788435e2a816d29af9e7c2f2ee16
+    quote: '"Base Obligation Date": "2016-09-28", "generated_internal_id": "CONT_AWD_DENA0003431_8900_-NONE-_-NONE-"'
+    basis: disclosed

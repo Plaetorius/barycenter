@@ -1,0 +1,105 @@
+company: magneto-inertial-fusion-technologies
+name: Magneto-Inertial Fusion Technologies, Inc. (MIFTI)
+sector: fusion
+notes: INFUSE awards (in-kind lab-access vouchers; no dollar amount is published on the awards listing) from the ORNL INFUSE
+  awards listing pages archived by the ledger-infuse/ledger-commonwealth-fusion-systems runs (infuse.ornl.gov/awards/ and
+  /page/N). The listing gives project title, cycle, award date, company and host lab/university; the date shown is taken as
+  announced_on. Vouchers are not cash and must not be summed with funding.
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: 0 corrections. All 3 INFUSE vouchers confirmed (title, cycle, date, host institution; the listing puts each title
+    before its award line). Per D5, INFUSE money goes to the host lab or university (LLNL, Rochester, Caltech), not to MIFTI.
+    Rightly recorded as in-kind vouchers with no amount, never counted. Private funding (~$12M reported in census) is not
+    in the ledger.
+events:
+- id: magneto-inertial-fusion-technologies-infuse-022a-1
+  instrument: voucher
+  round_label: INFUSE 2022A
+  announced_on: '2022-06-15'
+  program: INFUSE
+  evidence:
+  - field: announced_on
+    snapshot: 9021eb746452d65548805e9c90817d0f7536a4ef98fc6a7819c3ee73915ad7a7
+    quote: INFUSE 2022A - June 15, 2022 | Magneto-Inertial Fusion Technologies, Inc. | University of Rochester
+    basis: disclosed
+  - field: round_label
+    snapshot: 9021eb746452d65548805e9c90817d0f7536a4ef98fc6a7819c3ee73915ad7a7
+    quote: INFUSE 2022A - June 15, 2022 | Magneto-Inertial Fusion Technologies, Inc. | University of Rochester
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 9021eb746452d65548805e9c90817d0f7536a4ef98fc6a7819c3ee73915ad7a7
+    quote: 3D modeling of the Staged Z-pinch with the FLASH code
+    basis: disclosed
+  participants:
+  - investor: INFUSE (Innovation Network for Fusion Energy)
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 9021eb746452d65548805e9c90817d0f7536a4ef98fc6a7819c3ee73915ad7a7
+      quote: INFUSE 2022A - June 15, 2022 | Magneto-Inertial Fusion Technologies, Inc. | University of Rochester
+      basis: disclosed
+  use_of_proceeds: 3D modeling of the Staged Z-pinch with the FLASH code
+- id: magneto-inertial-fusion-technologies-infuse-022a-2
+  instrument: voucher
+  round_label: INFUSE 2022A
+  announced_on: '2022-06-15'
+  program: INFUSE
+  evidence:
+  - field: announced_on
+    snapshot: 9021eb746452d65548805e9c90817d0f7536a4ef98fc6a7819c3ee73915ad7a7
+    quote: INFUSE 2022A - June 15, 2022 | Magneto-Inertial Fusion Technologies, Inc. | CalTech
+    basis: disclosed
+  - field: round_label
+    snapshot: 9021eb746452d65548805e9c90817d0f7536a4ef98fc6a7819c3ee73915ad7a7
+    quote: INFUSE 2022A - June 15, 2022 | Magneto-Inertial Fusion Technologies, Inc. | CalTech
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 9021eb746452d65548805e9c90817d0f7536a4ef98fc6a7819c3ee73915ad7a7
+    quote: Hard x-ray imaging and characterization of staged z-pinch plasmas in order to exclude ion beams as cause of fusion
+    basis: disclosed
+  participants:
+  - investor: INFUSE (Innovation Network for Fusion Energy)
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 9021eb746452d65548805e9c90817d0f7536a4ef98fc6a7819c3ee73915ad7a7
+      quote: INFUSE 2022A - June 15, 2022 | Magneto-Inertial Fusion Technologies, Inc. | CalTech
+      basis: disclosed
+  use_of_proceeds: Hard x-ray imaging and characterization of staged z-pinch plasmas in order to exclude ion beams as cause
+    of fusion
+- id: magneto-inertial-fusion-technologies-infuse-021b-3
+  instrument: voucher
+  round_label: INFUSE 2021B
+  announced_on: '2021-11-22'
+  program: INFUSE
+  evidence:
+  - field: announced_on
+    snapshot: 213f3f28e72d9f5a878ecb03ce0ff25d1b1f688c6b45fc9f7f3666442d8339d7
+    quote: INFUSE 2021B - November 22, 2021 | Magneto-Inertial Fusion Technologies, Inc. | Lawrence Livermore National Laboratory
+      (LLNL)
+    basis: disclosed
+  - field: round_label
+    snapshot: 213f3f28e72d9f5a878ecb03ce0ff25d1b1f688c6b45fc9f7f3666442d8339d7
+    quote: INFUSE 2021B - November 22, 2021 | Magneto-Inertial Fusion Technologies, Inc. | Lawrence Livermore National Laboratory
+      (LLNL)
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 213f3f28e72d9f5a878ecb03ce0ff25d1b1f688c6b45fc9f7f3666442d8339d7
+    quote: Thermonuclear fusion verification of Staged Z-pinch fusion on a 0.5 MA LTD pulsed power generator
+    basis: disclosed
+  participants:
+  - investor: INFUSE (Innovation Network for Fusion Energy)
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 213f3f28e72d9f5a878ecb03ce0ff25d1b1f688c6b45fc9f7f3666442d8339d7
+      quote: INFUSE 2021B - November 22, 2021 | Magneto-Inertial Fusion Technologies, Inc. | Lawrence Livermore National Laboratory
+        (LLNL)
+      basis: disclosed
+  use_of_proceeds: Thermonuclear fusion verification of Staged Z-pinch fusion on a 0.5 MA LTD pulsed power generator
+agreements: []

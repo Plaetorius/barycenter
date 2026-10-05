@@ -1,0 +1,704 @@
+company: nuscale-power
+name: NuScale Power Corporation
+sector: fission
+notes: |-
+  Public (NYSE: SMR; EDGAR CIK 1822966, ex Spring Valley Acquisition Corp.). Primary evidence: EDGAR 8-K/424B5/10-K documents (snapshots archived under source ledger-nuscale-power; submissions index 377c05a5fc1e) and USAspending award detail JSON. SPAC: Spring Valley IPO (2020-11-27, $230M gross) and the PIPE ($235M, 23,700,002 shares, 8-K 2022-05-05; an earlier 8-K of 2021-12-14 stated $211M for 21,300,002 shares, later upsized) are recorded with amount_kind duplicate because the only figure the closing 8-K gives for cash that reached NuScale LLC is the $145,497,965 gross proceeds contribution (event nuscale-spac-closing-2022-05), and the filings do not say how trust cash, redemptions, PIPE and fees reconcile. Reviewer: do not sum IPO + PIPE + closing. ATM programmes: one event per programme, amount is the ceiling (qualifier up_to), not proceeds. Each later programme terminated or replaced the earlier one (Nov 2025 and Feb 2026 424B5 say the prior ATM was terminated; Aug 2026 424B5 says all shares under the Feb 2026 programme were sold, snapshot c769111f729c). VERIFIER: ATM programme events are amount_kind ceiling (never counted); realised proceeds are separate new_money events: FY2025 gross $1,327.6M across the 2024, Q3 2025 and Q4 2025 programmes (10-K) and about $1B for the fully sold Feb 2026 programme (Aug 2026 424B5). Sales under the Aug 2023 programme and 2024-calendar sales under the Nov 2024 programme are not evidenced (FY2023/FY2024 10-Ks not archived). S-3 shelf of $500M (File 333-272342, 2023-06) is a shelf, not a programme, and is not recorded as an event; S-1/S-3 resale registrations (2022-2023) raise no company money. 2025-07-31 Exchange and Lock-Up Agreement with Fluor (8-K 0001104659-25-072905) limits Fluor sell-down; not funding. Fluor Enterprises is the largest stockholder (about 70.9% of Class B economic interest at closing per 8-K); Fluor sells down. Pre-SPAC private rounds (Fluor, JGC/IHI via Japan NuScale Innovation, Doosan, JBIC, Samsung C&T) are not evidenced beyond the 2011 Fluor convertible notes; not found in the sources archived. Japan NuScale Innovation LLC and JBIC letter agreement (2022-04-04) exists as an exhibit but has no stated amount. DOE: USAspending lists five DOE-NE cooperative agreements to NUSCALE POWER LLC (UEI PNKLRKV4CNX3) obligating $585.9M in total (224.48M + 7.52M + 48.0M + 43.2M + 262.66M). The 10-K (filed 2026-02-26) says "more than $578.3 million from DOE under a series of cost-share programs" (cumulative event, not new money). The two figures differ by about $7.6M and are kept as separate evidenced facts: USAspending obligations (per award) vs the company statement; do not sum them. DE-NE0000633 shows total_funding 278,454,086.42 against total_obligation 224,479,988.42 and non_federal_funding 0; USAspending outlays for DE-NE0000633 and DE-NE0008742 are 0, so disbursed_usd omitted for those. USAspending recipient total for DOE FY2020-26 is $263,815,721.69 under NUSCALE POWER LLC (probe snapshot de63a59b9509), which matches DE-NE0008928 plus nothing older (older awards pre-date the FY2020 window). CFPP: DE-NE0008935 (recipient CFPP LLC, UEI J2Z4L77MTJN7, a UAMPS entity, NOT NuScale) obligated $164,741,352, outlays $145,479,549.39, non_federal_funding $6,674,014,797 (a project-cost figure, not DOE money) per USAspending detail. It funds the NuScale-based Carbon Free Power Project. VERIFIER: the event for this award was REMOVED because the recipient is CFPP LLC (UAMPS), a different legal entity, and the USAspending record does not name NuScale as recipient or beneficiary; evidence stays at snapshot c860ee0c4152 (total_obligation 164741352.0, total_account_outlay 145479549.39, recipient_name CFPP LLC) for attribution to CFPP LLC. The Carbon Free Power Project was wound down (Release Agreement 2023-11-07). NOT FOUND / BLOCKED: DOE press announcements (e.g. the DOE-announced CFPP cost-share ceiling, NuScale FOA awards) could not be fetched: WebSearch budget exhausted and guessed energy.gov URLs returned 404 (snapshots d7fd7867ac54, b6d1a22c28be, b464f04405631, 09e2c3455480, 765164edda0d, d3446b783462 are 404 pages and unused). So the USAspending-vs-DOE-announcement comparison is only USAspending vs the company 10-K. TVA newsroom returned 403 (da4d1f729171); the TVA/ENTRA1 agreement is evidenced through NuScale's 10-K only, and NuScale is not a party to it. ENTRA1 Energy is NuScale's exclusive global strategic partner; the PMA contribution ($35M-$55M) is paid BY NuScale to ENTRA1 energy projects in milestone tranches, so it is an agreement value, not funding received. Dates for the 10-K cumulative events use the auditor-report date (2026-02-26), which equals the filing date.
+  MERGE 2026-10-05 (USAspending supplement): no new awards. USAspending 'Total Outlays' is account-level outlay data reported from FY2017/FY2020 onward, so disbursed_usd can understate payments on older awards.
+verification:
+  status: verified
+  by: merge-verifier-agent (opus), 2026-10-05
+  'on': 2026-10-05
+  note: 'USAspending merge: all 5 supplement awards (DE-NE0000633, 0008369, 0008742, 0008820, 0008928) are already in the
+    ledger by FAIN with the same obligations: 0 events added. Outlays attached as disbursed_usd for 0008928 (207.67M), 0008820
+    (11.50M) and 0008369 (1.32M); not set for 0000633 and 0008742 where USAspending shows 0.0 outlays against full obligations
+    (missing outlay reporting for older awards, not zero payment). Previous sign-off: verifier-agent (claude-opus-5-5), 2026-10-05:
+    9 corrections: 6 ATM programme events re-kinded new_money -> ceiling (programme maximums, $3.35B of ceilings were being
+    counted as money raised); CFPP DE-NE0008935 event removed (recipient CFPP LLC/UAMPS, not NuScale; facts kept in notes);
+    2 realised-proceeds events added per VERIFY rule 6 (FY2025 ATM gross $1,327.6M from 10-K; Feb 2026 $1B programme fully
+    sold per Aug 2026 424B5, approx). SPAC IPO/PIPE duplicates and the DOE cumulative 10-K statement are correctly uncounted;
+    USAspending DOE awards to NUSCALE POWER LLC match their JSON. Not confirmed: realised ATM proceeds for 2023-2024 and for
+    the Aug 2026 programme; pre-SPAC private rounds; DOE press announcements (404).'
+events:
+- id: nuscale-fluor-convertible-notes-2011
+  instrument: debt
+  round_label: Fluor convertible notes (converted into NuScale common units at the 2022 closing)
+  announced_on: 2011-09-30
+  amount:
+    amount: 10281427
+    currency: USD
+    qualifier: approx
+  evidence:
+  - field: amount
+    snapshot: 135e0f3643378eef74658cd5049a1bb68b9e88b0a7c68f304d225b5d32ff4433
+    quote: on September 30, 2011 with an aggregate principal balance of approximately $10,281,427
+    basis: disclosed
+  - field: announced_on
+    snapshot: 135e0f3643378eef74658cd5049a1bb68b9e88b0a7c68f304d225b5d32ff4433
+    quote: on September 30, 2011 with an aggregate principal balance of approximately $10,281,427
+    basis: disclosed
+  participants:
+  - investor: Fluor Enterprises, Inc.
+    investor_slug: fluor-enterprises
+    role: lender
+    evidence:
+    - field: participant
+      snapshot: 135e0f3643378eef74658cd5049a1bb68b9e88b0a7c68f304d225b5d32ff4433
+      quote: convertible notes issued by NuScale in favor of Fluor Enterprises, Inc.
+      basis: disclosed
+- id: nuscale-spring-valley-ipo-2020-11
+  instrument: ipo
+  round_label: Spring Valley Acquisition Corp. SPAC IPO (pre-merger shell, 23,000,000 units at $10.00)
+  round_group: nuscale-spac-2022
+  announced_on: 2020-11-27
+  closed_on: 2020-11-27
+  amount:
+    amount: 230000000
+    currency: USD
+    qualifier: exact
+  amount_kind: duplicate
+  supersedes: nuscale-spac-closing-2022-05
+  use_of_proceeds: Blank check company trust; funds became NuScale cash only through the 2022 business combination
+  evidence:
+  - field: amount
+    snapshot: c2e8012a1717deb386048a21be555b15020460fde03abee5701473d3263466cf
+    quote: generating gross proceeds of $230,000,000
+    basis: disclosed
+  - field: announced_on
+    snapshot: c2e8012a1717deb386048a21be555b15020460fde03abee5701473d3263466cf
+    quote: On November 27, 2020, the Company consummated the IPO of 23,000,000 units
+    basis: disclosed
+- id: nuscale-pipe-2022-05
+  instrument: equity
+  round_label: PIPE concurrent with Spring Valley business combination
+  round_group: nuscale-spac-2022
+  announced_on: 2021-12-13
+  closed_on: 2022-05-02
+  amount:
+    amount: 235000000
+    currency: USD
+    qualifier: exact
+  amount_kind: duplicate
+  supersedes: nuscale-spac-closing-2022-05
+  evidence:
+  - field: amount
+    snapshot: 2a1a935ca13d744fa9a25726a7d02f0e117675ede8f493c676c55d989952a287
+    quote: for an aggregate commitment amount of $235,000,000
+    basis: disclosed
+  - field: announced_on
+    snapshot: 135e0f3643378eef74658cd5049a1bb68b9e88b0a7c68f304d225b5d32ff4433
+    quote: On December 13, 2021, Spring Valley Acquisition Corp., a Cayman Islands exempted company
+    basis: disclosed
+  - field: closed_on
+    snapshot: 2a1a935ca13d744fa9a25726a7d02f0e117675ede8f493c676c55d989952a287
+    quote: The PIPE Investment was consummated substantially concurrently with the Closing
+    basis: disclosed
+  participants:
+  - investor: DS Private Equity Co., Ltd.
+    investor_slug: ds-private-equity
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 2a1a935ca13d744fa9a25726a7d02f0e117675ede8f493c676c55d989952a287
+      quote: Includes 8,000,000 shares of NuScale Class A Common Stock purchased by DS Private Equity Co., Ltd.
+      basis: disclosed
+  - investor: Green Energy New Technology Investment Fund
+    investor_slug: green-energy-new-technology-investment-fund
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 2a1a935ca13d744fa9a25726a7d02f0e117675ede8f493c676c55d989952a287
+      quote: Includes 5,000,000 shares of NuScale Class A Common Stock purchased by Green Energy New Technology Investment
+        Fund
+      basis: disclosed
+  - investor: Samsung C&T Corporation
+    investor_slug: samsung-ct
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 2a1a935ca13d744fa9a25726a7d02f0e117675ede8f493c676c55d989952a287
+      quote: Includes 5,200,002 shares of NuScale Class A Common Stock purchased by Samsung C&T
+      basis: disclosed
+- id: nuscale-spac-closing-2022-05
+  instrument: spac
+  round_label: Spring Valley Acquisition Corp. business combination closing (NuScale listed as SMR)
+  round_group: nuscale-spac-2022
+  announced_on: 2022-05-02
+  closed_on: 2022-05-02
+  amount:
+    amount: 145497965
+    currency: USD
+    qualifier: exact
+  use_of_proceeds: Gross proceeds NuScale Corp contributed to NuScale LLC in exchange for Class A units (as stated in the
+    closing 8-K)
+  evidence:
+  - field: amount
+    snapshot: 2a1a935ca13d744fa9a25726a7d02f0e117675ede8f493c676c55d989952a287
+    quote: NuScale contributed $145,497,965 in gross proceeds to NuScale LLC
+    basis: disclosed
+  - field: announced_on
+    snapshot: 2a1a935ca13d744fa9a25726a7d02f0e117675ede8f493c676c55d989952a287
+    quote: On May 2, 2022, NuScale issued a press release announcing the Closing
+    basis: disclosed
+  - field: closed_on
+    snapshot: 2a1a935ca13d744fa9a25726a7d02f0e117675ede8f493c676c55d989952a287
+    quote: NuScale and NuScale LLC consummated the business combination contemplated by the Merger Agreement
+    basis: disclosed
+- id: nuscale-atm-2023-08
+  instrument: follow_on
+  round_label: ATM programme Aug 2023 (Cowen, B. Riley, Canaccord)
+  announced_on: 2023-08-09
+  amount:
+    amount: 150000000
+    currency: USD
+    qualifier: up_to
+  amount_kind: ceiling
+  program: At-the-market offering programme (one event per programme; amount is the ceiling, not proceeds)
+  evidence:
+  - field: amount
+    snapshot: 91782059e3c93166ddcbd424354cb3f7fe0ea39861837f645a9ccac2888ec85c
+    quote: having an aggregate offering price of up to $150,000,000
+    basis: disclosed
+  - field: announced_on
+    snapshot: 91782059e3c93166ddcbd424354cb3f7fe0ea39861837f645a9ccac2888ec85c
+    quote: On August 9, 2023, NuScale Power Corporation
+    basis: disclosed
+  - field: round_label
+    snapshot: 91782059e3c93166ddcbd424354cb3f7fe0ea39861837f645a9ccac2888ec85c
+    quote: at-the-market offering program under which the Company may offer and sell
+    basis: disclosed
+- id: nuscale-atm-2024-11
+  instrument: follow_on
+  round_label: ATM programme Nov 2024 (TD Cowen, UBS, B. Riley, Canaccord)
+  announced_on: 2024-11-08
+  amount:
+    amount: 200000000
+    currency: USD
+    qualifier: up_to
+  amount_kind: ceiling
+  program: At-the-market offering programme (one event per programme; amount is the ceiling, not proceeds)
+  evidence:
+  - field: amount
+    snapshot: 0a7fd7e03f6aa1a2c4d359325103e5083b279cf27207df0ade723aaaf84689fc
+    quote: having an aggregate offering price of up to $200,000,000
+    basis: disclosed
+  - field: announced_on
+    snapshot: 0a7fd7e03f6aa1a2c4d359325103e5083b279cf27207df0ade723aaaf84689fc
+    quote: On November 8, 2024, NuScale Power Corporation
+    basis: disclosed
+  - field: round_label
+    snapshot: 0a7fd7e03f6aa1a2c4d359325103e5083b279cf27207df0ade723aaaf84689fc
+    quote: at-the-market offering program under which the Company may offer and sell
+    basis: disclosed
+- id: nuscale-atm-2025-08
+  instrument: follow_on
+  round_label: ATM programme Aug 2025
+  announced_on: 2025-08-11
+  amount:
+    amount: 500000000
+    currency: USD
+    qualifier: up_to
+  amount_kind: ceiling
+  program: At-the-market offering programme (one event per programme; amount is the ceiling, not proceeds)
+  evidence:
+  - field: amount
+    snapshot: f7f08176a4994cb7f00a1cfb4d3617585871f3ef9accff0234dd972b7aa66fb5
+    quote: having an aggregate offering price of up to $500,000,000
+    basis: disclosed
+  - field: announced_on
+    snapshot: f7f08176a4994cb7f00a1cfb4d3617585871f3ef9accff0234dd972b7aa66fb5
+    quote: On August 11, 2025, NuScale Power Corporation
+    basis: disclosed
+  - field: round_label
+    snapshot: f7f08176a4994cb7f00a1cfb4d3617585871f3ef9accff0234dd972b7aa66fb5
+    quote: at-the-market offering program under which the Company may offer and sell
+    basis: disclosed
+- id: nuscale-atm-2025-11
+  instrument: follow_on
+  round_label: ATM programme Nov 2025
+  announced_on: 2025-11-07
+  amount:
+    amount: 750000000
+    currency: USD
+    qualifier: up_to
+  amount_kind: ceiling
+  program: At-the-market offering programme (one event per programme; amount is the ceiling, not proceeds)
+  evidence:
+  - field: amount
+    snapshot: a4083c44f3a51455c7b702d6554bf5ba8cbcce25a944a959db3fd97486c2dc72
+    quote: having an aggregate offering price of up to $750,000,000
+    basis: disclosed
+  - field: announced_on
+    snapshot: a4083c44f3a51455c7b702d6554bf5ba8cbcce25a944a959db3fd97486c2dc72
+    quote: On November 7, 2025, NuScale Power Corporation
+    basis: disclosed
+  - field: round_label
+    snapshot: a4083c44f3a51455c7b702d6554bf5ba8cbcce25a944a959db3fd97486c2dc72
+    quote: at-the-market offering program under which the Company may offer and sell
+    basis: disclosed
+- id: nuscale-atm-2026-02
+  instrument: follow_on
+  round_label: ATM programme Feb 2026
+  announced_on: 2026-02-26
+  amount:
+    amount: 1000000000
+    currency: USD
+    qualifier: up_to
+  amount_kind: ceiling
+  program: At-the-market offering programme (one event per programme; amount is the ceiling, not proceeds)
+  evidence:
+  - field: amount
+    snapshot: b5e59338c01a7df7e4e342a6b5ecb5d49c1ba8950c8e3c321378bcc6b4a79ce6
+    quote: having an aggregate offering price of up to $1,000,000,000
+    basis: disclosed
+  - field: announced_on
+    snapshot: b5e59338c01a7df7e4e342a6b5ecb5d49c1ba8950c8e3c321378bcc6b4a79ce6
+    quote: On February 26, 2026, NuScale Power Corporation
+    basis: disclosed
+  - field: round_label
+    snapshot: b5e59338c01a7df7e4e342a6b5ecb5d49c1ba8950c8e3c321378bcc6b4a79ce6
+    quote: at-the-market offering program under which the Company may offer and sell
+    basis: disclosed
+- id: nuscale-atm-2026-08
+  instrument: follow_on
+  round_label: ATM programme Aug 2026
+  announced_on: 2026-08-11
+  amount:
+    amount: 750000000
+    currency: USD
+    qualifier: up_to
+  amount_kind: ceiling
+  program: At-the-market offering programme (one event per programme; amount is the ceiling, not proceeds)
+  evidence:
+  - field: amount
+    snapshot: 0b1a6ba635a255a74fabcc187768981a683069ecdddd0ce2188df4091ed7e93e
+    quote: having an aggregate offering price of up to $750,000,000
+    basis: disclosed
+  - field: announced_on
+    snapshot: 0b1a6ba635a255a74fabcc187768981a683069ecdddd0ce2188df4091ed7e93e
+    quote: On August 11, 2026, NuScale Power Corporation
+    basis: disclosed
+  - field: round_label
+    snapshot: 0b1a6ba635a255a74fabcc187768981a683069ecdddd0ce2188df4091ed7e93e
+    quote: at-the-market offering program under which the Company may offer and sell
+    basis: disclosed
+- id: nuscale-atm-sales-fy2025
+  instrument: follow_on
+  round_label: ATM sales in FY2025 (2024, Q3 2025 and Q4 2025 programmes; gross proceeds)
+  announced_on: 2026-02-26
+  amount:
+    amount: 1327600000
+    currency: USD
+    qualifier: exact
+  program: At-the-market offering programmes (realised gross proceeds; net $1,299.7M)
+  evidence:
+  - field: amount
+    snapshot: 6440cbfa2ad1b016ab8193caea509efe1105b39216e3596a3e2f837c27d4c303
+    quote: the Company issued and sold 57,112,216 shares of Class A common stock for the gross and net proceeds of $1,327.6
+      million and $1,299.7 million, respectively
+    basis: disclosed
+  - field: announced_on
+    snapshot: 6440cbfa2ad1b016ab8193caea509efe1105b39216e3596a3e2f837c27d4c303
+    quote: our report dated February 26, 2026 expressed an unqualified opinion thereon
+    basis: disclosed
+  - field: round_label
+    snapshot: 6440cbfa2ad1b016ab8193caea509efe1105b39216e3596a3e2f837c27d4c303
+    quote: associated with the Q4 2025 ATM Program, Q3 2025 ATM Program and 2024 ATM Program
+    basis: disclosed
+- id: nuscale-atm-sales-2026-02-programme
+  instrument: follow_on
+  round_label: ATM sales under the Feb 2026 programme (fully sold per Aug 2026 424B5)
+  announced_on: 2026-08-11
+  amount:
+    amount: 1000000000
+    currency: USD
+    qualifier: approx
+  program: At-the-market offering programme (realised; all shares under the $1B programme sold, exact gross not stated)
+  evidence:
+  - field: amount
+    snapshot: c769111f729cb784122cadaa800adf0f17ed062aa85940d5c2f99fbd89ccd316
+    quote: We have completed sales of all shares of Class A Common Stock available under our prior “at the market offering”
+      program pursuant to our sales agreement, dated as of February 26, 2026
+    basis: disclosed
+  - field: amount
+    snapshot: b5e59338c01a7df7e4e342a6b5ecb5d49c1ba8950c8e3c321378bcc6b4a79ce6
+    quote: having an aggregate offering price of up to $1,000,000,000
+    basis: disclosed
+  - field: announced_on
+    snapshot: 0b1a6ba635a255a74fabcc187768981a683069ecdddd0ce2188df4091ed7e93e
+    quote: On August 11, 2026, NuScale Power Corporation
+    basis: disclosed
+- id: nuscale-doe-de-ne0008928-usaspending
+  instrument: cost_share
+  round_label: DOE-NE cooperative agreement DE-NE0008928 (USAspending, recipient NUSCALE POWER LLC)
+  round_group: doe-nuscale-cost-share
+  announced_on: 2020-02-04
+  amount:
+    amount: 262655693
+    currency: USD
+    qualifier: exact
+  obligated_usd: 262655693
+  disbursed_usd: 207665406.92
+  program: DOE Office of Nuclear Energy cooperative agreement (CFDA 81.121)
+  use_of_proceeds: 'Development program: remaining licensing, FOA engineering, supply chain development, testing (period 2019-12-20
+    to 2025-12-31)'
+  evidence:
+  - field: amount
+    snapshot: 1ffddc21db76771e0b4d1066699e2ffb31a9ffe6ae93824567c155b5d74ab797
+    quote: '"total_obligation":262655693.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 1ffddc21db76771e0b4d1066699e2ffb31a9ffe6ae93824567c155b5d74ab797
+    quote: '"date_signed":"2020-02-04"'
+    basis: disclosed
+  - field: disbursed
+    snapshot: 1ffddc21db76771e0b4d1066699e2ffb31a9ffe6ae93824567c155b5d74ab797
+    quote: '"total_account_outlay":207665406.92'
+    basis: disclosed
+  - field: cost_share_recipient
+    snapshot: 1ffddc21db76771e0b4d1066699e2ffb31a9ffe6ae93824567c155b5d74ab797
+    quote: '"non_federal_funding":394599405.0'
+    basis: disclosed
+  - field: recipient
+    snapshot: 1ffddc21db76771e0b4d1066699e2ffb31a9ffe6ae93824567c155b5d74ab797
+    quote: '"recipient_name":"NUSCALE POWER LLC"'
+    basis: disclosed
+  - field: disbursed
+    snapshot: 3f081a0a2df71e14a8f278550c993446a0ab1d672d215033e82e754bc17cdb2c
+    quote: '"Award ID": "DENE0008928", "Recipient Name": "NUSCALE POWER LLC", "Recipient UEI": "PNKLRKV4CNX3", "Award Amount":
+      262655693.0, "Total Outlays": 207665406.92'
+    basis: disclosed
+  participants:
+  - investor: Department of Energy (Office of Nuclear Energy)
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 1ffddc21db76771e0b4d1066699e2ffb31a9ffe6ae93824567c155b5d74ab797
+      quote: '"office_agency_name":"NUCLEAR ENERGY"'
+      basis: disclosed
+- id: nuscale-doe-de-ne0008820-usaspending
+  instrument: cost_share
+  round_label: DOE-NE cooperative agreement DE-NE0008820 (USAspending, recipient NUSCALE POWER LLC)
+  round_group: doe-nuscale-cost-share
+  announced_on: 2018-09-26
+  amount:
+    amount: 43200000
+    currency: USD
+    qualifier: exact
+  obligated_usd: 43200000
+  disbursed_usd: 11499700.61
+  program: DOE Office of Nuclear Energy cooperative agreement (CFDA 81.121)
+  use_of_proceeds: Development and deployment of NuScale SMR (period 2018-10-01 to 2019-09-30)
+  evidence:
+  - field: amount
+    snapshot: e4ef9c3e922175246dc30cbd98fabe75f56cd4535945ca4c3142689de54bb2a3
+    quote: '"total_obligation":43200000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: e4ef9c3e922175246dc30cbd98fabe75f56cd4535945ca4c3142689de54bb2a3
+    quote: '"date_signed":"2018-09-26"'
+    basis: disclosed
+  - field: disbursed
+    snapshot: e4ef9c3e922175246dc30cbd98fabe75f56cd4535945ca4c3142689de54bb2a3
+    quote: '"total_account_outlay":11499700.61'
+    basis: disclosed
+  - field: recipient
+    snapshot: e4ef9c3e922175246dc30cbd98fabe75f56cd4535945ca4c3142689de54bb2a3
+    quote: '"recipient_name":"NUSCALE POWER LLC"'
+    basis: disclosed
+  - field: disbursed
+    snapshot: 3f081a0a2df71e14a8f278550c993446a0ab1d672d215033e82e754bc17cdb2c
+    quote: '"Award ID": "DENE0008820", "Recipient Name": "NUSCALE POWER LLC", "Recipient UEI": "PNKLRKV4CNX3", "Award Amount":
+      43200000.0, "Total Outlays": 11499700.61'
+    basis: disclosed
+  participants:
+  - investor: Department of Energy (Office of Nuclear Energy)
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: e4ef9c3e922175246dc30cbd98fabe75f56cd4535945ca4c3142689de54bb2a3
+      quote: '"office_agency_name":"NUCLEAR ENERGY"'
+      basis: disclosed
+- id: nuscale-doe-de-ne0008742-usaspending
+  instrument: cost_share
+  round_label: DOE-NE cooperative agreement DE-NE0008742 (USAspending, recipient NUSCALE POWER LLC)
+  round_group: doe-nuscale-cost-share
+  announced_on: 2018-08-30
+  amount:
+    amount: 48000000
+    currency: USD
+    qualifier: exact
+  obligated_usd: 48000000
+  program: DOE Office of Nuclear Energy cooperative agreement (CFDA 81.121)
+  use_of_proceeds: Development and deployment of NuScale SMR (period 2018-08-30 to 2018-12-31)
+  evidence:
+  - field: amount
+    snapshot: 44319b8c0b561dc373aaf04f0f4d11745f327fbd71db30df97d0879ebd378ab2
+    quote: '"total_obligation":48000000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 44319b8c0b561dc373aaf04f0f4d11745f327fbd71db30df97d0879ebd378ab2
+    quote: '"date_signed":"2018-08-30"'
+    basis: disclosed
+  - field: recipient
+    snapshot: 44319b8c0b561dc373aaf04f0f4d11745f327fbd71db30df97d0879ebd378ab2
+    quote: '"recipient_name":"NUSCALE POWER LLC"'
+    basis: disclosed
+  participants:
+  - investor: Department of Energy (Office of Nuclear Energy)
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 44319b8c0b561dc373aaf04f0f4d11745f327fbd71db30df97d0879ebd378ab2
+      quote: '"office_agency_name":"NUCLEAR ENERGY"'
+      basis: disclosed
+- id: nuscale-doe-de-ne0008369-usaspending
+  instrument: cost_share
+  round_label: DOE-NE cooperative agreement DE-NE0008369 (USAspending, recipient NUSCALE POWER LLC)
+  round_group: doe-nuscale-cost-share
+  announced_on: 2015-08-11
+  amount:
+    amount: 7521554.69
+    currency: USD
+    qualifier: exact
+  obligated_usd: 7521554.69
+  disbursed_usd: 1324817.88
+  program: DOE Office of Nuclear Energy cooperative agreement (CFDA 81.121)
+  use_of_proceeds: Site permitting and licensing of the NuScale SMR (period 2015-08-11 to 2021-12-31)
+  evidence:
+  - field: amount
+    snapshot: 4ea0f392002b68c620925bdd321dc734cedc59cb82f46378cbd79f593d259a6c
+    quote: '"total_obligation":7521554.69'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 4ea0f392002b68c620925bdd321dc734cedc59cb82f46378cbd79f593d259a6c
+    quote: '"date_signed":"2015-08-11"'
+    basis: disclosed
+  - field: disbursed
+    snapshot: 4ea0f392002b68c620925bdd321dc734cedc59cb82f46378cbd79f593d259a6c
+    quote: '"total_account_outlay":1324817.88'
+    basis: disclosed
+  - field: recipient
+    snapshot: 4ea0f392002b68c620925bdd321dc734cedc59cb82f46378cbd79f593d259a6c
+    quote: '"recipient_name":"NUSCALE POWER LLC"'
+    basis: disclosed
+  - field: disbursed
+    snapshot: 3f081a0a2df71e14a8f278550c993446a0ab1d672d215033e82e754bc17cdb2c
+    quote: '"Award ID": "DENE0008369", "Recipient Name": "NUSCALE POWER LLC", "Recipient UEI": "PNKLRKV4CNX3", "Award Amount":
+      7521554.69, "Total Outlays": 1324817.88'
+    basis: disclosed
+  participants:
+  - investor: Department of Energy (Office of Nuclear Energy)
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 4ea0f392002b68c620925bdd321dc734cedc59cb82f46378cbd79f593d259a6c
+      quote: '"office_agency_name":"NUCLEAR ENERGY"'
+      basis: disclosed
+- id: nuscale-doe-de-ne0000633-usaspending
+  instrument: cost_share
+  round_label: DOE-NE cooperative agreement DE-NE0000633 (USAspending, recipient NUSCALE POWER LLC)
+  round_group: doe-nuscale-cost-share
+  announced_on: 2014-05-27
+  amount:
+    amount: 224479988.42
+    currency: USD
+    qualifier: exact
+  obligated_usd: 224479988.42
+  program: DOE Office of Nuclear Energy cooperative agreement (CFDA 81.121)
+  use_of_proceeds: NuScale SMR design development and certification (period 2014-04-15 to 2018-06-30)
+  evidence:
+  - field: amount
+    snapshot: 45b047af1cbf0a8dcaa8e6e619316fd006fa867c2340c18a7bbb2ecef244120f
+    quote: '"total_obligation":224479988.42'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 45b047af1cbf0a8dcaa8e6e619316fd006fa867c2340c18a7bbb2ecef244120f
+    quote: '"date_signed":"2014-05-27"'
+    basis: disclosed
+  - field: recipient
+    snapshot: 45b047af1cbf0a8dcaa8e6e619316fd006fa867c2340c18a7bbb2ecef244120f
+    quote: '"recipient_name":"NUSCALE POWER LLC"'
+    basis: disclosed
+  participants:
+  - investor: Department of Energy (Office of Nuclear Energy)
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 45b047af1cbf0a8dcaa8e6e619316fd006fa867c2340c18a7bbb2ecef244120f
+      quote: '"office_agency_name":"NUCLEAR ENERGY"'
+      basis: disclosed
+- id: nuscale-doe-cumulative-10k-2026
+  instrument: cost_share
+  round_label: DOE cost-share programmes, cumulative since 2007 (company statement in FY2025 10-K)
+  round_group: doe-nuscale-cost-share
+  announced_on: 2026-02-26
+  amount:
+    amount: 578300000
+    currency: USD
+    qualifier: over
+  amount_kind: cumulative
+  program: DOE cost-share programmes
+  evidence:
+  - field: amount
+    snapshot: 6440cbfa2ad1b016ab8193caea509efe1105b39216e3596a3e2f837c27d4c303
+    quote: including more than $578.3 million from DOE under a series of cost-share programs
+    basis: disclosed
+  - field: announced_on
+    snapshot: 6440cbfa2ad1b016ab8193caea509efe1105b39216e3596a3e2f837c27d4c303
+    quote: our report dated February 26, 2026 expressed an unqualified opinion thereon
+    basis: disclosed
+  participants:
+  - investor: Department of Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 6440cbfa2ad1b016ab8193caea509efe1105b39216e3596a3e2f837c27d4c303
+      quote: including more than $578.3 million from DOE under a series of cost-share programs
+      basis: disclosed
+- id: nuscale-total-invested-10k-2026
+  instrument: other
+  round_label: Total investment in NuScale technology since 2007 (company statement in FY2025 10-K, all sources)
+  announced_on: 2026-02-26
+  amount:
+    amount: 1800000000
+    currency: USD
+    qualifier: over
+  amount_kind: cumulative
+  evidence:
+  - field: amount
+    snapshot: 6440cbfa2ad1b016ab8193caea509efe1105b39216e3596a3e2f837c27d4c303
+    quote: Since 2007, over $1.8 billion has been invested in the development of NuScale technology
+    basis: disclosed
+  - field: announced_on
+    snapshot: 6440cbfa2ad1b016ab8193caea509efe1105b39216e3596a3e2f837c27d4c303
+    quote: our report dated February 26, 2026 expressed an unqualified opinion thereon
+    basis: disclosed
+agreements:
+- id: nuscale-entra1-pma-2025
+  counterparty: ENTRA1 Energy LLC
+  counterparty_slug: entra1-energy
+  type: partnership
+  binding: definitive
+  announced_on: 2025-08-27
+  value:
+    amount: 35000000
+    currency: USD
+    qualifier: range
+    amount_max: 55000000
+  summary: Partnership Milestones Agreement; NuScale LLC is key SMR equipment supplier to ENTRA1 projects and pays a $35M-$55M
+    Partnership Contribution allocated to an NPM in milestone tranches (15/35/50%); term to 2045 with 20-year renewals; NuScale
+    Power Corp guaranty. Value is an outflow from NuScale, not funding.
+  evidence:
+  - field: agreement
+    snapshot: 2eafea0707f083eaa9bb8f388f8f36b9a4af1e373837fba8951227939d503d44
+    quote: providing NuScale’s SMR technology equipment as a key supplier for future ENTRA1 energy projects
+    basis: disclosed
+  - field: value
+    snapshot: 2eafea0707f083eaa9bb8f388f8f36b9a4af1e373837fba8951227939d503d44
+    quote: contribution amount in the range of USD$35,000,000 to USD$55,000,000
+    basis: disclosed
+  - field: announced_on
+    snapshot: 2eafea0707f083eaa9bb8f388f8f36b9a4af1e373837fba8951227939d503d44
+    quote: On and effective August 27, 2025, NuScale Power, LLC
+    basis: disclosed
+- id: nuscale-entra1-tva-2025-non-binding
+  counterparty: Tennessee Valley Authority (with ENTRA1 Energy)
+  counterparty_slug: tennessee-valley-authority
+  type: ppa
+  binding: mou
+  announced_on: 2025-09-02
+  capacity_mw: 6000
+  summary: Non-binding TVA and ENTRA1 collaboration to develop plants providing TVA up to 6 GW using NuScale SMR equipment;
+    contingent on later power purchase agreements; NuScale is not a direct party. As of 2026-08-05 discussions toward a definitive
+    PPA continue.
+  evidence:
+  - field: agreement
+    snapshot: 6440cbfa2ad1b016ab8193caea509efe1105b39216e3596a3e2f837c27d4c303
+    quote: announced the signing of a non-binding agreement under which ENTRA1 and TVA will collaborate to develop plants
+      to provide TVA with up to 6 gigawatts of new nuclear power generation
+    basis: disclosed
+  - field: announced_on
+    snapshot: 6440cbfa2ad1b016ab8193caea509efe1105b39216e3596a3e2f837c27d4c303
+    quote: On September 2, 2025, the Tennessee Valley Authority
+    basis: disclosed
+- id: nuscale-fluor-ropower-feed-task-order-2024
+  counterparty: Fluor Transworld Services Inc. (subsidiary of Fluor Enterprises, Inc.)
+  counterparty_slug: fluor-enterprises
+  type: partnership
+  binding: definitive
+  announced_on: 2024-10-03
+  summary: Task order under 2021-01-25 Master Services Agreement; NuScale Power OVS provides FEED services for the RoPower
+    Nuclear Doicesti project in Romania. Related-party contract, value not stated in the 8-K body.
+  evidence:
+  - field: agreement
+    snapshot: 98d6599840d29bf752274c29b6a6a4129ac9d475fe540d06e29b1183df284005
+    quote: NuScale Power OVS will provide certain Front-End Engineering and Design (FEED) Services for the RoPower Nuclear
+      S.A. Doicesti project in Romania
+    basis: disclosed
+  - field: announced_on
+    snapshot: 98d6599840d29bf752274c29b6a6a4129ac9d475fe540d06e29b1183df284005
+    quote: On October 3, 2024, NuScale Power OVS, LLC
+    basis: disclosed
+- id: nuscale-doosan-llm-task-order-2024
+  counterparty: Doosan Enerbility Co., Ltd.
+  counterparty_slug: doosan-enerbility
+  type: partnership
+  binding: definitive
+  announced_on: 2024-12-20
+  summary: Task order under Supply Agreement dated 2024-10-21 for long lead materials for 6 upper reactor pressure vessels;
+    value not stated.
+  evidence:
+  - field: agreement
+    snapshot: db7702917bc053cb4b45f0592fd5fc514bbc439d75358dbad9826cc90eb81588
+    quote: Doosan will provide LLM for 6 URPVs
+    basis: disclosed
+  - field: announced_on
+    snapshot: db7702917bc053cb4b45f0592fd5fc514bbc439d75358dbad9826cc90eb81588
+    quote: On December 20, 2024, NuScale Power, LLC
+    basis: disclosed
+- id: nuscale-cfpp-doe-tri-party-llm-2025
+  counterparty: U.S. Department of Energy and CFPP LLC
+  counterparty_slug: cfpp-llc
+  type: gov_contract
+  binding: definitive
+  announced_on: 2025-09-22
+  value:
+    amount: 32322870.89
+    currency: USD
+    qualifier: exact
+  summary: Tri-Party Agreement under DOE award DE-NE0008935 by which NuScale acquires CFPP long lead upper reactor pressure
+    vessel materials for $32,322,870.89 paid by credit invoices to CFPP; NuScale pays, so this is an outflow, not funding.
+    Release and Assignment of Rights with DOE followed on 2025-10-08 per the FY2025 10-K.
+  evidence:
+  - field: agreement
+    snapshot: ef8d200746400df1c32c8196c3dd8d5554c90ad1d8cfe8881cfa2cb05df0a674
+    quote: NuScale will acquire all of CFPP’s right, title and interests in and to certain long lead time materials
+    basis: disclosed
+  - field: value
+    snapshot: ef8d200746400df1c32c8196c3dd8d5554c90ad1d8cfe8881cfa2cb05df0a674
+    quote: for total consideration of $32,322,870.89
+    basis: disclosed
+  - field: announced_on
+    snapshot: ef8d200746400df1c32c8196c3dd8d5554c90ad1d8cfe8881cfa2cb05df0a674
+    quote: On September 22, 2025, NuScale Power, LLC
+    basis: disclosed
+- id: nuscale-cfpp-release-agreement-2023
+  counterparty: CFPP LLC (UAMPS)
+  counterparty_slug: cfpp-llc
+  type: site
+  binding: definitive
+  announced_on: 2023-11-07
+  summary: Confidential Settlement and Release Agreement between NuScale Power, LLC and CFPP LLC ending the Carbon Free Power
+    Project; NuScale holds restricted cash as credit support for potential demobilization reimbursement. Terms otherwise confidential.
+  evidence:
+  - field: agreement
+    snapshot: 6440cbfa2ad1b016ab8193caea509efe1105b39216e3596a3e2f837c27d4c303
+    quote: Confidential Settlement and Release Agreement, dated November 7, 2023, entered into between NuScale Power, LLC
+      and CFPP LLC
+    basis: disclosed

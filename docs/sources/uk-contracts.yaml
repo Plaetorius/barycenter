@@ -1,0 +1,22 @@
+id: uk-contracts
+name: UK Find a Tender + Contracts Finder (OCDS), UKAEA Fusion Industry Programme, GBE-N programme awards
+owner: UK Cabinet Office (FTS, CF); UKAEA; Great British Energy - Nuclear / DESNZ
+access: api             # OCDS 1.1 release packages (JSON) + HTML press pages
+endpoint: https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages?updatedFrom=<iso>&limit=<n>
+alt_endpoints:
+  - https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=<iso>&limit=100
+  - https://www.ukaea.org/news/  (programme award lists, HTML)
+  - https://www.gov.uk/government/news/great-british-energy-nuclear-and-rolls-royce-smr-sign-contract
+auth: none
+rate_limit: "not read; self-limit 1 req/s"
+licence: "Open Government Licence v3 (OCDS); company and agency press pages: cite only"
+robots: "both service robots.txt return 404 (no rules); API responded 200 to BarycenterBot UA"
+yields: [public contracts (buyer, supplier, award value, date), programme award lists (names, aggregate GBP, per-org amounts only sometimes)]
+identifiers: [OCDS ocid / notice id, supplier name (Companies House number only sometimes)]
+cadence: daily
+tier: A (OCDS) / B (UKAEA, GBE-N pages)
+known_gaps: >
+  Contracts Finder OCDS Search: 'keyword' parameter was ignored in the test (returned the 100 newest notices for every keyword), so supplier-targeted lookup needs a full harvest + local filter.
+  UKAEA Fusion Industry Programme pages list awardees but give per-org amounts only in some releases (aggregate GBP 8.1M to 14 orgs, 2026-02-02).
+  Many UKAEA contracts are below threshold or placed via frameworks/Innovate-UK-style competitions not in FTS.
+probe: docs/survey/probes/uk-contracts.md

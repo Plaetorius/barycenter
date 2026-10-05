@@ -1,0 +1,8 @@
+[project]
+name = "barycenter"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["scrapling[fetchers]", "httpx", "pydantic>=2", "pyyaml", "rapidfuzz", "polars", "markdownify"]
+
+[tool.setuptools]
+packages = ["barycenter"]

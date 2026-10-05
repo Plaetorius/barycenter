@@ -1,0 +1,17 @@
+id: arpa-e
+name: ARPA-E project database
+owner: US DOE ARPA-E
+access: api            # unofficial but public: site's own React front-end JSON:API (no docs, no auth)
+endpoint: https://arpa-e.energy.gov/JSONAPI/custom/index/project?page[offset]=0&page[limit]=50
+auth: none
+rate_limit: unpublished; 35 pages x 2.4MB fetched at 1 req/s without issue
+licence: US government work, public domain; endpoint itself undocumented (could change without notice)
+robots: arpa-e.energy.gov/robots.txt Drupal default (disallows /admin, /search/, /user; /jsonapi not disallowed)
+yields: [project title, awarded amount (selection amount, "award" field), organization (type, spinoff), program (BETHE, GAMOW, ALPHA, ONWARDS, GEMINA, MEITNER, CHADWICK...), status (Selected/Active/Alumni/Cancelled), release_date, term_start/end, state, description, partner organizations]
+identifiers: [drupal nid, uuid, organization nid; no UEI, no award number]
+cadence: updated as projects are announced (latest sample 2026-06-18)
+tier: A
+known_gaps: >
+  No DOE award number or UEI: join to USAspending by name + amount + date (amounts differ: ARPA-E selection amount vs USAspending obligation). Only 1721 projects total.
+  Term dates present on 43%; "funding" (follow-on) field on 0.7%. Cancelled projects still listed (TerraPower ONWARDS).
+probe: docs/survey/probes/arpa-e.md

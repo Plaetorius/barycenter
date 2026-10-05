@@ -1,0 +1,27 @@
+id: cordis
+name: CORDIS (EU research projects, Horizon Europe incl. Euratom, H2020)
+owner: European Commission, Publications Office / CORDIS
+access: bulk            # zip of ';'-delimited CSV (also JSON/XML); no key needed
+endpoint: https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip   # 36.9 MB, project.csv + organization.csv + topics etc.
+alt_endpoints:
+  - https://cordis.europa.eu/data/cordis-h2020projects-csv.zip           # 52.7 MB
+  - "https://data.europa.eu/data/datasets/cordis-eu-research-projects-under-horizon-europe-2021-2027   # catalogue entry"
+  - "NOTE: cordis-euratom-projects-csv.zip returns an HTML SPA page (not a file). Euratom 2021-27 projects are INSIDE the HORIZON file (fundingScheme EURATOM-RIA/COFUND, topic HORIZON-EURATOM-*; 73 projects)."
+auth: none
+rate_limit: none published for bulk download (one file per refresh; no per-request limit relevant)
+licence: "EU open data, believed CC BY 4.0 (verify on data.europa.eu dataset page before publishing)"
+robots: "cordis.europa.eu/robots.txt has 'Disallow: /data/' for User-agent *. Bulk files live under /data/ so our archive tool refuses. Files are the officially advertised open-data distribution; DECISION NEEDED (see probe). Project HTML pages (/project/id/<id>) are allowed (archived)."
+yields: [grant (EC contribution per participant), project totalCost, coordinator/participant role, SME flag, activity type, topic/call, funding scheme, start/end dates, NUTS, VAT]
+identifiers: [PIC (organisationID), project id = grant agreement number, rcn, vatNumber]
+cadence: monthly-ish (zip last-modified 2026-09-22; internal file timestamps 2026-08-28)
+tier: A
+fill_rates_observed:
+  organization_rows_HE: 145909
+  vatNumber: 0.897
+  ecContribution: 0.830   # blank for associatedPartner / unfunded
+  H2020_ecContribution: 0.956
+known_gaps: >
+  EIC Accelerator shows only the GRANT component (about EUR 2.5M) and totalCost=0; the equity part (EIC Fund, up to EUR 15M) is not in CORDIS.
+  EC contribution is per project-participant, not a payment date; 'startDate' is the only date. UK/CH associated partners appear from 2024+.
+  Name matching gives false positives (e.g. NEXTHORIZON). Some orgs have two PICs (Novatron).
+probe: docs/survey/probes/cordis.md

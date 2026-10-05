@@ -1,0 +1,55 @@
+company: copenhagen-atomics
+name: Copenhagen Atomics
+sector: fission
+notes: >-
+  [Verifier 2026-10-05] EIC Fund equity option set to amount_kind ceiling (access to up to EUR15M, no closed investment evidenced).
+  Private, Danish (Kastrup). Company says it is backed by 200+ private investors from 20 countries, largest being HNWIs and
+  family offices, and that professionals with EUR100,000 or more can join capital increases; no round amounts, dates or
+  named investors are disclosed in the sources reached (cumulative statement, not a round). EIC Accelerator: grant EUR2.5M
+  (CORDIS Th-MSR, 101248098, EC signature 2025-12-10, EUR2,499,999, start 2026-01-01) is the same grant as the 2025-07-02
+  announcement (one event, CORDIS added as corroboration; do not double count). The up to EUR15M EIC Fund equity is an
+  option / access, not a closed investment; recorded as qualifier up_to and should be treated as unclosed. Interesting
+  Engineering reported USD3M + USD17M (currency conversion of the same award). No earlier priced rounds could be sourced
+  (web search budget exhausted). Canada G&C, TED and BODACC probes have no Copenhagen Atomics records. Company page "Jam's
+  Opinion: Valuation of Copenhagen Atomics" (2026-04-28) has no extractable text in the snapshot; no valuation recorded.
+events:
+  - id: copenhagen-atomics-2025-eic-grant
+    instrument: grant
+    round_label: EIC Accelerator, grant component (Th-MSR 101248098)
+    announced_on: 2025-07-02
+    amount: {amount: 2500000, currency: EUR, qualifier: exact}
+    program: EIC Accelerator (Horizon Europe)
+    use_of_proceeds: technological development and prototype validation
+    evidence:
+      - {field: amount, snapshot: f3da8b6d4aaeb9039214ae561f3bb75c4c6373f374ad737bd2e09b2f3f811efe, quote: "€2.5 million in grant funding to support continued technological development and prototype validation", basis: disclosed}
+      - {field: amount, snapshot: f7c28655c0c823436d84d4eb615d1c0e5f80acd67e084de9419013f5110a1c23, quote: "€ 2 499 999,00 Address OLIEFABRIKSVEJ 77 2770 KASTRUP", basis: disclosed}
+      - {field: announced_on, snapshot: f3da8b6d4aaeb9039214ae561f3bb75c4c6373f374ad737bd2e09b2f3f811efe, quote: "Copenhagen Atomics Awarded Funding by EIC Accelerator ARTICLE July 2, 2025", basis: disclosed}
+    participants:
+      - investor: European Innovation Council (EIC Accelerator)
+        investor_slug: eic
+        role: grantor
+        evidence:
+          - {field: participant, snapshot: f3da8b6d4aaeb9039214ae561f3bb75c4c6373f374ad737bd2e09b2f3f811efe, quote: "Copenhagen Atomics has been awarded funding from the European Innovation Council (EIC) Accelerator programme", basis: disclosed}
+  - id: copenhagen-atomics-2025-eic-fund-equity-option
+    instrument: equity
+    round_label: EIC Fund equity component (access, not a closed investment)
+    announced_on: 2025-07-02
+    amount: {amount: 15000000, currency: EUR, qualifier: up_to}
+    amount_kind: ceiling
+    program: EIC Fund
+    evidence:
+      - {field: amount, snapshot: f3da8b6d4aaeb9039214ae561f3bb75c4c6373f374ad737bd2e09b2f3f811efe, quote: "Access to up to €15 million in equity investment through the EIC Fund", basis: disclosed}
+      - {field: announced_on, snapshot: f3da8b6d4aaeb9039214ae561f3bb75c4c6373f374ad737bd2e09b2f3f811efe, quote: "Copenhagen Atomics Awarded Funding by EIC Accelerator ARTICLE July 2, 2025", basis: disclosed}
+    participants:
+      - investor: EIC Fund
+        investor_slug: eic-fund
+        role: participant
+        evidence:
+          - {field: participant, snapshot: f3da8b6d4aaeb9039214ae561f3bb75c4c6373f374ad737bd2e09b2f3f811efe, quote: "Access to up to €15 million in equity investment through the EIC Fund", basis: disclosed}
+agreements: []
+verification:
+  status: verified
+  by: verifier-agent (Claude Opus 5.5), 2026-10-05
+  'on': '2026-10-05'
+  note: '1 correction: EIC Fund ''access to up to EUR15M'' equity set to ceiling. EUR2.5M EIC grant confirmed by company release
+    and CORDIS (EUR2,499,999).'

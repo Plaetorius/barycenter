@@ -1,0 +1,51 @@
+company: nuclearn
+name: Nuclearn Inc.
+sector: fission
+notes: >-
+  Phoenix, AZ nuclear-operations AI software company (Delaware corporation, CIK 1986230). Both rounds come from SEC Form D
+  filings (exemption 506(b)); Form D gives amounts sold and first-sale dates but names no investors (related persons are
+  ignored per policy P4). announced_on is the date of first sale because the Form D filing date is later; the 2025
+  Form D was signed 2025-10-14 and the offering is still open (total offering $11,999,999, $1,350,002 remaining), so the
+  amount is a to-date figure. The 2023 Form D describes 'Series Seed Preferred Stock'; the 2025 Form D does not label the
+  round. The census had no funding evidence and the company site (nuclearn.ai home/news/blog) mentions none. Not found:
+  grants, press-release investor names, and the 2025 round label.
+events:
+  - id: nuclearn-seed-2023
+    instrument: equity
+    round_label: Series Seed Preferred
+    announced_on: 2023-07-14
+    amount: {amount: 2500000, currency: USD, qualifier: exact}
+    evidence:
+      - field: announced_on
+        snapshot: e3a9ef7371641e84a2e534320e90edc4592e30c7f7a9f0ee5d7c6cdd5ca2935a
+        quote: "06b false 2023-07-14 false true true Series Seed Preferred Stock"
+        basis: disclosed
+      - field: amount
+        snapshot: e3a9ef7371641e84a2e534320e90edc4592e30c7f7a9f0ee5d7c6cdd5ca2935a
+        quote: "false 500000 2500000 2500000 0 false 2 0 0 0 false Nuclearn Inc."
+        basis: disclosed
+      - field: round_label
+        snapshot: e3a9ef7371641e84a2e534320e90edc4592e30c7f7a9f0ee5d7c6cdd5ca2935a
+        quote: "Series Seed Preferred Stock and the securities into which such Series Seed Preferred Stock may convert."
+        basis: disclosed
+  - id: nuclearn-round-2025
+    instrument: equity
+    round_label: Form D offering (unlabelled), open
+    announced_on: 2025-07-23
+    amount: {amount: 10649997, currency: USD, qualifier: exact}
+    evidence:
+      - field: announced_on
+        snapshot: 18f7b13134893437461e1bd80b501a2b9e4bd2b0715bcdfdfd63fd314175215f
+        quote: "06b false 2025-07-23 false true false 0 11999999 10649997 1350002 false 8"
+        basis: disclosed
+      - field: amount
+        snapshot: 18f7b13134893437461e1bd80b501a2b9e4bd2b0715bcdfdfd63fd314175215f
+        quote: "11999999 10649997 1350002 false 8"
+        basis: disclosed
+agreements: []
+verification:
+  status: verified
+  by: verifier-agent (Claude Opus 5.5), 2026-10-05
+  'on': '2026-10-05'
+  note: 0 corrections. Both Form D amounts ($2.5M Series Seed 2023; $10,649,997 sold to date of an open $12.0M offering 2025)
+    confirmed. No investors named.

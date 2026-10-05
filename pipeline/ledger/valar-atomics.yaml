@@ -1,0 +1,438 @@
+company: valar-atomics
+name: Valar Atomics
+sector: fission
+notes: 'Search quota exhausted; sources were found by following links from fetched pages. Event dating: TechCrunch/Bloomberg report the Series B on 2026-08-03, the company post is dated August 4, 2026 (event uses 08-03, credit facility uses the company date). OVERLAP WARNING: TechCrunch (2026-07-17, snapshot in raw) says part of the $1B was raised earlier; Bloomberg 2026-03-31 reported $450M ($340M equity + $110M debt) at a $2B valuation, so the March tranche may be INCLUDED in the $1B Series B; do not sum without review. The March items are Bloomberg paywall headline/lede only (reported). Series A $130M: Bloomberg lede plus the company library headline ''Valar Atomics Announces $130M Series A''; the original Series A release was not reachable, so investors beyond Luckey/Sankar are not recorded. Valar uses TRISO fuel; DOE Reactor Pilot Program selection has no amount (authorization pathway). Reported 2026 pilot criticality is not funding. No SBIR/ARPA-E/USAspending money found in the probes (not searched specifically). Census figures ($1B equity plus $200M credit facility) match. VERIFIER (2026-10-05): the March 2026 $340M equity and $110M debt are marked duplicate of the $1B Series B because TechCrunch (2026-07-17) says that $450M is part of the $1B round capital; the debt part may instead sit outside the $1B (or inside the $200M facility), so it is excluded either way pending a primary source. The $200M credit facility is a ceiling (no drawn amount stated). Series A leads (Snowpoint, Day One, Dream) and John Donovan added from the CNBC snapshot.'
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: '4 corrections: March 2026 equity ($340M) and debt ($110M) marked duplicate of Series B (TechCrunch says the $450M is part of the $1B); $200M credit facility -> ceiling and dated 2026-08-03 (same announcement as Series B); Series A gained 4 participants (3 leads + John Donovan) and CNBC amount evidence. Not confirmed: whether the $110M debt is inside the $1B, the $200M facility, or separate; Series A is press-only (company release unreachable); valuations ($2B, $6B) are Bloomberg-reported only.'
+events:
+- id: valar-seed-2025
+  instrument: equity
+  round_label: Seed
+  announced_on: 2025-02-20
+  amount:
+    amount: 19000000.0
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: 9ec27b1c983f8939c961dceec0abaa5db5e409af3ec012dc30f12fd41600900c
+    quote: has raised $19 million in a seed funding round
+    basis: reported
+  - field: announced_on
+    snapshot: 9ec27b1c983f8939c961dceec0abaa5db5e409af3ec012dc30f12fd41600900c
+    quote: February 20, 2025
+    basis: reported
+  - field: round_label
+    snapshot: 9ec27b1c983f8939c961dceec0abaa5db5e409af3ec012dc30f12fd41600900c
+    quote: has raised $19 million in a seed funding round
+    basis: reported
+  participants:
+  - investor: Riot Ventures
+    investor_slug: riot-ventures
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 9ec27b1c983f8939c961dceec0abaa5db5e409af3ec012dc30f12fd41600900c
+      quote: The financing was led by Riot Ventures, with AlleyCorp, Initialized Capital, Day One Ventures, and Steel Atlas participating.
+      basis: reported
+  - investor: AlleyCorp
+    investor_slug: alleycorp
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 9ec27b1c983f8939c961dceec0abaa5db5e409af3ec012dc30f12fd41600900c
+      quote: The financing was led by Riot Ventures, with AlleyCorp, Initialized Capital, Day One Ventures, and Steel Atlas participating.
+      basis: reported
+  - investor: Initialized Capital
+    investor_slug: initialized-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 9ec27b1c983f8939c961dceec0abaa5db5e409af3ec012dc30f12fd41600900c
+      quote: The financing was led by Riot Ventures, with AlleyCorp, Initialized Capital, Day One Ventures, and Steel Atlas participating.
+      basis: reported
+  - investor: Day One Ventures
+    investor_slug: day-one-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 9ec27b1c983f8939c961dceec0abaa5db5e409af3ec012dc30f12fd41600900c
+      quote: The financing was led by Riot Ventures, with AlleyCorp, Initialized Capital, Day One Ventures, and Steel Atlas participating.
+      basis: reported
+  - investor: Steel Atlas
+    investor_slug: steel-atlas
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 9ec27b1c983f8939c961dceec0abaa5db5e409af3ec012dc30f12fd41600900c
+      quote: The financing was led by Riot Ventures, with AlleyCorp, Initialized Capital, Day One Ventures, and Steel Atlas participating.
+      basis: reported
+- id: valar-series-a-2025
+  instrument: equity
+  round_label: Series A
+  announced_on: 2025-11-10
+  amount:
+    amount: 130000000.0
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: c05aa85d96bb759ede4e98b590c3edbfb5fb1df98e60f805d251099e68735488
+    quote: are putting $130 million into Valar Atomics
+    basis: reported
+  - field: announced_on
+    snapshot: c05aa85d96bb759ede4e98b590c3edbfb5fb1df98e60f805d251099e68735488
+    quote: November 10, 2025
+    basis: reported
+  - field: round_label
+    snapshot: da6d395bf067898690f9e825fe29a1252b28ad8a7bbc2de2a1a99a58037e351d
+    quote: Valar Atomics Announces $130M Series A
+    basis: disclosed
+  - field: amount
+    snapshot: 64426d34beb3b5899ff0875faed4dfc3fd3c36eb5ba5987e4be8e0a9113e3b07
+    quote: Valar Atomics raised $130 million in its latest funding round
+    basis: reported
+  participants:
+  - investor: Palmer Luckey
+    investor_slug: palmer-luckey
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: c05aa85d96bb759ede4e98b590c3edbfb5fb1df98e60f805d251099e68735488
+      quote: Anduril Industries Inc. founder Palmer Luckey
+      basis: reported
+    - field: participant
+      snapshot: 64426d34beb3b5899ff0875faed4dfc3fd3c36eb5ba5987e4be8e0a9113e3b07
+      quote: Valar Atomics raised $130 million with participation from Anduril Industries founder Palmer Luckey and Palantir Chief Technology Officer Shyam Sankar
+      basis: reported
+  - investor: Shyam Sankar
+    investor_slug: shyam-sankar
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: c05aa85d96bb759ede4e98b590c3edbfb5fb1df98e60f805d251099e68735488
+      quote: Palantir Technology Inc.’s Shyam Sankar and other investors are putting $130 million into Valar Atomics
+      basis: reported
+    - field: participant
+      snapshot: 64426d34beb3b5899ff0875faed4dfc3fd3c36eb5ba5987e4be8e0a9113e3b07
+      quote: Valar Atomics raised $130 million with participation from Anduril Industries founder Palmer Luckey and Palantir Chief Technology Officer Shyam Sankar
+      basis: reported
+  - investor: Snowpoint Ventures
+    investor_slug: snowpoint-ventures
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 64426d34beb3b5899ff0875faed4dfc3fd3c36eb5ba5987e4be8e0a9113e3b07
+      quote: The fundraising was led by venture capital firms Snowpoint Ventures, Day One Ventures and Dream Ventures.
+      basis: reported
+  - investor: Day One Ventures
+    investor_slug: day-one-ventures
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 64426d34beb3b5899ff0875faed4dfc3fd3c36eb5ba5987e4be8e0a9113e3b07
+      quote: The fundraising was led by venture capital firms Snowpoint Ventures, Day One Ventures and Dream Ventures.
+      basis: reported
+  - investor: Dream Ventures
+    investor_slug: dream-ventures
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 64426d34beb3b5899ff0875faed4dfc3fd3c36eb5ba5987e4be8e0a9113e3b07
+      quote: The fundraising was led by venture capital firms Snowpoint Ventures, Day One Ventures and Dream Ventures.
+      basis: reported
+  - investor: John Donovan
+    investor_slug: john-donovan
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 64426d34beb3b5899ff0875faed4dfc3fd3c36eb5ba5987e4be8e0a9113e3b07
+      quote: board member and former AT&T executive John Donovan also participated
+      basis: reported
+- id: valar-equity-debt-2026-03
+  instrument: equity
+  round_label: Pre-Series B equity tranche (reported)
+  announced_on: 2026-03-31
+  amount:
+    amount: 340000000.0
+    currency: USD
+    qualifier: approx
+  valuation_post_usd: 2000000000.0
+  evidence:
+  - field: amount
+    snapshot: 03a891cb44cfc97a2c87cc64bd7f6724c1f430d07cb45de30e5760d4e0c449e4
+    quote: That includes $110 million in debt and $340 million in equity
+    basis: reported
+  - field: announced_on
+    snapshot: 03a891cb44cfc97a2c87cc64bd7f6724c1f430d07cb45de30e5760d4e0c449e4
+    quote: March 31, 2026
+    basis: reported
+  - field: round_label
+    snapshot: 03a891cb44cfc97a2c87cc64bd7f6724c1f430d07cb45de30e5760d4e0c449e4
+    quote: has raised fresh capital at a valuation of $2 billion
+    basis: reported
+  - field: valuation
+    snapshot: 03a891cb44cfc97a2c87cc64bd7f6724c1f430d07cb45de30e5760d4e0c449e4
+    quote: The new valuation includes the dollars raised.
+    basis: reported
+  - field: duplicate
+    snapshot: a429e41a316ebe329f69b6322f3f1c270f7071962f99c75b706a5f6af08aa109
+    quote: Part of that capital has been raised previously at a lower valuation
+    basis: reported
+  - field: duplicate
+    snapshot: a429e41a316ebe329f69b6322f3f1c270f7071962f99c75b706a5f6af08aa109
+    quote: Valar has raised $450 million — including $340 million in equity and $110 million in debt — at a $2 billion valuation
+    basis: reported
+  amount_kind: duplicate
+  supersedes: valar-series-b-2026
+- id: valar-debt-2026-03
+  instrument: debt
+  round_label: Debt tranche (reported)
+  announced_on: 2026-03-31
+  amount:
+    amount: 110000000.0
+    currency: USD
+    qualifier: approx
+  evidence:
+  - field: amount
+    snapshot: 03a891cb44cfc97a2c87cc64bd7f6724c1f430d07cb45de30e5760d4e0c449e4
+    quote: That includes $110 million in debt and $340 million in equity
+    basis: reported
+  - field: announced_on
+    snapshot: 03a891cb44cfc97a2c87cc64bd7f6724c1f430d07cb45de30e5760d4e0c449e4
+    quote: March 31, 2026
+    basis: reported
+  - field: duplicate
+    snapshot: a429e41a316ebe329f69b6322f3f1c270f7071962f99c75b706a5f6af08aa109
+    quote: Part of that capital has been raised previously at a lower valuation
+    basis: reported
+  - field: duplicate
+    snapshot: a429e41a316ebe329f69b6322f3f1c270f7071962f99c75b706a5f6af08aa109
+    quote: Valar has raised $450 million — including $340 million in equity and $110 million in debt — at a $2 billion valuation
+    basis: reported
+  amount_kind: duplicate
+  supersedes: valar-series-b-2026
+- id: valar-series-b-2026
+  instrument: equity
+  round_label: Series B
+  announced_on: 2026-08-03
+  amount:
+    amount: 1000000000.0
+    currency: USD
+    qualifier: exact
+  valuation_post_usd: 6000000000.0
+  closed_on: null
+  evidence:
+  - field: amount
+    snapshot: 4d951ab6bc7b3e8743f9927e2b77d44c384fe74179d6a7783dd6ef757d41ae16
+    quote: the company has raised $1 billion in equity
+    basis: reported
+  - field: amount
+    snapshot: 7e9664774b6139ff30967c5f1ac3f47033f1ec323097682ca60fee2f83efd33a
+    quote: closing of a $1 billion Series B financing led by Sequoia Capital
+    basis: disclosed
+  - field: announced_on
+    snapshot: 4d951ab6bc7b3e8743f9927e2b77d44c384fe74179d6a7783dd6ef757d41ae16
+    quote: August 3, 2026
+    basis: reported
+  - field: round_label
+    snapshot: 7e9664774b6139ff30967c5f1ac3f47033f1ec323097682ca60fee2f83efd33a
+    quote: closing of a $1 billion Series B financing led by Sequoia Capital
+    basis: disclosed
+  - field: valuation
+    snapshot: 4d951ab6bc7b3e8743f9927e2b77d44c384fe74179d6a7783dd6ef757d41ae16
+    quote: Bloomberg reported that it was $6 billion
+    basis: reported
+  participants:
+  - investor: Sequoia Capital
+    investor_slug: sequoia-capital
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 7e9664774b6139ff30967c5f1ac3f47033f1ec323097682ca60fee2f83efd33a
+      quote: closing of a $1 billion Series B financing led by Sequoia Capital
+      basis: disclosed
+  - investor: Apandion
+    investor_slug: apandion-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 7e9664774b6139ff30967c5f1ac3f47033f1ec323097682ca60fee2f83efd33a
+      quote: Sequoia was joined in this round by Apandion, Atreides Management, Conviction, Dream Ventures, HOF Capital, Point72, Riot Ventures, Snowpoint Ventures, Valor Equity Partners, and other both new and longtime investors.
+      basis: disclosed
+  - investor: Atreides Management
+    investor_slug: atreides-management
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 7e9664774b6139ff30967c5f1ac3f47033f1ec323097682ca60fee2f83efd33a
+      quote: Sequoia was joined in this round by Apandion, Atreides Management, Conviction, Dream Ventures, HOF Capital, Point72, Riot Ventures, Snowpoint Ventures, Valor Equity Partners, and other both new and longtime investors.
+      basis: disclosed
+  - investor: Conviction
+    investor_slug: conviction
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 7e9664774b6139ff30967c5f1ac3f47033f1ec323097682ca60fee2f83efd33a
+      quote: Sequoia was joined in this round by Apandion, Atreides Management, Conviction, Dream Ventures, HOF Capital, Point72, Riot Ventures, Snowpoint Ventures, Valor Equity Partners, and other both new and longtime investors.
+      basis: disclosed
+  - investor: Dream Ventures
+    investor_slug: dream-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 7e9664774b6139ff30967c5f1ac3f47033f1ec323097682ca60fee2f83efd33a
+      quote: Sequoia was joined in this round by Apandion, Atreides Management, Conviction, Dream Ventures, HOF Capital, Point72, Riot Ventures, Snowpoint Ventures, Valor Equity Partners, and other both new and longtime investors.
+      basis: disclosed
+  - investor: HOF Capital
+    investor_slug: hof-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 7e9664774b6139ff30967c5f1ac3f47033f1ec323097682ca60fee2f83efd33a
+      quote: Sequoia was joined in this round by Apandion, Atreides Management, Conviction, Dream Ventures, HOF Capital, Point72, Riot Ventures, Snowpoint Ventures, Valor Equity Partners, and other both new and longtime investors.
+      basis: disclosed
+  - investor: Point72
+    investor_slug: point72-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 7e9664774b6139ff30967c5f1ac3f47033f1ec323097682ca60fee2f83efd33a
+      quote: Sequoia was joined in this round by Apandion, Atreides Management, Conviction, Dream Ventures, HOF Capital, Point72, Riot Ventures, Snowpoint Ventures, Valor Equity Partners, and other both new and longtime investors.
+      basis: disclosed
+  - investor: Riot Ventures
+    investor_slug: riot-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 7e9664774b6139ff30967c5f1ac3f47033f1ec323097682ca60fee2f83efd33a
+      quote: Sequoia was joined in this round by Apandion, Atreides Management, Conviction, Dream Ventures, HOF Capital, Point72, Riot Ventures, Snowpoint Ventures, Valor Equity Partners, and other both new and longtime investors.
+      basis: disclosed
+  - investor: Snowpoint Ventures
+    investor_slug: snowpoint-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 7e9664774b6139ff30967c5f1ac3f47033f1ec323097682ca60fee2f83efd33a
+      quote: Sequoia was joined in this round by Apandion, Atreides Management, Conviction, Dream Ventures, HOF Capital, Point72, Riot Ventures, Snowpoint Ventures, Valor Equity Partners, and other both new and longtime investors.
+      basis: disclosed
+  - investor: Valor Equity Partners
+    investor_slug: valor-equity-partners
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 7e9664774b6139ff30967c5f1ac3f47033f1ec323097682ca60fee2f83efd33a
+      quote: Sequoia was joined in this round by Apandion, Atreides Management, Conviction, Dream Ventures, HOF Capital, Point72, Riot Ventures, Snowpoint Ventures, Valor Equity Partners, and other both new and longtime investors.
+      basis: disclosed
+- id: valar-credit-facility-2026
+  instrument: debt
+  round_label: Credit facility
+  announced_on: '2026-08-03'
+  amount:
+    amount: 200000000.0
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: 7e9664774b6139ff30967c5f1ac3f47033f1ec323097682ca60fee2f83efd33a
+    quote: the closing of a $200 million credit facility led by Erebor Bank
+    basis: disclosed
+  - field: round_label
+    snapshot: 7e9664774b6139ff30967c5f1ac3f47033f1ec323097682ca60fee2f83efd33a
+    quote: closing of a $200 million credit facility
+    basis: disclosed
+  - field: announced_on
+    snapshot: 4d951ab6bc7b3e8743f9927e2b77d44c384fe74179d6a7783dd6ef757d41ae16
+    quote: August 3, 2026
+    basis: reported
+  - field: announced_on
+    snapshot: 4d951ab6bc7b3e8743f9927e2b77d44c384fe74179d6a7783dd6ef757d41ae16
+    quote: it also secured a $200 million line of credit from Erebor and other banks
+    basis: reported
+  participants:
+  - investor: Erebor Bank
+    investor_slug: erebor-bank
+    role: lender
+    evidence:
+    - field: participant
+      snapshot: 7e9664774b6139ff30967c5f1ac3f47033f1ec323097682ca60fee2f83efd33a
+      quote: credit facility led by Erebor Bank, as administrative agent, and J.P. Morgan, alongside Crescent Cove and Hercules Capital
+      basis: disclosed
+  - investor: J.P. Morgan
+    investor_slug: jp-morgan
+    role: lender
+    evidence:
+    - field: participant
+      snapshot: 7e9664774b6139ff30967c5f1ac3f47033f1ec323097682ca60fee2f83efd33a
+      quote: credit facility led by Erebor Bank, as administrative agent, and J.P. Morgan, alongside Crescent Cove and Hercules Capital
+      basis: disclosed
+  - investor: Crescent Cove
+    investor_slug: crescent-cove
+    role: lender
+    evidence:
+    - field: participant
+      snapshot: 7e9664774b6139ff30967c5f1ac3f47033f1ec323097682ca60fee2f83efd33a
+      quote: credit facility led by Erebor Bank, as administrative agent, and J.P. Morgan, alongside Crescent Cove and Hercules Capital
+      basis: disclosed
+  - investor: Hercules Capital
+    investor_slug: hercules-capital
+    role: lender
+    evidence:
+    - field: participant
+      snapshot: 7e9664774b6139ff30967c5f1ac3f47033f1ec323097682ca60fee2f83efd33a
+      quote: credit facility led by Erebor Bank, as administrative agent, and J.P. Morgan, alongside Crescent Cove and Hercules Capital
+      basis: disclosed
+  amount_kind: ceiling
+agreements:
+- id: valar-doe-reactor-pilot-2025
+  counterparty: US Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: loi
+  announced_on: 2025-08-12
+  summary: Selected for the DOE Reactor Pilot Program (authorization pathway); no funding amount stated.
+  evidence:
+  - field: agreement
+    snapshot: d92aed237e3d72eebae1422dcd91a89156bb7ec851d5eb319adbd1bf1c0d3730
+    quote: Valar Atomics Inc.
+    basis: disclosed
+  - field: announced_on
+    snapshot: d92aed237e3d72eebae1422dcd91a89156bb7ec851d5eb319adbd1bf1c0d3730
+    quote: August 12, 2025
+    basis: disclosed
+- id: valar-pnri-philippines-2025
+  counterparty: Philippine Nuclear Research Institute
+  counterparty_slug: pnri
+  type: gov_contract
+  binding: definitive
+  announced_on: 2025-02-20
+  summary: Initial contract with PNRI to build a test-scale reactor in the Philippines; value not stated; binding level inferred from the word contract.
+  evidence:
+  - field: agreement
+    snapshot: 9ec27b1c983f8939c961dceec0abaa5db5e409af3ec012dc30f12fd41600900c
+    quote: It has an initial contract with the Philippines Nuclear Research Institute to build a reactor in the country.
+    basis: reported
+  - field: announced_on
+    snapshot: 9ec27b1c983f8939c961dceec0abaa5db5e409af3ec012dc30f12fd41600900c
+    quote: February 20, 2025
+    basis: reported
+- id: valar-dow-doe-ward250-transport-2026
+  counterparty: US Department of War / US Department of Energy
+  counterparty_slug: us-department-of-war
+  type: partnership
+  binding: mou
+  announced_on: 2026-02-18
+  summary: DoW and DOE partnered with Valar to airlift the 5 MW Ward 250 reactor from California to Utah (San Rafael Energy Lab); no funding amount stated.
+  evidence:
+  - field: agreement
+    snapshot: eb730c864989a592f134ec36b71ea0255800a3b97c018b981df0de377057701f
+    quote: The Department of War and the Department of Energy have partnered with Valar Atomics to transport a 5-megawatt nuclear reactor
+    basis: reported
+  - field: announced_on
+    snapshot: eb730c864989a592f134ec36b71ea0255800a3b97c018b981df0de377057701f
+    quote: February 18, 2026
+    basis: reported
+  capacity_mw: 5

@@ -1,0 +1,401 @@
+company: standard-nuclear
+name: Standard Nuclear, Inc.
+sector: fission
+notes: 'Public company (NYSE: STDN, CIK 0002086716). Financing facts come from the S-1/424B4 (SEC, disclosed) and the company news index; Bloomberg 2026-01-26 (reported) supplies the Series A lead and investor names because Business Wire releases return 403 (not used). CONFLICTS and double-count guards: (1) the company/Bloomberg headline is a $140M Series A (Jan 2026); the prospectus splits it into Series A $70.0M (agreement 2025-08-14) and Series A-2 $70.0M (2026-01-23). The two SEC closings are the new_money events; the $140M headline is kept as amount_kind cumulative (not additive). The investor names (Decisive Point lead; Chevron Technology Ventures, StepStone new; a16z existing) are attached to the A-2 event but Bloomberg attributes them to the whole $140M round, so who invested in the 2025-08 closing is not separately evidenced. (2) The ''$42 Million'' emergence-from-stealth announcement (2025-06-11) is kept as cumulative: the S-1 shows $33.5M SAFE notes (2024, converted into Series Seed-1 at $0.50) plus a $10.0M Series Seed (2025-02-13), and one investor''s $1.0M was refunded; the SEC events are not summed with the $42M. SAFE event is dated at year end (2024) because the S-1 gives no date. Seed investors are not named. IPO: priced 2026-07-15 at $15.00 (10,000,000 shares, $150,000,000 gross; underwriter option 1,500,000 shares), after the S-1 range of $18-21 for 18.3M shares (about $356M) reported by valueaddvc (secondary, not used); the final prospectus supersedes. Over-allotment exercise not verified. USNC asset purchase (Chapter 11 363 sale): S-1 states total cash purchase price $32.9M at closing (agreement dated 2024-11-21) versus $28M in press; this is an acquisition of assets, not funding, and is not recorded as an event. Public money: no cash grants found; the DOE Other Transaction Agreement (Fuel Production Line Authorization, dated 2025-09-26, announced 2025-12-11), Fuel Line Pilot Program (2025-08-05), HALEU conditional commitment and Surplus Plutonium Utilization Program selection carry no stated dollar amounts. Form D filings of 2026-02-09 (3, by the issuer) exist on EDGAR but were not archived. Oklo alliance agreement is from the news index title only. Proposed slugs: framatome, oklo, radiant (check against investors/companies lists). VERIFIER (2026-10-05): the Series A investors are now attached to the $140M headline event (round_group standard-nuclear-series-a), not to the A-2 closing, because the company release (Business Wire via Wayback) names them for the whole $140M; 5 investors added from that release (XTX Ventures, Welara, Fundomo, Washington Harbour Partners, Crucible Capital). The $70M + $70M SEC closings remain the counted events; the $140M stays cumulative (not additive). IPO closed 2026-07-17 (8-K filed 2026-07-21); over-allotment exercise still unverified (no 10-Q archived). The $18-21 S-1 price range is from a secondary blog and unverified.'
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: '4 corrections: Series A participants moved from the A-2 closing to the $140M headline event (company release names them for the whole round) with primary evidence; 5 participants added from the release; $140M headline gains primary amount evidence; IPO closed_on 2026-07-17 added from the 8-K. Amounts verified against the 424B4: SAFE $33.5M (2024, exact date unknown, $1.0M later refunded), Seed $10.0M, A $70.0M, A-2 $70.0M, IPO $150M at $15.00. Not confirmed: underwriter option exercise (1.5M shares), which investors joined which Series A closing.'
+events:
+- id: standard-nuclear-safe-2024
+  instrument: other
+  round_label: SAFE notes (2024)
+  announced_on: 2024-12-31
+  amount:
+    amount: 33500000.0
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: c6e1189365d25bee9e706fa934f06ef96142385b2866eebce86ad3e04d1e797c
+    quote: In 2024, we raised $33.5 million in gross proceeds through SAFE Note investments
+    basis: disclosed
+  - field: announced_on
+    snapshot: c6e1189365d25bee9e706fa934f06ef96142385b2866eebce86ad3e04d1e797c
+    quote: In 2024, we raised $33.5 million in gross proceeds through SAFE Note investments
+    basis: disclosed
+  - field: round_label
+    snapshot: c6e1189365d25bee9e706fa934f06ef96142385b2866eebce86ad3e04d1e797c
+    quote: our outstanding SAFE Notes converted into Series Seed -1 preferred stock
+    basis: disclosed
+- id: standard-nuclear-seed-2025
+  instrument: equity
+  round_label: Series Seed
+  announced_on: 2025-02-13
+  amount:
+    amount: 10000000.0
+    currency: USD
+    qualifier: approx
+  evidence:
+  - field: amount
+    snapshot: c6e1189365d25bee9e706fa934f06ef96142385b2866eebce86ad3e04d1e797c
+    quote: resulting in total gross proceeds of approximately $10.0 million. Further, on February 13, 2025
+    basis: disclosed
+  - field: announced_on
+    snapshot: c6e1189365d25bee9e706fa934f06ef96142385b2866eebce86ad3e04d1e797c
+    quote: On February 13, 2025, we entered into a Series Seed Preferred Stock Purchase Agreement
+    basis: disclosed
+  - field: round_label
+    snapshot: c6e1189365d25bee9e706fa934f06ef96142385b2866eebce86ad3e04d1e797c
+    quote: Series Seed Preferred Stock Financing
+    basis: disclosed
+- id: standard-nuclear-series-a-2025
+  instrument: equity
+  round_label: Series A (first closing, per S-1)
+  announced_on: 2025-08-14
+  amount:
+    amount: 70000000.0
+    currency: USD
+    qualifier: approx
+  round_group: standard-nuclear-series-a
+  evidence:
+  - field: amount
+    snapshot: c6e1189365d25bee9e706fa934f06ef96142385b2866eebce86ad3e04d1e797c
+    quote: investors purchased an aggregate of 26,948,464 shares of Series A Preferred Stock, resulting in total gross proceeds of approximately $70.0 million
+    basis: disclosed
+  - field: announced_on
+    snapshot: c6e1189365d25bee9e706fa934f06ef96142385b2866eebce86ad3e04d1e797c
+    quote: On August 14, 2025, we entered into a Series A Preferred Stock Purchase Agreement
+    basis: disclosed
+  - field: round_label
+    snapshot: c6e1189365d25bee9e706fa934f06ef96142385b2866eebce86ad3e04d1e797c
+    quote: Series A Preferred Stock Financing
+    basis: disclosed
+- id: standard-nuclear-series-a2-2026
+  instrument: equity
+  round_label: Series A-2
+  announced_on: 2026-01-23
+  amount:
+    amount: 70000000.0
+    currency: USD
+    qualifier: approx
+  round_group: standard-nuclear-series-a
+  use_of_proceeds: Expand annual TRISO production
+  evidence:
+  - field: amount
+    snapshot: c6e1189365d25bee9e706fa934f06ef96142385b2866eebce86ad3e04d1e797c
+    quote: Investors purchased an aggregate of 14,193,030 shares of Series A-2 Preferred Stock, resulting in total gross proceeds of approximately $70.0 million
+    basis: disclosed
+  - field: announced_on
+    snapshot: c6e1189365d25bee9e706fa934f06ef96142385b2866eebce86ad3e04d1e797c
+    quote: On January 23, 2026, we entered into a Series A-2 Preferred Stock Purchase Agreement
+    basis: disclosed
+  - field: round_label
+    snapshot: c6e1189365d25bee9e706fa934f06ef96142385b2866eebce86ad3e04d1e797c
+    quote: Series A-2 Preferred Stock Financing
+    basis: disclosed
+- id: standard-nuclear-series-a-announced-140m-2026
+  instrument: equity
+  round_label: Series A as announced (combines the A and A-2 closings; not additive)
+  announced_on: 2026-01-26
+  amount:
+    amount: 140000000.0
+    currency: USD
+    qualifier: exact
+  amount_kind: cumulative
+  evidence:
+  - field: amount
+    snapshot: a9124f821d4d6c8c3cb0122a395d784fd1511a326716551c49f46a7874cdaddc
+    quote: raised $140 million to boost production of fuel for advanced reactors
+    basis: reported
+  - field: amount
+    snapshot: 49df46cf4975b58b0f1f16650ab83d2a157f88f8c6acad9174b79954ba2e63ec
+    quote: today announced it has secured $140M in Series A funding
+    basis: disclosed
+    original_url: https://www.businesswire.com/news/home/20260126420607/en/Standard-Nuclear-Begins-Production-of-Advanced-HALEU-Fuel-and-Raises-$140-Million-in-Series-A-Funding
+  - field: announced_on
+    snapshot: a9124f821d4d6c8c3cb0122a395d784fd1511a326716551c49f46a7874cdaddc
+    quote: January 26, 2026
+    basis: reported
+  - field: round_label
+    snapshot: 110fc929dfc9b8039cc440256fb3f3efedcacc9fb82777c8bdd18a8c6fbec524
+    quote: 01/26/2026 Standard Nuclear Begins Production of Advanced HALEU Fuel and Raises $140 Million in Series A Funding
+    basis: disclosed
+  round_group: standard-nuclear-series-a
+  participants:
+  - investor: Decisive Point
+    investor_slug: decisive-point
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: a9124f821d4d6c8c3cb0122a395d784fd1511a326716551c49f46a7874cdaddc
+      quote: led by Decisive Point and included new investors Chevron Technology Ventures and StepStone Group
+      basis: reported
+    - field: participant
+      snapshot: 49df46cf4975b58b0f1f16650ab83d2a157f88f8c6acad9174b79954ba2e63ec
+      quote: secured $140M in Series A funding from investors led by Decisive Point
+      basis: disclosed
+      original_url: https://www.businesswire.com/news/home/20260126420607/en/Standard-Nuclear-Begins-Production-of-Advanced-HALEU-Fuel-and-Raises-$140-Million-in-Series-A-Funding
+  - investor: Chevron Technology Ventures
+    investor_slug: chevron-technology-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: a9124f821d4d6c8c3cb0122a395d784fd1511a326716551c49f46a7874cdaddc
+      quote: led by Decisive Point and included new investors Chevron Technology Ventures and StepStone Group
+      basis: reported
+    - field: participant
+      snapshot: 49df46cf4975b58b0f1f16650ab83d2a157f88f8c6acad9174b79954ba2e63ec
+      quote: today announced it has secured $140M in Series A funding from investors led by Decisive Point with participation from new investors Chevron Technology Ventures, StepStone Group, XTX Ventures, and existing investors Welara, Fundomo, Andreessen Horowitz, Washington Harbour Partners, and Crucible Capital
+      basis: disclosed
+      original_url: https://www.businesswire.com/news/home/20260126420607/en/Standard-Nuclear-Begins-Production-of-Advanced-HALEU-Fuel-and-Raises-$140-Million-in-Series-A-Funding
+  - investor: StepStone Group
+    investor_slug: stepstone-group
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: a9124f821d4d6c8c3cb0122a395d784fd1511a326716551c49f46a7874cdaddc
+      quote: led by Decisive Point and included new investors Chevron Technology Ventures and StepStone Group
+      basis: reported
+    - field: participant
+      snapshot: 49df46cf4975b58b0f1f16650ab83d2a157f88f8c6acad9174b79954ba2e63ec
+      quote: today announced it has secured $140M in Series A funding from investors led by Decisive Point with participation from new investors Chevron Technology Ventures, StepStone Group, XTX Ventures, and existing investors Welara, Fundomo, Andreessen Horowitz, Washington Harbour Partners, and Crucible Capital
+      basis: disclosed
+      original_url: https://www.businesswire.com/news/home/20260126420607/en/Standard-Nuclear-Begins-Production-of-Advanced-HALEU-Fuel-and-Raises-$140-Million-in-Series-A-Funding
+  - investor: Andreessen Horowitz
+    investor_slug: andreessen-horowitz
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: a9124f821d4d6c8c3cb0122a395d784fd1511a326716551c49f46a7874cdaddc
+      quote: as well as existing backers Andreessen Horowitz
+      basis: reported
+    - field: participant
+      snapshot: 49df46cf4975b58b0f1f16650ab83d2a157f88f8c6acad9174b79954ba2e63ec
+      quote: today announced it has secured $140M in Series A funding from investors led by Decisive Point with participation from new investors Chevron Technology Ventures, StepStone Group, XTX Ventures, and existing investors Welara, Fundomo, Andreessen Horowitz, Washington Harbour Partners, and Crucible Capital
+      basis: disclosed
+      original_url: https://www.businesswire.com/news/home/20260126420607/en/Standard-Nuclear-Begins-Production-of-Advanced-HALEU-Fuel-and-Raises-$140-Million-in-Series-A-Funding
+  - investor: XTX Ventures
+    investor_slug: xtx-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 49df46cf4975b58b0f1f16650ab83d2a157f88f8c6acad9174b79954ba2e63ec
+      quote: today announced it has secured $140M in Series A funding from investors led by Decisive Point with participation from new investors Chevron Technology Ventures, StepStone Group, XTX Ventures, and existing investors Welara, Fundomo, Andreessen Horowitz, Washington Harbour Partners, and Crucible Capital
+      basis: disclosed
+      original_url: https://www.businesswire.com/news/home/20260126420607/en/Standard-Nuclear-Begins-Production-of-Advanced-HALEU-Fuel-and-Raises-$140-Million-in-Series-A-Funding
+  - investor: Welara
+    investor_slug: welara
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 49df46cf4975b58b0f1f16650ab83d2a157f88f8c6acad9174b79954ba2e63ec
+      quote: today announced it has secured $140M in Series A funding from investors led by Decisive Point with participation from new investors Chevron Technology Ventures, StepStone Group, XTX Ventures, and existing investors Welara, Fundomo, Andreessen Horowitz, Washington Harbour Partners, and Crucible Capital
+      basis: disclosed
+      original_url: https://www.businesswire.com/news/home/20260126420607/en/Standard-Nuclear-Begins-Production-of-Advanced-HALEU-Fuel-and-Raises-$140-Million-in-Series-A-Funding
+  - investor: Fundomo
+    investor_slug: fundomo
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 49df46cf4975b58b0f1f16650ab83d2a157f88f8c6acad9174b79954ba2e63ec
+      quote: today announced it has secured $140M in Series A funding from investors led by Decisive Point with participation from new investors Chevron Technology Ventures, StepStone Group, XTX Ventures, and existing investors Welara, Fundomo, Andreessen Horowitz, Washington Harbour Partners, and Crucible Capital
+      basis: disclosed
+      original_url: https://www.businesswire.com/news/home/20260126420607/en/Standard-Nuclear-Begins-Production-of-Advanced-HALEU-Fuel-and-Raises-$140-Million-in-Series-A-Funding
+  - investor: Washington Harbour Partners
+    investor_slug: washington-harbour-partners
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 49df46cf4975b58b0f1f16650ab83d2a157f88f8c6acad9174b79954ba2e63ec
+      quote: today announced it has secured $140M in Series A funding from investors led by Decisive Point with participation from new investors Chevron Technology Ventures, StepStone Group, XTX Ventures, and existing investors Welara, Fundomo, Andreessen Horowitz, Washington Harbour Partners, and Crucible Capital
+      basis: disclosed
+      original_url: https://www.businesswire.com/news/home/20260126420607/en/Standard-Nuclear-Begins-Production-of-Advanced-HALEU-Fuel-and-Raises-$140-Million-in-Series-A-Funding
+  - investor: Crucible Capital
+    investor_slug: crucible-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 49df46cf4975b58b0f1f16650ab83d2a157f88f8c6acad9174b79954ba2e63ec
+      quote: today announced it has secured $140M in Series A funding from investors led by Decisive Point with participation from new investors Chevron Technology Ventures, StepStone Group, XTX Ventures, and existing investors Welara, Fundomo, Andreessen Horowitz, Washington Harbour Partners, and Crucible Capital
+      basis: disclosed
+      original_url: https://www.businesswire.com/news/home/20260126420607/en/Standard-Nuclear-Begins-Production-of-Advanced-HALEU-Fuel-and-Raises-$140-Million-in-Series-A-Funding
+- id: standard-nuclear-stealth-42m-2025
+  instrument: equity
+  round_label: Funding disclosed at emergence from stealth (SAFE and Seed combined, not additive)
+  announced_on: 2025-06-11
+  amount:
+    amount: 42000000.0
+    currency: USD
+    qualifier: exact
+  amount_kind: cumulative
+  evidence:
+  - field: amount
+    snapshot: 110fc929dfc9b8039cc440256fb3f3efedcacc9fb82777c8bdd18a8c6fbec524
+    quote: 06/11/2025 Standard Nuclear Emerges from Stealth with $42 Million in Funding
+    basis: disclosed
+  - field: announced_on
+    snapshot: 110fc929dfc9b8039cc440256fb3f3efedcacc9fb82777c8bdd18a8c6fbec524
+    quote: 06/11/2025 Standard Nuclear Emerges from Stealth with $42 Million in Funding
+    basis: disclosed
+- id: standard-nuclear-ipo-2026
+  instrument: ipo
+  round_label: 'IPO (NYSE: STDN), 10,000,000 Class A shares at $15.00'
+  announced_on: 2026-07-15
+  amount:
+    amount: 150000000.0
+    currency: USD
+    qualifier: exact
+  use_of_proceeds: null
+  evidence:
+  - field: amount
+    snapshot: c6e1189365d25bee9e706fa934f06ef96142385b2866eebce86ad3e04d1e797c
+    quote: Initial public offering price $ 15.00 $ 150,000,000
+    basis: disclosed
+  - field: announced_on
+    snapshot: c6e1189365d25bee9e706fa934f06ef96142385b2866eebce86ad3e04d1e797c
+    quote: Prospectus dated July 15, 2026
+    basis: disclosed
+  - field: round_label
+    snapshot: c6e1189365d25bee9e706fa934f06ef96142385b2866eebce86ad3e04d1e797c
+    quote: We have been approved to list our Class A common stock on the New York Stock Exchange under the symbol “STDN.”
+    basis: disclosed
+  - field: closed_on
+    snapshot: d7f1eff7742cea74f421288ec33d1200685c5de544910cbbd0dbd3aee3a9c14d
+    quote: in connection with the closing of the initial public offering of shares of the Company’s Class A common stock
+    basis: disclosed
+  - field: closed_on
+    snapshot: d7f1eff7742cea74f421288ec33d1200685c5de544910cbbd0dbd3aee3a9c14d
+    quote: On July 17, 2026, Standard Nuclear, Inc. (the “Company”) filed its sixth amended and restated certificate of incorporation
+    basis: disclosed
+  closed_on: '2026-07-17'
+agreements:
+- id: standard-nuclear-doe-fuel-line-pilot-2025
+  counterparty: US Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: loi
+  announced_on: 2025-08-05
+  summary: Selected as a supplier for the DOE Office of Nuclear Energy Fuel Line Pilot Program; no funding amount stated.
+  evidence:
+  - field: agreement
+    snapshot: c6e1189365d25bee9e706fa934f06ef96142385b2866eebce86ad3e04d1e797c
+    quote: In August 2025, we were selected as a supplier for the DOE Office of Nuclear Energy’s previously announced Fuel Line Pilot Program
+    basis: disclosed
+  - field: announced_on
+    snapshot: 110fc929dfc9b8039cc440256fb3f3efedcacc9fb82777c8bdd18a8c6fbec524
+    quote: 08/05/2025 Standard Nuclear Selected for DOE Office of Nuclear Energy Fuel Line Pilot Program
+    basis: disclosed
+- id: standard-nuclear-doe-ota-2025
+  counterparty: US Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: 2025-09-26
+  summary: 'Other Transaction Agreement for Fuel Production Line Authorization (dated 2025-09-26; announced 2025-12-11): Standard Nuclear is prime contractor to build, operate and commission fuel fabrication facilities (Oak Ridge, Idaho on DOE property); no dollar amount stated.'
+  evidence:
+  - field: agreement
+    snapshot: c6e1189365d25bee9e706fa934f06ef96142385b2866eebce86ad3e04d1e797c
+    quote: we entered into the OTA as a prime contractor to the DOE in September 2025 to build, operate, and commission advanced fuel fabrication facilities
+    basis: disclosed
+  - field: announced_on
+    snapshot: c6e1189365d25bee9e706fa934f06ef96142385b2866eebce86ad3e04d1e797c
+    quote: dated as of September 26, 2025, between the Company and the DOE
+    basis: disclosed
+- id: standard-nuclear-doe-haleu-2025
+  counterparty: US Department of Energy
+  counterparty_slug: doe-ne
+  type: fuel_supply
+  binding: loi
+  announced_on: 2025-08-26
+  summary: DOE conditional commitment (HALEU round 2) for Standard Nuclear to establish TRISO fuel lines; in-kind material, quantity not stated here.
+  evidence:
+  - field: agreement
+    snapshot: 04760c24bff772de19acc9870d2680a98b63d8b8c78042cf9d106abef0227793
+    quote: Standard Nuclear, Inc., to establish TRISO fuel lines
+    basis: disclosed
+  - field: announced_on
+    snapshot: 04760c24bff772de19acc9870d2680a98b63d8b8c78042cf9d106abef0227793
+    quote: August 26, 2025
+    basis: disclosed
+- id: standard-nuclear-doe-plutonium-2026
+  counterparty: US Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: loi
+  announced_on: 2026-06-03
+  summary: Selected for advanced negotiations under the DOE Surplus Plutonium Utilization Program; no obligation or revenue yet.
+  evidence:
+  - field: agreement
+    snapshot: c6e1189365d25bee9e706fa934f06ef96142385b2866eebce86ad3e04d1e797c
+    quote: In June 2026, we were selected by the DOE for advanced negotiations under the Surplus Plutonium Utilization Program
+    basis: disclosed
+  - field: announced_on
+    snapshot: 110fc929dfc9b8039cc440256fb3f3efedcacc9fb82777c8bdd18a8c6fbec524
+    quote: 06/03/2026 Standard Nuclear Selected by U.S. Department of Energy for Advanced Negotiations Under Surplus Plutonium Utilization Program
+    basis: disclosed
+- id: standard-nuclear-framatome-jv-2025
+  counterparty: Framatome, Inc.
+  counterparty_slug: framatome
+  type: partnership
+  binding: definitive
+  announced_on: 2025-09-30
+  summary: Joint venture Standard Nuclear x Framatome LLC to manufacture TRISO fuel at Framatome's Richland, Washington facility.
+  evidence:
+  - field: agreement
+    snapshot: c6e1189365d25bee9e706fa934f06ef96142385b2866eebce86ad3e04d1e797c
+    quote: We have formed a joint venture with Framatome
+    basis: disclosed
+  - field: announced_on
+    snapshot: 110fc929dfc9b8039cc440256fb3f3efedcacc9fb82777c8bdd18a8c6fbec524
+    quote: 09/30/2025 Standard Nuclear, Framatome Announce a U.S.-based TRISO Nuclear Fuel Production Joint Venture
+    basis: disclosed
+- id: standard-nuclear-radiant-fsa-2026
+  counterparty: Radiant Industries, Inc.
+  counterparty_slug: radiant
+  type: fuel_supply
+  binding: definitive
+  announced_on: 2026-08-20
+  summary: Binding TRISO fuel supply agreement ('new' agreement); quantity and value not stated in the 8-K.
+  evidence:
+  - field: agreement
+    snapshot: f7b605bf7ec4d9ee826a82506733667454f346228b265abab1fa6b8befc005a0
+    quote: announced the execution of a new binding fuel supply agreement with Radiant Industries, Inc.
+    basis: disclosed
+  - field: announced_on
+    snapshot: f7b605bf7ec4d9ee826a82506733667454f346228b265abab1fa6b8befc005a0
+    quote: On August 20, 2026
+    basis: disclosed
+- id: standard-nuclear-antares-fsa-2026
+  counterparty: Antares Nuclear, Inc.
+  counterparty_slug: antares-nuclear
+  type: fuel_supply
+  binding: definitive
+  announced_on: 2026-08-27
+  summary: Binding multi-year TRISO fuel supply agreement (Antares says up to eight MTU through 2035); value not stated.
+  evidence:
+  - field: agreement
+    snapshot: 8e0af469a4aff9cda59a681cc0a46522b94f816dd5ea22685b93ac879b4587fa
+    quote: announced the execution of a binding fuel supply agreement for supply of TRISO fuel with Antares Nuclear, Inc.
+    basis: disclosed
+  - field: announced_on
+    snapshot: 8e0af469a4aff9cda59a681cc0a46522b94f816dd5ea22685b93ac879b4587fa
+    quote: On August 27, 2026
+    basis: disclosed
+- id: standard-nuclear-oklo-alliance-2026
+  counterparty: Oklo Inc.
+  counterparty_slug: oklo
+  type: partnership
+  binding: mou
+  announced_on: 2026-06-16
+  summary: Strategic alliance to strengthen advanced nuclear fuel supply chain; terms not retrieved (title only, from the company news index).
+  evidence:
+  - field: agreement
+    snapshot: 110fc929dfc9b8039cc440256fb3f3efedcacc9fb82777c8bdd18a8c6fbec524
+    quote: 06/16/2026 Oklo and Standard Nuclear Form Strategic Alliance to Strengthen Advanced Nuclear Fuel Supply Chain
+    basis: disclosed
+  - field: announced_on
+    snapshot: 110fc929dfc9b8039cc440256fb3f3efedcacc9fb82777c8bdd18a8c6fbec524
+    quote: 06/16/2026 Oklo and Standard Nuclear Form Strategic Alliance to Strengthen Advanced Nuclear Fuel Supply Chain
+    basis: disclosed

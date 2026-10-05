@@ -1,0 +1,218 @@
+company: nuscale-power
+name: NuScale Power Corp
+sector: fission
+notes: 'SUPPLEMENT (not in pipeline/ledger/ to avoid a duplicate company slug): DOE awards found in USAspending that the existing
+  ledger pipeline/ledger/nuscale-power.yaml did not list by FAIN at the time of writing. Some amounts may already be evidenced
+  there from another source (check before merging; do not double count). Amount = USAspending ''Award Amount'' (cumulative
+  federal obligation), dates = Base Obligation Date else Start Date; one page of up to 50 rows per award-type group, DOE as
+  awarding agency, 2007-10-01..2026-09-30; zero/negative awards omitted.'
+events:
+- id: nuscale-power-dene0000633
+  instrument: grant
+  round_label: DENE0000633
+  announced_on: '2014-05-27'
+  amount:
+    amount: 224479988.42
+    currency: USD
+    qualifier: exact
+    usd: 224479988.42
+  amount_kind: new_money
+  program: DOE Office of Nuclear Energy
+  obligated_usd: 224479988.42
+  disbursed_usd: 0.0
+  use_of_proceeds: NUSCALE SMR DESIGN DEVELOPMENT AND CERTIFICATION PROJECT
+  evidence:
+  - field: amount
+    snapshot: 3f081a0a2df71e14a8f278550c993446a0ab1d672d215033e82e754bc17cdb2c
+    quote: '"Award ID": "DENE0000633", "Recipient Name": "NUSCALE POWER LLC", "Recipient UEI": "PNKLRKV4CNX3", "Award Amount":
+      224479988.42'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 3f081a0a2df71e14a8f278550c993446a0ab1d672d215033e82e754bc17cdb2c
+    quote: '"Base Obligation Date": "2014-05-27", "generated_internal_id": "ASST_NON_DENE0000633_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 3f081a0a2df71e14a8f278550c993446a0ab1d672d215033e82e754bc17cdb2c
+    quote: '"Award ID": "DENE0000633", "Recipient Name": "NUSCALE POWER LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 3f081a0a2df71e14a8f278550c993446a0ab1d672d215033e82e754bc17cdb2c
+    quote: '"Description": "NUSCALE SMR DESIGN DEVELOPMENT AND CERTIFICATION PROJECT"'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Nuclear Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 3f081a0a2df71e14a8f278550c993446a0ab1d672d215033e82e754bc17cdb2c
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: nuscale-power-dene0008369
+  instrument: grant
+  round_label: DENE0008369
+  announced_on: '2015-08-11'
+  amount:
+    amount: 7521554.69
+    currency: USD
+    qualifier: exact
+    usd: 7521554.69
+  amount_kind: new_money
+  program: DOE Office of Nuclear Energy
+  obligated_usd: 7521554.69
+  disbursed_usd: 1324817.88
+  use_of_proceeds: SITE PERMITTING AND LICESNING OF THE NUSCALE SMALL MODULAR REACTOR
+  evidence:
+  - field: amount
+    snapshot: 3f081a0a2df71e14a8f278550c993446a0ab1d672d215033e82e754bc17cdb2c
+    quote: '"Award ID": "DENE0008369", "Recipient Name": "NUSCALE POWER LLC", "Recipient UEI": "PNKLRKV4CNX3", "Award Amount":
+      7521554.69'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 3f081a0a2df71e14a8f278550c993446a0ab1d672d215033e82e754bc17cdb2c
+    quote: '"Base Obligation Date": "2015-08-11", "generated_internal_id": "ASST_NON_DENE0008369_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 3f081a0a2df71e14a8f278550c993446a0ab1d672d215033e82e754bc17cdb2c
+    quote: '"Award ID": "DENE0008369", "Recipient Name": "NUSCALE POWER LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 3f081a0a2df71e14a8f278550c993446a0ab1d672d215033e82e754bc17cdb2c
+    quote: '"Description": "SITE PERMITTING AND LICESNING OF THE NUSCALE SMALL MODULAR REACTOR"'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Nuclear Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 3f081a0a2df71e14a8f278550c993446a0ab1d672d215033e82e754bc17cdb2c
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: nuscale-power-dene0008742
+  instrument: grant
+  round_label: DENE0008742
+  announced_on: '2018-08-30'
+  amount:
+    amount: 48000000.0
+    currency: USD
+    qualifier: exact
+    usd: 48000000.0
+  amount_kind: new_money
+  program: DOE Office of Nuclear Energy
+  obligated_usd: 48000000.0
+  disbursed_usd: 0.0
+  use_of_proceeds: THE PROJECT PROPOSED BY NUSCALE POWER, LLC (NUSCALE) ADVANCES THE DEVELOPMENT AND DEPLOYMENT OF AN INNOVATIVE
+  evidence:
+  - field: amount
+    snapshot: 3f081a0a2df71e14a8f278550c993446a0ab1d672d215033e82e754bc17cdb2c
+    quote: '"Award ID": "DENE0008742", "Recipient Name": "NUSCALE POWER LLC", "Recipient UEI": "PNKLRKV4CNX3", "Award Amount":
+      48000000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 3f081a0a2df71e14a8f278550c993446a0ab1d672d215033e82e754bc17cdb2c
+    quote: '"Base Obligation Date": "2018-08-30", "generated_internal_id": "ASST_NON_DENE0008742_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 3f081a0a2df71e14a8f278550c993446a0ab1d672d215033e82e754bc17cdb2c
+    quote: '"Award ID": "DENE0008742", "Recipient Name": "NUSCALE POWER LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 3f081a0a2df71e14a8f278550c993446a0ab1d672d215033e82e754bc17cdb2c
+    quote: '"Description": "THE PROJECT PROPOSED BY NUSCALE POWER, LLC (NUSCALE)\n  ADVANCES THE DEVELOPMENT AND DEPLOYMENT
+      OF '
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Nuclear Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 3f081a0a2df71e14a8f278550c993446a0ab1d672d215033e82e754bc17cdb2c
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: nuscale-power-dene0008820
+  instrument: grant
+  round_label: DENE0008820
+  announced_on: '2018-09-26'
+  amount:
+    amount: 43200000.0
+    currency: USD
+    qualifier: exact
+    usd: 43200000.0
+  amount_kind: new_money
+  program: DOE Office of Nuclear Energy
+  obligated_usd: 43200000.0
+  disbursed_usd: 11499700.61
+  use_of_proceeds: THE PROJECT PROPOSED BY NUSCALE POWER, LLC (NUSCALE) ADVANCES THE DEVELOPMENT AND DEPLOYMENT OF AN INNOVATIVE
+  evidence:
+  - field: amount
+    snapshot: 3f081a0a2df71e14a8f278550c993446a0ab1d672d215033e82e754bc17cdb2c
+    quote: '"Award ID": "DENE0008820", "Recipient Name": "NUSCALE POWER LLC", "Recipient UEI": "PNKLRKV4CNX3", "Award Amount":
+      43200000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 3f081a0a2df71e14a8f278550c993446a0ab1d672d215033e82e754bc17cdb2c
+    quote: '"Base Obligation Date": "2018-09-26", "generated_internal_id": "ASST_NON_DENE0008820_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 3f081a0a2df71e14a8f278550c993446a0ab1d672d215033e82e754bc17cdb2c
+    quote: '"Award ID": "DENE0008820", "Recipient Name": "NUSCALE POWER LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 3f081a0a2df71e14a8f278550c993446a0ab1d672d215033e82e754bc17cdb2c
+    quote: '"Description": "THE PROJECT PROPOSED BY NUSCALE POWER, LLC (NUSCALE) ADVANCES THE DEVELOPMENT AND DEPLOYMENT OF
+      AN '
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Nuclear Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 3f081a0a2df71e14a8f278550c993446a0ab1d672d215033e82e754bc17cdb2c
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: nuscale-power-dene0008928
+  instrument: grant
+  round_label: DENE0008928
+  announced_on: '2020-02-04'
+  amount:
+    amount: 262655693.0
+    currency: USD
+    qualifier: exact
+    usd: 262655693.0
+  amount_kind: new_money
+  program: DOE Office of Nuclear Energy
+  obligated_usd: 262655693.0
+  disbursed_usd: 207665406.92
+  use_of_proceeds: TO ACHIEVE THE DESIRED OUTCOMES AND COMPLETE THE DEVELOPMENT PROGRAM, NUSCALE IS PROPOSING A FIVE-YEAR
+    PROJECT
+  evidence:
+  - field: amount
+    snapshot: 3f081a0a2df71e14a8f278550c993446a0ab1d672d215033e82e754bc17cdb2c
+    quote: '"Award ID": "DENE0008928", "Recipient Name": "NUSCALE POWER LLC", "Recipient UEI": "PNKLRKV4CNX3", "Award Amount":
+      262655693.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 3f081a0a2df71e14a8f278550c993446a0ab1d672d215033e82e754bc17cdb2c
+    quote: '"Base Obligation Date": "2020-02-04", "generated_internal_id": "ASST_NON_DENE0008928_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 3f081a0a2df71e14a8f278550c993446a0ab1d672d215033e82e754bc17cdb2c
+    quote: '"Award ID": "DENE0008928", "Recipient Name": "NUSCALE POWER LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 3f081a0a2df71e14a8f278550c993446a0ab1d672d215033e82e754bc17cdb2c
+    quote: '"Description": "TO ACHIEVE THE DESIRED OUTCOMES AND COMPLETE THE DEVELOPMENT PROGRAM, NUSCALE IS PROPOSING A FIVE-Y'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Nuclear Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 3f081a0a2df71e14a8f278550c993446a0ab1d672d215033e82e754bc17cdb2c
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+agreements: []

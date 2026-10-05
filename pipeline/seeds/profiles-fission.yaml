@@ -1,0 +1,495 @@
+# Sourced company profile data. slug -> {country (ISO-2), hq_city, website, role, approach (taxonomy key), founded, logo, sources: [urls]}
+# Fills gaps in the census CSVs (many DOE-award recipients were never in the census). Every entry needs sources.
+profiles:
+  aalo-atomics:
+    country: US
+    hq_city: Austin
+    website: https://www.aalo.com
+    role: developer
+    approach: sfr
+    founded: 2023
+    logo: logos/aalo-atomics.webp
+    logo_source: https://cdn.prod.website-files.com/6a041fc89fb1bebfac0d93d2/6a43a69a208cd358aa050ae9_favicon-light-mode.png
+    logo_sha256: 56b5db1675a8636ccb04e72946c89b0e26d26da0a1196a2fb6ad341d123337a7
+    sources:
+    - https://www.aalo.com
+  alpha-tech-research:
+    country: US
+    hq_city: Salt Lake City
+    website: https://alphatechresearchcorp.com
+    role: developer
+    approach: msr
+    founded: 2016
+    sources:
+    - https://alphatechresearchcorp.com
+  antares-nuclear:
+    country: US
+    hq_city: Torrance
+    website: https://antares.com
+    role: developer
+    approach: microreactor
+    founded: 2024
+    logo: logos/antares-nuclear.webp
+    logo_source: https://www.antares.com/wp-content/uploads/2026/05/favicon-96x96-1.jpg
+    logo_sha256: ee0caa5d7d83631497b0a7954070318a238d8fb2e516b6096e1b857b1c3e2372
+    sources:
+    - https://antares.com
+  arc-clean-technology:
+    country: CA
+    hq_city: Fredericton
+    website: https://www.arc-cleantech.com
+    role: developer
+    approach: sfr
+    founded: 2006
+    logo: logos/arc-clean-technology.webp
+    logo_source: https://www.arc-cleantech.com/favicon.ico?favicon.0x3dzn~oxb6tn.ico
+    logo_sha256: 2b8ad2d33455a8f736fc3a8ebf8f0bdea8848ad4c0db48a2833bd0f9cd775932
+    sources:
+    - https://www.arc-cleantech.com
+  atomic-canyon:
+    country: US
+    hq_city: San Francisco
+    website: https://www.atomic-canyon.com
+    role: services
+    founded: 2023
+    logo: logos/atomic-canyon.webp
+    logo_source: https://www.atomic-canyon.com/apple-touch-icon.png
+    logo_sha256: 4a65696125a29c19fd3c509f7edcd32bf6cf5501e36b84c76db306de8b88ef66
+    sources:
+    - https://www.atomic-canyon.com
+  centrus-energy:
+    country: US
+    hq_city: Bethesda
+    website: https://www.centrusenergy.com
+    role: enrichment
+    logo: logos/centrus-energy.webp
+    logo_source: https://www.centrusenergy.com/wp-content/themes/centrus/assets/img/favicon/apple-touch-icon-152x152.png
+    logo_sha256: ffeeee07847478af5fd387358f90ea4d23742477bac4e57164973881613556ed
+    sources:
+    - https://www.centrusenergy.com
+  copenhagen-atomics:
+    country: DK
+    hq_city: Copenhagen
+    website: https://www.copenhagenatomics.com
+    role: developer
+    approach: msr
+    founded: 2014
+    logo: logos/copenhagen-atomics.webp
+    logo_source: https://copenhagenatomics.com/wp-content/uploads/2026/07/cropped-icon-180x180.png
+    logo_sha256: 7a15415692f4c15c77faf05179270d7c0e4140f5ae05a8ef6dbeb036e17eac11
+    sources:
+    - https://www.copenhagenatomics.com
+  curio:
+    country: US
+    hq_city: Las Vegas
+    website: https://curio.energy
+    role: back_end
+    founded: 2018
+    logo: logos/curio.webp
+    logo_source: https://curio.energy/apple-touch-icon.png
+    logo_sha256: 7780d661f51693c96f4bd8655f967f6ae6ea3dc5badf47e469f38a4e0209d2a4
+    sources:
+    - https://curio.energy
+  deep-fission:
+    country: US
+    hq_city: Berkeley
+    website: https://www.deepfission.com
+    role: developer
+    approach: lwr-smr
+    founded: 2020
+    logo: logos/deep-fission.webp
+    logo_source: https://www.deepfission.com/_assets/_66eea8e187fa9c9560873eec612a4a92/deepfission/files/theme/images/favicons/apple-touch-icon.png
+    logo_sha256: ed20672545a870b622e98661ac4a448bfe113ecc359b83a4aa529ba9e017a515
+    sources:
+    - https://www.deepfission.com
+  deep-isolation:
+    country: US
+    hq_city: Berkeley
+    website: https://www.deepisolation.com
+    role: back_end
+    founded: 2016
+    logo: logos/deep-isolation.webp
+    logo_source: https://www.deepisolation.com/wp-content/uploads/2019/09/cropped-favicon-180x180.png
+    logo_sha256: 56d060b9c5f7d98f64052941db67ab4a6c5e147a641aae03e934a2f242126c8d
+    sources:
+    - https://www.deepisolation.com
+  elementl-power:
+    country: US
+    hq_city: Boston
+    website: https://www.elementlpower.com
+    role: developer
+    founded: 2022
+    sources:
+    - https://www.elementlpower.com
+  flibe-energy:
+    country: US
+    hq_city: Huntsville
+    website: https://flibe.com
+    role: developer
+    approach: msr
+    founded: 2011
+    logo: logos/flibe-energy.webp
+    logo_source: https://flibe.com/assets/images/brand/flibe-logo-dark.png
+    logo_sha256: 002b21c296c4286190cd852a40dc1517ff727388ebf157b886b790127f61b3c7
+    sources:
+    - https://flibe.com
+  general-matter:
+    country: US
+    hq_city: San Francisco
+    website: https://generalmatter.com
+    role: enrichment
+    founded: 2024
+    logo: logos/general-matter.webp
+    logo_source: https://generalmatter.com/apple-touch-icon.png
+    logo_sha256: 30ffb3879fdd104c871fa1b7a53dd00f16285ef869d8fc37079f9678207d479c
+    sources:
+    - https://generalmatter.com
+  global-laser-enrichment:
+    country: US
+    hq_city: Wilmington
+    website: https://www.gle-us.com
+    role: enrichment
+    founded: 2007
+    logo: logos/global-laser-enrichment.webp
+    logo_source: https://www.gle-us.com/wp-content/uploads/2021/09/GLE-Favicon-152.png
+    logo_sha256: 3bf87bd56a3df7efd41286cb346aec6876ec9204e304a388dfe14a9faf07cc43
+    sources:
+    - https://www.gle-us.com
+  hadron-energy:
+    country: US
+    hq_city: San Francisco
+    website: https://www.hadronenergy.com
+    role: developer
+    approach: microreactor
+    founded: 2023
+    logo: logos/hadron-energy.webp
+    logo_source: https://cdn.prod.website-files.com/670d4a43a6ff37851adbe7ef/690d15972050b04d39ae030f_Mark%20Blue%20White%20White%20Bg%20(Custom).png
+    logo_sha256: 9ca2dfda5d5a61005b9414aa275cb87671397fe6bbc7338309f89c921bd5f0af
+    sources:
+    - https://www.hadronenergy.com
+  holosgen:
+    country: US
+    hq_city: Washington, DC
+    website: https://www.holosgen.com
+    role: developer
+    approach: microreactor
+    founded: 2007
+    logo: logos/holosgen.webp
+    logo_source: https://www.holosgen.com/wp-content/uploads/2017/10/HOLOSGEN-Website-Logo_tm.png
+    logo_sha256: 2e225a1bf31146e5aef3f2cb33e7fdbbe0bc4805e926b96a4d2e4b8180b29bc7
+    sources:
+    - https://www.holosgen.com
+  holtec-international:
+    country: US
+    hq_city: Camden
+    website: https://holtecinternational.com
+    role: developer
+    approach: lwr-smr
+    founded: 1986
+    logo: logos/holtec-international.webp
+    logo_source: https://b4e6693e.delivery.rocketcdn.me/wp-content/uploads/2016/01/holtec_logo.png
+    logo_sha256: a28b36466d4b9ddf15a322da971762ddcf2c098b13c54d450c7600b3512769f6
+    sources:
+    - https://holtecinternational.com
+  kairos-power:
+    country: US
+    hq_city: Alameda
+    website: https://kairospower.com
+    role: developer
+    approach: fhr
+    founded: 2016
+    logo: logos/kairos-power.webp
+    logo_source: https://cdn.prod.website-files.com/69c2ac9b7806bfa302dc57f1/69c2ac9b7806bfa302dc588f_favicon-256.png
+    logo_sha256: d8faa2b779876ee36d5e72aa4c7d9d16282f0f69209cd0c9a7dced2006255262
+    sources:
+    - https://kairospower.com
+  last-energy:
+    country: US
+    hq_city: Washington, DC
+    website: https://www.lastenergy.com
+    role: developer
+    approach: lwr-smr
+    founded: 2019
+    logo: logos/last-energy.webp
+    logo_source: https://cdn.prod.website-files.com/637baf1c933a04670d122e32/637e3f917b1078cb43a50229_Favbig.png
+    logo_sha256: a1d38197ad69b0ad4ff01c14d277608703f2442fe22b1a79865b71bf50d20100
+    sources:
+    - https://www.lastenergy.com
+  lightbridge:
+    country: US
+    hq_city: Reston
+    website: https://www.ltbridge.com
+    role: fuel
+    founded: 1992
+    logo: logos/lightbridge.webp
+    logo_source: https://d1io3yog0oux5.cloudfront.net/_3f96479ebcbfa40b2103b0f462ce0505/ltbridge/files/theme/images/favicons/apple-touch-icon.png
+    logo_sha256: 22ca7fa21aead8f443ad2e8b0e5901049a530ecdfd64a2c028a9b2ceca5c0cdb
+    sources:
+    - https://www.ltbridge.com
+  louisiana-energy-services:
+    country: US
+    hq_city: Eunice
+    website: https://urencousa.com
+    role: enrichment
+    logo: logos/louisiana-energy-services.webp
+    logo_source: https://urencousa.com/_/favicon/apple-touch-icon.png
+    logo_sha256: c423d3ccd322112fcb6d95761adfd9c5df21fcc53b5d12d25164a34e50378a25
+    sources:
+    - https://urencousa.com
+  moltex-energy:
+    country: CA
+    hq_city: Saint John
+    website: https://www.moltexenergy.com
+    role: developer
+    approach: msr
+    founded: 2006
+    logo: logos/moltex-energy.webp
+    logo_source: https://www.moltexenergy.com/wp-content/uploads/cropped-fav-180x180.png
+    logo_sha256: 0a4175d8d00f0e828112cc33bf35c5bd0ea3b01043c3ae2e2bbc8e5bee43e7d5
+    sources:
+    - https://www.moltexenergy.com
+  naarea:
+    country: FR
+    hq_city: Nanterre
+    website: https://naarea.fr
+    role: developer
+    approach: msr
+    founded: 2019
+    sources:
+    - https://naarea.fr
+  nano-nuclear-energy:
+    country: US
+    hq_city: New York
+    website: https://nanonuclearenergy.com
+    role: developer
+    approach: microreactor
+    founded: 2022
+    logo: logos/nano-nuclear-energy.webp
+    logo_source: https://nanonuclearenergy.com/wp-content/uploads/2022/03/cropped-NANO-symbol-180x180.png
+    logo_sha256: e2591b782e891b82aae6c88145e6546b35a2328d13ad081effb3da3ddf00666b
+    sources:
+    - https://nanonuclearenergy.com
+  natura-resources:
+    country: US
+    hq_city: Abilene
+    website: https://naturaresources.com
+    role: developer
+    approach: msr
+    founded: 2020
+    logo: logos/natura-resources.webp
+    logo_source: https://naturaresources.com/assets/global/favicon.svg
+    logo_sha256: 590a08398ad80f26968a18c6b49e2c0e0a1cbda545b9d320f33653447d60b973
+    sources:
+    - https://naturaresources.com
+  newcleo:
+    country: FR
+    hq_city: Paris
+    website: https://www.newcleo.com
+    role: developer
+    approach: lfr
+    founded: 2021
+    sources:
+    - https://www.newcleo.com
+  niowave:
+    country: US
+    hq_city: Lansing
+    website: https://niowaveinc.com
+    role: isotopes
+    founded: 2005
+    logo: logos/niowave.webp
+    logo_source: https://niowaveinc.com/wp-content/uploads/2026/05/cropped-niowave-icon-180x180.jpg
+    logo_sha256: 9b7295964ed7438d14fe8399e2f86d2f9a054bcec3019028ac7315b0621ac9e9
+    sources:
+    - https://niowaveinc.com
+  nuclearn:
+    country: US
+    hq_city: San Diego
+    website: https://nuclearn.ai
+    role: services
+    founded: 2020
+    logo: logos/nuclearn.webp
+    logo_source: https://nuclearn.ai/wp-content/uploads/2025/06/logo.png
+    logo_sha256: 2c62a2f48ee2b354d9394c4eb3c5a97ac340d990494c1f03515bd4eb0cc631f4
+    sources:
+    - https://nuclearn.ai
+  nucube-energy:
+    country: US
+    hq_city: Idaho Falls
+    website: https://www.nucube.energy
+    role: developer
+    approach: microreactor
+    founded: 2023
+    sources:
+    - https://www.nucube.energy
+  nuscale-power:
+    country: US
+    hq_city: Portland
+    website: https://www.nuscalepower.com
+    role: developer
+    approach: lwr-smr
+    founded: 2007
+    logo: logos/nuscale-power.webp
+    logo_source: https://www.nuscalepower.com/hubfs/Website/Logos/favicon-new.png
+    logo_sha256: e73316249d181c57c1da5c5190f28c7d0c7dc18dc4f1c63144b731cb550cfc1c
+    sources:
+    - https://www.nuscalepower.com
+  oklo:
+    country: US
+    hq_city: Santa Clara
+    website: https://oklo.com
+    role: developer
+    approach: sfr
+    founded: 2013
+    sources:
+    - https://oklo.com
+  one-nuclear-energy:
+    country: US
+    website: https://www.onenuclearenergy.com
+    role: developer
+    approach: lwr-smr
+    logo: logos/one-nuclear-energy.webp
+    logo_source: https://cdn.prod.website-files.com/69ce312d0c590a8d399dfc7b/69d62b209c3e9ac07e1dcfbc_252x252.png
+    logo_sha256: d84eaede2d111e5dd951222651dcd176a3edc26b657c1127a43d229717a6fdeb
+    sources:
+    - https://www.onenuclearenergy.com
+  radiant-nuclear:
+    country: US
+    hq_city: El Segundo
+    website: https://www.radiantnuclear.com
+    role: developer
+    approach: microreactor
+    founded: 2020
+    sources:
+    - https://www.radiantnuclear.com
+  rolls-royce-smr:
+    country: GB
+    hq_city: Derby
+    website: https://www.rolls-royce-smr.com
+    role: developer
+    approach: lwr-smr
+    founded: 2021
+    logo: logos/rolls-royce-smr.webp
+    logo_source: https://www.rolls-royce-smr.com/apple-touch-icon.png
+    logo_sha256: ea01e6c69509f6c30ec3b6364b959a262ad1485ba2f7a24cc4ea937e219b103b
+    sources:
+    - https://www.rolls-royce-smr.com
+  shine-technologies:
+    country: US
+    hq_city: Janesville
+    website: https://www.shinetechnologies.com
+    role: isotopes
+    founded: 2010
+    logo: logos/shine-technologies.webp
+    logo_source: https://cdn.prod.website-files.com/63bc8628e53c0011f41ce702/63c7048d05992419005fa37a_ST%20Favicons-02.png
+    logo_sha256: 99a808bbb22e0c86d8d2c62fea6d2f1082f9f24dfba68537eac0e39f480b9b54
+    sources:
+    - https://www.shinetechnologies.com
+  standard-nuclear:
+    country: US
+    hq_city: Oak Ridge
+    website: https://www.standardnuclear.com
+    role: fuel
+    founded: 2024
+    logo: logos/standard-nuclear.webp
+    logo_source: https://www.standardnuclear.com/favicon.ico
+    logo_sha256: 8936ad9e4f840535f235f7c0a240aee826a9a6e7465fdd961a703af320bd70f1
+    sources:
+    - https://www.standardnuclear.com
+  steady-energy:
+    country: FI
+    hq_city: Espoo
+    website: https://www.steadyenergy.com
+    role: developer
+    approach: lwr-smr
+    founded: 2023
+    logo: logos/steady-energy.webp
+    logo_source: https://cdn.prod.website-files.com/66a7522848450191d6694b1f/66a759c81a3356d02c8dc6fe_steady-energy_webclip_256.png
+    logo_sha256: 5b0b070ff8d3f2d166c19c30050a7d9ce6d22dd9c471fa509c9104f229eae381
+    sources:
+    - https://www.steadyenergy.com
+  stellaria:
+    country: FR
+    hq_city: Paris
+    website: https://www.stellaria-energy.com
+    role: developer
+    approach: msr
+    founded: 2023
+    logo: logos/stellaria.webp
+    logo_source: https://i0.wp.com/www.stellaria.fr/wp-content/uploads/2024/06/Favicon-Stellaria.webp?fit=180%2C180&ssl=1
+    logo_sha256: 1e3f13238e0afc9cba06982f7294893bf859946bb2fb642ac8cdb01a1210184e
+    sources:
+    - https://www.stellaria-energy.com
+  terra-innovatum:
+    country: IT
+    hq_city: Rome
+    website: https://www.terrainnovatum.com
+    role: developer
+    approach: microreactor
+    founded: 2022
+    logo: logos/terra-innovatum.webp
+    logo_source: https://static.wixstatic.com/media/be748d_05211896ffec438b9aacedadd8a501e7~mv2.png
+    logo_sha256: 5995e64f32d54cbb13f7d03efd30e33a40a2eb0dd0eb771807343143aa66d3a4
+    sources:
+    - https://www.terrainnovatum.com
+  terrapower:
+    country: US
+    hq_city: Bellevue
+    website: https://www.terrapower.com
+    role: developer
+    approach: sfr
+    founded: 2008
+    sources:
+    - https://www.terrapower.com
+  terrestrial-energy:
+    country: US
+    hq_city: Charlotte
+    website: https://www.terrestrialenergy.com
+    role: developer
+    approach: msr
+    founded: 2013
+    logo: logos/terrestrial-energy.webp
+    logo_source: https://www.terrestrialenergy.com/T-logo.svg
+    logo_sha256: f95e98811dabf32f1af15f63a49ab1e6fc4d20d09d7f07e269f513d55a202b12
+    sources:
+    - https://www.terrestrialenergy.com
+  thorizon:
+    country: NL
+    hq_city: Amsterdam
+    website: https://thorizon.com
+    role: developer
+    approach: msr
+    founded: 2020
+    logo: logos/thorizon.webp
+    logo_source: https://images.squarespace-cdn.com/content/v1/69ca71dff648464e7adf32b0/3b7a1d10-2286-4b1c-99f6-2d951102370d/Logo+Black+-+New%402x.png
+    logo_sha256: 60eb06ae1bd306b9adc282e460d641d04c2dbe77685289d845251c1f416c8160
+    sources:
+    - https://thorizon.com
+  transmutex:
+    country: CH
+    hq_city: Geneva
+    website: https://transmutex.com
+    role: developer
+    founded: 2019
+    logo: logos/transmutex.webp
+    logo_source: https://transmutex.com/assets/favicon.svg
+    logo_sha256: 586c8899a9530569d4a89fb3a4b27e6d3d2464eabee63e9f19711108905cd2a6
+    sources:
+    - https://transmutex.com
+  valar-atomics:
+    country: US
+    hq_city: El Segundo
+    website: https://www.valaratomics.com
+    role: developer
+    approach: htgr
+    founded: 2023
+    sources:
+    - https://www.valaratomics.com
+  x-energy:
+    country: US
+    hq_city: Rockville
+    website: https://x-energy.com
+    role: developer
+    approach: htgr
+    founded: 2009
+    sources:
+    - https://x-energy.com

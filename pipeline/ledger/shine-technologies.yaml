@@ -1,0 +1,303 @@
+company: shine-technologies
+name: SHINE Technologies
+sector: fission
+notes: 'Built from USAspending spending_by_award search responses (POST, archived with request body in raw/manifest.jsonl,
+  source_id usaspending-post). Amount = USAspending ''Award Amount'' (cumulative federal obligation, not a ceiling and not
+  an announced figure); disbursed_usd = ''Total Outlays'' when present. Dates = ''Base Obligation Date'' (first obligation),
+  else ''Start Date''. Search was recipient-name text on awarding agency = Department of Energy over 2007-10-01..2026-09-30
+  and one page of up to 50 rows per award-type group; awards with zero or negative net obligation are omitted. Recipient name
+  variants not matched by the name search may be missing. Government record, basis=disclosed. The DELP0000207 row is an LPO
+  conditional commitment (USAspending description), not a closed loan; its ''Loan Value'' is the committed face amount and
+  must not be counted as funding received. DOE''s announcement was not retrieved. VERIFIER (2026-10-05): every row re-checked
+  against the archived search snapshot (amount, outlays, base obligation date all match) and against a per-award USAspending
+  award-detail snapshot (api/v2/awards/<id>/, source verify-usaspending). Rows are award-level aggregates, so each event is
+  one award, not a modification. Participant evidence now quotes the award''s assistance-listing title or awarding office
+  from the award-detail snapshot (the old quote only said ''Department of Energy''); obligated_usd now has its own evidence
+  ("total_obligation"). Where the search row showed ''Total Outlays'' 0.0 but the award detail has total_outlay null (no File
+  C outlay reporting, typical for pre-2020 or brand-new awards), disbursed_usd was removed: 0.0 meant ''not reported'', not
+  ''nothing paid''. DELP0000207: award detail shows total_obligation 0.0, total_loan_value 262,881,867.11 and subsidy cost
+  1,359,099.25, consistent with a conditional commitment that has not been disbursed. It is therefore a ceiling. SHINE appears
+  in both census files: fission (isotopes/back_end) and fusion (accelerator-driven D-T neutron source). The NNSA DENA awards
+  are Mo-99 medical-isotope cooperative agreements with large non-federal cost share.'
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: '4 changes: DELP0000207 LPO conditional commitment $262.9M changed to amount_kind ceiling with obligated_usd 0 (award
+    detail total_obligation 0.0); disbursed 0.0 removed on DENA0002598 and DEAR0002077 (outlays not reported); 6 participant
+    evidence items re-sourced; obligated evidence added. Recipient is SHINE Technologies, LLC. SCOPE: SHINE is a fusion-neutron
+    isotope producer; ~$117M of NNSA money is Mo-99 isotope work, not energy. Keep it only as adjacent (fusion-enabled isotopes,
+    recycling ambitions), flagged, outside nuclear-energy-developer totals. Private rounds (>$1B reported) are not in the
+    ledger. Purpose of the LPO loan not confirmed.'
+events:
+- id: shine-technologies-dena0002598
+  instrument: grant
+  round_label: DENA0002598
+  announced_on: '2014-09-18'
+  amount:
+    amount: 14313535.68
+    currency: USD
+    qualifier: exact
+    usd: 14313535.68
+  amount_kind: new_money
+  program: DOE National Nuclear Security Administration
+  obligated_usd: 14313535.68
+  use_of_proceeds: MOLYBDENUM-99 DEMONSTRATION PROJECT-PHASE 1C
+  evidence:
+  - field: amount
+    snapshot: 2cfdafc6d729bdbe03215196e33efa0ea94e93dbec7f8a968a49ac4d41278169
+    quote: '"Award ID": "DENA0002598", "Recipient Name": "SHINE TECHNOLOGIES, LLC", "Recipient UEI": "ULJNHSVK5AP8", "Award
+      Amount": 14313535.68'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 2cfdafc6d729bdbe03215196e33efa0ea94e93dbec7f8a968a49ac4d41278169
+    quote: '"Base Obligation Date": "2014-09-18", "generated_internal_id": "ASST_NON_DENA0002598_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 2cfdafc6d729bdbe03215196e33efa0ea94e93dbec7f8a968a49ac4d41278169
+    quote: '"Award ID": "DENA0002598", "Recipient Name": "SHINE TECHNOLOGIES, LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 2cfdafc6d729bdbe03215196e33efa0ea94e93dbec7f8a968a49ac4d41278169
+    quote: '"Description": "MOLYBDENUM-99 DEMONSTRATION PROJECT-PHASE 1C"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 60eff9c2b367239e1ab1bf8e68e69ae1b5c884edbe00e924fb5647e575ebded5
+    quote: '"total_obligation":14313535.68'
+    basis: disclosed
+  participants:
+  - investor: DOE National Nuclear Security Administration
+    investor_slug: doe-nnsa
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 60eff9c2b367239e1ab1bf8e68e69ae1b5c884edbe00e924fb5647e575ebded5
+      quote: '"cfda_title":"Defense Nuclear Nonproliferation Research"'
+      basis: disclosed
+- id: shine-technologies-dena0003923
+  instrument: grant
+  round_label: DENA0003923
+  announced_on: '2019-07-22'
+  amount:
+    amount: 15000000.0
+    currency: USD
+    qualifier: exact
+    usd: 15000000.0
+  amount_kind: new_money
+  program: DOE National Nuclear Security Administration
+  obligated_usd: 15000000.0
+  disbursed_usd: 8294431.11
+  use_of_proceeds: 'SHINE MEDICAL TECHNOLOGIES, INC. BASE MOD: FULLY FUNDS ALL 3 YEARS OF THE PERIOD OF PERFORMANCE.'
+  evidence:
+  - field: amount
+    snapshot: 2cfdafc6d729bdbe03215196e33efa0ea94e93dbec7f8a968a49ac4d41278169
+    quote: '"Award ID": "DENA0003923", "Recipient Name": "SHINE TECHNOLOGIES, LLC", "Recipient UEI": "ULJNHSVK5AP8", "Award
+      Amount": 15000000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 2cfdafc6d729bdbe03215196e33efa0ea94e93dbec7f8a968a49ac4d41278169
+    quote: '"Base Obligation Date": "2019-07-22", "generated_internal_id": "ASST_NON_DENA0003923_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 2cfdafc6d729bdbe03215196e33efa0ea94e93dbec7f8a968a49ac4d41278169
+    quote: '"Award ID": "DENA0003923", "Recipient Name": "SHINE TECHNOLOGIES, LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 2cfdafc6d729bdbe03215196e33efa0ea94e93dbec7f8a968a49ac4d41278169
+    quote: '"Description": "SHINE MEDICAL TECHNOLOGIES, INC.\n\nBASE MOD:  FULLY FUNDS ALL 3 YEARS OF THE PERIOD OF PERFORMANCE'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: af60d90ed8d7344a11b5548c7ba1cff8729ef11f1d8d2ec0bbe8ef352c758b64
+    quote: '"total_obligation":15000000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE National Nuclear Security Administration
+    investor_slug: doe-nnsa
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: af60d90ed8d7344a11b5548c7ba1cff8729ef11f1d8d2ec0bbe8ef352c758b64
+      quote: '"office_agency_name":"NNSA NON-MO CNTRCTNG OPS DIV"'
+      basis: disclosed
+- id: shine-technologies-dena0004010
+  instrument: grant
+  round_label: DENA0004010
+  announced_on: '2021-10-18'
+  amount:
+    amount: 87274431.5
+    currency: USD
+    qualifier: exact
+    usd: 87274431.5
+  amount_kind: new_money
+  program: DOE National Nuclear Security Administration
+  obligated_usd: 87274431.5
+  disbursed_usd: 79294317.65
+  use_of_proceeds: SHINE WAS FOUNDED IN 2010 WITH THE GOAL OF BECOMING THE WORLD LEADER IN THE SAFE, CLEAN, AFFORDABLE PRODUCTION
+  evidence:
+  - field: amount
+    snapshot: 2cfdafc6d729bdbe03215196e33efa0ea94e93dbec7f8a968a49ac4d41278169
+    quote: '"Award ID": "DENA0004010", "Recipient Name": "SHINE TECHNOLOGIES, LLC", "Recipient UEI": "ULJNHSVK5AP8", "Award
+      Amount": 87274431.5'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 2cfdafc6d729bdbe03215196e33efa0ea94e93dbec7f8a968a49ac4d41278169
+    quote: '"Base Obligation Date": "2021-10-18", "generated_internal_id": "ASST_NON_DENA0004010_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 2cfdafc6d729bdbe03215196e33efa0ea94e93dbec7f8a968a49ac4d41278169
+    quote: '"Award ID": "DENA0004010", "Recipient Name": "SHINE TECHNOLOGIES, LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 2cfdafc6d729bdbe03215196e33efa0ea94e93dbec7f8a968a49ac4d41278169
+    quote: '"Description": "SHINE WAS FOUNDED IN 2010 WITH THE GOAL OF BECOMING THE WORLD LEADER IN THE SAFE, CLEAN, AFFORDABLE'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 35da58a32da8c427db1be3d51ccac6c9b8af9adf00de859d8b762539453afd6d
+    quote: '"total_obligation":87274431.5'
+    basis: disclosed
+  participants:
+  - investor: DOE National Nuclear Security Administration
+    investor_slug: doe-nnsa
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 35da58a32da8c427db1be3d51ccac6c9b8af9adf00de859d8b762539453afd6d
+      quote: '"office_agency_name":"NNSA NON-MO CNTRCTNG OPS DIV"'
+      basis: disclosed
+- id: shine-technologies-desc0024023
+  instrument: grant
+  round_label: DESC0024023
+  announced_on: '2023-09-15'
+  amount:
+    amount: 1129412.0
+    currency: USD
+    qualifier: exact
+    usd: 1129412.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 1129412.0
+  disbursed_usd: 866484.94
+  use_of_proceeds: POTENTIAL TECHNIQUES FOR KRYPTON AND XENON CAPTURE PROCESSING AND STORAGE IN SOLID MATRICES
+  evidence:
+  - field: amount
+    snapshot: 2cfdafc6d729bdbe03215196e33efa0ea94e93dbec7f8a968a49ac4d41278169
+    quote: '"Award ID": "DESC0024023", "Recipient Name": "SHINE TECHNOLOGIES, LLC", "Recipient UEI": "ULJNHSVK5AP8", "Award
+      Amount": 1129412.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 2cfdafc6d729bdbe03215196e33efa0ea94e93dbec7f8a968a49ac4d41278169
+    quote: '"Base Obligation Date": "2023-09-15", "generated_internal_id": "ASST_NON_DESC0024023_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 2cfdafc6d729bdbe03215196e33efa0ea94e93dbec7f8a968a49ac4d41278169
+    quote: '"Award ID": "DESC0024023", "Recipient Name": "SHINE TECHNOLOGIES, LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 2cfdafc6d729bdbe03215196e33efa0ea94e93dbec7f8a968a49ac4d41278169
+    quote: '"Description": "POTENTIAL TECHNIQUES FOR KRYPTON AND XENON CAPTURE PROCESSING AND STORAGE IN SOLID MATRICES"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: e54339e1730a7dbbac079ff454dcc465f7c6646875ce91d96c53de4753c69034
+    quote: '"total_obligation":1129412.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: e54339e1730a7dbbac079ff454dcc465f7c6646875ce91d96c53de4753c69034
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: shine-technologies-dear0002077
+  instrument: grant
+  round_label: DEAR0002077
+  announced_on: '2025-09-15'
+  amount:
+    amount: 3780306.0
+    currency: USD
+    qualifier: exact
+    usd: 3780306.0
+  amount_kind: new_money
+  program: ARPA-E
+  obligated_usd: 3780306.0
+  use_of_proceeds: 'THIS COMPETITIVE COOPERATIVE AGREEMENT FOR A RESEARCH AND DEVELOPMENT PROJECT ENTITLED, ''''REDUCE: RECOVER
+    ELEM'
+  evidence:
+  - field: amount
+    snapshot: 2cfdafc6d729bdbe03215196e33efa0ea94e93dbec7f8a968a49ac4d41278169
+    quote: '"Award ID": "DEAR0002077", "Recipient Name": "SHINE TECHNOLOGIES, LLC", "Recipient UEI": "ULJNHSVK5AP8", "Award
+      Amount": 3780306.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 2cfdafc6d729bdbe03215196e33efa0ea94e93dbec7f8a968a49ac4d41278169
+    quote: '"Base Obligation Date": "2025-09-15", "generated_internal_id": "ASST_NON_DEAR0002077_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 2cfdafc6d729bdbe03215196e33efa0ea94e93dbec7f8a968a49ac4d41278169
+    quote: '"Award ID": "DEAR0002077", "Recipient Name": "SHINE TECHNOLOGIES, LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 2cfdafc6d729bdbe03215196e33efa0ea94e93dbec7f8a968a49ac4d41278169
+    quote: '"Description": "THIS COMPETITIVE COOPERATIVE AGREEMENT FOR A RESEARCH AND DEVELOPMENT PROJECT ENTITLED, ''''REDUCE:
+      R'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 7c643b434dd640b3a0847df6148a0254e3ecebe1b137181dab58306e61eebbc2
+    quote: '"total_obligation":3780306.0'
+    basis: disclosed
+  participants:
+  - investor: ARPA-E
+    investor_slug: arpa-e
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 7c643b434dd640b3a0847df6148a0254e3ecebe1b137181dab58306e61eebbc2
+      quote: '"cfda_title":"Advanced Research Projects Agency - Energy"'
+      basis: disclosed
+- id: shine-technologies-delp0000207
+  instrument: debt
+  round_label: DELP0000207 (conditional commitment, not a closed loan)
+  announced_on: '2026-04-03'
+  amount:
+    amount: 262881867.11
+    currency: USD
+    qualifier: exact
+    usd: 262881867.11
+  amount_kind: ceiling
+  program: DOE Loan Programs Office
+  committed_usd: 262881867.11
+  use_of_proceeds: THE PURPOSE OF THIS ACTION IS TO ISSUE A CONDITIONAL COMMITMENT FOR LOAN NUMBER 1512 (SHINE TECHNOLOGIES).
+  evidence:
+  - field: amount
+    snapshot: 60adfb9a17a0266501e89e9e35ecbb34d30a360b61f1efbb1ed3fdcd3c72aece
+    quote: '"Award ID": "DELP0000207", "Recipient Name": "SHINE TECHNOLOGIES, LLC", "Recipient UEI": "ULJNHSVK5AP8", "Loan
+      Value": 262881867.11'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 60adfb9a17a0266501e89e9e35ecbb34d30a360b61f1efbb1ed3fdcd3c72aece
+    quote: '"Base Obligation Date": "2026-04-03", "generated_internal_id": "ASST_NON_DELP0000207_089"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 60adfb9a17a0266501e89e9e35ecbb34d30a360b61f1efbb1ed3fdcd3c72aece
+    quote: '"Description": "THE PURPOSE OF THIS ACTION IS TO ISSUE A CONDITIONAL COMMITMENT FOR LOAN NUMBER 1512 (SHINE TECHNOL'
+    basis: disclosed
+  - field: round_label
+    snapshot: 60adfb9a17a0266501e89e9e35ecbb34d30a360b61f1efbb1ed3fdcd3c72aece
+    quote: THE PURPOSE OF THIS ACTION IS TO ISSUE A CONDITIONAL COMMITMENT FOR LO
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 3c689bb420b987efb377b81f9e95c65d15414293d0c22586cd3a34505abc3c19
+    quote: '"total_obligation":0.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Loan Programs Office
+    investor_slug: doe-edf
+    role: lender
+    evidence:
+    - field: participant
+      snapshot: 3c689bb420b987efb377b81f9e95c65d15414293d0c22586cd3a34505abc3c19
+      quote: '"office_agency_name":"LOAN PROGRAMS OFFICE"'
+      basis: disclosed
+  obligated_usd: 0.0
+agreements: []

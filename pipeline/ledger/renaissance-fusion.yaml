@@ -1,0 +1,105 @@
+company: renaissance-fusion
+name: Renaissance Fusion
+sector: fusion
+notes: >
+  All evidence is Le Journal des Entreprises (French trade press, basis=reported); no company release was fetchable
+  (renfusion.eu homepage archived but carries no funding text; web search budget exhausted). The 2023 round is only
+  dated "janvier 2023" in the article, so announced_on uses 2023-01-01 as a month placeholder. The A1 announced_on is
+  the article publication date (2025-03-07); the company release may be a day or so earlier. The article says a
+  Series A2 might follow by end 2025: not recorded (no evidence of closing). Amounts for the two investors in A1 are
+  not individually disclosed. France 2030 grant is the DGE "Reacteurs nucleaires innovants" tranche of 2023-11-27
+  (probe france2030.md); the press reported it in Jan 2024. Do not add the census 62M USD figure: the sum of 15M + 10M
+  grant + 32M is not a round. Not recorded: DIFFER/VDL partnership (no date or amount in the snapshot).
+  Verifier: "Series A1" is not written in the source; it is inferred from "Une série A2 pourrait venir compléter cette
+  opération", so the label now says so. The 2023 round's "Seed" label was also not in the source (relabelled). Amounts and
+  participants match the quotes; all evidence remains trade press only (basis reported), no company or Bpifrance primary.
+  The "près de 60 millions" (15 + 10 + 32 = 57M EUR) is cumulative incl. grant and correctly not recorded as a round.
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  "on": 2026-10-05
+  note: "2 corrections: round labels made honest: 'Series A1' is inferred from 'une série A2 pourrait venir compléter' (not stated), and the 2023 round's 'Seed' label is not in the source. Checked: EUR 15M (Jan 2023, Lowercarbon), EUR 10M Bpifrance France 2030 grant, EUR 32M round led by Fonds Révolution Environnementale et Solidaire (Crédit Mutuel) with Lowercarbon; ~EUR 60M is cumulative and not recorded. Gaps: all evidence is trade press (basis reported); 2023 date is a month placeholder."
+events:
+  - id: renaissance-fusion-2023-seed
+    instrument: equity
+    round_label: Early 2023 round (label not stated)
+    announced_on: 2023-01-01
+    amount: {amount: 15000000, currency: EUR, qualifier: exact}
+    evidence:
+      - field: amount
+        snapshot: e336a56a06d8c40ca9708a6f43b9b39befdacef273b2f6ea6e30341ecf15844e
+        quote: "Après avoir levé 15 millions d’euros début 2023"
+        basis: reported
+      - field: announced_on
+        snapshot: 8d8dbd24ad28e04c8bc644ebb62fdb806fc94cba76762a4836b02147d4586855
+        quote: "lors d’un tour de table annoncé en janvier 2023"
+        basis: reported
+    participants:
+      - investor: Lowercarbon Capital
+        investor_slug: lowercarbon-capital
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: 8d8dbd24ad28e04c8bc644ebb62fdb806fc94cba76762a4836b02147d4586855
+            quote: "aux côtés du fonds américain Lowercarbon Capital qui avait déjà investi lors d’un tour de table annoncé en janvier 2023"
+            basis: reported
+  - id: renaissance-fusion-2024-france2030-grant
+    instrument: grant
+    program: France 2030 - Reacteurs nucleaires innovants (Bpifrance)
+    announced_on: 2024-01-12
+    amount: {amount: 10000000, currency: EUR, qualifier: exact}
+    evidence:
+      - field: amount
+        snapshot: e336a56a06d8c40ca9708a6f43b9b39befdacef273b2f6ea6e30341ecf15844e
+        quote: "bénéficie d’une subvention de 10 millions d’euros de la part de Bpifrance"
+        basis: reported
+      - field: announced_on
+        snapshot: e336a56a06d8c40ca9708a6f43b9b39befdacef273b2f6ea6e30341ecf15844e
+        quote: "Publié le 12 janvier 2024"
+        basis: reported
+    participants:
+      - investor: Bpifrance
+        investor_slug: bpifrance
+        role: grantor
+        evidence:
+          - field: participant
+            snapshot: e336a56a06d8c40ca9708a6f43b9b39befdacef273b2f6ea6e30341ecf15844e
+            quote: "subvention de 10 millions d’euros de la part de Bpifrance"
+            basis: reported
+  - id: renaissance-fusion-2025-series-a1
+    instrument: equity
+    round_label: Series A (A1, inferred; article only says a Series A2 may follow)
+    announced_on: 2025-03-07
+    amount: {amount: 32000000, currency: EUR, qualifier: exact}
+    use_of_proceeds: Develop stellarators and manufacture high-temperature superconducting magnets
+    evidence:
+      - field: amount
+        snapshot: 8d8dbd24ad28e04c8bc644ebb62fdb806fc94cba76762a4836b02147d4586855
+        quote: "a levé 32 millions d’euros auprès du Crédit Mutuel et du fonds américain Lowercarbon Capital"
+        basis: reported
+      - field: announced_on
+        snapshot: 8d8dbd24ad28e04c8bc644ebb62fdb806fc94cba76762a4836b02147d4586855
+        quote: "Publié le 7 mars 2025"
+        basis: reported
+      - field: round_label
+        snapshot: 8d8dbd24ad28e04c8bc644ebb62fdb806fc94cba76762a4836b02147d4586855
+        quote: "Une série A2 pourrait venir compléter cette opération"
+        basis: reported
+    participants:
+      - investor: Fonds Révolution Environnementale et Solidaire (Crédit Mutuel Alliance Fédérale)
+        investor_slug: credit-mutuel-alliance-federale
+        role: lead
+        evidence:
+          - field: participant
+            snapshot: 8d8dbd24ad28e04c8bc644ebb62fdb806fc94cba76762a4836b02147d4586855
+            quote: "abondé par le dividende sociétal du Crédit Mutuel Alliance Fédérale a mené ce tour de table"
+            basis: reported
+      - investor: Lowercarbon Capital
+        investor_slug: lowercarbon-capital
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: 8d8dbd24ad28e04c8bc644ebb62fdb806fc94cba76762a4836b02147d4586855
+            quote: "aux côtés du fonds américain Lowercarbon Capital"
+            basis: reported
+agreements: []

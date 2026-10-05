@@ -1,0 +1,53 @@
+company: curio
+name: Curio
+sector: fission
+notes: 'SUPPLEMENT (not in pipeline/ledger/ to avoid a duplicate company slug): DOE awards found in USAspending that the existing
+  ledger pipeline/ledger/curio.yaml did not list by FAIN at the time of writing. Some amounts may already be evidenced there
+  from another source (check before merging; do not double count). Amount = USAspending ''Award Amount'' (cumulative federal
+  obligation), dates = Base Obligation Date else Start Date; one page of up to 50 rows per award-type group, DOE as awarding
+  agency, 2007-10-01..2026-09-30; zero/negative awards omitted.'
+events:
+- id: curio-dear0001695
+  instrument: grant
+  round_label: DEAR0001695
+  announced_on: '2023-03-07'
+  amount:
+    amount: 100107.0
+    currency: USD
+    qualifier: exact
+    usd: 100107.0
+  amount_kind: new_money
+  program: ARPA-E
+  obligated_usd: 100107.0
+  disbursed_usd: 30007.0
+  use_of_proceeds: 'CONTROL NUMBER: 2691-1527 CURIO SOLUTIONS LLC DE-FOA-0002691 CONVERTING UNF RADIOISOTOPES INTO ENERGY
+    (CURIE)'
+  evidence:
+  - field: amount
+    snapshot: d5307123a178cbc4f668656c4561bb9aae3d18d39a84fcecb6292e0808a34d2f
+    quote: '"Award ID": "DEAR0001695", "Recipient Name": "CURIO SOLUTIONS LLC", "Recipient UEI": "LQE6FNEGR235", "Award Amount":
+      100107.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: d5307123a178cbc4f668656c4561bb9aae3d18d39a84fcecb6292e0808a34d2f
+    quote: '"Base Obligation Date": "2023-03-07", "generated_internal_id": "ASST_NON_DEAR0001695_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: d5307123a178cbc4f668656c4561bb9aae3d18d39a84fcecb6292e0808a34d2f
+    quote: '"Award ID": "DEAR0001695", "Recipient Name": "CURIO SOLUTIONS LLC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: d5307123a178cbc4f668656c4561bb9aae3d18d39a84fcecb6292e0808a34d2f
+    quote: '"Description": "CONTROL NUMBER: 2691-1527\nCURIO SOLUTIONS LLC\nDE-FOA-0002691 CONVERTING UNF RADIOISOTOPES INTO
+      EN'
+    basis: disclosed
+  participants:
+  - investor: ARPA-E
+    investor_slug: arpa-e
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: d5307123a178cbc4f668656c4561bb9aae3d18d39a84fcecb6292e0808a34d2f
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+agreements: []

@@ -1,0 +1,804 @@
+company: tae-technologies
+name: TAE Technologies
+sector: fusion
+notes: >-
+  Built 2026-10-05. TAE origin tae.com is ToS-forbidden (P2): every tae.com fact uses the Wayback copy (original_url set) and is
+  corroborated by an independent source (SEC filing by Trump Media & Technology Group CIK 1849635 / TMTG-TAE S-4 filed 2026-09-30,
+  CNBC, TechCrunch, GeekWire). The probe-time direct snapshots of tae.com (34795481fc16, 7dfcf3687bc4) were NOT used.
+  TAE has no Form D under its own CIK; the S-4 (which contains TAE audited FY2026 and Q1 FY2027 statements, FY ends 31 March) is the best primary
+  source for 2024-26 financing. Pre-2021 rounds (Tri Alpha era, 1998-2020) mostly have no per-round amount anywhere in fetchable
+  sources: only cumulative statements ($500M+ by 2018, $880M in 2021) are recorded; Goldman Sachs, Vulcan, Venrock, NEA, Rusnano, Wellcome
+  Trust, Kuwait Investment Authority, Google are attached to the cumulative events where a source names them as backers (not necessarily
+  as participants of a single round). Reuters 2021-04-08 article is robots-blocked and was not used.
+  OVERLAP WARNING: the June 2025 ">$150M" release is almost certainly part of the Series 12 financing (Aug 2024 - Dec 2025; Series 12
+  purchase agreement amended 2025-05-30); all three carry round_group series-12 and must not be summed. Series 12 gross proceeds in the S-4
+  ($146.6M FY ended 2025-03-31, $56.8M FY ended 2026-03-31) include non-cash conversions of SAFEs ($97.6M), notes ($30.0M and $22.4M); cash
+  was $19.0M and $34.4M. The press ">$150M" cannot be reconciled to these figures from public data; flag for reviewer.
+  Conflict: CNBC 2022 says July 2022 was "Google's first cash investment"; the S-4 shows a Google warrant under a 2017 services agreement.
+  Government grants: S-4 says TAE "has received over eight awards from the United States' Department of Energy" without amounts or dates;
+  no ARPA-E / SBIR / Milestone award found in earlier probes (probes/arpa-e.md, sbir.md, doe-programs.md); INFUSE page snapshot is JS-heavy
+  and had no TAE hit; USAspending not queried (POST API, no archived wrapper available). No DOE grant event recorded: revisit.
+  Not recorded: Linqto Liquidshares secondary vehicle (Form D 2023/2024, secondary, not company funding). WebSearch budget was exhausted so
+  TAE Life Sciences, Rusnano 2012 and 2007 round details come from Wikipedia/GeekWire only. TMTG merger not closed as of the S-4 (expected Q4 2026).
+  VERIFIER (2026-10-05): Series 12 counting now = tae-series-12-fy2025 ($146.6M) + tae-series-12-fy2026 ($56.8M) = $203.4M; the SAFE
+  event ($97.6M, converted into Series 12 inside the $146.6M) and the June 2025 ">$150M" release are marked duplicate of
+  tae-series-12-fy2025. Cash timing: SAFE cash came in FY2024-25 ($29.7M of SAFE proceeds in FY2025 cash flow), so the S-4 figures are
+  booked at Series 12 dates rather than when the SAFE cash arrived. tae-series-12-fy2026 announced_on 2025-04-01 is a fiscal-period
+  placeholder (S-4 gives only the fiscal year), not a release date. The TMTG May 2025 PIPE / $1B convertible notes are TMTG's own
+  financing and are NOT TAE funding. The merger is all-stock (no cash to TAE at close per the 8-K); the ">$6B" CNBC figure is the
+  headline deal value and may describe the transaction rather than TAE's standalone valuation. The 2023 TAE Power Solutions, LLC Series A
+  units were sold by a subsidiary (consolidated; recorded as noncontrolling interest, $61.1M NCI sales in FY2024 cash flow).
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  "on": 2026-10-05
+  note: >-
+    5 corrections: SAFE $97.6M marked duplicate of Series 12 FY2025 (converted into it); June 2025 >$150M release marked duplicate of
+    Series 12 FY2025 (same round, the 12th); TMTG note tranche 2 ($100M up_to) set to ceiling (undrawn per 2026-09-30 amended note);
+    2021 $280M round_label "Series G" removed (S-4 quote only lists share series, does not tie G to 2021) and TechCrunch date added;
+    Series 12 FY2025 amount evidence extended with the S-4 non-cash conversion breakdown. Not confirmed: 2007 $40M and Rusnano 2012 rest
+    on Wikipedia only; ">$6B" merger value is press-only and ambiguous; DOE awards ("over eight") not quantified; G-2 participants
+    Reimagined Ventures and TIFF are named as "most recent investors", not explicitly in G-2.
+events:
+  - id: tae-2007-vc-round
+    instrument: equity
+    round_label: venture round (2007)
+    announced_on: 2007-05-21
+    amount:
+      amount: 40000000
+      currency: USD
+      qualifier: exact
+    use_of_proceeds: null
+    evidence:
+      - field: amount
+        snapshot: 2e0c3e1965f20980fafc85e58193087f60671c26f36adc5aa222f1d3dfb69d5a
+        quote: 'Michael Kanellos (21 May 2007). "Nuclear fusion firm draws $40 million from VCs"'
+        basis: reported
+      - field: announced_on
+        snapshot: 2e0c3e1965f20980fafc85e58193087f60671c26f36adc5aa222f1d3dfb69d5a
+        quote: 'Michael Kanellos (21 May 2007). "Nuclear fusion firm draws $40 million from VCs"'
+        basis: reported
+  - id: tae-rusnano-2012
+    instrument: equity
+    announced_on: 2012-10-01
+    evidence:
+      - field: announced_on
+        snapshot: 2e0c3e1965f20980fafc85e58193087f60671c26f36adc5aa222f1d3dfb69d5a
+        quote: invested in Tri Alpha Energy in October 2012
+        basis: reported
+    participants:
+      - investor: Rusnano
+        investor_slug: rusnano
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: 2e0c3e1965f20980fafc85e58193087f60671c26f36adc5aa222f1d3dfb69d5a
+            quote: invested in Tri Alpha Energy in October 2012
+            basis: reported
+  - id: tae-cumulative-2018-03
+    instrument: equity
+    round_label: cumulative statement
+    announced_on: 2018-03-12
+    amount_kind: cumulative
+    amount:
+      amount: 500000000
+      currency: USD
+      qualifier: over
+    evidence:
+      - field: amount
+        snapshot: 0c957033f22b23e57e863db86fe5e30678fe9d0799a6822d89723b132f317419
+        quote: has taken in more than $500 million in funding from Paul Allen’s Vulcan Capital, the Rockefeller family’s Venrock venture capital firm, Russia’s Rusnano
+        basis: reported
+      - field: announced_on
+        snapshot: 0c957033f22b23e57e863db86fe5e30678fe9d0799a6822d89723b132f317419
+        quote: Alan Boyle on Mar 12, 2018
+        basis: reported
+    participants:
+      - investor: Vulcan Capital
+        investor_slug: vulcan
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: 0c957033f22b23e57e863db86fe5e30678fe9d0799a6822d89723b132f317419
+            quote: Paul Allen’s Vulcan Capital, the Rockefeller family’s Venrock venture capital firm
+            basis: reported
+      - investor: Venrock
+        investor_slug: venrock
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: 0c957033f22b23e57e863db86fe5e30678fe9d0799a6822d89723b132f317419
+            quote: Paul Allen’s Vulcan Capital, the Rockefeller family’s Venrock venture capital firm
+            basis: reported
+  - id: tae-life-sciences-2018-03
+    instrument: equity
+    round_label: TAE Life Sciences (subsidiary) venture round
+    announced_on: 2018-03-12
+    amount:
+      amount: 40000000
+      currency: USD
+      qualifier: exact
+    use_of_proceeds: develop a neutron beam system for boron neutron capture therapy
+    evidence:
+      - field: amount
+        snapshot: 0c957033f22b23e57e863db86fe5e30678fe9d0799a6822d89723b132f317419
+        quote: TAE Life Sciences says it has raised $40 million in venture capital, led by Artis Ventures
+        basis: reported
+      - field: announced_on
+        snapshot: 0c957033f22b23e57e863db86fe5e30678fe9d0799a6822d89723b132f317419
+        quote: Alan Boyle on Mar 12, 2018
+        basis: reported
+    participants:
+      - investor: Artis Ventures
+        investor_slug: artis-ventures
+        role: lead
+        evidence:
+          - field: participant
+            snapshot: 0c957033f22b23e57e863db86fe5e30678fe9d0799a6822d89723b132f317419
+            quote: TAE Life Sciences says it has raised $40 million in venture capital, led by Artis Ventures
+            basis: reported
+  - id: tae-2021-04-raise-280m
+    instrument: equity
+    round_label: 2021 financing round (label not evidenced; Series G likely, see notes)
+    announced_on: 2021-04-08
+    amount:
+      amount: 280000000
+      currency: USD
+      qualifier: exact
+    evidence:
+      - field: amount
+        snapshot: f1ced9cdc9fbb04b2113ca303beadc8d6d8a97433c52192312597fe23c8f5341
+        quote: TAE was able to raise an additional $280 million in financing, bringing its total up to $880 million
+        basis: reported
+      - field: announced_on
+        snapshot: f1ced9cdc9fbb04b2113ca303beadc8d6d8a97433c52192312597fe23c8f5341
+        quote: 12:00 PM PDT · April 8, 2021
+        basis: reported
+      - field: announced_on
+        snapshot: 2e0c3e1965f20980fafc85e58193087f60671c26f36adc5aa222f1d3dfb69d5a
+        quote: raises $280 million from new, existing investors" . Reuters . 8 April 2021.
+        basis: reported
+  - id: tae-cumulative-2021-04
+    instrument: equity
+    round_label: cumulative statement
+    announced_on: 2021-04-08
+    amount_kind: cumulative
+    amount:
+      amount: 880000000
+      currency: USD
+      qualifier: exact
+    evidence:
+      - field: amount
+        snapshot: f1ced9cdc9fbb04b2113ca303beadc8d6d8a97433c52192312597fe23c8f5341
+        quote: bringing its total up to $880 million
+        basis: reported
+      - field: announced_on
+        snapshot: 2e0c3e1965f20980fafc85e58193087f60671c26f36adc5aa222f1d3dfb69d5a
+        quote: raises $280 million from new, existing investors" . Reuters . 8 April 2021.
+        basis: reported
+    participants:
+      - investor: NEA
+        investor_slug: nea
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: f1ced9cdc9fbb04b2113ca303beadc8d6d8a97433c52192312597fe23c8f5341
+            quote: Vulcan, Venrock, NEA, Wellcome Trust, Google and the Kuwait Investment Authority are all backers
+            basis: reported
+      - investor: Wellcome Trust
+        investor_slug: wellcome-trust
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: f1ced9cdc9fbb04b2113ca303beadc8d6d8a97433c52192312597fe23c8f5341
+            quote: Vulcan, Venrock, NEA, Wellcome Trust, Google and the Kuwait Investment Authority are all backers
+            basis: reported
+      - investor: Google
+        investor_slug: google
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: f1ced9cdc9fbb04b2113ca303beadc8d6d8a97433c52192312597fe23c8f5341
+            quote: Vulcan, Venrock, NEA, Wellcome Trust, Google and the Kuwait Investment Authority are all backers
+            basis: reported
+      - investor: Kuwait Investment Authority
+        investor_slug: kuwait-investment-authority
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: f1ced9cdc9fbb04b2113ca303beadc8d6d8a97433c52192312597fe23c8f5341
+            quote: Vulcan, Venrock, NEA, Wellcome Trust, Google and the Kuwait Investment Authority are all backers
+            basis: reported
+      - investor: Goldman Sachs
+        investor_slug: goldman-sachs
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: 2e0c3e1965f20980fafc85e58193087f60671c26f36adc5aa222f1d3dfb69d5a
+            quote: Main financing has come from Goldman Sachs and venture capitalists such as Microsoft co-founder Paul Allen
+            basis: reported
+  - id: tae-2022-07-series-g2
+    instrument: equity
+    round_label: Series G-2
+    round_group: series-g2
+    announced_on: 2022-07-19
+    amount:
+      amount: 250000000
+      currency: USD
+      qualifier: exact
+    use_of_proceeds: fund the construction of the company's sixth-generation research reactor
+    evidence:
+      - field: amount
+        snapshot: 45ca6617d56204df9ee9bccda2d70fca7378b22a61fa9f6de194653203ad5507
+        original_url: https://tae.com/tae-technologies-exceeds-fusion-reactor-performance-goals-by-250-as-company-closes-250-million-financing-round-totaling-1-2-billion-to-date/
+        quote: In its recently closed Series G-2 financing round, TAE secured $250 million from investors
+        basis: disclosed
+      - field: amount
+        snapshot: cb41875ae5c4d11e330a5214b31db296898ff3e2945ef939e65b4459ba06d4c0
+        quote: Google and Chevron were part of a $250 million funding raise announced Tuesday for TAE Technologies
+        basis: reported
+      - field: round_label
+        snapshot: 45ca6617d56204df9ee9bccda2d70fca7378b22a61fa9f6de194653203ad5507
+        original_url: https://tae.com/tae-technologies-exceeds-fusion-reactor-performance-goals-by-250-as-company-closes-250-million-financing-round-totaling-1-2-billion-to-date/
+        quote: In its recently closed Series G-2 financing round
+        basis: disclosed
+      - field: announced_on
+        snapshot: cb41875ae5c4d11e330a5214b31db296898ff3e2945ef939e65b4459ba06d4c0
+        quote: Published Tue, Jul 19 2022 1:57 PM EDT
+        basis: reported
+      - field: use_of_proceeds
+        snapshot: 45ca6617d56204df9ee9bccda2d70fca7378b22a61fa9f6de194653203ad5507
+        original_url: https://tae.com/tae-technologies-exceeds-fusion-reactor-performance-goals-by-250-as-company-closes-250-million-financing-round-totaling-1-2-billion-to-date/
+        quote: to fund the construction of the company’s sixth-generation research reactor
+        basis: disclosed
+    participants:
+      - investor: Chevron
+        investor_slug: chevron-technology-ventures
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: 45ca6617d56204df9ee9bccda2d70fca7378b22a61fa9f6de194653203ad5507
+            original_url: https://tae.com/tae-technologies-exceeds-fusion-reactor-performance-goals-by-250-as-company-closes-250-million-financing-round-totaling-1-2-billion-to-date/
+            quote: Chevron, Google, Reimagined Ventures, Sumitomo Corporation of Americas, and TIFF Investment Management are among the company’s most recent investors
+            basis: disclosed
+      - investor: Google
+        investor_slug: google
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: 45ca6617d56204df9ee9bccda2d70fca7378b22a61fa9f6de194653203ad5507
+            original_url: https://tae.com/tae-technologies-exceeds-fusion-reactor-performance-goals-by-250-as-company-closes-250-million-financing-round-totaling-1-2-billion-to-date/
+            quote: Chevron, Google, Reimagined Ventures, Sumitomo Corporation of Americas, and TIFF Investment Management are among the company’s most recent investors
+            basis: disclosed
+      - investor: Reimagined Ventures
+        investor_slug: reimagined-ventures
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: 45ca6617d56204df9ee9bccda2d70fca7378b22a61fa9f6de194653203ad5507
+            original_url: https://tae.com/tae-technologies-exceeds-fusion-reactor-performance-goals-by-250-as-company-closes-250-million-financing-round-totaling-1-2-billion-to-date/
+            quote: Chevron, Google, Reimagined Ventures, Sumitomo Corporation of Americas, and TIFF Investment Management are among the company’s most recent investors
+            basis: disclosed
+      - investor: Sumitomo Corporation of Americas
+        investor_slug: sumitomo-corp-americas
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: cb41875ae5c4d11e330a5214b31db296898ff3e2945ef939e65b4459ba06d4c0
+            quote: Sumitomo Corporation of Americas , also participated in the round
+            basis: reported
+      - investor: TIFF Investment Management
+        investor_slug: tiff-investment-management
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: 45ca6617d56204df9ee9bccda2d70fca7378b22a61fa9f6de194653203ad5507
+            original_url: https://tae.com/tae-technologies-exceeds-fusion-reactor-performance-goals-by-250-as-company-closes-250-million-financing-round-totaling-1-2-billion-to-date/
+            quote: Chevron, Google, Reimagined Ventures, Sumitomo Corporation of Americas, and TIFF Investment Management are among the company’s most recent investors
+            basis: disclosed
+  - id: tae-cumulative-2022-07
+    instrument: equity
+    round_label: cumulative statement
+    announced_on: 2022-07-19
+    amount_kind: cumulative
+    amount:
+      amount: 1200000000
+      currency: USD
+      qualifier: exact
+    evidence:
+      - field: amount
+        snapshot: 45ca6617d56204df9ee9bccda2d70fca7378b22a61fa9f6de194653203ad5507
+        original_url: https://tae.com/tae-technologies-exceeds-fusion-reactor-performance-goals-by-250-as-company-closes-250-million-financing-round-totaling-1-2-billion-to-date/
+        quote: to date has raised a total of $1.2 billion for its commercial fusion development
+        basis: disclosed
+      - field: announced_on
+        snapshot: cb41875ae5c4d11e330a5214b31db296898ff3e2945ef939e65b4459ba06d4c0
+        quote: Published Tue, Jul 19 2022 1:57 PM EDT
+        basis: reported
+  - id: tae-2023-04-power-solutions-series-a
+    instrument: equity
+    round_label: TAE Power Solutions, LLC Series A Preferred Units
+    announced_on: 2023-04-07
+    use_of_proceeds: null
+    evidence:
+      - field: announced_on
+        snapshot: 9e08ccdb1f9b2fe42e4de219fc6946f36234cd90dc62855de7cf385e3641a4f5
+        quote: Series A Preferred Unit Purchase Agreement, dated as of April 7, 2023
+        basis: disclosed
+    participants:
+      - investor: Skywriter LLC
+        investor_slug: skywriter-llc
+        role: participant
+        amount:
+          amount: 28000000
+          currency: USD
+          qualifier: exact
+        evidence:
+          - field: participant
+            snapshot: 9e08ccdb1f9b2fe42e4de219fc6946f36234cd90dc62855de7cf385e3641a4f5
+            quote: "Skywriter LLC (3) \u200b \u200b 2,800,000 \u200b \u200b $ 28,000,000"
+            basis: disclosed
+      - investor: Acadia Woods Partners, LLC
+        investor_slug: acadia-woods-partners
+        role: participant
+        amount:
+          amount: 4000000
+          currency: USD
+          qualifier: exact
+        evidence:
+          - field: participant
+            snapshot: 9e08ccdb1f9b2fe42e4de219fc6946f36234cd90dc62855de7cf385e3641a4f5
+            quote: "Acadia Woods Partners, LLC (4) \u200b \u200b 400,000 \u200b \u200b $ 4,000,000"
+            basis: disclosed
+      - investor: Buchanan Investments AlterEnergy, LLC
+        investor_slug: buchanan-investments-alterenergy
+        role: participant
+        amount:
+          amount: 4100000
+          currency: USD
+          qualifier: exact
+        evidence:
+          - field: participant
+            snapshot: 9e08ccdb1f9b2fe42e4de219fc6946f36234cd90dc62855de7cf385e3641a4f5
+            quote: "Buchanan Investments AlterEnergy, LLC (2) \u200b \u200b 410,000 \u200b \u200b $ 4,100,000"
+            basis: disclosed
+      - investor: Planet Heritage Foundation, Inc.
+        investor_slug: planet-heritage-foundation
+        role: participant
+        amount:
+          amount: 2000000
+          currency: USD
+          qualifier: exact
+        evidence:
+          - field: participant
+            snapshot: 9e08ccdb1f9b2fe42e4de219fc6946f36234cd90dc62855de7cf385e3641a4f5
+            quote: "Planet Heritage Foundation, Inc. (3) \u200b \u200b 200,000 \u200b \u200b $ 2,000,000"
+            basis: disclosed
+      - investor: HOS MBS Investments, LP
+        investor_slug: hos-mbs-investments
+        role: participant
+        amount:
+          amount: 1500000
+          currency: USD
+          qualifier: exact
+        evidence:
+          - field: participant
+            snapshot: 9e08ccdb1f9b2fe42e4de219fc6946f36234cd90dc62855de7cf385e3641a4f5
+            quote: "HOS MBS Investments, LP (5) \u200b \u200b 150,000 \u200b \u200b $ 1,500,000"
+            basis: disclosed
+      - investor: TA-330 Fund I, A Series of 3 Alpha Power Solutions 1, LP
+        investor_slug: ta-330-fund-i
+        role: participant
+        amount:
+          amount: 900000
+          currency: USD
+          qualifier: exact
+        evidence:
+          - field: participant
+            snapshot: 9e08ccdb1f9b2fe42e4de219fc6946f36234cd90dc62855de7cf385e3641a4f5
+            quote: "TA-330 Fund I, A Series of 3 Alpha Power Solutions 1, LP (2) \u200b \u200b 90,000 \u200b \u200b $ 900,000"
+            basis: disclosed
+  - id: tae-2023-2024-safe
+    instrument: other
+    round_label: SAFEs with call options (converted into Series 12)
+    round_group: series-12
+    announced_on: 2023-09-05
+    closed_on: 2024-05-30
+    amount_kind: duplicate
+    supersedes: tae-series-12-fy2025
+    amount:
+      amount: 97577980
+      currency: USD
+      qualifier: exact
+    evidence:
+      - field: amount
+        snapshot: 9e08ccdb1f9b2fe42e4de219fc6946f36234cd90dc62855de7cf385e3641a4f5
+        quote: TAE issued and sold simple agreements for future equity in the aggregate amount of $97,577,980
+        basis: disclosed
+      - field: announced_on
+        snapshot: 9e08ccdb1f9b2fe42e4de219fc6946f36234cd90dc62855de7cf385e3641a4f5
+        quote: the original Safe and Call Option Purchase Agreement dated as of September 5, 2023
+        basis: disclosed
+      - field: closed_on
+        snapshot: 9e08ccdb1f9b2fe42e4de219fc6946f36234cd90dc62855de7cf385e3641a4f5
+        quote: Safe and Call Option Purchase Agreements dated as of February 13, 2024, March 11, 2024, April 18, 2024, and May 30, 2024
+        basis: disclosed
+    participants:
+      - investor: New Enterprise Associates 10, L.P.
+        investor_slug: nea
+        role: participant
+        amount:
+          amount: 10500000
+          currency: USD
+          qualifier: exact
+        evidence:
+          - field: participant
+            snapshot: 9e08ccdb1f9b2fe42e4de219fc6946f36234cd90dc62855de7cf385e3641a4f5
+            quote: "NEW ENTERPRISE ASSOCIATES 10, L.P. (4) \u200b $ 10,500,000.00"
+            basis: disclosed
+      - investor: Skywriter LLC
+        investor_slug: skywriter-llc
+        role: participant
+        amount:
+          amount: 6952720.55
+          currency: USD
+          qualifier: exact
+        evidence:
+          - field: participant
+            snapshot: 9e08ccdb1f9b2fe42e4de219fc6946f36234cd90dc62855de7cf385e3641a4f5
+            quote: "SKYWRITER LLC (3) \u200b $ 6,952,720.55"
+            basis: disclosed
+      - investor: Acadia Woods Partners, LLC
+        investor_slug: acadia-woods-partners
+        role: participant
+        amount:
+          amount: 14874297.18
+          currency: USD
+          qualifier: exact
+        evidence:
+          - field: participant
+            snapshot: 9e08ccdb1f9b2fe42e4de219fc6946f36234cd90dc62855de7cf385e3641a4f5
+            quote: "Acadia Woods Partners, LLC (5) \u200b $ 14,874,297.18"
+            basis: disclosed
+      - investor: Big Sky Venture Capital III, LLC
+        investor_slug: big-sky-venture-capital
+        role: participant
+        amount:
+          amount: 3029492.88
+          currency: USD
+          qualifier: exact
+        evidence:
+          - field: participant
+            snapshot: 9e08ccdb1f9b2fe42e4de219fc6946f36234cd90dc62855de7cf385e3641a4f5
+            quote: "Big Sky Venture Capital III, LLC (6) \u200b $ 3,029,492.88"
+            basis: disclosed
+      - investor: HOS MBS Investments, LP
+        investor_slug: hos-mbs-investments
+        role: participant
+        amount:
+          amount: 4514746.44
+          currency: USD
+          qualifier: exact
+        evidence:
+          - field: participant
+            snapshot: 9e08ccdb1f9b2fe42e4de219fc6946f36234cd90dc62855de7cf385e3641a4f5
+            quote: "HOS MBS Investments, LP (6) \u200b $ 4,514,746.44"
+            basis: disclosed
+      - investor: Planet Heritage Foundation, Inc.
+        investor_slug: planet-heritage-foundation
+        role: participant
+        amount:
+          amount: 1079231.88
+          currency: USD
+          qualifier: exact
+        evidence:
+          - field: participant
+            snapshot: 9e08ccdb1f9b2fe42e4de219fc6946f36234cd90dc62855de7cf385e3641a4f5
+            quote: "Planet Heritage Foundation, Inc. (3) \u200b $ 1,079,231.88"
+            basis: disclosed
+      - investor: Stark Investments Ltd.
+        investor_slug: stark-investments
+        role: participant
+        amount:
+          amount: 1211471.04
+          currency: USD
+          qualifier: exact
+        evidence:
+          - field: participant
+            snapshot: 9e08ccdb1f9b2fe42e4de219fc6946f36234cd90dc62855de7cf385e3641a4f5
+            quote: "Stark Investments Ltd. (1) \u200b $ 1,211,471.04"
+            basis: disclosed
+      - investor: 3 Alpha 3 KH LLC
+        investor_slug: 3-alpha-3-kh
+        role: participant
+        amount:
+          amount: 2032150
+          currency: USD
+          qualifier: exact
+        evidence:
+          - field: participant
+            snapshot: 9e08ccdb1f9b2fe42e4de219fc6946f36234cd90dc62855de7cf385e3641a4f5
+            quote: "3 Alpha 3 KH LLC (2) \u200b $ 2,032,150.00"
+            basis: disclosed
+  - id: tae-series-12-fy2025
+    instrument: equity
+    round_label: Series 12 preferred (proceeds in fiscal year ended 2025-03-31)
+    round_group: series-12
+    announced_on: 2024-08-27
+    amount:
+      amount: 146600000
+      currency: USD
+      qualifier: exact
+    use_of_proceeds: null
+    evidence:
+      - field: amount
+        snapshot: 9e08ccdb1f9b2fe42e4de219fc6946f36234cd90dc62855de7cf385e3641a4f5
+        quote: issued shares of Series 12 Preferred Stock and warrants to purchase shares of Series 12 Preferred Stock for gross proceeds of $56.8 million and $146.6 million, respectively
+        basis: disclosed
+      - field: amount
+        snapshot: 9e08ccdb1f9b2fe42e4de219fc6946f36234cd90dc62855de7cf385e3641a4f5
+        quote: issued Series 12 Preferred Stock and warrants upon the non-cash conversion of outstanding SAFEs and call options ($97.6 million) and short-term notes payable ($30.0 million)
+        basis: disclosed
+      - field: announced_on
+        snapshot: 9e08ccdb1f9b2fe42e4de219fc6946f36234cd90dc62855de7cf385e3641a4f5
+        quote: Series 12 Preferred Stock Purchase and Exchange Agreement, dated as of August 27, 2024
+        basis: disclosed
+      - field: round_label
+        snapshot: 9e08ccdb1f9b2fe42e4de219fc6946f36234cd90dc62855de7cf385e3641a4f5
+        quote: The Series 12 Preferred Stock Financing opened in August 2024 and closed in December 2025.
+        basis: disclosed
+  - id: tae-series-12-fy2026
+    instrument: equity
+    round_label: Series 12 preferred (proceeds in fiscal year ended 2026-03-31)
+    round_group: series-12
+    announced_on: 2025-04-01
+    closed_on: 2025-12-31
+    amount:
+      amount: 56800000
+      currency: USD
+      qualifier: exact
+    evidence:
+      - field: amount
+        snapshot: 9e08ccdb1f9b2fe42e4de219fc6946f36234cd90dc62855de7cf385e3641a4f5
+        quote: the Company completed its Series 12 preferred stock financing, raising aggregate gross proceeds of $56.8 million
+        basis: disclosed
+      - field: announced_on
+        snapshot: 9e08ccdb1f9b2fe42e4de219fc6946f36234cd90dc62855de7cf385e3641a4f5
+        quote: During the year ended March 31, 2026, the Company completed its Series 12 preferred stock financing
+        basis: disclosed
+      - field: closed_on
+        snapshot: 9e08ccdb1f9b2fe42e4de219fc6946f36234cd90dc62855de7cf385e3641a4f5
+        quote: The Series 12 Preferred Stock Financing opened in August 2024 and closed in December 2025.
+        basis: disclosed
+  - id: tae-2025-06-funding-round
+    instrument: equity
+    round_label: latest funding round (part of Series 12, inferred)
+    round_group: series-12
+    announced_on: 2025-06-02
+    amount_kind: duplicate
+    supersedes: tae-series-12-fy2025
+    amount:
+      amount: 150000000
+      currency: USD
+      qualifier: over
+    evidence:
+      - field: amount
+        snapshot: a96b385eb945f0a53f0d75a3e2a4d1aa6bdf7befaeab5a16a93244b0f010f501
+        original_url: https://tae.com/tae-technologies-raises-150-million-in-latest-funding-round/
+        quote: has raised more than $150 million in its latest funding round, exceeding the company’s initial target for the round
+        basis: disclosed
+      - field: amount
+        snapshot: 18a676ecfed03f8a0c6307fce190d746a566691b8b59c5d66ff55437694ec8b2
+        quote: said this week it raised another $150 million in a funding round that included investments from existing backers Google, Chevron, and New Enterprise Associates
+        basis: reported
+      - field: announced_on
+        snapshot: a96b385eb945f0a53f0d75a3e2a4d1aa6bdf7befaeab5a16a93244b0f010f501
+        original_url: https://tae.com/tae-technologies-raises-150-million-in-latest-funding-round/
+        quote: June 2, 2025
+        basis: disclosed
+    participants:
+      - investor: Chevron Technology Ventures
+        investor_slug: chevron-technology-ventures
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: a96b385eb945f0a53f0d75a3e2a4d1aa6bdf7befaeab5a16a93244b0f010f501
+            original_url: https://tae.com/tae-technologies-raises-150-million-in-latest-funding-round/
+            quote: Chevron Technology Ventures, Google and NEA participated in the round, among other new and existing investors
+            basis: disclosed
+      - investor: Google
+        investor_slug: google
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: a96b385eb945f0a53f0d75a3e2a4d1aa6bdf7befaeab5a16a93244b0f010f501
+            original_url: https://tae.com/tae-technologies-raises-150-million-in-latest-funding-round/
+            quote: Chevron Technology Ventures, Google and NEA participated in the round, among other new and existing investors
+            basis: disclosed
+      - investor: NEA
+        investor_slug: nea
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: a96b385eb945f0a53f0d75a3e2a4d1aa6bdf7befaeab5a16a93244b0f010f501
+            original_url: https://tae.com/tae-technologies-raises-150-million-in-latest-funding-round/
+            quote: Chevron Technology Ventures, Google and NEA participated in the round, among other new and existing investors
+            basis: disclosed
+  - id: tae-cumulative-2025-06
+    instrument: equity
+    round_label: cumulative statement
+    announced_on: 2025-06-02
+    amount_kind: cumulative
+    amount:
+      amount: 1300000000
+      currency: USD
+      qualifier: over
+    evidence:
+      - field: amount
+        snapshot: a96b385eb945f0a53f0d75a3e2a4d1aa6bdf7befaeab5a16a93244b0f010f501
+        original_url: https://tae.com/tae-technologies-raises-150-million-in-latest-funding-round/
+        quote: With more than $1.3 billion in equity capital raised since inception
+        basis: disclosed
+      - field: announced_on
+        snapshot: a96b385eb945f0a53f0d75a3e2a4d1aa6bdf7befaeab5a16a93244b0f010f501
+        original_url: https://tae.com/tae-technologies-raises-150-million-in-latest-funding-round/
+        quote: June 2, 2025
+        basis: disclosed
+  - id: tae-tmtg-convertible-note-tranche1
+    instrument: debt
+    round_label: TMTG unsecured convertible promissory note, first tranche
+    announced_on: 2025-12-18
+    closed_on: 2025-12-19
+    amount:
+      amount: 200000000
+      currency: USD
+      qualifier: exact
+    use_of_proceeds: bridge financing in connection with the TMTG merger
+    evidence:
+      - field: amount
+        snapshot: 4b8201eccb140524fbc758b14749c5606c2cfad7ac868ae59314679415329138
+        quote: TMTG has agreed to fund $200 million to TAE within 5 business days of the date of the convertible promissory note
+        basis: disclosed
+      - field: announced_on
+        snapshot: 4b8201eccb140524fbc758b14749c5606c2cfad7ac868ae59314679415329138
+        quote: unsecured convertible promissory note, dated as of December 18, 2025
+        basis: disclosed
+      - field: closed_on
+        snapshot: 9e08ccdb1f9b2fe42e4de219fc6946f36234cd90dc62855de7cf385e3641a4f5
+        quote: The first tranche of $200.0 million was funded on December 19, 2025.
+        basis: disclosed
+      - field: amount
+        snapshot: 41694fe1dab49b626c812e8f10b7cc5984ae5e334ebb1968be81f933b09090f4
+        quote: The Amended Note was issued with an initial principal amount of $200,000,000
+        basis: disclosed
+    participants:
+      - investor: Trump Media & Technology Group Corp.
+        investor_slug: tmtg
+        role: lender
+        amount:
+          amount: 200000000
+          currency: USD
+          qualifier: exact
+        evidence:
+          - field: participant
+            snapshot: 4b8201eccb140524fbc758b14749c5606c2cfad7ac868ae59314679415329138
+            quote: TMTG has agreed to fund $200 million to TAE within 5 business days of the date of the convertible promissory note
+            basis: disclosed
+  - id: tae-tmtg-convertible-note-tranche2
+    instrument: debt
+    round_label: TMTG convertible note, second tranche (optional draw, undrawn as of 2026-09-30)
+    announced_on: 2025-12-18
+    amount_kind: ceiling
+    amount:
+      amount: 100000000
+      currency: USD
+      qualifier: up_to
+    evidence:
+      - field: amount
+        snapshot: 4b8201eccb140524fbc758b14749c5606c2cfad7ac868ae59314679415329138
+        quote: upon request from TAE, up to an additional $100 million upon TMTG’s initial filing of the Registration Statement
+        basis: disclosed
+      - field: amount_kind
+        snapshot: 41694fe1dab49b626c812e8f10b7cc5984ae5e334ebb1968be81f933b09090f4
+        quote: TAE may request drawdowns under the Amended Note of up to an additional $100,000,000 (the “Second Tranche”) during the Second Tranche Draw Period
+        basis: disclosed
+      - field: announced_on
+        snapshot: 4b8201eccb140524fbc758b14749c5606c2cfad7ac868ae59314679415329138
+        quote: unsecured convertible promissory note, dated as of December 18, 2025
+        basis: disclosed
+    participants:
+      - investor: Trump Media & Technology Group Corp.
+        investor_slug: tmtg
+        role: lender
+        evidence:
+          - field: participant
+            snapshot: 4b8201eccb140524fbc758b14749c5606c2cfad7ac868ae59314679415329138
+            quote: TMTG and TAE entered into an unsecured convertible promissory note
+            basis: disclosed
+  - id: tae-tmtg-merger
+    instrument: other
+    round_label: all-stock merger into Trump Media & Technology Group (not closed)
+    announced_on: 2025-12-18
+    amount_kind: valuation_only
+    amount:
+      amount: 6000000000
+      currency: USD
+      qualifier: over
+    evidence:
+      - field: amount
+        snapshot: bf031a5674a39d1862a29789be3137caf0302429a44e6b5ecf2ef5fa7333ee66
+        quote: a privately held fusion power company, valued at more than $6 billion
+        basis: reported
+      - field: announced_on
+        snapshot: 4b8201eccb140524fbc758b14749c5606c2cfad7ac868ae59314679415329138
+        quote: on December 18, 2025, Trump Media & Technology Group Corp., a Florida corporation (“ TMTG ”), and T Media Sub, Inc.
+        basis: disclosed
+  - id: tae-cumulative-2026-09
+    instrument: equity
+    round_label: cumulative statement
+    announced_on: 2026-09-30
+    amount_kind: cumulative
+    amount:
+      amount: 1600000000
+      currency: USD
+      qualifier: over
+    evidence:
+      - field: amount
+        snapshot: 9e08ccdb1f9b2fe42e4de219fc6946f36234cd90dc62855de7cf385e3641a4f5
+        quote: TAE has raised more than $1.6 billion in capital since its inception in 1998
+        basis: disclosed
+      - field: announced_on
+        snapshot: 41694fe1dab49b626c812e8f10b7cc5984ae5e334ebb1968be81f933b09090f4
+        quote: On September 30, 2026, TMTG and TAE issued a joint press release announcing the filing of a registration statement on Form S-4
+        basis: disclosed
+agreements:
+  - id: tae-tmtg-merger-agreement
+    counterparty: Trump Media & Technology Group Corp.
+    counterparty_slug: tmtg
+    type: partnership
+    binding: definitive
+    announced_on: 2025-12-18
+    summary: >-
+      Agreement and Plan of Merger; TAE becomes wholly owned subsidiary of TMTG, pre-merger holders of each owning about 50%; closing
+      conditioned on TAE and TMTG shareholder votes, HSR and S-4 effectiveness, outside date 2026-12-18; $90M termination fee either way,
+      expense reimbursement up to $30M. S-4 filed 2026-09-30; expected close Q4 2026. Not funding.
+    evidence:
+      - field: agreement
+        snapshot: 4b8201eccb140524fbc758b14749c5606c2cfad7ac868ae59314679415329138
+        quote: TMTG expects that its pre-Merger shareholders will own approximately 50% of the combined company
+        basis: disclosed
+  - id: tae-google-services-agreement
+    counterparty: Google LLC
+    counterparty_slug: google
+    type: partnership
+    binding: definitive
+    announced_on: 2017-09-01
+    summary: >-
+      Amended and Restated Services Agreement (Project Arc 3) effective 2017-09-01, under which Google received a warrant to buy up to
+      1,000,000 Series 9 preferred shares at $65.00 (value up to $65M), vesting 2017-2018 on performance of services. Google Research collaboration
+      since 2014. Warrant amended and restated 2024-08-27; expires at the latest 2027-08-31.
+    evidence:
+      - field: agreement
+        snapshot: 9e08ccdb1f9b2fe42e4de219fc6946f36234cd90dc62855de7cf385e3641a4f5
+        quote: The warrant was issued pursuant to an Amended and Restated Services Agreement effective as of September 1, 2017 between Google and TAE
+        basis: disclosed
+      - field: agreement
+        snapshot: a96b385eb945f0a53f0d75a3e2a4d1aa6bdf7befaeab5a16a93244b0f010f501
+        original_url: https://tae.com/tae-technologies-raises-150-million-in-latest-funding-round/
+        quote: Since 2014, TAE and Google Research have worked together to accelerate fusion science
+        basis: disclosed
+  - id: tae-nifs-partnership
+    counterparty: National Institute for Fusion Science (NIFS), Japan
+    counterparty_slug: nifs-japan
+    type: partnership
+    binding: mou
+    announced_on: 2021-10-01
+    summary: >-
+      Research partnership to test hydrogen-boron (p-B11) fusion reactions in the NIFS Large Helical Device. Binding level not stated in the
+      release (mou is a placeholder); release dated "October 2021" only. No funding amount.
+    evidence:
+      - field: agreement
+        snapshot: bee73a1f7e2e040c6605d014052749a70f1b815574a4e8e5c86e87592a10ac3c
+        original_url: https://tae.com/tae-technologies-partners-with-japans-institute-for-fusion-science-nifs-for-fusion-fuel-research/
+        quote: announced a landmark partnership with Japan’s National Institute for Fusion Science (NIFS)
+        basis: disclosed

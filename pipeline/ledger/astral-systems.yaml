@@ -1,0 +1,56 @@
+company: astral-systems
+name: Astral Systems (legal entity Astral Neutronics Ltd)
+sector: fusion
+notes: >
+  ENTITY TRAP: "Astral Systems" is a trading name of ASTRAL NEUTRONICS LTD, Companies House 13376789 (inc. 5 May 2021,
+  Bristol), confirmed by the company's imprint page (snapshot fa1c198f). A different company, ASTRAL SYSTEMS LTD
+  07374982 (Haywards Heath, inc. 2010, micro-company), is unrelated; do not attach its filings. Companies House SH01
+  allotments for 13376789 (2025-05-12, 2026-04-08, 2026-04-14, 2026-06-25, 2026-07-06; probe companies-house.md)
+  are nominal capital only, not money, and are not recorded as events. Series A date: no dated release was found; the
+  event uses 2026-06-23, the date of the first company-site item describing the "latest fundraising" (Times piece,
+  paywalled); the amount comes from the 2026-07-29 company post. Treat announced_on as approximate and re-check. The
+  Times blurb says "nearly £3 million ..." (truncated, meaning unclear: not recorded). UKRI GtR shows STFC MicroNOVA
+  GBP 790,900 (2021-2024) and EPSRC GBP 9.98M (2026) but Astral appears as participant/lead org unclear: not recorded
+  as company funding. No investor amounts disclosed.
+events:
+  - id: astral-2026-series-a
+    instrument: equity
+    round_label: Series A
+    announced_on: 2026-06-23
+    amount: {amount: 23000000, currency: GBP, qualifier: exact}
+    evidence:
+      - field: amount
+        snapshot: 04943854fb2636409766394e31f7bbf93d3594ce91711e8d2284da1c270efad7
+        quote: our £23 million Series A funding round
+        basis: disclosed
+      - field: round_label
+        snapshot: 04943854fb2636409766394e31f7bbf93d3594ce91711e8d2284da1c270efad7
+        quote: our £23 million Series A funding round
+        basis: disclosed
+      - field: announced_on
+        snapshot: 4062960633ea008f16b677d00b76f1e38b5e11b235da4988c3dd107881711343
+        quote: Company News · June 23, 2026 How a nuclear fusion reactor that fits on a table can fight cancer
+        basis: disclosed
+    participants:
+      - investor: Mercia Ventures
+        investor_slug: mercia-ventures
+        role: lead
+        evidence:
+          - field: participant
+            snapshot: 4062960633ea008f16b677d00b76f1e38b5e11b235da4988c3dd107881711343
+            quote: Its latest fundraising is led by Mercia Ventures
+            basis: reported
+      - investor: Daphni
+        investor_slug: daphni
+        role: participant
+        evidence:
+          - field: participant
+            snapshot: 4062960633ea008f16b677d00b76f1e38b5e11b235da4988c3dd107881711343
+            quote: a handful of other investors, including a French firm, Daphni
+            basis: reported
+verification:
+  status: verified
+  by: verifier-agent (Claude Opus 5.5), 2026-10-05
+  'on': '2026-10-05'
+  note: 0 corrections. GBP23M Series A (company post) and Mercia lead / Daphni participant confirmed; announced_on 2026-06-23
+    is approximate (first company item mentioning the fundraising). Entity trap noted correctly.

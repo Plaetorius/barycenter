@@ -1,0 +1,33 @@
+company: lis-technologies
+name: LIS Technologies Inc.
+sector: fission
+notes: 'SUPPLEMENT (not in pipeline/ledger/ to avoid a duplicate company slug): DOE awards found in USAspending that the existing
+  ledger pipeline/ledger/lis-technologies.yaml did not list by FAIN at the time of writing. Some amounts may already be evidenced
+  there from another source (check before merging; do not double count). Amount = USAspending ''Award Amount'' (cumulative
+  federal obligation), dates = Base Obligation Date else Start Date; one page of up to 50 rows per award-type group, DOE as
+  awarding agency, 2007-10-01..2026-09-30; zero/negative awards omitted.'
+events: []
+agreements:
+- id: lis-technologies-89243225fne400182
+  counterparty: U.S. Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: '2025-04-11'
+  summary: 'DOE contract 89243225FNE400182: NEW TASK ORDER AWARD UNDER THE LOW-ENRICHED URANIUM (LEU) - ENRICHMENT ACQUISITION
+    IDIQ FOR LIS TECHNOLOGIES INC FOR THE DEVELOPMENT OF A REPORT FOR THE DEPLOYMENT OF NEW ENRICHMENT CAPACITY AND POSSI'
+  value:
+    amount: 500000.0
+    currency: USD
+    qualifier: exact
+    usd: 500000.0
+  evidence:
+  - field: amount
+    snapshot: b01214a9aa51706cb8308980be57d1f10076249f02b6a760930a58a4c0280405
+    quote: '"Award ID": "89243225FNE400182", "Recipient Name": "LIS TECHNOLOGIES INC", "Recipient UEI": "PDJTWAXZCHH3", "Award
+      Amount": 500000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: b01214a9aa51706cb8308980be57d1f10076249f02b6a760930a58a4c0280405
+    quote: '"Base Obligation Date": "2025-04-11", "generated_internal_id": "CONT_AWD_89243225FNE400182_8900_89243225DNE000030_8900"'
+    basis: disclosed

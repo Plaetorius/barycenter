@@ -1,0 +1,15 @@
+id: wikidata
+name: Wikidata (SPARQL) and ROR
+owner: Wikimedia Foundation; Research Organization Registry
+access: api
+endpoint: "https://query.wikidata.org/sparql ; https://api.ror.org/v2/organizations?query="
+auth: none (Wikidata requires identifying User-Agent; ROR none)
+rate_limit: WDQS 60 s query timeout, keep to 1 concurrent query; ROR 2000 req/5 min (vendor doc, not verified here)
+licence: CC0 (Wikidata, ROR)
+robots: "query.wikidata.org robots.txt Disallow: /sparql for all agents (crawler rule on a public documented API). Probe used --no-robots; owner decision pending."
+yields: [QID, HQ city (+coords via HQ item), founded year, website, OpenCorporates id, ROR id, LEI, Commons logo filename]
+identifiers: [qid, ror, lei, opencorporates_id, website]
+cadence: monthly refresh
+tier: A
+known_gaps: "Missing: Proxima, X-energy; stub Radiant (Q141353752); duplicate Pacific Fusion item; HQ values stale (Helion, Zap, Oklo); founded year placeholders; no direct coordinates on company items."
+probe: docs/survey/probes/wikidata.md

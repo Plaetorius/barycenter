@@ -1,0 +1,437 @@
+company: kyoto-fusioneering
+name: Kyoto Fusioneering
+sector: fusion
+notes: 'Source: company English newsroom (kyotofusioneering.com/en/news). JPY amounts as stated; no FX applied. Series D is a FIRST close (more may follow). Series D release states cumulative equity JPY
+  32.98bn (also ''over JPY 32 billion''), not modelled as a round. Series C release (2025-09) states Series C Extension cumulative JPY 4.0bn and total cumulative equity JPY 16.2bn; 2024-07 release states
+  Series C total 13.1bn and 14.8bn since 2019. Earlier Series C rounds and the 1st extension close (announced before 2024-05) and seed/A/B rounds were not located (news listing walked back to May 2024 only),
+  so history is incomplete. Series C ext 2025-09 headline JPY 9.3bn = 1.45bn equity + 5.3bn debt per breakdown plus the release''s own rounding (''combined 9.4bn''); recorded as the two components. FFC
+  investment is by General Atomics into the JV Fusion Fuel Cycles Inc. (KF + CNL), not into KF itself; amount reported in KF''s English post, no quote date in-body (announced_on = post date 2025-08-29).
+  KaLiAS BMBF grant amount undisclosed; its announced_on is the post date. NEDO grant amount from NEDO English company table (page last updated 2025-05-22); announced_on is the KF selection release date.
+  Series D list of investors is ''select'', two further new investors and one lender are unnamed. Participant slug ''jic'' is for JIC Venture Growth Investments (JIC subsidiary; roll-up to be resolved later).
+  INFUSE awards (2023, 2024) mentioned in KF releases without amounts; not recorded.'
+events:
+- id: kf-series-d-first-close-equity-2026-08
+  instrument: equity
+  round_label: Series D (first close)
+  announced_on: '2026-08-24'
+  amount:
+    amount: 16720000000
+    currency: JPY
+    qualifier: exact
+  use_of_proceeds: UNITY Program, gyrotron mass-production capacity, engineering and commercial operations
+  evidence:
+  - field: amount
+    snapshot: dd1f326cf6a7444b8c2773f53b9191c136e8ff8f6e700963b7ad1b444f89ef63
+    quote: securing JPY 16.72 billion (approx. USD 105 million) in new equity
+    basis: disclosed
+  - field: announced_on
+    snapshot: dd1f326cf6a7444b8c2773f53b9191c136e8ff8f6e700963b7ad1b444f89ef63
+    quote: TOKYO — 24 August 2026 — Kyoto Fusioneering (KF) today announced the first close of its Series D round
+    basis: disclosed
+  - field: round_label
+    snapshot: dd1f326cf6a7444b8c2773f53b9191c136e8ff8f6e700963b7ad1b444f89ef63
+    quote: first close of its Series D round
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: dd1f326cf6a7444b8c2773f53b9191c136e8ff8f6e700963b7ad1b444f89ef63
+    quote: Proceeds will fund the UNITY™ Program, gyrotron mass-production capacity
+    basis: disclosed
+  participants:
+  - investor: IMM Japan Korea-Japan Fusion Fund Investment Limited Partnership
+    investor_slug: imm-investment-japan
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: dd1f326cf6a7444b8c2773f53b9191c136e8ff8f6e700963b7ad1b444f89ef63
+      quote: 'IMM Japan Korea-Japan Fusion Fund Investment Limited Partnership (General Partner: IMM Investment Japan Co., Ltd.) SiteGround Capital Ltd.'
+      basis: disclosed
+  - investor: SiteGround Capital Ltd.
+    investor_slug: siteground
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: dd1f326cf6a7444b8c2773f53b9191c136e8ff8f6e700963b7ad1b444f89ef63
+      quote: SiteGround Capital Ltd. GX Acceleration Agency
+      basis: disclosed
+  - investor: GX Acceleration Agency (Organization for the Promotion of Transition to a Decarbonized Growth-Oriented Economic Structure)
+    investor_slug: gx-acceleration-agency
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: dd1f326cf6a7444b8c2773f53b9191c136e8ff8f6e700963b7ad1b444f89ef63
+      quote: GX Acceleration Agency (Organization for the Promotion of Transition to a Decarbonized Growth-Oriented Economic Structure) Development Bank of Japan Inc.
+      basis: disclosed
+  - investor: Development Bank of Japan Inc.
+    investor_slug: development-bank-of-japan
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: dd1f326cf6a7444b8c2773f53b9191c136e8ff8f6e700963b7ad1b444f89ef63
+      quote: Development Bank of Japan Inc. East Japan Railway Company (JR East)
+      basis: disclosed
+  - investor: East Japan Railway Company (JR East)
+    investor_slug: jr-east
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: dd1f326cf6a7444b8c2773f53b9191c136e8ff8f6e700963b7ad1b444f89ef63
+      quote: East Japan Railway Company (JR East) Minerva Growth Partners, Inc.
+      basis: disclosed
+  - investor: Minerva Growth Partners, Inc.
+    investor_slug: minerva-growth-partners
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: dd1f326cf6a7444b8c2773f53b9191c136e8ff8f6e700963b7ad1b444f89ef63
+      quote: Minerva Growth Partners, Inc. *List does not include two additional new investors
+      basis: disclosed
+  - investor: SMBC Venture Capital Co., Ltd.
+    investor_slug: smbc-venture-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: dd1f326cf6a7444b8c2773f53b9191c136e8ff8f6e700963b7ad1b444f89ef63
+      quote: Existing Equity Investors, Follow-on Investment SMBC Venture Capital Co., Ltd.
+      basis: disclosed
+  - investor: Kyoto Capital Partners Co., Ltd.
+    investor_slug: kyoto-capital-partners
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: dd1f326cf6a7444b8c2773f53b9191c136e8ff8f6e700963b7ad1b444f89ef63
+      quote: Kyoto Capital Partners Co., Ltd. JIC Venture Growth Investments Co., Ltd.
+      basis: disclosed
+  - investor: JIC Venture Growth Investments Co., Ltd.
+    investor_slug: jic
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: dd1f326cf6a7444b8c2773f53b9191c136e8ff8f6e700963b7ad1b444f89ef63
+      quote: JIC Venture Growth Investments Co., Ltd. Daiwa Corporate Investment Co., Ltd.
+      basis: disclosed
+  - investor: Daiwa Corporate Investment Co., Ltd.
+    investor_slug: daiwa-corporate-investment
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: dd1f326cf6a7444b8c2773f53b9191c136e8ff8f6e700963b7ad1b444f89ef63
+      quote: Daiwa Corporate Investment Co., Ltd. DBJ Capital Co., Ltd.
+      basis: disclosed
+  - investor: DBJ Capital Co., Ltd.
+    investor_slug: dbj-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: dd1f326cf6a7444b8c2773f53b9191c136e8ff8f6e700963b7ad1b444f89ef63
+      quote: DBJ Capital Co., Ltd. MUFG Bank, Ltd.
+      basis: disclosed
+  - investor: MUFG Bank, Ltd.
+    investor_slug: mufg-bank
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: dd1f326cf6a7444b8c2773f53b9191c136e8ff8f6e700963b7ad1b444f89ef63
+      quote: DBJ Capital Co., Ltd. MUFG Bank, Ltd. ■ Select* Debt Financing
+      basis: disclosed
+- id: kf-series-d-credit-facilities-2026-08
+  instrument: debt
+  round_label: 'Series D package: credit and loan facilities'
+  announced_on: '2026-08-24'
+  amount:
+    amount: 9000000000
+    currency: JPY
+    qualifier: up_to
+  amount_kind: ceiling
+  evidence:
+  - field: amount
+    snapshot: dd1f326cf6a7444b8c2773f53b9191c136e8ff8f6e700963b7ad1b444f89ef63
+    quote: access to JPY 9.0 billion (approx. USD 57 million) in credit and loan facilities
+    basis: disclosed
+  - field: announced_on
+    snapshot: dd1f326cf6a7444b8c2773f53b9191c136e8ff8f6e700963b7ad1b444f89ef63
+    quote: TOKYO — 24 August 2026 — Kyoto Fusioneering (KF) today announced the first close of its Series D round
+    basis: disclosed
+  participants:
+  - investor: Sumitomo Mitsui Banking Corporation
+    investor_slug: sumitomo-mitsui-banking-corporation
+    role: lender
+    evidence:
+    - field: participant
+      snapshot: dd1f326cf6a7444b8c2773f53b9191c136e8ff8f6e700963b7ad1b444f89ef63
+      quote: Sumitomo Mitsui Banking Corporation The Kyoto Bank, Ltd.
+      basis: disclosed
+  - investor: The Kyoto Bank, Ltd.
+    investor_slug: bank-of-kyoto
+    role: lender
+    evidence:
+    - field: participant
+      snapshot: dd1f326cf6a7444b8c2773f53b9191c136e8ff8f6e700963b7ad1b444f89ef63
+      quote: The Kyoto Bank, Ltd. Sumitomo Mitsui Trust Bank, Limited
+      basis: disclosed
+  - investor: Sumitomo Mitsui Trust Bank, Limited
+    investor_slug: sumitomo-mitsui-trust-bank
+    role: lender
+    evidence:
+    - field: participant
+      snapshot: dd1f326cf6a7444b8c2773f53b9191c136e8ff8f6e700963b7ad1b444f89ef63
+      quote: Sumitomo Mitsui Trust Bank, Limited Mizuho Bank, Ltd.
+      basis: disclosed
+  - investor: Mizuho Bank, Ltd.
+    investor_slug: mizuho
+    role: lender
+    evidence:
+    - field: participant
+      snapshot: dd1f326cf6a7444b8c2773f53b9191c136e8ff8f6e700963b7ad1b444f89ef63
+      quote: Mizuho Bank, Ltd. * List does not include one additional institution
+      basis: disclosed
+- id: kf-series-c-ext-final-close-equity-2025-09
+  instrument: equity
+  round_label: Series C Extension (final close, new equity)
+  announced_on: '2025-09-09'
+  amount:
+    amount: 1450000000
+    currency: JPY
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: 076eadd127e77e298c522ae4ff55e67957c2ce9d31a72fc8015dcad5321b7cdb
+    quote: This latest round includes ¥1.45 billion in equity financing, with participation from four new investors
+    basis: disclosed
+  - field: announced_on
+    snapshot: 076eadd127e77e298c522ae4ff55e67957c2ce9d31a72fc8015dcad5321b7cdb
+    quote: today announced the successful completion of new funding totaling ¥9.3 billion through equity and debt financing
+    basis: disclosed
+  - field: round_label
+    snapshot: 076eadd127e77e298c522ae4ff55e67957c2ce9d31a72fc8015dcad5321b7cdb
+    quote: KF finalized its Series C extension round
+    basis: disclosed
+  participants:
+  - investor: 31VENTURES - Global Brain - Growth I GK (Mitsui Fudosan / Global Brain)
+    investor_slug: 31ventures
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 076eadd127e77e298c522ae4ff55e67957c2ce9d31a72fc8015dcad5321b7cdb
+      quote: Series C extension round, led by 31VENTURES – Global Brain – Growth I GK
+      basis: disclosed
+  - investor: 'Kyocera Venture Innovation Fund-I (KVIF-I Limited Partnership, GP: Global Brain Corporation)'
+    investor_slug: kyocera-venture-innovation-fund
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 076eadd127e77e298c522ae4ff55e67957c2ce9d31a72fc8015dcad5321b7cdb
+      quote: 'notably Kyocera Venture Innovation Fund-I (KVIF-I Limited Partnership, General Partner: Global Brain Corporation)'
+      basis: disclosed
+  - investor: JERA Co, Inc
+    investor_slug: jera
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 076eadd127e77e298c522ae4ff55e67957c2ce9d31a72fc8015dcad5321b7cdb
+      quote: JERA Co, Inc, and Sumitomo Mitsui Trust Bank, Limited
+      basis: disclosed
+  - investor: Sumitomo Mitsui Trust Bank, Limited
+    investor_slug: sumitomo-mitsui-trust-bank
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 076eadd127e77e298c522ae4ff55e67957c2ce9d31a72fc8015dcad5321b7cdb
+      quote: JERA Co, Inc, and Sumitomo Mitsui Trust Bank, Limited
+      basis: disclosed
+- id: kf-series-c-ext-debt-2025-09
+  instrument: debt
+  round_label: 'Series C Extension package: debt financing and credit facilities'
+  announced_on: '2025-09-09'
+  amount:
+    amount: 5300000000
+    currency: JPY
+    qualifier: up_to
+  amount_kind: ceiling
+  evidence:
+  - field: amount
+    snapshot: 076eadd127e77e298c522ae4ff55e67957c2ce9d31a72fc8015dcad5321b7cdb
+    quote: KF also secured ¥5.3 billion in debt financing and credit facilities
+    basis: disclosed
+  - field: announced_on
+    snapshot: 076eadd127e77e298c522ae4ff55e67957c2ce9d31a72fc8015dcad5321b7cdb
+    quote: today announced the successful completion of new funding totaling ¥9.3 billion through equity and debt financing
+    basis: disclosed
+  participants:
+  - investor: Japan Finance Corporation
+    investor_slug: japan-finance-corporation
+    role: lender
+    evidence:
+    - field: participant
+      snapshot: 076eadd127e77e298c522ae4ff55e67957c2ce9d31a72fc8015dcad5321b7cdb
+      quote: from Japan Finance Corporation, Japan Bank for International Cooperation (JBIC), MUFG Bank, Ltd
+      basis: disclosed
+  - investor: Japan Bank for International Cooperation (JBIC)
+    investor_slug: jbic
+    role: lender
+    evidence:
+    - field: participant
+      snapshot: 076eadd127e77e298c522ae4ff55e67957c2ce9d31a72fc8015dcad5321b7cdb
+      quote: Japan Bank for International Cooperation (JBIC), MUFG Bank, Ltd
+      basis: disclosed
+  - investor: MUFG Bank, Ltd
+    investor_slug: mufg-bank
+    role: lender
+    evidence:
+    - field: participant
+      snapshot: 076eadd127e77e298c522ae4ff55e67957c2ce9d31a72fc8015dcad5321b7cdb
+      quote: MUFG Bank, Ltd, Sumitomo Mitsui Banking Corporation, and The Bank of Kyoto, Ltd.
+      basis: disclosed
+  - investor: Sumitomo Mitsui Banking Corporation
+    investor_slug: sumitomo-mitsui-banking-corporation
+    role: lender
+    evidence:
+    - field: participant
+      snapshot: 076eadd127e77e298c522ae4ff55e67957c2ce9d31a72fc8015dcad5321b7cdb
+      quote: Sumitomo Mitsui Banking Corporation, and The Bank of Kyoto, Ltd.
+      basis: disclosed
+  - investor: The Bank of Kyoto, Ltd.
+    investor_slug: bank-of-kyoto
+    role: lender
+    evidence:
+    - field: participant
+      snapshot: 076eadd127e77e298c522ae4ff55e67957c2ce9d31a72fc8015dcad5321b7cdb
+      quote: and The Bank of Kyoto, Ltd.
+      basis: disclosed
+- id: kf-series-c-ext-2nd-close-2024-07
+  instrument: equity
+  round_label: Series C Extension (2nd close)
+  announced_on: '2024-07-23'
+  amount:
+    amount: 1070000000
+    currency: JPY
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: 5f3cd593701c1acfc35630c5d7fc2f078399855409d2d2f3399eac55023cd46c
+    quote: has secured a total of 1.07 billion yen from four new investors in a 2nd close on its Series C extension round
+    basis: disclosed
+  - field: announced_on
+    snapshot: 5f3cd593701c1acfc35630c5d7fc2f078399855409d2d2f3399eac55023cd46c
+    quote: Kyoto Fusioneering Closes 2nd Round of 1.1 Billion Yen Series C Extension Led by In-Q-Tel (IQT), Marubeni and Nichicon
+    basis: disclosed
+  - field: round_label
+    snapshot: 5f3cd593701c1acfc35630c5d7fc2f078399855409d2d2f3399eac55023cd46c
+    quote: '2nd close on Series C (Extension) Funding: 1.07 billion yen'
+    basis: disclosed
+  use_of_proceeds: R&D incl. UNITY-1 and UNITY-2, global business development and recruiting, working capital
+  participants:
+  - investor: In-Q-Tel (IQT)
+    investor_slug: in-q-tel
+    role: lead
+    evidence:
+    - field: participant_role
+      snapshot: 5f3cd593701c1acfc35630c5d7fc2f078399855409d2d2f3399eac55023cd46c
+      quote: Closes 2nd Round of 1.1 Billion Yen Series C Extension Led by In-Q-Tel (IQT), Marubeni and Nichicon
+      basis: disclosed
+    - field: participant
+      snapshot: 5f3cd593701c1acfc35630c5d7fc2f078399855409d2d2f3399eac55023cd46c
+      quote: 'New Equity Subscribers include (in alphabetical order): In-Q-Tel (IQT） Marubeni Corporation'
+      basis: disclosed
+  - investor: Marubeni Corporation
+    investor_slug: marubeni
+    role: lead
+    evidence:
+    - field: participant_role
+      snapshot: 5f3cd593701c1acfc35630c5d7fc2f078399855409d2d2f3399eac55023cd46c
+      quote: Closes 2nd Round of 1.1 Billion Yen Series C Extension Led by In-Q-Tel (IQT), Marubeni and Nichicon
+      basis: disclosed
+    - field: participant
+      snapshot: 5f3cd593701c1acfc35630c5d7fc2f078399855409d2d2f3399eac55023cd46c
+      quote: In-Q-Tel (IQT） Marubeni Corporation NICHICON CORPORATION
+      basis: disclosed
+  - investor: NICHICON CORPORATION
+    investor_slug: nichicon
+    role: lead
+    evidence:
+    - field: participant_role
+      snapshot: 5f3cd593701c1acfc35630c5d7fc2f078399855409d2d2f3399eac55023cd46c
+      quote: Closes 2nd Round of 1.1 Billion Yen Series C Extension Led by In-Q-Tel (IQT), Marubeni and Nichicon
+      basis: disclosed
+    - field: participant
+      snapshot: 5f3cd593701c1acfc35630c5d7fc2f078399855409d2d2f3399eac55023cd46c
+      quote: Marubeni Corporation NICHICON CORPORATION Purpose of the Funding
+      basis: disclosed
+- id: kf-nedo-gx-deeptech-sts-2024
+  instrument: grant
+  round_label: NEDO Deep-Tech Startups Support Program (GX), STS phase
+  announced_on: '2024-09-12'
+  program: NEDO Deep-Tech Startups Support Program in the Green Transformation field (GX)
+  amount:
+    amount: 499000000
+    currency: JPY
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: 711fea036e91d64d164515a8a2fcffdd377f457f0a95d54a876400cbe4cab786
+    quote: Research Period Research Grant Amount STS Energy & Infrastructure 2024～2026FY JPY 499 million
+    basis: disclosed
+  - field: announced_on
+    snapshot: f6a4cb94e7fc2403d41426895d44276adda4b7997deb89b250b4a157fa7d97b8
+    quote: Kyoto Fusioneering Selected by NEDO for its “Deep-Tech Startups Support Program in the Green Transformation field (GX)”
+    basis: disclosed
+  participants:
+  - investor: NEDO
+    investor_slug: nedo
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 711fea036e91d64d164515a8a2fcffdd377f457f0a95d54a876400cbe4cab786
+      quote: Research Period Research Grant Amount STS Energy & Infrastructure 2024～2026FY JPY 499 million
+      basis: disclosed
+- id: kf-bmbf-syrvbrett-2024-12
+  instrument: grant
+  round_label: 'BMBF Fusion 2040: SyrVBreTT (Kyoto Fusioneering Europe GmbH)'
+  announced_on: '2024-12-18'
+  program: BMBF Funding Program Fusion 2040
+  amount:
+    amount: 2500000
+    currency: EUR
+    qualifier: over
+  evidence:
+  - field: amount
+    snapshot: 092b497c11c7dfeec23807879bf3e2a206d2abe5e33819d3b820b0c99cdb8550
+    quote: received a research grant over more than 2.5 million Euros from the German Federal Ministry of Education and Research (BMBF)
+    basis: disclosed
+  - field: announced_on
+    snapshot: 092b497c11c7dfeec23807879bf3e2a206d2abe5e33819d3b820b0c99cdb8550
+    quote: Kyoto Fusioneering Europe Secures Another Landmark Grant from BMBF
+    basis: disclosed
+  participants:
+  - investor: German Federal Ministry of Education and Research (BMBF)
+    investor_slug: bmbf
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 092b497c11c7dfeec23807879bf3e2a206d2abe5e33819d3b820b0c99cdb8550
+      quote: from the German Federal Ministry of Education and Research (BMBF) as part of the German federal fusion development program
+      basis: disclosed
+- id: kf-bmbf-kalias-2024-12
+  instrument: grant
+  round_label: 'BMBF Fusion 2040: KaLiAS (Kyoto Fusioneering Europe GmbH)'
+  announced_on: '2024-12-04'
+  program: BMBF Funding Program Fusion 2040
+  evidence:
+  - field: announced_on
+    snapshot: 7be69701ef5b479683586f6c8ae8db6356ba48c67164dd94280b2773effc22c6
+    quote: Kyoto Fusioneering EU Secures Major Research Grant from BMBF
+    basis: disclosed
+  participants:
+  - investor: German Federal Ministry of Education and Research (BMBF)
+    investor_slug: bmbf
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 7be69701ef5b479683586f6c8ae8db6356ba48c67164dd94280b2773effc22c6
+      quote: has received a research grant from the German Federal Ministry of Education and Research (BMBF)
+      basis: disclosed
+agreements: []
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  "on": 2026-10-05
+  note: "6 corrections. (1) Removed kf-ffc-general-atomics-2025-08: the USD 20M strategic investment from General Atomics went to Fusion Fuel Cycles Inc., the KF and Canadian Nuclear Laboratories joint venture, not to Kyoto Fusioneering (snapshot 0dd110e4..., 2025-08-29). If needed, record it under FFC or as a KF partnership. (2) kf-series-d-credit-facilities-2026-08 (JPY 9.0bn, 'access to ... credit and loan facilities') is now ceiling/up_to. (3) kf-series-c-ext-debt-2025-09 (JPY 5.3bn 'debt financing and credit facilities', 'including credit facilities') is now ceiling/up_to, because the drawn part is not stated. (4-6) In-Q-Tel, Marubeni and Nichicon changed from participant to lead for the 2nd close of the Series C extension, per the release title 'Led by In-Q-Tel (IQT), Marubeni and Nichicon'. Not confirmed: the release pages carry no in-body date, so announced_on comes from the newsroom URL path (/news/YYYY/MM/DD/). The 2nd close names 3 of the '4 new investors'. Gaps: seed/A/B, Series C and the 1st close of the extension (about JPY 1.5bn implied by the 4.0bn extension total); INFUSE awards."

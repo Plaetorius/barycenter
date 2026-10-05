@@ -1,0 +1,270 @@
+company: avalanche-energy
+name: Avalanche Energy Designs, Inc.
+sector: fusion
+notes: 'Dates for the 2021 seed (June 2021), the NSF grant (June 2023) and Series A (April 2023) are month-precision only on investor pages hosted by the company; day set to the 1st. CONFLICTS: seed is $5.13M led by Prime Impact
+  Fund (Prime page) vs ''$5 million seed round in 2021, led by Azolla Ventures along with Congruent and Lowercarbon'' (Congruent page); both leads recorded, amount follows the more precise figure. Form
+  Ds: 2021-06-17 (accession 0001867963-21-000002, filed under a different CIK, not archived); 2022-08-26 (first sale 2022-08-12, offering $40,000,004, sold $23,299,986; snapshot d139e57b) - the Series A
+  was announced as $40M in April 2023, the Form D shows a tranche sold in Aug 2022, so dates/amount of Series A are inconsistent and the $40M is the press figure; 2026-01-07 D (first sale 2025-12-23, offering
+  $20M, sold $14,860,980) and D/A 2026-01-27 (sold $29,218,480; snapshots 495e6747, 8a76b39e) match the $29M round of 2026-02-03 (not added as separate events). AFWERX SBIR Phase II $1.25M (company release)
+  omitted: no reliable announcement date (page metadata says 2026-08-05, news ordering suggests Feb-Apr 2026). DARPA Rads to Watts $5.2M is a contract, recorded as agreement. FusionWERX WA grant $10M required
+  a private match, which the Feb 2026 round provides. Census says 2026-02-03 Bloomberg article (snapshot b9ed9b68) corroborates $29M but body not readable.'
+events:
+- id: avalanche-seed-2021
+  instrument: equity
+  round_label: Seed
+  announced_on: '2021-06-01'
+  amount:
+    amount: 5130000
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: 6fb42183e5300ec937d79cae53ec5430c88eb49fbeab3b5b7ab91333a577006f
+    quote: In June 2021, Prime Impact Fund led a $5.13 million seed funding round for Avalanche Energy
+    basis: reported
+  - field: amount
+    snapshot: 6fb42183e5300ec937d79cae53ec5430c88eb49fbeab3b5b7ab91333a577006f
+    quote: led a $5.13 million seed funding round for Avalanche Energy
+    basis: reported
+  - field: round_label
+    snapshot: 6fb42183e5300ec937d79cae53ec5430c88eb49fbeab3b5b7ab91333a577006f
+    quote: $5.13 million seed funding round
+    basis: reported
+  participants:
+  - investor: Prime Impact Fund
+    investor_slug: prime-impact-fund
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 6fb42183e5300ec937d79cae53ec5430c88eb49fbeab3b5b7ab91333a577006f
+      quote: In June 2021, Prime Impact Fund led a $5.13 million seed funding round for Avalanche Energy
+      basis: reported
+  - investor: Azolla Ventures
+    investor_slug: azolla-ventures
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: f659bf95fb60ab4dd9094b6d8870a000f6b175564e3787330151fe5c6008e258
+      quote: led by Azolla Ventures along with Congruent Ventures and Lowercarbon Capital
+      basis: reported
+  - investor: Congruent Ventures
+    investor_slug: congruent-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f659bf95fb60ab4dd9094b6d8870a000f6b175564e3787330151fe5c6008e258
+      quote: led by Azolla Ventures along with Congruent Ventures and Lowercarbon Capital
+      basis: reported
+  - investor: Lowercarbon Capital
+    investor_slug: lowercarbon-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: f659bf95fb60ab4dd9094b6d8870a000f6b175564e3787330151fe5c6008e258
+      quote: led by Azolla Ventures along with Congruent Ventures and Lowercarbon Capital
+      basis: reported
+- id: avalanche-nsf-grant-2023
+  instrument: grant
+  round_label: NSF
+  announced_on: '2023-06-01'
+  amount:
+    amount: 275000
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: 0897c48ee85ba2de28f94416ccd6acc8b0a29bf7a87cfc5587c88cb739353381
+    quote: In June 2023, NSF awarded Avalanche Energy a $275,000 grant
+    basis: reported
+  - field: amount
+    snapshot: 0897c48ee85ba2de28f94416ccd6acc8b0a29bf7a87cfc5587c88cb739353381
+    quote: NSF awarded Avalanche Energy a $275,000 grant to investigate the efficiency of their Orbitron fusion device
+    basis: reported
+  participants:
+  - investor: NSF
+    investor_slug: nsf
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 0897c48ee85ba2de28f94416ccd6acc8b0a29bf7a87cfc5587c88cb739353381
+      quote: In June 2023, NSF awarded Avalanche Energy a $275,000 grant
+      basis: reported
+- id: avalanche-series-a-2023
+  instrument: equity
+  round_label: Series A
+  announced_on: '2023-04-01'
+  amount:
+    amount: 40000000
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: 59a2c3d2614ebe16d6008655e0810c3ee643ba638cce89c137b7f2f3710f8702
+    quote: In April 2023, Lowercarbon Capital led a $40 million Series A funding round for Avalanche Energy
+    basis: reported
+  - field: amount
+    snapshot: 59a2c3d2614ebe16d6008655e0810c3ee643ba638cce89c137b7f2f3710f8702
+    quote: led a $40 million Series A funding round for Avalanche Energy
+    basis: reported
+  - field: round_label
+    snapshot: 59a2c3d2614ebe16d6008655e0810c3ee643ba638cce89c137b7f2f3710f8702
+    quote: $40 million Series A funding round
+    basis: reported
+  participants:
+  - investor: Lowercarbon Capital
+    investor_slug: lowercarbon-capital
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 59a2c3d2614ebe16d6008655e0810c3ee643ba638cce89c137b7f2f3710f8702
+      quote: In April 2023, Lowercarbon Capital led a $40 million Series A funding round for Avalanche Energy
+      basis: reported
+  - investor: Toyota Ventures
+    investor_slug: toyota-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 73fc3c8fc80056be1bf8849623e13c3ef41ccd1532237448a8060cb369ae3244
+      quote: In April 2023, Toyota Ventures participated in a $40 million Series A funding round for Avalanche Energy
+      basis: reported
+- id: avalanche-wa-green-jobs-2025
+  instrument: grant
+  round_label: Green Jobs Grant
+  program: Washington State Green Jobs Grant Program
+  announced_on: '2025-07-23'
+  amount:
+    amount: 10000000
+    currency: USD
+    qualifier: exact
+  use_of_proceeds: Development of the FusionWERX test facility in Richland, WA
+  evidence:
+  - field: announced_on
+    snapshot: 4fd6b877696688574872ccd009901642ff23c5d3f5230281311caeeea605d49b
+    quote: Seattle, WA – July 23, 2025
+    basis: disclosed
+  - field: amount
+    snapshot: 4fd6b877696688574872ccd009901642ff23c5d3f5230281311caeeea605d49b
+    quote: awarded $10 million through the Washington State Department of Commerce Green Jobs Grant Program
+    basis: disclosed
+  participants:
+  - investor: Washington State Department of Commerce
+    investor_slug: washington-state-department-of-commerce
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 4fd6b877696688574872ccd009901642ff23c5d3f5230281311caeeea605d49b
+      quote: awarded $10 million through the Washington State Department of Commerce Green Jobs Grant Program
+      basis: disclosed
+- id: avalanche-2026-raise
+  instrument: equity
+  round_label: null
+  announced_on: '2026-02-03'
+  amount:
+    amount: 29000000
+    currency: USD
+    qualifier: exact
+  use_of_proceeds: Scale FusionWERX, build the team, order long-lead equipment (superconducting magnets), next-generation devices
+  evidence:
+  - field: announced_on
+    snapshot: a530725cf0cedfc93655accede120e1d868ae3f45f552780a0e86de5627a1998
+    quote: SEATTLE, Feb. 3, 2026
+    basis: disclosed
+  - field: amount
+    snapshot: a530725cf0cedfc93655accede120e1d868ae3f45f552780a0e86de5627a1998
+    quote: today announced $29 million in new funding led by RA Capital Management
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: a530725cf0cedfc93655accede120e1d868ae3f45f552780a0e86de5627a1998
+    quote: The funding will primarily be deployed to scale FusionWERX
+    basis: disclosed
+  participants:
+  - investor: RA Capital Management
+    investor_slug: ra-capital-management
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: a530725cf0cedfc93655accede120e1d868ae3f45f552780a0e86de5627a1998
+      quote: today announced $29 million in new funding led by RA Capital Management
+      basis: disclosed
+  - investor: 8090 Industries
+    investor_slug: 8090-industries
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: a530725cf0cedfc93655accede120e1d868ae3f45f552780a0e86de5627a1998
+      quote: New investors include 8090 Industries, Overlay Capital, and others, with full participation from existing investors Congruent Ventures, Founders Fund, Lowercarbon Capital, and Toyota Ventures
+      basis: disclosed
+  - investor: Overlay Capital
+    investor_slug: overlay-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: a530725cf0cedfc93655accede120e1d868ae3f45f552780a0e86de5627a1998
+      quote: New investors include 8090 Industries, Overlay Capital, and others, with full participation from existing investors Congruent Ventures, Founders Fund, Lowercarbon Capital, and Toyota Ventures
+      basis: disclosed
+  - investor: Congruent Ventures
+    investor_slug: congruent-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: a530725cf0cedfc93655accede120e1d868ae3f45f552780a0e86de5627a1998
+      quote: New investors include 8090 Industries, Overlay Capital, and others, with full participation from existing investors Congruent Ventures, Founders Fund, Lowercarbon Capital, and Toyota Ventures
+      basis: disclosed
+  - investor: Founders Fund
+    investor_slug: founders-fund
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: a530725cf0cedfc93655accede120e1d868ae3f45f552780a0e86de5627a1998
+      quote: New investors include 8090 Industries, Overlay Capital, and others, with full participation from existing investors Congruent Ventures, Founders Fund, Lowercarbon Capital, and Toyota Ventures
+      basis: disclosed
+  - investor: Lowercarbon Capital
+    investor_slug: lowercarbon-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: a530725cf0cedfc93655accede120e1d868ae3f45f552780a0e86de5627a1998
+      quote: New investors include 8090 Industries, Overlay Capital, and others, with full participation from existing investors Congruent Ventures, Founders Fund, Lowercarbon Capital, and Toyota Ventures
+      basis: disclosed
+  - investor: Toyota Ventures
+    investor_slug: toyota-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: a530725cf0cedfc93655accede120e1d868ae3f45f552780a0e86de5627a1998
+      quote: New investors include 8090 Industries, Overlay Capital, and others, with full participation from existing investors Congruent Ventures, Founders Fund, Lowercarbon Capital, and Toyota Ventures
+      basis: disclosed
+agreements:
+- id: avalanche-darpa-rads-to-watts-2026
+  counterparty: DARPA
+  counterparty_slug: darpa
+  type: gov_contract
+  binding: definitive
+  announced_on: '2026-04-08'
+  value:
+    amount: 5200000
+    currency: USD
+    qualifier: exact
+  term_years: 2.5
+  summary: DARPA Rads to Watts, 30-month program, alpha-voltaic nuclear batteries. A contract, not equity funding.
+  evidence:
+  - field: agreement
+    snapshot: d979b7f532924ceda799b9bc1a405461a51daa5cd54da9db03bfae870795b226
+    quote: awarded a $5.2 million contract from the DARPA Rads to Watts program
+    basis: disclosed
+  - field: announced_on
+    snapshot: d979b7f532924ceda799b9bc1a405461a51daa5cd54da9db03bfae870795b226
+    quote: Seattle, WA - Apr 8, 2026
+    basis: disclosed
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  'on': 2026-10-05
+  note: >-
+    0 factual corrections (notes updated: NSF date is also a month-only placeholder). All amounts, dates and participants
+    match their quotes. Form D vs release: the Dec 2025/Jan 2026 Form D and D/A ($29,218,480 sold) are the same money
+    as the Feb 3, 2026 $29M release and are correctly not separate events. Residual doubts: seed, NSF and Series A rest
+    on company-hosted investor pages with month-only dates (day set to 1st, placeholder, not a real announcement date);
+    the Series A Form D shows first sale 2022-08-12 and $23.3M sold of $40M by 2022-08-26, so the 'April 2023' date may be
+    late; the seed has two conflicting leads (Prime Impact Fund vs Azolla Ventures) from two pages. Not checked:
+    NSF award record (award id/date), AFWERX SBIR Phase II $1.25M (omitted by author for lack of a date).

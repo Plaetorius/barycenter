@@ -1,0 +1,89 @@
+company: inertia-enterprises
+name: Inertia Enterprises
+sector: fusion
+notes: '[Verifier 2026-10-05] Qualifier changed exact -> up_to: the release calls the $450M milestone-based funding, so it is committed in tranches and not all received. Series A $450M (2026-02-11) is the only priced round found. Business Wire launch release of 2025-08-26 (https://www.businesswire.com/news/home/20250826432256/en/) not archived (Business Wire blocks
+  automated access): any seed/launch funding at that date is unchecked. Investor list is ''including ... and more'' so incomplete. No Form D found in the survey for this company. ''Milestone-based'' funding:
+  amount is committed, not necessarily received. TechCrunch 2026-08-15 roundup (snapshot 4cbd60fd) and ESG Today (4948d4b3) agree on amount, lead and participants.'
+events:
+- id: inertia-series-a-2026
+  instrument: equity
+  round_label: Series A
+  announced_on: '2026-02-11'
+  amount:
+    amount: 450000000
+    currency: USD
+    qualifier: up_to
+  use_of_proceeds: Build the Thunderwall laser and a production line to mass manufacture fuel targets
+  evidence:
+  - field: announced_on
+    snapshot: 97882d50fd377689d5e3d34cb30866fb45acae91eefd480f5214f374e17da4f1
+    quote: Feb. 11, 2026 (GLOBE NEWSWIRE)
+    basis: disclosed
+  - field: amount
+    snapshot: 97882d50fd377689d5e3d34cb30866fb45acae91eefd480f5214f374e17da4f1
+    quote: today announced a new $450 million investment to bring limitless clean energy to the world
+    basis: disclosed
+  - field: round_label
+    snapshot: 97882d50fd377689d5e3d34cb30866fb45acae91eefd480f5214f374e17da4f1
+    quote: The Series A round was led by Bessemer Venture Partners
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 97882d50fd377689d5e3d34cb30866fb45acae91eefd480f5214f374e17da4f1
+    quote: The milestone-based funding will advance Inertia
+    basis: disclosed
+  participants:
+  - investor: Bessemer Venture Partners
+    investor_slug: bessemer-venture-partners
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 97882d50fd377689d5e3d34cb30866fb45acae91eefd480f5214f374e17da4f1
+      quote: The Series A round was led by Bessemer Venture Partners
+      basis: disclosed
+  - investor: GV (Google Ventures)
+    investor_slug: gv
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 97882d50fd377689d5e3d34cb30866fb45acae91eefd480f5214f374e17da4f1
+      quote: with participation from additional firms including GV (Google Ventures), Modern Capital, Threshold Ventures, and more
+      basis: disclosed
+  - investor: Modern Capital
+    investor_slug: modern-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 97882d50fd377689d5e3d34cb30866fb45acae91eefd480f5214f374e17da4f1
+      quote: with participation from additional firms including GV (Google Ventures), Modern Capital, Threshold Ventures, and more
+      basis: disclosed
+  - investor: Threshold Ventures
+    investor_slug: threshold-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 97882d50fd377689d5e3d34cb30866fb45acae91eefd480f5214f374e17da4f1
+      quote: with participation from additional firms including GV (Google Ventures), Modern Capital, Threshold Ventures, and more
+      basis: disclosed
+agreements:
+- id: inertia-llnl-partnership-2026
+  counterparty: Lawrence Livermore National Laboratory
+  counterparty_slug: llnl
+  type: partnership
+  binding: definitive
+  announced_on: '2026-04-14'
+  summary: Two Strategic Partnership Projects, a CRADA and a patent licence (nearly 200 patents) with LLNL. Not funding.
+  evidence:
+  - field: agreement
+    snapshot: 768e4836d4617d59c54030d55ef8b8f7411ad974289a427ef741384703acb10c
+    quote: Inertia and LLNL have signed two Strategic Partnership Projects (SPPs) and a new Cooperative Research and Development Agreement (CRADA)
+    basis: disclosed
+  - field: announced_on
+    snapshot: 768e4836d4617d59c54030d55ef8b8f7411ad974289a427ef741384703acb10c
+    quote: Livermore, CA, April 14, 2026
+    basis: disclosed
+verification:
+  status: verified
+  by: verifier-agent (Claude Opus 5.5), 2026-10-05
+  'on': '2026-10-05'
+  note: '1 correction: Series A $450M qualifier exact -> up_to (release calls it milestone-based funding). Lead and participants
+    confirmed; investor list is incomplete (''and more'').'

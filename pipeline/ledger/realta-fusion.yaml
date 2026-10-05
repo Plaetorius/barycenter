@@ -1,0 +1,266 @@
+company: realta-fusion
+name: Realta Fusion
+sector: fusion
+notes: 'Sources: company releases (PRWeb, PR Newswire), SEC Form D, SVB release, USAspending. WebSearch budget was exhausted so only known URLs were fetched. Seed: release says the $3M DOE award was from
+  the ''Fusion Development Program'' while TechCrunch (same day) calls it an ARPA-E grant; slug doe-fes used provisionally, reviewer should confirm the programme. The press release headline total ($12M)
+  combines the $9M seed and the $3M DOE award; they are recorded as separate events and must not be double counted. Series A: Form D (filed 2025-05-13) shows 35,510,568 sold, consistent with the $36M announced;
+  the Form D notes it ''Includes conversion of previously issued SAFE'', so part of it may be converted earlier money. Form D 2023-05-26 shows 8,999,996 sold (seed). Per-investor amounts are not stated
+  anywhere. GSBackers is a crowd-investing platform (Form D for ''GSBackers Realta Fusion Fund I'' filed 2025-05-21). USAspending Milestone award DESC0024887 ($12,467,500 total obligation, signed 2024-06-03,
+  no cost share recorded in the award; outlays 3.14M): DOE says awardees fund >50% of milestone cost, and $46M was initially committed across 8 awardees, so total_obligation is a program ceiling-style figure;
+  reviewer should reconcile. USAspending also lists REALTA SYSTEMS LLC (DESC0024958, $196,670), a different legal entity not confirmed as related; not recorded. Seed/pre-seed investors named in the investor-edges
+  probe (Alumni Ventures) have no evidenced round and are not recorded. No EU/UK/German public money applies (US company).'
+events:
+- id: realta-seed-2023
+  instrument: equity
+  round_label: Seed
+  round_group: seed
+  announced_on: '2023-05-31'
+  amount:
+    amount: 9000000
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: 47f1beaac3110fb224ac6c0263719799775da65b23fffd98eacf0a7bbf8a0f96
+    quote: The company raised a seed investment of $9 million led by Khosla Ventures
+    basis: disclosed
+  - field: announced_on
+    snapshot: 47f1beaac3110fb224ac6c0263719799775da65b23fffd98eacf0a7bbf8a0f96
+    quote: May 31, 2023
+    basis: disclosed
+  - field: round_label
+    snapshot: 47f1beaac3110fb224ac6c0263719799775da65b23fffd98eacf0a7bbf8a0f96
+    quote: The company raised a seed investment of $9 million led by Khosla Ventures
+    basis: disclosed
+  participants:
+  - investor: Khosla Ventures
+    investor_slug: khosla-ventures
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 47f1beaac3110fb224ac6c0263719799775da65b23fffd98eacf0a7bbf8a0f96
+      quote: The company raised a seed investment of $9 million led by Khosla Ventures
+      basis: disclosed
+  - investor: Wisconsin Alumni Research Foundation (WARF)
+    investor_slug: wisconsin-alumni-research-foundation
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 47f1beaac3110fb224ac6c0263719799775da65b23fffd98eacf0a7bbf8a0f96
+      quote: The Wisconsin Alumni Research Foundation (WARF), through which Realta licensed its core technology, also participated in the seed round.
+      basis: disclosed
+- id: realta-doe-fusion-award-2023
+  instrument: grant
+  program: DOE Milestone-Based Fusion Development Program (announced with seed; same award as FAIN DESC0024887)
+  announced_on: '2023-05-31'
+  amount_kind: duplicate
+  supersedes: realta-doe-milestone-desc0024887
+  amount:
+    amount: 3000000
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: 47f1beaac3110fb224ac6c0263719799775da65b23fffd98eacf0a7bbf8a0f96
+    quote: received an award of $3 million from the US Department of Energy’s Fusion Development Program
+    basis: disclosed
+  - field: announced_on
+    snapshot: 47f1beaac3110fb224ac6c0263719799775da65b23fffd98eacf0a7bbf8a0f96
+    quote: May 31, 2023
+    basis: disclosed
+  participants:
+  - investor: US Department of Energy
+    investor_slug: doe-fes
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 47f1beaac3110fb224ac6c0263719799775da65b23fffd98eacf0a7bbf8a0f96
+      quote: received an award of $3 million from the US Department of Energy’s Fusion Development Program
+      basis: disclosed
+- id: realta-series-a-2025
+  instrument: equity
+  round_label: Series A
+  round_group: series-a
+  announced_on: '2025-05-13'
+  amount:
+    amount: 36000000
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: 3a18e073c10da9a70fb8f28c18b37523c9881b32716a00aa7f4cf31449590d2b
+    quote: oversubscribed $36 million Series A round
+    basis: disclosed
+  - field: amount
+    snapshot: f8b07ae53dcd62b475d1cbb0c0da7a998d01edc5b3133ff593b172838b46955d
+    quote: 35510568 35510568
+    basis: disclosed
+  - field: announced_on
+    snapshot: 3a18e073c10da9a70fb8f28c18b37523c9881b32716a00aa7f4cf31449590d2b
+    quote: May 13, 2025, 08:00 ET
+    basis: disclosed
+  - field: round_label
+    snapshot: 3a18e073c10da9a70fb8f28c18b37523c9881b32716a00aa7f4cf31449590d2b
+    quote: oversubscribed $36 million Series A round
+    basis: disclosed
+  participants:
+  - investor: Future Ventures
+    investor_slug: future-ventures
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 3a18e073c10da9a70fb8f28c18b37523c9881b32716a00aa7f4cf31449590d2b
+      quote: Future Ventures led the round with participation from Mayfield, GSBackers, SiteGround, Avila VC, and other investors.
+      basis: disclosed
+  - investor: Mayfield
+    investor_slug: mayfield
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 3a18e073c10da9a70fb8f28c18b37523c9881b32716a00aa7f4cf31449590d2b
+      quote: Future Ventures led the round with participation from Mayfield, GSBackers, SiteGround, Avila VC, and other investors.
+      basis: disclosed
+  - investor: GSBackers
+    investor_slug: gsbackers
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 3a18e073c10da9a70fb8f28c18b37523c9881b32716a00aa7f4cf31449590d2b
+      quote: Future Ventures led the round with participation from Mayfield, GSBackers, SiteGround, Avila VC, and other investors.
+      basis: disclosed
+  - investor: SiteGround
+    investor_slug: siteground
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 3a18e073c10da9a70fb8f28c18b37523c9881b32716a00aa7f4cf31449590d2b
+      quote: Future Ventures led the round with participation from Mayfield, GSBackers, SiteGround, Avila VC, and other investors.
+      basis: disclosed
+  - investor: Avila VC
+    investor_slug: avila-vc
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 3a18e073c10da9a70fb8f28c18b37523c9881b32716a00aa7f4cf31449590d2b
+      quote: Future Ventures led the round with participation from Mayfield, GSBackers, SiteGround, Avila VC, and other investors.
+      basis: disclosed
+  - investor: Khosla Ventures
+    investor_slug: khosla-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 3a18e073c10da9a70fb8f28c18b37523c9881b32716a00aa7f4cf31449590d2b
+      quote: Existing Realta Fusion investors Khosla Ventures, Wisconsin Alumni Research Foundation, and TitletownTech also participated in the round.
+      basis: disclosed
+  - investor: Wisconsin Alumni Research Foundation
+    investor_slug: wisconsin-alumni-research-foundation
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 3a18e073c10da9a70fb8f28c18b37523c9881b32716a00aa7f4cf31449590d2b
+      quote: Existing Realta Fusion investors Khosla Ventures, Wisconsin Alumni Research Foundation, and TitletownTech also participated in the round.
+      basis: disclosed
+  - investor: TitletownTech
+    investor_slug: titletowntech
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 3a18e073c10da9a70fb8f28c18b37523c9881b32716a00aa7f4cf31449590d2b
+      quote: Existing Realta Fusion investors Khosla Ventures, Wisconsin Alumni Research Foundation, and TitletownTech also participated in the round.
+      basis: disclosed
+- id: realta-svb-facility-2026
+  instrument: debt
+  round_label: Growth capital facility
+  announced_on: '2026-02-17'
+  amount_kind: ceiling
+  amount:
+    amount: 9500000
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: 5f641b493fa49f9cc98acfb01ca32b0c6db37c0c06a9e82121464278f5dde121
+    quote: has provided a growth capital facility of $9.5 million to fusion energy startup Realta Fusion
+    basis: disclosed
+  - field: announced_on
+    snapshot: 5f641b493fa49f9cc98acfb01ca32b0c6db37c0c06a9e82121464278f5dde121
+    quote: Published February 17, 2026
+    basis: disclosed
+  participants:
+  - investor: Silicon Valley Bank (First Citizens Bank)
+    investor_slug: silicon-valley-bank
+    role: lender
+    evidence:
+    - field: participant
+      snapshot: 5f641b493fa49f9cc98acfb01ca32b0c6db37c0c06a9e82121464278f5dde121
+      quote: has provided a growth capital facility of $9.5 million to fusion energy startup Realta Fusion
+      basis: disclosed
+- id: realta-doe-milestone-desc0024887
+  instrument: grant
+  program: DOE Milestone-Based Fusion Development Program (FAIN DESC0024887)
+  announced_on: '2024-06-03'
+  amount:
+    amount: 12467500
+    currency: USD
+    qualifier: exact
+  obligated_usd: 12467500
+  disbursed_usd: 3140000
+  evidence:
+  - field: amount
+    snapshot: 68a662a61791601aae0c86fa680dd3d3ff291d72b8b952bbdb666191c5c569ef
+    quote: '"total_obligation": 12467500.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 68a662a61791601aae0c86fa680dd3d3ff291d72b8b952bbdb666191c5c569ef
+    quote: '"date_signed": "2024-06-03"'
+    basis: disclosed
+  participants:
+  - investor: US Department of Energy (Office of Science)
+    investor_slug: doe-fes
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 68a662a61791601aae0c86fa680dd3d3ff291d72b8b952bbdb666191c5c569ef
+      quote: '"total_obligation": 12467500.0'
+      basis: disclosed
+- id: realta-doe-sc-desc0026626
+  instrument: grant
+  program: DOE Office of Science (FAIN DESC0026626, digital twin for fusion NBI)
+  announced_on: '2026-08-31'
+  amount:
+    amount: 350000
+    currency: USD
+    qualifier: exact
+  obligated_usd: 350000
+  evidence:
+  - field: amount
+    snapshot: 3274b03dafeb6a0ff5e487634f7882f21bc5df6d16046db819ca219dc80e14b1
+    quote: '"total_obligation": 350000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 3274b03dafeb6a0ff5e487634f7882f21bc5df6d16046db819ca219dc80e14b1
+    quote: '"date_signed": "2026-08-31"'
+    basis: disclosed
+  participants:
+  - investor: US Department of Energy (Office of Science)
+    investor_slug: doe-fes
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 3274b03dafeb6a0ff5e487634f7882f21bc5df6d16046db819ca219dc80e14b1
+      quote: '"total_obligation": 350000.0'
+      basis: disclosed
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  'on': 2026-10-05
+  note: >-
+    3 corrections. (1) The $3M 'DOE Fusion Development Program' award announced with the seed on 2023-05-31 is the
+    first-period amount of the Milestone-Based Fusion Development Program award (selections announced the same day;
+    USAspending FAIN DESC0024887 to REALTA FUSION INC., CFDA 81.049 Office of Science, not ARPA-E as TechCrunch said):
+    marked amount_kind duplicate, supersedes realta-doe-milestone-desc0024887, so the award is counted once at the
+    USAspending obligation ($12,467,500; outlays $3,140,000 as of 2026-08-25). (2) Series A announced_on 2025-05-14
+    (ESG Today) -> 2025-05-13 (PR Newswire release date). (3) SVB $9.5M growth capital facility -> amount_kind ceiling
+    (no drawn amount stated). Residual: the Milestone obligation is milestone-tranched and only $3.14M has been paid;
+    the $12.47M figure is an obligation, not cash received. Seed $9M matches Form D $8,999,996; Series A $36M matches
+    Form D $35,510,568 (includes SAFE conversion, earlier SAFE money not separately evidenced).

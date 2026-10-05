@@ -1,0 +1,16 @@
+id: other-eu
+name: Other EU national funders and state investors (FI, SE, DK, NL, CZ, PL, IT, ES)
+owner: Business Finland, Tesi, Industrifonden, Energimyndigheten, Innovationsfonden, RVO, Invest-NL, TACR, NCBR ...
+access: html            # company/agency releases only; no national open-data endpoint probed
+endpoint: n/a
+auth: n/a
+licence: company releases: cite only
+robots: not probed per site
+yields: [loans/grants announced via company releases: Steady Energy (Business Finland EUR 10.5M loan 2026-06-18), Novatron (St1 EUR 13M, 2025); state VCs named as investors (Tesi, Industrifonden)]
+identifiers: [company name, Finnish Y-tunnus / Swedish orgnr visible in CORDIS VAT field]
+cadence: event-driven
+tier: B/C
+known_gaps: >
+  NOT probed: RVO (NL), Innovationsfonden/EUDP (DK), Energimyndigheten (SE) project databases, TACR (CZ), NCBR (PL), CDTI (ES), MIMIT/ENEA (IT).
+  Recommended path is CORDIS for EU money plus EIB/Business Finland releases rather than 8 national scrapers.
+probe: docs/survey/probes/other-eu.md

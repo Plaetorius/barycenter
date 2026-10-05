@@ -1,0 +1,31 @@
+id: newsrooms
+name: Company newsrooms (12-company probe sample)
+owner: each company
+access: html          # per-company; see per_company. rss only for tae, tokamak, xenergy (latest 10-12 items)
+endpoint: per company (see per_company)
+auth: none
+rate_limit: self-limit 1 req/s; honour Crawl-delay (tae 10, xenergy 10, tokamak 2)
+licence: all rights reserved by company; amounts/dates are facts, snapshots are copies (owner decision for ToS-restricted sites)
+robots: all 12 allow generic crawlers on newsroom paths; helion disallows /feed and /category/; cfs disallows AI crawlers (GPTBot, ClaudeBot, anthropic-ai, Claude-Web, CCBot, Google-Extended)
+yields: [round announcements (amount, date, lead, participants, use of proceeds), agreements, DOE awards, executive news]
+identifiers: [url, slug]
+cadence: poll feeds/listings daily; sitemap diff weekly
+tier: B
+known_gaps: >
+  Release lacks round label (Proxima, Radiant, Tokamak, TerraPower); no named investors in CFS 2026-07-30 release;
+  pages edited in place (Helion Series G 465M -> 500M); Pacific Fusion and Kairos publish no round releases;
+  Helion newsroom mixes third-party articles; TerraPower sitemap omits news posts; feeds carry only latest 10-12 items.
+per_company:
+  cfs:        {newsroom: "https://cfs.energy/news-and-media", feed: null, sitemap: "https://cfs.energy/sitemap.xml", render: static, tos: "forbids crawl/scrape", access: manual}
+  helion:     {newsroom: "https://www.helionenergy.com/news/", feed: null, sitemap: "https://www.helionenergy.com/sitemap.xml", render: static, tos: "systematic retrieval prohibited", access: manual}
+  tae:        {newsroom: "https://tae.com/news/", feed: "https://tae.com/feed/", sitemap: "https://tae.com/sitemap_index.xml", render: static, tos: "forbids robot/spider/page-scrape", access: manual, note: "Scrapling Fetcher fails on TLS chain; httpx ok"}
+  zap:        {newsroom: "https://www.zapenergy.com/updates", feed: null, sitemap: "https://www.zapenergy.com/sitemap.xml", render: static, tos: none-found, access: html}
+  pacific:    {newsroom: "https://www.pacificfusion.com/resources/topic/news-releases/", feed: null, sitemap: "https://www.pacificfusion.com/sitemap.xml", render: static, tos: none-found, access: html}
+  proxima:    {newsroom: "https://www.proximafusion.com/news", feed: null, sitemap: "https://www.proximafusion.com/sitemap.xml", render: static, tos: none-found, access: html}
+  tokamak:    {newsroom: "https://www.tokamakenergy.com/category/press-release/", feed: "https://www.tokamakenergy.com/feed/", sitemap: "https://www.tokamakenergy.com/sitemap_index.xml", render: static, tos: none-found, access: rss, note: "apex host intermittently refuses connections; use www"}
+  kairos:     {newsroom: "https://kairospower.com/updates", feed: null, sitemap: "https://www.kairospower.com/sitemap.xml", render: static, tos: none-found, access: html}
+  terrapower: {newsroom: "https://www.terrapower.com/news/", feed: null, sitemap: "https://www.terrapower.com/sitemap.xml (omits news)", render: static, tos: no-automation-clause, access: html, note: "crawl listing page"}
+  xenergy:    {newsroom: "https://x-energy.com/news", feed: "https://x-energy.com/news/feed/", sitemap: "https://x-energy.com/sitemap_index.xml", render: static, tos: "forbids bots/scripts", access: manual, note: "public since 2026-04-24; use SEC"}
+  oklo:       {newsroom: "https://www.oklo.com/newsroom", feed: null, sitemap: "https://www.oklo.com/sitemap.xml", render: static, tos: "broad no-copy + no bots", access: manual, note: "public; use SEC"}
+  radiant:    {newsroom: "https://radiantnuclear.com/news", feed: null, sitemap: "https://radiantnuclear.com/sitemap.xml", render: static, tos: "forbids scraping", access: manual, note: "Cloudflare challenge to Scrapling/curl; httpx got 200 once"}
+probe: docs/survey/probes/newsrooms.md

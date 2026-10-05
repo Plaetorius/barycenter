@@ -1,0 +1,50 @@
+company: jimmy-energy
+name: Jimmy Energy
+sector: fission
+notes: >-
+  Jimmy Energy SAS (Aix-en-Provence; Annuaire SIREN 892884099). Sources: NucNet 2026-03-11 and Bloomberg 2026-03-10, both
+  relaying the company statement of 2026-03-10; the company website (jimmy-energy.com) does not resolve from the archive tool
+  and no company release was reachable, so basis is "reported". Bloomberg gives the total as EUR80M (USD93M) with half from
+  the French government (so the grant and equity events are the two halves, not additive to EUR160M). Whether the France 2030
+  "Phase Two" EUR40M is a grant, subsidy or conditional advance is not stated; recorded as grant, flag for review. Earlier
+  rounds (before 2026) were not found in the sources reached (WebSearch budget exhausted); census lists lifetime funding as
+  undisclosed. Calogena (a different company) appears in the same articles; its figures are not recorded here. Canada G&C,
+  CORDIS (no Jimmy record), TED and BODACC (name search noisy, SIREN not queried) probes yielded nothing for Jimmy.
+events:
+  - id: jimmy-2026-france-2030-phase-two
+    instrument: grant
+    round_label: France 2030 innovative nuclear reactors, Phase Two
+    announced_on: 2026-03-10
+    amount: {amount: 40000000, currency: EUR, qualifier: exact}
+    program: France 2030 innovative nuclear reactors programme
+    evidence:
+      - {field: amount, snapshot: f16f7eff2ec032f4dbd14f45f41adfac63c8314d532d304fcbfdf45d7c0366d0, quote: "it had received €40m ($46.4m) from the French government as a winner in the country’s Phase Two ‘innovative nuclear reactors’ programme", basis: reported}
+      - {field: announced_on, snapshot: 658bdbe423adedd4ab4b38c20c95f676f522bf34f412095690790ece328fb993, quote: "March 10, 2026 at 10:51 AM UTC", basis: reported}
+    participants:
+      - investor: French government (France 2030)
+        investor_slug: france-2030
+        role: grantor
+        evidence:
+          - {field: participant, snapshot: f16f7eff2ec032f4dbd14f45f41adfac63c8314d532d304fcbfdf45d7c0366d0, quote: "received €40m ($46.4m) from the French government", basis: reported}
+  - id: jimmy-2026-equity-round
+    instrument: equity
+    round_label: 2026 fundraising round (private half of EUR80M)
+    announced_on: 2026-03-10
+    amount: {amount: 40000000, currency: EUR, qualifier: exact}
+    use_of_proceeds: complete the design of its small modular reactor
+    evidence:
+      - {field: amount, snapshot: f16f7eff2ec032f4dbd14f45f41adfac63c8314d532d304fcbfdf45d7c0366d0, quote: "raised a further €40m through a fundraising round to advance its technology", basis: reported}
+      - {field: announced_on, snapshot: 658bdbe423adedd4ab4b38c20c95f676f522bf34f412095690790ece328fb993, quote: "March 10, 2026 at 10:51 AM UTC", basis: reported}
+    participants:
+      - investor: Credit Mutuel Alliance Federale
+        investor_slug: credit-mutuel-alliance-federale
+        role: lead
+        evidence:
+          - {field: participant, snapshot: 658bdbe423adedd4ab4b38c20c95f676f522bf34f412095690790ece328fb993, quote: "Credit Mutuel Alliance Federale is leading private sector financing while some existing shareholders also participated", basis: reported}
+agreements: []
+verification:
+  status: verified
+  by: verifier-agent (Claude Opus 5.5), 2026-10-05
+  'on': '2026-10-05'
+  note: 0 corrections. EUR40M France 2030 and EUR40M equity round (Credit Mutuel Alliance Federale lead) confirmed against
+    NucNet/Bloomberg quotes (reported). Instrument of the France 2030 money (grant vs advance) not confirmed.

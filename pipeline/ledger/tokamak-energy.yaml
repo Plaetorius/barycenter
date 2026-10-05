@@ -1,0 +1,211 @@
+company: tokamak-energy
+name: Tokamak Energy Ltd
+sector: fusion
+notes: >-
+  Built from archived company releases, USAspending, UKRI Gateway to Research (GtR) XML API and UKAEA releases.
+  GAPS: pre-2024 private rounds (2013-2023) could not be evidenced from robots-permitted primary sources in this pass
+  (WebSearch budget exhausted; the company site sitemap lists no pre-2022 funding releases); the Nov 2024 release states
+  only the cumulative $275M private / $60M government total. Companies House SH01 allotments exist (probe companies-house.md,
+  Tokamak 07054929) but amounts were not extracted. The release gives no round label (FIA/press call it Series C; not asserted).
+  Cumulative event tok-cumulative-2024 must NOT be counted as a round. DOE Milestone figure: USAspending shows $7.5M total
+  obligation to TOKAMAK ENERGY INC from DOE in FY19-26 (recipient search, not filtered by programme); public-money.md attributes
+  it to the Milestone programme (7.5M obligated / 3.0M outlaid in that probe), so treat as Milestone-linked, to be reconciled with the
+  DOE announcement (not archived at a working URL: energy.gov guessed URLs returned 404). Nine INFUSE vouchers (2019-2024; releases state counts,
+  no amounts) and the Oct 2025 FIRE collaborative (University of Houston-led, no Tokamak amount) are not recorded as funded events
+  because no amount is disclosed. The $52M ST40 upgrade is a joint DOE/DESNZ/Tokamak sponsorship total (recorded as agreement, not
+  funding); DOE grant DESC0025884 ($7.25M, LEAPS) is likely the DOE slice of it - do not sum. UKRI: only lead-organisation Innovate UK
+  grants are recorded; 2023-25 Innovate UK partner projects have project totals only (no Tokamak share) and are omitted. UKAEA FIP/LIBRTI
+  awards to Tokamak have no per-organisation amount. No EIB/EIC/CORDIS/German public funding found for this company. Debt: none found. VERIFIER (2026-10-05): the Milestone amount is now tied to award-level USAspending record DESC0024889
+  (TOKAMAK ENERGY INC, US subsidiary; "ST-E1 PRELIMINARY DESIGN REVIEW FOR A FUSION PILOT PLANT", $7.5M award, $3.0M outlays,
+  start 2024-06-05) instead of only the recipient-level DOE total; announced_on stays the 2023-05-31 selection date. GtR also lists
+  separate organisation records "Tokamak Solutions", "Tokamak Energy" and "Tokamak Energy (United Kingdom)" whose projects were
+  not checked (possible further Innovate UK grants).
+events:
+  - id: tok-innovateuk-2011-market
+    instrument: grant
+    round_label: Investigating the market for a small tokamak (GRD Proof of Market)
+    announced_on: 2011-11-01
+    closed_on: 2012-03-30
+    amount: {amount: 25000, currency: GBP}
+    program: Innovate UK GRD Proof of Market
+    evidence:
+      - {field: amount, snapshot: "2d48d294010b938ea843abc4a47b64a2ecbc7ecd8bb7e208b71be013fe59eb8f", quote: '<ns2:valuePounds ns1:amount="25000" ns1:currencyCode="GBP"/>', basis: disclosed}
+      - {field: announced_on, snapshot: "2d48d294010b938ea843abc4a47b64a2ecbc7ecd8bb7e208b71be013fe59eb8f", quote: '<ns2:start>2011-11-01Z</ns2:start>', basis: disclosed}
+    participants:
+      - investor: Innovate UK
+        investor_slug: innovate-uk
+        role: grantor
+        evidence:
+          - {field: participant, snapshot: "6193e848e80c1a081e9a0959ee89030b50fe7e5a34a19a66968c92ae440024b1", quote: '<ns2:leadFunder>Innovate UK</ns2:leadFunder>', basis: disclosed}
+  - id: tok-innovateuk-2011-neutron-source
+    instrument: grant
+    round_label: A Tokamak Neutron Source for Medical and other Applications (GRD Proof of Concept)
+    announced_on: 2011-09-30
+    closed_on: 2012-06-29
+    amount: {amount: 100000, currency: GBP}
+    program: Innovate UK GRD Proof of Concept
+    evidence:
+      - {field: amount, snapshot: "fc995eee8d94aa070e0c72e76876170c0ddee86f3659b1637b66a6782b627426", quote: '<ns2:valuePounds ns1:amount="100000" ns1:currencyCode="GBP"/>', basis: disclosed}
+      - {field: announced_on, snapshot: "fc995eee8d94aa070e0c72e76876170c0ddee86f3659b1637b66a6782b627426", quote: '<ns2:start>2011-09-30Z</ns2:start>', basis: disclosed}
+    participants:
+      - investor: Innovate UK
+        investor_slug: innovate-uk
+        role: grantor
+        evidence:
+          - {field: participant, snapshot: "6193e848e80c1a081e9a0959ee89030b50fe7e5a34a19a66968c92ae440024b1", quote: '<ns2:leadFunder>Innovate UK</ns2:leadFunder>', basis: disclosed}
+  - id: tok-innovateuk-2012-small-tokamak
+    instrument: grant
+    round_label: Small tokamak with HTS magnets (GRD Development of Prototype)
+    announced_on: 2012-07-31
+    closed_on: 2014-03-30
+    amount: {amount: 250000, currency: GBP}
+    program: Innovate UK GRD Development of Prototype
+    evidence:
+      - {field: amount, snapshot: "d11294ec799982b04db10dcde8b8a15248aec229856d4e73cc8ac0558706fc33", quote: '<ns2:valuePounds ns1:amount="250000" ns1:currencyCode="GBP"/>', basis: disclosed}
+      - {field: announced_on, snapshot: "d11294ec799982b04db10dcde8b8a15248aec229856d4e73cc8ac0558706fc33", quote: '<ns2:start>2012-07-31Z</ns2:start>', basis: disclosed}
+    participants:
+      - investor: Innovate UK
+        investor_slug: innovate-uk
+        role: grantor
+        evidence:
+          - {field: participant, snapshot: "6193e848e80c1a081e9a0959ee89030b50fe7e5a34a19a66968c92ae440024b1", quote: '<ns2:leadFunder>Innovate UK</ns2:leadFunder>', basis: disclosed}
+  - id: tok-innovateuk-2018-hts-magnets
+    instrument: grant
+    round_label: HTS Magnets for Compact Modular Fusion (Collaborative R&D)
+    announced_on: 2018-09-30
+    closed_on: 2021-12-31
+    amount: {amount: 987707, currency: GBP}
+    program: Innovate UK Collaborative R&D
+    evidence:
+      - {field: amount, snapshot: "2c87e78e13cd8802858140d613d2fe7551a9b53e5836e6a51c65ba569effda20", quote: '<ns2:valuePounds ns1:amount="987707" ns1:currencyCode="GBP"/>', basis: disclosed}
+      - {field: announced_on, snapshot: "2c87e78e13cd8802858140d613d2fe7551a9b53e5836e6a51c65ba569effda20", quote: '<ns2:start>2018-09-30Z</ns2:start>', basis: disclosed}
+    participants:
+      - investor: Innovate UK
+        investor_slug: innovate-uk
+        role: grantor
+        evidence:
+          - {field: participant, snapshot: "6193e848e80c1a081e9a0959ee89030b50fe7e5a34a19a66968c92ae440024b1", quote: '<ns2:leadFunder>Innovate UK</ns2:leadFunder>', basis: disclosed}
+  - id: tok-doe-milestone-2023
+    instrument: grant
+    round_label: DOE Milestone-Based Fusion Development Program
+    announced_on: 2023-05-31
+    amount: {amount: 7500000, currency: USD}
+    obligated_usd: 7500000
+    disbursed_usd: 3000000
+    program: DOE Milestone-Based Fusion Development Program
+    evidence:
+      - {field: amount, snapshot: "3c313a7b2ff361f14a52c53c249d252d82e97d3f3e7a3a3265be5c0bfc5155c4", quote: '"Award ID":"DESC0024889","Recipient Name":"TOKAMAK ENERGY INC","Recipient UEI":"N581GZDDDZE7","Award Amount":7500000.0,"Total Outlays":3000000.0,"Description":"ST-E1 PRELIMINARY DESIGN REVIEW FOR A FUSION PILOT PLANT"', basis: disclosed}
+      - {field: amount, snapshot: "a853025d6020e25d5faacef5f5d2b9d776853d1444379c4725d669f38391c060", quote: '"amount":7500000.0,"recipient_id":"997338fb-e150-e25d-2243-ad9113ca4ee4-R","name":"TOKAMAK ENERGY INC"', basis: disclosed}
+      - {field: announced_on, snapshot: "ec85467b507c5f6d4172a8fd0cdb7cd9da084725cae810168449a33a2ee6e63d", quote: '31 May 2023', basis: disclosed}
+    participants:
+      - investor: U.S. Department of Energy
+        investor_slug: doe-fes
+        role: grantor
+        evidence:
+          - {field: participant, snapshot: "ec85467b507c5f6d4172a8fd0cdb7cd9da084725cae810168449a33a2ee6e63d", quote: 'has been selected by the U.S. Department of Energy (DOE) for an award as part of its bold decadal vision', basis: disclosed}
+  - id: tok-doe-leaps-2024
+    instrument: grant
+    round_label: Lithium Evaporations to Advance PFCs in ST40 (LEAPS), DESC0025884
+    announced_on: 2024-12-05
+    amount: {amount: 7252989.51, currency: USD}
+    program: DOE Office of Science (ALN 81.049); linked to ST40 upgrade
+    evidence:
+      - {field: amount, snapshot: "a83a6c3c7e6048c2d1f3fb0fcaa9d5e966d606dd409ab2edb9a6cd982f98f0dc", quote: '"Award Amount":7252989.51', basis: disclosed}
+      - {field: announced_on, snapshot: "b206721df4489121846bd75fadcc4a651c486e7b397b423ce09ea9c037147d28", quote: '5 December 2024', basis: disclosed}
+    participants:
+      - investor: U.S. Department of Energy
+        investor_slug: doe-fes
+        role: grantor
+        evidence:
+          - {field: participant, snapshot: "a83a6c3c7e6048c2d1f3fb0fcaa9d5e966d606dd409ab2edb9a6cd982f98f0dc", quote: '"Awarding Sub Agency":"Department of Energy"', basis: disclosed}
+  - id: tok-equity-2024-11
+    instrument: equity
+    announced_on: 2024-11-20
+    amount: {amount: 125000000, currency: USD}
+    evidence:
+      - {field: amount, snapshot: "60b2c10ac3bd4a71752988177ed47c8e5a01139f1a61c314d04a847c82ab18e2", quote: 'Tokamak Energy has raised $125 million to accelerate ambitious plans', basis: disclosed}
+      - {field: announced_on, snapshot: "60b2c10ac3bd4a71752988177ed47c8e5a01139f1a61c314d04a847c82ab18e2", quote: '20 November 2024', basis: disclosed}
+    participants:
+      - investor: East X Ventures
+        investor_slug: east-x-ventures
+        role: lead
+        evidence:
+          - {field: participant, snapshot: "60b2c10ac3bd4a71752988177ed47c8e5a01139f1a61c314d04a847c82ab18e2", quote: 'The round was co-led by East X Ventures and Lingotto Investment Management', basis: disclosed}
+      - investor: Lingotto Investment Management
+        investor_slug: lingotto
+        role: lead
+        evidence:
+          - {field: participant, snapshot: "60b2c10ac3bd4a71752988177ed47c8e5a01139f1a61c314d04a847c82ab18e2", quote: 'The round was co-led by East X Ventures and Lingotto Investment Management', basis: disclosed}
+      - investor: Furukawa Electric Company
+        investor_slug: furukawa-electric
+        evidence:
+          - {field: participant, snapshot: "60b2c10ac3bd4a71752988177ed47c8e5a01139f1a61c314d04a847c82ab18e2", quote: 'participation from new investors including Furukawa Electric Company, British Patient Capital, global maritime company BW Group and U.S.-based Sabanci Climate Ventures', basis: disclosed}
+      - investor: British Patient Capital
+        investor_slug: british-patient-capital
+        evidence:
+          - {field: participant, snapshot: "60b2c10ac3bd4a71752988177ed47c8e5a01139f1a61c314d04a847c82ab18e2", quote: 'participation from new investors including Furukawa Electric Company, British Patient Capital, global maritime company BW Group and U.S.-based Sabanci Climate Ventures', basis: disclosed}
+      - investor: BW Group
+        investor_slug: bw-group
+        evidence:
+          - {field: participant, snapshot: "60b2c10ac3bd4a71752988177ed47c8e5a01139f1a61c314d04a847c82ab18e2", quote: 'participation from new investors including Furukawa Electric Company, British Patient Capital, global maritime company BW Group and U.S.-based Sabanci Climate Ventures', basis: disclosed}
+      - investor: Sabanci Climate Ventures
+        investor_slug: sabanci-climate
+        evidence:
+          - {field: participant, snapshot: "60b2c10ac3bd4a71752988177ed47c8e5a01139f1a61c314d04a847c82ab18e2", quote: 'participation from new investors including Furukawa Electric Company, British Patient Capital, global maritime company BW Group and U.S.-based Sabanci Climate Ventures', basis: disclosed}
+  - id: tok-cumulative-2024-11
+    instrument: equity
+    round_label: cumulative total raised since 2009 (not a round)
+    announced_on: 2024-11-20
+    amount: {amount: 335000000, currency: USD}
+    amount_kind: cumulative
+    evidence:
+      - {field: amount, snapshot: "60b2c10ac3bd4a71752988177ed47c8e5a01139f1a61c314d04a847c82ab18e2", quote: 'total raised since forming as a spin-out from UK Atomic Energy Authority in 2009 to $335m, comprising $275m from private investors and $60m funded from the UK and U.S. governments', basis: disclosed}
+      - {field: announced_on, snapshot: "60b2c10ac3bd4a71752988177ed47c8e5a01139f1a61c314d04a847c82ab18e2", quote: '20 November 2024', basis: disclosed}
+agreements:
+  - id: tok-step-magnets-2026
+    counterparty: UK Fusion Energy (UKFE)
+    counterparty_slug: uk-fusion-energy
+    type: gov_contract
+    binding: definitive
+    announced_on: 2026-04-14
+    value: {amount: 70000000, currency: GBP}
+    summary: Magnet Systems Partner for STEP Fusion, contract to March 2029, eight work packages.
+    evidence:
+      - {field: agreement, snapshot: "defe1ef55435a2555e770b73401801b653693ffc79176181d3a481a3b1e44760", quote: 'UK Fusion Energy (UKFE) awarded the £70 million contract covering the period up to March 2029', basis: disclosed}
+      - {field: announced_on, snapshot: "defe1ef55435a2555e770b73401801b653693ffc79176181d3a481a3b1e44760", quote: '14 April 2026', basis: disclosed}
+  - id: tok-st40-upgrade-2024
+    counterparty: U.S. DOE and UK DESNZ
+    counterparty_slug: doe-fes
+    type: partnership
+    binding: definitive
+    announced_on: 2024-12-05
+    value: {amount: 52000000, currency: USD, qualifier: approx}
+    summary: Joint DOE/DESNZ/Tokamak sponsorship plan for a $52M ST40 upgrade; programme total, not Tokamak funding; may overlap with grant tok-doe-leaps-2024.
+    evidence:
+      - {field: agreement, snapshot: "b206721df4489121846bd75fadcc4a651c486e7b397b423ce09ea9c037147d28", quote: 'announced a plan to jointly sponsor a $52 million upgrade to the ST40 experimental fusion facility', basis: disclosed}
+      - {field: announced_on, snapshot: "b206721df4489121846bd75fadcc4a651c486e7b397b423ce09ea9c037147d28", quote: '5 December 2024', basis: disclosed}
+  - id: tok-ukaea-librti-2025
+    counterparty: UK Atomic Energy Authority (LIBRTI)
+    counterparty_slug: ukaea
+    type: gov_contract
+    binding: definitive
+    announced_on: 2025-01-22
+    summary: Won a bid under UKAEA's GBP 200M LIBRTI programme (with UIUC and University of Birmingham); amount for Tokamak not stated.
+    evidence:
+      - {field: agreement, snapshot: "3c86b1f351fe5f1629170c4f708c158df75bb0b19f8dcbc74b2a01d052b71530", quote: 'Tokamak Energy has won a bid to advance fusion development under UK Atomic Energy Authority’s £200 million Lithium Breeding Tritium Innovation', basis: disclosed}
+      - {field: announced_on, snapshot: "3c86b1f351fe5f1629170c4f708c158df75bb0b19f8dcbc74b2a01d052b71530", quote: '22 January 2025', basis: disclosed}
+  - id: tok-ukaea-fip-2026
+    counterparty: UK Atomic Energy Authority (Fusion Industry Programme)
+    counterparty_slug: ukaea
+    type: gov_contract
+    binding: definitive
+    announced_on: 2026-02-02
+    summary: CAST (Cermet Advancement for Shielding in Tokamaks) shielding contract; GBP 8.1M total across 14 organisations, Tokamak share not stated.
+    evidence:
+      - {field: agreement, snapshot: "1ebb611e264af2b786478d39039ade8389d77e1dd8838cec1e34b18f824476ec", quote: 'Tokamak Energy Ltd CAST: Cermet Advancement for Shielding in Tokamaks', basis: disclosed}
+      - {field: announced_on, snapshot: "1ebb611e264af2b786478d39039ade8389d77e1dd8838cec1e34b18f824476ec", quote: '2 February 2026', basis: disclosed}
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  "on": 2026-10-05
+  note: "1 correction. DOE Milestone $7.5M now evidenced at award level (USAspending DESC0024889, TOKAMAK ENERGY INC, ST-E1 preliminary design review, $3.0M outlays) instead of a recipient-level DOE total; obligated/disbursed fields added. Checked: four Innovate UK grants are to GtR org 1FF55152 = TOKAMAK ENERGY LTD (lead org); $125M Nov 2024 round and co-leads match the release; $335M cumulative not counted; LEAPS $7.25M grant kept separate from the $52M ST40 agreement. Gaps: pre-2024 private rounds, Companies House allotments, other GtR org records (Tokamak Solutions etc.) unchecked."

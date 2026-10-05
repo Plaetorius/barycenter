@@ -1,0 +1,136 @@
+company: american-centrifuge-operating
+name: American Centrifuge Operating, LLC
+sector: fission
+notes: 'Built from USAspending spending_by_award search responses (POST, archived with request body in raw/manifest.jsonl, source_id
+  usaspending-post). Amount = USAspending ''Award Amount'' (cumulative federal obligation, not a ceiling and not an announced figure);
+  disbursed_usd = ''Total Outlays'' when present. Dates = ''Base Obligation Date'' (first obligation), else ''Start Date''. Search
+  was recipient-name text on awarding agency = Department of Energy over 2007-10-01..2026-09-30 and one page of up to 50 rows per
+  award-type group; awards with zero or negative net obligation are omitted. Recipient name variants not matched by the name search
+  may be missing. Government record, basis=disclosed. VERIFIER: Scope: American Centrifuge Operating, LLC is a wholly owned subsidiary
+  of Centrus Energy Corp. (ledger centrus-energy, which already carries these DOE contracts via its USAspending ACO total b121). It
+  must not be published as a separate company; it has no funding events (D1), only DOE procurement contracts recorded as agreements.
+  Nothing merged here. Agreement values are USAspending obligations to date, not ceilings; outlays are added to each summary.'
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: 'Evidence verified (4 agreements, 0 events): recipient, award IDs, obligations and first-obligation dates match the archived
+    USAspending contract search. Corrections: 4 (outlays added to each agreement summary with an evidence quote). Values are obligated
+    amounts, not ceilings: 89303519CNE000005 $173.0M obligated / $107.4M outlaid; 89243223CNE000030 $332.0M / $294.4M; 89243225FNE400178
+    $0.5M / $0.15M; 89243226FNE400212 $900M obligated / $0 outlaid (paid against performance milestones, see centrus-energy where
+    it is up_to). One row per award, no modification duplicates. SCOPE: not a separate entity; Centrus subsidiary, no funding event,
+    do not ship (D1); flagged for merge into centrus-energy but nothing merged. These contracts are DOE purchases of HALEU/enrichment
+    services (revenue-like), correctly not funding.'
+events: []
+agreements:
+- id: american-centrifuge-operating-89303519cne000005
+  counterparty: U.S. Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: '2019-05-31'
+  summary: 'DOE contract 89303519CNE000005: LETTER CONTRACT TO FACILITATE THE DEMONSTRATION OF HIGH ASSAY LOW ENRICHED URANIUM (HALEU)
+    PRODUCTION TO SUPPORT DOE RESEARCH AND DEVELOPMENT ACTIVITIES AND PROGRAMS USAspending: $172,974,295.69 obligated, $107,363,124.41
+    outlaid (obligation to date, not a ceiling).'
+  value:
+    amount: 172974295.69
+    currency: USD
+    qualifier: exact
+    usd: 172974295.69
+  evidence:
+  - field: amount
+    snapshot: 2f408ba8ae77a160944f86296bf4525ad5764adf676a80282c338ea71b493f31
+    quote: '"Award ID": "89303519CNE000005", "Recipient Name": "AMERICAN CENTRIFUGE OPERATING, LLC", "Recipient UEI": "L8VHV5CNBV97",
+      "Award Amount": 172974295.69'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 2f408ba8ae77a160944f86296bf4525ad5764adf676a80282c338ea71b493f31
+    quote: '"Base Obligation Date": "2019-05-31", "generated_internal_id": "CONT_AWD_89303519CNE000005_8900_-NONE-_-NONE-"'
+    basis: disclosed
+  - field: outlays
+    snapshot: 2f408ba8ae77a160944f86296bf4525ad5764adf676a80282c338ea71b493f31
+    quote: '"Award Amount": 172974295.69, "Total Outlays": 107363124.41'
+    basis: disclosed
+- id: american-centrifuge-operating-89243223cne000030
+  counterparty: U.S. Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: '2022-11-30'
+  summary: 'DOE contract 89243223CNE000030: HIGH ASSAY LOW ENRICHED URANIUM (HALEU) CASCADE DEMO COMPLETION AND EXTENDED PRODUCTION
+    USAspending: $332,041,412.48 obligated, $294,408,024.82 outlaid (obligation to date, not a ceiling).'
+  value:
+    amount: 332041412.48
+    currency: USD
+    qualifier: exact
+    usd: 332041412.48
+  evidence:
+  - field: amount
+    snapshot: 2f408ba8ae77a160944f86296bf4525ad5764adf676a80282c338ea71b493f31
+    quote: '"Award ID": "89243223CNE000030", "Recipient Name": "AMERICAN CENTRIFUGE OPERATING, LLC", "Recipient UEI": "L8VHV5CNBV97",
+      "Award Amount": 332041412.48'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 2f408ba8ae77a160944f86296bf4525ad5764adf676a80282c338ea71b493f31
+    quote: '"Base Obligation Date": "2022-11-30", "generated_internal_id": "CONT_AWD_89243223CNE000030_8900_-NONE-_-NONE-"'
+    basis: disclosed
+  - field: outlays
+    snapshot: 2f408ba8ae77a160944f86296bf4525ad5764adf676a80282c338ea71b493f31
+    quote: '"Award Amount": 332041412.48, "Total Outlays": 294408024.82'
+    basis: disclosed
+- id: american-centrifuge-operating-89243225fne400178
+  counterparty: U.S. Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: '2025-04-11'
+  summary: 'DOE contract 89243225FNE400178: NEW TASK ORDER AWARD UNDER THE LOW-ENRICHED URANIUM (LEU) - ENRICHMENT ACQUISITION IDIQ
+    FOR AMERICAN CENTRIFUGE LLC FOR THE DEVELOPMENT OF A REPORT FOR THE DEPLOYMENT OF NEW ENRICHMENT CAPACITY AND PO USAspending:
+    $500,000 obligated, $148,253.67 outlaid.'
+  value:
+    amount: 500000.0
+    currency: USD
+    qualifier: exact
+    usd: 500000.0
+  evidence:
+  - field: amount
+    snapshot: 2f408ba8ae77a160944f86296bf4525ad5764adf676a80282c338ea71b493f31
+    quote: '"Award ID": "89243225FNE400178", "Recipient Name": "AMERICAN CENTRIFUGE OPERATING, LLC", "Recipient UEI": "L8VHV5CNBV97",
+      "Award Amount": 500000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 2f408ba8ae77a160944f86296bf4525ad5764adf676a80282c338ea71b493f31
+    quote: '"Base Obligation Date": "2025-04-11", "generated_internal_id": "CONT_AWD_89243225FNE400178_8900_89243225DNE000026_8900"'
+    basis: disclosed
+  - field: outlays
+    snapshot: 2f408ba8ae77a160944f86296bf4525ad5764adf676a80282c338ea71b493f31
+    quote: '"Award Amount": 500000.0, "Total Outlays": 148253.67'
+    basis: disclosed
+- id: american-centrifuge-operating-89243226fne400212
+  counterparty: U.S. Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: '2026-07-01'
+  summary: 'DOE contract 89243226FNE400212: THE PURPOSE OF THIS TASK ORDER (TO) IS TO ESTABLISH NEW ANNUAL DOMESTIC COMMERCIAL HIGH-ASSAY
+    LOW-ENRICHED URANIUM (HALEU) CAPACITY AND BEGIN PRODUCTION OF HALEU UF6 FOR PURCHASE BY DOE. USAspending: $900M obligated, $0
+    outlaid at snapshot; paid as performance-based milestone payments (Centrus 10-Q), so the realised amount may be lower.'
+  value:
+    amount: 900000000.0
+    currency: USD
+    qualifier: exact
+    usd: 900000000.0
+  evidence:
+  - field: amount
+    snapshot: 2f408ba8ae77a160944f86296bf4525ad5764adf676a80282c338ea71b493f31
+    quote: '"Award ID": "89243226FNE400212", "Recipient Name": "AMERICAN CENTRIFUGE OPERATING, LLC", "Recipient UEI": "L8VHV5CNBV97",
+      "Award Amount": 900000000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 2f408ba8ae77a160944f86296bf4525ad5764adf676a80282c338ea71b493f31
+    quote: '"Base Obligation Date": "2026-07-01", "generated_internal_id": "CONT_AWD_89243226FNE400212_8900_89243225DNE000022_8900"'
+    basis: disclosed
+  - field: outlays
+    snapshot: 2f408ba8ae77a160944f86296bf4525ad5764adf676a80282c338ea71b493f31
+    quote: '"Award Amount": 900000000.0, "Total Outlays": 0.0'
+    basis: disclosed

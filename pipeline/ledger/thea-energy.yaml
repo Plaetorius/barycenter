@@ -1,0 +1,530 @@
+company: thea-energy
+name: Thea Energy
+sector: fusion
+notes: 'Thea Energy (formerly Princeton Stellarators Inc.). WebSearch budget was exhausted; sources are the company''s own press-release pages (thea.energy, robots-permitted), the PPPL INFUSE article, TechCrunch
+  and USAspending. GAPS: (1) No seed round found; TechCrunch 2026-05-27 gives $130M total private (20 A + 100 B implies ~10 unattributed), TechCrunch 2026-08-15 says $120M across rounds: sources differ,
+  neither recorded as a round. (2) Series B extension (2026-08-18) amount undisclosed; omitted. (3) DOE Milestone: the programme release gives only $46M total across eight awardees (no per-company figure).
+  The $13.7M is USAspending ''Award Amount'' for DESC0024881 (Thea Energy, ''Stellarator fusion pilot plant enabled by array of planar shaping coils'', 2024-06-05 to 2027-06-04, type ''other reimbursable,
+  contingent...''): matched by description to the Milestone project, but it is a total award value, milestone-contingent and may include company cost share; a reviewer should confirm against DOE. The event
+  is dated at the 2023-06-01 selection announcement; USAspending base obligation date is 2024-06-03. The Jan 2026 DOE certification of the Helios preconceptual design (thea.energy release 2026-01-13) is
+  a milestone, not a new funding event. (4) INFUSE: Thea says it has six INFUSE awards in total; only three announcements were found (Feb 2023 via PPPL: PSI collaborations, ''nearly $500,000'' is the total
+  for the two PPPL collaborations, the money is received by PPPL, not Thea, so no amount is recorded (verifier); Jul 2023: one award; Sep 2025: three awards). Per-award dollars not stated for 2023-07
+  and 2025-09 (programme totals $4.6M/18 projects and $6.1M/20 projects), so amounts omitted. INFUSE vouchers pay national labs, not the company. The 2023-01 awardee list on infuse.ornl.gov was not parsed
+  (JS-heavy). (5) FIRE and SBIR: no Thea award found (FIRE awardees are labs/universities; SBIR probe found none). NJ state grants/tax credits (NJEDA) not found in the sources fetched. (6) No offtake/site/partnership
+  agreements found; digital-twin collaboration with NVIDIA/Synopsys/Argonne/PPPL (2026) and Eos site evaluation are not binding agreements and not recorded. (7) Investor slugs for aloniq, alj-investments,
+  beyond-earth-ventures are proposed (not in investors.csv). ''Whatif Ventures'' (release) = What If Ventures (TechCrunch); ''Idemitsu Kosan'' mapped to slug idemitsu.'
+events:
+- id: thea-infuse-2023-02
+  instrument: voucher
+  round_label: DOE INFUSE (Feb 2023 round, two PPPL collaborations)
+  announced_on: '2023-02-01'
+  program: DOE INFUSE (FES)
+  evidence:
+  - field: recipient
+    snapshot: bc134cbbb47a642e2acc9c790614d401a0114c8b6f6b57dbe683496aa6078336
+    quote: The two PPPL collaborations, which will receive nearly $500,000 in total funding
+    basis: reported
+  - field: announced_on
+    snapshot: bc134cbbb47a642e2acc9c790614d401a0114c8b6f6b57dbe683496aa6078336
+    quote: Written by John Greenwald Feb. 1, 2023
+    basis: reported
+  - field: round_label
+    snapshot: bc134cbbb47a642e2acc9c790614d401a0114c8b6f6b57dbe683496aa6078336
+    quote: awarded in the latest round of the DOE’s Innovation Network for Fusion Energy ( INFUSE ) program
+    basis: reported
+  participants:
+  - investor: DOE Fusion Energy Sciences (INFUSE)
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: bc134cbbb47a642e2acc9c790614d401a0114c8b6f6b57dbe683496aa6078336
+      quote: awarded in the latest round of the DOE’s Innovation Network for Fusion Energy ( INFUSE ) program
+      basis: reported
+- id: thea-milestone-2023-06
+  instrument: cost_share
+  round_label: DOE Milestone-Based Fusion Development Program (initial award)
+  announced_on: '2023-06-01'
+  amount:
+    amount: 13700000
+    currency: USD
+    qualifier: up_to
+  obligated_usd: 13700000
+  disbursed_usd: 3000000
+  program: DOE Milestone-Based Fusion Development Program (DE-FOA-0002809)
+  evidence:
+  - field: announced_on
+    snapshot: 316f837a3de16953acb5422a9a842a1f1c8a96b1c71782432860dfb5ea1f8537
+    quote: PRINCETON, N.J., June 01, 2023 (GLOBE NEWSWIRE) — Princeton Stellarators (PSI), a fusion energy company advancing stellarator technology for commercialization, today announced the U.S. Department
+      of Energy (DOE) selected the company for an award
+    basis: disclosed
+  - field: amount
+    snapshot: 782e941302d538f68c913b281bc7c140cdcefffc4785824be6d917ce4a4d935c
+    quote: '"Award ID":"DESC0024881","Recipient Name":"THEA ENERGY, INC.","Recipient UEI":"C6RDDSQK1KS8","Award Amount":13700000.0'
+    basis: disclosed
+  - field: round_label
+    snapshot: 782e941302d538f68c913b281bc7c140cdcefffc4785824be6d917ce4a4d935c
+    quote: '"Description":"STELLARATOR FUSION PILOT PLANT ENABLED BY ARRAY OF PLANAR SHAPING COILS","Start Date":"2024-06-05","End Date":"2027-06-04"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 5f5e0bf1f6085701df03d694594f96ca9d3943ecc6f5167bfd661673979a38f7
+    quote: '"non_federal_funding":0.0,"total_funding":13700000.0,"total_account_outlay":3000000.0,"total_account_obligation":13700000.0'
+    basis: disclosed
+  - field: award_type
+    snapshot: 5f5e0bf1f6085701df03d694594f96ca9d3943ecc6f5167bfd661673979a38f7
+    quote: '"type_description":"OTHER REIMBURSABLE, CONTINGENT, INTANGIBLE, OR INDIRECT FINANCIAL ASSISTANCE"'
+    basis: disclosed
+  - field: date_signed
+    snapshot: 5f5e0bf1f6085701df03d694594f96ca9d3943ecc6f5167bfd661673979a38f7
+    quote: '"date_signed":"2024-06-03"'
+    basis: disclosed
+  participants:
+  - investor: U.S. Department of Energy, Office of Fusion Energy Sciences
+    investor_slug: doe-fes
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 316f837a3de16953acb5422a9a842a1f1c8a96b1c71782432860dfb5ea1f8537
+      quote: selected the company for an award sponsored by the Office of Fusion Energy Sciences
+      basis: disclosed
+- id: thea-infuse-2023-07
+  instrument: voucher
+  round_label: DOE INFUSE (July 2023, UC San Diego collaboration)
+  announced_on: '2023-07-27'
+  program: DOE INFUSE (FES)
+  evidence:
+  - field: announced_on
+    snapshot: 16a27f54b85db6af5cd47144c0764c8430d9eafaacd41e8a4213b2ac21f0d315
+    quote: PRINCETON, N.J., July 27, 2023 (GLOBE NEWSWIRE) — Thea Energy Inc., formerly Princeton Stellarators
+    basis: disclosed
+  - field: round_label
+    snapshot: 16a27f54b85db6af5cd47144c0764c8430d9eafaacd41e8a4213b2ac21f0d315
+    quote: selected the company for an award provided through the Innovation Network for Fusion Energy (INFUSE) program
+    basis: disclosed
+  participants:
+  - investor: DOE Fusion Energy Sciences (INFUSE)
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 16a27f54b85db6af5cd47144c0764c8430d9eafaacd41e8a4213b2ac21f0d315
+      quote: sponsored by the Fusion Energy Sciences (FES) program office
+      basis: disclosed
+- id: thea-series-a-2024
+  instrument: equity
+  round_label: Series A
+  announced_on: '2024-02-08'
+  amount:
+    amount: 20000000
+    currency: USD
+    qualifier: exact
+  use_of_proceeds: planar coil magnet array manufacturing, integrated stellarator (Eos) design and simulation, team growth
+  evidence:
+  - field: amount
+    snapshot: 8f65466109d119b03305b77a27530578642ebb902bb8a096aacb03c9dd30cebb
+    quote: today announced the closing of a $20 million Series A financing
+    basis: disclosed
+  - field: announced_on
+    snapshot: 8f65466109d119b03305b77a27530578642ebb902bb8a096aacb03c9dd30cebb
+    quote: PRINCETON, N.J., Feb. 08, 2024 (GLOBE NEWSWIRE)
+    basis: disclosed
+  - field: round_label
+    snapshot: 8f65466109d119b03305b77a27530578642ebb902bb8a096aacb03c9dd30cebb
+    quote: announced the closing of a $20 million Series A financing
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 8f65466109d119b03305b77a27530578642ebb902bb8a096aacb03c9dd30cebb
+    quote: Proceeds from the financing will support the construction and operation of the Company’s proprietary superconducting planar coil magnet array systems
+    basis: disclosed
+  participants:
+  - investor: Prelude Ventures
+    investor_slug: prelude-ventures
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 8f65466109d119b03305b77a27530578642ebb902bb8a096aacb03c9dd30cebb
+      quote: Prelude Ventures led the round with participation from other investors including 11.2 Capital, Anglo American, Hitachi Ventures, Lowercarbon Capital, Mercator Partners, Orion Industrial Ventures,
+        and Starlight Ventures
+      basis: disclosed
+  - investor: 11.2 Capital
+    investor_slug: 11-2-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 8f65466109d119b03305b77a27530578642ebb902bb8a096aacb03c9dd30cebb
+      quote: Prelude Ventures led the round with participation from other investors including 11.2 Capital, Anglo American, Hitachi Ventures, Lowercarbon Capital, Mercator Partners, Orion Industrial Ventures,
+        and Starlight Ventures
+      basis: disclosed
+  - investor: Anglo American
+    investor_slug: anglo-american
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 8f65466109d119b03305b77a27530578642ebb902bb8a096aacb03c9dd30cebb
+      quote: Prelude Ventures led the round with participation from other investors including 11.2 Capital, Anglo American, Hitachi Ventures, Lowercarbon Capital, Mercator Partners, Orion Industrial Ventures,
+        and Starlight Ventures
+      basis: disclosed
+  - investor: Hitachi Ventures
+    investor_slug: hitachi-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 8f65466109d119b03305b77a27530578642ebb902bb8a096aacb03c9dd30cebb
+      quote: Prelude Ventures led the round with participation from other investors including 11.2 Capital, Anglo American, Hitachi Ventures, Lowercarbon Capital, Mercator Partners, Orion Industrial Ventures,
+        and Starlight Ventures
+      basis: disclosed
+  - investor: Lowercarbon Capital
+    investor_slug: lowercarbon-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 8f65466109d119b03305b77a27530578642ebb902bb8a096aacb03c9dd30cebb
+      quote: Prelude Ventures led the round with participation from other investors including 11.2 Capital, Anglo American, Hitachi Ventures, Lowercarbon Capital, Mercator Partners, Orion Industrial Ventures,
+        and Starlight Ventures
+      basis: disclosed
+  - investor: Mercator Partners
+    investor_slug: mercator-partners
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 8f65466109d119b03305b77a27530578642ebb902bb8a096aacb03c9dd30cebb
+      quote: Prelude Ventures led the round with participation from other investors including 11.2 Capital, Anglo American, Hitachi Ventures, Lowercarbon Capital, Mercator Partners, Orion Industrial Ventures,
+        and Starlight Ventures
+      basis: disclosed
+  - investor: Orion Industrial Ventures
+    investor_slug: orion-industrial-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 8f65466109d119b03305b77a27530578642ebb902bb8a096aacb03c9dd30cebb
+      quote: Prelude Ventures led the round with participation from other investors including 11.2 Capital, Anglo American, Hitachi Ventures, Lowercarbon Capital, Mercator Partners, Orion Industrial Ventures,
+        and Starlight Ventures
+      basis: disclosed
+  - investor: Starlight Ventures
+    investor_slug: starlight-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 8f65466109d119b03305b77a27530578642ebb902bb8a096aacb03c9dd30cebb
+      quote: Prelude Ventures led the round with participation from other investors including 11.2 Capital, Anglo American, Hitachi Ventures, Lowercarbon Capital, Mercator Partners, Orion Industrial Ventures,
+        and Starlight Ventures
+      basis: disclosed
+- id: thea-infuse-2025-09
+  instrument: voucher
+  round_label: DOE INFUSE (Sept 2025, three awards)
+  announced_on: '2025-09-11'
+  program: DOE INFUSE (FES)
+  evidence:
+  - field: announced_on
+    snapshot: 087f7e302ff38cfbf45d434aa0560c6f3a19944dad0099068933e9685b739373
+    quote: KEARNY, N.J., Sept. 11, 2025 (GLOBE NEWSWIRE)
+    basis: disclosed
+  - field: round_label
+    snapshot: 087f7e302ff38cfbf45d434aa0560c6f3a19944dad0099068933e9685b739373
+    quote: selected the company for three awards provided through the Innovation Network for Fusion Energy (INFUSE) program
+    basis: disclosed
+  participants:
+  - investor: DOE Fusion Energy Sciences (INFUSE)
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 087f7e302ff38cfbf45d434aa0560c6f3a19944dad0099068933e9685b739373
+      quote: These awards are sponsored by the Fusion Energy Sciences (FES) program office
+      basis: disclosed
+- id: thea-series-b-2026
+  instrument: equity
+  round_label: Series B
+  announced_on: '2026-05-27'
+  amount:
+    amount: 100000000
+    currency: USD
+    qualifier: exact
+  use_of_proceeds: expand magnet manufacturing capacity, fast-track construction of integrated fusion system (Eos), accelerate commercial deployment
+  evidence:
+  - field: amount
+    snapshot: bed642de4915953fe81a69513123e59c70134f04a05cb8d30a1a7645f594bcd2
+    quote: today announced it has raised $100 million in Series B funding
+    basis: disclosed
+  - field: announced_on
+    snapshot: bed642de4915953fe81a69513123e59c70134f04a05cb8d30a1a7645f594bcd2
+    quote: KEARNY, N.J., May 27, 2026 (GLOBE NEWSWIRE)
+    basis: disclosed
+  - field: round_label
+    snapshot: bed642de4915953fe81a69513123e59c70134f04a05cb8d30a1a7645f594bcd2
+    quote: today announced it has raised $100 million in Series B funding
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: bed642de4915953fe81a69513123e59c70134f04a05cb8d30a1a7645f594bcd2
+    quote: The funding will expand the Company’s magnet manufacturing capacity, fast-track the construction of its integrated fusion system
+    basis: disclosed
+  participants:
+  - investor: US Innovative Technology Fund (Thomas Tull)
+    investor_slug: us-innovative-technology-fund
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: bed642de4915953fe81a69513123e59c70134f04a05cb8d30a1a7645f594bcd2
+      quote: The oversubscribed raise, led by USIT with participation from General Innovation Capital Partners and Linse Capital
+      basis: disclosed
+  - investor: General Innovation Capital Partners
+    investor_slug: general-innovation-capital-partners
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: bed642de4915953fe81a69513123e59c70134f04a05cb8d30a1a7645f594bcd2
+      quote: today announced it has raised $100 million in Series B funding that draws support from Thomas Tull’s US Innovative Technology Fund (USIT), General Innovation Capital Partners (GICP), Linse
+        Capital, Calm Ventures, Climate Capital, Divergent Capital, Emerald Technology Ventures, Gaingels, Idemitsu Kosan, Overlay Capital, Timescale Ventures, and Whatif Ventures
+      basis: disclosed
+  - investor: Linse Capital
+    investor_slug: linse-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: bed642de4915953fe81a69513123e59c70134f04a05cb8d30a1a7645f594bcd2
+      quote: today announced it has raised $100 million in Series B funding that draws support from Thomas Tull’s US Innovative Technology Fund (USIT), General Innovation Capital Partners (GICP), Linse
+        Capital, Calm Ventures, Climate Capital, Divergent Capital, Emerald Technology Ventures, Gaingels, Idemitsu Kosan, Overlay Capital, Timescale Ventures, and Whatif Ventures
+      basis: disclosed
+  - investor: Calm Ventures
+    investor_slug: calm-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: bed642de4915953fe81a69513123e59c70134f04a05cb8d30a1a7645f594bcd2
+      quote: today announced it has raised $100 million in Series B funding that draws support from Thomas Tull’s US Innovative Technology Fund (USIT), General Innovation Capital Partners (GICP), Linse
+        Capital, Calm Ventures, Climate Capital, Divergent Capital, Emerald Technology Ventures, Gaingels, Idemitsu Kosan, Overlay Capital, Timescale Ventures, and Whatif Ventures
+      basis: disclosed
+  - investor: Climate Capital
+    investor_slug: climate-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: bed642de4915953fe81a69513123e59c70134f04a05cb8d30a1a7645f594bcd2
+      quote: today announced it has raised $100 million in Series B funding that draws support from Thomas Tull’s US Innovative Technology Fund (USIT), General Innovation Capital Partners (GICP), Linse
+        Capital, Calm Ventures, Climate Capital, Divergent Capital, Emerald Technology Ventures, Gaingels, Idemitsu Kosan, Overlay Capital, Timescale Ventures, and Whatif Ventures
+      basis: disclosed
+  - investor: Divergent Capital
+    investor_slug: divergent-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: bed642de4915953fe81a69513123e59c70134f04a05cb8d30a1a7645f594bcd2
+      quote: today announced it has raised $100 million in Series B funding that draws support from Thomas Tull’s US Innovative Technology Fund (USIT), General Innovation Capital Partners (GICP), Linse
+        Capital, Calm Ventures, Climate Capital, Divergent Capital, Emerald Technology Ventures, Gaingels, Idemitsu Kosan, Overlay Capital, Timescale Ventures, and Whatif Ventures
+      basis: disclosed
+  - investor: Emerald Technology Ventures
+    investor_slug: emerald-technology-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: bed642de4915953fe81a69513123e59c70134f04a05cb8d30a1a7645f594bcd2
+      quote: today announced it has raised $100 million in Series B funding that draws support from Thomas Tull’s US Innovative Technology Fund (USIT), General Innovation Capital Partners (GICP), Linse
+        Capital, Calm Ventures, Climate Capital, Divergent Capital, Emerald Technology Ventures, Gaingels, Idemitsu Kosan, Overlay Capital, Timescale Ventures, and Whatif Ventures
+      basis: disclosed
+  - investor: Gaingels
+    investor_slug: gaingels
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: bed642de4915953fe81a69513123e59c70134f04a05cb8d30a1a7645f594bcd2
+      quote: today announced it has raised $100 million in Series B funding that draws support from Thomas Tull’s US Innovative Technology Fund (USIT), General Innovation Capital Partners (GICP), Linse
+        Capital, Calm Ventures, Climate Capital, Divergent Capital, Emerald Technology Ventures, Gaingels, Idemitsu Kosan, Overlay Capital, Timescale Ventures, and Whatif Ventures
+      basis: disclosed
+  - investor: Idemitsu Kosan
+    investor_slug: idemitsu
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: bed642de4915953fe81a69513123e59c70134f04a05cb8d30a1a7645f594bcd2
+      quote: today announced it has raised $100 million in Series B funding that draws support from Thomas Tull’s US Innovative Technology Fund (USIT), General Innovation Capital Partners (GICP), Linse
+        Capital, Calm Ventures, Climate Capital, Divergent Capital, Emerald Technology Ventures, Gaingels, Idemitsu Kosan, Overlay Capital, Timescale Ventures, and Whatif Ventures
+      basis: disclosed
+  - investor: Overlay Capital
+    investor_slug: overlay-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: bed642de4915953fe81a69513123e59c70134f04a05cb8d30a1a7645f594bcd2
+      quote: today announced it has raised $100 million in Series B funding that draws support from Thomas Tull’s US Innovative Technology Fund (USIT), General Innovation Capital Partners (GICP), Linse
+        Capital, Calm Ventures, Climate Capital, Divergent Capital, Emerald Technology Ventures, Gaingels, Idemitsu Kosan, Overlay Capital, Timescale Ventures, and Whatif Ventures
+      basis: disclosed
+  - investor: Timescale Ventures
+    investor_slug: timescale-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: bed642de4915953fe81a69513123e59c70134f04a05cb8d30a1a7645f594bcd2
+      quote: today announced it has raised $100 million in Series B funding that draws support from Thomas Tull’s US Innovative Technology Fund (USIT), General Innovation Capital Partners (GICP), Linse
+        Capital, Calm Ventures, Climate Capital, Divergent Capital, Emerald Technology Ventures, Gaingels, Idemitsu Kosan, Overlay Capital, Timescale Ventures, and Whatif Ventures
+      basis: disclosed
+  - investor: Whatif Ventures
+    investor_slug: what-if-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: bed642de4915953fe81a69513123e59c70134f04a05cb8d30a1a7645f594bcd2
+      quote: today announced it has raised $100 million in Series B funding that draws support from Thomas Tull’s US Innovative Technology Fund (USIT), General Innovation Capital Partners (GICP), Linse
+        Capital, Calm Ventures, Climate Capital, Divergent Capital, Emerald Technology Ventures, Gaingels, Idemitsu Kosan, Overlay Capital, Timescale Ventures, and Whatif Ventures
+      basis: disclosed
+  - investor: Alumni Ventures
+    investor_slug: alumni-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: bed642de4915953fe81a69513123e59c70134f04a05cb8d30a1a7645f594bcd2
+      quote: Existing investors Alumni Ventures, Hitachi Ventures, Lowercarbon Capital, Mercator Partners, Orion Industrial Ventures, Prelude Ventures, and Starlight Ventures also participated
+      basis: disclosed
+  - investor: Hitachi Ventures
+    investor_slug: hitachi-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: bed642de4915953fe81a69513123e59c70134f04a05cb8d30a1a7645f594bcd2
+      quote: Existing investors Alumni Ventures, Hitachi Ventures, Lowercarbon Capital, Mercator Partners, Orion Industrial Ventures, Prelude Ventures, and Starlight Ventures also participated
+      basis: disclosed
+  - investor: Lowercarbon Capital
+    investor_slug: lowercarbon-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: bed642de4915953fe81a69513123e59c70134f04a05cb8d30a1a7645f594bcd2
+      quote: Existing investors Alumni Ventures, Hitachi Ventures, Lowercarbon Capital, Mercator Partners, Orion Industrial Ventures, Prelude Ventures, and Starlight Ventures also participated
+      basis: disclosed
+  - investor: Mercator Partners
+    investor_slug: mercator-partners
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: bed642de4915953fe81a69513123e59c70134f04a05cb8d30a1a7645f594bcd2
+      quote: Existing investors Alumni Ventures, Hitachi Ventures, Lowercarbon Capital, Mercator Partners, Orion Industrial Ventures, Prelude Ventures, and Starlight Ventures also participated
+      basis: disclosed
+  - investor: Orion Industrial Ventures
+    investor_slug: orion-industrial-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: bed642de4915953fe81a69513123e59c70134f04a05cb8d30a1a7645f594bcd2
+      quote: Existing investors Alumni Ventures, Hitachi Ventures, Lowercarbon Capital, Mercator Partners, Orion Industrial Ventures, Prelude Ventures, and Starlight Ventures also participated
+      basis: disclosed
+  - investor: Prelude Ventures
+    investor_slug: prelude-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: bed642de4915953fe81a69513123e59c70134f04a05cb8d30a1a7645f594bcd2
+      quote: Existing investors Alumni Ventures, Hitachi Ventures, Lowercarbon Capital, Mercator Partners, Orion Industrial Ventures, Prelude Ventures, and Starlight Ventures also participated
+      basis: disclosed
+  - investor: Starlight Ventures
+    investor_slug: starlight-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: bed642de4915953fe81a69513123e59c70134f04a05cb8d30a1a7645f594bcd2
+      quote: Existing investors Alumni Ventures, Hitachi Ventures, Lowercarbon Capital, Mercator Partners, Orion Industrial Ventures, Prelude Ventures, and Starlight Ventures also participated
+      basis: disclosed
+- id: thea-total-private-2026-05
+  instrument: equity
+  round_label: Cumulative private investment statement
+  announced_on: '2026-05-27'
+  amount_kind: cumulative
+  amount:
+    amount: 130000000
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: 9386333a5b7db0cbb362efb8a37f747ed43ce87b22d7d5ffe1078d1f490dbad5
+    quote: The new round brings total private investment to $130 million, the startup told TechCrunch
+    basis: reported
+  - field: announced_on
+    snapshot: 9386333a5b7db0cbb362efb8a37f747ed43ce87b22d7d5ffe1078d1f490dbad5
+    quote: Tim De Chant 10:54 AM PDT · May 27, 2026
+    basis: reported
+- id: thea-arpa-e-scaleup-2026
+  instrument: grant
+  round_label: ARPA-E SCALEUP
+  announced_on: '2026-07-27'
+  amount:
+    amount: 20000000
+    currency: USD
+    qualifier: exact
+  program: ARPA-E SCALEUP
+  use_of_proceeds: first domestic production line of modular HTS magnets
+  evidence:
+  - field: amount
+    snapshot: 8ef71dd915bf1a2ae3448be155af6ab104921edd021ef8e4bd70cd3f12ace3ea
+    quote: selected the Company for a $20 million award as part of the Seeding Critical Advances for Leading Energy technologies with Untapped Potential (SCALEUP) program
+    basis: disclosed
+  - field: announced_on
+    snapshot: 8ef71dd915bf1a2ae3448be155af6ab104921edd021ef8e4bd70cd3f12ace3ea
+    quote: KEARNY, N.J., July 27, 2026 (GLOBE NEWSWIRE)
+    basis: disclosed
+  - field: round_label
+    snapshot: 8ef71dd915bf1a2ae3448be155af6ab104921edd021ef8e4bd70cd3f12ace3ea
+    quote: Seeding Critical Advances for Leading Energy technologies with Untapped Potential (SCALEUP) program
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 8ef71dd915bf1a2ae3448be155af6ab104921edd021ef8e4bd70cd3f12ace3ea
+    quote: scaling its manufacturing and test capabilities to support the first domestic production line of modular high-temperature superconducting (HTS) magnets
+    basis: disclosed
+  participants:
+  - investor: ARPA-E
+    investor_slug: arpa-e
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 8ef71dd915bf1a2ae3448be155af6ab104921edd021ef8e4bd70cd3f12ace3ea
+      quote: Advanced Research Projects Agency – Energy (ARPA-E) has recently selected the Company for a $20 million award
+      basis: disclosed
+- id: thea-series-b-extension-2026
+  instrument: equity
+  round_label: Series B extension
+  announced_on: '2026-08-18'
+  evidence:
+  - field: announced_on
+    snapshot: b70109f990965719f3de6b5956fbec3f83f2a4e1f750c012d1972494abf0abf4
+    quote: KEARNY, N.J., August 18, 2026 (GLOBE NEWSWIRE)
+    basis: disclosed
+  - field: round_label
+    snapshot: b70109f990965719f3de6b5956fbec3f83f2a4e1f750c012d1972494abf0abf4
+    quote: today announced it has closed an extension of its Series B funding
+    basis: disclosed
+  participants:
+  - investor: Brevan Howard Macro Venture
+    investor_slug: brevan-howard
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: b70109f990965719f3de6b5956fbec3f83f2a4e1f750c012d1972494abf0abf4
+      quote: with additional support from Brevan Howard Macro Venture, Aloniq, ALJ Investments, Beyond Earth Ventures
+      basis: disclosed
+  - investor: Aloniq
+    investor_slug: aloniq
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: b70109f990965719f3de6b5956fbec3f83f2a4e1f750c012d1972494abf0abf4
+      quote: with additional support from Brevan Howard Macro Venture, Aloniq, ALJ Investments, Beyond Earth Ventures
+      basis: disclosed
+  - investor: ALJ Investments
+    investor_slug: alj-investments
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: b70109f990965719f3de6b5956fbec3f83f2a4e1f750c012d1972494abf0abf4
+      quote: with additional support from Brevan Howard Macro Venture, Aloniq, ALJ Investments, Beyond Earth Ventures
+      basis: disclosed
+  - investor: Beyond Earth Ventures
+    investor_slug: beyond-earth-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: b70109f990965719f3de6b5956fbec3f83f2a4e1f750c012d1972494abf0abf4
+      quote: with additional support from Brevan Howard Macro Venture, Aloniq, ALJ Investments, Beyond Earth Ventures
+      basis: disclosed
+agreements: []
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  "on": 2026-10-05
+  note: "3 corrections. (1) INFUSE Feb 2023: removed the ~$500K amount; PPPL article says the PPPL collaborations receive the money (lab money, D5), Thea is only the partner. (2) Milestone $13.7M: qualifier exact -> up_to (milestone-contingent), added obligated_usd 13.7M and disbursed_usd 3.0M with evidence from the USAspending award record (new snapshot 5f5e0bf1): award type 'other reimbursable, contingent', non_federal_funding 0 (so the 13.7M is federal only, not company cost share), date_signed 2024-06-03 (same day as Realta's Milestone award DESC0024887). (3) Notes updated. Residual doubt: the link from DESC0024881 to the Milestone programme still rests on description/award type/timing; funding_opportunity number is null in USAspending and the DOE awardee page could not be read. Selection date 2023-06-01 kept as announced_on while the amount comes from the 2024 obligation. ARPA-E SCALEUP $20M is a selection, not yet visible as an obligation."

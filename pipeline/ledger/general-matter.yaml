@@ -1,0 +1,73 @@
+company: general-matter
+name: General Matter
+sector: fission
+notes: |-
+  Private HALEU/LEU enrichment developer (Paducah, KY), founded Jan 2024. [Verifier 2026-10-05] The Series A event was REMOVED: its only evidence was Wikipedia, which is reference-only and cannot be evidence. No primary or press replacement was found: no Form D in EDGAR full-text search (snapshot af108c836341), the company news page and the 2025-04-14 launch post (snapshot 281c1a8666b5) say only that General Matter was incubated within Founders Fund, and foundersfund.com/portfolio lists General Matter without amounts. The claim (about $50M, April 2025, led by Founders Fund, per Wikipedia citing Bloomberg) stays here as an unverified lead only. With no evidenced funding event the company fails D1 until a source is found. Original note follows. The Series A (about $50M, led by Founders Fund) is evidenced only by Wikipedia (basis reported; its own cited source is Bloomberg, not fetched), and its date is month- granular (April 2025; 2025-04-01 is a placeholder). No primary release, Form D or investor list beyond Founders Fund was found; WebSearch budget was exhausted. Peter Thiel is said to have joined the board after the investment, which does not state that he invested, so he is not recorded as a participant. The DOE task order ($900M of the $2.7B enrichment announcement of 2026-01-05) is a service contract (HALEU enrichment capacity), recorded as a gov_contract agreement and not as funding; a USAspending cross-check was not done. The same DOE release also lists American Centrifuge Operating ($900M), Orano Federal Services ($900M) and a $28M award to Global Laser Enrichment (see that ledger).
+  MERGE 2026-10-05 (USAspending supplement): USAspending lists only contracts for General Matter (no grant, cooperative agreement or OTA), so no evidenced DOE funding event exists. Consistency flag for review: the Centrus ledger records the parallel USD 900M HALEU task order to ACO as an event (instrument other, up_to), while this ledger keeps it as a gov_contract agreement; one rule should be chosen for both.
+verification:
+  status: verified
+  by: merge-verifier-agent (opus), 2026-10-05
+  'on': 2026-10-05
+  note: 'USAspending merge: the supplement has no funding events, only two DOE procurement task orders (contracts). 1 agreement
+    added (LEU IDIQ report task order, USD 395,254.90, 2025-04-11); USAspending evidence attached to the existing USD 900M
+    HALEU task-order agreement (contract 89243226FNE400213, obligated 900M, base obligation 2026-03-04). No funding event
+    added: the ledger still has none and stays unpublishable under D1. Previous sign-off: verifier-agent (Claude Opus 5.5),
+    2026-10-05: 1 correction: Series A (about $50M, Founders Fund) REMOVED because its only evidence was Wikipedia; no Form
+    D, company or investor source found. Ledger now has no funding event (fails D1); DOE $900M task order kept as a gov_contract
+    agreement.'
+events: []
+agreements:
+- id: general-matter-doe-haleu-task-order-2026
+  counterparty: U.S. Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: 2026-01-05
+  value:
+    amount: 900000000
+    currency: USD
+    qualifier: exact
+  summary: 'DOE task order to create domestic HALEU enrichment capacity (part of $2.7B LEU/HALEU enrichment announcement).
+    USAspending contract 89243226FNE400213: USD 900M obligated, base obligation date 2026-03-04.'
+  evidence:
+  - field: agreement
+    snapshot: 65d2f34c90e4efe46d5d592848107b385f91642765f0684fc9e2b6484cd5e82d
+    quote: General Matter ($900 million) to create domestic HALEU enrichment capacity
+    basis: disclosed
+  - field: announced_on
+    snapshot: 65d2f34c90e4efe46d5d592848107b385f91642765f0684fc9e2b6484cd5e82d
+    quote: Energy.gov January 5, 2026
+    basis: disclosed
+  - field: obligated
+    snapshot: 8673b4db907aabf9f18dd1ac4aab8713eae083b0ac0d2bf4576bda7c3d9f8992
+    quote: '"Award ID": "89243226FNE400213", "Recipient Name": "GENERAL MATTER, INC.", "Recipient UEI": "XFT2AME5FUB3", "Award
+      Amount": 900000000.0'
+    basis: disclosed
+  - field: base_obligation_date
+    snapshot: 8673b4db907aabf9f18dd1ac4aab8713eae083b0ac0d2bf4576bda7c3d9f8992
+    quote: '"Base Obligation Date": "2026-03-04", "generated_internal_id": "CONT_AWD_89243226FNE400213_8900_89243225DNE000023_8900"'
+    basis: disclosed
+- id: general-matter-89243225fne400179
+  counterparty: U.S. Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: '2025-04-11'
+  summary: DOE task order 89243225FNE400179 under the LEU Enrichment Acquisition IDIQ to General Matter, Inc. for a report
+    on deploying new enrichment capacity (USD 395,254.90 obligated). USAspending reuses a description naming American Centrifuge;
+    the recipient field is GENERAL MATTER, INC. Paid service contract, not funding.
+  value:
+    amount: 395254.9
+    currency: USD
+    qualifier: exact
+    usd: 395254.9
+  evidence:
+  - field: amount
+    snapshot: 8673b4db907aabf9f18dd1ac4aab8713eae083b0ac0d2bf4576bda7c3d9f8992
+    quote: '"Award ID": "89243225FNE400179", "Recipient Name": "GENERAL MATTER, INC.", "Recipient UEI": "XFT2AME5FUB3", "Award
+      Amount": 395254.9'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 8673b4db907aabf9f18dd1ac4aab8713eae083b0ac0d2bf4576bda7c3d9f8992
+    quote: '"Base Obligation Date": "2025-04-11", "generated_internal_id": "CONT_AWD_89243225FNE400179_8900_89243225DNE000027_8900"'
+    basis: disclosed

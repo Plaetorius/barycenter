@@ -1,0 +1,124 @@
+company: hexium
+name: Hexium Inc.
+sector: fusion
+notes: >-
+  [Verifier 2026-10-05] Form D ($7,999,991, 2024) marked duplicate of the April 2025 $9.5M seed: the company was in stealth until the seed announcement and the Form D is most likely the first close of that same seed (not proven; if a reviewer finds it is a separate round, revert to new_money). Credit facility marked ceiling: a $2.5M facility, drawn amount not stated, lender not named. Seed and facility rest on TechCrunch only (basis reported).
+  Enabling-tech (lithium-6 enrichment), census lists it as enabling. Form D (first sale 2024-07-15, filed 2024-07-24, $7,999,991 sold) precedes the April 2025 stealth-exit seed; the two may be tranches
+  of the same seed, tagged round_group=seed, do not sum. Company press page headline (Climate Insider) says '$12 Million' = $9.5M seed + $2.5M credit facility. Credit facility lender not named. Climate
+  Insider article returned 403 and was not usable. No grants found (SBIR/ARPA-E not searched via API; search budget exhausted).
+events:
+- id: hexium-seed-form-d-2024
+  instrument: equity
+  round_label: Form D
+  round_group: seed
+  announced_on: '2024-07-24'
+  amount_kind: duplicate
+  supersedes: hexium-seed-2025
+  amount:
+    amount: 7999991
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: 8b76315e548b89db9bd1038c8b145a7db225e76e7a2051cd3ff0fa182c7be348
+    quote: Leonard Charles Jarrott President and Chief Executive Officer 2024-07-24
+    basis: disclosed
+  - field: amount
+    snapshot: 8b76315e548b89db9bd1038c8b145a7db225e76e7a2051cd3ff0fa182c7be348
+    quote: 7999991 7999991 0
+    basis: disclosed
+- id: hexium-seed-2025
+  instrument: equity
+  round_label: Seed
+  round_group: seed
+  announced_on: '2025-04-15'
+  amount:
+    amount: 9500000
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: b3ff54e0e20abdf5240e89378b0660d40bac8d1bd6d0d62d25b64b9d380d0710
+    quote: April 15, 2025
+    basis: reported
+  - field: amount
+    snapshot: b3ff54e0e20abdf5240e89378b0660d40bac8d1bd6d0d62d25b64b9d380d0710
+    quote: emerged on Tuesday with $9.5 million in seed funding and $2.5 million in a credit facility
+    basis: reported
+  - field: round_label
+    snapshot: b3ff54e0e20abdf5240e89378b0660d40bac8d1bd6d0d62d25b64b9d380d0710
+    quote: $9.5 million in seed funding
+    basis: reported
+  participants:
+  - investor: MaC Venture Capital
+    investor_slug: mac-venture-capital
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: b3ff54e0e20abdf5240e89378b0660d40bac8d1bd6d0d62d25b64b9d380d0710
+      quote: MaC Venture Capital and Refactor led the round, with Humba Ventures, Julian Capital, Overture VC, and R7 Partners participating
+      basis: reported
+  - investor: Refactor
+    investor_slug: refactor-capital
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: b3ff54e0e20abdf5240e89378b0660d40bac8d1bd6d0d62d25b64b9d380d0710
+      quote: MaC Venture Capital and Refactor led the round, with Humba Ventures, Julian Capital, Overture VC, and R7 Partners participating
+      basis: reported
+  - investor: Humba Ventures
+    investor_slug: humba-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: b3ff54e0e20abdf5240e89378b0660d40bac8d1bd6d0d62d25b64b9d380d0710
+      quote: with Humba Ventures, Julian Capital, Overture VC, and R7 Partners participating
+      basis: reported
+  - investor: Julian Capital
+    investor_slug: julian-capital
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: b3ff54e0e20abdf5240e89378b0660d40bac8d1bd6d0d62d25b64b9d380d0710
+      quote: with Humba Ventures, Julian Capital, Overture VC, and R7 Partners participating
+      basis: reported
+  - investor: Overture VC
+    investor_slug: overture-vc
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: b3ff54e0e20abdf5240e89378b0660d40bac8d1bd6d0d62d25b64b9d380d0710
+      quote: with Humba Ventures, Julian Capital, Overture VC, and R7 Partners participating
+      basis: reported
+  - investor: R7 Partners
+    investor_slug: r7-partners
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: b3ff54e0e20abdf5240e89378b0660d40bac8d1bd6d0d62d25b64b9d380d0710
+      quote: with Humba Ventures, Julian Capital, Overture VC, and R7 Partners participating
+      basis: reported
+- id: hexium-credit-facility-2025
+  instrument: debt
+  round_label: credit facility
+  announced_on: '2025-04-15'
+  amount_kind: ceiling
+  amount:
+    amount: 2500000
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: b3ff54e0e20abdf5240e89378b0660d40bac8d1bd6d0d62d25b64b9d380d0710
+    quote: April 15, 2025
+    basis: reported
+  - field: amount
+    snapshot: b3ff54e0e20abdf5240e89378b0660d40bac8d1bd6d0d62d25b64b9d380d0710
+    quote: $2.5 million in a credit facility
+    basis: reported
+verification:
+  status: verified
+  by: verifier-agent (Claude Opus 5.5), 2026-10-05
+  'on': '2026-10-05'
+  note: '2 corrections: Form D $8.0M (2024) marked duplicate of the $9.5M April 2025 seed (probably its first close, not proven);
+    $2.5M credit facility marked ceiling (drawn amount and lender not stated). Seed rests on TechCrunch only (reported).'

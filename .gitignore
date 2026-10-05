@@ -1,0 +1,15 @@
+docs/internal/
+.env*
+!.env.example
+node_modules/
+.next/
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+site/tsconfig.tsbuildinfo
+site/next-env.d.ts
+# archived source bytes stay local (hundreds of MB, third-party content); the manifest of every fetch is committed
+pipeline/raw/*
+!pipeline/raw/manifest.jsonl

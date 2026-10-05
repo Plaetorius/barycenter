@@ -1,0 +1,64 @@
+company: hadron-energy
+name: Hadron Energy, Inc.
+sector: fission
+notes: >-
+  Form D (Hadron Energy, Inc., CIK 2091991, filed 2026-05-11, signed 2026-05-08): $9,935,500 sold to 76 investors, first sale 2024-07-29, Rule 506(c); announced_on is the first-sale date; a second Form D (2026-05-12, first sale 2026-05-01, $0 sold of an indefinite offering, 12 investors) records no money. No investors named.
+  Listed 2026-05-22 via GigCapital7 Corp. (SPAC, CIK 2023730 is the SPAC/successor registrant), ticker HDRN. The census
+  cites a Business Wire release (via Morningstar) saying Hadron received about $31M; that page returned a CloudFront 403
+  to the archive tool and could not be used. [Verifier 2026-10-05] SPAC amount changed from the 8-K trust balance ($33.9M,
+  gross, before FPA payment and de-SPAC costs) to the net proceeds stated in the Q2 2026 10-Q: approximately $22,944
+  thousand after the $5,851 thousand forward purchase payment, redemptions and transaction costs. The $31M press figure
+  remains unverified (probably gross incl. SAFE conversion or before costs). The 10-Q also shows pre-SPAC SAFE funding
+  (proceeds $1,227k in H1 2025, $3,295k in H1 2026; $17,807k of SAFEs converted at closing), likely overlapping the Form D
+  amount; not recorded as separate events. Not recorded: the
+  GigCapital7 IPO of Aug 2024 (SPAC capital, not Hadron funding), sponsor working-capital notes ($148,000 on 2026-01-30,
+  amended and restated to $293,000 on 2026-04-16), non-redemption agreements (2026-05-01). Hadron's other pre-SPAC
+  financing and any government grants were not found in the filings read (S-4/424B3 and Q2 10-Q searched); WebSearch
+  budget was exhausted. Post-closing financings (Aug-Sep 2026 424B3s, S-1 of 2026-06-15 for warrant-share resale) not read.
+events:
+  - id: hadron-spac-gigcapital7-2026
+    instrument: spac
+    round_label: Business combination with GigCapital7 Corp.
+    announced_on: 2025-09-27
+    closed_on: 2026-05-22
+    amount: {amount: 22944000, currency: USD, qualifier: approx}
+    use_of_proceeds: net cash to the company after trust release, forward purchase agreement payment ($5.851M), redemptions and de-SPAC expenses (10-Q figures in USD thousands); trust balance before closing was about $33.9M
+    evidence:
+      - field: announced_on
+        snapshot: ab76bdc075c4a13c03ddf2a175989653183db2bb5388dd4613425cf95e7a4003
+        quote: "dated as of September 27, 2025, by and among GigCapital7, MMR Merger Sub, Inc."
+        basis: disclosed
+      - field: closed_on
+        snapshot: c533e949e13f1e58f8e8dcd03f2210246d208cad78acc85c39cf6ce484860cfc
+        quote: "on May 22, 2026, pursuant to that certain Business Combination Agreement"
+        basis: disclosed
+      - field: amount
+        snapshot: aec6f1254839866bcfc7f22683d8059552b70c33bb4ae19539a424a19c179af1
+        quote: "resulted in proceeds of approximately $ 22,944 released from the trust account previously held by gigcapital7, after paying all de-spac expenses"
+        basis: disclosed
+      - field: trust_balance
+        snapshot: c533e949e13f1e58f8e8dcd03f2210246d208cad78acc85c39cf6ce484860cfc
+        quote: "had a balance immediately prior to the Closing of approximately $33.9 million"
+        basis: disclosed
+  - id: hadron-form-d-2024
+    instrument: equity
+    round_label: Form D offering (Rule 506(c), pre-SPAC private placement)
+    announced_on: 2024-07-29
+    amount: {amount: 9935500, currency: USD, qualifier: exact}
+    evidence:
+      - field: announced_on
+        snapshot: 5917b8e0d724c5c8ee645e1f85e2a00703bd953ac87e5df91d78d0dae8e77154
+        quote: "06c false 2024-07-29 true true true 0 9935500 9935500 0 false 76"
+        basis: disclosed
+      - field: amount
+        snapshot: 5917b8e0d724c5c8ee645e1f85e2a00703bd953ac87e5df91d78d0dae8e77154
+        quote: "9935500 9935500 0 false 76"
+        basis: disclosed
+agreements: []
+verification:
+  status: verified
+  by: verifier-agent (Claude Opus 5.5), 2026-10-05
+  'on': '2026-10-05'
+  note: '1 correction: SPAC amount changed from the 8-K trust balance ($33.9M) to the net cash received per the Q2 2026 10-Q
+    (about $22,944k after FPA payment, redemptions and de-SPAC costs). Form D $9,935,500 confirmed. $31M press figure unverified;
+    pre-SPAC SAFEs noted, not recorded.'

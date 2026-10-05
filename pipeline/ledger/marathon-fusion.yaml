@@ -1,0 +1,228 @@
+company: marathon-fusion
+name: Marathon Fusion, Inc.
+sector: fusion
+notes: |-
+  Form D (filed 2024-02-05, first sale 2022-12-14, SAFEs, amount sold 5,049,793) likely overlaps with the $5.9M seed announced 2024-07-18; both are tagged round_group=seed and must not be summed. Seed press release is cumulative-aware: 'total funding to $6.9M' (incl. ARPA-E CREATE). ARPA-E CREATE amount ($450K) comes from a FusionXInvest headline (paywalled body, reported). INFUSE award 2024-08-08 amount undisclosed (17 awards of $100K-$500K total $4.6M per ANS; Marathon not named in the unpaywalled text, the FusionX headline names it). ARPA-E page for the $147M Jan 2025 announcement archived but has no text; Marathon appears in its featured press so a 2025 award may exist but is unevidenced. No 2025/2026 round found; hexium/marathon sites mention none. Verifier: the Form D SAFEs (first sale 2022-12-14, $5,049,793 sold by 2024-02-05) are the same seed money later announced as the $5.9M seed (2024-07-18), so the Form D row is now amount_kind=duplicate superseded by the seed release. Arithmetic gap: $5.9M seed + $450K CREATE = $6.35M, not the $6.9M total stated; the CREATE amount rests on a paywalled headline and the remaining ~$0.55M is unexplained (other non-dilutive money or a larger CREATE award).
+  MERGE 2026-10-05 (USAspending supplement): the ARPA-E OPEN 2024 award (DE-AR0002075, base obligation 2026-03-06) is the 2025 award the earlier note suspected from ARPA-E's Jan 2025 announcement. CREATE obligation USD 449,065.26 confirms the ~USD 450K headline.
+verification:
+  status: verified
+  by: merge-verifier-agent (opus), 2026-10-05
+  'on': 2026-10-05
+  note: 'USAspending merge: 1 event added (ARPA-E OPEN 2024 DE-AR0002075, USD 3,630,998 obligated, 242,506.90 outlaid, base
+    obligation 2026-03-06). Skipped DE-AR0001790 as the same award as the CREATE event (USD 449,065.26 obligated vs the USD
+    450K headline); its obligation and outlay are attached to that event with disclosed USAspending evidence, which now backs
+    the paywalled-headline amount. Previous sign-off: verifier-agent (claude-opus-5-5), 2026-10-05: 1 correction: Form D SAFE
+    row ($5,049,793, first sale 2022-12-14, filed 2024-02-05) marked amount_kind=duplicate superseding the $5.9M seed release
+    (same seed money). Checked: seed leads 1517 Fund and Anglo American and participants match the release; $6.9M total is
+    cumulative. Gaps: $5.9M + $450K CREATE = $6.35M, not $6.9M (about $0.55M unexplained); CREATE amount and INFUSE rest on
+    paywalled FusionXInvest headlines.'
+events:
+- id: marathon-arpae-create-2023
+  instrument: grant
+  round_label: ARPA-E CREATE
+  program: ARPA-E CREATE
+  announced_on: '2023-08-03'
+  amount:
+    amount: 450000
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: b8b4b04f9c4cd261255ac5ed9b958d5808c078780f4b1effbc7ac502486c58c7
+    quote: 3 August 2023
+    basis: reported
+  - field: amount
+    snapshot: b8b4b04f9c4cd261255ac5ed9b958d5808c078780f4b1effbc7ac502486c58c7
+    quote: Marathon Fusion secures $450K CREATE award from ARPA-E
+    basis: reported
+  - field: obligated_disbursed
+    snapshot: 6bd8f83b8c9a3b1f75c48380874dc13f19ac997751513c7627bbc25c93994416
+    quote: '"Award ID": "DEAR0001790", "Recipient Name": "MARATHON FUSION, INC.", "Recipient UEI": "LF2YSKDB6HL1", "Award
+      Amount": 449065.26, "Total Outlays": 449064.89'
+    basis: disclosed
+  participants:
+  - investor: ARPA-E
+    investor_slug: arpa-e
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: b8b4b04f9c4cd261255ac5ed9b958d5808c078780f4b1effbc7ac502486c58c7
+      quote: Marathon Fusion secures $450K CREATE award from ARPA-E
+      basis: reported
+  obligated_usd: 449065.26
+  disbursed_usd: 449064.89
+- id: marathon-seed-form-d-2024
+  instrument: equity
+  round_label: SAFE (Form D)
+  round_group: seed
+  announced_on: '2024-02-05'
+  closed_on: null
+  amount_kind: duplicate
+  supersedes: marathon-seed-2024
+  amount:
+    amount: 5049793
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: 7b1029587c996b7669ce840e34c3babebb9ea49959aa25846eb8edaef35d9c44
+    quote: Kyle Schiller Chief Executive Officer 2024-02-05
+    basis: disclosed
+  - field: amount
+    snapshot: 7b1029587c996b7669ce840e34c3babebb9ea49959aa25846eb8edaef35d9c44
+    quote: Indefinite 5049793 Indefinite
+    basis: disclosed
+  - field: round_label
+    snapshot: 7b1029587c996b7669ce840e34c3babebb9ea49959aa25846eb8edaef35d9c44
+    quote: Simple Agreements for Future Equity
+    basis: disclosed
+- id: marathon-seed-2024
+  instrument: equity
+  round_label: Seed
+  round_group: seed
+  announced_on: '2024-07-18'
+  amount:
+    amount: 5900000
+    currency: USD
+    qualifier: exact
+  evidence:
+  - field: announced_on
+    snapshot: 485bbce95fa809d3a5982424865db6c1a8b754ae6fc059640e17f1a94e23f4de
+    quote: SAN FRANCISCO , July 18, 2024 /PRNewswire/
+    basis: disclosed
+  - field: amount
+    snapshot: 485bbce95fa809d3a5982424865db6c1a8b754ae6fc059640e17f1a94e23f4de
+    quote: Marathon Fusion Closes $5.9m Seed Round
+    basis: disclosed
+  - field: round_label
+    snapshot: 485bbce95fa809d3a5982424865db6c1a8b754ae6fc059640e17f1a94e23f4de
+    quote: Marathon Fusion Closes $5.9m Seed Round
+    basis: disclosed
+  participants:
+  - investor: 1517 Fund
+    investor_slug: 1517-fund
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 485bbce95fa809d3a5982424865db6c1a8b754ae6fc059640e17f1a94e23f4de
+      quote: announced today a fundraise led by 1517 Fund and Anglo American , with participation from Übermorgen Ventures,
+        Shared Future Fund, Malcolm Handley and other leading investors
+      basis: disclosed
+  - investor: Anglo American
+    investor_slug: anglo-american
+    role: lead
+    evidence:
+    - field: participant
+      snapshot: 485bbce95fa809d3a5982424865db6c1a8b754ae6fc059640e17f1a94e23f4de
+      quote: announced today a fundraise led by 1517 Fund and Anglo American , with participation from Übermorgen Ventures,
+        Shared Future Fund, Malcolm Handley and other leading investors
+      basis: disclosed
+  - investor: Übermorgen Ventures
+    investor_slug: ubermorgen-ventures
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 485bbce95fa809d3a5982424865db6c1a8b754ae6fc059640e17f1a94e23f4de
+      quote: with participation from Übermorgen Ventures, Shared Future Fund, Malcolm Handley and other leading investors
+      basis: disclosed
+  - investor: Shared Future Fund
+    investor_slug: shared-future-fund
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 485bbce95fa809d3a5982424865db6c1a8b754ae6fc059640e17f1a94e23f4de
+      quote: with participation from Übermorgen Ventures, Shared Future Fund, Malcolm Handley and other leading investors
+      basis: disclosed
+  - investor: Malcolm Handley
+    investor_slug: malcolm-handley
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 485bbce95fa809d3a5982424865db6c1a8b754ae6fc059640e17f1a94e23f4de
+      quote: with participation from Übermorgen Ventures, Shared Future Fund, Malcolm Handley and other leading investors
+      basis: disclosed
+- id: marathon-cumulative-2024-07
+  instrument: other
+  round_label: cumulative funding statement
+  announced_on: '2024-07-18'
+  amount:
+    amount: 6900000
+    currency: USD
+    qualifier: exact
+  amount_kind: cumulative
+  evidence:
+  - field: announced_on
+    snapshot: 485bbce95fa809d3a5982424865db6c1a8b754ae6fc059640e17f1a94e23f4de
+    quote: SAN FRANCISCO , July 18, 2024 /PRNewswire/
+    basis: disclosed
+  - field: amount
+    snapshot: 485bbce95fa809d3a5982424865db6c1a8b754ae6fc059640e17f1a94e23f4de
+    quote: these investments bring Marathon Fusion's total funding to $6.9M
+    basis: disclosed
+- id: marathon-infuse-2024
+  instrument: voucher
+  round_label: INFUSE
+  program: INFUSE
+  announced_on: '2024-08-08'
+  evidence:
+  - field: announced_on
+    snapshot: b8b4b04f9c4cd261255ac5ed9b958d5808c078780f4b1effbc7ac502486c58c7
+    quote: Marathon Fusion gains INFUSE award 8 August 2024
+    basis: reported
+  participants:
+  - investor: DOE INFUSE
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: b8b4b04f9c4cd261255ac5ed9b958d5808c078780f4b1effbc7ac502486c58c7
+      quote: Marathon Fusion gains INFUSE award 8 August 2024
+      basis: reported
+- id: marathon-fusion-dear0002075
+  instrument: grant
+  round_label: ARPA-E OPEN 2024 cooperative agreement DE-AR0002075 (partial ionization centrifuge)
+  announced_on: '2026-03-06'
+  amount:
+    amount: 3630998.0
+    currency: USD
+    qualifier: exact
+    usd: 3630998.0
+  amount_kind: new_money
+  obligated_usd: 3630998.0
+  disbursed_usd: 242506.9
+  program: ARPA-E
+  use_of_proceeds: 'MARATHON FUSION: NEW AWARD VISION OPEN 2024, CONTROL# 3387-2677 PROJECT TITLE: PARTIAL IONIZATION CENTRIFUGE
+    E'
+  evidence:
+  - field: amount
+    snapshot: 6bd8f83b8c9a3b1f75c48380874dc13f19ac997751513c7627bbc25c93994416
+    quote: '"Award ID": "DEAR0002075", "Recipient Name": "MARATHON FUSION, INC.", "Recipient UEI": "LF2YSKDB6HL1", "Award
+      Amount": 3630998.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 6bd8f83b8c9a3b1f75c48380874dc13f19ac997751513c7627bbc25c93994416
+    quote: '"Base Obligation Date": "2026-03-06", "generated_internal_id": "ASST_NON_DEAR0002075_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 6bd8f83b8c9a3b1f75c48380874dc13f19ac997751513c7627bbc25c93994416
+    quote: '"Award ID": "DEAR0002075", "Recipient Name": "MARATHON FUSION, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 6bd8f83b8c9a3b1f75c48380874dc13f19ac997751513c7627bbc25c93994416
+    quote: '"Description": "MARATHON FUSION: NEW AWARD\nVISION OPEN 2024, CONTROL# 3387-2677\nPROJECT TITLE: PARTIAL IONIZATION'
+    basis: disclosed
+  - field: obligated_disbursed
+    snapshot: 6bd8f83b8c9a3b1f75c48380874dc13f19ac997751513c7627bbc25c93994416
+    quote: '"Award ID": "DEAR0002075", "Recipient Name": "MARATHON FUSION, INC.", "Recipient UEI": "LF2YSKDB6HL1", "Award
+      Amount": 3630998.0, "Total Outlays": 242506.9'
+    basis: disclosed
+  participants:
+  - investor: ARPA-E
+    investor_slug: arpa-e
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 6bd8f83b8c9a3b1f75c48380874dc13f19ac997751513c7627bbc25c93994416
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+agreements: []

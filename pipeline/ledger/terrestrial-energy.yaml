@@ -1,0 +1,267 @@
+company: terrestrial-energy
+name: Terrestrial Energy
+sector: fission
+notes: |-
+  Terrestrial Energy Inc. (Delaware; Canadian origin, Oakville ON; HQ Charlotte NC; CIK 2019804) listed on Nasdaq as IMSR on 2025-10-29 after the business combination with HCM II Acquisition Corp closed on 2025-10-28. SPAC event is one programme (PIPE of USD50M plus about USD242M of trust cash after under 1% redemptions = "in excess of USD292M"), do not add the PIPE separately. PIPE investors are not named in the filings reached. Canada: ISED Strategic Innovation Fund, ref 033-2020-2021-Q2-811861 (Canada G&C datastore probe): amendment 0 agreement_value CAD20,000,000 (start 2019-04-01), amendment 1 on 2022-11-01 reduced it to CAD18,923,000, amendment 2 on 2026-03-31 kept CAD18,923,000 with start 2020-09-02; SIF values are authorised maxima, generally conditionally repayable, disbursements not given; recorded once at the latest value. Series A-1 preferred: the 10-K says "a USD25.8 million preferred stock private placement on July 1, 2025" (rounded); investors not named. Not recorded: USAspending shows USD795,059.10 of DOE transactions to Terrestrial Energy USA, Inc. since FY2020 (award type and dates not captured); convertible notes (about USD9.3M plus USD1.65M related parties) appear in the 10-Q cash-flow comparatives without dates; earlier private placements since 2013 are described only generically ("a series of private placements"). CORDIS, TED and BODACC probes have no Terrestrial records. Verifier: the SIF record states "this is a repayable contribution", so the event is now instrument=debt with ISED as lender (same treatment as Moltex); value is the authorised maximum after amendment 1 (CAD18.923M), disbursement unknown. Its announced_on (2019-04-01) is the agreement start date in the G&C record, not a public announcement date. Added round_label evidence for "Series A-1" (10-K equity statement); the 10-K cash-flow statement gives exact proceeds of USD25,797,201, consistent with the approx USD25.8M recorded; the date is the placement date stated in the 10-K. SPAC amount is stated in thousands in the filing ("in excess of $292,000"), i.e. USD292M, and already includes the USD50M PIPE.
+  MERGE 2026-10-05 (USAspending supplement): the 'USD 795,059.10 of DOE transactions since FY2020' gap is now covered award by award (three awards, USD 1,294,292.10 obligated in total, including the 2019 award). Recipient is the US subsidiary Terrestrial Energy USA, Inc. (UEI GJKZMH1MMWT7), part of the group. USAspending 'Total Outlays' is account-level outlay data reported from FY2017/FY2020 onward, so disbursed_usd can understate payments on older awards.
+verification:
+  status: verified
+  by: merge-verifier-agent (opus), 2026-10-05
+  'on': 2026-10-05
+  note: 'USAspending merge: 3 DOE-NE events added to US subsidiary Terrestrial Energy USA, Inc. (DE-NE0008842 USD 495,108.28;
+    DE-NE0009228 USD 299,183.82; DE-NE0009445 USD 500,000) and 1 agreement (Reactor Pilot Program OTA DENE0009580, USD 0,
+    not funding; supplement summary text repaired and a non-specific quote replaced). Nothing skipped. Previous sign-off:
+    verifier-agent (claude-opus-5-5), 2026-10-05: 3 corrections: SIF CAD18.923M re-typed from grant to debt and ISED role
+    grantor to lender (''this is a repayable contribution''); added round_label evidence for Series A-1 from the 10-K equity
+    statement. Checked: Series A-1 USD25.8M (10-K proceeds USD25,797,201, 2025-07-01); SPAC ''in excess of $292,000'' (thousands),
+    which includes the USD50M PIPE, BCA announced 2025-03-26, closed 2025-10-28. Gaps: PIPE investors unnamed; SIF announced_on
+    is the agreement start date; convertible notes and DOE USD795K not recorded.'
+events:
+- id: terrestrial-2019-canada-sif
+  instrument: debt
+  round_label: ISED Strategic Innovation Fund, Stream 1 R&D, repayable contribution (latest amendment value)
+  announced_on: 2019-04-01
+  amount:
+    amount: 18923000
+    currency: CAD
+    qualifier: up_to
+  program: Strategic Innovation Fund Stream 1 - R&D
+  evidence:
+  - field: amount
+    snapshot: d14e22db1c822b0f2b5849e5f03ed70cffbd485634c18640cb9403b6ed83d212
+    quote: '"agreement_value": "18923000.0"'
+    basis: disclosed
+  - field: announced_on
+    snapshot: d14e22db1c822b0f2b5849e5f03ed70cffbd485634c18640cb9403b6ed83d212
+    quote: '"agreement_start_date": "2019-04-01"'
+    basis: disclosed
+  - field: round_label
+    snapshot: d14e22db1c822b0f2b5849e5f03ed70cffbd485634c18640cb9403b6ed83d212
+    quote: '"prog_name_en": "SIF Stream 1 - R&D"'
+    basis: disclosed
+  participants:
+  - investor: Innovation, Science and Economic Development Canada (Strategic Innovation Fund)
+    investor_slug: isde-sif
+    role: lender
+    evidence:
+    - field: participant
+      snapshot: d14e22db1c822b0f2b5849e5f03ed70cffbd485634c18640cb9403b6ed83d212
+      quote: '"owner_org": "ic"'
+      basis: disclosed
+- id: terrestrial-2025-series-a1-preferred
+  instrument: equity
+  round_label: Series A-1 preferred private placement (pre-business combination)
+  announced_on: 2025-07-01
+  amount:
+    amount: 25800000
+    currency: USD
+    qualifier: approx
+  evidence:
+  - field: amount
+    snapshot: a30a972833fe00341cd417b71581962b0ac30f340be1e0e0f5cda39f32d1440a
+    quote: a $25.8 million preferred stock private placement on July 1, 2025
+    basis: disclosed
+  - field: announced_on
+    snapshot: a30a972833fe00341cd417b71581962b0ac30f340be1e0e0f5cda39f32d1440a
+    quote: a $25.8 million preferred stock private placement on July 1, 2025
+    basis: disclosed
+  - field: round_label
+    snapshot: a30a972833fe00341cd417b71581962b0ac30f340be1e0e0f5cda39f32d1440a
+    quote: issuance of Series A-1 preferred shares for cash
+    basis: disclosed
+- id: terrestrial-2025-spac-hcm-ii
+  instrument: spac
+  round_label: HCM II Acquisition Corp business combination (trust cash plus USD50M PIPE)
+  announced_on: 2025-03-26
+  closed_on: 2025-10-28
+  amount:
+    amount: 292000000
+    currency: USD
+    qualifier: over
+  evidence:
+  - field: amount
+    snapshot: 97b8f981ec0d8fd7aae0ba0e554c237dd141eaaadc0939cba7385db382f1056c
+    quote: the Company received in excess of $292,000 in gross proceeds before expenses
+    basis: disclosed
+  - field: announced_on
+    snapshot: 7876e1a4cfd4b77ed42eec77d7f31763407fc99d258ca665cb791c76d57b1f96
+    quote: As previously announced on March 26, 2025, concurrently with the execution of the Business Combination Agreement
+    basis: disclosed
+  - field: closed_on
+    snapshot: 97b8f981ec0d8fd7aae0ba0e554c237dd141eaaadc0939cba7385db382f1056c
+    quote: after completing its business combination with HCM II on October 28, 2025
+    basis: disclosed
+  - field: round_label
+    snapshot: 7876e1a4cfd4b77ed42eec77d7f31763407fc99d258ca665cb791c76d57b1f96
+    quote: Concurrently with the Closing, New Terrestrial Energy received an aggregate amount of $50,000,000 from the PIPE
+      Investors
+    basis: disclosed
+- id: terrestrial-energy-dene0008842
+  instrument: grant
+  round_label: DOE-NE cooperative agreement DE-NE0008842, IMSR pre-licensing (recipient Terrestrial Energy USA, Inc.)
+  announced_on: '2019-01-29'
+  amount:
+    amount: 495108.28
+    currency: USD
+    qualifier: exact
+    usd: 495108.28
+  amount_kind: new_money
+  obligated_usd: 495108.28
+  disbursed_usd: 227904.35
+  program: DOE Office of Nuclear Energy
+  use_of_proceeds: FINANCIAL ASSISTANCE AWARD TO TERRESTRIAL ENERGY FOR PRE-LICENSING ACTIVITIES FOR THE IMSR
+  evidence:
+  - field: amount
+    snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+    quote: '"Award ID": "DENE0008842", "Recipient Name": "TERRESTRIAL ENERGY USA, INC.", "Recipient UEI": "GJKZMH1MMWT7",
+      "Award Amount": 495108.28'
+    basis: disclosed
+  - field: announced_on
+    snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+    quote: '"Base Obligation Date": "2019-01-29", "generated_internal_id": "ASST_NON_DENE0008842_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+    quote: '"Award ID": "DENE0008842", "Recipient Name": "TERRESTRIAL ENERGY USA, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+    quote: '"Description": "FINANCIAL ASSISTANCE AWARD TO TERRESTRIAL ENERGY FOR PRE-LICENSING ACTIVITIES FOR THE IMSR"'
+    basis: disclosed
+  - field: obligated_disbursed
+    snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+    quote: '"Recipient UEI": "GJKZMH1MMWT7", "Award Amount": 495108.28, "Total Outlays": 227904.35'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Nuclear Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: terrestrial-energy-dene0009228
+  instrument: grant
+  round_label: DOE-NE U.S. Industry Opportunities cooperative agreement DE-NE0009228 (recipient Terrestrial Energy USA, Inc.)
+  announced_on: '2022-06-29'
+  amount:
+    amount: 299183.82
+    currency: USD
+    qualifier: exact
+    usd: 299183.82
+  amount_kind: new_money
+  obligated_usd: 299183.82
+  disbursed_usd: 299183.82
+  program: DOE Office of Nuclear Energy
+  use_of_proceeds: TERRESTIAL ENERGY USA, INC AWARD UNDER DE-FOA-0001817
+  evidence:
+  - field: amount
+    snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+    quote: '"Award ID": "DENE0009228", "Recipient Name": "TERRESTRIAL ENERGY USA, INC.", "Recipient UEI": "GJKZMH1MMWT7",
+      "Award Amount": 299183.82'
+    basis: disclosed
+  - field: announced_on
+    snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+    quote: '"Base Obligation Date": "2022-06-29", "generated_internal_id": "ASST_NON_DENE0009228_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+    quote: '"Award ID": "DENE0009228", "Recipient Name": "TERRESTRIAL ENERGY USA, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+    quote: '"Description": "TERRESTIAL ENERGY USA, INC AWARD UNDER DE-FOA-0001817"'
+    basis: disclosed
+  - field: obligated_disbursed
+    snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+    quote: '"Recipient UEI": "GJKZMH1MMWT7", "Award Amount": 299183.82, "Total Outlays": 299183.82'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Nuclear Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+- id: terrestrial-energy-dene0009445
+  instrument: grant
+  round_label: DOE-NE grant DE-NE0009445, IMSR standard design approval pre-licensing (recipient Terrestrial Energy USA, Inc.)
+  announced_on: '2024-02-28'
+  amount:
+    amount: 500000.0
+    currency: USD
+    qualifier: exact
+    usd: 500000.0
+  amount_kind: new_money
+  obligated_usd: 500000.0
+  disbursed_usd: 361258.26
+  program: DOE Office of Nuclear Energy
+  use_of_proceeds: COMPLETION OF IMSR® STANDARD DESIGN APPROVAL PRE LICENSING REVIEWS WITH NRC TO SUPPORT ADVANCED REACTOR
+    LICENS
+  evidence:
+  - field: amount
+    snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+    quote: '"Award ID": "DENE0009445", "Recipient Name": "TERRESTRIAL ENERGY USA, INC.", "Recipient UEI": "GJKZMH1MMWT7",
+      "Award Amount": 500000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+    quote: '"Base Obligation Date": "2024-02-28", "generated_internal_id": "ASST_NON_DENE0009445_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+    quote: '"Award ID": "DENE0009445", "Recipient Name": "TERRESTRIAL ENERGY USA, INC."'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+    quote: '"Description": "COMPLETION OF IMSR® STANDARD DESIGN APPROVAL PRE LICENSING REVIEWS WITH NRC TO SUPPORT ADVANCED
+      REA'
+    basis: disclosed
+  - field: obligated_disbursed
+    snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+    quote: '"Recipient UEI": "GJKZMH1MMWT7", "Award Amount": 500000.0, "Total Outlays": 361258.26'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Nuclear Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: fbd4eb67da7394a8f6ae5f7c7ad046bab44ecdee24e309eeb62cdd63878043bb
+      quote: '"Awarding Agency": "Department of Energy", "Awarding Sub Agency": "Department of Energy"'
+      basis: disclosed
+agreements:
+- id: terrestrial-energy-reactor-pilot-ota
+  counterparty: U.S. Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: '2025-08-12'
+  summary: Other Transaction Agreement DENE0009580 (recipient TERRESTRIAL ENERGY, INC.) for the DOE Reactor Pilot Program;
+    DOE authorization pathway, no federal funds, company bears all costs. USAspending shows USD 0.0 obligation. Not funding.
+  evidence:
+  - field: announced_on
+    snapshot: d92aed237e3d72eebae1422dcd91a89156bb7ec851d5eb319adbd1bf1c0d3730
+    quote: Energy.gov August 12, 2025
+    basis: disclosed
+  - field: summary
+    snapshot: d92aed237e3d72eebae1422dcd91a89156bb7ec851d5eb319adbd1bf1c0d3730
+    quote: Terrestrial Energy Inc., and Valar Atomics Inc.
+    basis: disclosed
+  - field: summary
+    snapshot: d92aed237e3d72eebae1422dcd91a89156bb7ec851d5eb319adbd1bf1c0d3730
+    quote: Each company will be responsible for all costs associated with designing, manufacturing, constructing, operating,
+      and decommissioning their test reactors.
+    basis: disclosed
+  - field: summary
+    snapshot: ddb3decd4034f0b85b670235a63cb6a61d4febf9e06c2ed96a58575a7defd6d1
+    quote: '"Award ID": "DENE0009580", "Recipient Name": "TERRESTRIAL ENERGY, INC."'
+    basis: disclosed
+  - field: summary
+    snapshot: ddb3decd4034f0b85b670235a63cb6a61d4febf9e06c2ed96a58575a7defd6d1
+    quote: '"Award ID": "DENE0009580", "Recipient Name": "TERRESTRIAL ENERGY, INC.", "Recipient UEI": "DM7DVAJ16BV6", "Award
+      Amount": 0.0'
+    basis: disclosed

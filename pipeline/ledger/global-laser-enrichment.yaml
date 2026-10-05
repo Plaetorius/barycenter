@@ -1,0 +1,151 @@
+company: global-laser-enrichment
+name: Global Laser Enrichment LLC
+sector: fission
+notes: |-
+  GLE is the Silex Systems (ASX: SLX, majority) / Cameco joint venture commercialising SILEX laser enrichment at the planned Paducah Laser Enrichment Facility (PLEF). A separate silex-systems ledger was NOT written: Silex's own equity raisings could not be evidenced (silex.com.au announcement lists are JS-rendered; the ASX markit API returns only the 5 latest items; WebSearch budget exhausted), and the DOE award below accrues to GLE, so recording it under Silex too would double count. Funding of GLE by its owners (Silex/Cameco/Westinghouse equity or loans) was not found. Conflict: DOE says it 'awarded an additional $28 million'; the Silex-oriented article (smallcaps.com.au) says 'up to $28 million' under the DOE Innovative Technology Award; amount recorded as exact per the DOE release, flagged for review. The Kentucky package is performance-based tax and other incentives (preliminary approval), recorded as an up_to 'other' event, not cash. GLE and Cameco offtake (ASX headline 2026-09-14 AEST) is evidenced only by the headline in the ASX API snapshot; terms unread. Verifier: the Kentucky package (preliminary approval, performance-based tax and other incentives "up to $98.9 million" if thresholds are met) is a maximum, not money received: now amount_kind=ceiling. The DOE $28M stays exact/new_money on the DOE release wording ("awarded an additional $28 million"); no obligation or outlay was checked in USAspending, and the press "up to" wording means it may be paid on a cost-share reimbursement basis.
+  MERGE 2026-10-05 (USAspending supplement): the DOE USD 28M award is DE-NE0009559 in USAspending, recipient GLOBAL LASER ENRICHMENT LLC (the company itself), obligated USD 28.44M, so it is paid on obligation, not a ceiling.
+verification:
+  status: verified
+  by: merge-verifier-agent (opus), 2026-10-05
+  'on': 2026-10-05
+  note: 'USAspending merge: DE-NE0009559 (cooperative agreement, USD 28,443,912 obligated, USD 3,006,774.61 outlaid, base
+    obligation 2026-06-25) is the same money as the DOE USD 28M award already recorded: not added, its obligated/disbursed
+    figures attached to that event (resolves the previous ''no USAspending check'' doubt). 1 agreement added (LEU IDIQ report
+    task order USD 376,893.74). Previous sign-off: verifier-agent (claude-opus-5-5), 2026-10-05: 1 correction: Kentucky/McCracken
+    incentive package (preliminary approval, performance-based, up to $98.9M tax and other incentives) set to amount_kind=ceiling.
+    Checked: DOE $28M award quote (DOE release, 2026-01-05) supports the amount; LEU IDIQ is an agreement with a $2M minimum,
+    not funding; Cameco offtake rests on an ASX headline only. Doubts: DOE $28M may be a cost-share ''up to'' award (press
+    wording); no USAspending obligation checked; owner funding (Silex/Cameco) not evidenced.'
+events:
+- id: gle-doe-innovative-technology-award-2026
+  instrument: grant
+  round_label: DOE Innovative Technology award
+  announced_on: 2026-01-05
+  amount:
+    amount: 28000000
+    currency: USD
+    qualifier: exact
+  program: DOE HALEU/LEU enrichment innovative technology funding opportunity
+  evidence:
+  - field: announced_on
+    snapshot: 65d2f34c90e4efe46d5d592848107b385f91642765f0684fc9e2b6484cd5e82d
+    quote: Energy.gov January 5, 2026
+    basis: disclosed
+  - field: amount
+    snapshot: 65d2f34c90e4efe46d5d592848107b385f91642765f0684fc9e2b6484cd5e82d
+    quote: DOE also awarded an additional $28 million today to Global Laser Enrichment to continue advancing next generation
+      uranium enrichment technology for the nuclear fuel cycle.
+    basis: disclosed
+  - field: obligated_disbursed
+    snapshot: c2aa80d86588c1c84bd98185ee6bb5ce799ceb16a372161501231bcf65bf0cab
+    quote: '"Award ID": "DENE0009559", "Recipient Name": "GLOBAL LASER ENRICHMENT LLC", "Recipient UEI": "V5CDRQGDGX76", "Award
+      Amount": 28443912.0, "Total Outlays": 3006774.61'
+    basis: disclosed
+  - field: base_obligation_date
+    snapshot: c2aa80d86588c1c84bd98185ee6bb5ce799ceb16a372161501231bcf65bf0cab
+    quote: '"Base Obligation Date": "2026-06-25", "generated_internal_id": "ASST_NON_DENE0009559_089"'
+    basis: disclosed
+  participants:
+  - investor: U.S. Department of Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 65d2f34c90e4efe46d5d592848107b385f91642765f0684fc9e2b6484cd5e82d
+      quote: DOE also awarded an additional $28 million today to Global Laser Enrichment
+      basis: disclosed
+  obligated_usd: 28443912.0
+  disbursed_usd: 3006774.61
+- id: gle-kentucky-incentives-2026
+  instrument: other
+  round_label: Commonwealth of Kentucky and McCracken County incentive package (preliminary approval)
+  announced_on: 2026-03-26
+  amount:
+    amount: 98900000
+    currency: USD
+    qualifier: up_to
+  amount_kind: ceiling
+  use_of_proceeds: Paducah Laser Enrichment Facility; performance-based on investment and job-creation thresholds
+  evidence:
+  - field: announced_on
+    snapshot: 6c03c6cb913b52075871394d790b75ffe2fe5af682729c278cd171e0a688d704
+    quote: March 26, 2026 WILMINGTON, North Carolina
+    basis: disclosed
+  - field: amount
+    snapshot: 6c03c6cb913b52075871394d790b75ffe2fe5af682729c278cd171e0a688d704
+    quote: up to $98.9 million in tax and other economic incentives should GLE reach agreed investment and job creation thresholds
+    basis: disclosed
+  participants:
+  - investor: Commonwealth of Kentucky
+    investor_slug: commonwealth-of-kentucky
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 6c03c6cb913b52075871394d790b75ffe2fe5af682729c278cd171e0a688d704
+      quote: comprehensive incentive package with the Commonwealth of Kentucky and McCracken County
+      basis: disclosed
+  - investor: McCracken County
+    investor_slug: mccracken-county-ky
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 6c03c6cb913b52075871394d790b75ffe2fe5af682729c278cd171e0a688d704
+      quote: comprehensive incentive package with the Commonwealth of Kentucky and McCracken County
+      basis: disclosed
+agreements:
+- id: gle-doe-leu-idiq-2024
+  counterparty: U.S. Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: 2024-12-11
+  summary: Awardee under DOE LEU Enrichment Acquisition RFP (IDIQ); minimum contract value $2M, ceiling $3.4B across all awardees;
+    value depends on task orders (GLE was not selected for the Jan 2026 $900M task orders per the smallcaps article).
+  evidence:
+  - field: agreement
+    snapshot: 45155989bd96d1e360cf14f95336f05621614f7a96f42dce946607a406e8380b
+    quote: The award provides a minimum contract value of $2 million and a maximum value for all awardees totaling $3.4 billion.
+    basis: disclosed
+  - field: announced_on
+    snapshot: 45155989bd96d1e360cf14f95336f05621614f7a96f42dce946607a406e8380b
+    quote: GLE Selected for DOE LEU Enrichment Award December 11, 2024
+    basis: disclosed
+- id: gle-cameco-offtake-2026
+  counterparty: Cameco
+  counterparty_slug: cameco
+  type: offtake
+  binding: definitive
+  announced_on: 2026-09-14
+  summary: GLE and Cameco execute exclusive offtake agreement (ASX release headline; terms not read).
+  evidence:
+  - field: agreement
+    snapshot: 3be7329faf6e9ab6c8683bb9048bcce5b7c43711aef0890ea7ea0435bc46d343
+    quote: GLE and Cameco execute exclusive Offtake Agreement
+    basis: disclosed
+  - field: announced_on
+    snapshot: 3be7329faf6e9ab6c8683bb9048bcce5b7c43711aef0890ea7ea0435bc46d343
+    quote: '2026-09-13T22:23:39.000Z'
+    basis: disclosed
+- id: global-laser-enrichment-89243225fne400180
+  counterparty: U.S. Department of Energy
+  counterparty_slug: doe-ne
+  type: gov_contract
+  binding: definitive
+  announced_on: '2025-04-11'
+  summary: DOE task order 89243225FNE400180 under the LEU Enrichment Acquisition IDIQ to Global Laser Enrichment LLC for a
+    report on deploying new enrichment capacity (USD 376,893.74 obligated). Paid service contract, not funding.
+  value:
+    amount: 376893.74
+    currency: USD
+    qualifier: exact
+    usd: 376893.74
+  evidence:
+  - field: amount
+    snapshot: 6c8cb330323a1b90914742f90ae631460d9b9341c052f07d2e44839957943b7c
+    quote: '"Award ID": "89243225FNE400180", "Recipient Name": "GLOBAL LASER ENRICHMENT LLC", "Recipient UEI": "V5CDRQGDGX76",
+      "Award Amount": 376893.74'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 6c8cb330323a1b90914742f90ae631460d9b9341c052f07d2e44839957943b7c
+    quote: '"Base Obligation Date": "2025-04-11", "generated_internal_id": "CONT_AWD_89243225FNE400180_8900_89243225DNE000028_8900"'
+    basis: disclosed

@@ -1,0 +1,163 @@
+company: hyperjet-fusion
+name: HyperJet Fusion Corporation
+sector: fusion
+notes: 'Built from USAspending spending_by_award search responses (POST, archived with request body in raw/manifest.jsonl,
+  source_id usaspending-post). Amount = USAspending ''Award Amount'' (cumulative federal obligation, not a ceiling and not
+  an announced figure); disbursed_usd = ''Total Outlays'' when present. Dates = ''Base Obligation Date'' (first obligation),
+  else ''Start Date''. Search was recipient-name text on awarding agency = Department of Energy over 2007-10-01..2026-09-30
+  and one page of up to 50 rows per award-type group; awards with zero or negative net obligation are omitted. Recipient name
+  variants not matched by the name search may be missing. Government record, basis=disclosed. VERIFIER (2026-10-05): every
+  row re-checked against the archived search snapshot (amount, outlays, base obligation date all match) and against a per-award
+  USAspending award-detail snapshot (api/v2/awards/<id>/, source verify-usaspending). Rows are award-level aggregates, so
+  each event is one award, not a modification. Participant evidence now quotes the award''s assistance-listing title or awarding
+  office from the award-detail snapshot (the old quote only said ''Department of Energy''); obligated_usd now has its own
+  evidence ("total_obligation"). Where the search row showed ''Total Outlays'' 0.0 but the award detail has total_outlay null
+  (no File C outlay reporting, typical for pre-2020 or brand-new awards), disbursed_usd was removed: 0.0 meant ''not reported'',
+  not ''nothing paid''. DESC0018765 ($150K Office of Science SBIR-type grant, 2018) is for metallic powder production, not
+  fusion; it is still company money.'
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: '5 changes: 3 participant evidence items re-sourced (ARPA-E x2, Office of Science), obligated evidence added, disbursed_usd
+    0.0 removed on DESC0018765 (outlays not reported for that 2018-19 award). All 3 awards go to HyperJet Fusion Corp itself;
+    DEAR0001268 has 2 subawards (amounts not split out). Scope OK (fusion developer); DESC0018765 is a non-fusion powder project.
+    No private rounds in ledger.'
+events:
+- id: hyperjet-fusion-desc0018765
+  instrument: grant
+  round_label: DESC0018765
+  announced_on: '2018-07-06'
+  amount:
+    amount: 150000.0
+    currency: USD
+    qualifier: exact
+    usd: 150000.0
+  amount_kind: new_money
+  program: DOE Office of Science
+  obligated_usd: 150000.0
+  use_of_proceeds: A NEW PULSED PLASMA TECHNOLOGY FOR MAKING MICRON AND SUB-MICRON METALLIC POWDERS
+  evidence:
+  - field: amount
+    snapshot: 2282af0dfa33d35890438c4a579d722b9389e874cfdc2619a4bd3678340e531b
+    quote: '"Award ID": "DESC0018765", "Recipient Name": "HYPERJET FUSION CORPORATION", "Recipient UEI": "MHJ7JSTRNQK8", "Award
+      Amount": 150000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 2282af0dfa33d35890438c4a579d722b9389e874cfdc2619a4bd3678340e531b
+    quote: '"Base Obligation Date": "2018-07-06", "generated_internal_id": "ASST_NON_DESC0018765_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 2282af0dfa33d35890438c4a579d722b9389e874cfdc2619a4bd3678340e531b
+    quote: '"Award ID": "DESC0018765", "Recipient Name": "HYPERJET FUSION CORPORATION"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 2282af0dfa33d35890438c4a579d722b9389e874cfdc2619a4bd3678340e531b
+    quote: '"Description": "A NEW PULSED PLASMA TECHNOLOGY FOR MAKING MICRON AND SUB-MICRON METALLIC POWDERS"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 4dc970f2f4fa76240203c02e27303d4b5b2f10a701c519af4a6c3699340efab2
+    quote: '"total_obligation":150000.0'
+    basis: disclosed
+  participants:
+  - investor: DOE Office of Science
+    investor_slug: doe-office-of-science
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 4dc970f2f4fa76240203c02e27303d4b5b2f10a701c519af4a6c3699340efab2
+      quote: '"cfda_title":"Office of Science Financial Assistance Program"'
+      basis: disclosed
+- id: hyperjet-fusion-dear0001236
+  instrument: grant
+  round_label: DEAR0001236
+  announced_on: '2020-03-27'
+  amount:
+    amount: 500000.0
+    currency: USD
+    qualifier: exact
+    usd: 500000.0
+  amount_kind: new_money
+  program: ARPA-E
+  obligated_usd: 500000.0
+  disbursed_usd: 150000.0
+  use_of_proceeds: 'HYPERJET FUSION CORPORATION- BASE AWARD CONTROL #1954-1570 PROJECT TITLE: PLASMA GUNS FOR MAGNETIZED FUEL
+    TARG'
+  evidence:
+  - field: amount
+    snapshot: 2282af0dfa33d35890438c4a579d722b9389e874cfdc2619a4bd3678340e531b
+    quote: '"Award ID": "DEAR0001236", "Recipient Name": "HYPERJET FUSION CORPORATION", "Recipient UEI": "MHJ7JSTRNQK8", "Award
+      Amount": 500000.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 2282af0dfa33d35890438c4a579d722b9389e874cfdc2619a4bd3678340e531b
+    quote: '"Base Obligation Date": "2020-03-27", "generated_internal_id": "ASST_NON_DEAR0001236_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 2282af0dfa33d35890438c4a579d722b9389e874cfdc2619a4bd3678340e531b
+    quote: '"Award ID": "DEAR0001236", "Recipient Name": "HYPERJET FUSION CORPORATION"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 2282af0dfa33d35890438c4a579d722b9389e874cfdc2619a4bd3678340e531b
+    quote: '"Description": "HYPERJET FUSION CORPORATION- BASE AWARD\nCONTROL #1954-1570\t\t\t\n\nPROJECT TITLE: PLASMA GUNS
+      FOR'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: af83be782dde646835bad87d92c1277a46ac7eb08d5395f84759c3e403e8700c
+    quote: '"total_obligation":500000.0'
+    basis: disclosed
+  participants:
+  - investor: ARPA-E
+    investor_slug: arpa-e
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: af83be782dde646835bad87d92c1277a46ac7eb08d5395f84759c3e403e8700c
+      quote: '"cfda_title":"Advanced Research Projects Agency - Energy"'
+      basis: disclosed
+- id: hyperjet-fusion-dear0001268
+  instrument: grant
+  round_label: DEAR0001268
+  announced_on: '2020-06-29'
+  amount:
+    amount: 2838034.0
+    currency: USD
+    qualifier: exact
+    usd: 2838034.0
+  amount_kind: new_money
+  program: ARPA-E
+  obligated_usd: 2838034.0
+  disbursed_usd: 2066080.46
+  use_of_proceeds: TARGET FORMATION AND INTEGRATED EXPERIMENTS FOR PLASMA-JET DRIVEN MAGNETO-INERTIAL FUSION
+  evidence:
+  - field: amount
+    snapshot: 2282af0dfa33d35890438c4a579d722b9389e874cfdc2619a4bd3678340e531b
+    quote: '"Award ID": "DEAR0001268", "Recipient Name": "HYPERJET FUSION CORPORATION", "Recipient UEI": "MHJ7JSTRNQK8", "Award
+      Amount": 2838034.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 2282af0dfa33d35890438c4a579d722b9389e874cfdc2619a4bd3678340e531b
+    quote: '"Base Obligation Date": "2020-06-29", "generated_internal_id": "ASST_NON_DEAR0001268_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 2282af0dfa33d35890438c4a579d722b9389e874cfdc2619a4bd3678340e531b
+    quote: '"Award ID": "DEAR0001268", "Recipient Name": "HYPERJET FUSION CORPORATION"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 2282af0dfa33d35890438c4a579d722b9389e874cfdc2619a4bd3678340e531b
+    quote: '"Description": "TARGET FORMATION AND INTEGRATED EXPERIMENTS FOR PLASMA-JET DRIVEN MAGNETO-INERTIAL FUSION"'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: c2cca728f10679dc5dd8ea300be5141de3f7201aa431549662f97039c19aa582
+    quote: '"total_obligation":2838034.0'
+    basis: disclosed
+  participants:
+  - investor: ARPA-E
+    investor_slug: arpa-e
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: c2cca728f10679dc5dd8ea300be5141de3f7201aa431549662f97039c19aa582
+      quote: '"cfda_title":"Advanced Research Projects Agency - Energy"'
+      basis: disclosed
+agreements: []

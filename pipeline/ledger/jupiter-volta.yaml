@@ -1,0 +1,73 @@
+company: jupiter-volta
+name: Jupiter Volta
+sector: fusion
+notes: 'Built from USAspending spending_by_award search responses (POST, archived with request body in raw/manifest.jsonl,
+  source_id usaspending-post). Amount = USAspending ''Award Amount'' (cumulative federal obligation, not a ceiling and not
+  an announced figure); disbursed_usd = ''Total Outlays'' when present. Dates = ''Base Obligation Date'' (first obligation),
+  else ''Start Date''. Search was recipient-name text on awarding agency = Department of Energy over 2007-10-01..2026-09-30
+  and one page of up to 50 rows per award-type group; awards with zero or negative net obligation are omitted. Recipient name
+  variants not matched by the name search may be missing. Government record, basis=disclosed. VERIFIER (2026-10-05): every
+  row re-checked against the archived search snapshot (amount, outlays, base obligation date all match) and against a per-award
+  USAspending award-detail snapshot (api/v2/awards/<id>/, source verify-usaspending). Rows are award-level aggregates, so
+  each event is one award, not a modification. Participant evidence now quotes the award''s assistance-listing title or awarding
+  office from the award-detail snapshot (the old quote only said ''Department of Energy''); obligated_usd now has its own
+  evidence ("total_obligation"). Where the search row showed ''Total Outlays'' 0.0 but the award detail has total_outlay null
+  (no File C outlay reporting, typical for pre-2020 or brand-new awards), disbursed_usd was removed: 0.0 meant ''not reported'',
+  not ''nothing paid''. Award detail (fetched later the same day) reports total_outlay 74,869.88 vs 38,465.24 in the search
+  row; the search value is kept.'
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: '1 change: participant evidence re-sourced (ARPA-E). Amount $3.65M obligated confirmed; recipient is the company.
+    Scope: Vision Open project on diamond-metal composites for fusion-facing materials and thrusters, so the company is a
+    fusion supplier/enabler more than a fusion developer; keep, but the census role ''developer'' is doubtful. Outlay figure
+    differs between the search and award-detail endpoints (38K vs 75K).'
+events:
+- id: jupiter-volta-dear0002055
+  instrument: grant
+  round_label: DEAR0002055
+  announced_on: '2026-03-26'
+  amount:
+    amount: 3650757.0
+    currency: USD
+    qualifier: exact
+    usd: 3650757.0
+  amount_kind: new_money
+  program: ARPA-E
+  obligated_usd: 3650757.0
+  disbursed_usd: 38465.24
+  use_of_proceeds: 'NEW AWARD: JUPITER VOLTA, INC. CONTROL NUMBER 3387-2097 VISION OPEN 2024 PROJECT TITLE: ''''DIAMOND-METAL
+    COMPOS'
+  evidence:
+  - field: amount
+    snapshot: 2c98c1646fbe422a40511003e2f69662f36347630d15005e3ee084e099bb74c5
+    quote: '"Award ID": "DEAR0002055", "Recipient Name": "JUPITER VOLTA INC", "Recipient UEI": "LLPUV872N2Y3", "Award Amount":
+      3650757.0'
+    basis: disclosed
+  - field: announced_on
+    snapshot: 2c98c1646fbe422a40511003e2f69662f36347630d15005e3ee084e099bb74c5
+    quote: '"Base Obligation Date": "2026-03-26", "generated_internal_id": "ASST_NON_DEAR0002055_089"'
+    basis: disclosed
+  - field: round_label
+    snapshot: 2c98c1646fbe422a40511003e2f69662f36347630d15005e3ee084e099bb74c5
+    quote: '"Award ID": "DEAR0002055", "Recipient Name": "JUPITER VOLTA INC"'
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 2c98c1646fbe422a40511003e2f69662f36347630d15005e3ee084e099bb74c5
+    quote: '"Description": "NEW AWARD: JUPITER VOLTA, INC.\nCONTROL NUMBER 3387-2097\nVISION OPEN 2024\nPROJECT TITLE: ''''DIAMON'
+    basis: disclosed
+  - field: obligated_usd
+    snapshot: 134876a21d5339137ee075d64938925a707e99e91979c0bc435614f300ba28dd
+    quote: '"total_obligation":3650757.0'
+    basis: disclosed
+  participants:
+  - investor: ARPA-E
+    investor_slug: arpa-e
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 134876a21d5339137ee075d64938925a707e99e91979c0bc435614f300ba28dd
+      quote: '"cfda_title":"Advanced Research Projects Agency - Energy"'
+      basis: disclosed
+agreements: []

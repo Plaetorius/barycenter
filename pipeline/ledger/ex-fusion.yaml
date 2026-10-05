@@ -1,0 +1,48 @@
+company: ex-fusion
+name: EX-Fusion
+sector: fusion
+notes: 'INFUSE awards (in-kind lab-access vouchers; no dollar amount is published on the awards listing) from the ORNL INFUSE awards
+  listing pages archived by the ledger-infuse/ledger-commonwealth-fusion-systems runs (infuse.ornl.gov/awards/ and /page/N). The listing
+  gives project title, cycle, award date, company and host lab/university; the date shown is taken as announced_on. Vouchers are not
+  cash and must not be summed with funding. VERIFIER: Recipient on the INFUSE listing is EX-Fusion America, Inc (US subsidiary of
+  the Kyoto company); host lab INL. INFUSE awards pay the host lab or university to do work for the company (in-kind, no cash to the
+  company; D5: lab/university money is not company funding). Kept as amount-less voucher events for context only; they never count
+  toward raised totals and do not by themselves satisfy D1.'
+verification:
+  status: verified
+  by: verifier-agent (claude-opus-5-5), 2026-10-05
+  'on': '2026-10-05'
+  note: 'Evidence verified (1 INFUSE voucher, 2025-09-10, EX-Fusion America, Inc with INL; title row correctly attributed: titles
+    precede their cycle|company|host line on the listing), 0 corrections to facts; notes amended for D5. SCOPE: fusion developer,
+    belongs in the map, but this ledger has no cash funding event (voucher = lab money); its equity rounds (Series A and extension)
+    are missing, so on this ledger alone it does not meet D1.'
+events:
+- id: ex-fusion-infuse-2025-1
+  instrument: voucher
+  round_label: INFUSE 2025
+  announced_on: '2025-09-10'
+  program: INFUSE
+  evidence:
+  - field: announced_on
+    snapshot: 398b567189796840676f664c2caa21112f49510be7a6040d2e651e49894f454a
+    quote: INFUSE 2025 - September 10, 2025 | EX-Fusion America, Inc | Idaho National Laboratory (INL)
+    basis: disclosed
+  - field: round_label
+    snapshot: 398b567189796840676f664c2caa21112f49510be7a6040d2e651e49894f454a
+    quote: INFUSE 2025 - September 10, 2025 | EX-Fusion America, Inc | Idaho National Laboratory (INL)
+    basis: disclosed
+  - field: use_of_proceeds
+    snapshot: 398b567189796840676f664c2caa21112f49510be7a6040d2e651e49894f454a
+    quote: Evaluating the impact of lead-lithium purity on tritium transport
+    basis: disclosed
+  participants:
+  - investor: INFUSE (Innovation Network for Fusion Energy)
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 398b567189796840676f664c2caa21112f49510be7a6040d2e651e49894f454a
+      quote: INFUSE 2025 - September 10, 2025 | EX-Fusion America, Inc | Idaho National Laboratory (INL)
+      basis: disclosed
+  use_of_proceeds: Evaluating the impact of lead-lithium purity on tritium transport
+agreements: []

@@ -1,0 +1,387 @@
+company: terrapower
+name: TerraPower LLC
+sector: fission
+notes: >
+  Private company; no Form D under any TerraPower name (EDGAR efts probe 8784db91bd0d, 0 hits), so no EDGAR evidence.
+  USAspending records the ARDP Natrium award under recipient "US SFR OWNER LLC" (UEI HVKCEHKLJ921) and the smaller awards
+  under "TERRAPOWER LLC" (UEI G4XNL77M7DR1). CONFLICT, not reconciled: DOE's 2020-10-13 announcement says $80M initial
+  funding each for TerraPower and X-energy; USAspending shows $1,696,938,130.80 obligated (cumulative, modified over time)
+  on DENE0009054 plus recipient cost share (non_federal_funding) of $2,016,788,515 and total_funding $3,713,726,645.80
+  (detail snapshot f1b652900cf6). TerraPower's own releases say the ARDP award "requires a match of 50% of project costs,
+  up to $2 billion". The $80M and $1.70B are different measures (initial tranche vs cumulative obligation) and are kept
+  as separate events; do not sum them. 2022 raise: release 1 (2022-08-15) says "minimum of $750 million", release 2
+  (2022-11-03) says the raise concluded at $830M total, i.e. $750M plus $80M additional; modelled as two new_money events
+  ($750M and $80M), the $830M is a cumulative total and is not a separate event. The 2025 $650M release says "including"
+  so its investor list is partial; UBS (2025) and Credit Suisse (2022) were placement agents, not investors. Participant
+  amounts: only SK's $250M is stated by the source. KHNP joined through SK's previously announced $250M, so it is not new money.
+  NOT FOUND / BLOCKED: 2010 Series B ($35M, Khosla/CRV/Gates, per Reuters in investor-edges.csv) - reuters.com is blocked by
+  robots.txt, no primary source found, so omitted; earlier rounds (2008 seed, 2018-2021) not evidenced. DOE HALEU allocation,
+  Wyoming state money and DOE LPO: nothing evidenced (web search budget exhausted, energy.gov ARDP program page and
+  terrapower.com/wyoming render without content); DOE LPO has no TerraPower loan in USAspending loan search (probe 2a20911efb92).
+  Pennsylvania $10M grant is to the affiliate TerraPower Isotopes, stated by the state secretary, grant date unknown.
+  VERIFIER: that event was REMOVED: the recipient is TerraPower Isotopes (TPI), a separate legal entity, and the source (snapshot
+  8b75270ea3b0, 2026-05-06, "Our strategic $10 million grant helped to secure more than $450 million in private investment") does not
+  name TerraPower LLC as recipient or beneficiary. ARDP: the DOE 2020-10-13 $80M is now amount_kind duplicate of the USAspending
+  DENE0009054 obligation ($1,696.9M obligated, $972.4M outlaid), which is the counted figure. US SFR OWNER LLC is treated as
+  TerraPower's ARDP project entity because DOE names TerraPower LLC as the ARDP awardee, the award is under the ARDP FOA
+  DE-FOA-0002271, and the recipient address (15800 Northup Way, Bellevue WA) is TerraPower's headquarters; USAspending gives no parent
+  and the ownership of US SFR OWNER LLC is not evidenced (co-owners, if any, unknown).
+  Meta release says Meta "will provide funding" for deployment but states no amount; recorded as agreement, not funding.
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  "on": 2026-10-05
+  note: "5 corrections: ARDP USAspending event cumulative -> new_money (counted, obligated $1.70B) and DOE $80M announcement -> duplicate superseding it (same award), plus recipient-address and FOA evidence linking US SFR OWNER LLC to TerraPower; 2022-08 equity qualifier over -> exact with the Nov 2022 release quote ($750M first phase); KHNP 2026 event -> duplicate of the 2022 raise (through SK's $250M, no new money); Pennsylvania $10M TerraPower Isotopes grant removed (different legal recipient). Not confirmed: ownership of US SFR OWNER LLC; pre-2022 private rounds (2010 Series B etc.); HALEU, Wyoming, LPO support."
+events:
+- id: terrapower-2020-ardp-initial
+  instrument: cost_share
+  round_label: ARDP initial award (DOE announcement)
+  announced_on: 2020-10-13
+  amount: {amount: 80000000, currency: USD, qualifier: exact}
+  amount_kind: duplicate
+  supersedes: terrapower-ardp-natrium-usaspending
+  program: DOE Advanced Reactor Demonstration Program (initial tranche of the same award later obligated on DENE0009054)
+  evidence:
+  - {field: amount, snapshot: 51c14e4204af7fb3c1efef2330cdba2b77e9015dfd10d5a90be6d95bb780209e, quote: "DOE is awarding TerraPower LLC (Bellevue, Washington) and X-energy (Rockville, Maryland) $80 million each in initial funding", basis: disclosed}
+  - {field: announced_on, snapshot: 51c14e4204af7fb3c1efef2330cdba2b77e9015dfd10d5a90be6d95bb780209e, quote: "Office of Nuclear Energy October 13, 2020", basis: disclosed}
+  participants:
+  - investor: U.S. Department of Energy
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - {field: participant, snapshot: 51c14e4204af7fb3c1efef2330cdba2b77e9015dfd10d5a90be6d95bb780209e, quote: "DOE is awarding TerraPower LLC (Bellevue, Washington)", basis: disclosed}
+- id: terrapower-ardp-natrium-usaspending
+  instrument: cost_share
+  round_label: ARDP Natrium demonstration, DENE0009054 (USAspending, recipient US SFR OWNER LLC)
+  announced_on: 2021-05-03
+  amount: {amount: 1696938130.8, currency: USD, qualifier: exact}
+  obligated_usd: 1696938130.8
+  disbursed_usd: 972362176.09
+  program: DOE Advanced Reactor Demonstration Program
+  use_of_proceeds: Natrium demonstration plant (Kemmerer, Wyoming); FOA DE-FOA-0002271. Recipient cost share (non_federal_funding) 2,016,788,515 is separate and not DOE money.
+  evidence:
+  - {field: amount, snapshot: f1b652900cf6d6b8c7f162612db3f040ca0a6550a49600d272f5e41216a8993d, quote: '"total_obligation":1696938130.8', basis: disclosed}
+  - {field: announced_on, snapshot: f1b652900cf6d6b8c7f162612db3f040ca0a6550a49600d272f5e41216a8993d, quote: '"date_signed":"2021-05-03"', basis: disclosed}
+  - {field: disbursed, snapshot: f1b652900cf6d6b8c7f162612db3f040ca0a6550a49600d272f5e41216a8993d, quote: '"total_account_outlay":972362176.09', basis: disclosed}
+  - {field: recipient, snapshot: 219c0a4d34d0dcdccb5a68dc149f99536e31c4c970d34c6bd345bf1657f161ea, quote: '"Recipient Name":"US SFR OWNER LLC"', basis: disclosed}
+  - {field: recipient_address, snapshot: f1b652900cf6d6b8c7f162612db3f040ca0a6550a49600d272f5e41216a8993d, quote: '"city_name":"BELLEVUE","county_code":"033","county_name":"KING","address_line1":"15800 NORTHUP WAY"', basis: disclosed}
+  - {field: program, snapshot: f1b652900cf6d6b8c7f162612db3f040ca0a6550a49600d272f5e41216a8993d, quote: 'SELECTED UNDER FOA DE-FOA-0002271, ADVANCED REACTOR DEMONSTRATION', basis: disclosed}
+  participants:
+  - investor: Department of Energy (Office of Nuclear Energy)
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - {field: participant, snapshot: 219c0a4d34d0dcdccb5a68dc149f99536e31c4c970d34c6bd345bf1657f161ea, quote: '"Awarding Sub Agency":"Department of Energy"', basis: disclosed}
+- id: terrapower-dene0008924-usaspending
+  instrument: grant
+  round_label: US Industry Opportunities for Advanced Nuclear Technology Development, DENE0008924
+  announced_on: 2020-01-16
+  amount: {amount: 492137, currency: USD, qualifier: exact}
+  obligated_usd: 492137
+  disbursed_usd: 222444.12
+  program: DOE NE FOA DE-FOA-0001817
+  evidence:
+  - {field: amount, snapshot: 66f18a992af6a161414b814e197d1da7f5150eafcbf40bd8c1ac15d7b6502851, quote: '"Award ID":"DENE0008924","Recipient Name":"TERRAPOWER LLC","Recipient UEI":"G4XNL77M7DR1","Award Amount":492137.0', basis: disclosed}
+  - {field: announced_on, snapshot: 66f18a992af6a161414b814e197d1da7f5150eafcbf40bd8c1ac15d7b6502851, quote: '"Start Date":"2020-01-16"', basis: disclosed}
+  - {field: disbursed, snapshot: 66f18a992af6a161414b814e197d1da7f5150eafcbf40bd8c1ac15d7b6502851, quote: '"Total Outlays":222444.12', basis: disclosed}
+  participants:
+  - investor: Department of Energy (Office of Nuclear Energy)
+    investor_slug: doe-ne
+    role: grantor
+    evidence:
+    - {field: participant, snapshot: 66f18a992af6a161414b814e197d1da7f5150eafcbf40bd8c1ac15d7b6502851, quote: '"Awarding Sub Agency":"Department of Energy","Award Type":"PROJECT GRANT (B)"', basis: disclosed}
+- id: terrapower-dear0001612-usaspending
+  instrument: grant
+  round_label: ARPA-E ONWARDS, chloride-based volatility for fuel waste reduction, DEAR0001612
+  announced_on: 2022-08-05
+  amount: {amount: 2472777.06, currency: USD, qualifier: exact}
+  obligated_usd: 2472777.06
+  disbursed_usd: 2472777.06
+  program: ARPA-E ONWARDS
+  evidence:
+  - {field: amount, snapshot: 66f18a992af6a161414b814e197d1da7f5150eafcbf40bd8c1ac15d7b6502851, quote: '"Award ID":"DEAR0001612","Recipient Name":"TERRAPOWER LLC","Recipient UEI":"G4XNL77M7DR1","Award Amount":2472777.06', basis: disclosed}
+  - {field: announced_on, snapshot: 66f18a992af6a161414b814e197d1da7f5150eafcbf40bd8c1ac15d7b6502851, quote: '"Start Date":"2022-08-05"', basis: disclosed}
+  - {field: disbursed, snapshot: 66f18a992af6a161414b814e197d1da7f5150eafcbf40bd8c1ac15d7b6502851, quote: '"Total Outlays":2472777.06', basis: disclosed}
+  participants:
+  - investor: ARPA-E
+    investor_slug: arpa-e
+    role: grantor
+    evidence:
+    - {field: participant, snapshot: 66f18a992af6a161414b814e197d1da7f5150eafcbf40bd8c1ac15d7b6502851, quote: '"cfda_program_title":"ADVANCED RESEARCH PROJECTS AGENCY - ENERGY"', basis: disclosed}
+- id: terrapower-2022-gain-voucher
+  instrument: voucher
+  round_label: GAIN voucher (MCFR chlorine-isotope measurements); amount not stated
+  announced_on: 2022-06-22
+  program: DOE GAIN
+  evidence:
+  - {field: announced_on, snapshot: 9016bf37d12b865bffc4f2a48be2b5b030f1b7f7e0c7b464f54fb16190ca022b, quote: "Office of Nuclear Energy June 22, 2022", basis: disclosed}
+  - {field: round_label, snapshot: 9016bf37d12b865bffc4f2a48be2b5b030f1b7f7e0c7b464f54fb16190ca022b, quote: "Orano and TerraPower Awarded GAIN Vouchers to Help Advance Nuclear Technologies", basis: disclosed}
+  participants:
+  - investor: DOE Office of Nuclear Energy (GAIN)
+    investor_slug: doe-gain-infuse
+    role: grantor
+    evidence:
+    - {field: participant, snapshot: 9016bf37d12b865bffc4f2a48be2b5b030f1b7f7e0c7b464f54fb16190ca022b, quote: "Orano Federal Services and TerraPower awarded vouchers to help advance their nuclear technologies.", basis: disclosed}
+- id: terrapower-2022-08-equity
+  instrument: equity
+  round_label: 2022 equity raise (first phase)
+  round_group: terrapower-2022-raise
+  announced_on: 2022-08-15
+  amount: {amount: 750000000, currency: USD, qualifier: exact}
+  use_of_proceeds: Natrium demonstration plant implementation and TerraPower Isotopes
+  evidence:
+  - {field: amount, snapshot: eb5ce930c367eecb90913bccc920edfee89a85f10d243210aeaca2050b9affd1, quote: "The first phase of the fundraise, announced in mid-August of this year, secured $750 million.", basis: disclosed}
+  - {field: amount, snapshot: 93c05b2e6af6b01e358c3214a654a5757b1b6019a66e0cbfff965b1c275fa65e, quote: "the close of an equity raise that yields a minimum of $750 million", basis: disclosed}
+  - {field: announced_on, snapshot: 93c05b2e6af6b01e358c3214a654a5757b1b6019a66e0cbfff965b1c275fa65e, quote: "Bellevue, WA – August 15, 2022", basis: disclosed}
+  - {field: round_label, snapshot: 93c05b2e6af6b01e358c3214a654a5757b1b6019a66e0cbfff965b1c275fa65e, quote: "TerraPower Announces $750 Million Secured in Fundraise", basis: disclosed}
+  participants:
+  - investor: SK Inc. and SK Innovation (collectively, "SK")
+    investor_slug: sk-group
+    role: lead
+    amount: {amount: 250000000, currency: USD, qualifier: exact}
+    evidence:
+    - {field: participant, snapshot: 93c05b2e6af6b01e358c3214a654a5757b1b6019a66e0cbfff965b1c275fa65e, quote: "SK invested $250 million.", basis: disclosed}
+  - investor: Bill Gates (TerraPower founder)
+    investor_slug: bill-gates
+    role: lead
+    evidence:
+    - {field: participant, snapshot: 93c05b2e6af6b01e358c3214a654a5757b1b6019a66e0cbfff965b1c275fa65e, quote: "co-led by SK Inc. and SK Innovation (collectively, “SK”) and TerraPower’s founder Bill Gates", basis: disclosed}
+- id: terrapower-2022-11-equity-extension
+  instrument: equity
+  round_label: 2022 equity raise (extension, $830M total)
+  round_group: terrapower-2022-raise
+  announced_on: 2022-11-03
+  amount: {amount: 80000000, currency: USD, qualifier: exact}
+  use_of_proceeds: Natrium reactor 1, TerraPower Isotopes, Molten Chloride Fast Reactor experiment
+  evidence:
+  - {field: amount, snapshot: eb5ce930c367eecb90913bccc920edfee89a85f10d243210aeaca2050b9affd1, quote: "an additional $80 million was raised through additional investors", basis: disclosed}
+  - {field: announced_on, snapshot: eb5ce930c367eecb90913bccc920edfee89a85f10d243210aeaca2050b9affd1, quote: "Bellevue, WA – November 3, 2022", basis: disclosed}
+  - {field: round_label, snapshot: eb5ce930c367eecb90913bccc920edfee89a85f10d243210aeaca2050b9affd1, quote: "has concluded an equity raise of $830 million", basis: disclosed}
+  participants:
+  - investor: ArcelorMittal (XCarb Innovation Fund)
+    investor_slug: arcelormittal
+    role: participant
+    evidence:
+    - {field: participant, snapshot: eb5ce930c367eecb90913bccc920edfee89a85f10d243210aeaca2050b9affd1, quote: "ArcelorMittal, the world’s leading steel company, which has invested through its XCarb® Innovation Fund", basis: disclosed}
+  - investor: Korea Shipbuilding and Offshore Engineering (KSOE)
+    investor_slug: hd-hyundai
+    role: participant
+    evidence:
+    - {field: participant, snapshot: eb5ce930c367eecb90913bccc920edfee89a85f10d243210aeaca2050b9affd1, quote: "Korea Shipbuilding and Offshore Engineering (“KSOE”), the intermediate holding company of Hyundai Heavy Industries Group’s shipbuilding sector", basis: disclosed}
+- id: terrapower-2025-06-equity
+  instrument: equity
+  round_label: 2025 fundraise
+  announced_on: 2025-06-18
+  amount: {amount: 650000000, currency: USD, qualifier: exact}
+  use_of_proceeds: First Natrium plant and rapid deployment of additional units in the U.S. and abroad
+  evidence:
+  - {field: amount, snapshot: 471317cf6a2a0fc98b42e08eea9c2639d350354cb1946197fe5b7341aa0b2044, quote: "announced today the close of a $650 million fundraise", basis: disclosed}
+  - {field: announced_on, snapshot: 471317cf6a2a0fc98b42e08eea9c2639d350354cb1946197fe5b7341aa0b2044, quote: "Bellevue, WA – June 18, 2025", basis: disclosed}
+  - {field: round_label, snapshot: 471317cf6a2a0fc98b42e08eea9c2639d350354cb1946197fe5b7341aa0b2044, quote: "TerraPower Announces $650 Million Fundraise", basis: disclosed}
+  participants:
+  - investor: NVentures, the venture capital arm of NVIDIA
+    investor_slug: nventures
+    role: participant
+    evidence:
+    - {field: participant, snapshot: 471317cf6a2a0fc98b42e08eea9c2639d350354cb1946197fe5b7341aa0b2044, quote: "new investors, including NVentures, the venture capital arm of NVIDIA", basis: disclosed}
+  - investor: Bill Gates (TerraPower founder)
+    investor_slug: bill-gates
+    role: participant
+    evidence:
+    - {field: participant, snapshot: 471317cf6a2a0fc98b42e08eea9c2639d350354cb1946197fe5b7341aa0b2044, quote: "current investors, including TerraPower-founder Bill Gates and HD Hyundai", basis: disclosed}
+  - investor: HD Hyundai
+    investor_slug: hd-hyundai
+    role: participant
+    evidence:
+    - {field: participant, snapshot: 471317cf6a2a0fc98b42e08eea9c2639d350354cb1946197fe5b7341aa0b2044, quote: "current investors, including TerraPower-founder Bill Gates and HD Hyundai", basis: disclosed}
+- id: terrapower-2026-01-khnp-stake
+  instrument: equity
+  round_label: KHNP joins investor base (through SK's $250M stake); amount undisclosed
+  announced_on: 2026-01-20
+  amount_kind: duplicate
+  supersedes: terrapower-2022-08-equity
+  evidence:
+  - {field: announced_on, snapshot: 1a1d152bef1ba2c620ed9b53a49836cb85407a4aa37824ee07722498ff30568e, quote: "Bellevue, WA – January 20, 2026", basis: disclosed}
+  - {field: round_label, snapshot: 1a1d152bef1ba2c620ed9b53a49836cb85407a4aa37824ee07722498ff30568e, quote: "KHNP’s investment will be through SK’s previously announced $250 million investment into TerraPower.", basis: disclosed}
+  participants:
+  - investor: Korea Hydro & Nuclear Power (KHNP)
+    investor_slug: khnp
+    role: participant
+    evidence:
+    - {field: participant, snapshot: 1a1d152bef1ba2c620ed9b53a49836cb85407a4aa37824ee07722498ff30568e, quote: "Korea Hydro & Nuclear Power (KHNP) has joined SK as part of the company’s visionary investor base", basis: disclosed}
+agreements:
+- id: terrapower-meta-2026-natrium
+  counterparty: Meta
+  counterparty_slug: meta
+  type: offtake
+  binding: definitive
+  announced_on: 2026-01-09
+  capacity_mw: 2800
+  summary: Agreement to develop up to 8 Natrium plants; Meta to provide funding for deployment (amount undisclosed); early development of two units plus rights to energy from up to six more. Binding level taken from "commercial agreement" wording; reviewer to confirm.
+  evidence:
+  - {field: agreement, snapshot: 1e609daad71c07bc8701cab8e898ef922d7b63fa38e579de99b77e7e9876e024, quote: "an agreement to develop up to 8 Natrium reactor 1 and energy storage system plants in the United States", basis: disclosed}
+  - {field: capacity_mw, snapshot: 1e609daad71c07bc8701cab8e898ef922d7b63fa38e579de99b77e7e9876e024, quote: "Meta with up to 2.8 GW of carbon-free, baseload energy", basis: disclosed}
+- id: terrapower-sabey-2025-mou
+  counterparty: Sabey Data Centers
+  counterparty_slug: sabey-data-centers
+  type: offtake
+  binding: mou
+  announced_on: 2025-01-21
+  summary: MOU to develop a strategic collaboration agreement for Natrium plants for Sabey data centers (Rocky Mountain region, Texas).
+  evidence:
+  - {field: agreement, snapshot: 5b73e339c78ed731274ef9ea3b9d50c7e7453b418557a23461dff02541f4d318, quote: "announced today a memorandum of understanding to develop a strategic collaboration agreement", basis: disclosed}
+- id: terrapower-pacificorp-2023-irp
+  counterparty: PacifiCorp
+  counterparty_slug: pacificorp
+  type: partnership
+  binding: mou
+  announced_on: 2023-03-31
+  capacity_mw: 1500
+  summary: PacifiCorp 2023 IRP selects two additional Natrium units (three total, 1,500 MW) by 2033, sited in Utah; follows a joint study of up to five more units. An IRP selection and joint study, not a signed purchase contract; binding level mou is an approximation.
+  evidence:
+  - {field: agreement, snapshot: a83fe0c48bad6ba60c4c629cba9dbb05b212a43ff172690c48ea6b5546e8f957, quote: "This IRP includes 1,500 megawatts of advanced nuclear energy from three total Natrium reactors.", basis: disclosed}
+- id: terrapower-utah-oed-2025-mou
+  counterparty: Utah Office of Energy Development and Flagship Companies
+  counterparty_slug: utah-nlic
+  type: site
+  binding: mou
+  announced_on: 2025-08-25
+  summary: Non-binding MOU to explore siting a Natrium plant in Utah (Operation Gigawatt).
+  evidence:
+  - {field: agreement, snapshot: 7df23806c4b439bbd3270d9ebf48a3805b52c10385cba7398e70212d3663f878, quote: "This landmark agreement establishes a non-binding framework for cooperation among the three parties", basis: disclosed}
+- id: terrapower-evergy-kansas-2025-mou
+  counterparty: Evergy and Kansas Department of Commerce
+  counterparty_slug: evergy
+  type: site
+  binding: mou
+  announced_on: 2025-09-23
+  summary: MOU to explore siting a Natrium plant within Evergy's Kansas service territory.
+  evidence:
+  - {field: agreement, snapshot: 0eb9a4b3d218391a423e986479324815a4bd43691ff11e1b12fc88b0666d34c8, quote: "the signing of a memorandum of understanding (MOU) to explore siting TerraPower’s flagship technology", basis: disclosed}
+- id: terrapower-sk-khnp-2023-collaboration
+  counterparty: SK and Korea Hydro & Nuclear Power (KHNP)
+  counterparty_slug: khnp
+  type: partnership
+  binding: mou
+  announced_on: 2023-04-25
+  summary: Strategic collaboration agreement to support demonstration and commercialization of the Natrium reactor. Binding level approximated; KHNP later became an investor.
+  evidence:
+  - {field: agreement, snapshot: c4ed6a5cd800bc18773715cc96e41807e23331d99c98be9600017a0cc20d78ee, quote: "sign a collaboration agreement supporting the demonstration and commercialization of the Natrium® reactor", basis: disclosed}
+- id: terrapower-sk-innovation-2026-term-sheet
+  counterparty: SK Innovation
+  counterparty_slug: sk-group
+  type: partnership
+  binding: loi
+  announced_on: 2026-08-14
+  summary: Term sheet to advance intent to develop Korea's first commercial Natrium plant.
+  evidence:
+  - {field: agreement, snapshot: 49a2f1208c734348cee665386749b1fb058840c2315aee8fff702eef5174293d, quote: "TerraPower and SK Innovation announced a term sheet agreement to advance their intent to develop Korea’s first commercial Natrium plant", basis: disclosed}
+- id: terrapower-hdec-2026-epc-framework
+  counterparty: Hyundai Engineering & Construction (HDEC)
+  counterparty_slug: hyundai-engineering-construction
+  type: gov_contract
+  binding: mou
+  announced_on: 2026-08-14
+  summary: Framework agreement selecting HDEC as EPC contractor for up to eight future Natrium reactors with completion, price and performance guarantees. Type gov_contract is the closest enum value (it is a commercial EPC framework). Binding level approximated from "framework agreement".
+  evidence:
+  - {field: agreement, snapshot: 49a2f1208c734348cee665386749b1fb058840c2315aee8fff702eef5174293d, quote: "TerraPower selected HDEC as its engineering, procurement and construction (EPC) contractor to build up to eight of its future Natrium reactors", basis: disclosed}
+- id: terrapower-hd-hyundai-2026-supply-framework
+  counterparty: HD Hyundai Heavy Industries
+  counterparty_slug: hd-hyundai
+  type: partnership
+  binding: mou
+  announced_on: 2026-05-20
+  summary: Supply framework agreement making HHI preferred manufacturer of Natrium Reactor Enclosure System components; separate three-party strategy with HDEC. Follows 2025-03-11 strategic collaboration. Binding level approximated.
+  evidence:
+  - {field: agreement, snapshot: 5c3dc0505ec97090b68e3313a8cc9e075389b0b299b1349ee691967741388c12, quote: "signed a supply framework agreement that establishes HD Hyundai Heavy Industries (HHI)", basis: disclosed}
+- id: terrapower-enec-2023-mou
+  counterparty: Emirates Nuclear Energy Corporation (ENEC)
+  counterparty_slug: enec
+  type: partnership
+  binding: mou
+  announced_on: 2023-12-04
+  summary: MOU to explore commercialization and global deployment of Natrium.
+  evidence:
+  - {field: agreement, snapshot: da4d0cd54350d3538c84fcfc0018d937447c66192fcf664622f9d67a62d0e9ff, quote: "the signing of a memorandum of understanding (MOU) to explore opportunities for the commercialization and global deployment", basis: disclosed}
+- id: terrapower-gnf-2022-natrium-fuel-facility
+  counterparty: Global Nuclear Fuel-Americas (GNF-A)
+  counterparty_slug: global-nuclear-fuel
+  type: fuel_supply
+  binding: definitive
+  announced_on: 2022-10-21
+  value: {amount: 200000000, currency: USD, qualifier: over}
+  summary: Agreement to build the Natrium Fuel Facility near Wilmington NC, jointly funded by TerraPower and DOE through ARDP (this is part of ARDP spend, not additional funding).
+  evidence:
+  - {field: agreement, snapshot: f08d4c3e904a0d9287282ae0ce3215d7a1093c6f5f88e064fffc9bdf63fc451a, quote: "The facility represents an investment of more than $200 million.", basis: disclosed}
+- id: terrapower-centrus-2023-haleu-mou
+  counterparty: Centrus Energy Corp.
+  counterparty_slug: centrus
+  type: fuel_supply
+  binding: mou
+  announced_on: 2023-07-17
+  summary: MOU to expand collaboration on commercial-scale domestic HALEU production for the Natrium demonstration reactor.
+  evidence:
+  - {field: agreement, snapshot: 7c936f98042a57ecf040432532534b34e486fb41871003d59abaf3034f53de7f, quote: "a new memorandum of understanding (MOU) to significantly expand their collaboration", basis: disclosed}
+- id: terrapower-asp-isotopes-2024-haleu-term-sheet
+  counterparty: ASP Isotopes Inc.
+  counterparty_slug: asp-isotopes
+  type: fuel_supply
+  binding: loi
+  announced_on: 2024-10-30
+  summary: Term sheet for a HALEU enrichment facility in South Africa (TerraPower plans to invest) and HALEU supply for Natrium; amount undisclosed.
+  evidence:
+  - {field: agreement, snapshot: 0019dcf2dfe50b4726a908e661cd9efb6af6ea8b14867462ee473d0bfdab056f, quote: "TerraPower has signed a term sheet with ASP Isotopes for the construction of a uranium enrichment facility in South Africa", basis: disclosed}
+- id: terrapower-framatome-2024-haleu-metallization
+  counterparty: Framatome North America
+  counterparty_slug: framatome
+  type: fuel_supply
+  binding: definitive
+  announced_on: 2024-05-29
+  summary: TerraPower agreement to fund a HALEU metallization pilot plant in Washington (outflow by TerraPower; amount undisclosed).
+  evidence:
+  - {field: agreement, snapshot: ce18d29c198b320b5e894c5e135dea0401b11d116ffbaed3591bc445636f0fdb, quote: "an agreement with Framatome North America to fund the creation of a high assay low enriched uranium (HALEU) metallization pilot plant", basis: disclosed}
+- id: terrapower-kbr-2025-alliance
+  counterparty: KBR
+  counterparty_slug: kbr
+  type: partnership
+  binding: mou
+  announced_on: 2025-03-13
+  summary: Strategic alliance for commercialization and deployment of Natrium in North America, UK, EU. Binding level approximated.
+  evidence:
+  - {field: agreement, snapshot: 011bc44a49bbf4d1eeded906e12daeb9b8de3ccbfb04a5ea0ad17251710b75f2, quote: "announced a strategic alliance to establish a long-term collaboration for the commercialization and deployment of Natrium reactors", basis: disclosed}
+- id: terrapower-nvision-2025-framework
+  counterparty: nVision Energy (NOVI Energy affiliate)
+  counterparty_slug: nvision-energy
+  type: partnership
+  binding: mou
+  announced_on: 2025-02-12
+  summary: Framework for a repeatable deployment model for Natrium plants across the U.S.
+  evidence:
+  - {field: agreement, snapshot: 2d1163011358f7d7b86afdd41aae0dd2e8f4d09aeeb934e5d2fc2a15220d645d, quote: "an agreement to establish a framework for a repeatable deployment model", basis: disclosed}
+- id: terrapower-gyeongnam-2023-mou
+  counterparty: Gyeongsangnam-do Province (Korea)
+  counterparty_slug: gyeongsangnam-do
+  type: partnership
+  binding: mou
+  announced_on: 2023-12-05
+  summary: MOU in which the province will provide administrative and financial support to evaluate manufacturing capability for Natrium plant equipment; no amount stated.
+  evidence:
+  - {field: agreement, snapshot: 6eeaadf9ee2a680e67ed84aa26504bd9afefe7217be7833d1eb8a64ac113740e, quote: "Gyeongsangnam-do will provide administrative and financial support to evaluate local facilities", basis: disclosed}
+- id: terrapower-kemmerer-land-2023
+  counterparty: PacifiCorp (prior landowner), Kemmerer, Wyoming
+  counterparty_slug: pacificorp
+  type: site
+  binding: definitive
+  announced_on: 2023-08-16
+  summary: TerraPower purchased the Kemmerer, Wyoming land (previously PacifiCorp's) for the Natrium demonstration project; price undisclosed.
+  evidence:
+  - {field: agreement, snapshot: 8fcb24eb36bbdfedf4866d665f12ac06034e87e74c7ff4ffef2ee9232299fa1f, quote: "TerraPower announced today the purchase of land in Kemmerer, Wyoming", basis: disclosed}
+- id: terrapower-cardinal-health-2021-ac225
+  counterparty: Cardinal Health
+  counterparty_slug: cardinal-health
+  type: partnership
+  binding: definitive
+  announced_on: 2021-08-12
+  summary: Agreement to develop and produce Actinium-225 for drug development and commercial sales (TerraPower Isotopes).
+  evidence:
+  - {field: agreement, snapshot: 5fd32619473e279d39b5030d1ba10238b7ebeedea9c61504262cb86fd0e477d4, quote: "the companies will work together to develop and produce Actinium-225", basis: disclosed}

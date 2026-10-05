@@ -1,0 +1,148 @@
+company: helical-fusion
+name: Helical Fusion
+sector: fusion
+notes: 'Source: company English newsroom (global.helicalfusion.com/post/...). Series A 2025-07 total: release says JPY 2.3bn raised; ''total capital including grants and loans'' JPY 5.2bn (cumulative, not
+  a round). Ext release 2025-12: Series A total incl. loans ~USD 21M (JPY 3.2bn), cumulative incl. grants and loans ~USD 38M (JPY 6.0bn); note JPY 2.3bn + 0.87bn = 3.17bn is consistent with ''including
+  loans'' wording only loosely - reviewer check. MEXT SBIR Phase 3 (JPY 2bn per probe asia.md, Business Wire 2025-10-27) NOT recorded: no archivable English primary found (Business Wire blocked, MEXT notice
+  Japanese, web search budget exhausted). Public-financing loans mentioned in the release (unnamed ''public financial institutions'') not quantified. Aichi grant is R&D funding within an acceleration program;
+  2023 and 2024 selections not evidenced with amounts. Earlier seed rounds not found. METI fusion demonstration final-candidate status (2026-09-17) is not funding. HAZAMA ANDO MoU (2026-07-06) noted on
+  newsroom but not archived/recorded as agreement.
+  Verifier: cumulative figures reconcile: JPY 2.3bn (Jul 2025) + JPY 0.87bn extension = JPY 3.17bn, matching the Dec 2025
+  "total Series A funding, including loans" of ~JPY 3.2bn; and JPY 5.2bn + 0.87bn = 6.07bn, matching the ~JPY 6.0bn total
+  incl. grants and loans. So the extension is new money, but the JPY 2.3bn "Series A" headline itself appears to include
+  loans from the unnamed public financial institutions (equity/loan split not disclosed); treat the instrument as mostly
+  equity with an unknown debt component. No cumulative rows are recorded (correct: they must not be counted). The Tokyo
+  "up to JPY 1 billion over three years" is the programme maximum per selected project, not an amount awarded or paid, so it
+  is now amount_kind=ceiling. Aichi JPY 40M: the release says "together with approximately JPY 40 million in R&D funding"
+  without naming the payer explicitly; attributed to the Aichi programme on context, reviewer may want a Japanese source.
+  Tokyo release date shows "Apr 6" without a year on the page; 2026 inferred from "FY2026" in the text.'
+verification:
+  status: verified
+  by: "verifier-agent (claude-opus-5-5), 2026-10-05"
+  "on": 2026-10-05
+  note: "1 correction: Tokyo Zero Emission programme 'up to JPY 1 billion over three years' set to amount_kind=ceiling (programme maximum, not awarded/paid). Checked cumulative figures: 2.3bn + 0.87bn = 3.17bn matches 'total Series A incl. loans ~3.2bn'; 5.2bn + 0.87bn matches ~6.0bn incl. grants and loans; no cumulative rows recorded. Doubts: the JPY 2.3bn Series A likely includes undisclosed public loans; Aichi JPY 40M payer not named explicitly; MEXT SBIR JPY 2bn not evidenced."
+events:
+- id: helical-series-a-2025-07
+  instrument: equity
+  round_label: Series A
+  announced_on: '2025-07-11'
+  amount:
+    amount: 2300000000
+    currency: JPY
+    qualifier: exact
+  evidence:
+  - field: amount
+    snapshot: 29cb622b34c15bf158b838e6115018b5134a7cd033f661c0ebb08ef19b7a9cea
+    quote: has closed its Series A round, securing JPY 2.3 billion (USD 15 million) in funding
+    basis: disclosed
+  - field: announced_on
+    snapshot: 29cb622b34c15bf158b838e6115018b5134a7cd033f661c0ebb08ef19b7a9cea
+    quote: Advances Roadmap for World's First Steady-State Net Power Fusion Plant Jul 11, 2025
+    basis: disclosed
+  - field: round_label
+    snapshot: 29cb622b34c15bf158b838e6115018b5134a7cd033f661c0ebb08ef19b7a9cea
+    quote: has closed its Series A round
+    basis: disclosed
+  participants:
+  - investor: SBI Investment
+    investor_slug: sbi-investment
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 29cb622b34c15bf158b838e6115018b5134a7cd033f661c0ebb08ef19b7a9cea
+      quote: attracted investors including SBI Investment, Keio Innovation Initiative (KII), and 19 other institutions
+      basis: disclosed
+  - investor: Keio Innovation Initiative (KII)
+    investor_slug: keio-innovation-initiative
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 29cb622b34c15bf158b838e6115018b5134a7cd033f661c0ebb08ef19b7a9cea
+      quote: Keio Innovation Initiative (KII), and 19 other institutions
+      basis: disclosed
+- id: helical-series-a-extension-2025-12
+  instrument: equity
+  round_label: Series A Extension
+  announced_on: '2025-12-05'
+  amount:
+    amount: 870000000
+    currency: JPY
+    qualifier: approx
+  evidence:
+  - field: amount
+    snapshot: 81d6056aebc44eb313b381575377af2db5a9e073eb54e6139f2374524b49f959
+    quote: announced the completion of its Series A Extension round, raising approximately USD 5.5 million (≈ JPY 870 million)
+    basis: disclosed
+  - field: announced_on
+    snapshot: 81d6056aebc44eb313b381575377af2db5a9e073eb54e6139f2374524b49f959
+    quote: Completes USD 5.5M Series A Extension Round Dec 5, 2025
+    basis: disclosed
+  - field: round_label
+    snapshot: 81d6056aebc44eb313b381575377af2db5a9e073eb54e6139f2374524b49f959
+    quote: announced the completion of its Series A Extension round
+    basis: disclosed
+  participants:
+  - investor: Ecrowd NEXT
+    investor_slug: ecrowd-next
+    role: participant
+    evidence:
+    - field: participant
+      snapshot: 81d6056aebc44eb313b381575377af2db5a9e073eb54e6139f2374524b49f959
+      quote: The round included investments from “Ecrowd NEXT”, a fund designed for individual investors
+      basis: disclosed
+- id: helical-tokyo-zero-emission-2026
+  instrument: grant
+  round_label: Tokyo Metropolitan Govt Innovation Promotion Program for Realizing Zero Emission Tokyo (FY2026)
+  announced_on: '2026-04-06'
+  program: Innovation Promotion Program for Realizing Zero Emission Tokyo
+  amount:
+    amount: 1000000000
+    currency: JPY
+    qualifier: up_to
+  amount_kind: ceiling
+  evidence:
+  - field: amount
+    snapshot: 6f71064d198dbb7919bb405e1e86d04ad9ecac624b2eab2a3226f9dbd33a4624
+    quote: Selected projects may receive up to JPY 1 billion in support over a three-year period
+    basis: disclosed
+  - field: announced_on
+    snapshot: 6f71064d198dbb7919bb405e1e86d04ad9ecac624b2eab2a3226f9dbd33a4624
+    quote: 'Apr 6 3 min read Updated: Apr 6 Up to JPY 1 billion in support over three years'
+    basis: disclosed
+  participants:
+  - investor: Tokyo Metropolitan Government
+    investor_slug: tokyo-metropolitan-government
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 6f71064d198dbb7919bb405e1e86d04ad9ecac624b2eab2a3226f9dbd33a4624
+      quote: it has been selected for the Tokyo Metropolitan Government’s FY2026 “Innovation Promotion Program for Realizing Zero Emission Tokyo”
+      basis: disclosed
+- id: helical-aichi-deeptech-launchpad-2025
+  instrument: grant
+  round_label: Aichi Deeptech Launchpad 2025
+  announced_on: '2025-07-15'
+  program: Aichi Deeptech Launchpad
+  amount:
+    amount: 40000000
+    currency: JPY
+    qualifier: approx
+  evidence:
+  - field: amount
+    snapshot: 080a999e12c2196cdb332cbc9f57a177df1664ac66b4848ceb9d07fb14aa80d2
+    quote: approximately JPY 40 million (USD 270,000) in research and development funding
+    basis: disclosed
+  - field: announced_on
+    snapshot: 080a999e12c2196cdb332cbc9f57a177df1664ac66b4848ceb9d07fb14aa80d2
+    quote: Jul 15, 2025 2 min read
+    basis: disclosed
+  participants:
+  - investor: Aichi Prefecture
+    investor_slug: aichi-prefecture
+    role: grantor
+    evidence:
+    - field: participant
+      snapshot: 080a999e12c2196cdb332cbc9f57a177df1664ac66b4848ceb9d07fb14aa80d2
+      quote: a deep-tech startup acceleration program organized by Aichi Prefecture, Japan
+      basis: disclosed
+agreements: []

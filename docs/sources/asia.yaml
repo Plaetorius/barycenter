@@ -1,0 +1,17 @@
+id: asia
+name: Japan, Korea, China primary data (what exists, not a deep dive)
+owner: MEXT/NEDO/Cabinet Office (JP); MSIT/KFE (KR); SAMR registry, SSE/SZSE filings (CN)
+access: html            # Japanese and Chinese language; English partial
+endpoint: https://www.nedo.go.jp/english/activities/startups/company67.html   # NEDO startup page: grant amount per company (English)
+alt_endpoints:
+  - https://www8.cao.go.jp/cstp/fusion/taskforce_social/2kai/siryou4-1.pdf   # Cabinet Office FAST deck (Japanese)
+  - "SSE/Cninfo listed-company announcements (China Nuclear Power 601985, Zheneng 600023) are the primary record for China Fusion Energy Co. capital (Chinese)"
+auth: none
+licence: unknown / varies; cite only
+robots: pages archived OK (NEDO, Kyoto Fusioneering); Chinese registries not probed
+yields: [JP: SBIR Phase 3 fusion (MEXT) total JPY 6.5bn, 4 awardees, Helical Fusion JPY 2bn (company-reported); NEDO DTSU: Kyoto Fusioneering JPY 499M for 2024-2026FY; CN: China Fusion Energy Co. registered capital CNY 15bn, 2025-07-22 (listed-company announcement via The Paper)]
+identifiers: [JP corporate number (houjin bangou) not probed; CN unified social credit code not probed]
+cadence: event-driven
+tier: C (press) with some B (NEDO, listed-company filings)
+known_gaps: "Korea not probed. No bulk or API found. Language barrier: needs JP/ZH extraction path."
+probe: docs/survey/probes/asia.md

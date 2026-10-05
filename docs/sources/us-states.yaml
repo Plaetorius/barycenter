@@ -1,0 +1,16 @@
+id: us-states
+name: US state nuclear programmes (Texas TANEO, Utah, Virginia, others)
+owner: State governments
+access: html           # statute text + agency pages; no structured award data found
+endpoint: https://capitol.texas.gov/tlodocs/89R/billtext/html/HB00014F.htm ; https://nlic.utah.gov/ ; https://energy.utah.gov/homepage/about-us/operation-gigawatt/
+auth: none
+rate_limit: n/a
+licence: state government publications (varies; treat as public record)
+robots: capitol.texas.gov blocks the History.aspx bill-lookup page (tool respected robots); others unrestricted
+yields: [Texas Advanced Nuclear Energy Office created (Gov Code ch. 483, HB 14, 89R) with Texas advanced nuclear development fund and reimbursement-based grants; Utah Nuclear Lifecycle Innovation Campus bid; no per-company award tables located]
+identifiers: [bill number, statute section]
+cadence: event-driven
+tier: B
+known_gaps: >
+  No award list found for any state in this probe (Texas fund amount not in bill text; the $350M figure is from memory and unverified here). Web search budget was exhausted, so Virginia, New York, Tennessee, Wyoming, Indiana not probed beyond energy.virginia.gov homepage. Revisit when first TANEO grants are announced.
+probe: docs/survey/probes/us-states.md
