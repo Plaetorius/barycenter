@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import csv
 import hashlib
 import json
@@ -20,6 +21,18 @@ from barycenter.models import FundingEvent
 from barycenter.validate.gates import run_gates
 
 ROOT = Path(__file__).resolve().parents[2]
+
+
+def app_dir() -> Path:
+    """The Barycenter web app that ships this release (labs monorepo, apps/barycenter).
+
+    Default: the sibling labs checkout (~/mertia/labs). Override with BARYCENTER_APP_DIR. Fails loudly when missing, so a
+    release is never written to a stale copy of the site.
+    """
+    path = Path(os.environ.get("BARYCENTER_APP_DIR", ROOT.parent.parent / "labs" / "apps" / "barycenter"))
+    if not (path / "package.json").is_file():
+        raise SystemExit(f"Barycenter app not found at {path}. Set BARYCENTER_APP_DIR or keep this repo at <mertia>/engines/barycenter.")
+    return path
 EQUITY = {"equity", "follow_on", "ipo", "spac"}
 PUBLIC = {"grant", "cost_share", "voucher"}
 DISCLAIMER = (
@@ -228,8 +241,9 @@ def write_release(b: Built, out: Path, release: str, draft: bool, findings: list
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--include-unverified", action="store_true", help="dev build; the release is marked DRAFT")
-    ap.add_argument("--out", default=str(ROOT / "site" / "public" / "data"))
+    ap.add_argument("--out", help="default: <app>/public/data (see app_dir)")
     a = ap.parse_args()
+    out = Path(a.out) if a.out else app_dir() / "public" / "data"
     b = build(a.include_unverified)
     findings = run_gates(b.dataset)
     errors = [f for f in findings if f.severity == "error"]
@@ -241,7 +255,7 @@ def main() -> int:
         print(f"{len(errors)} gate errors: release not written", file=sys.stderr)
         return 1
     release = "v" + date.today().strftime("%Y.%m.%d")
-    cov = write_release(b, Path(a.out), release, a.include_unverified, findings)
+    cov = write_release(b, out, release, a.include_unverified, findings)
     print(json.dumps(cov["counts"], indent=2))
     return 0
 
