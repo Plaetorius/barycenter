@@ -5,7 +5,7 @@
 | | |
 |---|---|
 | Companies published | 91 (of 259 census candidates; rule D1: only companies with at least one evidenced funding event) |
-| Investors / public funders | 387 / 55 |
+| Investors / public funders | 388 / 55 |
 | Funding events / agreements | 522 / 194 |
 | Evidence claims / archived source documents | 2,812 / 624 |
 | Events with undisclosed amount | 70. Investor participations that state their own amount: 27 of 795 |
